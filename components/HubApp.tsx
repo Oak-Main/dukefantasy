@@ -34,6 +34,7 @@ import {
 } from "@/lib/cfb-dataset";
 import { brand, disclosureVersion } from "@/lib/config";
 import { homepageData, tickerGames } from "@/lib/homepage-data";
+import { applyLivePatch, patchGames } from "@/lib/live-scoreboard";
 import { getRosterPlayerBySlug } from "@/lib/player-records";
 import {
   continuousWeeks,
@@ -50,7 +51,9 @@ import { StadiumDetail, StadiumDirectory } from "./stadium-pages";
 import { BroadcastFooter } from "./broadcast/footer";
 import { BroadcastHeader } from "./broadcast/header";
 import { BroadcastHomepage } from "./broadcast/homepage";
+import { LiveFreshness, LiveScoreAnnouncer } from "./broadcast/live-status";
 import { ScoreTicker } from "./broadcast/score-ticker";
+import { useLiveScoreboard } from "./broadcast/use-live-scoreboard";
 import { WatchPage } from "./broadcast/watch-page";
 import { CoachingLedger } from "./coaching-ledger";
 import { DfsHubPage } from "./dfs-hub";
@@ -208,7 +211,10 @@ function GameCard({
     <>
       <article className="game-card" {...actions.longPressProps}>
         <div className="game-card__topline">
-          <span className={`status status--${game.status}`}>{game.statusDetail}</span>
+          <span className={`status status--${game.status}`}>
+            {game.status === "live" ? <span className="sr-only">Live: </span> : null}
+            {game.statusDetail}
+          </span>
           <span>{game.kickoffLabel}</span>
           <button
             className="favorite-button"
@@ -349,7 +355,12 @@ function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
   const [refreshMessage, setRefreshMessage] = useState("");
   const weekRail = useRef<HTMLFieldSetElement>(null);
   const gesture = useRef({ active: false, x: 0, y: 0 });
-  const weekGames = gamesForWeek(games, week);
+  const { patches } = useLiveScoreboard();
+  // Baked rows stay the source of truth for week membership and order; the
+  // live overlay (matched by ESPN event id) only moves status, detail, scores.
+  const bakedWeekGames = gamesForWeek(games, week);
+  const weekGames = patchGames(bakedWeekGames, patches);
+  const liveCount = weekGames.filter((game) => game.status === "live").length;
   const filtered = weekGames.filter((game) => {
     const away = teamFor(game.awayTeamId);
     const home = teamFor(game.homeTeamId);
@@ -361,6 +372,15 @@ function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
   const weekIndex = weeks.indexOf(week);
   const previousWeek = weekIndex > 0 ? weeks[weekIndex - 1] : undefined;
   const nextWeek = weekIndex >= 0 && weekIndex < weeks.length - 1 ? weeks[weekIndex + 1] : undefined;
+  const shownIds = new Set(filtered.map((game) => game.id));
+  const announcerGames = bakedWeekGames
+    .filter((game) => shownIds.has(game.id))
+    .map((game) => ({
+      id: game.id,
+      status: game.status,
+      away: teamFor(game.awayTeamId).shortName,
+      home: teamFor(game.homeTeamId).shortName,
+    }));
 
   const updateWeek = (value: number | undefined) => {
     if (value == null || value === week) return;
@@ -407,7 +427,12 @@ function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
         eyebrow="PRIORITY 01 · SCOREBOARD"
         title="The slate, without the scavenger hunt."
         description={`Scheduled, final, delayed, and postponed game states with assigned TV networks where locked (${broadcastAsOf ?? "—"} compilation; unlisted games sit on conference plus-networks or await the 6–12 day flex).`}
-        actions={<Freshness provenance={games[0].provenance} />}
+        actions={
+          <span className="freshness-stack">
+            <Freshness provenance={games[0].provenance} />
+            <LiveFreshness ids={bakedWeekGames.map((game) => game.id)} />
+          </span>
+        }
       />
       <div className="sticky-tools scoreboard-tools">
         <div className="scoreboard-week-tools">
@@ -486,9 +511,11 @@ function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
         <span className="sr-only" aria-live="polite" aria-atomic="true">
           {refreshMessage || `Week ${week}. ${filtered.length} games shown${filter === "All" ? "" : ` for ${filter}`}.`}
         </span>
-        <div className="scoreboard-summary">
+        <LiveScoreAnnouncer games={announcerGames} />
+        <div className={liveCount > 0 ? "scoreboard-summary scoreboard-summary--live" : "scoreboard-summary"}>
           <div><span>{weekGames.length}</span><small>WEEK {week} GAMES</small></div>
           <div><span>{weekGames.filter((game) => game.status === "final").length}</span><small>FINAL</small></div>
+          {liveCount > 0 ? <div><span>{liveCount}</span><small>LIVE</small></div> : null}
           <div><span>{weekGames.filter((game) => game.status === "scheduled").length}</span><small>SCHEDULED</small></div>
           <div><span>{teams.length}</span><small>PROGRAMS</small></div>
           <a href="/schedule">Full schedule →</a>
@@ -524,6 +551,19 @@ function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
 }
 
 function SchedulePage(props: HomeProps) {
+  const { patches } = useLiveScoreboard();
+  const liveGames = useMemo(() => patchGames(games, patches), [patches]);
+  const announcerGames = useMemo(
+    () =>
+      games.map((game) => ({
+        id: game.id,
+        status: game.status,
+        away: teamFor(game.awayTeamId).shortName,
+        home: teamFor(game.homeTeamId).shortName,
+      })),
+    [],
+  );
+
   return (
     <>
       <PageHeading
@@ -532,7 +572,8 @@ function SchedulePage(props: HomeProps) {
         description="Conference membership and postseason rules are versioned by season; the preview never hardcodes a permanent team count."
       />
       <section className="content-section schedule-board">
-        {games.map((game) => (
+        <LiveScoreAnnouncer games={announcerGames} />
+        {liveGames.map((game) => (
           <GameCard
             key={game.id}
             game={game}
@@ -547,7 +588,11 @@ function SchedulePage(props: HomeProps) {
 }
 
 function GamePage({ gameId, mode, favorites, onFavorite }: HomeProps & { gameId: string }) {
-  const game = getGame(gameId) ?? games[0];
+  const bakedGame = getGame(gameId) ?? games[0];
+  const { patches } = useLiveScoreboard();
+  // Status, detail and score follow the live feed (same ESPN event id); the
+  // rest of the page stays dataset-backed.
+  const game = applyLivePatch(bakedGame, patches.get(bakedGame.id));
   const away = teamFor(game.awayTeamId);
   const home = teamFor(game.homeTeamId);
   const homeEdge = Math.round(game.modelHomeWinProbability * 100);
@@ -562,9 +607,18 @@ function GamePage({ gameId, mode, favorites, onFavorite }: HomeProps & { gameId:
   return (
     <>
       <div className="game-hero">
+        <LiveScoreAnnouncer
+          games={[{ id: bakedGame.id, status: bakedGame.status, away: away.shortName, home: home.shortName }]}
+        />
         <div className="game-hero__meta">
-          <span className={`status status--${game.status}`}>{game.statusDetail}</span>
-          <Freshness provenance={game.provenance} />
+          <span className={`status status--${game.status}`}>
+            {game.status === "live" ? <span className="sr-only">Live: </span> : null}
+            {game.statusDetail}
+          </span>
+          <span className="freshness-stack">
+            <Freshness provenance={game.provenance} />
+            <LiveFreshness ids={[bakedGame.id]} />
+          </span>
         </div>
         <div className="game-hero__matchup">
           <TeamHero team={away} score={game.awayScore} />

@@ -1,8 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { ArrowLeft, ArrowRight, ChevronRight, ShieldCheck } from "lucide-react";
+import { getGame, getTeamBySlug } from "@/lib/cfb-dataset";
+import { patchScheduleGames } from "@/lib/live-scoreboard";
 import type { TeamHubProps } from "@/lib/team-hub";
+import { LiveScoreAnnouncer } from "@/components/broadcast/live-status";
+import { useLiveScoreboard } from "@/components/broadcast/use-live-scoreboard";
 import { FavoriteButton } from "@/components/polish/favorites";
 import { ScheduleSection } from "./schedule";
 import { RosterSection } from "./roster";
@@ -32,13 +36,39 @@ export function TeamHub(props: TeamHubProps) {
   const safeColor = /^#[0-9a-f]{3,8}$/i.test(team.color)
     ? team.color
     : "var(--primary)";
-  const next = props.schedule?.find(
+  // The schedule bakes at deploy time. Games that started or finished since
+  // then are overlaid from the live feed by ESPN event id, once, here, so the
+  // banner and the schedule section below can never disagree.
+  const { patches } = useLiveScoreboard();
+  const schedule = useMemo(
+    () => (props.schedule ? patchScheduleGames(props.schedule, patches) : null),
+    [props.schedule, patches],
+  );
+  const liveRow = schedule?.find((game) => game.live);
+  const next = schedule?.find(
     (game) =>
       !game.isBye &&
       !game.result &&
+      !game.live &&
       game.date &&
       game.date >= props.referenceDate,
   );
+  const announcerGames = (props.schedule ?? []).flatMap((game) => {
+    if (game.isBye || !game.eventId) return [];
+    const opponent =
+      (game.opponentSlug ? getTeamBySlug(game.opponentSlug)?.shortName : null) ??
+      game.opponent ??
+      "Opponent";
+    const isHome = game.homeAway === "home";
+    return [
+      {
+        id: game.eventId,
+        status: getGame(game.eventId)?.status ?? "scheduled",
+        away: isHome ? opponent : team.shortName,
+        home: isHome ? team.shortName : opponent,
+      },
+    ];
+  });
   const mascot = team.name.startsWith(`${team.shortName} `)
     ? team.name.slice(team.shortName.length + 1)
     : null;
@@ -249,7 +279,20 @@ export function TeamHub(props: TeamHubProps) {
         </div>
       </nav>
       <div className="hub-container hub-content">
-        {next ? (
+        <LiveScoreAnnouncer games={announcerGames} />
+        {liveRow?.live ? (
+          <a className="hub-next-banner" href="#schedule" data-live="true">
+            <span className="hub-chip hub-chip--live">LIVE</span>
+            <strong>
+              {liveRow.homeAway === "away" ? "At" : "vs"} {liveRow.opponent}
+            </strong>
+            <span>
+              {liveRow.live.ownScore}–{liveRow.live.opponentScore} ·{" "}
+              {liveRow.live.statusLabel ?? "In progress"}
+            </span>
+            <ArrowRight size={18} aria-hidden="true" />
+          </a>
+        ) : next ? (
           <a className="hub-next-banner" href="#schedule">
             <span className="hub-chip hub-chip--gold">ON DECK</span>
             <strong>
@@ -264,7 +307,7 @@ export function TeamHub(props: TeamHubProps) {
         ) : null}
         <ScheduleSection
           key={`schedule-${team.slug}`}
-          schedule={props.schedule}
+          schedule={schedule}
           season={season}
           asOf={asOf}
           referenceDate={props.referenceDate}

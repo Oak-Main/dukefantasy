@@ -3,7 +3,9 @@
 import { useState } from "react";
 import { ArrowRight, CalendarDays, MapPin, Minus, Tv } from "lucide-react";
 import { getTeamBySlug } from "@/lib/cfb-dataset";
+import type { LiveScheduleRow } from "@/lib/live-scoreboard";
 import type { TeamHubProps } from "@/lib/team-hub";
+import { useLiveCheckedLabel } from "@/components/broadcast/live-status";
 import {
   GameActionSheet,
   GameActionsButton,
@@ -19,7 +21,8 @@ import {
   published,
 } from "./ui";
 
-type ScheduleGame = NonNullable<TeamHubProps["schedule"]>[number];
+/** A baked schedule row, plus `live` while the live feed says its game is in progress. */
+type ScheduleGame = LiveScheduleRow<NonNullable<TeamHubProps["schedule"]>[number]>;
 
 function ScheduleGameRow({
   game,
@@ -41,6 +44,7 @@ function ScheduleGameRow({
         className="hub-game"
         data-bye={game.isBye}
         data-next={isNext}
+        data-live={game.live ? true : undefined}
         {...(!game.isBye ? actions.longPressProps : {})}
       >
         <div className="hub-game-date">
@@ -88,6 +92,7 @@ function ScheduleGameRow({
                   )}
                 </h3>
                 {isNext ? <span className="hub-chip hub-chip--gold">UP NEXT</span> : null}
+                {game.live ? <span className="hub-chip hub-chip--live">LIVE</span> : null}
               </div>
               <p>
                 <MapPin size={14} aria-hidden="true" />
@@ -100,6 +105,18 @@ function ScheduleGameRow({
         <div className="hub-game-result">
           {game.isBye ? (
             <span className="hub-muted">OPEN WEEK</span>
+          ) : game.live ? (
+            <>
+              <strong className="font-display" data-live="true">
+                <span className="sr-only">Live: </span>
+                {game.live.ownScore}–{game.live.opponentScore}
+                <small>{game.live.statusLabel ?? "LIVE"}</small>
+              </strong>
+              <span className="hub-tv">
+                <Tv size={14} aria-hidden="true" />
+                {game.broadcast ?? "TV not published"}
+              </span>
+            </>
           ) : game.result ? (
             <strong className="font-display" data-outcome={game.result[0]}>
               {game.result}
@@ -154,7 +171,13 @@ export function ScheduleSection({
   season,
   asOf,
   referenceDate,
-}: Pick<TeamHubProps, "schedule" | "season" | "asOf" | "referenceDate">) {
+}: Pick<TeamHubProps, "season" | "asOf" | "referenceDate"> & {
+  /** Baked rows with the live overlay already applied (see TeamHub). */
+  schedule: ReadonlyArray<ScheduleGame> | null;
+}) {
+  const liveChecked = useLiveCheckedLabel(
+    schedule?.flatMap((game) => (game.eventId ? [game.eventId] : [])),
+  );
   const [selectedWeek, setSelectedWeek] = useState<number | null>(null);
   const [showAll, setShowAll] = useState(false);
   const weeks = Array.from({ length: 14 }, (_, index) => index + 1);
@@ -167,7 +190,11 @@ export function ScheduleSection({
     showAll || selectedWeek != null ? filtered : filtered.slice(0, 5);
   const nextGame = schedule?.find(
     (game) =>
-      !game.isBye && !game.result && game.date && game.date >= referenceDate,
+      !game.isBye &&
+      !game.result &&
+      !game.live &&
+      game.date &&
+      game.date >= referenceDate,
   );
 
   return (
@@ -196,14 +223,16 @@ export function ScheduleSection({
               const rows = schedule.filter((game) => game.week === week);
               const outcome = rows.find((game) => game.result)?.result?.[0];
               const isBye = rows.some((game) => game.isBye);
+              const isLive = rows.some((game) => game.live);
               return (
                 <button
                   key={week}
                   type="button"
                   className="hub-week"
                   data-outcome={outcome}
+                  data-live={isLive ? true : undefined}
                   disabled={!rows.length}
-                  aria-label={`Week ${week}${outcome ? `, ${outcome === "W" ? "win" : "loss"}` : isBye ? ", bye" : rows.length ? "" : ", no published game"}`}
+                  aria-label={`Week ${week}${outcome ? `, ${outcome === "W" ? "win" : outcome === "T" ? "tie" : "loss"}` : isLive ? ", live" : isBye ? ", bye" : rows.length ? "" : ", no published game"}`}
                   aria-pressed={selectedWeek === week}
                   onClick={() =>
                     setSelectedWeek(selectedWeek === week ? null : week)
@@ -254,6 +283,9 @@ export function ScheduleSection({
           <div className="hub-section-foot">
             <span>
               Dataset as of {dateLabel(asOf)}. Times shown in Eastern Time.
+              {liveChecked
+                ? ` Live scores from the ESPN scoreboard feed, checked ${liveChecked}.`
+                : ""}
             </span>
             <HubLink href="/watch">Where to watch</HubLink>
           </div>

@@ -15,7 +15,7 @@
     "build": "vinext build",
     "start": "vinext start",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts",
+    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts",
     "test:integration": "node --test tests/rendered-html.test.mjs",
     "test:e2e": "node --test tests/rendered-html.test.mjs",
     "test:a11y": "node --test tests/a11y.test.mjs",
