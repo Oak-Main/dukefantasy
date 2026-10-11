@@ -156,6 +156,36 @@ export const TIER_LABELS: Record<SitTier, string> = {
 
 export const TIER_ORDER: SitTier[] = ["start_confidence", "start_if_needed", "fringe", "sit"];
 
+/* --------------------------------------------------------------- freshness */
+
+const season = (nfl as { season?: { currentWeek?: number | null } }).season;
+
+/** ESPN's NFL week in play when the snapshot was compiled (null = unknown). */
+export const currentNflWeek: number | null =
+  typeof season?.currentWeek === "number" ? season.currentWeek : null;
+
+export type DeskBoardKey = "waiver" | "startSit" | "rookie" | "trade";
+
+/**
+ * Which week a staged board speaks to, and whether that is current for the
+ * cadence. Start/Sit and Trade cover the week in play; the Waiver edition is
+ * published Tuesday for the FOLLOWING week; Rookie usage is published Tuesday
+ * for the week just completed (so it is current one week behind). A board that
+ * is behind is still shown -- with its week and date -- but never as "live".
+ */
+export function deskBoardStatus(
+  key: DeskBoardKey,
+  doc: FantasyDeskDoc = fantasyDesk,
+  weekInPlay: number | null = currentNflWeek,
+): { covers: number; current: boolean | null } | null {
+  const board = doc[key];
+  if (!board) return null;
+  const covers = key === "waiver" ? (board as WaiverBoard).week_adding_for : (board as StartSitBoard | RookieBoard | TradeBoard).week;
+  if (weekInPlay === null) return { covers, current: null };
+  const required = key === "rookie" ? weekInPlay - 1 : weekInPlay;
+  return { covers, current: covers >= required };
+}
+
 /** Honest shell copy while a rail awaits its cadence slot. */
 export const DESK_CADENCE = [
   { key: "waiver", label: "Waiver Wire Watch", slot: "Tuesday after MNF (edition covers the following week)" },
