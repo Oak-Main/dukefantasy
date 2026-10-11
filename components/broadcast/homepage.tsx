@@ -68,7 +68,11 @@ export function BroadcastHomepage({
       />
       <FinalsStrip referenceDate={data.referenceDate} />
       <div className="apex-intelligence-grid">
-        <RankingsLane pollTables={data.pollTables} teams={data.teams} />
+        <RankingsLane
+          standings={data.standings}
+          teams={data.teams}
+          datasetAsOf={data.datasetAsOf}
+        />
         <PortalLane
           portalCounts={data.portalCounts}
           teams={data.teams}

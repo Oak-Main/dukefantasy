@@ -55,6 +55,17 @@ export interface Team {
   provenance: Provenance;
 }
 
+/** One team's tally from the final scores in the schedule snapshot. */
+export interface TeamStanding {
+  teamSlug: string;
+  division: string;
+  wins: number;
+  losses: number;
+  ties: number;
+  pointsFor: number;
+  pointsAgainst: number;
+}
+
 export type GameStatus = "scheduled" | "final" | "delayed" | "postponed" | "canceled";
 
 export interface Game {

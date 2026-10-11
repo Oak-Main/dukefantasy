@@ -124,7 +124,7 @@ const divisions = {
   bal: "AFC North", cin: "AFC North", cle: "AFC North", pit: "AFC North",
   hou: "AFC South", ind: "AFC South", jax: "AFC South", ten: "AFC South",
   den: "AFC West", kc: "AFC West", lv: "AFC West", lac: "AFC West",
-  dal: "NFC East", nyg: "NFC East", phi: "NFC East", was: "NFC East",
+  dal: "NFC East", nyg: "NFC East", phi: "NFC East", wsh: "NFC East",
   chi: "NFC North", det: "NFC North", gb: "NFC North", min: "NFC North",
   atl: "NFC South", car: "NFC South", no: "NFC South", tb: "NFC South",
   ari: "NFC West", lar: "NFC West", sf: "NFC West", sea: "NFC West",
@@ -137,7 +137,7 @@ const brandColors = {
   lac: "#0080C6", lar: "#003594", lv: "#000000", mia: "#008E97",
   min: "#4F2683", ne: "#002244", no: "#D3BC8D", nyg: "#0B2265",
   nyj: "#125740", phi: "#004C54", pit: "#FFB612", sf: "#AA0000",
-  sea: "#002244", tb: "#D50A0A", ten: "#4B92DB", was: "#5A1414",
+  sea: "#002244", tb: "#D50A0A", ten: "#4B92DB", wsh: "#5A1414",
 };
 
 const teams = espnTeams.map((et) => {

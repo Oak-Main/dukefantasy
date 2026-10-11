@@ -3,11 +3,11 @@ import {
   fantasyNotes,
   fantasyNotesAsOf,
   games,
-  pollTables,
   portalAsOf,
   portalCountsFor,
   preseasonRatings,
   stadiums,
+  standings,
   teams,
 } from "./cfb-dataset";
 import { weekGames, type HomepageData } from "./homepage";
@@ -21,7 +21,7 @@ const datasetAsOf =
 export const homepageData: HomepageData = {
   teams,
   games,
-  pollTables,
+  standings,
   portalCounts: teams
     .map((team) => {
       const counts = portalCountsFor(team.slug);
