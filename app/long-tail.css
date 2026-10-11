@@ -2563,3 +2563,53 @@
     transition: none !important;
   }
 }
+
+/* Live overlay on team pages: a game in progress reads as LIVE with its score
+ * and clock, distinct from UP NEXT and from a finished W/L result. */
+.hub-chip--live {
+  background: color-mix(in srgb, var(--red) 14%, transparent);
+  border-color: color-mix(in srgb, var(--red) 55%, var(--border));
+  color: var(--red);
+  font-weight: 750;
+}
+
+.hub-chip--live::before {
+  background: currentColor;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 6px;
+  margin-right: 6px;
+  vertical-align: 0.12em;
+  width: 6px;
+}
+
+.hub-game[data-live="true"] {
+  background: color-mix(in srgb, var(--red) 6%, transparent);
+  box-shadow: inset 3px 0 0 var(--red);
+}
+
+.hub-game-result > strong[data-live="true"] {
+  color: var(--red);
+}
+
+/* The clock sits inline after the score; keep "14–10" and "2:06 - 3rd" apart. */
+.hub-game-result > strong[data-live="true"] small {
+  margin-left: 0.6em;
+}
+
+.hub-next-banner[data-live="true"] {
+  background: color-mix(in srgb, var(--red) 8%, var(--card));
+  border-color: color-mix(in srgb, var(--red) 45%, var(--border));
+}
+
+.hub-week[data-live="true"]:not([aria-pressed="true"]) {
+  border-color: color-mix(in srgb, var(--red) 55%, var(--border));
+  color: var(--red);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hub-chip--live::before {
+    animation: live-pulse 1.8s ease-in-out infinite;
+  }
+}

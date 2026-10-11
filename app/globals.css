@@ -4393,3 +4393,83 @@ body {
     transition: none !important;
   }
 }
+
+/* Live overlay (lib/live-scoreboard.ts): in-progress games and the label that
+ * says where their scores came from. `.status--live` is scoped to game
+ * surfaces because the design-system sample reuses the class for a
+ * "demo state" chip. Colour is never the only signal: the pill also carries
+ * the provider's clock text ("Q3 5:42") and a "Live:" cue for screen readers. */
+.game-card__topline .status--live,
+.game-hero__meta .status--live {
+  color: var(--red);
+}
+
+.game-card__topline .status--live::before,
+.game-hero__meta .status--live::before {
+  background: currentColor;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 6px;
+  margin-right: 6px;
+  vertical-align: 0.1em;
+  width: 6px;
+}
+
+.freshness-stack {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  justify-content: flex-end;
+}
+
+/* Five tiles when a game is live: the base grid is four tiles plus the link,
+ * and the responsive overrides above it are equal-specificity, so this block
+ * must stay after them. */
+.scoreboard-summary--live {
+  grid-template-columns: repeat(5, 1fr) auto;
+}
+
+@media (max-width: 900px) {
+  .scoreboard-summary--live {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .scoreboard-summary--live {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Two columns hold four tiles; the fifth takes the whole row instead of
+   * sitting alone beside an empty cell, and the right column has no divider. */
+  .scoreboard-summary--live > div:nth-of-type(even) {
+    border-right: 0;
+  }
+
+  .scoreboard-summary--live > div:nth-of-type(5) {
+    border-right: 0;
+    grid-column: 1 / -1;
+  }
+}
+
+/* Motion only for people who have not asked for less of it; the dot is a
+ * static marker otherwise. */
+@keyframes live-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .game-card__topline .status--live::before,
+  .game-hero__meta .status--live::before,
+  .freshness--live > span {
+    animation: live-pulse 1.8s ease-in-out infinite;
+  }
+}

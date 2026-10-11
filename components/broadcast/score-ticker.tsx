@@ -15,16 +15,9 @@ import {
   type BroadcastGame,
   type BroadcastTeam,
 } from "@/lib/homepage";
-import type { NflScoreboardPayload } from "@/lib/nfl-scoreboard";
+import { patchGames } from "@/lib/live-scoreboard";
 import { TeamMark } from "./primitives";
-
-/** Live patch for one dataset game, matched by ESPN event id. */
-interface LivePatch {
-  status: "live" | "final";
-  awayScore: number | null;
-  homeScore: number | null;
-  statusLabel: string | null;
-}
+import { useLiveScoreboard } from "./use-live-scoreboard";
 
 export function ScoreTicker({
   games,
@@ -36,61 +29,14 @@ export function ScoreTicker({
   const rail = useRef<HTMLElement>(null);
   const [playing, setPlaying] = useState(false);
   const [hovered, setHovered] = useState(false);
-  const [live, setLive] = useState<Map<string, LivePatch> | null>(null);
+  const { patches } = useLiveScoreboard();
   const bySlug = new Map(teams.map((team) => [team.slug, team]));
 
-  // Live overlay: the dataset bakes at deploy time; this patches in-progress
-  // scores and fresh finals from /api/nfl-scoreboard between deploys. Event
-  // ids are ESPN ids on both sides, so the match is exact. On any failure the
-  // baked dataset keeps rendering untouched.
-  useEffect(() => {
-    const controller = new AbortController();
-    const load = () =>
-      fetch("/api/nfl-scoreboard", { signal: controller.signal })
-        .then((response) => (response.ok ? response.json() : null))
-        .then((payload: NflScoreboardPayload | null) => {
-          if (!payload || payload.degraded) return;
-          const patches = new Map<string, LivePatch>();
-          for (const event of payload.events) {
-            if (event.state !== "live" && event.state !== "halftime" && event.state !== "final") continue;
-            patches.set(event.id, {
-              status: event.state === "final" ? "final" : "live",
-              awayScore: event.awayScore,
-              homeScore: event.homeScore,
-              statusLabel: event.statusLabel,
-            });
-          }
-          setLive(patches);
-        })
-        .catch(() => {});
-    load();
-    const interval = setInterval(load, 60_000);
-    const onVisible = () => {
-      if (document.visibilityState === "visible") load();
-    };
-    document.addEventListener("visibilitychange", onVisible);
-    return () => {
-      controller.abort();
-      clearInterval(interval);
-      document.removeEventListener("visibilitychange", onVisible);
-    };
-  }, []);
-
-  const patchedGames = useMemo(() => {
-    if (!live || live.size === 0) return games;
-    return games.map((game) => {
-      const patch = live.get(game.id);
-      if (!patch) return game;
-      return {
-        ...game,
-        status: patch.status,
-        statusDetail: patch.statusLabel ?? game.statusDetail,
-        awayScore: patch.awayScore ?? game.awayScore,
-        homeScore: patch.homeScore ?? game.homeScore,
-      };
-    });
-  }, [games, live]);
-
+  // Live overlay: the dataset bakes at deploy time; the shared hook patches
+  // in-progress scores and fresh finals in from /api/nfl-scoreboard between
+  // deploys, matched by ESPN event id. On any failure the baked dataset keeps
+  // rendering untouched.
+  const patchedGames = useMemo(() => patchGames(games, patches), [games, patches]);
 
   useEffect(() => {
     if (
