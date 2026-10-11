@@ -8,9 +8,12 @@ import {
 } from "lucide-react";
 import {
   conferenceLabel,
+  formatPointDifferential,
+  formatRecord,
   playerSlug,
   published,
   teamStyle,
+  topStandings,
   type BroadcastTeam,
   type HomepageData,
   type StadiumPreview,
@@ -18,14 +21,14 @@ import {
 import { BroadcastButton, LaneHeading, TeamMark } from "./primitives";
 
 export function RankingsLane({
-  pollTables,
+  standings,
   teams,
-}: Pick<HomepageData, "pollTables" | "teams">) {
-  const poll = pollTables.find((table) => table.poll === "ap");
+  datasetAsOf,
+}: Pick<HomepageData, "standings" | "teams" | "datasetAsOf">) {
   const bySlug = new Map(teams.map((team) => [team.slug, team]));
-  const rows = [...(poll?.rankings ?? [])]
-    .sort((a, b) => a.rank - b.rank)
-    .slice(0, 5);
+  const rows = topStandings(
+    standings.filter((row) => bySlug.has(row.teamSlug)),
+  );
   return (
     <section className="apex-lane" aria-labelledby="rankings-title">
       <LaneHeading
@@ -38,39 +41,42 @@ export function RankingsLane({
       <div className="apex-rank-board">
         <div className="apex-rank-board-top">
           <strong>NFL STANDINGS</strong>
-          <span>AFC · NFC</span>
+          <span>Record · Point diff</span>
         </div>
         {rows.length === 0 && (
           <p className="apex-empty">Standings publish after Week 1.</p>
         )}
         {rows.map((row) => {
-          const team = bySlug.get(row.team_slug ?? "");
+          const team = bySlug.get(row.teamSlug);
+          if (!team) return null;
           return (
             <a
               className="apex-rank-row"
-              href={team ? `/teams/${team.slug}` : "/rankings"}
-              key={row.rank}
+              href={`/teams/${team.slug}`}
+              key={row.teamSlug}
             >
               <span className="apex-rank-number">{row.rank}</span>
-              {team && <TeamMark team={team} size="sm" />}
+              <TeamMark team={team} size="sm" />
               <span className="apex-rank-name">
-                <strong>{team?.shortName ?? row.team}</strong>
-                <small>
-                  {team ? conferenceLabel(team.conference) : "Not published"}
-                </small>
+                <strong>{team.shortName}</strong>
+                <small>{row.division || conferenceLabel(team.conference)}</small>
               </span>
-              <span className="apex-rank-record">{published(row.record)}</span>
+              <span className="apex-rank-record">
+                <span className="sr-only">Record </span>
+                {formatRecord(row)}
+              </span>
               <strong className="apex-rank-points">
-                {row.points == null
-                  ? "Not published"
-                  : row.points.toLocaleString("en-US")}
+                <span className="sr-only">Point differential </span>
+                {formatPointDifferential(row.pointDifferential)}
               </strong>
             </a>
           );
         })}
       </div>
       <p className="apex-data-note">
-        Released {poll?.release_date ?? "Not published"}.
+        Top 5 by win percentage, then point differential; a tie counts as half
+        a win. Records are tallied from final scores in the ESPN NFL schedule
+        data · As of {datasetAsOf}. Not official seeding.
       </p>
     </section>
   );

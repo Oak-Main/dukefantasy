@@ -9,7 +9,7 @@
  * arrays / null — the components already handle graceful empty states.
  */
 import nfl from "./nfl-generated.ts";
-import type { Game, GameStatus, Stadium, Team } from "./types.ts";
+import type { Game, GameStatus, Stadium, Team, TeamStanding } from "./types.ts";
 
 /* ---------------------------------------------------------------- helpers */
 
@@ -71,6 +71,22 @@ export const teams: Team[] = nflTeams.map((team) => {
 });
 
 const teamBySlug = new Map(teams.map((t) => [t.slug, t]));
+
+/** Raw tallies behind `Team.record`, kept numeric so the homepage can rank by
+ * win percentage and point differential. A team with no standings row reads
+ * 0-0 and is left out of rankings rather than guessed at. */
+export const standings: TeamStanding[] = nflTeams.map((team) => {
+  const s = standingsBySlug.get(team.slug);
+  return {
+    teamSlug: team.slug,
+    division: team.division,
+    wins: s?.wins ?? 0,
+    losses: s?.losses ?? 0,
+    ties: s?.ties ?? 0,
+    pointsFor: s?.pf ?? 0,
+    pointsAgainst: s?.pa ?? 0,
+  };
+});
 
 export function getTeamBySlug(slug: string): Team | undefined {
   return teamBySlug.get(slug);

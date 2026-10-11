@@ -23,3 +23,4 @@
 | Replay/shadow pilot | Contracted provider replay and live comparison | Future provider adapters, D1/R2/Queue bindings, pilot artifacts | Blocked: contract/credentials |
 | Public fixture URL | CFB Apex branding, Cloudflare Worker config, apex/`www` routes, noindex and live kill switches | `wrangler.deploy.jsonc`, Worker redirect, `docs/DEPLOYMENT_EVIDENCE.md` | Complete |
 | Public live-data URL | Licensed, tested, staffed, legal-approved, explicitly authorized release | Public launch runbook and final release evidence | Not authorized |
+| NFL homepage league picture and marquee | `topStandings` and `featuredGame` in `lib/homepage.ts`, `standings` in `lib/cfb-dataset.ts`, `RankingsLane`, `MarqueeGame`, `WeekScoreboard`, dataset builder window and `WSH` fixes | `tests/homepage.test.ts`, `npm run dataset:verify` (32/32 against ESPN official standings), rendered-HTML and browser check | Complete (kickoff-clock labelling tracked as D-018) |

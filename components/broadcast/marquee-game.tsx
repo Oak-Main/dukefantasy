@@ -109,8 +109,8 @@ export function MarqueeGame({
           <MapPin size={16} aria-hidden="true" />
           {venue || game.venue || "Venue not published"}
         </span>
-        <a href="/rankings">
-          Rankings: AP preseason
+        <a href="/conferences">
+          Divisions &amp; records
           <ArrowUpRight size={15} aria-hidden="true" />
         </a>
       </div>
