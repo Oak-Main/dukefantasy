@@ -1,47 +1,25 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import type { NflScoreboardPayload } from "@/lib/nfl-scoreboard";
+import { useMemo } from "react";
 import { LaneHeading } from "./primitives";
+import { useLiveScoreboard } from "./use-live-scoreboard";
 
 /**
  * Week-so-far finals rail for the homepage. Reads the /api/nfl-scoreboard
- * live feed; degrades to nothing (hidden) when the feed is missing,
- * degraded, or has no finals yet — the homepage never shows an error surface
- * for live data. Port of the CFB Apex finals strip onto the NFL feed.
+ * live feed through the shared hook (one poll a minute for the whole page);
+ * degrades to nothing (hidden) until the feed has answered, and keeps the last
+ * good answer through a later failure. The homepage never shows an error
+ * surface for live data. Port of the CFB Apex finals strip onto the NFL feed.
  */
 export function FinalsStrip({ referenceDate }: { referenceDate: string }) {
-  const [payload, setPayload] = useState<NflScoreboardPayload | null>(null);
-
-  useEffect(() => {
-    const controller = new AbortController();
-    const load = () =>
-      fetch("/api/nfl-scoreboard", { signal: controller.signal })
-        .then((response) => (response.ok ? response.json() : null))
-        .then((data: NflScoreboardPayload | null) => setPayload(data))
-        .catch(() => {});
-    load();
-    // The route caches upstream for 60s; polling here keeps in-flight scores
-    // moving on an open tab without leaning on the upstream between ticks.
-    const interval = setInterval(load, 60_000);
-    const onVisible = () => {
-      if (document.visibilityState === "visible") load();
-    };
-    document.addEventListener("visibilitychange", onVisible);
-    return () => {
-      controller.abort();
-      clearInterval(interval);
-      document.removeEventListener("visibilitychange", onVisible);
-    };
-  }, []);
+  const { events } = useLiveScoreboard();
 
   const finals = useMemo(() => {
-    if (!payload || payload.degraded) return [];
     const start = new Date(`${referenceDate.slice(0, 10)}T00:00:00Z`);
     start.setUTCDate(start.getUTCDate() - ((start.getUTCDay() + 6) % 7));
     const end = new Date(start);
     end.setUTCDate(end.getUTCDate() + 7);
-    return payload.events
+    return events
       .filter((event) => {
         const at = new Date(event.utc);
         return (
@@ -54,7 +32,7 @@ export function FinalsStrip({ referenceDate }: { referenceDate: string }) {
         );
       })
       .sort((a, b) => b.utc.localeCompare(a.utc));
-  }, [payload, referenceDate]);
+  }, [events, referenceDate]);
 
   if (finals.length === 0) return null;
 

@@ -8,6 +8,7 @@
  * CFB-specific surfaces (portal, contracts, college ratings) return empty
  * arrays / null — the components already handle graceful empty states.
  */
+import { formatGameResult } from "./live-scoreboard.ts";
 import nfl from "./nfl-generated.ts";
 import type { Game, GameStatus, Stadium, Team, TeamStanding } from "./types.ts";
 
@@ -285,7 +286,10 @@ export function getCoachBySlug(_slug?: string): undefined { return undefined; }
 export function fantasyNotesForTeam(_slug?: string): Array<FantasyNote> { return []; }
 
 export interface TeamScheduleGame {
+  /** Row key, unique within one team's schedule. Not an ESPN id; use `eventId` to match the live feed. */
   id: string;
+  /** ESPN event id (the same id as `Game.id`); the only key the live overlay matches on. */
+  eventId: string | null;
   date: string | null;
   week: number | null;
   opponent: string | null;
@@ -309,10 +313,11 @@ export function getTeamSchedule(slug: string): TeamScheduleGame[] {
     const oppScore = isHome ? g.awayScore : g.homeScore;
     let result: string | null = null;
     if (ownScore !== undefined && oppScore !== undefined) {
-      result = `${ownScore > oppScore ? "W" : ownScore < oppScore ? "L" : "T"} ${ownScore}–${oppScore}`;
+      result = formatGameResult(ownScore, oppScore);
     }
     return {
       id: `${slug}-${g.date.slice(0, 10)}-${i}`,
+      eventId: g.id,
       date: g.date.slice(0, 10),
       week: g.week,
       opponent: opp?.name ?? null,

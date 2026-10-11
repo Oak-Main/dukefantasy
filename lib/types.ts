@@ -66,7 +66,8 @@ export interface TeamStanding {
   pointsAgainst: number;
 }
 
-export type GameStatus = "scheduled" | "final" | "delayed" | "postponed" | "canceled";
+/** "live" is never baked into the snapshot; only the live overlay (lib/live-scoreboard.ts) sets it. */
+export type GameStatus = "scheduled" | "live" | "final" | "delayed" | "postponed" | "canceled";
 
 export interface Game {
   id: string;
