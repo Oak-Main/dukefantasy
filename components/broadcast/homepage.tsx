@@ -66,7 +66,7 @@ export function BroadcastHomepage({
         teams={data.teams}
         referenceDate={data.referenceDate}
       />
-      <FinalsStrip referenceDate={data.referenceDate} />
+      <FinalsStrip games={slate} />
       <div className="apex-intelligence-grid">
         <RankingsLane
           standings={data.standings}

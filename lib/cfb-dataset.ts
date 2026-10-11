@@ -8,6 +8,7 @@
  * CFB-specific surfaces (portal, contracts, college ratings) return empty
  * arrays / null — the components already handle graceful empty states.
  */
+import { easternDay } from "./eastern.ts";
 import { formatGameResult } from "./live-scoreboard.ts";
 import nfl from "./nfl-generated.ts";
 import type { Game, GameStatus, Stadium, Team, TeamStanding } from "./types.ts";
@@ -382,12 +383,7 @@ export function timeEtLabel(timeEt: string | null): string | null {
 
 // "As of" is the Eastern calendar day of the snapshot: a Sunday-night build
 // (UTC already Monday) must not push the whole site's notion of today forward.
-const compiledOnEt = new Intl.DateTimeFormat("en-CA", {
-  timeZone: "America/New_York",
-  year: "numeric",
-  month: "2-digit",
-  day: "2-digit",
-}).format(new Date(nfl.generatedAt));
+const compiledOnEt = easternDay(nfl.generatedAt);
 export const datasetAsOf: string = compiledOnEt;
 export const broadcastAsOf: string = compiledOnEt;
 export const broadcastNote: string =
