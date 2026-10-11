@@ -17,7 +17,9 @@ export type BroadcastTeam = Pick<
 export type BroadcastGame = Pick<
   Game,
   | "id"
+  | "week"
   | "date"
+  | "kickoffUtc"
   | "kickoffLabel"
   | "statusDetail"
   | "awayTeamId"
@@ -94,18 +96,25 @@ export function dateLabel(
   }).format(value);
 }
 
+/** The slate for the NFL week in play on `referenceDate`: every game of the
+ * week that holds the first game on or after that day (else the final week).
+ * A calendar Mon-Sun window cuts the NFL week in half (Monday Night Football
+ * lands in the next window and last week's Monday game leaks in). */
 export function weekGames(
   games: readonly BroadcastGame[],
   referenceDate: string,
 ): BroadcastGame[] {
-  const start = new Date(`${referenceDate.slice(0, 10)}T00:00:00Z`);
-  if (!Number.isFinite(start.getTime())) return [];
-  start.setUTCDate(start.getUTCDate() - ((start.getUTCDay() + 6) % 7));
-  const end = new Date(start);
-  end.setUTCDate(end.getUTCDate() + 7);
-  return games
-    .filter((game) => new Date(game.date) >= start && new Date(game.date) < end)
-    .sort((a, b) => a.date.localeCompare(b.date));
+  const reference = referenceDate.slice(0, 10);
+  if (!Number.isFinite(new Date(`${reference}T00:00:00Z`).getTime())) return [];
+  const ordered = [...games].sort(
+    (a, b) =>
+      a.date.localeCompare(b.date) ||
+      (a.kickoffUtc ?? "").localeCompare(b.kickoffUtc ?? "") ||
+      a.id.localeCompare(b.id),
+  );
+  const upcoming = ordered.find((game) => game.date.slice(0, 10) >= reference);
+  const week = upcoming?.week ?? ordered.at(-1)?.week;
+  return week == null ? [] : ordered.filter((game) => game.week === week);
 }
 
 type RecordTally = Pick<TeamStanding, "wins" | "losses" | "ties">;
@@ -204,14 +213,13 @@ function combinedWinPercentage(a: BroadcastTeam, b: BroadcastTeam): number {
   return games === 0 ? 0.5 : points / (2 * games);
 }
 
-/** Kickoff clock exactly as the dataset labels it, in minutes after midnight;
- * -1 when no clock is published. Every game shares the label's zone, so the
- * value orders games within a day even where the label's zone is imperfect. */
-function kickoffMinutes(game: BroadcastGame): number {
-  const match = /(\d{1,2}):(\d{2})\s*([AP])M/i.exec(game.kickoffLabel);
-  if (!match) return -1;
-  const hours = (Number(match[1]) % 12) + (match[3].toUpperCase() === "P" ? 12 : 0);
-  return hours * 60 + Number(match[2]);
+/** Kickoff instant in epoch milliseconds. Unflexed "Time TBD" slots carry a
+ * placeholder at the start of their Eastern day, so they order before any real
+ * kickoff that day and never outrank one; a game with no instant at all falls
+ * back to its Eastern day's 17:00Z anchor. */
+function kickoffInstant(game: BroadcastGame): number {
+  const instant = Date.parse(game.kickoffUtc ?? game.date);
+  return Number.isFinite(instant) ? instant : Number.MIN_SAFE_INTEGER;
 }
 
 /** The week's marquee game: the strongest matchup by combined record among
@@ -229,8 +237,7 @@ export function featuredGame(
     game: BroadcastGame;
     combined: number;
     national: boolean;
-    day: string;
-    minutes: number;
+    kickoff: number;
   }> = [];
   for (const game of games) {
     if (
@@ -246,16 +253,14 @@ export function featuredGame(
       game,
       combined: combinedWinPercentage(away, home),
       national: isNationalWindow(game.broadcast),
-      day: game.date.slice(0, 10),
-      minutes: kickoffMinutes(game),
+      kickoff: kickoffInstant(game),
     });
   }
   candidates.sort(
     (a, b) =>
       b.combined - a.combined ||
       Number(b.national) - Number(a.national) ||
-      b.day.localeCompare(a.day) ||
-      b.minutes - a.minutes ||
+      b.kickoff - a.kickoff ||
       a.game.id.localeCompare(b.game.id),
   );
   return candidates[0]?.game;

@@ -71,7 +71,10 @@ export type GameStatus = "scheduled" | "final" | "delayed" | "postponed" | "canc
 export interface Game {
   id: string;
   week: number;
+  /** ET calendar day anchored at 17:00Z -- group and compare by `date.slice(0, 10)`. */
   date: string;
+  /** Exact kickoff instant (UTC, ISO-8601) when the provider publishes one; orders games within a day. */
+  kickoffUtc?: string;
   kickoffLabel: string;
   status: GameStatus;
   statusDetail: string;

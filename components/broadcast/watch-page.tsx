@@ -96,8 +96,10 @@ function initialWeek(
 	weeks: readonly number[],
 	asOf: string | null,
 ) {
+	// On or after the as-of day: on game day (and on the final Sunday) the
+	// current week is still the one to show.
 	const nextGame = asOf
-		? rows.find((row) => row.date > asOf.slice(0, 10))
+		? rows.find((row) => row.date >= asOf.slice(0, 10))
 		: undefined;
 	return nextGame?.week ?? weeks.at(-1) ?? 1;
 }

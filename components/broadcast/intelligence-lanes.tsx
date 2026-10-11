@@ -44,7 +44,10 @@ export function RankingsLane({
           <span>Record · Point diff</span>
         </div>
         {rows.length === 0 && (
-          <p className="apex-empty">Standings publish after Week 1.</p>
+          <p className="apex-empty">
+            No games are final yet. Team records by division are on the{" "}
+            <a href="/conferences">Divisions</a> page.
+          </p>
         )}
         {rows.map((row) => {
           const team = bySlug.get(row.teamSlug);

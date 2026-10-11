@@ -12,11 +12,102 @@ import { fileURLToPath } from "node:url";
 const root = fileURLToPath(new URL("..", import.meta.url));
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/nfl";
 
-async function fetchJson(url) {
-  const res = await fetch(url, { headers: { accept: "application/json" } });
-  if (!res.ok) throw new Error(`${url}: ${res.status}`);
-  return res.json();
+/** Retrying fetch: a transient ESPN hiccup must not silently drop data from the
+ * snapshot (the old per-day `catch {}` shipped a partial schedule unnoticed). */
+async function fetchJson(url, attempts = 4) {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const res = await fetch(url, {
+        headers: { accept: "application/json" },
+        signal: AbortSignal.timeout(20_000),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return await res.json();
+    } catch (error) {
+      lastError = error;
+      if (attempt < attempts) await new Promise((resolve) => setTimeout(resolve, 500 * 2 ** (attempt - 1)));
+    }
+  }
+  throw new Error(`${url}: ${lastError?.message ?? lastError}`);
 }
+
+/* ---- Eastern-time helpers -------------------------------------------------
+ * ESPN serves kickoff instants in UTC. The site speaks Eastern: ESPN indexes a
+ * game under its ET calendar day (an 8:20 PM ET Sunday kickoff is 00:20Z
+ * Monday), and every consumer regex-extracts "h:mm AM|PM ET" from
+ * kickoffLabel. Convert with the IANA zone so EDT/EST is always right. */
+const ET_ZONE = "America/New_York";
+const etClock = new Intl.DateTimeFormat("en-US", {
+  timeZone: ET_ZONE,
+  weekday: "short",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "numeric",
+  minute: "2-digit",
+  hour12: true,
+});
+const etLong = new Intl.DateTimeFormat("en-US", {
+  timeZone: ET_ZONE,
+  weekday: "short",
+  month: "long",
+  day: "numeric",
+  hour: "numeric",
+  minute: "2-digit",
+  hour12: true,
+  timeZoneName: "short",
+});
+
+function partsOf(formatter, iso) {
+  return Object.fromEntries(formatter.formatToParts(new Date(iso)).map((p) => [p.type, p.value]));
+}
+
+function etFields(iso) {
+  const p = partsOf(etClock, iso);
+  return {
+    weekday: p.weekday,
+    date: `${p.year}-${p.month}-${p.day}`,
+    time: `${p.hour}:${p.minute} ${String(p.dayPeriod).toUpperCase()}`,
+  };
+}
+
+function ordinal(n) {
+  const v = n % 100;
+  if (v >= 11 && v <= 13) return `${n}th`;
+  return `${n}${{ 1: "st", 2: "nd", 3: "rd" }[n % 10] ?? "th"}`;
+}
+
+/** ESPN's own pre-game detail format ("Sun, October 11th at 1:00 PM EDT"),
+ * synthesized from the kickoff instant. Used for games that were already in
+ * progress when the snapshot was compiled, so a baked "Halftime" can never
+ * outlive the halftime. */
+function scheduledDetail(iso) {
+  const p = partsOf(etLong, iso);
+  return `${p.weekday}, ${p.month} ${ordinal(Number(p.day))} at ${p.hour}:${p.minute} ${String(p.dayPeriod).toUpperCase()} ${p.timeZoneName}`;
+}
+
+/** The watch board orders networks by exact (case-sensitive) name; ESPN has
+ * flipped "FOX"/"Fox" between pulls, so pin the canonical spellings. */
+const NETWORK_CANON = new Map([
+  ["fox", "FOX"],
+  ["cbs", "CBS"],
+  ["nbc", "NBC"],
+  ["abc", "ABC"],
+  ["espn", "ESPN"],
+  ["espn2", "ESPN2"],
+]);
+function normalizeNetwork(name) {
+  const trimmed = typeof name === "string" ? name.trim() : "";
+  if (!trimmed) return null;
+  return NETWORK_CANON.get(trimmed.toLowerCase()) ?? trimmed;
+}
+
+const parseScore = (value) => {
+  if (value == null || value === "") return null;
+  const n = Number.parseInt(String(value), 10);
+  return Number.isFinite(n) ? n : null;
+};
 
 function teamSlug(name) {
   return name.toLowerCase().replace(/[^a-z0-9 ]/g, "").trim().replaceAll(" ", "-");
@@ -108,7 +199,9 @@ for (const et of espnTeams) {
         freshness: "current",
       },
     });
-  } catch { /* skip team on fetch error */ }
+  } catch (error) {
+    console.warn(`  venue fetch failed for ${et.displayName} — skipped (${error.message})`);
+  }
 }
 console.log(`  ${stadiums.length} stadiums (ESPN venue facts)`);
 
@@ -130,53 +223,82 @@ for (const et of espnTeams) {
 console.log("  logos saved to public/logos/");
 
 // ---------- Full Season Schedule ----------
-console.log("Fetching full season schedule...");
+// Keyed by ESPN's own regular-season weeks (seasontype=2&week=N) rather than a
+// hand-typed date window: the old Sep-10..Jan-5 UTC window silently dropped the
+// Week 1 Wednesday opener and all of Week 18 (17 of 272 games), and ESPN's
+// event.week.number replaces the date-bucket week heuristic.
+console.log("Fetching full season schedule (ESPN week-keyed)...");
+const GAMES_PER_TEAM = 17;
+const seed = await fetchJson(`${ESPN}/scoreboard`);
+const seasonYear = seed.season?.year ?? 2026;
+const currentWeek = Number.isInteger(seed.week?.number) ? seed.week.number : null;
+const regularSeason = seed.leagues?.[0]?.calendar?.find((c) => String(c.value) === "2");
+const weekNumbers = (regularSeason?.entries ?? []).map((e) => Number(e.value)).filter(Number.isInteger);
+if (weekNumbers.length === 0) throw new Error("ESPN calendar returned no regular-season weeks");
+
+const weekDocs = await Promise.all(
+  weekNumbers.map(async (week) => ({
+    week,
+    doc: await fetchJson(`${ESPN}/scoreboard?dates=${seasonYear}&seasontype=2&week=${week}&limit=100`),
+  })),
+);
+
 const schedule = [];
-// `start` anchors week numbering (Thursday of week 1, 00:00Z). The fetch loop
-// begins a day earlier because ESPN indexes games by ET day and the 2026
-// kickoff game (Wed Sep 9, 8:20 PM ET) would otherwise be dropped, which
-// silently skews both teams' standings.
-const start = new Date("2026-09-10");
-const fetchStart = new Date("2026-09-09");
-const end = new Date("2027-01-05");
-for (let d = new Date(fetchStart); d <= end; d.setDate(d.getDate() + 1)) {
-  const ymd = d.toISOString().slice(0, 10).replaceAll("-", "");
-  try {
-    const doc = await fetchJson(`${ESPN}/scoreboard?dates=${ymd}`);
-    for (const ev of doc.events ?? []) {
-      const comp = ev.competitions?.[0];
-      if (!comp) continue;
-      const away = comp.competitors?.find((c) => c.homeAway === "away");
-      const home = comp.competitors?.find((c) => c.homeAway === "home");
-      if (!away || !home) continue;
-      const dt = new Date(ev.date);
-      const hours = dt.getUTCHours();
-      const timeEt = hours >= 12
-        ? `${hours - 12 || 12}:${String(dt.getUTCMinutes()).padStart(2, "0")} PM ET`
-        : `${hours}:${String(dt.getUTCMinutes()).padStart(2, "0")} AM ET`;
-      const daysFromStart = Math.floor((dt - start) / 86400000);
-      const week = Math.min(18, Math.max(1, Math.floor(daysFromStart / 7) + 1));
-      schedule.push({
-        id: ev.id,
-        date: ev.date.slice(0, 10),
-        week,
-        kickoffLabel: `${dt.toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" })} · ${ev.date.slice(0, 10)} · ${timeEt}`,
-        awaySlug: teamSlug(away.team.displayName),
-        homeSlug: teamSlug(home.team.displayName),
-        awayAbbr: away.team.abbreviation,
-        homeAbbr: home.team.abbreviation,
-        status: ev.status?.type?.state === "in" ? "in_progress" : ev.status?.type?.state === "post" ? "final" : "scheduled",
-        statusDetail: ev.status?.type?.detail ?? "Scheduled",
-        awayScore: away.score ? parseInt(away.score) : null,
-        homeScore: home.score ? parseInt(home.score) : null,
-        broadcast: comp.broadcasts?.[0]?.names?.[0] ?? null,
-        venue: comp.venue?.fullName ?? "",
-      });
-    }
-  } catch { /* skip empty days */ }
+for (const { week, doc } of weekDocs) {
+  for (const ev of doc.events ?? []) {
+    const comp = ev.competitions?.[0];
+    if (!comp) continue;
+    const away = comp.competitors?.find((c) => c.homeAway === "away");
+    const home = comp.competitors?.find((c) => c.homeAway === "home");
+    if (!away || !home) continue;
+
+    const et = etFields(ev.date);
+    const timeTbd = comp.timeValid === false; // unflexed slots carry a placeholder instant
+    const type = ev.status?.type ?? {};
+    const status =
+      type.state === "in" ? "in_progress" : type.state === "post" && type.completed !== false ? "final" : "scheduled";
+
+    schedule.push({
+      id: ev.id,
+      // ET calendar day — the day ESPN indexes the game under (SNF is Sunday, not Monday).
+      date: et.date,
+      week: Number.isInteger(ev.week?.number) ? ev.week.number : week,
+      kickoffUtc: ev.date,
+      timeTbd,
+      kickoffLabel: timeTbd ? `${et.weekday} · ${et.date} · Time TBD (ET)` : `${et.weekday} · ${et.date} · ${et.time} ET`,
+      awaySlug: teamSlug(away.team.displayName),
+      homeSlug: teamSlug(home.team.displayName),
+      awayAbbr: away.team.abbreviation,
+      homeAbbr: home.team.abbreviation,
+      status,
+      // A game live at compile time must not freeze "Halftime"/"Q3" into a static page.
+      statusDetail: status === "in_progress" ? scheduledDetail(ev.date) : (type.detail ?? "Scheduled"),
+      // Scores are baked for finals only; live scores arrive through /api/nfl-scoreboard.
+      awayScore: status === "final" ? parseScore(away.score) : null,
+      homeScore: status === "final" ? parseScore(home.score) : null,
+      broadcast: normalizeNetwork(comp.broadcasts?.[0]?.names?.[0]),
+      venue: comp.venue?.fullName ?? "",
+    });
+  }
 }
-schedule.sort((a, b) => a.date.localeCompare(b.date));
-console.log(`  ${schedule.length} games fetched`);
+schedule.sort((a, b) => a.kickoffUtc.localeCompare(b.kickoffUtc) || a.id.localeCompare(b.id));
+console.log(`  ${schedule.length} games fetched across ${weekNumbers.length} weeks (ESPN current week: ${currentWeek ?? "n/a"})`);
+
+// Fail closed on a partial schedule: a stale-but-complete deploy beats a fresh-but-truncated one.
+{
+  const problems = [];
+  const expectedGames = (teams.length * GAMES_PER_TEAM) / 2;
+  if (schedule.length !== expectedGames) problems.push(`expected ${expectedGames} regular-season games, got ${schedule.length}`);
+  if (new Set(schedule.map((g) => g.id)).size !== schedule.length) problems.push("duplicate ESPN event ids");
+  const perTeam = new Map();
+  for (const g of schedule) for (const slug of [g.awaySlug, g.homeSlug]) perTeam.set(slug, (perTeam.get(slug) ?? 0) + 1);
+  for (const t of teams) {
+    const n = perTeam.get(t.slug) ?? 0;
+    if (n !== GAMES_PER_TEAM) problems.push(`${t.slug}: ${n} games (expected ${GAMES_PER_TEAM})`);
+  }
+  for (const slug of perTeam.keys()) if (!teams.some((t) => t.slug === slug)) problems.push(`schedule references unknown team ${slug}`);
+  if (problems.length) throw new Error(`Schedule integrity check failed:\n  - ${problems.join("\n  - ")}`);
+}
 
 // ---------- Standings ----------
 const standings = {};
@@ -270,7 +392,17 @@ if (existsSync(DESK_PATH)) {
 }
 
 // ---------- Write ----------
-const payload = { teams, schedule, standings, stadiums, espnInjuries, injuryResearch, fantasyDesk, generatedAt: new Date().toISOString() };
+const payload = {
+  season: { year: seasonYear, currentWeek, weeks: weekNumbers.length },
+  teams,
+  schedule,
+  standings,
+  stadiums,
+  espnInjuries,
+  injuryResearch,
+  fantasyDesk,
+  generatedAt: new Date().toISOString(),
+};
 const target = join(root, "lib", "nfl-generated.ts");
 writeFileSync(target,
   `// GENERATED by scripts/build-nfl-dataset.mjs from ESPN's free NFL API\n` +

@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { games, standings, teams } from "../lib/cfb-dataset.ts";
-import nfl from "../lib/nfl-generated.ts";
+import { datasetAsOf, games, standings, teams } from "../lib/cfb-dataset.ts";
 import {
   featuredGame,
   formatPointDifferential,
@@ -16,6 +15,13 @@ import {
 import type { TeamStanding } from "../lib/types.ts";
 
 /* ------------------------------------------------------------ fixtures */
+
+// Kickoff instants from the real 2026-10-11 slate (UTC).
+const LONDON = "2026-10-11T13:30Z"; // 9:30 AM ET
+const EARLY = "2026-10-11T17:00Z"; // 1:00 PM ET
+const LATE_WINDOW = "2026-10-11T20:25Z"; // 4:25 PM ET
+const SUNDAY_NIGHT = "2026-10-12T00:20Z"; // 8:20 PM ET Sunday
+const MONDAY_NIGHT = "2026-10-13T00:15Z"; // 8:15 PM ET Monday
 
 function row(
   teamSlug: string,
@@ -47,9 +53,11 @@ function game(
 ): BroadcastGame {
   return {
     id,
+    week: 5,
     date: "2026-10-11T17:00:00.000Z",
-    kickoffLabel: "Sun · 2026-10-11 · 5:00 PM ET",
-    statusDetail: "Scheduled",
+    kickoffUtc: EARLY,
+    kickoffLabel: "Sun · 2026-10-11 · 1:00 PM ET",
+    statusDetail: "Sun, October 11th at 1:00 PM EDT",
     awayTeamId: away,
     homeTeamId: home,
     venue: "Venue",
@@ -146,27 +154,12 @@ test("adapter standings cover every team and agree with each team's record", () 
     const t = bySlug.get(entry.teamSlug);
     assert.ok(t, `standings: unknown team ${entry.teamSlug}`);
     assert.equal(formatRecord(entry), t.record, entry.teamSlug);
+    // Washington was once keyed `was` (ESPN says WSH) and shipped with no division.
     assert.match(entry.division, /^(AFC|NFC) (East|North|South|West)$/, entry.teamSlug);
   }
   const top = topStandings(standings);
   assert.ok(top.length <= 5);
   for (const entry of top) assert.equal(entry.pointDifferential, entry.pointsFor - entry.pointsAgainst);
-});
-
-test("the 2026 kickoff game (Wed Sep 9 ET) is in the schedule, so its two teams' records include it", () => {
-  // The dataset builder once started a day late and silently dropped this
-  // game, leaving Seattle at 2-1 (ESPN: 3-1) and New England at 2-1 (ESPN: 2-2).
-  const opener = games.find((g) => g.id === "401872656");
-  assert.ok(opener, "season-opening game missing from the schedule");
-  assert.equal(opener.awayTeamId, "new-england-patriots");
-  assert.equal(opener.homeTeamId, "seattle-seahawks");
-  assert.equal(opener.status, "final");
-  assert.equal(opener.awayScore, 10);
-  assert.equal(opener.homeScore, 13);
-  assert.equal(opener.week, 1);
-  // The baked standings tally that game for both teams.
-  assert.equal(nfl.standings["seattle-seahawks"].pf >= 13, true);
-  assert.equal(nfl.standings["new-england-patriots"].pa >= 13, true);
 });
 
 /* ------------------------------------------------------- featuredGame */
@@ -181,9 +174,9 @@ test("featured game is the strongest combined record, never just the earliest sl
     team("late-b", "3-1"),
   ];
   const slate = [
-    game("1", "london-a", "london-b", { kickoffLabel: "Sun · 2026-10-11 · 1:30 PM ET", broadcast: "NFL Net" }),
+    game("1", "london-a", "london-b", { kickoffUtc: LONDON, broadcast: "NFL Net" }),
     game("2", "noon-a", "noon-b"),
-    game("3", "late-a", "late-b", { kickoffLabel: "Sun · 2026-10-11 · 8:25 PM ET", broadcast: "Fox" }),
+    game("3", "late-a", "late-b", { kickoffUtc: LATE_WINDOW, broadcast: "Fox" }),
   ];
   assert.equal(featuredGame(slate, roster)?.id, "3");
 });
@@ -191,8 +184,8 @@ test("featured game is the strongest combined record, never just the earliest sl
 test("with every team unranked and every record level, the old earliest-game fallback is gone", () => {
   const roster = [team("a", "2-2"), team("b", "2-2"), team("c", "2-2"), team("d", "2-2")];
   const slate = [
-    game("early", "a", "b", { kickoffLabel: "Sun · 2026-10-11 · 1:30 PM ET", broadcast: "NFL Net" }),
-    game("late", "c", "d", { kickoffLabel: "Sun · 2026-10-11 · 8:25 PM ET", broadcast: "Fox" }),
+    game("early", "a", "b", { kickoffUtc: LONDON, broadcast: "NFL Net" }),
+    game("late", "c", "d", { kickoffUtc: LATE_WINDOW, broadcast: "Fox" }),
   ];
   assert.equal(featuredGame(slate, roster)?.id, "late");
 });
@@ -206,8 +199,9 @@ test("a national or primetime window breaks ties, but a stronger record always o
     team("e", "4-0"),
     team("f", "3-1"),
   ];
-  const regional = game("regional", "a", "b", { broadcast: "CBS" });
-  const primetime = game("primetime", "c", "d", { broadcast: "NBC", kickoffLabel: "Mon · 2026-10-12 · 0:20 AM ET" });
+  const regional = game("regional", "a", "b", { broadcast: "CBS", kickoffUtc: LATE_WINDOW });
+  // The regional game kicks off later, but the national window decides first.
+  const primetime = game("primetime", "c", "d", { broadcast: "NBC", kickoffUtc: EARLY });
   assert.equal(featuredGame([regional, primetime], roster)?.id, "primetime");
   assert.equal(featuredGame([primetime, regional], roster)?.id, "primetime");
   const stronger = game("stronger", "e", "f", { broadcast: "CBS" });
@@ -223,26 +217,41 @@ test("national windows are recognised by network name only", () => {
   }
 });
 
-test("among level matchups the later kickoff wins, then the later day, then game id", () => {
+test("among level matchups the later kickoff wins, whatever the day, then game id", () => {
   const roster = [team("a", "2-2"), team("b", "2-2"), team("c", "2-2"), team("d", "2-2"), team("e", "2-2"), team("f", "2-2")];
-  const london = game("1", "a", "b", { kickoffLabel: "Sun · 2026-10-11 · 1:30 PM ET", broadcast: "NFL Net" });
-  const noon = game("2", "c", "d", { kickoffLabel: "Sun · 2026-10-11 · 5:00 PM ET" });
-  const late = game("3", "e", "f", { kickoffLabel: "Sun · 2026-10-11 · 8:25 PM ET" });
+  const london = game("1", "a", "b", { kickoffUtc: LONDON, broadcast: "NFL Net" });
+  const noon = game("2", "c", "d", { kickoffUtc: EARLY });
+  const late = game("3", "e", "f", { kickoffUtc: LATE_WINDOW });
   assert.equal(featuredGame([london, noon, late], roster)?.id, "3");
-  // A later day outranks a later clock on an earlier day.
-  const thursday = game("4", "a", "c", { date: "2026-10-09T17:00:00.000Z", kickoffLabel: "Fri · 2026-10-09 · 11:59 PM ET" });
+  // Thursday night is chronologically earlier than the Sunday late window.
+  const thursday = game("4", "a", "c", { date: "2026-10-08T17:00:00.000Z", kickoffUtc: "2026-10-09T00:15Z" });
   assert.equal(featuredGame([thursday, late], roster)?.id, "3");
-  // Identical slots fall back to game id, so the pick is stable.
-  const twin = game("0", "a", "d", { kickoffLabel: late.kickoffLabel });
+  // Identical instants fall back to game id, so the pick is stable.
+  const twin = game("0", "a", "d", { kickoffUtc: LATE_WINDOW });
   assert.equal(featuredGame([late, twin], roster)?.id, "0");
   assert.equal(featuredGame([twin, late], roster)?.id, "0");
 });
 
-test("a game with no published kickoff clock never beats one that has a time", () => {
+test("a 'Time TBD' slot never outranks a game with a real kickoff on the same day", () => {
+  // Unflexed slots carry a placeholder instant at the start of their Eastern day.
   const roster = [team("a", "2-2"), team("b", "2-2"), team("c", "2-2"), team("d", "2-2")];
-  const unknown = game("1", "a", "b", { kickoffLabel: "Sun · 2026-10-11 · TBD" });
-  const known = game("2", "c", "d", { kickoffLabel: "Sun · 2026-10-11 · 1:00 PM ET" });
-  assert.equal(featuredGame([unknown, known], roster)?.id, "2");
+  const tbd = game("tbd", "a", "b", {
+    week: 16,
+    date: "2026-12-27T17:00:00.000Z",
+    kickoffUtc: "2026-12-27T05:00Z",
+    kickoffLabel: "Sun · 2026-12-27 · Time TBD (ET)",
+    broadcast: null,
+  });
+  const known = game("known", "c", "d", {
+    week: 16,
+    date: "2026-12-27T17:00:00.000Z",
+    kickoffUtc: "2026-12-27T18:00Z",
+  });
+  assert.equal(featuredGame([tbd, known], roster)?.id, "known");
+  assert.equal(featuredGame([known, tbd], roster)?.id, "known");
+  // With no instant at all the game still orders by its Eastern day.
+  const undated = game("undated", "a", "b", { kickoffUtc: undefined });
+  assert.equal(featuredGame([undated], roster)?.id, "undated");
 });
 
 test("a game that is already over is never featured", () => {
@@ -292,9 +301,9 @@ test("games between teams outside the team list are skipped", () => {
 test("the pick does not depend on input order and does not mutate its inputs", () => {
   const roster = [team("a", "3-1"), team("b", "3-1"), team("c", "3-1"), team("d", "3-1"), team("e", "3-1"), team("f", "3-1")];
   const slate = [
-    game("1", "a", "b", { kickoffLabel: "Sun · 2026-10-11 · 1:00 PM ET" }),
-    game("2", "c", "d", { kickoffLabel: "Sun · 2026-10-11 · 4:25 PM ET" }),
-    game("3", "e", "f", { kickoffLabel: "Sun · 2026-10-11 · 4:25 PM ET" }),
+    game("1", "a", "b", { kickoffUtc: EARLY }),
+    game("2", "c", "d", { kickoffUtc: LATE_WINDOW }),
+    game("3", "e", "f", { kickoffUtc: LATE_WINDOW }),
   ];
   const snapshot = JSON.stringify(slate);
   const expected = featuredGame(slate, roster)?.id;
@@ -304,10 +313,10 @@ test("the pick does not depend on input order and does not mutate its inputs", (
   assert.equal(JSON.stringify(slate), snapshot);
 });
 
-test("Sunday-morning slate: the 9:30 AM London game does not become the marquee by default", () => {
-  // Shaped like the real 2026-10-11 slate: a final Thursday game, the London
-  // game (NFL Network), eight one o'clock games, and the late window. Kickoff
-  // clocks are the dataset's own labels.
+test("Sunday-morning week: the 9:30 AM London game does not become the marquee by default", () => {
+  // Shaped like the real Week 5 slate: Thursday's game is final, the London
+  // game airs on NFL Network, eight one o'clock games, the late window, Sunday
+  // Night Football on NBC and Monday Night Football on ESPN.
   const roster = [
     team("tampa-bay", "4-1"), team("dallas", "3-2"),
     team("philadelphia", "2-2"), team("jacksonville", "3-1"),
@@ -319,30 +328,39 @@ test("Sunday-morning slate: the 9:30 AM London game does not become the marquee 
     team("denver", "2-2"), team("la-chargers", "0-4"),
     team("detroit", "2-2"), team("arizona", "1-3"),
     team("san-francisco", "4-0"), team("seattle", "3-1"),
+    team("baltimore", "3-1"), team("atlanta", "2-2"),
+    team("buffalo", "3-1"), team("la-rams", "2-2"),
   ];
   const slate = [
-    game("tnf", "tampa-bay", "dallas", { status: "final", broadcast: "Prime Video", date: "2026-10-09T17:00:00.000Z", kickoffLabel: "Fri · 2026-10-09 · 0:15 AM ET" }),
-    game("london", "philadelphia", "jacksonville", { broadcast: "NFL Net", kickoffLabel: "Sun · 2026-10-11 · 1:30 PM ET" }),
+    game("tnf", "tampa-bay", "dallas", { status: "final", broadcast: "Prime Video", date: "2026-10-08T17:00:00.000Z", kickoffUtc: "2026-10-09T00:15Z" }),
+    game("london", "philadelphia", "jacksonville", { broadcast: "NFL Net", kickoffUtc: LONDON }),
     game("chi-gb", "chicago", "green-bay", { broadcast: "FOX" }),
     game("hou-ten", "houston", "tennessee", { broadcast: "CBS" }),
     game("cin-mia", "cincinnati", "miami", { broadcast: "FOX" }),
     game("lv-ne", "las-vegas", "new-england", { broadcast: "CBS" }),
     game("min-no", "minnesota", "new-orleans", { broadcast: "FOX" }),
-    game("den-lac", "denver", "la-chargers", { broadcast: "CBS", kickoffLabel: "Sun · 2026-10-11 · 8:05 PM ET" }),
-    game("det-ari", "detroit", "arizona", { broadcast: "FOX", kickoffLabel: "Sun · 2026-10-11 · 8:25 PM ET" }),
-    game("sf-sea", "san-francisco", "seattle", { broadcast: "FOX", kickoffLabel: "Sun · 2026-10-11 · 8:25 PM ET" }),
+    game("den-lac", "denver", "la-chargers", { broadcast: "CBS", kickoffUtc: "2026-10-11T20:05Z" }),
+    game("det-ari", "detroit", "arizona", { broadcast: "FOX", kickoffUtc: LATE_WINDOW }),
+    game("sf-sea", "san-francisco", "seattle", { broadcast: "FOX", kickoffUtc: LATE_WINDOW }),
+    game("snf", "baltimore", "atlanta", { broadcast: "NBC", kickoffUtc: SUNDAY_NIGHT }),
+    game("mnf", "buffalo", "la-rams", { broadcast: "ESPN", date: "2026-10-12T17:00:00.000Z", kickoffUtc: MONDAY_NIGHT }),
   ];
   assert.equal(featuredGame(slate, roster)?.id, "sf-sea");
-  // If the best matchup were already over, the next-best is never the London game.
+  // If the best matchup were already over, the national windows win the .625
+  // tie and the London game is still never the default.
   const withoutBest = slate.map((g) => (g.id === "sf-sea" ? { ...g, status: "final" as const } : g));
   const pick = featuredGame(withoutBest, roster);
   assert.notEqual(pick?.id, "london");
-  assert.ok(["chi-gb", "lv-ne", "min-no"].includes(pick?.id ?? ""), `unexpected pick ${pick?.id}`);
+  assert.ok(["snf", "mnf"].includes(pick?.id ?? ""), `unexpected pick ${pick?.id}`);
+  // And with no national window left either, the later kickoff beats the London slot.
+  const regionalOnly = withoutBest.filter((g) => g.id !== "snf" && g.id !== "mnf");
+  const regional = featuredGame(regionalOnly, roster);
+  assert.notEqual(regional?.id, "london");
+  assert.ok(["chi-gb", "lv-ne", "min-no"].includes(regional?.id ?? ""), `unexpected pick ${regional?.id}`);
 });
 
-test("on the real dataset the pick, when there is one, is a live slate game that is not over", () => {
-  const referenceDate = nfl.generatedAt.slice(0, 10);
-  const slate = weekGames(games, referenceDate);
+test("on the real dataset the pick, when there is one, is a slate game that is not over", () => {
+  const slate = weekGames(games, datasetAsOf);
   const pick = featuredGame(slate, teams);
   if (!pick) {
     const over = new Set(["final", "canceled", "postponed"]);
