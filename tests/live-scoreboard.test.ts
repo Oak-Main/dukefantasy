@@ -150,15 +150,20 @@ test("reduceLiveScoreboard: ids the payload does not mention keep their patch", 
   assert.equal(next.patches.get("LIVE"), prev.patches.get("LIVE"));
 });
 
-test("reduceLiveScoreboard: an explicit scheduled verdict clears an earlier patch; unusable scores do not", () => {
-  const prev = stateWith({ A: patch(), B: patch() });
+test("reduceLiveScoreboard: an explicit scheduled verdict clears an earlier patch; garbage does not", () => {
+  const prev = stateWith({ A: patch(), B: patch(), C: patch() });
   const next = reduceLiveScoreboard(
     prev,
-    payload([event({ id: "A", state: "scheduled" }), liveEvent({ id: "B", awayScore: null })]),
+    payload([
+      event({ id: "A", state: "scheduled" }),
+      liveEvent({ id: "B", awayScore: null }),
+      { ...event({ id: "C" }), state: "gibberish" as unknown as NflGameEvent["state"] },
+    ]),
     NOW,
   );
   assert.equal(next.patches.has("A"), false, "provider says it is not in progress");
-  assert.equal(next.patches.get("B"), prev.patches.get("B"), "provider sent garbage; keep the last good patch");
+  assert.equal(next.patches.get("B"), prev.patches.get("B"), "unusable scores; keep the last good patch");
+  assert.equal(next.patches.get("C"), prev.patches.get("C"), "unrecognised state is not a verdict; keep the last good patch");
 });
 
 test("reduceLiveScoreboard: a newer state replaces an older one", () => {

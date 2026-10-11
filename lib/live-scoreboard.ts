@@ -57,8 +57,9 @@ export const EMPTY_LIVE_STATE: LiveScoreboardState = {
 const isScore = (value: unknown): value is number =>
   typeof value === "number" && Number.isInteger(value) && value >= 0;
 
-const isLiveOrFinal = (state: unknown) =>
-  state === "live" || state === "halftime" || state === "final";
+/** Provider states that say "this game is not in progress and not finished". */
+const isNotStarted = (state: unknown) =>
+  state === "scheduled" || state === "postponed" || state === "canceled" || state === "other";
 
 /** Halftime is still a game in progress; the provider label ("Halftime") carries the nuance. */
 export function patchFromEvent(
@@ -137,11 +138,12 @@ export function reduceLiveScoreboard(
     if (patch) {
       patches.set(event.id, patch);
       settled.add(event.id);
-    } else if (!isLiveOrFinal(event.state)) {
+    } else if (isNotStarted(event.state)) {
       // An explicit scheduled/postponed/canceled verdict clears any earlier patch.
       settled.add(event.id);
     }
-    // A live/final event with unusable scores says nothing reliable: keep what we had.
+    // A live/final event with unusable scores, or a state we do not recognise,
+    // says nothing reliable: keep what we had.
   }
   for (const [id, patch] of prev.patches) {
     if (!settled.has(id) && !isStale(patch, now)) patches.set(id, patch);
