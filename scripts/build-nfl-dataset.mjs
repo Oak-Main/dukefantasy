@@ -33,7 +33,7 @@ const divisions = {
   bal: "AFC North", cin: "AFC North", cle: "AFC North", pit: "AFC North",
   hou: "AFC South", ind: "AFC South", jax: "AFC South", ten: "AFC South",
   den: "AFC West", kc: "AFC West", lv: "AFC West", lac: "AFC West",
-  dal: "NFC East", nyg: "NFC East", phi: "NFC East", was: "NFC East",
+  dal: "NFC East", nyg: "NFC East", phi: "NFC East", wsh: "NFC East",
   chi: "NFC North", det: "NFC North", gb: "NFC North", min: "NFC North",
   atl: "NFC South", car: "NFC South", no: "NFC South", tb: "NFC South",
   ari: "NFC West", lar: "NFC West", sf: "NFC West", sea: "NFC West",
@@ -46,7 +46,7 @@ const brandColors = {
   lac: "#0080C6", lar: "#003594", lv: "#000000", mia: "#008E97",
   min: "#4F2683", ne: "#002244", no: "#D3BC8D", nyg: "#0B2265",
   nyj: "#125740", phi: "#004C54", pit: "#FFB612", sf: "#AA0000",
-  sea: "#002244", tb: "#D50A0A", ten: "#4B92DB", was: "#5A1414",
+  sea: "#002244", tb: "#D50A0A", ten: "#4B92DB", wsh: "#5A1414",
 };
 
 const teams = espnTeams.map((et) => {
@@ -132,9 +132,14 @@ console.log("  logos saved to public/logos/");
 // ---------- Full Season Schedule ----------
 console.log("Fetching full season schedule...");
 const schedule = [];
+// `start` anchors week numbering (Thursday of week 1, 00:00Z). The fetch loop
+// begins a day earlier because ESPN indexes games by ET day and the 2026
+// kickoff game (Wed Sep 9, 8:20 PM ET) would otherwise be dropped, which
+// silently skews both teams' standings.
 const start = new Date("2026-09-10");
+const fetchStart = new Date("2026-09-09");
 const end = new Date("2027-01-05");
-for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+for (let d = new Date(fetchStart); d <= end; d.setDate(d.getDate() + 1)) {
   const ymd = d.toISOString().slice(0, 10).replaceAll("-", "");
   try {
     const doc = await fetchJson(`${ESPN}/scoreboard?dates=${ymd}`);

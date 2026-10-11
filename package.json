@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dataset:build": "node scripts/build-nfl-dataset.mjs",
+    "dataset:verify": "node --experimental-strip-types scripts/verify-nfl-standings.mjs",
     "predataset:check": "node scripts/build-nfl-dataset.mjs",
     "predev": "node scripts/build-nfl-dataset.mjs",
     "prebuild": "node scripts/build-nfl-dataset.mjs",
