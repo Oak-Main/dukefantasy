@@ -55,13 +55,27 @@ export interface Team {
   provenance: Provenance;
 }
 
+/** One team's tally from the final scores in the schedule snapshot. */
+export interface TeamStanding {
+  teamSlug: string;
+  division: string;
+  wins: number;
+  losses: number;
+  ties: number;
+  pointsFor: number;
+  pointsAgainst: number;
+}
+
 /** "live" is never baked into the snapshot; only the live overlay (lib/live-scoreboard.ts) sets it. */
 export type GameStatus = "scheduled" | "live" | "final" | "delayed" | "postponed" | "canceled";
 
 export interface Game {
   id: string;
   week: number;
+  /** ET calendar day anchored at 17:00Z -- group and compare by `date.slice(0, 10)`. */
   date: string;
+  /** Exact kickoff instant (UTC, ISO-8601) when the provider publishes one; orders games within a day. */
+  kickoffUtc?: string;
   kickoffLabel: string;
   status: GameStatus;
   statusDetail: string;

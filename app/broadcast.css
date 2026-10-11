@@ -191,7 +191,7 @@ body { overscroll-behavior-y: none; }
 .apex-rank-name strong { font-weight: 600; font-size: 14px; }
 .apex-rank-name small { color: var(--muted-foreground); font-size: 14px; }
 .apex-rank-record { color: var(--muted-foreground); font-size: 14px; }
-.apex-rank-points { width: 46px; text-align: right; font-family: var(--display-family); font-size: 22px; }
+.apex-rank-points { min-width: 46px; text-align: right; font-family: var(--display-family); font-size: 22px; }
 
 /* === PORTAL & FANTASY === */
 .apex-portal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }

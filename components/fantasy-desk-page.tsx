@@ -11,6 +11,8 @@ import { DataBoardHero, DataBoardSummary, DataBoardEmpty, formatDataDate } from 
 import type { BroadcastTeam } from "@/lib/homepage";
 import {
   fantasyDesk,
+  currentNflWeek,
+  deskBoardStatus,
   TIER_LABELS,
   TIER_ORDER,
   DESK_CADENCE,
@@ -157,6 +159,17 @@ function TradeSection({ board }: { board: TradeBoard }) {
 export function FantasyDeskPage({ teams }: { teams: BroadcastTeam[] }) {
   const desk = fantasyDesk;
   const published = [desk.waiver, desk.startSit, desk.rookie, desk.trade].filter(Boolean).length;
+  // Staged boards are shown with their own week and date, but a board that has
+  // fallen behind the NFL calendar must never read as "live" advice.
+  const statuses = DESK_CADENCE.map((cadence) => ({ cadence, status: deskBoardStatus(cadence.key) }));
+  const behind = statuses.filter(({ status }) => status?.current === false);
+  const currentCount = statuses.filter(({ status }) => status?.current === true).length;
+  const sourcingCaption = `Sourcing rules per board: null means not published, two-source preference on every claim of fact, no estimated numbers. ${teams.length} teams tracked.`;
+  const behindCaption = behind.length
+    ? `Behind the NFL calendar: ${behind
+        .map(({ cadence, status }) => `${cadence.label} is the Week ${status?.covers} edition`)
+        .join("; ")}. Treat ${behind.length === 1 ? "it" : "them"} as archive context, not this week's advice, until the next edition publishes. `
+    : "";
   return (
     <div className="db-page">
       <DataBoardHero
@@ -167,13 +180,17 @@ export function FantasyDeskPage({ teams }: { teams: BroadcastTeam[] }) {
       <DataBoardSummary
         label="Fantasy desk status"
         items={[
-          { label: "Boards live", value: `${published} / 4`, emphasis: true },
+          { label: "Boards published", value: `${published} / 4`, emphasis: true },
+          {
+            label: currentNflWeek === null ? "Current" : `Current for Week ${currentNflWeek}`,
+            value: currentNflWeek === null ? "—" : `${currentCount} / 4`,
+          },
           { label: "Start/Sit", value: desk.startSit ? `Week ${desk.startSit.week}` : "—" },
           { label: "Trade values", value: desk.trade ? `Week ${desk.trade.week}` : "—" },
           { label: "Waiver watch", value: desk.waiver ? `for Week ${desk.waiver.week_adding_for}` : "—" },
           { label: "Rookie usage", value: desk.rookie ? `Week ${desk.rookie.week}` : "—" },
         ]}
-        caption={`Sourcing rules per board: null means not published, two-source preference on every claim of fact, no estimated numbers. ${teams.length} teams tracked.`}
+        caption={`${behindCaption}${sourcingCaption}`}
       />
 
       {desk.startSit ? <StartSitSection board={desk.startSit} /> : (
@@ -203,9 +220,12 @@ function WaiverSection({ board }: { board: WaiverBoard }) {
       <div className="db-section-heading">
         <h2 className="font-display">Waiver Wire Watch — adding for Week {board.week_adding_for}</h2>
         <p>
-          Adds compiled from completed Week 2 usage (including Monday night). Ownership percentages publish only when
-          a sourced number exists — this week none could be verified, so the board skews to emergent players and
-          confirmed injury replacements. As of {formatDataDate(board.as_of)}.
+          Adds compiled from completed Week {board.week_adding_for - 1} usage (including Monday night). Ownership
+          percentages publish only when a sourced number exists
+          {board.adds.every((add) => add.ownership_pct === null)
+            ? " — this edition none could be verified, so the board skews to emergent players and confirmed injury replacements"
+            : ""}
+          . As of {formatDataDate(board.as_of)}.
         </p>
       </div>
       {[...byPosition.entries()].map(([position, adds]) => (

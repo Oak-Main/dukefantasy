@@ -97,6 +97,9 @@ export function WeekScoreboard({
   const rail = useRef<HTMLElement>(null);
   const bySlug = new Map(teams.map((team) => [team.slug, team]));
   const dates = [...new Set(games.map((game) => game.date.slice(0, 10)))];
+  // The ranked-only filter needs ranked teams; pro football has no poll, so
+  // the tab stays hidden rather than leading to an empty list.
+  const hasRankedTeams = teams.some((team) => team.rank != null);
   const filtered = games.filter(
     (game) =>
       (day === "all" || game.date.startsWith(day)) &&
@@ -155,16 +158,18 @@ export function WeekScoreboard({
                 }).format(new Date(`${date}T12:00:00Z`))}
               </button>
             ))}
-            <button
-              type="button"
-              aria-pressed={rankedOnly}
-              onClick={() => {
-                setDay("all");
-                setRankedOnly(true);
-              }}
-            >
-              Top 25
-            </button>
+            {hasRankedTeams && (
+              <button
+                type="button"
+                aria-pressed={rankedOnly}
+                onClick={() => {
+                  setDay("all");
+                  setRankedOnly(true);
+                }}
+              >
+                Top 25
+              </button>
+            )}
           </fieldset>
           <div className="apex-scroll-buttons">
             <button
@@ -205,8 +210,8 @@ export function WeekScoreboard({
         })}
       </section>
       <p className="apex-data-note">
-        Week of {dateLabel(referenceDate)} · All times Eastern · Rankings
-        reflect the AP preseason poll.
+        Week of {dateLabel(referenceDate)} · All times Eastern
+        {hasRankedTeams && " · Rankings reflect the AP preseason poll"}.
       </p>
     </section>
   );

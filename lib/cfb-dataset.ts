@@ -10,7 +10,7 @@
  */
 import { formatGameResult } from "./live-scoreboard.ts";
 import nfl from "./nfl-generated.ts";
-import type { Game, GameStatus, Stadium, Team } from "./types.ts";
+import type { Game, GameStatus, Stadium, Team, TeamStanding } from "./types.ts";
 
 /* ---------------------------------------------------------------- helpers */
 
@@ -73,6 +73,22 @@ export const teams: Team[] = nflTeams.map((team) => {
 
 const teamBySlug = new Map(teams.map((t) => [t.slug, t]));
 
+/** Raw tallies behind `Team.record`, kept numeric so the homepage can rank by
+ * win percentage and point differential. A team with no standings row reads
+ * 0-0 and is left out of rankings rather than guessed at. */
+export const standings: TeamStanding[] = nflTeams.map((team) => {
+  const s = standingsBySlug.get(team.slug);
+  return {
+    teamSlug: team.slug,
+    division: team.division,
+    wins: s?.wins ?? 0,
+    losses: s?.losses ?? 0,
+    ties: s?.ties ?? 0,
+    pointsFor: s?.pf ?? 0,
+    pointsAgainst: s?.pa ?? 0,
+  };
+});
+
 export function getTeamBySlug(slug: string): Team | undefined {
   return teamBySlug.get(slug);
 }
@@ -89,6 +105,7 @@ export const games: Game[] = (nfl.schedule as Array<Record<string, unknown>>).ma
   id: g.id as string,
   week: g.week as number,
   date: `${g.date}T17:00:00.000Z`,
+  kickoffUtc: (g.kickoffUtc as string | undefined) ?? undefined,
   kickoffLabel: g.kickoffLabel as string,
   status: (g.status === "final" ? "final" : "scheduled") as GameStatus,
   statusDetail: g.statusDetail as string,
@@ -363,8 +380,16 @@ export function timeEtLabel(timeEt: string | null): string | null {
   return `${match[1]}:${match[2]} ${match[3]} ET`;
 }
 
-export const datasetAsOf: string = nfl.generatedAt.slice(0, 10);
-export const broadcastAsOf: string = nfl.generatedAt.slice(0, 10);
+// "As of" is the Eastern calendar day of the snapshot: a Sunday-night build
+// (UTC already Monday) must not push the whole site's notion of today forward.
+const compiledOnEt = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "America/New_York",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).format(new Date(nfl.generatedAt));
+export const datasetAsOf: string = compiledOnEt;
+export const broadcastAsOf: string = compiledOnEt;
 export const broadcastNote: string =
   "TV designations from ESPN's live NFL schedule. Times Eastern; flex scheduling windows apply from Week 5 onward.";
 
