@@ -17,7 +17,9 @@ export type BroadcastTeam = Pick<
 export type BroadcastGame = Pick<
   Game,
   | "id"
+  | "week"
   | "date"
+  | "kickoffUtc"
   | "kickoffLabel"
   | "statusDetail"
   | "awayTeamId"
@@ -94,18 +96,25 @@ export function dateLabel(
   }).format(value);
 }
 
+/** The slate for the NFL week in play on `referenceDate`: every game of the
+ * week that holds the first game on or after that day (else the final week).
+ * A calendar Mon-Sun window cuts the NFL week in half (Monday Night Football
+ * lands in the next window and last week's Monday game leaks in). */
 export function weekGames(
   games: readonly BroadcastGame[],
   referenceDate: string,
 ): BroadcastGame[] {
-  const start = new Date(`${referenceDate.slice(0, 10)}T00:00:00Z`);
-  if (!Number.isFinite(start.getTime())) return [];
-  start.setUTCDate(start.getUTCDate() - ((start.getUTCDay() + 6) % 7));
-  const end = new Date(start);
-  end.setUTCDate(end.getUTCDate() + 7);
-  return games
-    .filter((game) => new Date(game.date) >= start && new Date(game.date) < end)
-    .sort((a, b) => a.date.localeCompare(b.date));
+  const reference = referenceDate.slice(0, 10);
+  if (!Number.isFinite(new Date(`${reference}T00:00:00Z`).getTime())) return [];
+  const ordered = [...games].sort(
+    (a, b) =>
+      a.date.localeCompare(b.date) ||
+      (a.kickoffUtc ?? "").localeCompare(b.kickoffUtc ?? "") ||
+      a.id.localeCompare(b.id),
+  );
+  const upcoming = ordered.find((game) => game.date.slice(0, 10) >= reference);
+  const week = upcoming?.week ?? ordered.at(-1)?.week;
+  return week == null ? [] : ordered.filter((game) => game.week === week);
 }
 
 export function featuredGame(

@@ -33,23 +33,25 @@ export function defaultScoreboardWeek(
     (a, b) => a - b,
   );
   if (sortedWeeks.length === 0) return 0;
-  const reference = asOf && !Number.isNaN(Date.parse(asOf)) ? asOf : "0000-00-00";
-  const nextSaturday = source
-    .filter((game) => {
-      const date = game.date.slice(0, 10);
-      return (
-        date >= reference &&
-        new Date(`${date}T12:00:00Z`).getUTCDay() === 6
-      );
-    })
-    .sort((a, b) => a.date.localeCompare(b.date))[0];
-  return nextSaturday?.week ?? sortedWeeks.at(-1) ?? 0;
+  const reference = asOf && !Number.isNaN(Date.parse(asOf)) ? asOf.slice(0, 10) : "0000-00-00";
+  // NFL weeks run Thursday-Monday, so the landing week is the week of the
+  // first game on or after the as-of day (the old "next Saturday" rule is a
+  // college-football convention and pointed this site at a December week).
+  const nextGame = source
+    .filter((game) => game.date.slice(0, 10) >= reference)
+    .sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id))[0];
+  return nextGame?.week ?? sortedWeeks.at(-1) ?? 0;
 }
 
 export function gamesForWeek(source: readonly Game[], week: number) {
   return source
     .filter((game) => game.week === week)
-    .sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
+    .sort(
+      (a, b) =>
+        a.date.localeCompare(b.date) ||
+        (a.kickoffUtc ?? "").localeCompare(b.kickoffUtc ?? "") ||
+        a.id.localeCompare(b.id),
+    );
 }
 
 export function filterScoreboardGames({

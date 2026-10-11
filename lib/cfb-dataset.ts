@@ -88,6 +88,7 @@ export const games: Game[] = (nfl.schedule as Array<Record<string, unknown>>).ma
   id: g.id as string,
   week: g.week as number,
   date: `${g.date}T17:00:00.000Z`,
+  kickoffUtc: (g.kickoffUtc as string | undefined) ?? undefined,
   kickoffLabel: g.kickoffLabel as string,
   status: (g.status === "final" ? "final" : "scheduled") as GameStatus,
   statusDetail: g.statusDetail as string,
@@ -358,8 +359,16 @@ export function timeEtLabel(timeEt: string | null): string | null {
   return `${match[1]}:${match[2]} ${match[3]} ET`;
 }
 
-export const datasetAsOf: string = nfl.generatedAt.slice(0, 10);
-export const broadcastAsOf: string = nfl.generatedAt.slice(0, 10);
+// "As of" is the Eastern calendar day of the snapshot: a Sunday-night build
+// (UTC already Monday) must not push the whole site's notion of today forward.
+const compiledOnEt = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "America/New_York",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).format(new Date(nfl.generatedAt));
+export const datasetAsOf: string = compiledOnEt;
+export const broadcastAsOf: string = compiledOnEt;
 export const broadcastNote: string =
   "TV designations from ESPN's live NFL schedule. Times Eastern; flex scheduling windows apply from Week 5 onward.";
 

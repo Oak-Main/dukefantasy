@@ -41,7 +41,10 @@ export function RankingsLane({
           <span>AFC · NFC</span>
         </div>
         {rows.length === 0 && (
-          <p className="apex-empty">Standings publish after Week 1.</p>
+          <p className="apex-empty">
+            Poll-style rankings are not published for the NFL. Team records by
+            division are on the <a href="/conferences">Divisions</a> page.
+          </p>
         )}
         {rows.map((row) => {
           const team = bySlug.get(row.team_slug ?? "");
@@ -69,9 +72,11 @@ export function RankingsLane({
           );
         })}
       </div>
-      <p className="apex-data-note">
-        Released {poll?.release_date ?? "Not published"}.
-      </p>
+      {poll ? (
+        <p className="apex-data-note">
+          Released {poll.release_date ?? "Not published"}.
+        </p>
+      ) : null}
     </section>
   );
 }
