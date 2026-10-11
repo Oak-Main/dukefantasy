@@ -4441,6 +4441,17 @@ body {
   .scoreboard-summary--live {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Two columns hold four tiles; the fifth takes the whole row instead of
+   * sitting alone beside an empty cell, and the right column has no divider. */
+  .scoreboard-summary--live > div:nth-of-type(even) {
+    border-right: 0;
+  }
+
+  .scoreboard-summary--live > div:nth-of-type(5) {
+    border-right: 0;
+    grid-column: 1 / -1;
+  }
 }
 
 /* Motion only for people who have not asked for less of it; the dot is a

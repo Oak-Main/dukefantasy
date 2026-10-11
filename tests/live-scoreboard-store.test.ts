@@ -322,3 +322,15 @@ test("resubscribing after a long gap drops live scores that aged out meanwhile",
   assert.equal(h.store.getSnapshot().patches.size, 0, "expired before anything renders it");
   off();
 });
+
+test("a tab that opens hidden makes no request until it is first shown", () => {
+  const h = harness();
+  h.setHidden(true); // before anyone subscribes
+  const unsubscribe = h.store.subscribe(() => {});
+  assert.equal(h.requests.length, 0, "no request for a background tab");
+  h.advance(LIVE_POLL_MS * 3);
+  assert.equal(h.requests.length, 0, "and no polling while it stays hidden");
+  h.setHidden(false);
+  assert.equal(h.requests.length, 1, "first request when it becomes visible");
+  unsubscribe();
+});

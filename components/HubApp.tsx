@@ -551,7 +551,7 @@ function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
 }
 
 function SchedulePage(props: HomeProps) {
-  const { patches } = useLiveScoreboard();
+  const { patches, asOf } = useLiveScoreboard();
   const liveGames = useMemo(() => patchGames(games, patches), [patches]);
   const announcerGames = useMemo(
     () =>
@@ -570,6 +570,7 @@ function SchedulePage(props: HomeProps) {
         eyebrow="SEASON-AWARE SCHEDULE"
         title="2026 schedule"
         description="Conference membership and postseason rules are versioned by season; the preview never hardcodes a permanent team count."
+        actions={asOf != null && patches.size > 0 ? <LiveFreshness /> : undefined}
       />
       <section className="content-section schedule-board">
         <LiveScoreAnnouncer games={announcerGames} />

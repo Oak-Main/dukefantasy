@@ -284,7 +284,7 @@ export function ScheduleSection({
             <span>
               Dataset as of {dateLabel(asOf)}. Times shown in Eastern Time.
               {liveChecked
-                ? ` Live scores from the ESPN scoreboard feed, checked ${liveChecked}.`
+                ? ` Live scores from the ESPN scoreboard feed, as of ${liveChecked}.`
                 : ""}
             </span>
             <HubLink href="/watch">Where to watch</HubLink>

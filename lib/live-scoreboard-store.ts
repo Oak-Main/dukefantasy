@@ -117,7 +117,8 @@ export function createLiveScoreboardStore(
     env = current;
     // Data kept from an earlier subscription may have aged out while nobody listened.
     publish(expireStaleLive(state, current.now()));
-    void poll();
+    // A tab opened in the background waits for its first visibilitychange.
+    if (!current.isHidden()) void poll();
     interval = current.setInterval(() => {
       if (!current.isHidden()) void poll();
     }, LIVE_POLL_MS);

@@ -14,11 +14,12 @@ import {
   patchGames,
   patchScheduleGames,
   reduceLiveScoreboard,
+  rememberPatches,
   type LiveGamePatch,
   type LivePatchMap,
   type LiveScoreboardState,
 } from "../lib/live-scoreboard.ts";
-import type { NflGameEvent } from "../lib/nfl-scoreboard.ts";
+import { espnEventToNflEvent, type NflGameEvent } from "../lib/nfl-scoreboard.ts";
 
 const NOW = 1_800_000_000_000;
 
@@ -97,7 +98,7 @@ test("reduceLiveScoreboard: a good payload yields an id-keyed patch map", () => 
   assert.deepEqual([...next.patches.keys()].sort(), ["A", "B"]);
   assert.equal(next.patches.get("A")?.state, "live");
   assert.equal(next.patches.get("B")?.state, "final");
-  assert.equal(next.asOf, NOW);
+  assert.equal(next.asOf, Date.parse("2026-10-11T17:05:00.000Z"), "the route's read time");
   assert.equal(next.events.length, 3);
 });
 
@@ -188,6 +189,66 @@ test("stale in-progress patches expire; finals never do", () => {
   // Stale ids are not carried over by a good poll that skips them either.
   const good = reduceLiveScoreboard(prev, payload([liveEvent({ id: "NEW" })]), NOW);
   assert.deepEqual([...good.patches.keys()].sort(), ["FINAL", "FRESH", "NEW"]);
+});
+
+test("reduceLiveScoreboard: a missing provider state ('other') is unknown, not a verdict", () => {
+  // The route maps an ESPN event with no recognisable status to "other"; that must not undo what we know.
+  const raw = {
+    id: "A",
+    date: "2026-10-11T17:00Z",
+    competitions: [
+      {
+        competitors: [
+          { homeAway: "away", score: "14", team: { shortDisplayName: "Eagles" } },
+          { homeAway: "home", score: "10", team: { shortDisplayName: "Jaguars" } },
+        ],
+      },
+    ],
+  };
+  const unknown = espnEventToNflEvent(raw);
+  assert.equal(unknown?.state, "other");
+  const prev = stateWith({ A: patch(), B: patch({ state: "final" }) });
+  const next = reduceLiveScoreboard(prev, payload([unknown as NflGameEvent, { ...(unknown as NflGameEvent), id: "B" }]), NOW);
+  assert.equal(next.patches.get("A"), prev.patches.get("A"), "in-progress patch kept");
+  assert.equal(next.patches.get("B"), prev.patches.get("B"), "final patch kept");
+});
+
+test("reduceLiveScoreboard: a final stays final; only another final (a score correction) replaces it", () => {
+  const prev = stateWith({ A: patch({ state: "final", awayScore: 24, homeScore: 17, statusLabel: "Final" }) });
+  for (const later of [liveEvent({ id: "A" }), event({ id: "A", state: "scheduled" }), event({ id: "A", state: "postponed" })]) {
+    const next = reduceLiveScoreboard(prev, payload([later]), NOW + 60_000);
+    assert.equal(next.patches.get("A"), prev.patches.get("A"), `a later "${later.state}" must not undo a final`);
+  }
+  const corrected = reduceLiveScoreboard(prev, payload([finalEvent({ id: "A", awayScore: 27, homeScore: 17 })]), NOW + 60_000);
+  assert.equal(corrected.patches.get("A")?.awayScore, 27, "a corrected final score still flows through");
+});
+
+test("patchFromEvent: a status label that is not text never reaches the page", () => {
+  const object = patchFromEvent({ ...liveEvent(), statusLabel: { nested: true } as unknown as string }, NOW);
+  assert.equal(object?.statusLabel, null);
+  assert.equal(patchFromEvent(liveEvent({ statusLabel: "   " }), NOW)?.statusLabel, null);
+  assert.equal(patchFromEvent(liveEvent({ statusLabel: " 2:06 - 3rd " }), NOW)?.statusLabel, "2:06 - 3rd");
+});
+
+test("reduceLiveScoreboard: events kept for the finals strip carry the fields it reads; a patch does not need them", () => {
+  const noUtc = { ...finalEvent({ id: "NOUTC" }), utc: 12345 as unknown as string };
+  const noName = { ...finalEvent({ id: "NONAME" }), home: undefined as unknown as string };
+  const next = reduceLiveScoreboard(EMPTY_LIVE_STATE, payload([noUtc, noName, finalEvent({ id: "OK" })]), NOW);
+  assert.deepEqual(next.events.map((e) => e.id), ["OK"]);
+  assert.equal(next.patches.has("NOUTC"), true, "the score still overlays");
+  assert.equal(next.patches.has("NONAME"), true);
+});
+
+test("reduceLiveScoreboard: asOf is when the route read the feed; unusable values fall back to the poll time", () => {
+  const read = Date.parse("2026-10-11T16:09:00.000Z");
+  const now = read + 90_000;
+  const at = (asOf: unknown) => reduceLiveScoreboard(EMPTY_LIVE_STATE, payload([liveEvent({ id: "A" })], { asOf }), now);
+  assert.equal(at("2026-10-11T16:09:00.000Z").asOf, read);
+  for (const bad of ["nope", 12, null, new Date(now + 10 * 60_000).toISOString()]) {
+    assert.equal(at(bad).asOf, now, String(bad));
+  }
+  // Staleness runs on the poll clock (skew-proof), never on the server's timestamp.
+  assert.equal(at("2026-10-11T16:09:00.000Z").patches.get("A")?.seenAt, now);
 });
 
 /* ------------------------------------------------------------------ merging */
@@ -405,4 +466,20 @@ test("describeLiveTransitions: short sentences, no scores for kickoffs, a count 
   );
   assert.equal(describeLiveTransitions([crowd("live"), crowd("live"), crowd("live"), crowd("final")]), "4 games updated: 3 now live, 1 final.");
   assert.equal(describeLiveTransitions([crowd("final"), crowd("final"), crowd("final"), crowd("final")]), "4 games updated: 4 final.");
+});
+
+test("rememberPatches: an expired live patch is remembered, so recovery is not mistaken for a kickoff", () => {
+  const seenAfterOutage = rememberPatches(maps({ A: patch() }), maps({})); // the patch expired during the outage
+  assert.equal(seenAfterOutage.get("A")?.state, "live");
+  // The same game, still in progress when the feed returns: not news.
+  assert.deepEqual(liveTransitions(watched, seenAfterOutage, maps({ A: patch({ seenAt: NOW + 1 }) })), []);
+  // If it finished during the outage, the final is still announced.
+  assert.deepEqual(
+    liveTransitions(watched, seenAfterOutage, maps({ A: patch({ state: "final" }) })).map((t) => t.patch.state),
+    ["final"],
+  );
+  // Newest patch wins and nothing is dropped.
+  const merged = rememberPatches(maps({ A: patch(), B: patch() }), maps({ A: patch({ state: "final" }) }));
+  assert.deepEqual([...merged].map(([id, p]) => [id, p.state]).sort(), [["A", "final"], ["B", "live"]]);
+  assert.equal(rememberPatches(null, maps({ A: patch() })).size, 1);
 });

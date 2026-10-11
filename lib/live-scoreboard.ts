@@ -42,7 +42,7 @@ export interface LiveScoreboardState {
   patches: LivePatchMap;
   /** Validated events from the last good payload (the finals strip filters these). */
   events: readonly NflGameEvent[];
-  /** Epoch ms of the last good poll; null until one succeeds. */
+  /** When the feed data was read (the route's own `asOf`, else the poll time); null until a poll succeeds. */
   asOf: number | null;
 }
 
@@ -57,9 +57,13 @@ export const EMPTY_LIVE_STATE: LiveScoreboardState = {
 const isScore = (value: unknown): value is number =>
   typeof value === "number" && Number.isInteger(value) && value >= 0;
 
-/** Provider states that say "this game is not in progress and not finished". */
+/**
+ * Provider states that say "this game is not in progress and not finished".
+ * "other" is deliberately absent: the route emits it for any ESPN state it does
+ * not model, including a missing status, and that is unknown, not a verdict.
+ */
 const isNotStarted = (state: unknown) =>
-  state === "scheduled" || state === "postponed" || state === "canceled" || state === "other";
+  state === "scheduled" || state === "postponed" || state === "canceled";
 
 /** Halftime is still a game in progress; the provider label ("Halftime") carries the nuance. */
 export function patchFromEvent(
@@ -78,7 +82,7 @@ export function patchFromEvent(
     state,
     awayScore: event.awayScore,
     homeScore: event.homeScore,
-    statusLabel: event.statusLabel || null,
+    statusLabel: typeof event.statusLabel === "string" && event.statusLabel.trim() ? event.statusLabel.trim() : null,
     seenAt,
   };
 }
@@ -95,6 +99,20 @@ function readEvents(payload: unknown): NflGameEvent[] | null {
       (event as NflGameEvent).id !== "",
   );
   return usable.length > 0 ? usable : null;
+}
+
+/** The finals strip prints these fields, so an event without them is not kept for it (it can still patch). */
+const hasStripFields = (event: NflGameEvent) =>
+  typeof event.utc === "string" && typeof event.home === "string" && typeof event.away === "string";
+
+/** Server and client clocks may disagree; tolerate a little, ignore anything further ahead. */
+const ASOF_SKEW_MS = 5 * 60_000;
+
+/** The route's own read time is the honest "as of"; unparseable or future values fall back to the poll time. */
+function readAsOf(payload: unknown, now: number): number {
+  const raw = (payload as { asOf?: unknown }).asOf;
+  const parsed = typeof raw === "string" ? Date.parse(raw) : Number.NaN;
+  return Number.isFinite(parsed) && parsed <= now + ASOF_SKEW_MS ? parsed : now;
 }
 
 const isStale = (patch: LiveGamePatch, now: number) =>
@@ -135,6 +153,9 @@ export function reduceLiveScoreboard(
   const settled = new Set<string>();
   for (const event of events) {
     const patch = patchFromEvent(event, now);
+    // A game that has finished does not un-finish: only another final (a score
+    // correction) replaces a final patch; anything else is ignored for it.
+    if (prev.patches.get(event.id)?.state === "final" && patch?.state !== "final") continue;
     if (patch) {
       patches.set(event.id, patch);
       settled.add(event.id);
@@ -148,7 +169,7 @@ export function reduceLiveScoreboard(
   for (const [id, patch] of prev.patches) {
     if (!settled.has(id) && !isStale(patch, now)) patches.set(id, patch);
   }
-  return { patches, events, asOf: now };
+  return { patches, events: events.filter(hasStripFields), asOf: readAsOf(payload, now) };
 }
 
 /* ------------------------------------------------------------------ merging */
@@ -277,8 +298,24 @@ export interface LiveAnnouncement {
 }
 
 /**
- * One short sentence per game that kicked off or finished; never scores or
- * clocks. More than three at once collapses to a count so a full Sunday slate
+ * The latest patch seen per id, kept even after a patch expires or vanishes.
+ * Diff announcements against this, not against the live map: a patch that
+ * expired during an outage and comes back is the same game still in progress,
+ * not a kickoff.
+ */
+export function rememberPatches(
+  seen: LivePatchMap | null,
+  patches: LivePatchMap,
+): LivePatchMap {
+  const merged = new Map(seen ?? []);
+  for (const [id, patch] of patches) merged.set(id, patch);
+  return merged;
+}
+
+/**
+ * One short sentence per game that kicked off or finished: a kickoff names the
+ * game, a final includes its final score, and live scores and clocks are never
+ * spoken. More than three at once collapses to a count so a full Sunday slate
  * does not queue a paragraph on a screen reader.
  */
 export function describeLiveTransitions(items: readonly LiveAnnouncement[]): string {
