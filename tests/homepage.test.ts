@@ -2,16 +2,19 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { datasetAsOf, games, standings, teams } from "../lib/cfb-dataset.ts";
 import {
+  dateLabel,
   featuredGame,
   formatPointDifferential,
   formatRecord,
   isNationalWindow,
+  slateFinals,
   topStandings,
   weekGames,
   winPercentage,
   type BroadcastGame,
   type BroadcastTeam,
 } from "../lib/homepage.ts";
+import type { NflGameEvent } from "../lib/nfl-scoreboard.ts";
 import type { TeamStanding } from "../lib/types.ts";
 
 /* ------------------------------------------------------------ fixtures */
@@ -370,4 +373,99 @@ test("on the real dataset the pick, when there is one, is a slate game that is n
   assert.ok(slate.some((g) => g.id === pick.id), "pick must come from the slate");
   assert.notEqual(pick.status, "final");
   assert.ok(teams.some((t) => t.slug === pick.awayTeamId) && teams.some((t) => t.slug === pick.homeTeamId));
+});
+
+/* ------------------------------------------------- Eastern days and weeks */
+
+test("the Week 5 rail has Thursday, Sunday and Monday tabs: no Friday, no Tuesday", () => {
+  // The tab labels come from each game's Eastern date. When those were UTC days,
+  // Thursday night read Friday and Sunday/Monday night read Monday/Tuesday.
+  const slate = weekGames(games, "2026-10-11");
+  const tabs = [...new Set(slate.map((g) => g.date.slice(0, 10)))].map((day) => dateLabel(day).split(",")[0]);
+  assert.deepEqual(tabs, ["Thu", "Sun", "Mon"]);
+});
+
+function finalEvents(week: number): NflGameEvent[] {
+  return games
+    .filter((g) => g.week === week)
+    .map((g) => ({
+      id: g.id,
+      utc: g.kickoffUtc ?? g.date,
+      home: g.homeTeamId,
+      away: g.awayTeamId,
+      homeScore: 24,
+      awayScore: 17,
+      state: "final",
+      statusLabel: "Final",
+      venue: null,
+    }));
+}
+
+test("the week-so-far finals are the slate's own games, so Sunday and Monday night stay in their week", () => {
+  // The live feed reporting every Week 4 and Week 5 game as final.
+  const slate = weekGames(games, "2026-10-11");
+  const finals = slateFinals([...finalEvents(4), ...finalEvents(5)], slate);
+  const slateIds = new Set(slate.map((g) => g.id));
+  assert.equal(finals.length, slate.length, "every Week 5 final, no more");
+  assert.ok(finals.every((e) => slateIds.has(e.id)), "nothing from Week 4");
+
+  // Sunday Night Football is Sunday in the East but 00:20Z Monday, and Monday
+  // Night Football is 00:15Z Tuesday: a Monday-to-Sunday window over UTC
+  // instants drops both from their own week.
+  const sundayNight = slate
+    .filter((g) => g.date.startsWith("2026-10-11"))
+    .sort((a, b) => (a.kickoffUtc ?? "").localeCompare(b.kickoffUtc ?? ""))
+    .at(-1);
+  const mondayNight = slate.at(-1);
+  assert.equal(sundayNight?.kickoffUtc?.slice(0, 10), "2026-10-12", "precondition: Sunday night's UTC instant is Monday");
+  assert.equal(mondayNight?.kickoffUtc?.slice(0, 10), "2026-10-13", "precondition: Monday night's UTC instant is Tuesday");
+  assert.ok(finals.some((e) => e.id === sundayNight?.id), "Sunday Night Football is in the week-so-far finals");
+  assert.ok(finals.some((e) => e.id === mondayNight?.id), "Monday Night Football is in the week-so-far finals");
+
+  // Last week's Sunday and Monday night games land inside that same UTC window
+  // (Monday 2026-10-05 00:20Z onward); they are Week 4's and stay out.
+  const lastWeekPrimetime = games.filter((g) => g.week === 4 && /^(Sun|Mon) · .* · 8:/.test(g.kickoffLabel));
+  assert.ok(lastWeekPrimetime.length >= 2, "precondition: Week 4 had Sunday and Monday night games");
+  for (const g of lastWeekPrimetime) assert.ok(!finals.some((e) => e.id === g.id), `${g.id} belongs to Week 4`);
+
+  // Newest first.
+  const order = finals.map((e) => e.utc);
+  assert.deepEqual(order, [...order].sort().reverse());
+});
+
+test("the finals strip follows the slate: Monday night's day is still Week 5, the day after is Week 6", () => {
+  const feed = [...finalEvents(4), ...finalEvents(5)];
+  const monday = slateFinals(feed, weekGames(games, "2026-10-12"));
+  assert.equal(monday.length, weekGames(games, "2026-10-12").length, "all of Week 5, Sunday's games included");
+  // Tuesday's slate is Week 6, which has no finals yet: the strip hides rather than
+  // presenting the last two games of Week 5 as "the week so far".
+  assert.deepEqual(slateFinals(feed, weekGames(games, "2026-10-13")), []);
+});
+
+test("finals strip rows need a final state, both scores and a real kickoff instant", () => {
+  const slate = ["a", "b", "c", "d", "e"].map((id) => game(id, "x", "y"));
+  const event = (id: string, overrides: Partial<NflGameEvent> = {}): NflGameEvent => ({
+    id,
+    utc: EARLY,
+    home: "Y",
+    away: "X",
+    homeScore: 20,
+    awayScore: 10,
+    state: "final",
+    statusLabel: null,
+    venue: null,
+    ...overrides,
+  });
+  const feed = [
+    event("a", { utc: EARLY }),
+    event("b", { utc: LATE_WINDOW }),
+    event("c", { state: "live" }),
+    event("d", { homeScore: null }),
+    event("e", { utc: "not a date" }),
+    event("elsewhere"),
+  ];
+  const before = JSON.stringify(feed);
+  assert.deepEqual(slateFinals(feed, slate).map((e) => e.id), ["b", "a"]);
+  assert.equal(JSON.stringify(feed), before, "the feed is not mutated");
+  assert.deepEqual(slateFinals(feed, []), []);
 });

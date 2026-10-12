@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import type { FantasyNote, PreseasonRating } from "./cfb-dataset";
+import type { NflGameEvent } from "./nfl-scoreboard";
 import type { Game, Stadium, Team, TeamStanding } from "./types";
 
 export type BroadcastTeam = Pick<
@@ -115,6 +116,28 @@ export function weekGames(
   const upcoming = ordered.find((game) => game.date.slice(0, 10) >= reference);
   const week = upcoming?.week ?? ordered.at(-1)?.week;
   return week == null ? [] : ordered.filter((game) => game.week === week);
+}
+
+/** The slate's final results from the live feed, newest first. A result
+ * belongs to the week by its ESPN event id (the id the snapshot bakes into
+ * `Game.id`), never by its kickoff instant: a Monday-to-Sunday window over UTC
+ * instants drops Sunday and Monday night football (00:20Z and 00:15Z the next
+ * day) from their own week and pulls the previous week's in. */
+export function slateFinals(
+  events: readonly NflGameEvent[],
+  slate: readonly Pick<BroadcastGame, "id">[],
+): NflGameEvent[] {
+  const ids = new Set(slate.map((game) => game.id));
+  return events
+    .filter(
+      (event) =>
+        ids.has(event.id) &&
+        event.state === "final" &&
+        Number.isFinite(Date.parse(event.utc)) &&
+        event.homeScore != null &&
+        event.awayScore != null,
+    )
+    .sort((a, b) => b.utc.localeCompare(a.utc));
 }
 
 type RecordTally = Pick<TeamStanding, "wins" | "losses" | "ties">;

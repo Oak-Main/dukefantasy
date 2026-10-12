@@ -1,9 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import nfl from "../lib/nfl-generated.ts";
-import { games } from "../lib/cfb-dataset.ts";
+import { games, getTeamBySlug } from "../lib/cfb-dataset.ts";
+import { easternDay } from "../lib/eastern.ts";
 import { weekGames, type BroadcastGame } from "../lib/homepage.ts";
 import { defaultScoreboardWeek, gamesForWeek } from "../lib/scoreboard.ts";
+import { getTeamHubData } from "../lib/team-hub.ts";
 
 interface ScheduleRow {
   id: string;
@@ -89,16 +91,61 @@ test("kickoff labels are Eastern (not UTC) and never invent a clock time for unf
 
 test("kickoff labels agree with ESPN's own human-readable kickoff text", () => {
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  let compared = 0;
   for (const game of schedule) {
     if (game.timeTbd) continue;
-    const espn = game.statusDetail.match(/^\w{3}, (\w+) (\d+)(?:st|nd|rd|th) at (\d{1,2}):(\d{2}) (AM|PM) E[SD]T$/);
+    const espn = game.statusDetail.match(/^(\w{3}), (\w+) (\d+)(?:st|nd|rd|th) at (\d{1,2}):(\d{2}) (AM|PM) E[SD]T$/);
     if (!espn) continue; // finals carry "Final"; nothing independent to compare
-    const label = game.kickoffLabel.match(/^\w{3} · \d{4}-(\d{2})-(\d{2}) · (\d{1,2}):(\d{2}) ([AP]M) ET$/);
+    const label = game.kickoffLabel.match(/^(\w{3}) · \d{4}-(\d{2})-(\d{2}) · (\d{1,2}):(\d{2}) ([AP]M) ET$/);
     assert.ok(label, `${game.id}: ${game.kickoffLabel}`);
-    const [, month, day, hour, minute, period] = label;
-    assert.equal(months[Number(month) - 1], espn[1], `${game.id} month`);
-    assert.equal(Number(day), Number(espn[2]), `${game.id} day`);
-    assert.equal(`${Number(hour)}:${minute} ${period}`, `${Number(espn[3])}:${espn[4]} ${espn[5]}`, `${game.id} time`);
+    const [, weekday, month, day, hour, minute, period] = label;
+    compared += 1;
+    assert.equal(weekday, espn[1], `${game.id} weekday`);
+    assert.equal(months[Number(month) - 1], espn[2], `${game.id} month`);
+    assert.equal(Number(day), Number(espn[3]), `${game.id} day`);
+    assert.equal(`${Number(hour)}:${minute} ${period}`, `${Number(espn[4])}:${espn[5]} ${espn[6]}`, `${game.id} time`);
+  }
+  // If ESPN rewords its text the loop above compares nothing and passes; fail loudly instead.
+  if (schedule.some((game) => !game.timeTbd && game.status !== "final")) {
+    assert.ok(compared > 0, "no kickoff label could be compared with ESPN's own kickoff text");
+  }
+});
+
+test("easternDay is the Eastern calendar day, not the UTC day", () => {
+  // Sunday Night Football kicks off at 00:20Z Monday and is still Sunday in the East.
+  assert.equal(easternDay("2026-10-12T00:20:00Z"), "2026-10-11");
+  assert.equal(easternDay("2026-10-12T03:59:59Z"), "2026-10-11"); // last second of Sunday (EDT, UTC-4)
+  assert.equal(easternDay("2026-10-12T04:00:00Z"), "2026-10-12");
+  assert.equal(easternDay("2026-11-02T04:59:59Z"), "2026-11-01"); // last second of Sunday after daylight time ends (EST, UTC-5)
+  assert.equal(easternDay("2026-11-02T05:00:00Z"), "2026-11-02");
+  assert.equal(easternDay(Date.parse("2026-10-12T00:20:00Z")), "2026-10-11");
+  assert.equal(easternDay(new Date("2026-10-12T00:20:00Z")), "2026-10-11");
+  // The default is the clock's Eastern day.
+  assert.match(easternDay(), /^\d{4}-\d{2}-\d{2}$/);
+  // Every 20 minutes of the season, against the independent statutory-rule oracle above.
+  for (let ms = Date.UTC(2026, 8, 1); ms < Date.UTC(2027, 1, 15); ms += 20 * 60_000) {
+    const iso = new Date(ms).toISOString();
+    assert.equal(easternDay(iso), easternWallClock(iso).date, iso);
+  }
+});
+
+test("team hub 'today' is the Eastern day, so a primetime game is still upcoming at kickoff", (t) => {
+  // 8:25 PM ET on Sunday 2026-10-11: five minutes into Sunday Night Football,
+  // and the UTC calendar has already turned to Monday.
+  t.mock.timers.enable({ apis: ["Date"], now: Date.parse("2026-10-12T00:25:00Z") });
+  try {
+    const ravens = getTeamBySlug("baltimore-ravens");
+    assert.ok(ravens, "Baltimore Ravens are in the dataset");
+    const hub = getTeamHubData(ravens);
+    assert.equal(hub.referenceDate, "2026-10-11");
+    const week5 = hub.schedule?.find((row) => row.week === 5);
+    assert.equal(week5?.date, "2026-10-11", "precondition: the Ravens' Week 5 game is Sunday night, Eastern");
+    // The predicate team-hub.tsx and schedule.tsx use for UP NEXT and for "Result not published".
+    assert.ok(week5.date >= hub.referenceDate, "tonight's game must not read as already played");
+    // An explicit reference day still wins.
+    assert.equal(getTeamHubData(ravens, "2026-12-01").referenceDate, "2026-12-01");
+  } finally {
+    t.mock.timers.reset();
   }
 });
 
