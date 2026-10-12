@@ -29,6 +29,7 @@ import {
   type TeamScheduleGame,
   type TeamSeasonRow,
 } from "./cfb-dataset.ts";
+import { easternDay } from "./eastern.ts";
 import type { Team, Stadium } from "./types";
 
 export type HubTeam = Pick<
@@ -154,7 +155,9 @@ function rosterByPosition(roster: TeamRoster | undefined): TeamRoster | null {
 
 export function getTeamHubData(
   team: Team,
-  referenceDate = new Date().toISOString().slice(0, 10),
+  // Schedule rows carry Eastern days, so "today" is the Eastern day (UTC has
+  // already turned over by the time tonight's primetime game kicks off).
+  referenceDate = easternDay(),
 ): TeamHubProps {
   const pollDate = pollTables.find((poll) =>
     /associated press|\bAP\b/i.test(`${poll.poll} ${poll.name}`),

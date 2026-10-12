@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import { slateFinals, type BroadcastGame } from "@/lib/homepage";
 import { LaneHeading } from "./primitives";
 import { useLiveScoreboard } from "./use-live-scoreboard";
 
@@ -10,29 +11,14 @@ import { useLiveScoreboard } from "./use-live-scoreboard";
  * degrades to nothing (hidden) until the feed has answered, and keeps the last
  * good answer through a later failure. The homepage never shows an error
  * surface for live data. Port of the CFB Apex finals strip onto the NFL feed.
+ *
+ * "The week" is the homepage slate, matched by ESPN event id, so the rail, the
+ * marquee and this strip always name the same NFL week.
  */
-export function FinalsStrip({ referenceDate }: { referenceDate: string }) {
+export function FinalsStrip({ games }: { games: readonly BroadcastGame[] }) {
   const { events } = useLiveScoreboard();
 
-  const finals = useMemo(() => {
-    const start = new Date(`${referenceDate.slice(0, 10)}T00:00:00Z`);
-    start.setUTCDate(start.getUTCDate() - ((start.getUTCDay() + 6) % 7));
-    const end = new Date(start);
-    end.setUTCDate(end.getUTCDate() + 7);
-    return events
-      .filter((event) => {
-        const at = new Date(event.utc);
-        return (
-          event.state === "final" &&
-          Number.isFinite(at.getTime()) &&
-          at >= start &&
-          at < end &&
-          event.homeScore != null &&
-          event.awayScore != null
-        );
-      })
-      .sort((a, b) => b.utc.localeCompare(a.utc));
-  }, [events, referenceDate]);
+  const finals = useMemo(() => slateFinals(events, games), [events, games]);
 
   if (finals.length === 0) return null;
 

@@ -151,23 +151,21 @@ export default function GamedayPlannerCard({
   parking,
   ticketUrl,
 }: GamedayPlannerCardProps) {
-  const formatDate = (dateStr: string) => {
-    const d = new Date(dateStr);
-    return d.toLocaleDateString("en-US", {
-      weekday: "short",
-      month: "short",
-      day: "numeric",
+  // `game.date` and `lastVerified` are calendar days ("2026-10-11"), not
+  // instants. Parsed bare they are UTC midnight, which a US viewer's zone turns
+  // into the evening before ("Sat, Oct 10" for Sunday's game, and a hydration
+  // mismatch with the UTC server render). Anchor at noon and format in UTC.
+  const calendarDay = (dateStr: string, options: Intl.DateTimeFormatOptions) =>
+    new Date(`${dateStr.slice(0, 10)}T12:00:00Z`).toLocaleDateString("en-US", {
+      ...options,
+      timeZone: "UTC",
     });
-  };
 
-  const verifiedLabel = (dateStr: string) => {
-    const d = new Date(dateStr);
-    return d.toLocaleDateString("en-US", {
-      month: "short",
-      day: "numeric",
-      year: "numeric",
-    });
-  };
+  const formatDate = (dateStr: string) =>
+    calendarDay(dateStr, { weekday: "short", month: "short", day: "numeric" });
+
+  const verifiedLabel = (dateStr: string) =>
+    calendarDay(dateStr, { month: "short", day: "numeric", year: "numeric" });
 
   return (
     <div
