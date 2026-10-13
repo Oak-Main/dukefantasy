@@ -95,6 +95,25 @@ test("critical product routes render dataset-backed content", async () => {
   }
 });
 
+test("game pages print the Eastern game day whatever zone the renderer runs in", async () => {
+  // Sunday Night Football (Ravens at Falcons) is Sunday 2026-10-11 in the East.
+  // A bare `new Date("2026-10-11")` is UTC midnight, which is Saturday evening
+  // in Los Angeles; the planner card used to print "Sat, Oct 10" there.
+  const original = process.env.TZ;
+  process.env.TZ = "America/Los_Angeles";
+  try {
+    const response = await fetchRoute("/games/401872993");
+    assert.equal(response.status, 200);
+    const html = (await response.text()).replaceAll("<!-- -->", "");
+    assert.match(html, /Sun · 2026-10-11 · 8:20 PM ET/, "the game header carries the Eastern kickoff");
+    assert.match(html, /Sun, Oct 11/, "the planner card names the Eastern game day");
+    assert.doesNotMatch(html, /Sat, Oct 10/);
+  } finally {
+    if (original === undefined) delete process.env.TZ;
+    else process.env.TZ = original;
+  }
+});
+
 test("spoofed admin-identity headers never reach the app (NF-1)", async () => {
   const response = await fetchRoute("/admin", {
     headers: { "oai-authenticated-user-email": "operator@dukefantasy.com" },
