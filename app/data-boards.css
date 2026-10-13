@@ -333,8 +333,7 @@
 }
 
 .db-primary-cell > span,
-.db-primary-cell > small,
-.db-projection > span {
+.db-primary-cell > small {
   display: block;
   margin-top: 3px;
   color: var(--muted-foreground);
@@ -360,8 +359,7 @@
 
 .db-position-tag,
 .db-status,
-.db-confidence,
-.db-availability {
+.db-confidence {
   display: inline-flex;
   align-items: center;
   width: fit-content;
@@ -381,8 +379,7 @@
 }
 
 .db-status--enrolled,
-.db-confidence--high,
-.db-availability--active {
+.db-confidence--high {
   border-color: color-mix(in srgb, var(--green) 45%, var(--border));
   background: color-mix(in srgb, var(--green) 10%, var(--card));
   color: var(--green);
@@ -390,16 +387,14 @@
 
 .db-status--committed,
 .db-status--available,
-.db-confidence--medium,
-.db-availability--questionable {
+.db-confidence--medium {
   border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
   background: color-mix(in srgb, var(--primary) 9%, var(--card));
   color: var(--primary);
 }
 
 .db-status--withdrawn,
-.db-confidence--low,
-.db-availability--inactive {
+.db-confidence--low {
   color: var(--muted-foreground);
 }
 
@@ -408,14 +403,12 @@
   background: color-mix(in srgb, var(--background) 35%, transparent);
 }
 
-.db-expandable-note summary,
-.db-inline-expand summary {
+.db-expandable-note summary {
   cursor: pointer;
   list-style: none;
 }
 
-.db-expandable-note summary::-webkit-details-marker,
-.db-inline-expand summary::-webkit-details-marker {
+.db-expandable-note summary::-webkit-details-marker {
   display: none;
 }
 
@@ -457,13 +450,11 @@
   display: inline;
 }
 
-.db-expandable-note[open] .db-expandable-note__action svg,
-.db-inline-expand[open] summary svg {
+.db-expandable-note[open] .db-expandable-note__action svg {
   transform: rotate(180deg);
 }
 
-.db-expandable-note > p,
-.db-inline-expand > p {
+.db-expandable-note > p {
   padding: 5px 0 12px;
   color: var(--foreground);
   font-size: 14px;
@@ -472,39 +463,6 @@
 
 .db-mobile-note {
   display: none;
-}
-
-.db-inline-expand {
-  max-width: 30ch;
-}
-
-.db-inline-expand summary {
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
-  color: var(--foreground);
-}
-
-.db-inline-expand summary > span {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
-.db-inline-expand summary svg {
-  flex: 0 0 auto;
-  margin-top: 3px;
-  color: var(--primary);
-}
-
-.db-projection > strong {
-  display: block;
-  color: var(--foreground);
-}
-
-.db-unpublished {
-  color: var(--muted-foreground);
 }
 
 .db-empty {
@@ -723,87 +681,6 @@
   padding: 24px;
   color: var(--muted-foreground);
   font-size: 14px;
-}
-
-.db-clean-gate {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 22px;
-  margin-block: 40px 64px;
-  padding-block: 30px;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  background: color-mix(in srgb, var(--card) 82%, transparent);
-}
-
-.db-clean-gate__icon {
-  display: inline-flex;
-  width: 70px;
-  height: 70px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid color-mix(in srgb, var(--primary) 55%, var(--border));
-  border-radius: 50%;
-  color: var(--primary);
-}
-
-.db-clean-gate h2 {
-  max-width: 20ch;
-  margin-top: 8px;
-  font-size: clamp(2rem, 9vw, 3.7rem);
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.db-clean-gate p {
-  max-width: 70ch;
-  margin-top: 14px;
-  color: var(--muted-foreground);
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-.db-clean-gate button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  min-height: 44px;
-  margin-top: 20px;
-  padding: 10px 14px;
-  border: 1px solid var(--primary);
-  border-radius: var(--radius-sm);
-  background: var(--primary);
-  color: var(--primary-foreground);
-  font-weight: 750;
-  cursor: pointer;
-}
-
-.db-responsible-note {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  margin-top: 16px;
-  padding: 15px;
-  border: 1px solid color-mix(in srgb, var(--primary) 38%, var(--border));
-  border-radius: var(--radius);
-  background: color-mix(in srgb, var(--primary) 7%, var(--card));
-}
-
-.db-responsible-note svg,
-.db-responsible-note a {
-  color: var(--primary);
-}
-
-.db-responsible-note p {
-  flex: 1;
-  color: var(--muted-foreground);
-  font-size: 14px;
-}
-
-.db-responsible-note a {
-  font-weight: 700;
 }
 
 .db-coaching-layout {
@@ -1260,19 +1137,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .db-clean-gate {
-    grid-template-columns: auto minmax(0, 1fr);
-    align-items: center;
-    gap: 28px;
-    padding-inline: 28px;
-  }
-
-  .db-responsible-note {
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-  }
-
   .db-contract-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1503,14 +1367,6 @@
     max-width: 25ch;
   }
 
-  .db-inline-expand {
-    max-width: none;
-  }
-
-  .db-projection > span {
-    margin-top: 0;
-  }
-
   .db-calculator__result {
     min-height: 118px;
   }
@@ -1534,12 +1390,10 @@
   .db-summary,
   .db-table-wrap,
   .db-ledger,
-  .db-clean-gate,
   .db-coach-detail,
   .db-coach-index,
   .db-status,
   .db-confidence,
-  .db-availability,
   .db-position-tag {
     border: 1px solid CanvasText;
   }
