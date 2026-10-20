@@ -40,3 +40,4 @@
 - Transactions/stat leaders have native routes. Fantasy navigation reaches /fantasy-desk; unsupported college filters/bracket and homepage preseason ratings are removed. DFS accuracy remains unpublished.
 - Redraft half-PPR, one QB, typical 10–12 teams; availability is conditional. No fabricated ownership, weather, numeric forecasts, historic picks or unverified full roster/film/scheme baseline.
 - Runtime flags, Clean Mode and commercial kill switches are preserved. Release validation and deployment evidence: docs/RELEASE_2026-10-20.md.
+- Dependency audit scope is the installed production dependency graph, not an assertion that all development tools or every future advisory is clear. Production audit is zero after the two patch overrides.
