@@ -1,4 +1,4 @@
-import { contentSourceModules, refreshAsOf, refreshLimitations, statLeaders, transactionCoverage, transactions, verificationPolicy } from "@/lib/content-refresh";
+import { contentSourceModules, moduleSources, refreshLimitations, statLeaders, transactionCoverage, transactions, verificationPolicy } from "@/lib/content-refresh";
 import { teams } from "@/lib/cfb-dataset";
 import { DataBoardHero } from "./data-board-primitives";
 import { EvidenceLinks } from "./evidence-links";
@@ -7,7 +7,7 @@ export function TransactionsPage({ teamSlug }: { teamSlug?: string }) {
   const names = new Map(teams.map(t => [t.slug, t.name]));
   const rows = transactions.filter(row => !teamSlug || row.from_team_slug === teamSlug || row.to_team_slug === teamSlug);
   return <div className="db-page">
-    <DataBoardHero eyebrow={`Roster wire · As of ${refreshAsOf}`} title="NFL transactions, on the record." description={transactionCoverage} />
+    <DataBoardHero eyebrow={`Roster wire · As of ${moduleSources.transactions.sourceAsOf}`} title="NFL transactions, on the record." description={transactionCoverage} />
     <section className="apex-container db-section" aria-label="Verified NFL transactions">
       <p className="apex-data-note">{rows.length} corroborated moves · October 14–20, 2026 · <a href="/data-sources">Coverage & source dates</a></p>
       {rows.length ? <div className="research-card-grid">{rows.map(row => <article className="research-card" key={`${row.date}-${row.player}-${row.transaction_type}`}>
@@ -21,7 +21,7 @@ export function TransactionsPage({ teamSlug }: { teamSlug?: string }) {
 
 export function StatLeadersPage() {
   return <div className="db-page">
-    <DataBoardHero eyebrow={`2026 regular season · As of ${refreshAsOf}`} title="NFL yardage leaders through Week 6." description="The top five in passing, rushing and receiving yards. Totals agree across NFL and ESPN; these are season results, not fantasy point projections." />
+    <DataBoardHero eyebrow={`2026 regular season · As of ${moduleSources.leaders.sourceAsOf}`} title="NFL yardage leaders through Week 6." description="The top five in passing, rushing and receiving yards. Totals agree across NFL and ESPN; these are season results, not fantasy point projections." />
     <div className="apex-container research-card-grid db-section">{["passing", "rushing", "receiving"].map(category => <section key={category} className="research-card" aria-labelledby={`leader-${category}`}>
       <h2 id={`leader-${category}`}>{category[0].toUpperCase() + category.slice(1)} yards</h2>
       <ol>{statLeaders.filter(row => row.category === category).map(row => <li key={row.player}><strong>{row.player}</strong> · {row.yards.toLocaleString("en-US")} yards</li>)}</ol>
@@ -37,7 +37,7 @@ export function ContentSourcesPage() {
       <div className="research-card-grid">{contentSourceModules().map(row => <article className="research-card" key={row.id}>
         <span className={`provider-state provider-state--${row.freshness === "current" ? "on" : "off"}`}>{row.freshness}</span>
         <h2>{row.label}</h2><p>{row.note}</p>
-        <p>Source as of <time dateTime={row.sourceAsOf}>{row.sourceAsOf}</time><br />Collected {row.sourceAsOf}; precise fetch time was not recorded.<br />Package compiled <time dateTime={row.compiledAt}>{row.compiledAt}</time></p>
+        <p>Source as of {row.sourceAsOf ? <time dateTime={row.sourceAsOf}>{row.sourceAsOf}</time> : "Not published"}<br />{row.fetchedAt ? `Fetched ${row.fetchedAt}` : "Precise fetch time not recorded"}<br />{row.compiledAt ? `Package compiled ${row.compiledAt}` : "No published package"}</p>
       </article>)}</div>
       <h2>Verification standard</h2><p>{verificationPolicy}</p>
       <EvidenceLinks urls={["https://www.nfl.com/schedules/2026/by-week/week-7", "https://www.espn.com/nfl/scoreboard/_/week/7/year/2026/seasontype/2", "https://www.cbssports.com/nfl/injuries/"]} />

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { games, standings } from "../lib/cfb-dataset.ts";
-import { byeTeams, contentSourceModules, practiceReports, refreshWeek, reserveStatuses, sourceFreshness, statLeaders, transactions } from "../lib/content-refresh.ts";
+import { byeTeams, contentSourceModules, inactiveReports, moduleSources, practiceReports, refreshWeek, reserveStatuses, sourceFreshness, statLeaders, transactions } from "../lib/content-refresh.ts";
 
 test("international game metadata preserves the actual city and designated home team", () => {
   const game = games.find(row => row.id === "401873011");
@@ -34,7 +34,7 @@ test("source age becomes stale without a rebuild and an unavailable source never
   assert.equal(sourceFreshness("invalid"), "unavailable");
   assert.equal(sourceFreshness("2026-10-20T19:20:03.528Z", new Date("2026-10-21T19:20:03.528Z")), "current");
   assert.equal(sourceFreshness("2026-10-20T19:20:03.528Z", new Date("2026-10-23T19:20:03.528Z")), "stale");
-  for (const row of contentSourceModules(new Date("2026-11-01T00:00:00Z"))) assert.equal(row.freshness, "stale");
+  for (const row of contentSourceModules(new Date("2026-11-01T00:00:00Z"))) assert.equal(row.freshness, row.sourceAsOf ? "stale" : "unavailable");
 });
 
 test("Thursday-game walkthrough retains Monday date and week instead of filling Wednesday", () => {
@@ -46,9 +46,27 @@ test("Thursday-game walkthrough retains Monday date and week instead of filling 
 });
 
 test("reserve eligibility statuses remain separate from the injury ledger and carry two sources", () => {
-  assert.equal(reserveStatuses.length, 14);
+  assert.ok(Array.isArray(reserveStatuses));
   for (const row of reserveStatuses) {
     assert.ok(!["IR", "OUT", "QUESTIONABLE", "DOUBTFUL"].includes(row.status));
     assert.ok(new Set(row.sources.map(url => new URL(url).hostname)).size >= 2);
   }
+});
+
+test("inactives retain week/game identity and at least two publishers", () => {
+  for (const report of inactiveReports) {
+    const game=games.find(game => game.id===report.gameId);
+    assert.equal(report.week,7);
+    assert.equal(game?.week,7);
+    assert.ok(game && [game.homeTeamId,game.awayTeamId].includes(report.teamSlug));
+    assert.ok(new Set(report.sources.map(url => new URL(url).hostname)).size>=2);
+  }
+});
+
+test("a new injury review cannot refresh an untouched fantasy edition", () => {
+  const sources={...moduleSources,injuries:{sourceAsOf:"2026-10-23",fetchedAt:"2026-10-23T14:00:00Z",compiledAt:"2026-10-23T14:10:00Z"}};
+  const rows=contentSourceModules(new Date("2026-10-23T15:00:00Z"),sources);
+  assert.equal(rows.find(row=>row.id==="injuries")?.freshness,"current");
+  assert.equal(rows.find(row=>row.id==="fantasy")?.sourceAsOf,"2026-10-20");
+  assert.equal(rows.find(row=>row.id==="fantasy")?.freshness,"stale");
 });

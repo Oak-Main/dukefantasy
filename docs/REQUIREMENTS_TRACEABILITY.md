@@ -42,3 +42,8 @@
 - Redraft half-PPR, one QB, typical 10–12 teams; availability is conditional. No fabricated ownership, weather, numeric forecasts, historic picks or unverified full roster/film/scheme baseline.
 - Runtime flags, Clean Mode and commercial kill switches are preserved. Release validation and deployment evidence: docs/RELEASE_2026-10-20.md.
 - Production dependency checks: sharp 0.35.5 and source-map-js 1.2.2 overrides address the two verified advisories; npm audit --omit=dev reports zero vulnerabilities.
+
+
+## Week 7 automatic updates
+
+Owner authorized two-source injury, inactive and results monitoring, with checks before each automatic deployment. Added separate module source dates, a dated complete-team inactive view, serialized writer lock, and a fail-closed recorded-evidence gate. The deployment command requires evidence, full verification, fresh ESPN comparison, production dependency audit, Cloudflare types/dry run, then production smoke verification; rollback uses the captured previous Worker version. Two bounded schedules in the existing chat cover twice-daily reports and half-hour game windows through October 27, 2026, Pacific. No future observations are fabricated and no single-source update publishes. Local host/app and credentials must remain available. See docs/WEEK7_AUTOMATIC_UPDATES.md.

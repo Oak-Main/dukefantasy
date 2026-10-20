@@ -1,4 +1,5 @@
 import editorial from "../data/content-refresh/current-editorial.json" with { type: "json" };
+import manifest from "../data/content-refresh/current.json" with { type: "json" };
 
 export interface VerifiedTransaction {
   player: string;
@@ -29,11 +30,26 @@ export interface PracticeReport {
   sources: string[];
   note: string;
 }
-export const refreshAsOf = editorial.asOf;
+export const refreshAsOf = manifest.sourceAsOf;
 export const refreshFetchedAt = editorial.fetchedAt;
 export const refreshCompiledAt = editorial.compiledAt;
 export const reserveStatuses = editorial.reserveStatuses;
 export const refreshWeek = editorial.week;
+export interface ModuleSource { sourceAsOf: string | null; fetchedAt: string | null; compiledAt: string | null }
+export const moduleSources: Record<string, ModuleSource> = editorial.moduleSources;
+export const fantasyResearchAsOf = moduleSources.fantasy.sourceAsOf;
+export const resultsAsOf = moduleSources.schedule.sourceAsOf;
+export interface InactiveReport {
+  gameId: string;
+  week: number;
+  teamSlug: string;
+  publishedAt: string;
+  checkedAt: string;
+  complete: boolean;
+  players: Array<{ name: string; designation: "inactive" | "emergency_qb" }>;
+  sources: string[];
+}
+export const inactiveReports: readonly InactiveReport[] = editorial.inactives as InactiveReport[];
 export const byeTeams: readonly string[] = editorial.byes;
 export const transactions: readonly VerifiedTransaction[] = editorial.transactions.moves;
 export const transactionCoverage = editorial.transactions.coverage_note;
@@ -50,12 +66,13 @@ export function sourceFreshness(sourceAsOf: string | null, now = new Date(), max
   return now.getTime() - time > maxAgeHours * 3_600_000 ? "stale" : "current";
 }
 
-export function contentSourceModules(now = new Date()) {
+export function contentSourceModules(now = new Date(), sources = moduleSources) {
   return [
-    { id: "schedule", label: "Schedule, results & standings", note: "93 final scores, Week 7's 14 games and 32 standings corroborated with NFL + ESPN. Weeks 8–18: single-source planning schedule; subject to flex.", hours: 48 },
-    { id: "injuries", label: "Injury research", note: "399 corroborated ledger/watch entries. Final Week 7 designations are pending. Two publishers can share an upstream feed.", hours: 24 },
+    { id: "schedule", label: "Schedule, results & standings", note: "Published final scores, Week 7's 14 games and 32 standings are checked with NFL + ESPN. Weeks 8–18: single-source planning schedule; subject to flex.", hours: 48 },
+    { id: "injuries", label: "Injury research", note: "Corroborated ledger/watch entries. Practice participation, final designations and inactives are distinct. Two publishers can share an upstream feed.", hours: 24 },
+    { id: "inactives", label: "Week 7 game-day inactives", note: "Only published, two-source team lists appear. Missing lists do not imply active status. Emergency third quarterbacks remain separately labeled.", hours: 24 },
     { id: "fantasy", label: "Fantasy decision boards", note: "Early Week 7 half-PPR redraft edition. Conditional editorial tiers; targeted coverage. Ownership and numeric projections withheld.", hours: 48 },
     { id: "transactions", label: "Transaction wire", note: transactionCoverage, hours: 48 },
     { id: "leaders", label: "Season yardage leaders", note: "Top five passing, rushing and receiving leaders through Week 6. NFL + ESPN agreement.", hours: 168 },
-  ].map(row => ({ ...row, sourceAsOf: refreshAsOf, fetchedAt: refreshFetchedAt, compiledAt: refreshCompiledAt, freshness: sourceFreshness(refreshAsOf, now, row.hours) }));
+  ].map(row => { const source = sources[row.id]; return { ...row, ...source, freshness: sourceFreshness(source.sourceAsOf, now, row.hours) }; });
 }

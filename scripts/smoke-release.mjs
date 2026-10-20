@@ -19,7 +19,7 @@ for (const [path, match] of [
   ["/injuries", /Kyle Monangai/],
   ["/transactions", /Tanner Hudson/],
   ["/stats", /Matthew Stafford/],
-  ["/data-sources", /2026-10-20/],
+  ["/data-sources", new RegExp(manifest.sourceAsOf)],
   ["/dfs", /projections are not published/],
   ["/games/401873011", /Saint-Denis/],
 ]) {
@@ -37,11 +37,11 @@ for (const [path, match] of [
 const health = await (await get("/api/health")).json();
 assert.equal(health.contentVersion, manifest.sourceAsOf);
 assert.equal(health.nflWeek, 7);
-assert.equal(health.modules.length, 5);
+assert.equal(health.modules.length, 6);
 checks.push({ path: "/api/health", status: 200, modules: health.modules });
 const readiness = await (await get("/api/readiness")).json();
 assert.equal(readiness.datasetProvider, "reviewed-nfl-snapshot");
-assert.equal(readiness.contentModules.length, 5);
+assert.equal(readiness.contentModules.length, 6);
 checks.push({ path: "/api/readiness", status: 200, ready: readiness.readyForProductionLiveData });
 const scoreboard = await (await get("/api/nfl-scoreboard")).json();
 assert.ok(Array.isArray(scoreboard.events), "scoreboard events");

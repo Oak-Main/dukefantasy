@@ -14,15 +14,19 @@ export function materializeVerifiedSnapshot(root) {
   if (snapshot.teams.length !== 32 || snapshot.schedule.length !== 272 || new Set(snapshot.schedule.map(g => g.id)).size !== 272) {
     throw new Error("Incomplete verified NFL snapshot; keeping the previous generated file");
   }
-  if (snapshot.sourceAsOf !== manifest.sourceAsOf || injuryResearch.as_of !== manifest.sourceAsOf || injuryResearch.week !== snapshot.season.currentWeek || editorial.asOf !== manifest.sourceAsOf || editorial.week !== snapshot.season.currentWeek) {
+  const sources = editorial.moduleSources;
+  if (sources.schedule.sourceAsOf !== snapshot.sourceAsOf || sources.injuries.sourceAsOf !== injuryResearch.as_of || injuryResearch.week !== snapshot.season.currentWeek || editorial.week !== snapshot.season.currentWeek) {
     throw new Error("Verified snapshot and injury report date/week do not match");
   }
   for (const [key, board] of Object.entries(fantasyDesk)) {
     const expectedWeek = key === "rookie" ? snapshot.season.currentWeek - 1 : snapshot.season.currentWeek;
     const boardWeek = key === "waiver" ? board?.week_adding_for : board?.week;
-    if (board && (boardWeek !== expectedWeek || board.as_of !== manifest.sourceAsOf)) {
+    if (board && (boardWeek !== expectedWeek || !/^\d{4}-\d{2}-\d{2}$/.test(board.as_of) || board.as_of > manifest.sourceAsOf)) {
       throw new Error("Fantasy board belongs to another source date/week");
     }
+  }
+  for (const source of Object.values(sources)) {
+    if (source.sourceAsOf && source.sourceAsOf > manifest.sourceAsOf) throw new Error("Module date is newer than the release date");
   }
   const payload = { ...snapshot, injuryResearch, fantasyDesk };
   // One write, only after all reads and validation succeed. generatedAt remains
