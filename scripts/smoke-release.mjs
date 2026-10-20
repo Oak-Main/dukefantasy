@@ -3,11 +3,14 @@ import { readFileSync, writeFileSync } from "node:fs";
 
 const base = new URL(process.argv[2] ?? "https://dukefantasy.com");
 const manifest = JSON.parse(readFileSync(new URL("../data/content-refresh/current.json", import.meta.url), "utf8"));
+const generated = readFileSync(new URL("../lib/nfl-generated.ts", import.meta.url), "utf8");
+const candidate = JSON.parse(generated.slice(generated.indexOf("export default ") + 15).replace(/;\s*$/, ""));
 const checks = [];
 async function get(path) {
   const response = await fetch(new URL(path, base), { signal: AbortSignal.timeout(30_000), redirect: "manual" });
   assert.equal(response.status, 200, `${path}: HTTP ${response.status}`);
   assert.equal(response.headers.get("x-content-version"), manifest.sourceAsOf, `${path}: wrong release`);
+  assert.equal(response.headers.get("x-content-revision"), candidate.publicationId, `${path}: wrong content revision`);
   assert.equal(response.headers.get("x-content-type-options"), "nosniff");
   return response;
 }

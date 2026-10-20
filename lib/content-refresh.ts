@@ -1,5 +1,6 @@
 import editorial from "../data/content-refresh/current-editorial.json" with { type: "json" };
 import manifest from "../data/content-refresh/current.json" with { type: "json" };
+import nfl from "./nfl-generated.ts";
 
 export interface VerifiedTransaction {
   player: string;
@@ -31,6 +32,7 @@ export interface PracticeReport {
   note: string;
 }
 export const refreshAsOf = manifest.sourceAsOf;
+export const refreshRevision = nfl.publicationId;
 export const refreshFetchedAt = editorial.fetchedAt;
 export const refreshCompiledAt = editorial.compiledAt;
 export const reserveStatuses = editorial.reserveStatuses;
