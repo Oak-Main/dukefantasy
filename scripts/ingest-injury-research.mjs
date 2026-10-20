@@ -58,15 +58,16 @@ function validate(doc, slugs) {
   watch.forEach((entry, index) => {
     if (!entry.player) fail("player missing", entry, index);
     if (!slugs.has(entry.team_slug)) fail(`unknown team_slug ${entry.team_slug}`, entry, index);
+    if (entry.published_status != null && (!["OUT", "DOUBTFUL", "QUESTIONABLE", "NO_DESIGNATION"].includes(entry.published_status) || entry.designation_week !== doc.week || !/^\d{4}-\d{2}-\d{2}$/.test(entry.designation_date ?? ""))) fail("official designation needs valid status, report week and source date", entry, index);
     for (const day of ["mon", "tue", "wed", "thu", "fri", "sat"]) {
       if (!PRACTICE.has(entry.practice?.[day] ?? null)) {
         fail(`practice.${day} must be DNP|LP|FP|null, got ${entry.practice?.[day]}`, entry, index);
       }
     }
     if (entry.likelihood && !LIKELIHOODS.has(entry.likelihood)) fail(`bad likelihood ${entry.likelihood}`, entry, index);
-    if (!entry.confidence || !CONFIDENCE.has(entry.confidence)) fail("watch entries need a confidence", entry, index);
-    if (!entry.likelihood && !Object.values(entry.practice ?? {}).some(value => value != null)) {
-      fail("watch entries need practice status or a likelihood", entry, index);
+    if ((entry.likelihood && !entry.confidence) || (entry.confidence && !CONFIDENCE.has(entry.confidence))) fail("likelihood needs a valid confidence", entry, index);
+    if (!entry.published_status && !entry.likelihood && !Object.values(entry.practice ?? {}).some(value => value != null)) {
+      fail("watch entries need practice status, a designation or a likelihood", entry, index);
     }
     const allSources = [...(entry.sources ?? []), ...(entry.social ?? [])];
     if (allSources.length === 0) fail("at least one source or verified social link required", entry, index);

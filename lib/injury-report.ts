@@ -24,6 +24,7 @@ export type InjuryStatus = "IR" | "OUT" | "QUESTIONABLE" | "DOUBTFUL" | "SUSPENS
 export type PracticeStatus = "DNP" | "LP" | "FP";
 export type Likelihood = "likely" | "questionable" | "doubtful" | "unlikely";
 export type Confidence = "high" | "medium" | "low";
+export type GameDesignation = "OUT" | "DOUBTFUL" | "QUESTIONABLE" | "NO_DESIGNATION";
 
 /** One player's injury as ESPN publishes it (live + build snapshot). */
 export interface EspnInjuryEntry {
@@ -56,6 +57,8 @@ export interface InjuryWatchEntry {
   teamSlug: string;
   position: string | null;
   injury: string | null;
+  publishedStatus: GameDesignation | null;
+  designationDate: string | null;
   practice: { mon?: PracticeStatus | null; tue?: PracticeStatus | null; wed: PracticeStatus | null; thu: PracticeStatus | null; fri: PracticeStatus | null; sat: PracticeStatus | null };
   likelihood: Likelihood | null;
   confidence: Confidence | null;
@@ -116,6 +119,8 @@ export const injuryResearch: InjuryResearchDoc = {
     teamSlug: String(row.team_slug ?? ""),
     position: (row.position as string | null) ?? null,
     injury: (row.injury as string | null) ?? null,
+    publishedStatus: (row.published_status as GameDesignation | null) ?? null,
+    designationDate: (row.designation_date as string | null) ?? null,
     practice: mapPractice(row),
     likelihood: (row.likelihood as Likelihood | null) ?? null,
     confidence: (row.confidence as Confidence | null) ?? null,
@@ -209,35 +214,36 @@ export function likelihoodFromPractice(practice: InjuryWatchEntry["practice"]): 
 export interface InjurySlot {
   id: string;
   label: string;
-  /** 0=Sunday … 6=Saturday */
-  weekday: number;
+  /** 0=Sunday … 6=Saturday, in America/Los_Angeles. */
+  weekdays: number[];
   /** Minutes after midnight, Pacific Time. */
   minuteOfDay: number;
+  endMinuteOfDay?: number;
+  intervalMinutes?: number;
+  daysLabel: string;
   scope: string;
 }
 
 export const INJURY_CADENCE: InjurySlot[] = [
-  { id: "tuesday-main", label: "Weekly main report", weekday: 2, minuteOfDay: 9 * 60, scope: "Full ledger + watch, built from the week's research" },
-  { id: "sunday-morning", label: "Sunday morning update", weekday: 0, minuteOfDay: 9 * 60 + 30, scope: "Practice-week wrap + game-day actives/inactives begin" },
-  { id: "sunday-noon", label: "Sunday midday update", weekday: 0, minuteOfDay: 12 * 60 + 30, scope: "Final actives/inactives before early kickoffs" },
-  { id: "monday-mnf", label: "Monday pre-MNF update", weekday: 1, minuteOfDay: 16 * 60 + 30, scope: "Monday night teams only — final statuses" },
+  { id: "daily-morning", label: "Injury and results review", weekdays: [0, 1, 2, 3, 4, 5, 6], daysLabel: "Daily through October 27", minuteOfDay: 9 * 60 + 15, scope: "Practice reports, official designations and completed results" },
+  { id: "daily-afternoon", label: "Afternoon reconciliation", weekdays: [0, 1, 2, 3, 4, 5, 6], daysLabel: "Daily through October 27", minuteOfDay: 16 * 60 + 15, scope: "New reports, score corrections and standings" },
+  { id: "game-windows", label: "Checks every 30 minutes", weekdays: [0, 1, 4], daysLabel: "Thursday, Sunday and Monday", minuteOfDay: 4 * 60, endMinuteOfDay: 22 * 60 + 30, intervalMinutes: 30, scope: "Around actual game windows, including the early Sunday game. Inactive checks begin 90 minutes before kickoff; results publish after corroboration." },
 ];
 
-export function nextInjurySlot(now: Date = new Date()): { slot: InjurySlot; at: Date } {
-  // Pacific Time offset in hours: PDT (UTC-7) roughly Mar–Nov, PST (UTC-8) otherwise.
-  const month = now.getUTCMonth();
-  const ptHours = month >= 2 && month <= 10 ? 7 : 8;
+export function nextInjurySlot(now: Date = new Date()): { slot: InjurySlot; at: Date } | null {
+  // This bounded October 20–27, 2026 schedule is entirely in PDT (UTC−7).
   let best: { slot: InjurySlot; at: Date } | null = null;
-  for (let dayAhead = 0; dayAhead <= 7; dayAhead += 1) {
-    const day = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + dayAhead));
+  for (let date = 20; date <= 27; date += 1) {
+    const day = new Date(Date.UTC(2026, 9, date));
     for (const slot of INJURY_CADENCE) {
-      if (day.getUTCDay() !== slot.weekday) continue;
-      const at = new Date(day.getTime() + slot.minuteOfDay * 60_000 + ptHours * 3_600_000);
-      if (at.getTime() <= now.getTime()) continue;
-      if (!best || at.getTime() < best.at.getTime()) best = { slot, at };
+      if (!slot.weekdays.includes(day.getUTCDay())) continue;
+      for (let minute = slot.minuteOfDay; minute <= (slot.endMinuteOfDay ?? slot.minuteOfDay); minute += slot.intervalMinutes ?? 1) {
+        const at = new Date(day.getTime() + minute * 60_000 + 7 * 3_600_000);
+        if (at.getTime() <= now.getTime()) continue;
+        if (!best || at.getTime() < best.at.getTime()) best = { slot, at };
+      }
     }
   }
-  if (!best) throw new Error("injury cadence produced no next slot");
   return best;
 }
 

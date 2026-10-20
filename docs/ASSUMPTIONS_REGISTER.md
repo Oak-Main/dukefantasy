@@ -46,3 +46,7 @@
 ## Week 7 automatic updates
 
 Owner authorized two-source injury, inactive and results monitoring, with checks before each automatic deployment. Added separate module source dates, a dated complete-team inactive view, serialized writer lock, and a fail-closed recorded-evidence gate. The deployment command requires evidence, full verification, fresh ESPN comparison, production dependency audit, Cloudflare types/dry run, then production smoke verification; rollback uses the captured previous Worker version. Two bounded schedules in the existing chat cover twice-daily reports and half-hour game windows through October 27, 2026, Pacific. No future observations are fabricated and no single-source update publishes. Local host/app and credentials must remain available. See docs/WEEK7_AUTOMATIC_UPDATES.md.
+
+Week 7 timetable follow-up (2026-10-20): the public injury cadence reflects the two active bounded thread schedules; a scheduled check does not guarantee a new publication. October 20–27 is entirely PDT.
+
+Official designations (2026-10-20): a dated no-designation report does not establish game-day active status. Watch entries may carry an official status separately from editorial likelihood.
