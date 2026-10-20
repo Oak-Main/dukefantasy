@@ -249,7 +249,7 @@ test("DFS ledger grades only published top-10 picks and reports honest accuracy"
   assert.equal(empty.bias, null);
 });
 
-test("injury desk: ESPN base loads, long-term rule holds, cadence always has a next slot", async () => {
+test("injury desk: sourced base, long-term rule and bounded Week 7 cadence", async () => {
   const injury = await import("../lib/injury-report.ts");
   /* The floor proves the feed LOADED — not its size. The NFL injury report
      fluctuates through the week (draft-week peak was 200+; midweek after
@@ -269,13 +269,12 @@ test("injury desk: ESPN base loads, long-term rule holds, cadence always has a n
   assert.equal(injury.likelihoodFromPractice({ wed: null, thu: "FP", fri: "FP", sat: null }).likelihood, "likely");
   assert.equal(injury.likelihoodFromPractice({ wed: null, thu: null, fri: "DNP", sat: null }).likelihood, "doubtful");
   assert.equal(injury.likelihoodFromPractice({ wed: null, thu: null, fri: null, sat: null }).likelihood, null);
-  // Cadence: every slot exists and the next slot is always in the future.
-  assert.equal(injury.INJURY_CADENCE.length, 4);
-  const next = injury.nextInjurySlot();
-  assert.ok(next.at.getTime() > Date.now());
-  const wednesday = new Date("2026-09-09T18:00:00Z"); // 11 AM PT Wednesday
-  const afterWed = injury.nextInjurySlot(wednesday);
-  assert.ok(afterWed.at.getTime() > wednesday.getTime());
+  // The actual bounded automation covers the early Sunday game and then expires.
+  const tuesday = injury.nextInjurySlot(new Date("2026-10-20T18:00:00Z"));
+  assert.equal(tuesday?.at.toISOString(), "2026-10-20T23:15:00.000Z");
+  const earlySunday = injury.nextInjurySlot(new Date("2026-10-25T10:59:00Z"));
+  assert.equal(earlySunday?.at.toISOString(), "2026-10-25T11:00:00.000Z");
+  assert.equal(injury.nextInjurySlot(new Date("2026-10-28T07:00:00Z")), null);
   // Missing research stays empty; published research must have provenance.
   const research = injury.injuryResearch;
   if (research.asOf === null) {

@@ -8,8 +8,9 @@ export function collectFacts({ snapshot, injury, editorial }) {
   const facts = new Map();
   const put = (kind, key, value) => { const id = `${kind}:${key}`; if (facts.has(id)) throw new Error(`Duplicate publication record ${id}`); facts.set(id, { kind, key, value }); };
   for (const row of [...injury.ledger, ...injury.watch]) put("injury", `${row.team_slug}:${row.player}`, {
-    player: row.player, team_slug: row.team_slug, status: row.status ?? row.published_status ?? null,
+    player: row.player, team_slug: row.team_slug, status: row.published_status ?? row.status ?? null,
     injury: row.injury ?? null, practice: row.practice ?? null,
+    designation_date: row.designation_date ?? null, designation_week: row.designation_week ?? null,
   });
   for (const row of editorial.reserveStatuses ?? []) put("reserve", `${row.team_slug}:${row.player}`, { player: row.player, team_slug: row.team_slug, status: row.status });
   for (const report of editorial.practiceReports ?? []) put("practice", `${report.date}:${report.team_slug}:${report.player}`, { date: report.date, week: report.week, player: report.player, team_slug: report.team_slug, participation: report.participation, report_type: report.report_type, injury: report.injury });

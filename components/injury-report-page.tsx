@@ -20,8 +20,6 @@ import {
   nextInjurySlot,
 } from "@/lib/injury-report";
 
-const WEEKDAY_LABEL = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
 function formatSlotTime(minuteOfDay: number): string {
   const hours24 = Math.floor(minuteOfDay / 60);
   const minutes = minuteOfDay % 60;
@@ -119,6 +117,8 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       position: entry.position,
       injury: null as string | null,
       practice: null as InjuryWatchEntry["practice"] | null,
+      publishedStatus: null as InjuryWatchEntry["publishedStatus"],
+      designationDate: null as string | null,
       likelihood: entry.status === "OUT" ? ("unlikely" as const) : entry.status === "DOUBTFUL" ? ("doubtful" as const) : null,
       confidence: null as string | null,
       note: entry.detail,
@@ -134,6 +134,8 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         position: entry.position,
         injury: entry.injury,
         practice: entry.practice,
+        publishedStatus: entry.publishedStatus,
+        designationDate: entry.designationDate,
         likelihood: entry.likelihood ?? model.likelihood,
         confidence: entry.confidence ?? model.confidence,
         note: entry.note ?? model.basis,
@@ -188,25 +190,25 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         <div className="inj-cadence-next">
           <CalendarClock size={18} aria-hidden="true" />
           <div>
-            <strong>Next scheduled update: {next.slot.label}</strong>
-            <span>
+            <strong>{next ? `Next scheduled check: ${next.slot.label}` : "Week 7 scheduled checks ended October 27, 2026"}</strong>
+            {next && <span>
               {next.at.toLocaleDateString("en-US", { weekday: "long", timeZone: "America/Los_Angeles" })} ·{" "}
               {next.at.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Los_Angeles" })} PT — {next.slot.scope}
-            </span>
+            </span>}
           </div>
         </div>
         <div className="inj-cadence-grid">
           {INJURY_CADENCE.map((slot) => (
-            <article key={slot.id} className={slot.id === next.slot.id ? "inj-cadence-slot is-next" : "inj-cadence-slot"}>
-              <span className="db-eyebrow">{WEEKDAY_LABEL[slot.weekday]}</span>
-              <strong>{formatSlotTime(slot.minuteOfDay)}</strong>
+            <article key={slot.id} className={slot.id === next?.slot.id ? "inj-cadence-slot is-next" : "inj-cadence-slot"}>
+              <span className="db-eyebrow">{slot.daysLabel}</span>
+              <strong>{formatSlotTime(slot.minuteOfDay)}{slot.endMinuteOfDay !== undefined ? `–${formatSlotTime(slot.endMinuteOfDay)}` : ""}</strong>
               <span>{slot.label}</span>
               <p>{slot.scope}</p>
             </article>
           ))}
         </div>
         <p className="apex-data-note">
-          <RefreshCw size={12} aria-hidden="true" /> Planned review slots require a new verified research import. The displayed source date shows the last published review.
+          <RefreshCw size={12} aria-hidden="true" /> Week 7 checks run through October 27, 2026. Publication requires two agreeing sources and passing checks; the displayed source date shows the last published review.
         </p>
       </section>
 
@@ -316,7 +318,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
           </div>
         </div>
         {researchLive ? (
-          <p className="inj-watch-note">{INJURY_METHOD.sentiment}</p>
+          <p className="inj-watch-note">Official game designations are labeled separately from likelihood and carry their report date. No designation does not confirm game-day active status. {INJURY_METHOD.sentiment}</p>
         ) : (
           <p className="inj-watch-note">
             Editorial watch calls (practice participation, likelihood with confidence, sentiment from beat reports
@@ -364,14 +366,10 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
                         <LikelihoodPill likelihood={row.likelihood} confidence={row.confidence} />
                       </td>
                       <td className="inj-detail">
+                        {row.publishedStatus ? <p><strong>Official Week {injuryResearch.week} designation: {row.publishedStatus.replaceAll("_", " ")}</strong> · <time dateTime={row.designationDate ?? undefined}>{row.designationDate}</time></p> : null}
                         {row.note ?? "Not published"}
                         {row.sources.length || row.social.length ? (
-                          <>
-                            {" "}
-                            <a href={(row.sources[0] ?? row.social[0]) as string} target="_blank" rel="noopener noreferrer">
-                              Source
-                            </a>
-                          </>
+                          <EvidenceLinks urls={[...row.sources, ...row.social]} />
                         ) : row.kind === "espn" ? (
                           <>
                             {" "}

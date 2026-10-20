@@ -119,3 +119,7 @@ Rejected: swapping `HubApp`'s views for them (no redesign was requested, and the
 ## Week 7 automatic updates
 
 Owner authorized two-source injury, inactive and results monitoring, with checks before each automatic deployment. Added separate module source dates, a dated complete-team inactive view, serialized writer lock, and a fail-closed recorded-evidence gate. The deployment command requires evidence, full verification, fresh ESPN comparison, production dependency audit, Cloudflare types/dry run, then production smoke verification; rollback uses the captured previous Worker version. Two bounded schedules in the existing chat cover twice-daily reports and half-hour game windows through October 27, 2026, Pacific. No future observations are fabricated and no single-source update publishes. Local host/app and credentials must remain available. See docs/WEEK7_AUTOMATIC_UPDATES.md.
+
+Week 7 timetable follow-up (2026-10-20): replaced legacy weekly editorial slots with the actual daily and half-hour game-window checks. The next-check helper stops after October 27 and covers early Sunday kickoffs.
+
+Official designations (2026-10-20): preserve report week/date through the native importer, evidence gate and watch renderer. Expose both corroborating watch sources and reject invalid designation metadata.
