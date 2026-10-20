@@ -1,193 +1,302 @@
 {
- "start_sit": {
-  "as_of": "2026-09-19",
-  "week": 2,
-  "positions": [
+ "waiver": {
+  "as_of": "2026-10-20",
+  "week_adding_for": 7,
+  "adds": [
    {
+    "player": "Aaron Rodgers",
+    "team_slug": "pittsburgh-steelers",
     "position": "QB",
-    "tiers": [
-     {
-      "tier": "start_confidence",
-      "players": [
-       {
-        "player": "Josh Allen",
-        "team_slug": "buffalo-bills",
-        "note": "Start Josh Allen: active after 334 YDS and 2 TD, Detroit next."
-       },
-       {
-        "player": "Lamar Jackson",
-        "team_slug": "baltimore-ravens",
-        "note": "Week 1: 17/25, 324 YDS, 1 TD (team won 41-23). Week 2 vs New Orleans Saints (BAL -8.5)."
-       },
-       {
-        "player": "Jalen Hurts",
-        "team_slug": "philadelphia-eagles",
-        "note": "Start Hurts with confidence after 3 TDs and no interceptions; active heading into Week 2 at Tennessee."
-       },
-       {
-        "player": "Trevor Lawrence",
-        "team_slug": "jacksonville-jaguars",
-        "note": "Start Lawrence: active after 245 yards, four touchdowns, no interceptions in 34-10 win."
-       },
-       {
-        "player": "Caleb Williams",
-        "team_slug": "chicago-bears",
-        "note": "Week 1: 21/29, 269 YDS, 2 TD (team won 59-37). Week 2 vs Minnesota Vikings (CHI -4.5)."
-       },
-       {
-        "player": "Brock Purdy",
-        "team_slug": "san-francisco-49ers",
-        "note": "Week 1: 25/34, 205 YDS, 3 TD, 1 INT (team won 27-7). Week 2 vs Miami Dolphins (SF -13.5)."
-       },
-       {
-        "player": "Patrick Mahomes",
-        "team_slug": "kansas-city-chiefs",
-        "note": "Start Mahomes: active, Week 1 had 2 TD vs Denver; Week 2 vs Colts with KC -6.5."
-       },
-       {
-        "player": "C.J. Stroud",
-        "team_slug": "houston-texans",
-        "note": "Start C.J. Stroud confidently vs Bengals after 274 yards and two touchdowns in Week 1."
-       }
-      ]
-     },
-     {
-      "tier": "start_if_needed",
-      "players": [
-       {
-        "player": "Jordan Love",
-        "team_slug": "green-bay-packers",
-        "note": "Start Love if needed: threw for 387 yards and two touchdowns Week 1, faces the Jets Sunday."
-       },
-       {
-        "player": "Jared Goff",
-        "team_slug": "detroit-lions",
-        "note": "Week 1: 26/39, 206 YDS, 2 TD (team won 31-30). Week 2 @ Buffalo Bills (line n/p)."
-       },
-       {
-        "player": "Baker Mayfield",
-        "team_slug": "tampa-bay-buccaneers",
-        "note": "Sit if possible: Mayfield managed 216 yards with no touchdowns, and Tampa lost 27-33."
-       },
-       {
-        "player": "Justin Herbert",
-        "team_slug": "los-angeles-chargers",
-        "note": "Start Justin Herbert if needed vs Raiders; posted 209 yards, one TD, one interception in Week 1."
-       },
-       {
-        "player": "Matthew Stafford",
-        "team_slug": "los-angeles-rams",
-        "note": "Start Stafford if needed at home against the Giants as 7-point favorites, despite a 155-yard Week 1."
-       },
-       {
-        "player": "Tyler Shough",
-        "team_slug": "new-orleans-saints",
-        "note": "Start Tyler Shough if needed Week 2 at Baltimore after 410 yards and 3 TDs in the Lions loss."
-       },
-       {
-        "player": "Jaxson Dart",
-        "team_slug": "new-york-giants",
-        "note": "Start Dart if needed after 230 yards and three touchdowns in Week 1; faces Rams as 7-point underdogs."
-       },
-       {
-        "player": "Dak Prescott",
-        "team_slug": "dallas-cowboys",
-        "note": "Start if needed: Prescott threw for 175 yards, 2 TD, 1 INT in Week 1's loss; faces Washington Sunday."
-       },
-       {
-        "player": "Bryce Young",
-        "team_slug": "carolina-panthers",
-        "note": "Start Bryce Young if needed: 361 yards, 3 TD, 1 INT in Week 1; Atlanta next, CAR -2.5."
-       },
-       {
-        "player": "Kirk Cousins",
-        "team_slug": "las-vegas-raiders",
-        "note": "Start Cousins if needed at the Chargers after 160 yards, three touchdowns, and two interceptions in a Week 1 win."
-       }
-      ]
-     },
-     {
-      "tier": "fringe",
-      "players": [
-       {
-        "player": "Jacoby Brissett",
-        "team_slug": "arizona-cardinals",
-        "note": "Sit Jacoby Brissett in most leagues; fringe-tier QB despite 277 yards and a touchdown in Week 1."
-       },
-       {
-        "player": "Aaron Rodgers",
-        "team_slug": "pittsburgh-steelers",
-        "note": "Fringe start: Rodgers threw for 221 yards and a TD in a win, but is a road underdog at New England."
-       },
-       {
-        "player": "Daniel Jones",
-        "team_slug": "indianapolis-colts",
-        "note": "Sit Jones; fringe option after 166 yards, one touchdown, one interception, facing Kansas City as underdogs."
-       },
-       {
-        "player": "Carson Wentz",
-        "team_slug": "minnesota-vikings",
-        "note": "Sit Wentz — fringe option despite 3 TD in Week 1, now a 4.5-point underdog at Chicago."
-       },
-       {
-        "player": "Joe Burrow",
-        "team_slug": "cincinnati-bengals",
-        "note": "Sit Burrow — questionable with a back injury heading into Sunday's game at Houston."
-       },
-       {
-        "player": "Drew Lock",
-        "team_slug": "seattle-seahawks",
-        "note": "Sit Drew Lock in Week 2; fringe-tier spot starter on the road at Arizona despite going 16/22 for 187 yards and a TD in Week 1."
-       },
-       {
-        "player": "Deshaun Watson",
-        "team_slug": "cleveland-browns",
-        "note": "Sit Watson — fringe-tier option whose team lost 10-34 and enters as heavy underdogs at Tampa Bay."
-       },
-       {
-        "player": "Jayden Daniels",
-        "team_slug": "washington-commanders",
-        "note": "Sit Jayden Daniels — fringe option after 164 yards and 2 TD in a loss, now a 3.5-point underdog at Dallas."
-       }
-      ]
-     },
-     {
-      "tier": "sit",
-      "players": [
-       {
-        "player": "Cooper Rush",
-        "team_slug": "atlanta-falcons",
-        "note": "Sit Cooper Rush despite being confirmed to start Sunday against the Panthers at home."
-       },
-       {
-        "player": "Cam Ward",
-        "team_slug": "tennessee-titans",
-        "note": "Week 1: 19/32, 140 YDS, 1 TD (team lost 10-23). Week 2 vs Philadelphia Eagles (PHI -7)."
-       },
-       {
-        "player": "Geno Smith",
-        "team_slug": "new-york-jets",
-        "note": "Sit Geno Smith against the Packers despite completing 19 of 24 passes for 215 yards in Week 1's win."
-       },
-       {
-        "player": "Malik Willis",
-        "team_slug": "miami-dolphins",
-        "note": "Sit Malik Willis in Week 2 — heavy underdog on the road at San Francisco."
-       },
-       {
-        "player": "Bo Nix",
-        "team_slug": "denver-broncos",
-        "note": "Sit Bo Nix vs Jacksonville Jaguars after 17/28, 131 YDS, 1 TD, 1 INT in L 10-31 @ Kansas City Chiefs."
-       },
-       {
-        "player": "Drake Maye",
-        "team_slug": "new-england-patriots",
-        "note": "Sit Drake Maye in Week 2 vs Pittsburgh after a 3-INT opener in a 10-13 loss at Seattle."
-       }
-      ]
-     }
+    "ownership_pct": null,
+    "why": "Paris streamer if active; compare with your available quarterbacks.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
     ]
    },
+   {
+    "player": "Michael Penix Jr.",
+    "team_slug": "atlanta-falcons",
+    "position": "QB",
+    "ownership_pct": null,
+    "why": "Bye-week quarterback option against San Francisco; keep expectations modest.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "Tanner McKee",
+    "team_slug": "philadelphia-eagles",
+    "position": "QB",
+    "ownership_pct": null,
+    "why": "Superflex contingency while Hurts is unavailable; Dallas is the Week 7 opponent.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Mike Washington Jr.",
+    "team_slug": "las-vegas-raiders",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Speculative backfield upside behind Jeanty; a committee role does not guarantee a start.",
+    "hold": "rest_of_season",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Kendre Miller",
+    "team_slug": "new-orleans-saints",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Early-down candidate against Pittsburgh; the Saints still share backfield work.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "Tyrone Tracy Jr.",
+    "team_slug": "new-york-giants",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Stash after Week 6 involvement; wait for evidence that the backfield role persists.",
+    "hold": "rest_of_season",
+    "confidence": "low",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "Roschon Johnson",
+    "team_slug": "chicago-bears",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Thursday flex contingency if Monangai remains unavailable; Swift leads the backfield.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Jaleel McLaughlin",
+    "team_slug": "cleveland-browns",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Short-term option only if Cleveland's injured backs remain unavailable.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Bam Knight",
+    "team_slug": "arizona-cardinals",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Conditional flex if Love remains out; Allgeier also has a role.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "Germie Bernard",
+    "team_slug": "pittsburgh-steelers",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Priority receiver add after 11 catches on 12 targets; Paris kickoff is early Sunday.",
+    "hold": "rest_of_season",
+    "confidence": "medium",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Omar Cooper Jr.",
+    "team_slug": "new-york-jets",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Priority receiver add after returning with 6 catches, 103 yards and a touchdown.",
+    "hold": "rest_of_season",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "Ja'Kobi Lane",
+    "team_slug": "baltimore-ravens",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Speculative add after returning; monitor Jackson and Bateman before starting him.",
+    "hold": "rest_of_season",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "Jaylin Noel",
+    "team_slug": "houston-texans",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Flex depth against the Giants; confirm the receiving rotation as Dell works toward returning.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "DeMario Douglas",
+    "team_slug": "new-england-patriots",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Thursday depth option after Doubs went to IR; recheck final roles and inactives.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Tre Tucker",
+    "team_slug": "las-vegas-raiders",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Big-play flex option against the Rams; accept weekly production risk.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "Tyler Higbee",
+    "team_slug": "los-angeles-rams",
+    "position": "TE",
+    "ownership_pct": null,
+    "why": "Immediate tight-end stream with Adams unavailable and Ferguson still on IR.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "T.J. Hockenson",
+    "team_slug": "minnesota-vikings",
+    "position": "TE",
+    "ownership_pct": null,
+    "why": "Consider against Indianapolis only after concussion clearance and active status.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "Terrance Ferguson",
+    "team_slug": "los-angeles-rams",
+    "position": "TE",
+    "ownership_pct": null,
+    "why": "IR stash for Week 8 or later; he cannot solve a Week 7 lineup need.",
+    "hold": "rest_of_season",
+    "confidence": "low",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "Cleveland Browns D/ST",
+    "team_slug": "cleveland-browns",
+    "position": "DST",
+    "ownership_pct": null,
+    "why": "Streaming candidate at Tennessee; compare league-specific defensive scoring.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "New York Jets D/ST",
+    "team_slug": "new-york-jets",
+    "position": "DST",
+    "ownership_pct": null,
+    "why": "Streaming candidate at home against Miami; confirm opponent quarterback news.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Chris Boswell",
+    "team_slug": "pittsburgh-steelers",
+    "position": "K",
+    "ownership_pct": null,
+    "why": "Kicker stream in Paris; the early start requires an early lineup check.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "Jake Bates",
+    "team_slug": "detroit-lions",
+    "position": "K",
+    "ownership_pct": null,
+    "why": "Kicker stream for Green Bay at Detroit; check availability before adding.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   }
+  ],
+  "drops": [],
+  "priority_note": "For an immediate receiver need, compare Germie Bernard and Omar Cooper Jr. first. Mike Washington Jr. is a speculative running-back add. All adds depend on actual league availability; ESPN ownership could not be confirmed. No universal top claim, mandatory drop, or FAAB bid is appropriate without roster and budget context. Buffalo, Jacksonville, the Chargers and Washington are on bye. Ferguson and Washington pass catchers are stashes, not Week 7 starters."
+ },
+ "start_sit": {
+  "as_of": "2026-10-20",
+  "week": 7,
+  "positions": [
    {
     "position": "RB",
     "tiers": [
@@ -195,169 +304,76 @@
       "tier": "start_confidence",
       "players": [
        {
-        "player": "Derrick Henry",
-        "team_slug": "baltimore-ravens",
-        "note": "Start Derrick Henry confidently after 144 yards and three touchdowns; he faces the Saints as 8.5-point favorites."
-       },
-       {
         "player": "Jahmyr Gibbs",
         "team_slug": "detroit-lions",
-        "note": "Start Gibbs with confidence after his 156-yard, two-touchdown Week 1 outing; active for Buffalo."
-       },
-       {
-        "player": "Ashton Jeanty",
-        "team_slug": "las-vegas-raiders",
-        "note": "Start Ashton Jeanty — 23 carries, 102 rushing yards, 6 catches for 45 yards and 2 TDs."
-       },
-       {
-        "player": "Kenneth Walker III",
-        "team_slug": "kansas-city-chiefs",
-        "note": "Start Kenneth Walker III with confidence — 173 yards, 2 touchdowns, active vs Colts."
-       },
-       {
-        "player": "Christian McCaffrey",
-        "team_slug": "san-francisco-49ers",
-        "note": "Start McCaffrey — efficient 68 yards on 10 carries in a win, healthy, and 13.5-point home favorites vs Miami."
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
        },
        {
         "player": "Bijan Robinson",
         "team_slug": "atlanta-falcons",
-        "note": "Start Bijan Robinson confidently — active off 21 carries, 83 yards plus eight catches, 90 yards and a touchdown."
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Christian McCaffrey",
+        "team_slug": "san-francisco-49ers",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Kyren Williams",
+        "team_slug": "los-angeles-rams",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Derrick Henry",
+        "team_slug": "baltimore-ravens",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
        },
        {
         "player": "Jonathan Taylor",
         "team_slug": "indianapolis-colts",
-        "note": "Start Taylor with confidence after 98 rushing yards and two touchdowns on 19 carries in Week 1."
-       },
-       {
-        "player": "D'Andre Swift",
-        "team_slug": "chicago-bears",
-        "note": "Start Swift: cleared for Vikings after 124 rushing yards, three touchdowns in Week 1."
-       },
-       {
-        "player": "Saquon Barkley",
-        "team_slug": "philadelphia-eagles",
-        "note": "Start Saquon Barkley with confidence after 15 carries for 83 yards in Sunday's win."
-       },
-       {
-        "player": "Breece Hall",
-        "team_slug": "new-york-jets",
-        "note": "Start Hall confidently after 22 carries for 102 yards and a touchdown in Sunday's win."
-       }
-      ]
-     },
-     {
-      "tier": "start_if_needed",
-      "players": [
-       {
-        "player": "David Montgomery",
-        "team_slug": "houston-texans",
-        "note": "Start Montgomery if needed after 20 carries, 60 rushing yards, and two touchdowns in Week 1."
-       },
-       {
-        "player": "James Cook III",
-        "team_slug": "buffalo-bills",
-        "note": "Week 1: 13 CAR, 57 YDS (team won 36-31). Week 2 vs Detroit Lions (line n/p)."
-       },
-       {
-        "player": "Chuba Hubbard",
-        "team_slug": "carolina-panthers",
-        "note": "Week 1: 10 CAR, 49 YDS, 1 TD (team lost 37-59). Week 2 @ Atlanta Falcons (CAR -2.5)."
-       },
-       {
-        "player": "Chase Brown",
-        "team_slug": "cincinnati-bengals",
-        "note": "Week 1: 16 CAR, 56 YDS, 1 TD (team won 33-27). Week 2 @ Houston Texans (HOU -2.5)."
-       },
-       {
-        "player": "Bucky Irving",
-        "team_slug": "tampa-bay-buccaneers",
-        "note": "Start Bucky Irving if needed — scored a touchdown and caught all seven targets in Week 1."
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
        },
        {
         "player": "Javonte Williams",
         "team_slug": "dallas-cowboys",
-        "note": "Start Javonte Williams if needed — active, scored twice in Week 1, faces Commanders at home"
-       },
-       {
-        "player": "Cam Skattebo",
-        "team_slug": "new-york-giants",
-        "note": "Start Skattebo if needed — 18 carries, 81 yards, 1 TD in Week 1 win; faces Rams as 7-point underdogs."
-       },
-       {
-        "player": "Rhamondre Stevenson",
-        "team_slug": "new-england-patriots",
-        "note": "Start if needed: Stevenson handled 18 carries for 51 yards plus five catches, and New England is favored by 5.5 versus Pittsburgh."
-       }
-      ]
-     },
-     {
-      "tier": "fringe",
-      "players": [
-       {
-        "player": "Bhayshul Tuten",
-        "team_slug": "jacksonville-jaguars",
-        "note": "Fringe start for Tuten, who rushed 15 times for 66 yards in the 34-10 win over Cleveland."
-       },
-       {
-        "player": "Omarion Hampton",
-        "team_slug": "los-angeles-chargers",
-        "note": "Fringe start: Hampton scored a touchdown on 12 carries but lost a fumble; Chargers are 6.5-point favorites vs Raiders."
-       },
-       {
-        "player": "Tyler Allgeier",
-        "team_slug": "arizona-cardinals",
-        "note": "Sit Tyler Allgeier — fringe play despite 17 carries for 61 yards and two catches in Week 1 win."
-       },
-       {
-        "player": "Jacory Croskey-Merritt",
-        "team_slug": "washington-commanders",
-        "note": "Fringe start: Croskey-Merritt rushed 16 times for 63 yards and a touchdown, but is a road underdog at Dallas."
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
        },
        {
         "player": "Jaylen Warren",
         "team_slug": "pittsburgh-steelers",
-        "note": "Fringe start: Warren posted 46 rushing yards on 10 carries plus five catches in Pittsburgh's 20-13 win."
-       },
-       {
-        "player": "Travis Etienne Jr.",
-        "team_slug": "new-orleans-saints",
-        "note": "Week 1: 9 CAR, 46 YDS (team lost 30-31). Week 2 @ Baltimore Ravens (BAL -8.5)."
-       },
-       {
-        "player": "Blake Corum",
-        "team_slug": "los-angeles-rams",
-        "note": "Start Blake Corum as a fringe option; he's healthy and the Rams are 7-point favorites vs the Giants."
-       },
-       {
-        "player": "Jadarian Price",
-        "team_slug": "seattle-seahawks",
-        "note": "Fringe start for Jadarian Price: 10 carries, 52 yards in Week 1 win, healthy, facing Arizona."
-       }
-      ]
-     },
-     {
-      "tier": "sit",
-      "players": [
-       {
-        "player": "Tony Pollard",
-        "team_slug": "tennessee-titans",
-        "note": "Week 1: 7 CAR, 35 YDS (team lost 10-23). Week 2 vs Philadelphia Eagles (PHI -7)."
-       },
-       {
-        "player": "J.K. Dobbins",
-        "team_slug": "denver-broncos",
-        "note": "Sit Dobbins — just 8 carries for 36 yards and zero targets in Denver's Week 1 loss."
-       },
-       {
-        "player": "MarShawn Lloyd",
-        "team_slug": "green-bay-packers",
-        "note": "Sit MarShawn Lloyd vs. the Jets; he managed 37 yards on 13 carries in Week 1."
-       },
-       {
-        "player": "Jordan Mason",
-        "team_slug": "minnesota-vikings",
-        "note": "Sit Jordan Mason; he's on Injured Reserve despite 59 yards and a touchdown in Week 1."
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
        }
       ]
      }
@@ -370,34 +386,104 @@
       "tier": "start_confidence",
       "players": [
        {
-        "player": "Amon-Ra St. Brown",
-        "team_slug": "detroit-lions",
-        "note": "Start Amon-Ra St. Brown with confidence after 10 catches, 67 yards, two touchdowns in Week 1 win."
-       },
-       {
-        "player": "Justin Jefferson",
-        "team_slug": "minnesota-vikings",
-        "note": "Start Justin Jefferson with confidence — he posted 8 catches, 92 yards, and 2 touchdowns in Week 1."
-       },
-       {
-        "player": "Christian Watson",
-        "team_slug": "green-bay-packers",
-        "note": "Start Christian Watson: 6 REC, 147 YDS, 2 TD in Week 1, healthy, favored @ Jets (GB -3.5)."
+        "player": "Puka Nacua",
+        "team_slug": "los-angeles-rams",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
        },
        {
         "player": "Jaxon Smith-Njigba",
         "team_slug": "seattle-seahawks",
-        "note": "Start Jaxon Smith-Njigba confidently after 8 catches, 122 yards and a touchdown in Week 1."
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
        },
        {
-        "player": "Jalen Coker",
-        "team_slug": "carolina-panthers",
-        "note": "Start Jalen Coker with confidence — fully healthy off 8 REC, 138 YDS, 2 TD despite the 37-59 loss."
+        "player": "Ja'Marr Chase",
+        "team_slug": "cincinnati-bengals",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
        },
        {
         "player": "CeeDee Lamb",
         "team_slug": "dallas-cowboys",
-        "note": "Start CeeDee Lamb: five catches, 44 yards, one touchdown, active for Week 2 vs Washington."
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Amon-Ra St. Brown",
+        "team_slug": "detroit-lions",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Christian Watson",
+        "team_slug": "green-bay-packers",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Drake London",
+        "team_slug": "atlanta-falcons",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "position": "QB",
+    "tiers": [
+     {
+      "tier": "start_confidence",
+      "players": [
+       {
+        "player": "Drake Maye",
+        "team_slug": "new-england-patriots",
+        "note": "Early starter judgment from current FFC and Draft Sharks rankings; the sources differ in order and scoring defaults. No blended forecast is claimed.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.draftsharks.com/weekly-rankings/7"
+        ]
+       },
+       {
+        "player": "Brock Purdy",
+        "team_slug": "san-francisco-49ers",
+        "note": "Early starter judgment from current FFC and Draft Sharks rankings; the sources differ in order and scoring defaults. No blended forecast is claimed.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.draftsharks.com/weekly-rankings/7"
+        ]
+       },
+       {
+        "player": "Jordan Love",
+        "team_slug": "green-bay-packers",
+        "note": "Early starter judgment from current FFC and Draft Sharks rankings; the sources differ in order and scoring defaults. No blended forecast is claimed.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.draftsharks.com/weekly-rankings/7"
+        ]
        }
       ]
      },
@@ -405,99 +491,13 @@
       "tier": "start_if_needed",
       "players": [
        {
-        "player": "Kalif Raymond",
-        "team_slug": "chicago-bears",
-        "note": "Start if needed: Raymond active after eight catches for 84 yards on nine targets in 59-37 win."
-       },
-       {
-        "player": "Emeka Egbuka",
-        "team_slug": "tampa-bay-buccaneers",
-        "note": "Start Egbuka if needed — posted 5 REC, 63 YDS and stays active vs Cleveland Browns in Week 2."
-       },
-       {
-        "player": "Alec Pierce",
-        "team_slug": "indianapolis-colts",
-        "note": "Start Alec Pierce if needed — active with no injury designation, posted 4 REC and 61 YDS in Week 1."
-       },
-       {
-        "player": "Garrett Wilson",
-        "team_slug": "new-york-jets",
-        "note": "Start if needed — Wilson is active and caught six of seven targets for 79 yards Sunday."
-       },
-       {
-        "player": "Ladd McConkey",
-        "team_slug": "los-angeles-chargers",
-        "note": "Start if needed: McConkey (rib) is questionable for Sunday's game against the Raiders."
-       },
-       {
-        "player": "Chris Olave",
-        "team_slug": "new-orleans-saints",
-        "note": "Week 1: 10 REC, 182 YDS (team lost 30-31). Week 2 @ Baltimore Ravens (BAL -8.5)."
-       },
-       {
-        "player": "Puka Nacua",
-        "team_slug": "los-angeles-rams",
-        "note": "Start Puka Nacua if needed — questionable with a hip injury after 5 REC, 74 YDS in Week 1."
-       }
-      ]
-     },
-     {
-      "tier": "fringe",
-      "players": [
-       {
-        "player": "Parker Washington",
-        "team_slug": "jacksonville-jaguars",
-        "note": "Fringe flex start: Washington caught five passes for 83 yards and a touchdown, but Denver is favored in Week 2."
-       },
-       {
-        "player": "Caleb Douglas",
-        "team_slug": "miami-dolphins",
-        "note": "Fringe start: Douglas posted five catches for 94 yards on seven targets in Week 1, but faces the 49ers as 13.5-point underdogs."
-       },
-       {
-        "player": "Demarcus Robinson",
-        "team_slug": "san-francisco-49ers",
-        "note": "Sit Robinson — fringe-tier WR despite 2 catches, 50 yards, and a touchdown vs the Rams."
-       },
-       {
-        "player": "Mack Hollins",
-        "team_slug": "new-england-patriots",
-        "note": "Sit Hollins; fringe option despite four catches for 51 yards facing the Steelers."
-       },
-       {
-        "player": "Michael Pittman Jr.",
+        "player": "Aaron Rodgers",
         "team_slug": "pittsburgh-steelers",
-        "note": "Sit Pittman if options exist — questionable with a foot injury after a 3 REC, 58 YDS opener."
-       },
-       {
-        "player": "Antonio Williams",
-        "team_slug": "washington-commanders",
-        "note": "Sit Antonio Williams; fringe WR despite 64 yards and a TD, facing Dallas on the road."
-       },
-       {
-        "player": "Denzel Boston",
-        "team_slug": "cleveland-browns",
-        "note": "Week 1: 2 REC, 59 YDS, 1 TD (team lost 10-34). Week 2 @ Tampa Bay Buccaneers (TB -8.5)."
-       }
-      ]
-     },
-     {
-      "tier": "sit",
-      "players": [
-       {
-        "player": "Nico Collins",
-        "team_slug": "houston-texans",
-        "note": "Sit Nico Collins: he is out with a hamstring injury and will not play Sunday against the Bengals."
-       },
-       {
-        "player": "Zay Flowers",
-        "team_slug": "baltimore-ravens",
-        "note": "Sit Zay Flowers — doubtful (hamstring) for Sunday vs New Orleans."
-       },
-       {
-        "player": "Wan'Dale Robinson",
-        "team_slug": "tennessee-titans",
-        "note": "Sit Wan'Dale Robinson — five catches for 38 yards in Week 1, facing Philadelphia."
+        "note": "Paris streamer if active; both waiver analysts identify him as an option. Set the lineup before the early kickoff.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
        }
       ]
      }
@@ -507,42 +507,16 @@
     "position": "TE",
     "tiers": [
      {
-      "tier": "start_confidence",
-      "players": [
-       {
-        "player": "Trey McBride",
-        "team_slug": "arizona-cardinals",
-        "note": "Start McBride — nine catches, 95 yards, one TD in Week 1, healthy vs Seattle."
-       },
-       {
-        "player": "Dalton Kincaid",
-        "team_slug": "buffalo-bills",
-        "note": "Week 1: 5 REC, 130 YDS (team won 36-31). Week 2 vs Detroit Lions (line n/p)."
-       },
-       {
-        "player": "Isaiah Likely",
-        "team_slug": "new-york-giants",
-        "note": "Start Isaiah Likely after catching all eight targets for 78 yards and two touchdowns despite being a Week 2 underdog at the Rams."
-       },
-       {
-        "player": "Dallas Goedert",
-        "team_slug": "philadelphia-eagles",
-        "note": "Start Dallas Goedert confidently after 77 yards and two touchdowns; @ Tennessee Titans next."
-       }
-      ]
-     },
-     {
       "tier": "start_if_needed",
       "players": [
        {
-        "player": "Travis Kelce",
-        "team_slug": "kansas-city-chiefs",
-        "note": "Start Travis Kelce if needed; he turned five targets into 71 yards Monday against Denver."
-       },
-       {
-        "player": "Mike Gesicki",
-        "team_slug": "cincinnati-bengals",
-        "note": "Start Gesicki if needed — five catches for 78 yards and a touchdown on seven targets in Week 1."
+        "player": "Tyler Higbee",
+        "team_slug": "los-angeles-rams",
+        "note": "Conditional Week 7 streamer with Adams unavailable; recheck active status.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
        }
       ]
      },
@@ -550,9 +524,55 @@
       "tier": "fringe",
       "players": [
        {
-        "player": "Evan Engram",
-        "team_slug": "denver-broncos",
-        "note": "Fringe start: Evan Engram posted 4 REC, 43 YDS, 1 TD, active for Week 2 vs Jacksonville."
+        "player": "T.J. Hockenson",
+        "team_slug": "minnesota-vikings",
+        "note": "Use only after concussion clearance and active confirmation; maintain another eligible TE.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
+       }
+      ]
+     },
+     {
+      "tier": "sit",
+      "players": [
+       {
+        "player": "Terrance Ferguson",
+        "team_slug": "los-angeles-rams",
+        "note": "Week 7 is too early: IR stash for Week 8 or later.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "position": "DST",
+    "tiers": [
+     {
+      "tier": "start_if_needed",
+      "players": [
+       {
+        "player": "Cleveland Browns D/ST",
+        "team_slug": "cleveland-browns",
+        "note": "Two waiver sources identify this defense as a Week 7 streamer; scoring and alternatives matter.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
+       },
+       {
+        "player": "New York Jets D/ST",
+        "team_slug": "new-york-jets",
+        "note": "Two waiver sources identify this defense as a Week 7 streamer; scoring and alternatives matter.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
        }
       ]
      }
@@ -561,1178 +581,239 @@
   ],
   "tough_calls": [
    {
-    "player": "Tyler Shough",
-    "team_slug": "new-orleans-saints",
-    "verdict": "Tough call: Shough's 410 yards and three touchdowns show ceiling, but two interceptions and a road game @ Baltimore Ravens (BAL -8.5) make him risky."
-   },
-   {
-    "player": "Chris Olave",
-    "team_slug": "new-orleans-saints",
-    "verdict": "Start Olave if active — his 10-catch, 182-yard Week 1 showed elite form, but the questionable hamstring tag makes him a true tough call at Baltimore."
-   },
-   {
-    "player": "Joe Burrow",
-    "team_slug": "cincinnati-bengals",
-    "verdict": "Week 1: 25/35, 254 YDS, 1 TD, 1 INT (team won 33-27). Week 2 @ Houston Texans (HOU -2.5)."
-   },
-   {
-    "player": "D'Andre Swift",
-    "team_slug": "chicago-bears",
-    "verdict": "Start Swift: he is Active with no designation after 18 CAR, 124 YDS and 3 TD in a 59-37 win, with CHI -4.5 vs Minnesota."
-   },
-   {
-    "player": "Puka Nacua",
-    "team_slug": "los-angeles-rams",
-    "verdict": "Sit Nacua if you have options: he's Questionable after missing Friday practice with a hip injury, despite a favorable home spot vs New York Giants (LAR -7)."
-   }
-  ]
- },
- "trade": {
-  "as_of": "2026-09-19",
-  "week": 2,
-  "boards": [
-   {
-    "position": "QB",
-    "rows": [
-     {
-      "player": "Josh Allen",
-      "team_slug": "buffalo-bills",
-      "tier": 1,
-      "basis": "trade tier 1 in a fair market",
-      "market": "fair"
-     },
-     {
-      "player": "Lamar Jackson",
-      "team_slug": "baltimore-ravens",
-      "tier": 1,
-      "basis": "Tier-1 trade value at fair market.",
-      "market": "fair"
-     },
-     {
-      "player": "Jalen Hurts",
-      "team_slug": "philadelphia-eagles",
-      "tier": 1,
-      "basis": "Tier 1 trade value with a fair market.",
-      "market": "fair"
-     },
-     {
-      "player": "Caleb Williams",
-      "team_slug": "chicago-bears",
-      "tier": 1,
-      "basis": "Trade market rated fair; tier 1 value holds steady.",
-      "market": "fair"
-     },
-     {
-      "player": "Brock Purdy",
-      "team_slug": "san-francisco-49ers",
-      "tier": 2,
-      "basis": "Week 1: Passing Yards: 25/34, 205 YDS, 3 TD, 1 INT",
-      "market": "fair"
-     },
-     {
-      "player": "Trevor Lawrence",
-      "team_slug": "jacksonville-jaguars",
-      "tier": 2,
-      "basis": "Tier 2 sell-high market",
-      "market": "sell_high"
-     },
-     {
-      "player": "Jayden Daniels",
-      "team_slug": "washington-commanders",
-      "tier": 2,
-      "basis": "Tier 2 buy-low candidate off a quiet Week 1",
-      "market": "buy_low"
-     },
-     {
-      "player": "C.J. Stroud",
-      "team_slug": "houston-texans",
-      "tier": 2,
-      "basis": "buy-low trade market at tier 2",
-      "market": "buy_low"
-     },
-     {
-      "player": "Jordan Love",
-      "team_slug": "green-bay-packers",
-      "tier": 2,
-      "basis": "Tier 2 trade value with a fair market — sell only at full price.",
-      "market": "fair"
-     },
-     {
-      "player": "Bryce Young",
-      "team_slug": "carolina-panthers",
-      "tier": 2,
-      "basis": "Trade tier 2 with sell-high market despite the 59-37 loss.",
-      "market": "sell_high"
-     },
-     {
-      "player": "Patrick Mahomes",
-      "team_slug": "kansas-city-chiefs",
-      "tier": 2,
-      "basis": "buy-low appeal at trade tier 2",
-      "market": "buy_low"
-     },
-     {
-      "player": "Jared Goff",
-      "team_slug": "detroit-lions",
-      "tier": 2,
-      "basis": "Trade tier 2, market fair",
-      "market": "fair"
-     },
-     {
-      "player": "Joe Burrow",
-      "team_slug": "cincinnati-bengals",
-      "tier": 2,
-      "basis": "Buy-low trade target at trade tier 2 given his uncertain injury status.",
-      "market": "buy_low"
-     },
-     {
-      "player": "Justin Herbert",
-      "team_slug": "los-angeles-chargers",
-      "tier": 3,
-      "basis": "Fair trade market value",
-      "market": "fair"
-     },
-     {
-      "player": "Dak Prescott",
-      "team_slug": "dallas-cowboys",
-      "tier": 3,
-      "basis": "Fair trade market, tier 3 value.",
-      "market": "fair"
-     },
-     {
-      "player": "Jaxson Dart",
-      "team_slug": "new-york-giants",
-      "tier": 3,
-      "basis": "Sell-high candidate at trade tier 3 following his three-touchdown debut.",
-      "market": "sell_high"
-     },
-     {
-      "player": "Aaron Rodgers",
-      "team_slug": "pittsburgh-steelers",
-      "tier": 3,
-      "basis": "Trade tier 3 with fair market value.",
-      "market": "fair"
-     },
-     {
-      "player": "Tyler Shough",
-      "team_slug": "new-orleans-saints",
-      "tier": 3,
-      "basis": "Sell-high trade target after his big Week 1 passing performance.",
-      "market": "sell_high"
-     },
-     {
-      "player": "Geno Smith",
-      "team_slug": "new-york-jets",
-      "tier": 3,
-      "basis": "Holds fair trade value at a mid-tier level, so no urgency to move him.",
-      "market": "fair"
-     },
-     {
-      "player": "Baker Mayfield",
-      "team_slug": "tampa-bay-buccaneers",
-      "tier": 3,
-      "basis": "Tier 3 trade value with a fair market, per card.",
-      "market": "fair"
-     },
-     {
-      "player": "Jacoby Brissett",
-      "team_slug": "arizona-cardinals",
-      "tier": 3,
-      "basis": "Trade value is fair at tier 3 after one turnover-free start.",
-      "market": "fair"
-     },
-     {
-      "player": "Deshaun Watson",
-      "team_slug": "cleveland-browns",
-      "tier": 4,
-      "basis": "Fair trade market; low-tier value as a fringe option.",
-      "market": "fair"
-     },
-     {
-      "player": "Kirk Cousins",
-      "team_slug": "las-vegas-raiders",
-      "tier": 4,
-      "basis": "trade tier 4 with a fair market",
-      "market": "fair"
-     },
-     {
-      "player": "Daniel Jones",
-      "team_slug": "indianapolis-colts",
-      "tier": 4,
-      "basis": "Fair trade market with a tier-4 valuation caps his appeal.",
-      "market": "fair"
-     },
-     {
-      "player": "Carson Wentz",
-      "team_slug": "minnesota-vikings",
-      "tier": 4,
-      "basis": "Sell-high candidate (tier 4) while active and named Sunday's starter.",
-      "market": "sell_high"
-     },
-     {
-      "player": "Malik Willis",
-      "team_slug": "miami-dolphins",
-      "tier": 4,
-      "basis": "Trade tier 4 with a fair market limits his trade value.",
-      "market": "fair"
-     },
-     {
-      "player": "Cam Ward",
-      "team_slug": "tennessee-titans",
-      "tier": 4,
-      "basis": "Week 1: Passing Yards: 19/32, 140 YDS, 1 TD",
-      "market": "fair"
-     },
-     {
-      "player": "Matthew Stafford",
-      "team_slug": "los-angeles-rams",
-      "tier": 4,
-      "basis": "Tier 4 trade value in a fair market.",
-      "market": "fair"
-     },
-     {
-      "player": "Drake Maye",
-      "team_slug": "new-england-patriots",
-      "tier": 4,
-      "basis": "Holds fair trade market at tier 4.",
-      "market": "fair"
-     },
-     {
-      "player": "Bo Nix",
-      "team_slug": "denver-broncos",
-      "tier": 4,
-      "basis": "Trade value fair; DEN -2.5 at home offers modest market appeal.",
-      "market": "fair"
-     },
-     {
-      "player": "Drew Lock",
-      "team_slug": "seattle-seahawks",
-      "tier": 5,
-      "basis": "Fair market with minimal trade value as a temporary fill-in while Sam Darnold (glute) is unavailable.",
-      "market": "fair"
-     },
-     {
-      "player": "Cooper Rush",
-      "team_slug": "atlanta-falcons",
-      "tier": 5,
-      "basis": "Minimal trade appeal in a fair market, tier 5 value.",
-      "market": "fair"
-     }
-    ]
-   },
-   {
-    "position": "RB",
-    "rows": [
-     {
-      "player": "Derrick Henry",
-      "team_slug": "baltimore-ravens",
-      "tier": 1,
-      "basis": "Tier-1 trade value with a fair market after a dominant three-touchdown opener.",
-      "market": "fair"
-     },
-     {
-      "player": "Jahmyr Gibbs",
-      "team_slug": "detroit-lions",
-      "tier": 1,
-      "basis": "Tier 1 trade value at a fair market price.",
-      "market": "fair"
-     },
-     {
-      "player": "Christian McCaffrey",
-      "team_slug": "san-francisco-49ers",
-      "tier": 1,
-      "basis": "Tier 1 asset available as a buy-low despite elite weekly ceiling.",
-      "market": "buy_low"
-     },
-     {
-      "player": "Ashton Jeanty",
-      "team_slug": "las-vegas-raiders",
-      "tier": 1,
-      "basis": "Tier 1 trade value at a fair market.",
-      "market": "fair"
-     },
-     {
-      "player": "Bijan Robinson",
-      "team_slug": "atlanta-falcons",
-      "tier": 1,
-      "basis": "Tier 1 asset in a fair trade market.",
-      "market": "fair"
-     },
-     {
-      "player": "Saquon Barkley",
-      "team_slug": "philadelphia-eagles",
-      "tier": 1,
-      "basis": "Tier 1 trade value at a fair market.",
-      "market": "fair"
-     },
-     {
-      "player": "Jonathan Taylor",
-      "team_slug": "indianapolis-colts",
-      "tier": 1,
-      "basis": "Top trade tier with a fair market.",
-      "market": "fair"
-     },
-     {
-      "player": "Kenneth Walker III",
-      "team_slug": "kansas-city-chiefs",
-      "tier": 1,
-      "basis": "Tier-1 sell-high candidate after 23-carry, 173-yard opener.",
-      "market": "sell_high"
-     },
-     {
-      "player": "Breece Hall",
-      "team_slug": "new-york-jets",
-      "tier": 2,
-      "basis": "Tier 2 trade value in a fair market.",
-      "market": "fair"
-     },
-     {
-      "player": "D'Andre Swift",
-      "team_slug": "chicago-bears",
-      "tier": 2,
-      "basis": "Sell-high value after a three-touchdown opener.",
-      "market": "sell_high"
-     },
-     {
-      "player": "Chase Brown",
-      "team_slug": "cincinnati-bengals",
-      "tier": 2,
-      "basis": "Tier 2 trade value in a fair market after his Week 1 workload and score.",
-      "market": "fair"
-     },
-     {
-      "player": "James Cook III",
-      "team_slug": "buffalo-bills",
-      "tier": 2,
-      "basis": "Fair trade market, tier 2 value.",
-      "market": "fair"
-     },
-     {
-      "player": "David Montgomery",
-      "team_slug": "houston-texans",
-      "tier": 2,
-      "basis": "Sell-high market; trade tier 2.",
-      "market": "sell_high"
-     },
-     {
-      "player": "Bucky Irving",
-      "team_slug": "tampa-bay-buccaneers",
-      "tier": 2,
-      "basis": "Buy-low trade target in a favorable spot versus Cleveland (TB -8.5).",
-      "market": "buy_low"
-     },
-     {
-      "player": "Cam Skattebo",
-      "team_slug": "new-york-giants",
-      "tier": 2,
-      "basis": "Fair trade market; zero targets in the passing game caps his value.",
-      "market": "fair"
-     },
-     {
-      "player": "Travis Etienne Jr.",
-      "team_slug": "new-orleans-saints",
-      "tier": 3,
-      "basis": "Week 1: Rushing Yards: 9 CAR, 46 YDS",
-      "market": "fair"
-     },
-     {
-      "player": "Omarion Hampton",
-      "team_slug": "los-angeles-chargers",
-      "tier": 3,
-      "basis": "Fair trade value at tier 3 after a touchdown debut despite the fumble.",
-      "market": "fair"
-     },
-     {
-      "player": "Rhamondre Stevenson",
-      "team_slug": "new-england-patriots",
-      "tier": 3,
-      "basis": "Holds fair trade-market value at tier 3.",
-      "market": "fair"
-     },
-     {
-      "player": "Chuba Hubbard",
-      "team_slug": "carolina-panthers",
-      "tier": 3,
-      "basis": "Tier 3 trade value with a fair market — reasonable deal either direction.",
-      "market": "fair"
-     },
-     {
-      "player": "Javonte Williams",
-      "team_slug": "dallas-cowboys",
-      "tier": 3,
-      "basis": "Sell-high trade market; trade tier 3 value",
-      "market": "sell_high"
-     },
-     {
-      "player": "Jacory Croskey-Merritt",
-      "team_slug": "washington-commanders",
-      "tier": 3,
-      "basis": "Fair market value after Week 1 rushing score with just one target.",
-      "market": "fair"
-     },
-     {
-      "player": "Bhayshul Tuten",
-      "team_slug": "jacksonville-jaguars",
-      "tier": 3,
-      "basis": "Fair trade value at tier 3.",
-      "market": "fair"
-     },
-     {
-      "player": "Jaylen Warren",
-      "team_slug": "pittsburgh-steelers",
-      "tier": 3,
-      "basis": "Trade tier 3 with fair market value, so hold or deal at reasonable cost.",
-      "market": "fair"
-     },
-     {
-      "player": "Tyler Allgeier",
-      "team_slug": "arizona-cardinals",
-      "tier": 3,
-      "basis": "Fair trade market at tier 3 value",
-      "market": "fair"
-     },
-     {
-      "player": "Blake Corum",
-      "team_slug": "los-angeles-rams",
-      "tier": 4,
-      "basis": "Tier-4 trade value with a fair market after a 54-yard rushing opener.",
-      "market": "fair"
-     },
-     {
-      "player": "Jadarian Price",
-      "team_slug": "seattle-seahawks",
-      "tier": 4,
-      "basis": "Trade tier 4 with a fair market value.",
-      "market": "fair"
-     },
-     {
-      "player": "Tony Pollard",
-      "team_slug": "tennessee-titans",
-      "tier": 4,
-      "basis": "Week 1: Rushing Yards: 7 CAR, 35 YDS",
-      "market": "buy_low"
-     },
-     {
-      "player": "MarShawn Lloyd",
-      "team_slug": "green-bay-packers",
-      "tier": 4,
-      "basis": "Tier 4 back with a fair trade market despite a 13-carry debut.",
-      "market": "fair"
-     },
-     {
-      "player": "J.K. Dobbins",
-      "team_slug": "denver-broncos",
-      "tier": 4,
-      "basis": "Tier 4 trade value; market rating is fair.",
-      "market": "fair"
-     },
-     {
-      "player": "Jordan Mason",
-      "team_slug": "minnesota-vikings",
-      "tier": 5,
-      "basis": "Buy-low stash candidate (trade tier 5) while sidelined on IR.",
-      "market": "buy_low"
-     }
-    ]
-   },
-   {
-    "position": "WR",
-    "rows": [
-     {
-      "player": "Justin Jefferson",
-      "team_slug": "minnesota-vikings",
-      "tier": 1,
-      "basis": "trade_tier 1 in a fair market after his two-touchdown Week 1 outing",
-      "market": "fair"
-     },
-     {
-      "player": "Amon-Ra St. Brown",
-      "team_slug": "detroit-lions",
-      "tier": 1,
-      "basis": "Tier 1 trade value, fair market price.",
-      "market": "fair"
-     },
-     {
-      "player": "CeeDee Lamb",
-      "team_slug": "dallas-cowboys",
-      "tier": 1,
-      "basis": "Tier 1 asset available as a buy-low after a quiet Week 1 line.",
-      "market": "buy_low"
-     },
-     {
-      "player": "Jaxon Smith-Njigba",
-      "team_slug": "seattle-seahawks",
-      "tier": 1,
-      "basis": "Tier 1 trade value with a fair market.",
-      "market": "fair"
-     },
-     {
-      "player": "Garrett Wilson",
-      "team_slug": "new-york-jets",
-      "tier": 2,
-      "basis": "Buy-low trade target after a 79-yard outing in a 23-10 win.",
-      "market": "buy_low"
-     },
-     {
-      "player": "Jalen Coker",
-      "team_slug": "carolina-panthers",
-      "tier": 2,
-      "basis": "Sell-high trade window open with Coker active and coming off a two-touchdown game.",
-      "market": "sell_high"
-     },
-     {
-      "player": "Ladd McConkey",
-      "team_slug": "los-angeles-chargers",
-      "tier": 2,
-      "basis": "Tier 2 buy-low target after a 5-catch, 82-yard, 1-TD Week 1 in a loss.",
-      "market": "buy_low"
-     },
-     {
-      "player": "Chris Olave",
-      "team_slug": "new-orleans-saints",
-      "tier": 2,
-      "basis": "Week 1: Receiving Yards: 10 REC, 182 YDS",
-      "market": "sell_high"
-     },
-     {
-      "player": "Emeka Egbuka",
-      "team_slug": "tampa-bay-buccaneers",
-      "tier": 2,
-      "basis": "Fair trade market at tier 2 after solid debut volume.",
-      "market": "fair"
-     },
-     {
-      "player": "Nico Collins",
-      "team_slug": "houston-texans",
-      "tier": 2,
-      "basis": "buy-low window while sidelined",
-      "market": "buy_low"
-     },
-     {
-      "player": "Zay Flowers",
-      "team_slug": "baltimore-ravens",
-      "tier": 2,
-      "basis": "Buy-low window after 5 REC, 150 YDS, 1 TD in Week 1 win.",
-      "market": "buy_low"
-     },
-     {
-      "player": "Christian Watson",
-      "team_slug": "green-bay-packers",
-      "tier": 3,
-      "basis": "Sell-high candidate with trade tier 3 after big opener.",
-      "market": "sell_high"
-     },
-     {
-      "player": "Puka Nacua",
-      "team_slug": "los-angeles-rams",
-      "tier": 3,
-      "basis": "Buy-low trade target as a tier-3 asset facing the Giants as 7-point favorites.",
-      "market": "buy_low"
-     },
-     {
-      "player": "Parker Washington",
-      "team_slug": "jacksonville-jaguars",
-      "tier": 3,
-      "basis": "Trade value fair after a five-reception, 83-yard, one-touchdown Week 1 in a 34-10 win.",
-      "market": "fair"
-     },
-     {
-      "player": "Kalif Raymond",
-      "team_slug": "chicago-bears",
-      "tier": 3,
-      "basis": "sell-high market after eight-catch, 84-yard opener",
-      "market": "sell_high"
-     },
-     {
-      "player": "Alec Pierce",
-      "team_slug": "indianapolis-colts",
-      "tier": 3,
-      "basis": "Holds fair trade value heading into the matchup at Kansas City (KC -6.5).",
-      "market": "fair"
-     },
-     {
-      "player": "Caleb Douglas",
-      "team_slug": "miami-dolphins",
-      "tier": 3,
-      "basis": "Tier 3 trade value with a fair market; 94-yard debut offers modest buy-low appeal.",
-      "market": "fair"
-     },
-     {
-      "player": "Antonio Williams",
-      "team_slug": "washington-commanders",
-      "tier": 4,
-      "basis": "Fair trade market value, tier 4",
-      "market": "fair"
-     },
-     {
-      "player": "Michael Pittman Jr.",
-      "team_slug": "pittsburgh-steelers",
-      "tier": 4,
-      "basis": "fringe-tier trade value, fair market",
-      "market": "fair"
-     },
-     {
-      "player": "Mack Hollins",
-      "team_slug": "new-england-patriots",
-      "tier": 4,
-      "basis": "Tier 4 trade value in a fair market limits return.",
-      "market": "fair"
-     },
-     {
-      "player": "Wan'Dale Robinson",
-      "team_slug": "tennessee-titans",
-      "tier": 4,
-      "basis": "Fair trade market at a low tier after 38-yard outing in loss to Jets.",
-      "market": "fair"
-     },
-     {
-      "player": "Denzel Boston",
-      "team_slug": "cleveland-browns",
-      "tier": 4,
-      "basis": "Fair market value despite 59 yards and a touchdown in Week 1.",
-      "market": "fair"
-     },
-     {
-      "player": "Demarcus Robinson",
-      "team_slug": "san-francisco-49ers",
-      "tier": 4,
-      "basis": "Holds tier-4 value in a fair trade market.",
-      "market": "fair"
-     }
-    ]
-   },
-   {
-    "position": "TE",
-    "rows": [
-     {
-      "player": "Trey McBride",
-      "team_slug": "arizona-cardinals",
-      "tier": 1,
-      "basis": "Holds top trade-tier value at a fair market.",
-      "market": "fair"
-     },
-     {
-      "player": "Dalton Kincaid",
-      "team_slug": "buffalo-bills",
-      "tier": 1,
-      "basis": "Tier-1 trade value in a fair market.",
-      "market": "fair"
-     },
-     {
-      "player": "Travis Kelce",
-      "team_slug": "kansas-city-chiefs",
-      "tier": 1,
-      "basis": "Tier-1 buy-low candidate coming off a 3-catch, 71-yard outing in a Chiefs win.",
-      "market": "buy_low"
-     },
-     {
-      "player": "Isaiah Likely",
-      "team_slug": "new-york-giants",
-      "tier": 2,
-      "basis": "Sell-high window is open after his two-touchdown Week 1.",
-      "market": "sell_high"
-     },
-     {
-      "player": "Dallas Goedert",
-      "team_slug": "philadelphia-eagles",
-      "tier": 2,
-      "basis": "sell-high window after two-touchdown opener",
-      "market": "sell_high"
-     },
-     {
-      "player": "Mike Gesicki",
-      "team_slug": "cincinnati-bengals",
-      "tier": 2,
-      "basis": "Tier 2 trade value with a fair market after a touchdown-heavy opener.",
-      "market": "fair"
-     },
-     {
-      "player": "Evan Engram",
-      "team_slug": "denver-broncos",
-      "tier": 3,
-      "basis": "Holds fair trade-market value at fringe-tier level.",
-      "market": "fair"
-     }
-    ]
-   }
-  ],
-  "swing_trades": [
-   {
-    "give": "Christian Watson",
-    "get": "Zay Flowers",
-    "rationale": "Trade Christian Watson, whose 147 yards and 2 TDs came in a 22-39 loss and who faces the Jets with GB only -3.5, for Zay Flowers, who posted 150 yards and a TD in a 41-23 win and draws the Saints with BAL -8.5—just monitor his doubtful hamstring status."
-   },
-   {
-    "give": "Jaxson Dart",
-    "get": "Jayden Daniels",
-    "rationale": "Usage-based swap: compare the two Week 1 lines on the board."
-   },
-   {
-    "give": "Kenneth Walker III",
-    "get": "Bucky Irving",
-    "rationale": "Acquiring Bucky Irving secures a high-floor receiving back who caught all seven targets and found the end zone on just 8 carries, and he now draws a dream Week 2 spot vs Cleveland Browns (TB -8.5), while Kenneth Walker III is unlikely to repeat his unsustainable 173-yard outburst from a 23-carry opener."
-   },
-   {
-    "give": "David Montgomery",
-    "get": "Chris Olave",
-    "rationale": "Trade David Montgomery, who rushed 20 times for 60 yards and two touchdowns in a 31-36 loss, for Chris Olave, who posted 10 receptions for 182 yards but is questionable with a hamstring injury ahead of Sunday's game at Baltimore as an 8.5-point underdog."
-   },
-   {
-    "give": "Isaiah Likely",
-    "get": "Travis Kelce",
-    "rationale": "Trading Isaiah Likely, who caught all eight of his targets for 78 yards and two touchdowns in a 28-20 win over the Cowboys, for Travis Kelce buys low on an active star who managed 71 yards on five targets in the Chiefs' 31-10 win and now gets a soft Week 2 matchup vs Indianapolis Colts (KC -6.5) while Likely faces the Rams as LAR -7 road underdogs."
-   }
-  ]
- },
- "waiver": {
-  "as_of": "2026-09-21",
-  "week_adding_for": 3,
-  "adds": [
-   {
-    "player": "Drew Lock",
-    "team_slug": "seattle-seahawks",
-    "position": "QB",
-    "ownership_pct": null,
-    "why": "Week 2: Passing Yards: 19/26, 235 YDS, 3 TD (ARI 7-31 SEA)",
-    "hold": "stream",
-    "confidence": "medium",
+    "player": "Lamar Jackson",
+    "team_slug": "baltimore-ravens",
+    "verdict": "Do not treat a return expectation as clearance; keep a replacement until his status is confirmed.",
     "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
+     "https://www.espn.com/nfl/injuries",
+     "https://www.cbssports.com/nfl/injuries/"
     ]
    },
    {
-    "player": "Tyler Shough",
-    "team_slug": "new-orleans-saints",
-    "position": "QB",
-    "ownership_pct": null,
-    "why": "Week 2: Passing Yards: 27/34, 252 YDS, 1 TD (BAL 17-24 NO)",
-    "hold": "stream",
-    "confidence": "medium",
+    "player": "Baker Mayfield",
+    "team_slug": "tampa-bay-buccaneers",
+    "verdict": "Wait for thumb and practice updates; Jalon Daniels remains a contingency, not an assumed starter.",
     "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
+     "https://www.espn.com/nfl/injuries",
+     "https://www.cbssports.com/nfl/injuries/"
     ]
    },
    {
-    "player": "Cooper Rush",
-    "team_slug": "atlanta-falcons",
-    "position": "QB",
-    "ownership_pct": null,
-    "why": "Week 2: Passing Yards: 10/17, 86 YDS, 2 INT (ATL 3-34 CAR)",
-    "hold": "stream",
-    "confidence": "medium",
+    "player": "Saquon Barkley",
+    "team_slug": "philadelphia-eagles",
+    "verdict": "Monday kickoff adds replacement risk; keep an eligible Monday alternative if uncertainty persists.",
     "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
+     "https://www.espn.com/nfl/injuries",
+     "https://www.cbssports.com/nfl/injuries/"
     ]
    },
    {
-    "player": "Jonah Coleman",
-    "team_slug": "denver-broncos",
-    "position": "RB",
-    "ownership_pct": null,
-    "why": "Rookie scored on 10 CAR, 39 YDS, 1 TD in Denver's 20-13 win over Jacksonville.",
-    "hold": "rest_of_season",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Jeremiyah Love",
-    "team_slug": "arizona-cardinals",
-    "position": "RB",
-    "ownership_pct": null,
-    "why": "Week 2: Rushing Yards: 9 CAR, 29 YDS (ARI 7-31 SEA)",
-    "hold": "rest_of_season",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Kaleb Johnson",
+    "player": "Josh Jacobs",
     "team_slug": "green-bay-packers",
-    "position": "RB",
-    "ownership_pct": null,
-    "why": "Week 2: Rushing Yards: 8 CAR, 32 YDS (NYJ 17-20 GB)",
-    "hold": "stream",
-    "confidence": "medium",
+    "verdict": "Removal from the exempt list does not by itself prove a full workload; check game-week reporting.",
     "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
+     "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
     ]
    },
    {
     "player": "Kyle Monangai",
     "team_slug": "chicago-bears",
-    "position": "RB",
-    "ownership_pct": null,
-    "why": "Week 2: Rushing Yards: 10 CAR, 47 YDS (CHI 3-9 MIN)",
-    "hold": "stream",
-    "confidence": "medium",
+    "verdict": "Monday estimated DNP is not a final Thursday ruling; Roschon Johnson is a conditional fallback.",
     "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "TreVeyon Henderson",
-    "team_slug": "new-england-patriots",
-    "position": "RB",
-    "ownership_pct": null,
-    "why": "Led the backfield with 16 CAR, 76 YDS, 1 TD in New England's 20-3 win over Pittsburgh after declaring himself ready to go from an ankle issue.",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Emanuel Wilson",
-    "team_slug": "seattle-seahawks",
-    "position": "RB",
-    "ownership_pct": null,
-    "why": "Week 2: Rushing Yards: 21 CAR, 92 YDS (ARI 7-31 SEA)",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Tetairoa McMillan",
-    "team_slug": "carolina-panthers",
-    "position": "WR",
-    "ownership_pct": null,
-    "why": "Week 2: Receiving Yards: 5 REC, 101 YDS (ATL 3-34 CAR)",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Tez Johnson",
-    "team_slug": "tampa-bay-buccaneers",
-    "position": "WR",
-    "ownership_pct": null,
-    "why": "Week 2: Receiving Yards: 1 REC, 49 YDS (TB 19-23 CLE)",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Matthew Golden",
-    "team_slug": "green-bay-packers",
-    "position": "WR",
-    "ownership_pct": null,
-    "why": "Week 2: Receiving Yards: 4 REC, 58 YDS (NYJ 17-20 GB)",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Elic Ayomanor",
-    "team_slug": "tennessee-titans",
-    "position": "WR",
-    "ownership_pct": null,
-    "why": "Week 2: Receiving Yards: 2 REC, 69 YDS (TEN 20-24 PHI)",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Tre' Harris",
-    "team_slug": "los-angeles-chargers",
-    "position": "WR",
-    "ownership_pct": null,
-    "why": "Week 2: Receiving Yards: 1 REC, 53 YDS (LAC 14-26 LV)",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Germie Bernard",
-    "team_slug": "pittsburgh-steelers",
-    "position": "WR",
-    "ownership_pct": null,
-    "why": "Rookie caught 4 REC, 35 YDS in Pittsburgh's 20-3 loss to New England.",
-    "hold": "rest_of_season",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Dalton Kincaid",
-    "team_slug": "buffalo-bills",
-    "position": "TE",
-    "ownership_pct": null,
-    "why": "Hauled in 7 REC, 95 YDS, 1 TD in Buffalo's 41-31 Thursday win over Detroit.",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Dalton Schultz",
-    "team_slug": "houston-texans",
-    "position": "TE",
-    "ownership_pct": null,
-    "why": "Week 2: Receiving Yards: 12 REC, 140 YDS (HOU 6-20 CIN)",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Trey McBride",
-    "team_slug": "arizona-cardinals",
-    "position": "TE",
-    "ownership_pct": null,
-    "why": "Week 2: Receiving Yards: 8 REC, 41 YDS, 1 TD (ARI 7-31 SEA)",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Panthers DST",
-    "team_slug": "carolina-panthers",
-    "position": "DST",
-    "ownership_pct": null,
-    "why": "Allowed 3 points in Week 2.",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Vikings DST",
-    "team_slug": "minnesota-vikings",
-    "position": "DST",
-    "ownership_pct": null,
-    "why": "Allowed 3 points in Week 2.",
-    "hold": "stream",
-    "confidence": "medium",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   }
-  ],
-  "drops": [
-   {
-    "player": "Nico Collins",
-    "team_slug": "houston-texans",
-    "why": "Out — Collins (hamstring) will not play Sunday against the Bengals.",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Jordan Mason",
-    "team_slug": "minnesota-vikings",
-    "why": "Injured Reserve.",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Zay Flowers",
-    "team_slug": "baltimore-ravens",
-    "why": "Doubtful — Flowers (hamstring) is listed as doubtful for Sunday's game against New Orleans.",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   }
-  ],
-  "priority_note": "ESPN ownership percentages could not be verified from published sources this week — ownership_pct is null for every add and the board skews to emergent players and confirmed injury replacements (e.g., Drew Lock starting for Sam Darnold, glute). Kickers omitted: no sourced kicking data."
- },
- "rookie": {
-  "as_of": "2026-09-21",
-  "week": 2,
-  "rookies": [
-   {
-    "player": "Denzel Boston",
-    "team_slug": "cleveland-browns",
-    "position": "WR",
-    "draft_round": null,
-    "snaps": null,
-    "team_snaps": null,
-    "snap_share_pct": null,
-    "targets_or_carries": null,
-    "trend": "steady",
-    "why": "Receiving Yards: 5 REC, 95 YDS, 1 TD (TB 19-23 CLE)",
-    "fantasy_meaning": "bench_stash",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Jonah Coleman",
-    "team_slug": "denver-broncos",
-    "position": "RB",
-    "draft_round": null,
-    "snaps": null,
-    "team_snaps": null,
-    "snap_share_pct": null,
-    "targets_or_carries": null,
-    "trend": "rising",
-    "why": "Rushing Yards: 10 CAR, 39 YDS, 1 TD (DEN 20-13 JAX)",
-    "fantasy_meaning": "waiver_relevant",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Jeremiyah Love",
-    "team_slug": "arizona-cardinals",
-    "position": "RB",
-    "draft_round": null,
-    "snaps": null,
-    "team_snaps": null,
-    "snap_share_pct": null,
-    "targets_or_carries": null,
-    "trend": "rising",
-    "why": "Rushing Yards: 9 CAR, 29 YDS (ARI 7-31 SEA)",
-    "fantasy_meaning": "waiver_relevant",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Germie Bernard",
-    "team_slug": "pittsburgh-steelers",
-    "position": "WR",
-    "draft_round": null,
-    "snaps": null,
-    "team_snaps": null,
-    "snap_share_pct": null,
-    "targets_or_carries": null,
-    "trend": "rising",
-    "why": "Receiving Yards: 4 REC, 35 YDS (NE 20-3 PIT)",
-    "fantasy_meaning": "waiver_relevant",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Jadarian Price",
-    "team_slug": "seattle-seahawks",
-    "position": "RB",
-    "draft_round": null,
-    "snaps": null,
-    "team_snaps": null,
-    "snap_share_pct": null,
-    "targets_or_carries": null,
-    "trend": "fading",
-    "why": "undefined: undefined (undefined)",
-    "fantasy_meaning": "dynasty_only",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Caleb Douglas",
-    "team_slug": "miami-dolphins",
-    "position": "WR",
-    "draft_round": null,
-    "snaps": null,
-    "team_snaps": null,
-    "snap_share_pct": null,
-    "targets_or_carries": null,
-    "trend": "fading",
-    "why": "undefined: undefined (undefined)",
-    "fantasy_meaning": "dynasty_only",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
-    ]
-   },
-   {
-    "player": "Antonio Williams",
-    "team_slug": "washington-commanders",
-    "position": "WR",
-    "draft_round": null,
-    "snaps": null,
-    "team_snaps": null,
-    "snap_share_pct": null,
-    "targets_or_carries": null,
-    "trend": "fading",
-    "why": "undefined: undefined (undefined)",
-    "fantasy_meaning": "dynasty_only",
-    "sources": [
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=<id> (Weeks 1-2 finals incl. MNF)"
+     "https://www.espn.com/nfl/injuries",
+     "https://www.cbssports.com/nfl/injuries/"
     ]
    }
   ]
+ },
+ "rookie": {
+  "as_of": "2026-10-20",
+  "week": 6,
+  "rookies": [
+   {
+    "player": "Germie Bernard",
+    "team_slug": "pittsburgh-steelers",
+    "position": "WR",
+    "draft_round": null,
+    "snaps": null,
+    "team_snaps": null,
+    "snap_share_pct": null,
+    "targets_or_carries": 12,
+    "trend": "rising",
+    "why": "11 receptions, 87 yards and one receiving touchdown on 12 targets. Target opportunity supports a waiver add; snap share is unverified.",
+    "fantasy_meaning": "waiver_relevant",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.espn.com/nfl/boxscore/_/gameId/401873002"
+    ]
+   },
+   {
+    "player": "Omar Cooper Jr.",
+    "team_slug": "new-york-jets",
+    "position": "WR",
+    "draft_round": null,
+    "snaps": null,
+    "team_snaps": null,
+    "snap_share_pct": null,
+    "targets_or_carries": 7,
+    "trend": "rising",
+    "why": "6 receptions, 103 yards and one receiving touchdown on 7 targets after returning. Snap share is unverified.",
+    "fantasy_meaning": "waiver_relevant",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.espn.com/nfl/boxscore/_/gameId/401873001"
+    ]
+   },
+   {
+    "player": "Ja'Kobi Lane",
+    "team_slug": "baltimore-ravens",
+    "position": "WR",
+    "draft_round": null,
+    "snaps": null,
+    "team_snaps": null,
+    "snap_share_pct": null,
+    "targets_or_carries": 5,
+    "trend": "rising",
+    "why": "4 receptions for 40 yards on 5 targets after returning. Treat the larger role as conditional on later availability news.",
+    "fantasy_meaning": "waiver_relevant",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.espn.com/nfl/boxscore/_/gameId/401872997"
+    ]
+   },
+   {
+    "player": "Mike Washington Jr.",
+    "team_slug": "las-vegas-raiders",
+    "position": "RB",
+    "draft_round": null,
+    "snaps": null,
+    "team_snaps": null,
+    "snap_share_pct": null,
+    "targets_or_carries": 9,
+    "trend": "rising",
+    "why": "9 rushes for 43 yards plus one catch for 7 yards. Targets_or_carries stores carries for this RB; snap share is unverified.",
+    "fantasy_meaning": "waiver_relevant",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.espn.com/nfl/boxscore/_/gameId/401873005"
+    ]
+   }
+  ]
+ },
+ "trade": {
+  "as_of": "2026-10-20",
+  "week": 7,
+  "boards": [
+   {
+    "position": "QB",
+    "rows": [
+     {
+      "player": "Trevor Lawrence",
+      "team_slug": "jacksonville-jaguars",
+      "tier": 3,
+      "market": "buy_low",
+      "basis": "Editorial superflex watch: buying through a verified Week 7 bye requires another starter. Facts: NFL/ESPN schedule; judgment: FantasyPros trade analysis.",
+      "sources": [
+       "https://www.fantasypros.com/2026/10/fantasy-football-week-7-early-trade-targets-2026/",
+       "https://www.nfl.com/schedules/2026/by-week/week-7"
+      ]
+     }
+    ]
+   },
+   {
+    "position": "RB",
+    "rows": [
+     {
+      "player": "Bijan Robinson",
+      "team_slug": "atlanta-falcons",
+      "tier": 1,
+      "market": "fair",
+      "basis": "Elite retention judgment supported by two half-PPR ranking sources. Do not equate one week of rankings with a numeric trade valuation.",
+      "sources": [
+       "https://fantasyfootballcalculator.com/rankings/half-ppr",
+       "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+      ]
+     },
+     {
+      "player": "Quinshon Judkins",
+      "team_slug": "cleveland-browns",
+      "tier": 3,
+      "market": "buy_low",
+      "basis": "Injury-risk buy only at a discount; the ankle issue is corroborated by ESPN and CBS. No return or workload guarantee.",
+      "sources": [
+       "https://www.espn.com/nfl/injuries",
+       "https://www.cbssports.com/nfl/injuries/"
+      ]
+     },
+     {
+      "player": "Chase Brown",
+      "team_slug": "cincinnati-bengals",
+      "tier": 3,
+      "market": "buy_low",
+      "basis": "Post-bye trade watch, not a guaranteed rebound. Schedule facts are independently checked; the buy-low tag is editorial.",
+      "sources": [
+       "https://www.fantasypros.com/2026/10/fantasy-football-week-7-early-trade-targets-2026/",
+       "https://www.nfl.com/schedules/2026/by-week/week-7"
+      ]
+     }
+    ]
+   },
+   {
+    "position": "WR",
+    "rows": [
+     {
+      "player": "Puka Nacua",
+      "team_slug": "los-angeles-rams",
+      "tier": 1,
+      "market": "fair",
+      "basis": "Elite retention judgment from two current half-PPR ranking sources; Adams absence is corroborated separately.",
+      "sources": [
+       "https://fantasyfootballcalculator.com/rankings/half-ppr",
+       "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+      ]
+     },
+     {
+      "player": "Tee Higgins",
+      "team_slug": "cincinnati-bengals",
+      "tier": 3,
+      "market": "buy_low",
+      "basis": "Post-bye buy watch from FantasyPros, with opponents checked against NFL/ESPN. Price depends on league format.",
+      "sources": [
+       "https://www.fantasypros.com/2026/10/fantasy-football-week-7-early-trade-targets-2026/",
+       "https://www.nfl.com/schedules/2026/by-week/week-7"
+      ]
+     },
+     {
+      "player": "DK Metcalf",
+      "team_slug": "pittsburgh-steelers",
+      "tier": 3,
+      "market": "fair",
+      "basis": "Volume-oriented hold judgment; Week 6 receiving usage checked against the ESPN box score and FantasyPros trade analysis.",
+      "sources": [
+       "https://www.fantasypros.com/2026/10/fantasy-football-week-7-early-trade-targets-2026/",
+       "https://www.espn.com/nfl/boxscore/_/gameId/401873002"
+      ]
+     }
+    ]
+   },
+   {
+    "position": "TE",
+    "rows": [
+     {
+      "player": "T.J. Hockenson",
+      "team_slug": "minnesota-vikings",
+      "tier": 4,
+      "market": "buy_low",
+      "basis": "Conditional injury discount only; ESPN and CBS show unresolved concussion status. Do not price him as cleared.",
+      "sources": [
+       "https://www.espn.com/nfl/injuries",
+       "https://www.cbssports.com/nfl/injuries/"
+      ]
+     }
+    ]
+   }
+  ],
+  "swing_trades": []
  }
 }

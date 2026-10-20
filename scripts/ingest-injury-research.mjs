@@ -40,6 +40,8 @@ function fail(message, entry, index) {
 
 function validate(doc, slugs) {
   if (!doc || typeof doc !== "object") fail("document is not an object");
+  if (!Number.isInteger(doc.week) || doc.week < 1 || doc.week > 18) fail("regular-season report week must be 1–18");
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(doc.as_of ?? "")) fail("as_of must be the actual YYYY-MM-DD source date");
   const ledger = Array.isArray(doc.ledger) ? doc.ledger : [];
   const watch = Array.isArray(doc.watch) ? doc.watch : [];
   ledger.forEach((entry, index) => {
@@ -51,22 +53,24 @@ function validate(doc, slugs) {
     }
     if (entry.confidence && !CONFIDENCE.has(entry.confidence)) fail(`bad confidence ${entry.confidence}`, entry, index);
     if (!Array.isArray(entry.sources) || entry.sources.length === 0) fail("at least one source URL required", entry, index);
+    if (new Set(entry.sources.map(url => new URL(url).hostname.replace(/^www\./, ""))).size < 2) fail("two distinct publishers required", entry, index);
   });
   watch.forEach((entry, index) => {
     if (!entry.player) fail("player missing", entry, index);
     if (!slugs.has(entry.team_slug)) fail(`unknown team_slug ${entry.team_slug}`, entry, index);
-    for (const day of ["wed", "thu", "fri", "sat"]) {
+    for (const day of ["mon", "tue", "wed", "thu", "fri", "sat"]) {
       if (!PRACTICE.has(entry.practice?.[day] ?? null)) {
         fail(`practice.${day} must be DNP|LP|FP|null, got ${entry.practice?.[day]}`, entry, index);
       }
     }
     if (entry.likelihood && !LIKELIHOODS.has(entry.likelihood)) fail(`bad likelihood ${entry.likelihood}`, entry, index);
     if (!entry.confidence || !CONFIDENCE.has(entry.confidence)) fail("watch entries need a confidence", entry, index);
-    if (!entry.likelihood && !entry.practice?.wed && !entry.practice?.thu && !entry.practice?.fri && !entry.practice?.sat) {
+    if (!entry.likelihood && !Object.values(entry.practice ?? {}).some(value => value != null)) {
       fail("watch entries need practice status or a likelihood", entry, index);
     }
     const allSources = [...(entry.sources ?? []), ...(entry.social ?? [])];
     if (allSources.length === 0) fail("at least one source or verified social link required", entry, index);
+    if (new Set(allSources.map(url => new URL(url).hostname.replace(/^www\./, ""))).size < 2) fail("two distinct publishers required", entry, index);
   });
   return {
     week: typeof doc.week === "number" ? doc.week : null,

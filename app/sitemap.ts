@@ -16,7 +16,6 @@ import { coaches, conferenceHubSlugs, datasetAsOf, stadiums, teams } from "@/lib
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const origin = environment.siteUrl;
-  const now = new Date();
   const datasetDate = new Date(`${datasetAsOf}T00:00:00Z`);
   const teamRoutes: MetadataRoute.Sitemap = teams.map((team) => ({
     url: `${origin}/teams/${team.slug}`,
@@ -45,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const featureRoutes: MetadataRoute.Sitemap = [
     { url: `${origin}/stadiums`, lastModified: datasetDate, changeFrequency: "weekly", priority: 0.6 },
     { url: `${origin}/x-and-ys`, lastModified: datasetDate, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${origin}/injuries`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+    { url: `${origin}/injuries`, lastModified: datasetDate, changeFrequency: "daily", priority: 0.8 },
     { url: `${origin}/fantasy-desk`, lastModified: datasetDate, changeFrequency: "weekly", priority: 0.8 },
     // Playoff surfaces exist as HubApp sections but were never listed here,
     // so Google had no discovery path once the season race started (2026-09-29
@@ -53,5 +52,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${origin}/playoff-bracket`, lastModified: datasetDate, changeFrequency: "weekly", priority: 0.8 },
     { url: `${origin}/playoff-predictor`, lastModified: datasetDate, changeFrequency: "weekly", priority: 0.8 },
   ];
-  return [...teamRoutes, ...coachRoutes, ...conferenceRoutes, ...stadiumRoutes, ...featureRoutes];
+  const utilityRoutes: MetadataRoute.Sitemap = ["", "/scores", "/schedule", "/stats", "/transactions", "/data-sources", "/dfs", "/watch"].map(path => ({ url: `${origin}${path}`, lastModified: datasetDate, changeFrequency: "weekly", priority: 0.7 }));
+  return [...utilityRoutes, ...teamRoutes, ...coachRoutes, ...conferenceRoutes, ...stadiumRoutes, ...featureRoutes];
 }

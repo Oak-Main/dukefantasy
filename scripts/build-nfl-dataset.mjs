@@ -8,8 +8,13 @@
 import { writeFileSync, mkdirSync, existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { materializeVerifiedSnapshot } from "./verified-snapshot.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
+if (!process.argv.includes("--live")) {
+  materializeVerifiedSnapshot(root);
+  process.exit(0);
+}
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/nfl";
 
 /** Retrying fetch: a transient ESPN hiccup must not silently drop data from the
@@ -142,7 +147,7 @@ const brandColors = {
 
 const teams = espnTeams.map((et) => {
   const slug = teamSlug(et.displayName);
-  const abbr = et.abbreviation.toLowerCase();
+  const abbr = et.abbreviation.toLowerCase().replace(/^was$/, "wsh");
   return {
     id: et.id,
     slug,
@@ -278,6 +283,10 @@ for (const { week, doc } of weekDocs) {
       homeScore: status === "final" ? parseScore(home.score) : null,
       broadcast: normalizeNetwork(comp.broadcasts?.[0]?.names?.[0]),
       venue: comp.venue?.fullName ?? "",
+      city: comp.venue?.address?.city ?? "",
+      country: comp.venue?.address?.country ?? "",
+      neutral_site: comp.neutralSite === true,
+      networks: (comp.broadcasts ?? []).flatMap(b => b.names ?? []).map(normalizeNetwork).filter(Boolean),
     });
   }
 }
@@ -324,7 +333,7 @@ for (const t of teams) {
 // ---------- ESPN injury base feed ----------
 console.log("Fetching ESPN injury feed...");
 const STATUS_MAP = { "Injured Reserve": "IR", "Out": "OUT", "Questionable": "QUESTIONABLE", "Doubtful": "DOUBTFUL", "Suspension": "SUSPENSION", "Active": "ACTIVE" };
-const injuriesDoc = await fetchJson(`${ESPN}/injuries`).catch(() => ({ injuries: [] }));
+const injuriesDoc = await fetchJson(`${ESPN}/injuries`);
 const teamByEspnId = new Map(teams.map((t) => [t.id, t.slug]));
 const espnInjuries = { asOf: null, entries: [] };
 try {
@@ -345,7 +354,7 @@ try {
     }
   }
 } catch (error) {
-  console.warn(`ESPN injury feed unreadable — shipping empty base (${error.message})`);
+  throw new Error(`ESPN injury feed unreadable; previous snapshot preserved (${error.message})`);
 }
 
 // ---------- Editorial injury research (fail-closed) ----------

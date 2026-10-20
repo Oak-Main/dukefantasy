@@ -8,6 +8,7 @@
  */
 
 import { DataBoardHero, DataBoardSummary, DataBoardEmpty, formatDataDate } from "./data-board-primitives";
+import { EvidenceLinks } from "./evidence-links";
 import type { BroadcastTeam } from "@/lib/homepage";
 import {
   fantasyDesk,
@@ -43,7 +44,7 @@ function StartSitSection({ board }: { board: StartSitBoard }) {
       <div className="db-section-heading">
         <h2 className="font-display">Start/Sit Tier Board — Week {board.week}</h2>
         <p>
-          Tiers, not rankings: within a tier the call is a coin flip. Decisions only — projections stay on the{" "}
+          Targeted early Week 7 tiers for half-PPR redraft. Check final availability before lock. Numeric projections stay on the{" "}
           <a className="db-hero-link" href="/dfs">DFS ledger</a>. As of {formatDataDate(board.as_of)}.
         </p>
       </div>
@@ -65,7 +66,7 @@ function StartSitSection({ board }: { board: StartSitBoard }) {
                           <span className="db-player-link">{row.player}</span>
                           <small className="db-team-link">{row.team_slug}</small>
                         </span>
-                        <span className="db-expandable-note">{row.note}</span>
+                        <span className="db-expandable-note">{row.note}<EvidenceLinks urls={row.sources ?? []} /></span>
                       </li>
                     ))}
                   </ul>
@@ -86,6 +87,7 @@ function StartSitSection({ board }: { board: StartSitBoard }) {
                   <small className="db-team-link">{tc.team_slug}</small>
                 </span>
                 <p className="db-expandable-note">{tc.verdict}</p>
+                <EvidenceLinks urls={tc.sources ?? []} />
               </div>
             ))}
           </div>
@@ -99,10 +101,10 @@ function TradeSection({ board }: { board: TradeBoard }) {
   return (
     <section className="db-section" aria-label="Trade value big board">
       <div className="db-section-heading">
-        <h2 className="font-display">Trade Value Big Board — Week {board.week}</h2>
+        <h2 className="font-display">Trade Watch — Week {board.week}</h2>
         <p>
-          Rest-of-season values, redraft half-PPR context. Tiers are internally consistent (a tier-2 back never ranks
-          below a tier-3 back); market tags name the week&apos;s exploit. As of {formatDataDate(board.as_of)}.
+          Editorial rest-of-season watch for redraft half-PPR. Tiers and market tags are judgments, not numeric trade values.
+          League format and injury news can change the decision. As of {formatDataDate(board.as_of)}.
         </p>
       </div>
       {board.boards.map((group) => (
@@ -127,7 +129,7 @@ function TradeSection({ board }: { board: TradeBoard }) {
                     </span>
                   </td>
                   <td className="font-display">{row.tier}</td>
-                  <td>{row.basis}</td>
+                  <td>{row.basis}<EvidenceLinks urls={row.sources ?? []} /></td>
                   <td>
                     <MarketPill value={row.market} />
                   </td>
@@ -164,7 +166,7 @@ export function FantasyDeskPage({ teams }: { teams: BroadcastTeam[] }) {
   const statuses = DESK_CADENCE.map((cadence) => ({ cadence, status: deskBoardStatus(cadence.key) }));
   const behind = statuses.filter(({ status }) => status?.current === false);
   const currentCount = statuses.filter(({ status }) => status?.current === true).length;
-  const sourcingCaption = `Sourcing rules per board: null means not published, two-source preference on every claim of fact, no estimated numbers. ${teams.length} teams tracked.`;
+  const sourcingCaption = `Early edition: half-PPR redraft, one QB, typical 10–12 teams; superflex exceptions are labeled. Two publishers per factual entry; they may share upstream feeds. Null means unverified. Coverage is targeted across ${teams.length} teams, not a complete ranking.`;
   const behindCaption = behind.length
     ? `Behind the NFL calendar: ${behind
         .map(({ cadence, status }) => `${cadence.label} is the Week ${status?.covers} edition`)
@@ -251,7 +253,7 @@ function WaiverSection({ board }: { board: WaiverBoard }) {
                     </span>
                   </td>
                   <td>{a.ownership_pct === null ? "n/p" : `${a.ownership_pct}%`}</td>
-                  <td>{a.why}</td>
+                  <td>{a.why}<EvidenceLinks urls={a.sources} /></td>
                   <td>{a.hold === "rest_of_season" ? "Rest of season" : "Stream"}</td>
                   <td><ConfidencePill value={a.confidence} /></td>
                 </tr>
@@ -271,6 +273,7 @@ function WaiverSection({ board }: { board: WaiverBoard }) {
                   <small className="db-team-link">{d.team_slug}</small>
                 </span>
                 <p className="db-expandable-note">{d.why}</p>
+                <EvidenceLinks urls={d.sources} />
               </div>
             ))}
           </div>
@@ -291,8 +294,8 @@ function RookieSection({ board }: { board: RookieBoard }) {
       <div className="db-section-heading">
         <h2 className="font-display">Rookie Usage Report — Week {board.week}</h2>
         <p>
-          2026-class skill players visible in the box-score leaders. Snap counts publish only when the
-          box-score record carries them — null means not published, never estimated. As of {formatDataDate(board.as_of)}.
+          {board.rookies.length} verified 2026 rookie highlights from completed games. Snap shares are unverified and remain unpublished.
+          As of {formatDataDate(board.as_of)}.
         </p>
       </div>
       <div className="db-table-wrap">
@@ -316,7 +319,7 @@ function RookieSection({ board }: { board: RookieBoard }) {
                   </span>
                 </td>
                 <td>{r.position}</td>
-                <td>{r.why}</td>
+                <td>{r.why}<EvidenceLinks urls={r.sources} /></td>
                 <td>{r.trend === "rising" ? "▲ Rising" : r.trend === "fading" ? "▼ Fading" : "— Steady"}</td>
                 <td>{r.fantasy_meaning === "waiver_relevant" ? "Waiver relevant" : r.fantasy_meaning === "bench_stash" ? "Bench stash" : "Dynasty only"}</td>
               </tr>

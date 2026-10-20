@@ -28,3 +28,15 @@
 | A-024 | An in-progress score that no poll has confirmed for five minutes is more misleading than the baked row. | AGENTS.md: never imply stale information is live fact. Polls are 60 seconds and the route plus browser caches add up to about 90 seconds. | `LIVE_STALE_MS` in `lib/live-scoreboard.ts`; tune from observed ESPN reliability. |
 | A-025 | Records, standings, conference tallies, the watch board, and the homepage week and marquee cards stay dataset-as-of; only the scoreboard, schedule, game header, team schedule, ticker, and finals strip overlay live scores. | Recomputing records from a partial overlay is inference, and a game could be counted twice. The other surfaces were outside this change. | Those surfaces lag until the next deploy and say "Dataset as of" on the page. Extend the overlay per surface with `useLiveScoreboard` when needed. |
 | A-026 | Renderers and viewers run in arbitrary time zones; only the Eastern calendar is meaningful for game days. | The Worker renders in UTC and US viewers are UTC-4 to UTC-8: a bare `new Date("2026-10-11")` printed "Sat, Oct 10" in Eastern, Central, Mountain and Pacific. `tests/rendered-html.test.mjs` renders a game page under `TZ=America/Los_Angeles`. | A component that parses a date-only string without `timeZone: "UTC"`, or compares an Eastern day with a UTC day, brings back off-by-one days for US viewers. Use `easternDay()` for "today" and noon-UTC calendar formatting for dates (D-022). |
+
+
+## October 20, 2026 NFL refresh release
+
+- Owner authorized applying the verified package, completing integrations, checking and deploying to dukefantasy.com.
+- Scope: Week 7 schedule, 93 final results, 32 standings, 399 corroborated injury ledger/watch rows, four conditional fantasy boards, 30 roster moves, 15 yardage leaders and Monday dated practice.
+- Reviewed sources and exceptions: data/content-refresh/2026-10-20/package.json and sources.json. Two publishers may share upstream feeds; future Weeks 8–18 remain ESPN planning data.
+- Builds reproduce the selected snapshot and preserve source timestamps. Source age is visible per module; raw provider injury updates do not silently override corroborated editorial publication.
+- International games retain neutral-site, venue, city and country. Washington WAS/WSH normalizes to the WSH lookup key. Monday/Tuesday practice has supported fields; estimated walkthroughs retain dates.
+- Transactions/stat leaders have native routes. Fantasy navigation reaches /fantasy-desk; unsupported college filters/bracket and homepage preseason ratings are removed. DFS accuracy remains unpublished.
+- Redraft half-PPR, one QB, typical 10–12 teams; availability is conditional. No fabricated ownership, weather, numeric forecasts, historic picks or unverified full roster/film/scheme baseline.
+- Runtime flags, Clean Mode and commercial kill switches are preserved. Release validation and deployment evidence: docs/RELEASE_2026-10-20.md.

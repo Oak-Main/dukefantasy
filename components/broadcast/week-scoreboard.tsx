@@ -124,7 +124,7 @@ export function WeekScoreboard({
       <div className="apex-week-heading">
         <LaneHeading
           id="this-week-title"
-          eyebrow="CLEAR YOUR SATURDAY"
+          eyebrow="YOUR NFL WEEK"
           title="This week"
           href="/scores"
           linkLabel="Full scoreboard"

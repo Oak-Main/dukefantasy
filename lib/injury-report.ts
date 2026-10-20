@@ -56,7 +56,7 @@ export interface InjuryWatchEntry {
   teamSlug: string;
   position: string | null;
   injury: string | null;
-  practice: { wed: PracticeStatus | null; thu: PracticeStatus | null; fri: PracticeStatus | null; sat: PracticeStatus | null };
+  practice: { mon?: PracticeStatus | null; tue?: PracticeStatus | null; wed: PracticeStatus | null; thu: PracticeStatus | null; fri: PracticeStatus | null; sat: PracticeStatus | null };
   likelihood: Likelihood | null;
   confidence: Confidence | null;
   note: string | null;
@@ -83,13 +83,16 @@ interface GeneratedInjuryResearch {
 const researchDoc = (nfl as { injuryResearch?: GeneratedInjuryResearch }).injuryResearch ?? {};
 
 function mapPractice(row: Record<string, unknown>): InjuryWatchEntry["practice"] {
+  const practice = (row.practice ?? {}) as Record<string, unknown>;
   const norm = (value: unknown): PracticeStatus | null =>
     value === "DNP" || value === "LP" || value === "FP" ? value : null;
   return {
-    wed: norm(row.practice_wed),
-    thu: norm(row.practice_thu),
-    fri: norm(row.practice_fri),
-    sat: norm(row.practice_sat),
+    mon: norm(practice.mon ?? row.practice_mon),
+    tue: norm(practice.tue ?? row.practice_tue),
+    wed: norm(practice.wed ?? row.practice_wed),
+    thu: norm(practice.thu ?? row.practice_thu),
+    fri: norm(practice.fri ?? row.practice_fri),
+    sat: norm(practice.sat ?? row.practice_sat),
   };
 }
 
@@ -258,5 +261,5 @@ export const INJURY_METHOD = {
   ledger: "The long-term ledger lists players on Injured Reserve or expected out more than 2 weeks — week-to-week game-time decisions never belong here.",
   watch: "The watch carries verified practice participation (DNP/LP/FP) plus likelihood to play, graded with a stated confidence and sourced from beat reporting, team releases, and verified player social accounts (X, Instagram).",
   sentiment: "Sentiment is evidence, not vibes: a likelihood call must cite a beat report, team release, or verified-account post. Unverified aggregators and speculation accounts are never sources.",
-  schedule: "The base ESPN feed refreshes live on every request; the editorial layer publishes on the posted schedule and is locked once games kick off.",
+  schedule: "The corroborated board retains its published research date. Practice reports carry their actual date and week. Planned editorial slots are not proof an update was published.",
 } as const;

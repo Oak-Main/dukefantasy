@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { CalendarClock, RefreshCw, ShieldCheck } from "lucide-react";
 import type { BroadcastTeam } from "@/lib/homepage";
+import { practiceReports, reserveStatuses } from "@/lib/content-refresh";
+import { EvidenceLinks } from "./evidence-links";
 import { DataBoardHero, DataBoardSummary } from "./data-board-primitives";
 import {
   INJURY_CADENCE,
@@ -52,47 +54,11 @@ function PracticeCell({ status }: { status: string | null }) {
   return <span className={`inj-practice ${cls}`}>{status}</span>;
 }
 
-interface LiveInjury {
-  player: string;
-  teamSlug: string | null;
-  position: string | null;
-  status: string;
-  detail: string | null;
-}
-
 export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] }) {
   const teamBySlug = useMemo(() => new Map(teams.map((team) => [team.slug, team])), [teams]);
   const [teamFilter, setTeamFilter] = useState<string>("");
-  const [live, setLive] = useState<LiveInjury[] | null>(null);
-  const [liveAsOf, setLiveAsOf] = useState<string | null>(espnInjuriesAsOf);
-
-  // Live refresh from the Worker feed — the posting slots stay honest because
-  // the page upgrades itself whenever a visitor loads it after a slot time.
-  useEffect(() => {
-    let cancelled = false;
-    fetch("/api/injuries", { headers: { accept: "application/json" } })
-      .then((response) => (response.ok ? response.json() : null))
-      .then((doc) => {
-        if (!cancelled && doc && Array.isArray(doc.entries)) {
-          setLive(doc.entries as LiveInjury[]);
-          setLiveAsOf(doc.asOf ?? null);
-        }
-      })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  const baseLedger = useMemo<EspnInjuryEntry[]>(() => espnLedgerEntries(), []);
-  const baseWatch = useMemo<EspnInjuryEntry[]>(() => espnWatchEntries(), []);
-
-  const liveLedger = useMemo(() => {
-    if (!live) return null;
-    return live
-      .filter((entry) => entry.status === "IR")
-      .map((entry) => ({ ...entry, status: "IR" as InjuryStatus }));
-  }, [live]);
+  const baseLedger = useMemo<EspnInjuryEntry[]>(() => injuryResearch.asOf ? [] : espnLedgerEntries(), []);
+  const baseWatch = useMemo<EspnInjuryEntry[]>(() => injuryResearch.asOf ? [] : espnWatchEntries(), []);
 
   const ledgerRows = useMemo(() => {
     const rows: Array<{
@@ -107,7 +73,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       sources: string[];
       social: string[];
       confidence: string | null;
-    }> = (liveLedger ?? baseLedger).map((entry) => ({
+    }> = baseLedger.map((entry) => ({
       kind: "espn" as const,
       player: entry.player,
       teamSlug: entry.teamSlug,
@@ -143,7 +109,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
     return filtered.sort(
       (a, b) => (a.teamSlug ?? "").localeCompare(b.teamSlug ?? "") || a.player.localeCompare(b.player),
     );
-  }, [liveLedger, baseLedger, teamFilter]);
+  }, [baseLedger, teamFilter]);
 
   const watchRows = useMemo(() => {
     const espnRows = baseWatch.map((entry) => ({
@@ -192,7 +158,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       <DataBoardHero
         eyebrow="Injury desk · Verified weekly"
         title="The injury report, on the record."
-        description="A long-term ledger of every player on IR or out more than two weeks, plus a week-to-week watch with verified practice status and likelihood to play — graded on beat reporting, team releases, and verified player accounts."
+        description="Corroborated injury listings and a week-to-week watch, with source dates and conditional availability notes. Final Week 7 designations are pending; blank practice cells mean no verified report."
         action={
           <a className="db-hero-link" href="#inj-cadence">
             Publishing schedule
@@ -202,7 +168,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       />
       <DataBoardSummary
         label="Injury desk summary"
-        caption={`${INJURY_METHOD.schedule} ESPN base as of ${liveAsOf ?? "not published"}.`}
+        caption={`${INJURY_METHOD.schedule} Research as of ${injuryResearch.asOf ?? espnInjuriesAsOf ?? "not published"}.`}
         items={[
           { label: "Long-term ledger", value: ledgerRows.length, emphasis: true },
           { label: "Week-to-week watch", value: watchRows.length },
@@ -224,8 +190,8 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
           <div>
             <strong>Next scheduled update: {next.slot.label}</strong>
             <span>
-              {WEEKDAY_LABEL[next.at.getDay()]} ·{" "}
-              {next.at.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })} PT — {next.slot.scope}
+              {next.at.toLocaleDateString("en-US", { weekday: "long", timeZone: "America/Los_Angeles" })} ·{" "}
+              {next.at.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Los_Angeles" })} PT — {next.slot.scope}
             </span>
           </div>
         </div>
@@ -240,11 +206,25 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
           ))}
         </div>
         <p className="apex-data-note">
-          <RefreshCw size={12} aria-hidden="true" /> The ESPN base layer refreshes live on every page load; the
-          editorial layer (practice status, likelihood, sentiment) publishes on the slots above.
+          <RefreshCw size={12} aria-hidden="true" /> Planned review slots require a new verified research import. The displayed source date shows the last published review.
         </p>
       </section>
 
+      <section className="apex-container db-section" aria-labelledby="dated-practice-title">
+        <h2 id="dated-practice-title">Dated Week 7 practice reports</h2>
+        {practiceReports.map(report => <article className="research-card" key={report.player + report.date}>
+          <h3>{report.player} · {report.participation}</h3>
+          <p><time dateTime={report.date}>{report.date}</time> · Week {report.week} · Estimated walkthrough · {report.injury}</p>
+          <p>{report.note}</p><EvidenceLinks urls={report.sources} />
+        </article>)}
+      </section>
+      <section className="apex-container db-section" aria-labelledby="reserve-status-title">
+        <h2 id="reserve-status-title">PUP, NFI & suspension listings</h2>
+        <p>These eligibility listings remain separate from injured reserve and the game-time watch. An estimated return is not an activation.</p>
+        <div className="research-card-grid">{reserveStatuses.filter(row => !teamFilter || row.team_slug === teamFilter).map(row => <article className="research-card" key={row.player + row.team_slug}>
+          <h3>{row.player}</h3><p>{teamBySlug.get(row.team_slug)?.name ?? row.team_slug} · {row.status}</p><EvidenceLinks urls={row.sources} />
+        </article>)}</div>
+      </section>
       <section className="apex-container db-section" aria-labelledby="inj-ledger-title">
         <div className="section-heading">
           <div>
@@ -302,9 +282,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
                       <td className="inj-detail">{row.injury ?? row.detail ?? "Not published"}</td>
                       <td>
                         {row.sources.length ? (
-                          <a href={row.sources[0]} target="_blank" rel="noopener noreferrer">
-                            Source
-                          </a>
+                          <EvidenceLinks urls={row.sources} />
                         ) : (
                           <span className="inj-src-espn">ESPN</span>
                         )}
@@ -344,6 +322,8 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
                   <th scope="col">Player</th>
                   <th scope="col">Team</th>
                   <th scope="col">Pos</th>
+                  <th scope="col">Mon</th>
+                  <th scope="col">Tue</th>
                   <th scope="col">Wed</th>
                   <th scope="col">Thu</th>
                   <th scope="col">Fri</th>
@@ -364,6 +344,8 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
                       </td>
                       <td>{team?.shortName ?? row.teamSlug ?? "—"}</td>
                       <td>{row.position ?? "—"}</td>
+                      <td><PracticeCell status={practice?.mon ?? null} /></td>
+                      <td><PracticeCell status={practice?.tue ?? null} /></td>
                       <td><PracticeCell status={practice ? practice.wed : null} /></td>
                       <td><PracticeCell status={practice ? practice.thu : null} /></td>
                       <td><PracticeCell status={practice ? practice.fri : null} /></td>

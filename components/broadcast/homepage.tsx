@@ -1,21 +1,17 @@
 "use client";
 
+import { byeTeams, refreshAsOf, refreshWeek, transactions } from "@/lib/content-refresh";
 import { featuredGame, weekGames, type HomepageData } from "@/lib/homepage";
 import { FinalsStrip } from "./finals-strip";
 import { MarqueeGame } from "./marquee-game";
 import { WeekScoreboard } from "./week-scoreboard";
 import {
-  FantasyLane,
   GamedayLane,
-  PortalLane,
-  PreseasonLane,
   RankingsLane,
 } from "./intelligence-lanes";
 
 export function BroadcastHomepage({
   data,
-  cleanMode,
-  onModeRequest,
 }: {
   data: HomepageData;
   cleanMode: boolean;
@@ -50,9 +46,7 @@ export function BroadcastHomepage({
           game={featured}
           away={away}
           home={home}
-          venue={
-            data.stadiums.find((venue) => venue.teamId === home.slug)?.name
-          }
+          venue={featured.venue}
         />
       ) : (
         <section className="apex-marquee">
@@ -73,23 +67,17 @@ export function BroadcastHomepage({
           teams={data.teams}
           datasetAsOf={data.datasetAsOf}
         />
-        <PortalLane
-          portalCounts={data.portalCounts}
-          teams={data.teams}
-          portalAsOf={data.portalAsOf}
-        />
+        <section className="apex-lane research-card" aria-labelledby="weekly-desk-title">
+          <h2 id="weekly-desk-title">Week {refreshWeek} Fantasy Desk</h2>
+          <p>Early half-PPR redraft edition · Researched {refreshAsOf}. Conditional waiver candidates, lineup tiers, rookie usage and trade notes.</p>
+          <a href="/fantasy-desk">Open the decision boards →</a>
+          <p>Byes: {byeTeams.map(slug => data.teams.find(team => team.slug === slug)?.name ?? slug).join(", ")}</p>
+        </section>
       </div>
-      <FantasyLane
-        fantasyNotes={data.fantasyNotes}
-        teams={data.teams}
-        fantasyAsOf={data.fantasyAsOf}
-        cleanMode={cleanMode}
-        onModeRequest={onModeRequest}
-      />
-      <PreseasonLane
-        preseasonRatings={data.preseasonRatings}
-        teams={data.teams}
-      />
+      <section className="research-card-grid" aria-label="Verified NFL research">
+        <article className="research-card"><h2>Week 6 results & season leaders</h2><p>93 completed games through Week 6, 32 standings and the top five yardage leaders in each category.</p><a href="/scores">NFL scores →</a> <a href="/stats">Season leaders →</a></article>
+        <article className="research-card"><h2>Verified roster moves</h2><p>{transactions.length} corroborated transactions in the October 14–20 window.</p><a href="/transactions">Read the transaction wire →</a></article>
+      </section>
       <GamedayLane stadium={stadium} team={stadiumTeam} />
       <p className="apex-data-note">
         Independent NFL intelligence · Dataset compiled through{" "}

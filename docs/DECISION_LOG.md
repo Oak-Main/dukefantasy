@@ -101,3 +101,15 @@ D-024 left the `lib/scoreboard.ts` helpers that only the deleted broadcast pages
 `components/broadcast/scoreboard-page.tsx` (`ScoreboardPage`), `game-detail-page.tsx` (`GameDetailPage`) and `game-card.tsx` (`BroadcastGameCard`) are deleted. They came with the bootstrap commit (a476056) and were never wired in: on `main` at 4a18546 nothing imported them except `scoreboard-page.tsx` importing `./game-card`, and a build without them is byte-identical to one with them apart from random per-build IDs. `/scores`, `/schedule` and `/games/:id` are rendered by `components/HubApp.tsx` (`ScoresPage`, `SchedulePage`, `GamePage`, `GameCard`) through `app/[...slug]/page.tsx`, so that is where those pages change; leaving the dead files in place had already misdirected a change request. No stylesheet ever defined their classes, so no CSS went with them.
 
 Rejected: swapping `HubApp`'s views for them (no redesign was requested, and they carry no styles). The `lib/scoreboard.ts` helpers only they used stay for a separate prune.
+
+
+## October 20, 2026 NFL refresh release
+
+- Owner authorized applying the verified package, completing integrations, checking and deploying to dukefantasy.com.
+- Scope: Week 7 schedule, 93 final results, 32 standings, 399 corroborated injury ledger/watch rows, four conditional fantasy boards, 30 roster moves, 15 yardage leaders and Monday dated practice.
+- Reviewed sources and exceptions: data/content-refresh/2026-10-20/package.json and sources.json. Two publishers may share upstream feeds; future Weeks 8–18 remain ESPN planning data.
+- Builds reproduce the selected snapshot and preserve source timestamps. Source age is visible per module; raw provider injury updates do not silently override corroborated editorial publication.
+- International games retain neutral-site, venue, city and country. Washington WAS/WSH normalizes to the WSH lookup key. Monday/Tuesday practice has supported fields; estimated walkthroughs retain dates.
+- Transactions/stat leaders have native routes. Fantasy navigation reaches /fantasy-desk; unsupported college filters/bracket and homepage preseason ratings are removed. DFS accuracy remains unpublished.
+- Redraft half-PPR, one QB, typical 10–12 teams; availability is conditional. No fabricated ownership, weather, numeric forecasts, historic picks or unverified full roster/film/scheme baseline.
+- Runtime flags, Clean Mode and commercial kill switches are preserved. Release validation and deployment evidence: docs/RELEASE_2026-10-20.md.

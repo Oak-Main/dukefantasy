@@ -1,32 +1,31 @@
-# CFB Apex
+# Duke Fantasy
 
-A premium, conference-neutral college football utility preview built with Vinext, Next.js App Router, React, strict TypeScript, and Cloudflare-compatible ESM.
+NFL schedules, scores, standings and sourced fantasy decision boards at [dukefantasy.com](https://dukefantasy.com). Built with Vinext, Next.js App Router, React, TypeScript and a Cloudflare Worker.
 
-The canonical public fixture beta is `https://cfbapex.com`. It remains globally noindexed and visibly synthetic until the live-data gates are supported by contracts, credentials, verification evidence, staffing, and legal approval.
+## Develop and verify
 
-The product includes fixture-backed scores/schedule, advanced game previews, transfer portal and roster volatility, a seeded playoff simulator, coaching/buyout economics, gated DFS distributions, team/player/conference/stadium routes, source/correction workflows, newsletter development flow, provider health, commercial-policy surfaces, and protected admin access.
-
-All displayed teams, people, games, venues, contracts, and projections are deterministic fictional demonstrations. No live sports, odds, email, affiliate, advertising, map, ticketing, streaming, or image provider is configured.
-
-## Local setup
-
-```powershell
-npm.cmd ci
-npm.cmd run dev
+```sh
+npm ci
+npm run dev
+npm run verify
 ```
 
-Open `http://localhost:3000`.
+Release builds reproduce the reviewed snapshot selected by `data/content-refresh/current.json`. The October 20, 2026 edition covers 93 final scores through Week 6, Week 7's schedule, 32 standings, 399 injury ledger/watch entries, four fantasy boards, 30 transactions and 15 season yardage leaders. Every module shows its source date; a new build does not renew it.
 
-## Verification
+`npm run dataset:verify` compares the snapshot with fresh ESPN schedules, final scores and standings. `node scripts/build-nfl-dataset.mjs --live` is an explicit single-provider research pull, not a substitute for the two-publisher review. Review changes and coverage before selecting a new release snapshot.
 
-```powershell
-npm.cmd run verify
-```
+The package and source register are in `data/content-refresh/2026-10-20/`. Native editorial inputs are `data/fantasy-desk/current.json` and `data/injury-research/current.json`. Imports preserve Monday–Saturday participation; dated estimated walkthroughs are separate from final designations.
 
-Individual commands include `build`, `typecheck`, `lint`, `test`, `test:integration`, `test:e2e`, `test:a11y`, `test:visual`, `test:links`, `test:seo`, `db:migrate`, `db:seed`, `sync:data`, and `generate:social`.
+## Product routes
 
-## Configuration
+- `/scores`, `/schedule`, `/teams`, `/conferences`, `/watch`: NFL utility.
+- `/fantasy-desk`: conditional half-PPR redraft waivers, early lineup tiers, rookie highlights and trade watch.
+- `/injuries`: corroborated ledger/watch and dated practice reports.
+- `/transactions` (also `/transfer-portal`): sourced NFL roster moves.
+- `/stats` (also `/rankings`): passing, rushing and receiving yardage leaders.
+- `/data-sources`: source age, fetch times, verification and coverage limits.
+- `/dfs`: published-pick ledger; projections and accuracy remain unpublished until actual picks exist.
 
-Copy `.env.example` to a local `.env` only when needed. Never commit secrets. `DEMO_MODE=true` is the safe default. Production provider activation requires written rights, credentials, legal review, failure tests, and release approval.
+Complete roster/depth, film and scheme datasets are not established by this refresh. Missing values remain unpublished. Weeks 8–18 are a single-provider planning schedule subject to flex changes. Do not substitute college datasets into NFL pages.
 
-See `docs/LOCAL_SETUP.md`, `docs/ARCHITECTURE.md`, `docs/DATA_RIGHTS_AND_PROVENANCE.md`, `docs/MODEL_METHODOLOGY.md`, `docs/SECURITY_RUNBOOK.md`, and `docs/OPERATIONS_RUNBOOK.md`.
+See [deployment instructions](docs/DEPLOYMENT.md) and [operations](docs/OPERATIONS_RUNBOOK.md). Secrets stay outside Git and browser code. Production retains the existing commercial kill switches.

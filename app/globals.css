@@ -4473,3 +4473,12 @@ body {
     animation: live-pulse 1.8s ease-in-out infinite;
   }
 }
+
+/* Source-backed weekly NFL boards */
+.research-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1rem; margin-block: 1.5rem; }
+.research-card { padding: 1.25rem; border: 1px solid var(--border, #334155); border-radius: .75rem; background: var(--surface, #101827); min-width: 0; }
+.research-card p { margin-block: .75rem; line-height: 1.65; }
+.research-card ol { padding-left: 1.5rem; }
+.research-card li { margin-block: .75rem; }
+.research-sources { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: .75rem; }
+.research-sources a { text-decoration: underline; text-underline-offset: .2em; }

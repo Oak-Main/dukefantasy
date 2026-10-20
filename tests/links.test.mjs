@@ -12,7 +12,9 @@ const source = `${component}\n${config}\n${header}\n${footer}`;
 const required = [
   "/scores",
   "/schedule",
-  "/transfer-portal",
+  "/transactions",
+  "/stats",
+  "/fantasy-desk",
   "/conferences",
   "/x-and-ys",
   "/injuries",
