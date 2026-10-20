@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { HubApp } from "@/components/HubApp";
 import { coaches, fantasyNotes, games, getConferenceHub, portalEvents, stadiums, teams } from "@/lib/cfb-dataset";
 import { getRosterPlayerBySlug, playerSlugForName } from "@/lib/player-records";
+import { routeSearchCopy } from "@/lib/route-metadata";
+import { brand } from "@/lib/config";
 
 const staticRoots = new Set([
   "scores",
@@ -16,6 +18,8 @@ const staticRoots = new Set([
   "x-and-ys",
   "injuries",
   "fantasy-desk",
+  "transactions",
+  "stats",
   "teams",
   "conferences",
   "stadiums",
@@ -62,7 +66,7 @@ interface RoutePageProps {
   params: Promise<{ slug: string[] }>;
 }
 
-export async function generateMetadata({
+async function existingRouteMetadata({
   params,
 }: RoutePageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -73,8 +77,8 @@ export async function generateMetadata({
     return {
       title: stadium ? `${stadium.name} Gameday Guide` : "NFL Stadium Gameday Guides",
       description: stadium
-        ? `Parking, transit, bag policy, tailgating, visitor seating, and accessibility guidance for ${stadium.name}, home of ${team?.name ?? "its NFL franchise"}.`
-        : "Gameday guides for all 30 NFL stadiums, including parking, transit, bag policy, tailgating, visitor seating, and accessibility.",
+        ? `Published venue facts for ${stadium.name}, home of ${team?.name ?? "its NFL franchise"}. Unverified visitor guidance is marked unpublished.`
+        : "NFL stadium venue facts with dated sources. Visitor guidance is shown only when verified.",
     };
   }
   if (root === "players" && detail) {
@@ -105,9 +109,9 @@ export async function generateMetadata({
   }
   if (root === "playoff-bracket") {
     return {
-      title: "2026 NFL Playoff Bracket — Live AFC & NFC Seeds",
+      title: "2026 NFL Playoff Bracket — Publication Status",
       description:
-        "The 2026 NFL playoff bracket as it stands: AFC and NFC seeding, matchup stakes, and how every clinching scenario reshapes the road to Super Bowl LXI in February 2027.",
+        "NFL postseason format and the publication status of the verified seeding board. Current division standings are available separately.",
     };
   }
   if (root === "playoff-predictor") {
@@ -163,6 +167,20 @@ export async function generateMetadata({
     };
   }
   return {};
+}
+
+export async function generateMetadata(props: RoutePageProps): Promise<Metadata> {
+  const { slug } = await props.params;
+  const path = `/${slug.join("/")}`;
+  const copy = routeSearchCopy[path];
+  const existing = await existingRouteMetadata(props);
+  const title = copy?.title ?? existing.title ?? `${slug[0].replaceAll("-", " ")} — NFL`;
+  const description = copy?.description ?? existing.description ?? brand.description;
+  return { ...existing, title, description,
+    alternates: { canonical: `${brand.siteUrl}${path}` },
+    openGraph: { title, description, url: `${brand.siteUrl}${path}` },
+    twitter: { title, description },
+  };
 }
 
 export default async function RoutePage({ params }: RoutePageProps) {

@@ -10,18 +10,11 @@ import {
   games,
   getConferenceHub,
   getGame,
-  getPreseasonRating,
   getStadiumBySlug,
   getTeam,
   getTeamBySlug,
   modelEstimatesAvailable,
-  pollTables,
-  pollsStatusNote,
-  portalAsOf,
-  portalCountsFor,
   portalEvents,
-  portalStatusNote,
-  providerHealth,
   radioAsOf,
   radioForTeam,
   scenarioGames,
@@ -61,7 +54,7 @@ import { InjuryReportPage } from "./injury-report-page";
 import { FantasyDeskPage } from "./fantasy-desk-page";
 import { XAndYsPage } from "./x-and-ys";
 import { TeamHub } from "./team-hub/team-hub";
-import { TransferPortalBoard } from "./transfer-portal-board";
+import { ContentSourcesPage, StatLeadersPage, TransactionsPage } from "./nfl-research-pages";
 import { FavoritesProvider, useFavoriteGesture } from "./polish/favorites";
 import {
   GameActionSheet,
@@ -69,15 +62,12 @@ import {
   useGameActionSheet,
 } from "./polish/game-actions";
 import { BoardSkeleton } from "./polish/skeletons";
-import { MobileDataCard, MobileDataCardStack } from "./polish/mobile-data-card";
-import CFPBracket from "./CFPBracket";
 import GamedayPlannerCard from "./GamedayPlannerCard";
 
 type Mode = "clean" | "analysis";
-type ScoreFilter = "All" | "P4" | "G5" | "FCS" | "Top 25" | "Favorites";
+type ScoreFilter = "All" | "AFC" | "NFC" | "Favorites";
 
 const percent = (value: number) => `${Math.round(value * 100)}%`;
-const signed = (value: number) => `${value > 0 ? "+" : ""}${value.toFixed(1)}`;
 
 function teamFor(teamId: string) {
   return getTeam(teamId);
@@ -259,7 +249,7 @@ function GameCard({
         <div className="game-card__actions">
           <a href={`/games/${game.id}`}>Preview</a>
           <a href="/watch">Watch status</a>
-          <a href={`/stadiums/${game.venueSlug}`}>Gameday guide</a>
+          <a href={game.venueSlug ? `/stadiums/${game.venueSlug}` : "/stadiums"}>Gameday guide</a>
           <GameActionsButton
             className="game-card__more"
             label={`More actions for ${gameLabel}`}
@@ -281,7 +271,7 @@ function GameCard({
         onOpenChange={actions.setOpen}
         gameLabel={gameLabel}
         matchupHref={`/games/${game.id}`}
-        guideHref={`/stadiums/${game.venueSlug}`}
+        guideHref={game.venueSlug ? `/stadiums/${game.venueSlug}` : "/stadiums"}
       />
     </>
   );
@@ -365,9 +355,8 @@ function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
     const away = teamFor(game.awayTeamId);
     const home = teamFor(game.homeTeamId);
     if (filter === "All") return true;
-    if (filter === "Top 25") return Boolean(away.rank || home.rank);
     if (filter === "Favorites") return favorites.has(away.id) || favorites.has(home.id);
-    return away.subdivision === filter || home.subdivision === filter;
+    return away.conference === filter || home.conference === filter;
   });
   const weekIndex = weeks.indexOf(week);
   const previousWeek = weekIndex > 0 ? weeks[weekIndex - 1] : undefined;
@@ -476,7 +465,7 @@ function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
         </div>
         <fieldset className="filter-chips">
           <legend className="sr-only">Score filters</legend>
-          {(["All", "P4", "G5", "FCS", "Top 25", "Favorites"] as ScoreFilter[]).map((item) => (
+          {(["All", "AFC", "NFC", "Favorites"] as ScoreFilter[]).map((item) => (
             <button
               type="button"
               key={item}
@@ -627,14 +616,14 @@ function GamePage({ gameId, mode, favorites, onFavorite }: HomeProps & { gameId:
             <h1 className="sr-only">{away.name} at {home.name} game preview</h1>
             <span>{game.kickoffLabel}</span>
             <strong>{game.broadcast ?? "Broadcast provider not configured"}</strong>
-            <small>{game.venue} · {game.city}</small>
+            <small>{game.venue} · {game.city}{game.country ? `, ${game.country}` : ""}{game.neutralSite ? ` · Neutral site; ${home.name} designated home` : ""}</small>
           </div>
           <TeamHero team={home} score={game.homeScore} />
         </div>
         <div className="game-action-row">
           <a href="/watch">Watch status</a>
           <a href="/watch#radio">Audio status</a>
-          <a href={`/stadiums/${game.venueSlug}`}>Venue guide</a>
+          <a href={game.venueSlug ? `/stadiums/${game.venueSlug}` : "/stadiums"}>Venue guide</a>
           <a href="/playoff-bracket">Bracket</a>
           <button type="button" onClick={() => onFavorite(home.id)} aria-pressed={favorites.has(home.id)}>
             {favorites.has(home.id) ? "★ Favorited" : "☆ Favorite"}
@@ -750,7 +739,7 @@ function GamePage({ gameId, mode, favorites, onFavorite }: HomeProps & { gameId:
             <span className="eyebrow">GAMEDAY</span>
             <h2>{game.weather ? `${game.weather.temperature}° · ${game.weather.summary}` : "Weather unavailable"}</h2>
             <p>{game.weather ? `Wind ${game.weather.windMph} mph. Weather is not part of this dataset release.` : "A live weather provider is not configured."}</p>
-            <a href={`/stadiums/${game.venueSlug}`}>Parking, bags & transit →</a>
+            <a href={game.venueSlug ? `/stadiums/${game.venueSlug}` : "/stadiums"}>Parking, bags & transit →</a>
           </article>
           {mode === "analysis" && game.line ? (
             <article className="sidebar-card sidebar-card--gold">
@@ -928,232 +917,7 @@ function TeamDetail({ team }: { team: Team }) {
   return <TeamHub {...getTeamHubData(team)} />;
 }
 
-function RankingsPage() {
-  const [pollId, setPollId] = useState("ap");
-  const [isPending, startTransition] = useTransition();
-  const table = pollTables.find((poll) => poll.poll === pollId) ?? pollTables[0];
-  const ratingsRows = [...teams]
-    .map((team) => ({ team, rating: getPreseasonRating(team.slug) }))
-    .filter((row) => row.rating?.sp)
-    .sort((a, b) => (a.rating?.sp?.rank ?? 999) - (b.rating?.sp?.rank ?? 999));
-  const ratingsAsOf = ratingsRows[0]?.rating?.as_of;
-  if (pollId === "ratings") {
-    return (
-      <>
-        <PageHeading
-          eyebrow="2026 PRESEASON RATINGS"
-          title="SP+ and FPI, as published."
-          description={`Bill Connelly's final preseason SP+ and ESPN's FPI, plus win totals and playoff odds exactly as each outlet reported them${ratingsAsOf ? ` · compiled through ${ratingsAsOf}` : ""}. Blank means the number was not published.`}
-        />
-        <div className="sticky-tools">
-          <fieldset className="filter-chips">
-            <legend className="sr-only">Board</legend>
-            {pollTables.map((poll) => (
-              <button type="button" key={poll.poll} aria-pressed={poll.poll === pollId} onClick={() => startTransition(() => setPollId(poll.poll))}>
-                {poll.poll === "ap" ? "AP Top 25" : "Coaches Poll"}
-              </button>
-            ))}
-            <button type="button" aria-pressed={true} onClick={() => startTransition(() => setPollId("ratings"))}>SP+ / FPI board</button>
-          </fieldset>
-        </div>
-        <section className="content-section">
-          <div className="scoreboard-summary">
-            <div><span>{ratingsRows.length}</span><small>RATED (SP+)</small></div>
-            <div><span>{ratingsRows.filter((r) => r.rating?.fpi).length}</span><small>WITH FPI</small></div>
-            <div><span>{ratingsRows.filter((r) => r.rating?.wins?.line != null).length}</span><small>WIN TOTALS PUBLISHED</small></div>
-          </div>
-          {isPending ? (
-            <BoardSkeleton rows={3} />
-          ) : (
-            <>
-              <section className="data-table-wrap mobile-data-table-desktop" tabIndex={0} aria-label="Preseason ratings board">
-                <table className="data-table">
-              <thead>
-                <tr>
-                  <th>SP+</th><th>Team</th><th>SP+ rating</th><th>Off.</th><th>Def.</th><th>FPI</th><th>Win total</th><th>Proj. wins</th><th>Playoff odds*</th>
-                </tr>
-              </thead>
-              <tbody>
-                {ratingsRows.map(({ team, rating }) => (
-                  <tr key={team.id}>
-                    <td><b>{rating?.sp?.rank}</b></td>
-                    <td><a href={`/teams/${team.slug}`}>{team.shortName}</a><small> {team.conference}</small></td>
-                    <td>{rating?.sp ? signed(rating.sp.overall) : "—"}</td>
-                    <td>{rating?.sp ? signed(rating.sp.offense - 20) : "—"}</td>
-                    <td>{rating?.sp ? signed(20 - rating.sp.defense) : "—"}</td>
-                    <td>{rating?.fpi ? `#${rating.fpi.rank}` : "—"}</td>
-                    <td>{rating?.wins?.line != null ? rating.wins.line.toFixed(1) : "—"}</td>
-                    <td>{rating?.wins?.projected != null ? rating.wins.projected.toFixed(1) : "—"}</td>
-                    <td>{rating?.playoff?.value ?? "—"}{rating?.playoff ? <small> {rating.playoff.outlet}</small> : null}</td>
-                  </tr>
-                ))}
-              </tbody>
-                </table>
-              </section>
-              <MobileDataCardStack label="Preseason ratings">
-                {ratingsRows.map(({ team, rating }) => (
-                  <MobileDataCard
-                    key={`mobile-rating-${team.id}`}
-                    title={team.shortName}
-                    subtitle={team.conference}
-                    summary={[
-                      { label: "SP+ rank", value: rating?.sp ? `#${rating.sp.rank}` : "—" },
-                      { label: "SP+ rating", value: rating?.sp ? signed(rating.sp.overall) : "—" },
-                      { label: "FPI", value: rating?.fpi ? `#${rating.fpi.rank}` : "—" },
-                    ]}
-                    details={[
-                      { label: "Offense", value: rating?.sp ? signed(rating.sp.offense - 20) : "—" },
-                      { label: "Defense", value: rating?.sp ? signed(20 - rating.sp.defense) : "—" },
-                      { label: "Win total", value: rating?.wins?.line != null ? rating.wins.line.toFixed(1) : "—" },
-                      { label: "Projected wins", value: rating?.wins?.projected != null ? rating.wins.projected.toFixed(1) : "—" },
-                      { label: "Playoff odds", value: rating?.playoff ? `${rating.playoff.value} · ${rating.playoff.outlet}` : "—" },
-                    ]}
-                    action={<a href={`/teams/${team.slug}`}>Open team ratings <ChevronRight aria-hidden="true" /></a>}
-                  />
-                ))}
-              </MobileDataCardStack>
-            </>
-          )}
-          <p className="table-caption">*Playoff odds are the outlet's reported number (ESPN FPI simulations or The Athletic model), not this site's simulation. SP+ offense/defense columns are adjusted for readability; raw figures sit on each team page.</p>
-        </section>
-      </>
-    );
-  }
-  if (!table) {
-    return (
-      <PageHeading
-        eyebrow="RANKINGS"
-        title="Polls not published."
-        description="No poll tables are present in this dataset release."
-      />
-    );
-  }
-  return (
-    <>
-      <PageHeading
-        eyebrow="2026 PRESEASON RANKINGS"
-        title="AP and Coaches, straight from the release."
-        description={`${table.name}${table.release_date ? ` · released ${table.release_date}` : ""}. Every row cites the poll; no composite is invented.`}
-      />
-      <div className="sticky-tools">
-        <fieldset className="filter-chips">
-          <legend className="sr-only">Poll</legend>
-          {pollTables.map((poll) => (
-            <button type="button" key={poll.poll} aria-pressed={poll.poll === pollId} onClick={() => startTransition(() => setPollId(poll.poll))}>
-              {poll.poll === "ap" ? "AP Top 25" : "Coaches Poll"}
-            </button>
-          ))}
-          <button type="button" aria-pressed={pollId === "ratings"} onClick={() => startTransition(() => setPollId("ratings"))}>SP+ / FPI board</button>
-        </fieldset>
-      </div>
-      <section className="content-section">
-        <div className="scoreboard-summary">
-          <div><span>{table.rankings.length}</span><small>RANKED</small></div>
-          <div><span>{table.rankings[0]?.first_place_votes ?? "—"}</span><small>FIRST-PLACE VOTES (NO. 1)</small></div>
-          <div><span>{table.others.length}</span><small>OTHERS RECEIVING VOTES</small></div>
-        </div>
-        {isPending ? (
-          <BoardSkeleton rows={3} />
-        ) : (
-          <>
-            <section className="data-table-wrap mobile-data-table-desktop" tabIndex={0} aria-label={`${table.name} top 25 table`}>
-              <table className="data-table">
-            <thead>
-              <tr>
-                <th>Rank</th><th>Team</th><th>Record</th><th>Points</th><th>First votes</th><th>Prev.</th>
-              </tr>
-            </thead>
-            <tbody>
-              {table.rankings.map((entry) => {
-                const team = entry.team_slug ? getTeamBySlug(entry.team_slug) : undefined;
-                const movement =
-                  entry.previous_rank == null ? null : entry.rank - entry.previous_rank;
-                return (
-                  <tr key={`${entry.rank}-${entry.team_slug}`}>
-                    <td><b>{entry.rank}</b>{entry.tied ? <small> T</small> : null}</td>
-                    <td>
-                      <a href={team ? `/teams/${team.slug}` : "/rankings"}>{team ? team.name : entry.team}</a>
-                      <small> {team?.conference ?? ""}</small>
-                    </td>
-                    <td>{entry.record ?? "—"}</td>
-                    <td>{entry.points?.toLocaleString() ?? "—"}</td>
-                    <td>{entry.first_place_votes ?? "—"}</td>
-                    <td>
-                      {movement == null ? "—" : movement === 0 ? "—" : movement < 0 ? `▲ ${-movement}` : `▼ ${movement}`}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-              </table>
-            </section>
-            <MobileDataCardStack label={`${table.name} rankings`}>
-              {table.rankings.map((entry) => {
-                const team = entry.team_slug ? getTeamBySlug(entry.team_slug) : undefined;
-                const movement = entry.previous_rank == null ? null : entry.rank - entry.previous_rank;
-                const movementLabel = movement == null || movement === 0
-                  ? "No change published"
-                  : movement < 0
-                    ? `Up ${-movement}`
-                    : `Down ${movement}`;
-                return (
-                  <MobileDataCard
-                    key={`mobile-poll-${entry.rank}-${entry.team_slug}`}
-                    title={team?.name ?? entry.team}
-                    subtitle={team?.conference ?? table.name}
-                    summary={[
-                      { label: "Rank", value: `${entry.tied ? "T" : ""}${entry.rank}` },
-                      { label: "Record", value: entry.record ?? "—" },
-                      { label: "Points", value: entry.points?.toLocaleString() ?? "—" },
-                    ]}
-                    details={[
-                      { label: "First-place votes", value: entry.first_place_votes ?? "—" },
-                      { label: "Previous rank", value: entry.previous_rank ?? "—" },
-                      { label: "Movement", value: movementLabel },
-                      { label: "Poll", value: table.name },
-                    ]}
-                    action={<a href={team ? `/teams/${team.slug}` : "/rankings"}>Open team context <ChevronRight aria-hidden="true" /></a>}
-                  />
-                );
-              })}
-            </MobileDataCardStack>
-          </>
-        )}
-        {table.others.length ? (
-          <>
-            <SectionHeading eyebrow="OTHERS RECEIVING VOTES" title="Just outside the Top 25" />
-            <div className="portal-list">
-              {table.others.map((entry) => (
-                <a className="portal-row" href={entry.team_slug ? `/teams/${entry.team_slug}` : "/rankings"} key={entry.team}>
-                  <span className="status status--scheduled">RV</span>
-                  <span><strong>{entry.team}</strong></span>
-                  <b>{entry.points?.toLocaleString() ?? "—"} pts</b>
-                </a>
-              ))}
-            </div>
-          </>
-        ) : null}
-        {pollsStatusNote ? <p className="panel-note">{pollsStatusNote}</p> : null}
-      </section>
-      <section className="content-section">
-        <SectionHeading eyebrow="STRENGTH OF SCHEDULE" title="Published SOS ratings" />
-        <p className="panel-note">
-          Composite strength index derived from Phil Steele and ESPN FPI SOS ratings — not SP+, FPI, or a committee ranking.
-        </p>
-        <div className="rankings-list">
-          {[...teams].sort((a, b) => b.strength - a.strength).slice(0, 25).map((team, index) => (
-            <a href={`/teams/${team.slug}`} key={team.id}>
-              <b>{index + 1}</b><Monogram team={team} size="sm" />
-              <span><strong>{team.name}</strong><small>{team.conference} · {team.record}</small></span>
-              <div className="rank-bar"><span style={{ width: `${team.strength}%` }} /></div>
-              <em>{team.strength}</em>
-            </a>
-          ))}
-        </div>
-      </section>
-    </>
-  );
-}
+function RankingsPage() { return <StatLeadersPage />; }
 
 function NewsletterPage() {
   const [state, setState] = useState<"form" | "pending" | "confirmed" | "unsubscribed">("form");
@@ -1292,23 +1056,7 @@ function DesignSystemPage() {
   );
 }
 
-function DataSourcesPage() {
-  return (
-    <>
-      <PageHeading eyebrow="PROVENANCE & PROVIDER HEALTH" title="No source, no silent claim." description="Production providers fail closed. The site never swaps data invisibly after an outage." />
-      <section className="content-section provider-table">
-        {providerHealth.map((provider) => (
-          <article key={provider.id}>
-            <span className={`provider-state provider-state--${provider.status === "operational" ? "on" : "off"}`}>{provider.status.replaceAll("_", " ")}</span>
-            <div><h2>{provider.label}</h2><p>{provider.note}</p></div>
-            <div><span>Mode</span><strong>{provider.mode}</strong></div>
-            <div><span>Cadence</span><strong>{provider.cadence}</strong></div>
-          </article>
-        ))}
-      </section>
-    </>
-  );
-}
+function DataSourcesPage() { return <ContentSourcesPage />; }
 
 function PolicyPage({ kind }: { kind: string }) {
   const content: Record<string, { eyebrow: string; title: string; intro: string; sections: [string, React.ReactNode][] }> = {
@@ -1379,35 +1127,7 @@ function CommercialPage({ kind }: { kind: "advertise" | "partnerships" | "media-
 }
 
 function CFPBracketPage() {
-  const seeds = [...teams]
-    .map((team) => {
-      const rating = getPreseasonRating(team.slug);
-      return rating?.sp ? { team, rank: rating.sp.rank } : null;
-    })
-    .filter((row): row is { team: Team; rank: number } => row !== null)
-    .sort((a, b) => a.rank - b.rank)
-    .slice(0, 12)
-    .map(({ team }, index) => ({
-      seed: index + 1,
-      name: team.name,
-      abbreviation: team.abbreviation,
-      color: team.color,
-      record: team.record,
-    }));
-  return (
-    <div className="apex-home" style={{ paddingTop: 32 }}>
-      <div className="apex-container">
-        <div className="apex-home-intro">
-          <div>
-            <span className="apex-eyebrow">INTERACTIVE · 12-TEAM BRACKET</span>
-            <h1>Playoff bracket</h1>
-            <p>Click any team to advance them. Seeds are derived from preseason SP+ rankings.</p>
-          </div>
-        </div>
-        <CFPBracket teams={seeds} />
-      </div>
-    </div>
-  );
+  return <><PageHeading eyebrow="NFL POSTSEASON" title="NFL playoff bracket" description="The NFL postseason has seven teams per conference. A verified seeding board with division and wild-card tiebreakers is not published yet." /><section className="content-section"><a href="/conferences">View current AFC and NFC division standings →</a></section></>;
 }
 
 function ConferenceHubPage({ slug }: { slug: string }) {
@@ -1427,7 +1147,7 @@ function ConferenceHubPage({ slug }: { slug: string }) {
         {hub.topSPPlus.length > 0 ? (
           <div className="apex-lane">
             <div className="apex-lane-heading">
-              <div><span className="apex-eyebrow">PRESEASON RATINGS</span><h2>Top SP+ in the {hub.shortName}</h2></div>
+              <div><span className="apex-eyebrow">PRESEASON RATINGS</span><h2>Published ratings in the {hub.shortName}</h2></div>
               <a className="apex-text-link" href="/rankings">Full board →</a>
             </div>
             <div className="apex-rating-strip">
@@ -1588,18 +1308,7 @@ export function HubApp({ path = "/" }: { path?: string }) {
   else if (root === "scores") content = <ScoresPage {...common} />;
   else if (root === "schedule") content = <SchedulePage {...common} />;
   else if (root === "games" && parts[1]) content = <GamePage gameId={parts[1]} {...common} />;
-  else if (root === "transfer-portal") {
-    content = (
-      <TransferPortalBoard
-        events={portalEvents}
-        teams={teams}
-        asOf={portalAsOf}
-        statusNote={portalStatusNote}
-        countsFor={portalCountsFor}
-        teamSlug={parts[1]}
-      />
-    );
-  }
+  else if (root === "transfer-portal" || root === "transactions") content = <TransactionsPage teamSlug={parts[1]} />;
   else if (root === "playoff-predictor") content = <PlayoffPage />;
   else if (root === "playoff-bracket") content = <CFPBracketPage />;
   else if (root === "coaching-carousel") content = <CoachingLedger coaches={coaches} teams={teams} />;
@@ -1654,7 +1363,7 @@ export function HubApp({ path = "/" }: { path?: string }) {
       />
     );
   }
-  else if (root === "rankings") content = <RankingsPage />;
+  else if (root === "rankings" || root === "stats") content = <RankingsPage />;
   else if (root === "search") {
     content = <SiteSearchPage teams={teams} coaches={coaches} searchPlayers={searchPlayers} />;
   }

@@ -383,7 +383,7 @@ export default function GamedayPlannerCard({
         }}
       >
         <a
-          href={`/stadium/${encodeURIComponent(game.venue)}`}
+          href="/stadiums"
           className="flex items-center gap-1 text-xs font-medium text-slate-400 hover:text-white transition-colors"
         >
           Gameday guide

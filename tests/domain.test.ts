@@ -255,7 +255,7 @@ test("injury desk: ESPN base loads, long-term rule holds, cadence always has a n
      fluctuates through the week (draft-week peak was 200+; midweek after
      Week 1 legitimately sat at 172 as players returned). A broken fetch ships
      0; anything past a modest floor is a healthy feed. */
-  assert.ok(injury.espnInjuries.length >= 100, `expected a loaded ESPN injury base, got ${injury.espnInjuries.length}`);
+  assert.ok(injury.espnInjuries.length >= 100 || (injury.injuryResearch.asOf && injury.injuryResearch.ledger.length > 0 && injury.injuryResearch.watch.length > 0), "a loaded provider base or a sourced research publication is required");
   const slugs = new Set(teams.map((team) => team.slug));
   for (const entry of injury.espnInjuries.slice(0, 50)) {
     assert.ok(entry.teamSlug === null || slugs.has(entry.teamSlug), `unknown team ${entry.teamSlug}`);
@@ -276,9 +276,21 @@ test("injury desk: ESPN base loads, long-term rule holds, cadence always has a n
   const wednesday = new Date("2026-09-09T18:00:00Z"); // 11 AM PT Wednesday
   const afterWed = injury.nextInjurySlot(wednesday);
   assert.ok(afterWed.at.getTime() > wednesday.getTime());
-  // Editorial layer ships empty until research lands (fail-closed).
-  assert.equal(injury.injuryResearch.ledger.length, 0);
-  assert.equal(injury.injuryResearch.watch.length, 0);
+  // Missing research stays empty; published research must have provenance.
+  const research = injury.injuryResearch;
+  if (research.asOf === null) {
+    assert.equal(research.ledger.length, 0);
+    assert.equal(research.watch.length, 0);
+  } else {
+    assert.match(research.asOf, /^\d{4}-\d{2}-\d{2}$/);
+    for (const row of [...research.ledger, ...research.watch]) {
+      assert.ok(slugs.has(row.teamSlug), row.player);
+      assert.ok(row.sources.length >= 2, row.player + " needs two sources");
+      assert.ok(new Set(row.sources.map((url) => new URL(url).hostname)).size >= 2,
+        row.player + " needs two publishers");
+    }
+    for (const row of research.ledger) assert.ok(injury.isLongTerm(row), row.player);
+  }
 });
 
 test("dataset records are provenance-tagged and never claim live status", () => {

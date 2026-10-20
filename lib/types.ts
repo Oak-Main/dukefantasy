@@ -87,6 +87,7 @@ export interface Game {
   venue: string;
   city: string;
   broadcast: string | null;
+  country?: string;
   weather: { temperature: number; summary: string; windMph: number } | null;
   neutralSite: boolean;
   modelHomeWinProbability: number;

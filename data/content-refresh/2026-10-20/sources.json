@@ -1,0 +1,516 @@
+[
+  {
+    "id": "yahoo-waivers",
+    "url": "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+    "publisher": "Yahoo Sports / Justin Boone",
+    "scope": "Week 7 waiver analysis",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z",
+    "published_date": "2026-10-20"
+  },
+  {
+    "id": "rotoballer-waivers",
+    "url": "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725",
+    "publisher": "RotoBaller / Nick Mariano",
+    "scope": "Week 7 waiver analysis",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z",
+    "published_date": "2026-10-20"
+  },
+  {
+    "id": "fantasypros-waivers",
+    "url": "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+    "publisher": "FantasyPros / Pat Fitzmaurice",
+    "scope": "Week 7 waiver analysis",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z",
+    "published_date": "2026-10-20"
+  },
+  {
+    "id": "usatoday-waivers",
+    "url": "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/",
+    "publisher": "USA Today",
+    "scope": "Week 7 waiver analysis",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z",
+    "published_date": "2026-10-19"
+  },
+  {
+    "id": "draftsharks-week7",
+    "url": "https://www.draftsharks.com/weekly-rankings/7",
+    "publisher": "Draft Sharks",
+    "scope": "Early Week 7 rankings; default scoring not established",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z",
+    "published_date": "2026-10-20"
+  },
+  {
+    "id": "ffc-half",
+    "url": "https://fantasyfootballcalculator.com/rankings/half-ppr",
+    "publisher": "Fantasy Football Calculator / RotoWire",
+    "scope": "Week 7 half-PPR rankings; only 50 rows available",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z",
+    "published_date": "2026-10-20"
+  },
+  {
+    "id": "fantasypros-half",
+    "url": "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7",
+    "publisher": "FantasyPros",
+    "scope": "Week 7 half-PPR flex rankings; 20 public rows",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z",
+    "published_date": "2026-10-20"
+  },
+  {
+    "id": "espn-injuries",
+    "url": "https://www.espn.com/nfl/injuries",
+    "publisher": "ESPN",
+    "scope": "All-team injury listing; publisher estimates are not final team designations",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "cbs-injuries",
+    "url": "https://www.cbssports.com/nfl/injuries/",
+    "publisher": "CBS Sports",
+    "scope": "All-team injury listing; publisher estimates are not final team designations",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "yahoo-injuries",
+    "url": "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+    "publisher": "Yahoo Sports / Ben Zweiman",
+    "scope": "Week 7 injury news",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z",
+    "published_date": "2026-10-20"
+  },
+  {
+    "id": "espn-transactions",
+    "url": "https://www.espn.com/nfl/transactions",
+    "publisher": "ESPN",
+    "scope": "Visible transaction pages cover October 17 and 19; not full seven-day coverage",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "fantasypros-trades",
+    "url": "https://www.fantasypros.com/2026/10/fantasy-football-week-7-early-trade-targets-2026/",
+    "publisher": "FantasyPros",
+    "scope": "Early Week 7 trade judgments",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "sixpack-trades",
+    "url": "https://fantasysixpack.net/2026-fantasy-football-week-7-trade-targets/",
+    "publisher": "Fantasy Six Pack",
+    "scope": "Early Week 7 trade judgments",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "patriots-monday",
+    "url": "https://www.patriots.com/news/week-7-injury-report-patriots-at-bears",
+    "publisher": "New England Patriots",
+    "scope": "October 19 estimated walkthrough; not final game designations",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z",
+    "published_date": "2026-10-19"
+  },
+  {
+    "id": "monangai-monday",
+    "url": "https://www.rotowire.com/football/headlines/kyle-monangai-injury-listed-as-dnp-on-practice-estimate-643363",
+    "publisher": "RotoWire",
+    "scope": "Monangai Monday estimated DNP",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z",
+    "published_date": "2026-10-19"
+  },
+  {
+    "id": "texans-venue",
+    "url": "https://www.houstontexans.com/schedule/",
+    "publisher": "Houston Texans",
+    "scope": "Week 7 venue and 12 PM Central kickoff; confirms Reliant naming",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-1",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Completed results",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.159Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-week-1",
+    "url": "https://www.nfl.com/schedules/2026/by-week/week-1",
+    "publisher": "NFL.com",
+    "scope": "Official final scores",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-2",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Completed results",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.054Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-week-2",
+    "url": "https://www.nfl.com/schedules/2026/by-week/week-2",
+    "publisher": "NFL.com",
+    "scope": "Official final scores",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-3",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Completed results",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.121Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-week-3",
+    "url": "https://www.nfl.com/schedules/2026/by-week/week-3",
+    "publisher": "NFL.com",
+    "scope": "Official final scores",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-4",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Completed results",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.130Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-week-4",
+    "url": "https://www.nfl.com/schedules/2026/by-week/week-4",
+    "publisher": "NFL.com",
+    "scope": "Official final scores",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-5",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Completed results",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.171Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-week-5",
+    "url": "https://www.nfl.com/schedules/2026/by-week/week-5",
+    "publisher": "NFL.com",
+    "scope": "Official final scores",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-6",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Completed results",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.210Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-week-6",
+    "url": "https://www.nfl.com/schedules/2026/by-week/week-6",
+    "publisher": "NFL.com",
+    "scope": "Official final scores",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-7",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Week 7 opponents, UTC kickoff, networks, venue",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.251Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-week-7",
+    "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+    "publisher": "NFL.com",
+    "scope": "Week 7 opponents, ET kickoff, primary network, byes",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-8",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.299Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-9",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.315Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-10",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.320Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-11",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.341Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-12",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.432Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-13",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=13&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.440Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-14",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=14&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.460Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-15",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=15&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.512Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-16",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=16&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.653Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-17",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=17&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.640Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-week-18",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=18&limit=100",
+    "publisher": "ESPN NFL API",
+    "scope": "Future schedule, single-source only",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": "2026-10-20T19:05:55.590Z",
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "cbs-week7",
+    "url": "https://www.cbssports.com/nfl/schedule/2026/regular/7/",
+    "publisher": "CBS Sports",
+    "scope": "Third-source matchup/date/time/venue check; some TV cells blank and ESPD label differs",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-standings",
+    "url": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+    "publisher": "ESPN",
+    "scope": "All 32 W-L-T, PF, PA, standings",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-standings",
+    "url": "https://www.nfl.com/standings/division/2026/REG",
+    "publisher": "NFL.com",
+    "scope": "Independent check all 32 W-L-T and PF/PA",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-stats-passing",
+    "url": "https://www.nfl.com/stats/player-stats/category/passing/2026/reg/all/passingyards/desc",
+    "publisher": "NFL.com",
+    "scope": "2026 passing yardage leaders",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-stats-passing",
+    "url": "https://www.espn.com/nfl/stats/player/_/season/2026/seasontype/2",
+    "publisher": "ESPN",
+    "scope": "2026 passing yardage leaders",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-stats-rushing",
+    "url": "https://www.nfl.com/stats/player-stats/category/rushing/2026/reg/all/rushingyards/desc",
+    "publisher": "NFL.com",
+    "scope": "2026 rushing yardage leaders",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-stats-rushing",
+    "url": "https://www.espn.com/nfl/stats/player/_/stat/rushing/season/2026/seasontype/2",
+    "publisher": "ESPN",
+    "scope": "2026 rushing yardage leaders",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-stats-receiving",
+    "url": "https://www.nfl.com/stats/player-stats/category/receiving/2026/reg/all/receivingyards/desc",
+    "publisher": "NFL.com",
+    "scope": "2026 receiving yardage leaders",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "espn-stats-receiving",
+    "url": "https://www.espn.com/nfl/stats/player/_/stat/receiving/season/2026/seasontype/2",
+    "publisher": "ESPN",
+    "scope": "2026 receiving yardage leaders",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-transactionsNFL",
+    "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+    "publisher": "NFL.com",
+    "scope": "Official October transactions; filtered to October 14–20",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-transSignings",
+    "url": "https://www.nfl.com/transactions/league/signings/2026/10",
+    "publisher": "NFL.com",
+    "scope": "Official October transactions; filtered to October 14–20",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-transOther",
+    "url": "https://www.nfl.com/transactions/league/other/2026/10",
+    "publisher": "NFL.com",
+    "scope": "Official October transactions; filtered to October 14–20",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-transTerminations",
+    "url": "https://www.nfl.com/transactions/league/terminations/2026/10",
+    "publisher": "NFL.com",
+    "scope": "Official October transactions; filtered to October 14–20",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-transTrades",
+    "url": "https://www.nfl.com/transactions/league/trades/2026/10",
+    "publisher": "NFL.com",
+    "scope": "Official October transactions; filtered to October 14–20",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  },
+  {
+    "id": "nfl-transWaivers",
+    "url": "https://www.nfl.com/transactions/league/waivers/2026/10",
+    "publisher": "NFL.com",
+    "scope": "Official October transactions; filtered to October 14–20",
+    "retrieval_date": "2026-10-20",
+    "retrieved_at": null,
+    "compiled_at": "2026-10-20T19:20:03.528Z"
+  }
+]

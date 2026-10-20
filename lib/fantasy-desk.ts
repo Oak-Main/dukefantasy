@@ -15,6 +15,7 @@
  */
 
 import nfl from "./nfl-generated.ts";
+import { sourceFreshness } from "./content-refresh.ts";
 
 /* ------------------------------------------------------------------- types */
 
@@ -56,6 +57,7 @@ export interface TierRow {
   player: string;
   team_slug: string;
   note: string;
+  sources?: string[];
 }
 export interface TierGroup {
   tier: SitTier;
@@ -69,6 +71,7 @@ export interface ToughCall {
   player: string;
   team_slug: string;
   verdict: string;
+  sources?: string[];
 }
 export interface StartSitBoard {
   as_of: string;
@@ -105,6 +108,7 @@ export interface TradeRow {
   tier: number; // 1 (elite) .. 5 (depth)
   basis: string;
   market: Market;
+  sources?: string[];
 }
 export interface TradeBoardGroup {
   position: string;
@@ -183,7 +187,7 @@ export function deskBoardStatus(
   const covers = key === "waiver" ? (board as WaiverBoard).week_adding_for : (board as StartSitBoard | RookieBoard | TradeBoard).week;
   if (weekInPlay === null) return { covers, current: null };
   const required = key === "rookie" ? weekInPlay - 1 : weekInPlay;
-  return { covers, current: covers >= required };
+  return { covers, current: covers === required && sourceFreshness(board.as_of) === "current" };
 }
 
 /** Honest shell copy while a rail awaits its cadence slot. */

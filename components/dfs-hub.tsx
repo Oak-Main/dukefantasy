@@ -2,6 +2,7 @@
 
 import { CircleOff, ClipboardCheck, LineChart, ShieldCheck, Target } from "lucide-react";
 import { DataBoardHero, DataBoardSummary } from "./data-board-primitives";
+import { refreshWeek } from "@/lib/content-refresh";
 import {
   ACCURACY_METHOD,
   GRADE_DEPTH,
@@ -57,11 +58,11 @@ export function DfsHubPage() {
             <span className="empty-state__icon" aria-hidden="true">
               <Target />
             </span>
-            <h3>Week 1 projections publish before kickoff</h3>
+            <h3>Week {refreshWeek} projections are not published</h3>
             <p>
-              Projections post after the final injury report of the week, ranked by position with a
-              written note on every call. Once live, they are locked — the ledger never edits a pick
-              after kickoff.
+              Numeric projections await verified inputs and a scoring contract. Published picks will
+              lock before kickoff. Historical accuracy remains unpublished until real picks can be graded.
+              Visit the <a href="/fantasy-desk">Fantasy Desk</a> for sourced early lineup tiers and waiver candidates.
             </p>
           </div>
         )}

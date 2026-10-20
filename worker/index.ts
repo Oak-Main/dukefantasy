@@ -2,6 +2,7 @@
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
 import { isProductionLaunchReady } from "../lib/release-readiness";
+import { refreshAsOf } from "../lib/content-refresh";
 
 interface Env {
   ASSETS: Fetcher;
@@ -23,6 +24,7 @@ interface ExecutionContext {
 
 function secureResponse(response: Response, url: URL, launchReady: boolean) {
   const secured = new Response(response.body, response);
+  secured.headers.set("X-Content-Version", refreshAsOf);
   secured.headers.set(
     "Content-Security-Policy",
     "default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://googletagmanager.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://*.google-analytics.com; font-src 'self' data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; media-src 'none'; worker-src 'self';",
@@ -89,7 +91,7 @@ const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
     const launchReady = isProductionLaunchReady(
-      env as unknown as Record<string, string | undefined>,
+      (env ?? {}) as unknown as Record<string, string | undefined>,
     );
 
     if (url.hostname.toLowerCase() === "www.dukefantasy.com") {

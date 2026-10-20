@@ -63,7 +63,18 @@ for (const id of snapshotIds) if (!freshById.has(id)) fail(`snapshot has event $
 let flexed = 0;
 for (const game of snapshot.schedule) {
   const ev = freshById.get(game.id);
-  if (ev && ev.date !== game.kickoffUtc) flexed += 1;
+  if (ev && ev.date !== game.kickoffUtc) {
+    flexed += 1;
+    fail(`${game.id}: kickoff changed from ${game.kickoffUtc} to ${ev.date}; refresh before release`);
+  }
+  if (ev && ev.status?.type?.state === "post" && ev.status?.type?.completed !== false) {
+    const competitors = ev.competitions?.[0]?.competitors ?? [];
+    const away = competitors.find(c => c.homeAway === "away");
+    const home = competitors.find(c => c.homeAway === "home");
+    if (game.status !== "final" || Number(away?.score) !== game.awayScore || Number(home?.score) !== game.homeScore) {
+      fail(`${game.id}: final score differs from fresh ESPN response`);
+    }
+  }
 }
 const isFinal = (ev) => ev.status?.type?.state === "post" && ev.status?.type?.completed !== false;
 const finalsNow = fresh.filter(isFinal).length;

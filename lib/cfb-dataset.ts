@@ -9,6 +9,7 @@
  * arrays / null — the components already handle graceful empty states.
  */
 import { easternDay } from "./eastern.ts";
+import { sourceFreshness } from "./content-refresh.ts";
 import { formatGameResult } from "./live-scoreboard.ts";
 import nfl from "./nfl-generated.ts";
 import type { Game, GameStatus, Stadium, Team, TeamStanding } from "./types.ts";
@@ -24,17 +25,17 @@ function strengthFor(wins: number) {
 }
 
 const provenance = {
-  provider: "ESPN NFL API",
+  provider: "NFL + ESPN reviewed snapshot",
   providerRecordId: "espn-nfl",
   sourceAsOf: nfl.generatedAt.slice(0, 10),
-  fetchedAt: nfl.generatedAt,
+  fetchedAt: nfl.sourceAsOf,
   verifiedAt: nfl.generatedAt,
   dataEnvironment: "production" as const,
   licenseClass: "R2_LINK_ONLY" as const,
-  verificationStatus: "official" as const,
+  verificationStatus: "corroborated" as const,
   confidence: 0.95,
   recordOrigin: "provider" as const,
-  freshness: "current" as const,
+  freshness: sourceFreshness(nfl.generatedAt),
 };
 
 /* ---------------------------------------------------------------- teams */
@@ -114,15 +115,16 @@ export const games: Game[] = (nfl.schedule as Array<Record<string, unknown>>).ma
   homeTeamId: g.homeSlug as string,
   awayScore: (g.awayScore as number) ?? undefined,
   homeScore: (g.homeScore as number) ?? undefined,
-  venueSlug: g.homeSlug as string,
+  venueSlug: nfl.stadiums.find(stadium => stadium.name === g.venue && stadium.teamId === g.homeSlug)?.slug ?? "",
   venue: (g.venue as string) || `${teamBySlug.get(g.homeSlug as string)?.shortName ?? "Home"} stadium`,
-  city: "",
+  city: (g.city as string) ?? "",
+  country: (g.country as string) ?? "",
   broadcast: (g.broadcast as string) ?? null,
   weather: null,
-  neutralSite: false,
+  neutralSite: g.neutral_site === true,
   modelHomeWinProbability: 0.5,
   modelUncertainty: 0,
-  provenance,
+  provenance: { ...provenance, verificationStatus: (g.week as number) <= 7 ? "corroborated" : "single_source" },
 }));
 
 export function getGame(id: string): Game | undefined {
@@ -266,7 +268,7 @@ export function portalCountsFor(_slug?: string): { incoming: number; outgoing: n
   return { incoming: 0, outgoing: 0, net: 0 };
 }
 export function radioForTeam(_slug?: string): RadioStation | null { return null; }
-export function getStadiumBySlug(_slug?: string): Stadium | undefined { return undefined; }
+export function getStadiumBySlug(slug?: string): Stadium | undefined { return stadiums.find(stadium => stadium.slug === slug); }
 export function getPreseasonRating(_slug?: string): PreseasonRating | null { return null; }
 export function searchPlayers(
   _query: string,
@@ -446,9 +448,9 @@ export const providerHealth = [
     id: "espn-nfl",
     label: "ESPN NFL API",
     mode: "production" as const,
-    status: "operational" as const,
+    status: sourceFreshness(nfl.generatedAt) === "current" ? "operational" as const : "degraded" as const,
     lastSuccess: nfl.generatedAt,
     cadence: "Build-time snapshot; scores update via Worker fetch",
-    note: "Live NFL data from ESPN's free public API.",
+    note: "Reviewed NFL/ESPN snapshot. Status reflects source age, not a real-time provider uptime probe. Scores refresh separately via ESPN.",
   },
 ];

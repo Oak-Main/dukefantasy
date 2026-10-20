@@ -1,0 +1,820 @@
+{
+  "asOf": "2026-10-20",
+  "fetchedAt": null,
+  "week": 7,
+  "byes": [
+    "buffalo-bills",
+    "los-angeles-chargers",
+    "washington-commanders",
+    "jacksonville-jaguars"
+  ],
+  "transactions": {
+    "window_start": "2026-10-14",
+    "window_end": "2026-10-20",
+    "coverage_note": "Six official monthly wire categories inspected. Only moves corroborated by the second publisher are publishable; the remainder stay in quarantine. ESPN visible coverage is October 17 and 19.",
+    "moves": [
+      {
+        "player": "Tanner Hudson",
+        "from_team_slug": "cincinnati-bengals",
+        "to_team_slug": "cincinnati-bengals",
+        "position": null,
+        "transaction_type": "ir",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Reserve/Injured",
+        "sources": [
+          "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Romeo Doubs",
+        "from_team_slug": "new-england-patriots",
+        "to_team_slug": "new-england-patriots",
+        "position": null,
+        "transaction_type": "ir",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Reserve/Injured",
+        "sources": [
+          "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Blake Grupe",
+        "from_team_slug": "los-angeles-rams",
+        "to_team_slug": "los-angeles-rams",
+        "position": null,
+        "transaction_type": "ir",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Reserve/Injured",
+        "sources": [
+          "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Jacory Croskey-Merritt",
+        "from_team_slug": "washington-commanders",
+        "to_team_slug": "washington-commanders",
+        "position": null,
+        "transaction_type": "ir",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Reserve/Injured",
+        "sources": [
+          "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Javontae Jean-Baptiste",
+        "from_team_slug": "washington-commanders",
+        "to_team_slug": "washington-commanders",
+        "position": null,
+        "transaction_type": "ir",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Reserve/Injured",
+        "sources": [
+          "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Roman Wilson",
+        "from_team_slug": "pittsburgh-steelers",
+        "to_team_slug": "pittsburgh-steelers",
+        "position": null,
+        "transaction_type": "ir",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Reserve/Injured",
+        "sources": [
+          "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Dayo Odeyingbo",
+        "from_team_slug": "chicago-bears",
+        "to_team_slug": "chicago-bears",
+        "position": null,
+        "transaction_type": "ir",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Reserve/Injured",
+        "sources": [
+          "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Jonathan Ford",
+        "from_team_slug": "green-bay-packers",
+        "to_team_slug": "green-bay-packers",
+        "position": null,
+        "transaction_type": "ir",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Reserve/Injured",
+        "sources": [
+          "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Javon Hargrave",
+        "from_team_slug": "green-bay-packers",
+        "to_team_slug": "green-bay-packers",
+        "position": null,
+        "transaction_type": "ir",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Reserve/Injured",
+        "sources": [
+          "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Skyy Moore",
+        "from_team_slug": "green-bay-packers",
+        "to_team_slug": "green-bay-packers",
+        "position": null,
+        "transaction_type": "ir",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Reserve/Injured",
+        "sources": [
+          "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "DeAndre Carter",
+        "from_team_slug": null,
+        "to_team_slug": "detroit-lions",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Practice Squad Veteran",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Andy Dalton",
+        "from_team_slug": null,
+        "to_team_slug": "atlanta-falcons",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Free Agent Signing",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Jackson Acker",
+        "from_team_slug": null,
+        "to_team_slug": "seattle-seahawks",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Practice Squad",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Josiah Deguara",
+        "from_team_slug": null,
+        "to_team_slug": "seattle-seahawks",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Practice Squad Veteran",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Elliott Davison",
+        "from_team_slug": null,
+        "to_team_slug": "new-england-patriots",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Free Agent Signing",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Jacob Rizy",
+        "from_team_slug": null,
+        "to_team_slug": "new-england-patriots",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Practice Squad",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Andrew Rupcich",
+        "from_team_slug": null,
+        "to_team_slug": "new-england-patriots",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Practice Squad",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Amari Kight",
+        "from_team_slug": null,
+        "to_team_slug": "las-vegas-raiders",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Practice Squad",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Darian Kinnard",
+        "from_team_slug": null,
+        "to_team_slug": "las-vegas-raiders",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Practice Squad Veteran",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "KC Eziomume",
+        "from_team_slug": null,
+        "to_team_slug": "chicago-bears",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Practice Squad",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Bralen Trice",
+        "from_team_slug": null,
+        "to_team_slug": "atlanta-falcons",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Free Agent Signing",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Jammie Robinson",
+        "from_team_slug": null,
+        "to_team_slug": "atlanta-falcons",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Practice Squad Veteran",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Lew Nichols III",
+        "from_team_slug": null,
+        "to_team_slug": "pittsburgh-steelers",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Free Agent Signing",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Nick McCloud",
+        "from_team_slug": null,
+        "to_team_slug": "chicago-bears",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Free Agent Signing",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Carl Jones",
+        "from_team_slug": null,
+        "to_team_slug": "baltimore-ravens",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Free Agent Signing",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Caleb Murphy",
+        "from_team_slug": null,
+        "to_team_slug": "los-angeles-chargers",
+        "position": null,
+        "transaction_type": "signing",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Free Agent Signing",
+        "sources": [
+          "https://www.nfl.com/transactions/league/signings/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Cooper Rush",
+        "from_team_slug": "atlanta-falcons",
+        "to_team_slug": null,
+        "position": null,
+        "transaction_type": "release",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Terminated, Vested Veteran, all contracts",
+        "sources": [
+          "https://www.nfl.com/transactions/league/terminations/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Marquez Valdes-Scantling",
+        "from_team_slug": "los-angeles-chargers",
+        "to_team_slug": null,
+        "position": null,
+        "transaction_type": "release",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Terminated, Vested Veteran, all contracts",
+        "sources": [
+          "https://www.nfl.com/transactions/league/terminations/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Austin Keys",
+        "from_team_slug": "washington-commanders",
+        "to_team_slug": "washington-commanders",
+        "position": null,
+        "transaction_type": "waiver",
+        "date": "2026-10-19",
+        "status": "official",
+        "detail": "Waived, No Recall",
+        "sources": [
+          "https://www.nfl.com/transactions/league/waivers/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      },
+      {
+        "player": "Erick Hallett",
+        "from_team_slug": "tennessee-titans",
+        "to_team_slug": "tennessee-titans",
+        "position": null,
+        "transaction_type": "waiver",
+        "date": "2026-10-17",
+        "status": "official",
+        "detail": "Waived, No Recall",
+        "sources": [
+          "https://www.nfl.com/transactions/league/waivers/2026/10",
+          "https://www.espn.com/nfl/transactions"
+        ],
+        "confidence": "high",
+        "verification": "two_publishers"
+      }
+    ]
+  },
+  "statLeaders": [
+    {
+      "category": "passing",
+      "rank": 1,
+      "player": "Matthew Stafford",
+      "yards": 1794,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/passing/2026/reg/all/passingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "passing",
+      "rank": 2,
+      "player": "C.J. Stroud",
+      "yards": 1714,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/passing/2026/reg/all/passingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "passing",
+      "rank": 3,
+      "player": "Jordan Love",
+      "yards": 1684,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/passing/2026/reg/all/passingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "passing",
+      "rank": 4,
+      "player": "Dak Prescott",
+      "yards": 1639,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/passing/2026/reg/all/passingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "passing",
+      "rank": 5,
+      "player": "Kirk Cousins",
+      "yards": 1582,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/passing/2026/reg/all/passingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "rushing",
+      "rank": 1,
+      "player": "Kenneth Walker III",
+      "yards": 665,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/rushing/2026/reg/all/rushingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/stat/rushing/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "rushing",
+      "rank": 2,
+      "player": "Bijan Robinson",
+      "yards": 641,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/rushing/2026/reg/all/rushingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/stat/rushing/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "rushing",
+      "rank": 3,
+      "player": "James Cook",
+      "yards": 627,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/rushing/2026/reg/all/rushingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/stat/rushing/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "rushing",
+      "rank": 4,
+      "player": "Derrick Henry",
+      "yards": 534,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/rushing/2026/reg/all/rushingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/stat/rushing/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "rushing",
+      "rank": 5,
+      "player": "Jahmyr Gibbs",
+      "yards": 504,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/rushing/2026/reg/all/rushingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/stat/rushing/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "receiving",
+      "rank": 1,
+      "player": "Jaxon Smith-Njigba",
+      "yards": 717,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/receiving/2026/reg/all/receivingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/stat/receiving/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "receiving",
+      "rank": 2,
+      "player": "Chris Olave",
+      "yards": 580,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/receiving/2026/reg/all/receivingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/stat/receiving/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "receiving",
+      "rank": 3,
+      "player": "CeeDee Lamb",
+      "yards": 577,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/receiving/2026/reg/all/receivingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/stat/receiving/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "receiving",
+      "rank": 4,
+      "player": "Drake London",
+      "yards": 550,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/receiving/2026/reg/all/receivingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/stat/receiving/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    },
+    {
+      "category": "receiving",
+      "rank": 5,
+      "player": "Christian Watson",
+      "yards": 538,
+      "sources": [
+        "https://www.nfl.com/stats/player-stats/category/receiving/2026/reg/all/receivingyards/desc",
+        "https://www.espn.com/nfl/stats/player/_/stat/receiving/season/2026/seasontype/2"
+      ],
+      "verification": "two_publishers"
+    }
+  ],
+  "practiceReports": [
+    {
+      "date": "2026-10-19",
+      "week": 7,
+      "player": "Kyle Monangai",
+      "team_slug": "chicago-bears",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Thumb/Toe",
+      "sources": [
+        "https://www.patriots.com/news/week-7-injury-report-patriots-at-bears",
+        "https://www.rotowire.com/football/headlines/kyle-monangai-injury-listed-as-dnp-on-practice-estimate-643363"
+      ],
+      "note": "Monday estimated walkthrough participation; not a final game designation."
+    }
+  ],
+  "limitations": [
+    "Final Week 7 designations/inactives have not all been issued.",
+    "Two-publisher corroboration may share an upstream feed.",
+    "No complete 32-team roster/depth refresh, film review, scheme audit or all-rookie census.",
+    "No three-source compatible numeric projection set.",
+    "No two-source game-time weather forecast.",
+    "No published past predictions to grade."
+  ],
+  "verification": "At least two distinct publishers must corroborate factual fields. Syndicated/linked reports do not establish independent reporting. Two-publisher corroboration is the standard used, not a claim of independent upstream data collection. Editorial judgments are labeled; field-level exceptions and unsupported claims are held.",
+  "compiledAt": "2026-10-20T19:20:03.528Z",
+  "collectedOn": "2026-10-20",
+  "reserveStatuses": [
+    {
+      "player": "Tip Reiman",
+      "team_slug": "arizona-cardinals",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "DeAngelo Malone",
+      "team_slug": "atlanta-falcons",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Dorian Strong",
+      "team_slug": "buffalo-bills",
+      "status": "NFI",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Nick Gargiulo",
+      "team_slug": "denver-broncos",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Kerby Joseph",
+      "team_slug": "detroit-lions",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "E.J. Speed",
+      "team_slug": "houston-texans",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Omarr Norman-Lott",
+      "team_slug": "kansas-city-chiefs",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Isaiah World",
+      "team_slug": "los-angeles-chargers",
+      "status": "NFI",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Darrell Baker Jr.",
+      "team_slug": "miami-dolphins",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Harold Landry III",
+      "team_slug": "new-england-patriots",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Mason Tipton",
+      "team_slug": "new-orleans-saints",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Tyler Baron",
+      "team_slug": "new-york-jets",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Donte Kent",
+      "team_slug": "pittsburgh-steelers",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    },
+    {
+      "player": "Isaac Guerendo",
+      "team_slug": "san-francisco-49ers",
+      "status": "PUP",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
+    }
+  ]
+}

@@ -22,7 +22,7 @@ const navigation = [
   { label: "Watch", href: "/watch" },
   { label: "Injuries", href: "/injuries" },
   { label: "X & Ys", href: "/x-and-ys" },
-  { label: "Fantasy", href: "/dfs" },
+  { label: "Fantasy", href: "/fantasy-desk" },
   { label: "More Sports ↗", href: "https://sports-always.com", external: true },
 ];
 
@@ -137,7 +137,7 @@ export function BroadcastHeader({
                 <Switch.Thumb className="apex-switch-thumb" />
               </Switch.Root>
               <span id="clean-mode-description" className="sr-only">
-                Hides betting offers and analyst fantasy ranks. Turning off
+                Hides betting offers and DFS market context. Turning off
                 opens an optional analysis disclosure.
               </span>
             </div>

@@ -1,5 +1,6 @@
 import { providerHealth } from "@/lib/cfb-dataset";
 import { getProductionGates, isProductionLaunchReady } from "@/lib/release-readiness";
+import { contentSourceModules } from "@/lib/content-refresh";
 
 export function GET() {
   const gates = getProductionGates(process.env);
@@ -7,7 +8,8 @@ export function GET() {
     {
       readyForPreview: true,
       readyForProductionLiveData: isProductionLaunchReady(process.env),
-      datasetProvider: providerHealth.find((provider) => provider.id === "cfb-apex-dataset")?.status,
+      datasetProvider: "reviewed-nfl-snapshot",
+      contentModules: contentSourceModules(),
       externalDependencies: providerHealth
         .filter((provider) => provider.mode === "production")
         .map(({ id, status, note }) => ({ id, status, note })),

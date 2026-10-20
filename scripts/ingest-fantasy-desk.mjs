@@ -50,6 +50,9 @@ const isSources = (v, where, player) => {
   if (!Array.isArray(v) || v.length === 0 || !v.every((s) => typeof s === "string" && URL_RE.test(s))) {
     fail(where, "needs a non-empty sources array of URLs", player);
   }
+  if (new Set(v.map(url => new URL(url).hostname.replace(/^www\./, ""))).size < 2) {
+    fail(where, "needs at least two distinct publisher hosts", player);
+  }
 };
 
 function validateWaiver(w, slugs) {
@@ -87,11 +90,13 @@ function validateStartSit(s, slugs) {
       for (const r of t.players) {
         if (!r.player || !slugs.has(r.team_slug)) fail("start_sit.positions", `${p.position}/${t.tier}: player/known team_slug required`, r.player);
         if (typeof r.note !== "string" || !r.note) fail("start_sit.positions", "note required", r.player);
+        isSources(r.sources, "start_sit.positions", r.player);
       }
     }
   }
   for (const tc of s.tough_calls ?? []) {
     if (!tc.player || !slugs.has(tc.team_slug) || !tc.verdict) fail("start_sit.tough_calls", "player/known team_slug/verdict required", tc.player);
+    isSources(tc.sources, "start_sit.tough_calls", tc.player);
   }
   // Decision board, not projections: no numeric point fields exist on the
   // schema by construction, and the domain test enforces the same.
@@ -126,6 +131,7 @@ function validateTrade(t, slugs) {
       if (!(Number.isInteger(r.tier) && r.tier >= 1 && r.tier <= 5)) fail("trade.boards", "tier must be 1-5", r.player);
       if (!MARKET.has(r.market)) fail("trade.boards", "market must be buy_low/sell_high/fair", r.player);
       if (typeof r.basis !== "string" || !r.basis) fail("trade.boards", "basis required", r.player);
+      isSources(r.sources, "trade.boards", r.player);
       const prior = seen.get(r.player);
       if (prior !== undefined && prior !== r.tier) fail("trade.boards", `${r.player} appears twice in ${g.position} with different tiers`);
       seen.set(r.player, r.tier);
