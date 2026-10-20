@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { CalendarClock, RefreshCw, ShieldCheck } from "lucide-react";
 import type { BroadcastTeam } from "@/lib/homepage";
-import { practiceReports, reserveStatuses } from "@/lib/content-refresh";
+import { inactiveReports, practiceReports, reserveStatuses } from "@/lib/content-refresh";
 import { EvidenceLinks } from "./evidence-links";
 import { DataBoardHero, DataBoardSummary } from "./data-board-primitives";
 import {
@@ -158,7 +158,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       <DataBoardHero
         eyebrow="Injury desk · Verified weekly"
         title="The injury report, on the record."
-        description="Corroborated injury listings and a week-to-week watch, with source dates and conditional availability notes. Final Week 7 designations are pending; blank practice cells mean no verified report."
+        description="Corroborated injury listings, game-day inactives and a week-to-week watch, with source dates and conditional availability notes. Blank practice cells mean no verified report."
         action={
           <a className="db-hero-link" href="#inj-cadence">
             Publishing schedule
@@ -210,6 +210,16 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         </p>
       </section>
 
+      <section className="apex-container db-section" id="inactives" aria-labelledby="inactives-title">
+        <h2 id="inactives-title">Verified Week 7 game-day inactives</h2>
+        <p>Only published team lists confirmed through two sources appear. A player missing from a list is not automatically confirmed active.</p>
+        {inactiveReports.length ? <div className="research-card-grid">{inactiveReports.filter(report => !teamFilter || report.teamSlug === teamFilter).map(report => <article className="research-card" key={report.gameId + report.teamSlug}>
+          <h3>{teamBySlug.get(report.teamSlug)?.name ?? report.teamSlug}</h3>
+          <p>Week {report.week} · Published <time dateTime={report.publishedAt}>{report.publishedAt}</time> · {report.complete ? "Complete team list" : "Partial list"}</p>
+          <ul>{report.players.map(player => <li key={player.name}>{player.name}{player.designation === "emergency_qb" ? " — emergency third QB (conditional eligibility)" : " — inactive"}</li>)}</ul>
+          <EvidenceLinks urls={report.sources} /><a href={`/games/${report.gameId}`}>Game details</a>
+        </article>)}</div> : <p className="db-empty">Verified Week 7 inactive lists are not published yet. They will appear after official game-day reports are corroborated.</p>}
+      </section>
       <section className="apex-container db-section" aria-labelledby="dated-practice-title">
         <h2 id="dated-practice-title">Dated Week 7 practice reports</h2>
         {practiceReports.map(report => <article className="research-card" key={report.player + report.date}>

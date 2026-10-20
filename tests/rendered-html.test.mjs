@@ -25,6 +25,7 @@ test("server-renders the finished home utility", async () => {
   const response = await fetchRoute("/");
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
+  assert.match(response.headers.get("x-content-revision") ?? "", /^[a-f0-9]{64}$/);
   assert.match(response.headers.get("x-robots-tag") ?? "", /noindex/i);
   assert.match(response.headers.get("content-security-policy") ?? "", /frame-ancestors 'none'/);
 

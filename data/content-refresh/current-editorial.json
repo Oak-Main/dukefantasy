@@ -816,5 +816,38 @@
         "https://www.cbssports.com/nfl/injuries/"
       ]
     }
-  ]
+  ],
+  "moduleSources": {
+    "schedule": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "injuries": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "fantasy": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "transactions": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "leaders": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "inactives": {
+      "sourceAsOf": null,
+      "fetchedAt": null,
+      "compiledAt": null
+    }
+  },
+  "inactives": []
 }

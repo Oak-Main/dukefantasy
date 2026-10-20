@@ -16,7 +16,7 @@
     "build": "vinext build",
     "start": "vinext start",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts",
+    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts tests/week7-evidence.test.mjs",
     "test:integration": "node --test tests/rendered-html.test.mjs",
     "test:e2e": "node --test tests/rendered-html.test.mjs",
     "test:a11y": "node --test tests/a11y.test.mjs",
@@ -32,7 +32,10 @@
     "cf:types": "wrangler types --config wrangler.deploy.jsonc .wrangler/deploy-types.d.ts",
     "deploy:dry-run": "npm run build && wrangler deploy --config wrangler.deploy.jsonc --dry-run",
     "deploy:production": "npm run verify && wrangler deploy --config wrangler.deploy.jsonc",
-    "verify": "npm run typecheck && npm run lint && npm run test && npm run build && npm run test:integration && npm run test:a11y && npm run test:seo && npm run test:links && npm run test:visual && npm run db:migrate && npm run db:seed"
+    "verify": "npm run typecheck && npm run lint && npm run test && npm run build && npm run test:integration && npm run test:a11y && npm run test:seo && npm run test:links && npm run test:visual && npm run db:migrate && npm run db:seed",
+    "week7:verify": "node scripts/verify-week7-update.mjs",
+    "week7:preflight": "npm run week7:verify && npm run verify && npm run dataset:verify && npm audit --omit=dev --fetch-retries=0 --fetch-timeout=20000 && npm run cf:types && wrangler deploy --config wrangler.deploy.jsonc --dry-run",
+    "week7:deploy": "npm run week7:preflight && wrangler deploy --config wrangler.deploy.jsonc && node scripts/smoke-release.mjs https://dukefantasy.com/"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.23",
