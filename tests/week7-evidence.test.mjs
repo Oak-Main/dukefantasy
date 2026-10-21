@@ -41,3 +41,12 @@ test("an omitted injury record cannot be treated as a sourced activation", () =>
   p.observations[0].sources = p.observations[0].sources.map(source => ({ ...source, value: null }));
   assert.throws(() => validateEvidence(p, after, new Map(), now), /removal needs/);
 });
+
+test("a reserve record verification date must agree across both recorded observations", () => {
+  const candidate=collectFacts({snapshot:{schedule:[]},injury:{ledger:[],watch:[]},editorial:{reserveStatuses:[{player:'Test reserve player',team_slug:'test-team',status:'SUSPENSION',asOf:'2026-10-22'}]}});
+  const fact=[...candidate.values()][0],p=proof();
+  p.observations=[{...fact,sources:p.observations[0].sources.map(source=>({...source,value:fact.value}))}];
+  assert.equal(validateEvidence(p,new Map(),candidate,now).changedFacts,1);
+  p.observations[0].sources[1].value={...fact.value,asOf:'2026-10-21'};
+  assert.throws(()=>validateEvidence(p,new Map(),candidate,now),/disagree/);
+});

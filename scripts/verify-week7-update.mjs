@@ -13,6 +13,9 @@ const oldManifest = old("data/content-refresh/current.json");
 const bundle = (load, selection) => ({ snapshot: load(`data/content-refresh/${selection.snapshot}`), injury: load("data/injury-research/current.json"), editorial: load("data/content-refresh/current-editorial.json") });
 const before = bundle(old, oldManifest), after = bundle(read, manifest);
 const todayEastern = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
+for (const row of after.editorial.reserveStatuses ?? []) {
+  if (row.asOf && (!/^\d{4}-\d{2}-\d{2}$/.test(row.asOf) || row.asOf > todayEastern || row.asOf > manifest.sourceAsOf || !Number.isFinite(Date.parse(row.checkedAt)) || Date.parse(row.checkedAt) > Date.now())) throw new Error("Dated reserve status needs a real nonfuture verification date and retrieval timestamp");
+}
 for (const row of after.injury.watch) {
   if (row.published_status != null && (!["OUT", "DOUBTFUL", "QUESTIONABLE", "NO_DESIGNATION"].includes(row.published_status) || row.designation_week !== 7 || !/^\d{4}-\d{2}-\d{2}$/.test(row.designation_date ?? "") || row.designation_date > todayEastern)) throw new Error("Official designations need the correct dated Week 7 report");
 }

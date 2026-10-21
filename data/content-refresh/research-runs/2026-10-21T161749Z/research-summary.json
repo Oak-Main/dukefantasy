@@ -1,0 +1,58 @@
+{
+  "run": "2026-10-21T161749Z",
+  "baseCommit": "6f1ae4a94cdfc87fb1b2ebf413524b3010de9c62",
+  "checkedAt": "2026-10-21T16:26:04.634Z",
+  "changedFacts": 5,
+  "moduleReviews": 0,
+  "scope": "Two IR placements, explicit waiver, new corroborated injury watch and dated reserve/suspension listing",
+  "moduleDates": "All prior full-module review dates preserved; only release date advances for the individually dated October 21 reserve record",
+  "sourceRetrievals": [
+    {
+      "requestedUrl": "https://www.therams.com/news/rams-sign-kicker-brandon-mcmanus-place-poona-ford-and-davante-adams-on-injured-reserve",
+      "resolvedUrl": "https://www.therams.com/news/rams-sign-kicker-brandon-mcmanus-place-poona-ford-and-davante-adams-on-injured-reserve",
+      "checkedAt": "2026-10-21T16:24:35.563Z",
+      "status": 200
+    },
+    {
+      "requestedUrl": "https://www.nfl.com/transactions/league/waivers/2026/10",
+      "resolvedUrl": "https://www.nfl.com/transactions/league/waivers/2026/10",
+      "checkedAt": "2026-10-21T16:24:35.760Z",
+      "status": 200
+    },
+    {
+      "requestedUrl": "https://www.patspulpit.com/new-england-patriots-news/141513/patriots-waive-jeremiah-webb-injured-reserve",
+      "resolvedUrl": "https://www.patspulpit.com/new-england-patriots-news/141513/patriots-waive-jeremiah-webb-injured-reserve",
+      "checkedAt": "2026-10-21T16:24:35.911Z",
+      "status": 200
+    },
+    {
+      "id": "espn",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-21T16:19:19.847Z",
+      "status": 200
+    },
+    {
+      "id": "cbs",
+      "requestedUrl": "https://www.cbssports.com/nfl/injuries/",
+      "resolvedUrl": "https://www.cbssports.com/nfl/injuries/",
+      "checkedAt": "2026-10-21T16:19:19.807Z",
+      "status": 200
+    }
+  ],
+  "held": [
+    {
+      "player": "Kyle Monangai",
+      "claim": "Tuesday LP",
+      "reason": "CBS summary says LP; official Bears and Patriots tables and dated Pats Pulpit report say DNP. Retain the corroborated official DNP record; do not import the conflicting LP summary."
+    },
+    {
+      "claim": "Unilateral feed omissions and estimated return-week changes",
+      "reason": "No activation or recovery is inferred. Preserve unchanged native records unless two explicit current sources justify a change."
+    },
+    {
+      "claim": "Terry McLaurin Week 8 designation",
+      "reason": "Week 8 game designation is outside this Week 7 automation scope."
+    }
+  ]
+}

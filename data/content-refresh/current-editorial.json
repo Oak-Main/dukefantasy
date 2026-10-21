@@ -1160,6 +1160,18 @@
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/"
       ]
+    },
+    {
+      "player": "Sam Franklin Jr.",
+      "team_slug": "buffalo-bills",
+      "status": "SUSPENSION",
+      "asOf": "2026-10-21",
+      "checkedAt": "2026-10-21T16:19:19.847Z",
+      "note": "ESPN and CBS list reserve/suspension status. Buffalo is on its Week 7 bye; no activation date is confirmed.",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ]
     }
   ],
   "moduleSources": {

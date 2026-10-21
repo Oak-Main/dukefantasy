@@ -35,7 +35,8 @@ export const refreshAsOf = manifest.sourceAsOf;
 export const refreshRevision = nfl.publicationId;
 export const refreshFetchedAt = editorial.fetchedAt;
 export const refreshCompiledAt = editorial.compiledAt;
-export const reserveStatuses = editorial.reserveStatuses;
+export interface ReserveStatus { player: string; team_slug: string; status: string; sources: string[]; asOf?: string; checkedAt?: string; note?: string }
+export const reserveStatuses: readonly ReserveStatus[] = editorial.reserveStatuses;
 export const refreshWeek = editorial.week;
 export interface ModuleSource { sourceAsOf: string | null; fetchedAt: string | null; compiledAt: string | null }
 export const moduleSources: Record<string, ModuleSource> = editorial.moduleSources;
