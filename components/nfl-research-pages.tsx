@@ -1,4 +1,4 @@
-import { contentSourceModules, moduleSources, refreshLimitations, statLeaders, transactionCoverage, transactions, verificationPolicy } from "@/lib/content-refresh";
+import { contentSourceModules, moduleSources, refreshAsOf, refreshLimitations, statLeaders, transactionCoverage, transactions, verificationPolicy } from "@/lib/content-refresh";
 import { teams } from "@/lib/cfb-dataset";
 import { DataBoardHero } from "./data-board-primitives";
 import { EvidenceLinks } from "./evidence-links";
@@ -34,6 +34,7 @@ export function ContentSourcesPage() {
   return <div className="db-page">
     <DataBoardHero eyebrow="Provenance & source freshness" title="No source, no silent claim." description="Source dates and fetch times stay attached to each module. Rebuilding the site never renews an old research date. Live scoreboard updates are attributed separately to ESPN." />
     <section className="apex-container db-section" aria-label="Source freshness">
+      <p className="apex-data-note">Latest verified publication: <time dateTime={refreshAsOf}>{refreshAsOf}</time>. Module dates below identify the last complete review; individual dated updates do not renew untouched modules.</p>
       <div className="research-card-grid">{contentSourceModules().map(row => <article className="research-card" key={row.id}>
         <span className={`provider-state provider-state--${row.freshness === "current" ? "on" : "off"}`}>{row.freshness}</span>
         <h2>{row.label}</h2><p>{row.note}</p>
