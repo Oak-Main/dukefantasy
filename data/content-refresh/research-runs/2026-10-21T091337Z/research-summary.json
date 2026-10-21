@@ -1,0 +1,39 @@
+{
+  "run": "2026-10-21T091337Z",
+  "baseCommit": "1e4d48a53e6a0ea6e1ea7b845a6d659039a526cf",
+  "recordedAt": "2026-10-21T09:18:56.293Z",
+  "scope": "Week 7 Patriots–Bears Tuesday practice only",
+  "datedPracticeRows": 23,
+  "updatedWatchRows": 11,
+  "sourceRetrievals": [
+    {
+      "requestedUrl": "https://www.patriots.com/team/injury-report/",
+      "resolvedUrl": "https://www.patriots.com/team/injury-report/",
+      "checkedAt": "2026-10-21T09:17:01.752Z",
+      "status": 200
+    },
+    {
+      "requestedUrl": "https://www.chicagobears.com/team/injury-report/",
+      "resolvedUrl": "https://www.chicagobears.com/team/injury-report/",
+      "checkedAt": "2026-10-21T09:17:01.572Z",
+      "status": 200
+    },
+    {
+      "requestedUrl": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+      "resolvedUrl": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+      "checkedAt": "2026-10-21T09:17:01.520Z",
+      "status": 200
+    }
+  ],
+  "normalization": "Case, curly apostrophes, suffixes Sr./III, injury separators and the IR-return parenthetical are normalized for identity comparison; no reserve activation is inferred.",
+  "unchanged": [
+    "All module source dates and release date",
+    "All 272 games, 93 finals and standings",
+    "Other injury/watch/reserve records",
+    "Fantasy, transactions and yardage leaders",
+    "Game-day inactives and official game designations"
+  ],
+  "heldClaims": [],
+  "changedFacts": 34,
+  "moduleReviews": 0
+}

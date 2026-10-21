@@ -123,3 +123,5 @@ Owner authorized two-source injury, inactive and results monitoring, with checks
 Week 7 timetable follow-up (2026-10-20): replaced legacy weekly editorial slots with the actual daily and half-hour game-window checks. The next-check helper stops after October 27 and covers early Sunday kickoffs.
 
 Official designations (2026-10-20): preserve report week/date through the native importer, evidence gate and watch renderer. Expose both corroborating watch sources and reject invalid designation metadata.
+
+2026-10-21 Week 7 practice run: corroborated all 23 Tuesday walkthrough rows against the respective official club table and Pats Pulpit's dated report. Updated Tuesday cells for 11 existing watch entries, retained dated history and reserve eligibility, and archived 34 changed-fact observations.

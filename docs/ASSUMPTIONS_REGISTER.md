@@ -50,3 +50,5 @@ Owner authorized two-source injury, inactive and results monitoring, with checks
 Week 7 timetable follow-up (2026-10-20): the public injury cadence reflects the two active bounded thread schedules; a scheduled check does not guarantee a new publication. October 20–27 is entirely PDT.
 
 Official designations (2026-10-20): a dated no-designation report does not establish game-day active status. Watch entries may carry an official status separately from editorial likelihood.
+
+2026-10-21 Week 7 practice run: October 20 Patriots/Bears walkthrough estimates are dated participation, not official game designations or game-day active lists. Untouched module source dates remain October 20.

@@ -4209,10 +4209,10 @@
       "player": "Kyle Monangai",
       "team_slug": "chicago-bears",
       "position": "RB",
-      "injury": "Toe",
+      "injury": "Thumb/Toe",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "DNP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -4220,11 +4220,13 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: DNP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
-        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html"
+        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+        "https://www.chicagobears.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
@@ -4232,10 +4234,10 @@
       "player": "T.J. Edwards",
       "team_slug": "chicago-bears",
       "position": "LB",
-      "injury": null,
+      "injury": "Hamstring",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "DNP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -4243,10 +4245,12 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: DNP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.chicagobears.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
@@ -4254,10 +4258,10 @@
       "player": "Jonah Jackson",
       "team_slug": "chicago-bears",
       "position": "G",
-      "injury": "Hip",
+      "injury": "Hip/Quadricep",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "LP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -4265,10 +4269,12 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.chicagobears.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
@@ -4276,10 +4282,10 @@
       "player": "Jack Sanborn",
       "team_slug": "chicago-bears",
       "position": "LB",
-      "injury": null,
+      "injury": "Concussion",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "DNP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -4287,10 +4293,12 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: DNP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.chicagobears.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
@@ -5491,10 +5499,10 @@
       "player": "Ben Brown",
       "team_slug": "new-england-patriots",
       "position": "C",
-      "injury": null,
+      "injury": "Knee",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "DNP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -5502,10 +5510,12 @@
       },
       "likelihood": "doubtful",
       "confidence": "medium",
-      "note": "DOUBTFUL in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: DNP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
@@ -5513,10 +5523,10 @@
       "player": "Alijah Vera-Tucker",
       "team_slug": "new-england-patriots",
       "position": "G",
-      "injury": null,
+      "injury": "Hamstring",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "DNP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -5524,10 +5534,12 @@
       },
       "likelihood": "doubtful",
       "confidence": "medium",
-      "note": "DOUBTFUL in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: DNP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
@@ -5535,10 +5547,10 @@
       "player": "Karon Prunty",
       "team_slug": "new-england-patriots",
       "position": "CB",
-      "injury": null,
+      "injury": "Hamstring",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "LP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -5546,10 +5558,12 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
@@ -5557,10 +5571,10 @@
       "player": "Channing Canada",
       "team_slug": "new-england-patriots",
       "position": "CB",
-      "injury": null,
+      "injury": "Hamstring",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "LP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -5568,10 +5582,12 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
@@ -5579,10 +5595,10 @@
       "player": "Carlton Davis III",
       "team_slug": "new-england-patriots",
       "position": "CB",
-      "injury": null,
+      "injury": "Neck",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "LP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -5590,10 +5606,12 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
@@ -5604,7 +5622,7 @@
       "injury": "Ankle",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "LP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -5612,10 +5630,12 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
@@ -5623,10 +5643,10 @@
       "player": "Morgan Moses",
       "team_slug": "new-england-patriots",
       "position": "OT",
-      "injury": null,
+      "injury": "Foot",
       "practice": {
         "mon": null,
-        "tue": null,
+        "tue": "LP",
         "wed": null,
         "thu": null,
         "fri": null,
@@ -5634,10 +5654,12 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
       ],
       "social": []
     },
