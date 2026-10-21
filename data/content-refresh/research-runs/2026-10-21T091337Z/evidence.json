@@ -1,0 +1,1701 @@
+{
+  "week": 7,
+  "baseCommit": "1e4d48a53e6a0ea6e1ea7b845a6d659039a526cf",
+  "run": "2026-10-21T091337Z",
+  "observations": [
+    {
+      "kind": "injury",
+      "key": "chicago-bears:Kyle Monangai",
+      "value": {
+        "player": "Kyle Monangai",
+        "team_slug": "chicago-bears",
+        "status": null,
+        "injury": "Thumb/Toe",
+        "practice": {
+          "mon": null,
+          "tue": "DNP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.572Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Kyle Monangai",
+            "team_slug": "chicago-bears",
+            "status": null,
+            "injury": "Thumb/Toe",
+            "practice": {
+              "mon": null,
+              "tue": "DNP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Kyle Monangai",
+            "team_slug": "chicago-bears",
+            "status": null,
+            "injury": "Thumb/Toe",
+            "practice": {
+              "mon": null,
+              "tue": "DNP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "chicago-bears:T.J. Edwards",
+      "value": {
+        "player": "T.J. Edwards",
+        "team_slug": "chicago-bears",
+        "status": null,
+        "injury": "Hamstring",
+        "practice": {
+          "mon": null,
+          "tue": "DNP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.572Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "T.J. Edwards",
+            "team_slug": "chicago-bears",
+            "status": null,
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": "DNP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "T.J. Edwards",
+            "team_slug": "chicago-bears",
+            "status": null,
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": "DNP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "chicago-bears:Jonah Jackson",
+      "value": {
+        "player": "Jonah Jackson",
+        "team_slug": "chicago-bears",
+        "status": null,
+        "injury": "Hip/Quadricep",
+        "practice": {
+          "mon": null,
+          "tue": "LP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.572Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonah Jackson",
+            "team_slug": "chicago-bears",
+            "status": null,
+            "injury": "Hip/Quadricep",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonah Jackson",
+            "team_slug": "chicago-bears",
+            "status": null,
+            "injury": "Hip/Quadricep",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "chicago-bears:Jack Sanborn",
+      "value": {
+        "player": "Jack Sanborn",
+        "team_slug": "chicago-bears",
+        "status": null,
+        "injury": "Concussion",
+        "practice": {
+          "mon": null,
+          "tue": "DNP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.572Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jack Sanborn",
+            "team_slug": "chicago-bears",
+            "status": null,
+            "injury": "Concussion",
+            "practice": {
+              "mon": null,
+              "tue": "DNP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jack Sanborn",
+            "team_slug": "chicago-bears",
+            "status": null,
+            "injury": "Concussion",
+            "practice": {
+              "mon": null,
+              "tue": "DNP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-england-patriots:Ben Brown",
+      "value": {
+        "player": "Ben Brown",
+        "team_slug": "new-england-patriots",
+        "status": null,
+        "injury": "Knee",
+        "practice": {
+          "mon": null,
+          "tue": "DNP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Ben Brown",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": "DNP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Ben Brown",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": "DNP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-england-patriots:Alijah Vera-Tucker",
+      "value": {
+        "player": "Alijah Vera-Tucker",
+        "team_slug": "new-england-patriots",
+        "status": null,
+        "injury": "Hamstring",
+        "practice": {
+          "mon": null,
+          "tue": "DNP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": "DNP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": "DNP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-england-patriots:Karon Prunty",
+      "value": {
+        "player": "Karon Prunty",
+        "team_slug": "new-england-patriots",
+        "status": null,
+        "injury": "Hamstring",
+        "practice": {
+          "mon": null,
+          "tue": "LP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Karon Prunty",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Karon Prunty",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-england-patriots:Channing Canada",
+      "value": {
+        "player": "Channing Canada",
+        "team_slug": "new-england-patriots",
+        "status": null,
+        "injury": "Hamstring",
+        "practice": {
+          "mon": null,
+          "tue": "LP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Channing Canada",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Channing Canada",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-england-patriots:Carlton Davis III",
+      "value": {
+        "player": "Carlton Davis III",
+        "team_slug": "new-england-patriots",
+        "status": null,
+        "injury": "Neck",
+        "practice": {
+          "mon": null,
+          "tue": "LP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Carlton Davis III",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Neck",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Carlton Davis III",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Neck",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-england-patriots:A.J. Brown",
+      "value": {
+        "player": "A.J. Brown",
+        "team_slug": "new-england-patriots",
+        "status": null,
+        "injury": "Ankle",
+        "practice": {
+          "mon": null,
+          "tue": "LP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "A.J. Brown",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "A.J. Brown",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-england-patriots:Morgan Moses",
+      "value": {
+        "player": "Morgan Moses",
+        "team_slug": "new-england-patriots",
+        "status": null,
+        "injury": "Foot",
+        "practice": {
+          "mon": null,
+          "tue": "LP",
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Morgan Moses",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Foot",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Morgan Moses",
+            "team_slug": "new-england-patriots",
+            "status": null,
+            "injury": "Foot",
+            "practice": {
+              "mon": null,
+              "tue": "LP",
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Andy Borregales",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Andy Borregales",
+        "team_slug": "new-england-patriots",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Personal"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Andy Borregales",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Personal"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Andy Borregales",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Personal"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Ben Brown",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Ben Brown",
+        "team_slug": "new-england-patriots",
+        "participation": "DNP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Knee"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Ben Brown",
+            "team_slug": "new-england-patriots",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Ben Brown",
+            "team_slug": "new-england-patriots",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Knee"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Carlton Davis III",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Carlton Davis III",
+        "team_slug": "new-england-patriots",
+        "participation": "LP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Neck"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Carlton Davis III",
+            "team_slug": "new-england-patriots",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Neck"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Carlton Davis III",
+            "team_slug": "new-england-patriots",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Neck"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Joshua Farmer",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Joshua Farmer",
+        "team_slug": "new-england-patriots",
+        "participation": "DNP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Personal"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Joshua Farmer",
+            "team_slug": "new-england-patriots",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Personal"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Joshua Farmer",
+            "team_slug": "new-england-patriots",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Personal"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Alijah Vera-Tucker",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Alijah Vera-Tucker",
+        "team_slug": "new-england-patriots",
+        "participation": "DNP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Hamstring"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hamstring"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hamstring"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:A.J. Brown",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "A.J. Brown",
+        "team_slug": "new-england-patriots",
+        "participation": "LP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Ankle"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "A.J. Brown",
+            "team_slug": "new-england-patriots",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Ankle"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "A.J. Brown",
+            "team_slug": "new-england-patriots",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Ankle"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Channing Canada",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Channing Canada",
+        "team_slug": "new-england-patriots",
+        "participation": "LP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Hamstring"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Channing Canada",
+            "team_slug": "new-england-patriots",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hamstring"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Channing Canada",
+            "team_slug": "new-england-patriots",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hamstring"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Morgan Moses",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Morgan Moses",
+        "team_slug": "new-england-patriots",
+        "participation": "LP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Foot"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Morgan Moses",
+            "team_slug": "new-england-patriots",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Foot"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Morgan Moses",
+            "team_slug": "new-england-patriots",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Foot"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Karon Prunty",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Karon Prunty",
+        "team_slug": "new-england-patriots",
+        "participation": "LP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Hamstring"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Karon Prunty",
+            "team_slug": "new-england-patriots",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hamstring"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Karon Prunty",
+            "team_slug": "new-england-patriots",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hamstring"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Marcus Bryant",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Marcus Bryant",
+        "team_slug": "new-england-patriots",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Ankle"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Marcus Bryant",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Ankle"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Marcus Bryant",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Ankle"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Kevin Byard",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Kevin Byard",
+        "team_slug": "new-england-patriots",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Chest"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Kevin Byard",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Chest"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Kevin Byard",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Chest"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Will Campbell",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Will Campbell",
+        "team_slug": "new-england-patriots",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Knee"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Will Campbell",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Will Campbell",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Knee"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Christian Elliss",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Christian Elliss",
+        "team_slug": "new-england-patriots",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Chest"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Christian Elliss",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Chest"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Christian Elliss",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Chest"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:TreVeyon Henderson",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "TreVeyon Henderson",
+        "team_slug": "new-england-patriots",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Ankle"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "TreVeyon Henderson",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Ankle"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "TreVeyon Henderson",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Ankle"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Dre'Mont Jones",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Dre'Mont Jones",
+        "team_slug": "new-england-patriots",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Shoulder"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Dre'Mont Jones",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Shoulder"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Dre'Mont Jones",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Shoulder"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Drake Maye",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Drake Maye",
+        "team_slug": "new-england-patriots",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Right Shoulder"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Drake Maye",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Right Shoulder"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Drake Maye",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Right Shoulder"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:new-england-patriots:Craig Woodson",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Craig Woodson",
+        "team_slug": "new-england-patriots",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Shoulder"
+      },
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.752Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Craig Woodson",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Shoulder"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Craig Woodson",
+            "team_slug": "new-england-patriots",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Shoulder"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:chicago-bears:T.J. Edwards",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "T.J. Edwards",
+        "team_slug": "chicago-bears",
+        "participation": "DNP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Hamstring"
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.572Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "T.J. Edwards",
+            "team_slug": "chicago-bears",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hamstring"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "T.J. Edwards",
+            "team_slug": "chicago-bears",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hamstring"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:chicago-bears:Kyle Monangai",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Kyle Monangai",
+        "team_slug": "chicago-bears",
+        "participation": "DNP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Thumb/Toe"
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.572Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Kyle Monangai",
+            "team_slug": "chicago-bears",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Thumb/Toe"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Kyle Monangai",
+            "team_slug": "chicago-bears",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Thumb/Toe"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:chicago-bears:Jack Sanborn",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Jack Sanborn",
+        "team_slug": "chicago-bears",
+        "participation": "DNP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Concussion"
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.572Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Jack Sanborn",
+            "team_slug": "chicago-bears",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Concussion"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Jack Sanborn",
+            "team_slug": "chicago-bears",
+            "participation": "DNP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Concussion"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:chicago-bears:Jonah Jackson",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Jonah Jackson",
+        "team_slug": "chicago-bears",
+        "participation": "LP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Hip/Quadricep"
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.572Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Jonah Jackson",
+            "team_slug": "chicago-bears",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hip/Quadricep"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Jonah Jackson",
+            "team_slug": "chicago-bears",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hip/Quadricep"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:chicago-bears:Keyshaun Elliott",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Keyshaun Elliott",
+        "team_slug": "chicago-bears",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Quadricep"
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.572Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Keyshaun Elliott",
+            "team_slug": "chicago-bears",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Quadricep"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Keyshaun Elliott",
+            "team_slug": "chicago-bears",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Quadricep"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-20:chicago-bears:Tyrique Stevenson",
+      "value": {
+        "date": "2026-10-20",
+        "week": 7,
+        "player": "Tyrique Stevenson",
+        "team_slug": "chicago-bears",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Hip"
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/team/injury-report/",
+          "checkedAt": "2026-10-21T09:17:01.572Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Tyrique Stevenson",
+            "team_slug": "chicago-bears",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hip"
+          }
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+          "checkedAt": "2026-10-21T09:17:01.520Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-20",
+            "week": 7,
+            "player": "Tyrique Stevenson",
+            "team_slug": "chicago-bears",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Hip"
+          }
+        }
+      ]
+    }
+  ],
+  "moduleReviews": []
+}
