@@ -53,3 +53,5 @@ Week 7 timetable follow-up (2026-10-20): public cadence now matches active autom
 Official designations (2026-10-20): injury and inactive evidence tests exercise mismatched dates, emergency-quarterback disagreements and unsourced removals alongside final-score gates.
 
 2026-10-21 Week 7 practice run: research-runs/2026-10-21T091337Z records 23 dated practice entries and 11 watch updates with two publisher families per changed fact. Two-source evidence gate and release preflight apply; results/standings and module source dates remain unchanged.
+
+2026-10-21 eligibility run: research-runs/2026-10-21T161749Z contains five changed-fact observations and held claims. Preserve all full-module dates, 272-game results/standings and unrelated editorial data; the release date advances solely for the dated October 21 reserve record.

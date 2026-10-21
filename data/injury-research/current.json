@@ -2566,20 +2566,6 @@
       "confidence": "medium"
     },
     {
-      "player": "Jeremiah Webb",
-      "team_slug": "new-england-patriots",
-      "position": "WR",
-      "injury": "Arm",
-      "status": "IR",
-      "weeks_out": null,
-      "detail": "Listed on injured reserve by ESPN and CBS as of October 20. An estimated return is not an activation.",
-      "sources": [
-        "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
-      ],
-      "confidence": "medium"
-    },
-    {
       "player": "Julian Hill",
       "team_slug": "new-england-patriots",
       "position": "TE",
@@ -3815,16 +3801,31 @@
       },
       "likelihood": "unlikely",
       "confidence": "medium",
-      "note": "OUT in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "Official Rams placement on injured reserve on October 20, corroborated by ESPN and CBS. The previously reported absence is not a guaranteed return date.",
       "sources": [
-        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
-        "https://www.cbssports.com/nfl/injuries/",
-        "https://www.espn.com/nfl/injuries"
+        "https://www.therams.com/news/rams-sign-kicker-brandon-mcmanus-place-poona-ford-and-davante-adams-on-injured-reserve",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
       ],
       "social": [],
-      "status": "OUT",
+      "status": "IR",
       "weeks_out": 6,
-      "detail": "Coach-reported absence of 6–10 weeks after a hamstring injury. Six weeks is the reported lower bound, not a guaranteed return date. IR placement is not inferred."
+      "detail": "Official Rams placement on injured reserve on October 20, corroborated by ESPN and CBS. The previously reported absence is not a guaranteed return date."
+    },
+    {
+      "player": "Poona Ford",
+      "team_slug": "los-angeles-rams",
+      "position": "DT",
+      "injury": "Triceps",
+      "status": "IR",
+      "weeks_out": null,
+      "detail": "Placed on injured reserve October 20; official club release corroborated by ESPN and CBS. No return date is assumed.",
+      "sources": [
+        "https://www.therams.com/news/rams-sign-kicker-brandon-mcmanus-place-poona-ford-and-davante-adams-on-injured-reserve",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "confidence": "high"
     }
   ],
   "watch": [
@@ -5224,28 +5225,6 @@
       "likelihood": "questionable",
       "confidence": "medium",
       "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
-      "sources": [
-        "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
-      ],
-      "social": []
-    },
-    {
-      "player": "Poona Ford",
-      "team_slug": "los-angeles-rams",
-      "position": "DT",
-      "injury": "Triceps",
-      "practice": {
-        "mon": null,
-        "tue": null,
-        "wed": null,
-        "thu": null,
-        "fri": null,
-        "sat": null
-      },
-      "likelihood": "unlikely",
-      "confidence": "medium",
-      "note": "OUT in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/"
@@ -6653,6 +6632,28 @@
       "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. Team is on bye; this is a return-to-play watch.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "social": []
+    },
+    {
+      "player": "Upton Stout",
+      "team_slug": "san-francisco-49ers",
+      "position": "CB",
+      "injury": "Shoulder - AC Joint",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": null,
+        "sat": null
+      },
+      "likelihood": "questionable",
+      "confidence": "medium",
+      "note": "October 20 injury update is corroborated in ESPN and CBS listings. This watch label is not an official Week 7 game designation or clearance.",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/"
       ],
       "social": []

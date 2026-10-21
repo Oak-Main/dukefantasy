@@ -12,7 +12,7 @@ export function collectFacts({ snapshot, injury, editorial }) {
     injury: row.injury ?? null, practice: row.practice ?? null,
     designation_date: row.designation_date ?? null, designation_week: row.designation_week ?? null,
   });
-  for (const row of editorial.reserveStatuses ?? []) put("reserve", `${row.team_slug}:${row.player}`, { player: row.player, team_slug: row.team_slug, status: row.status });
+  for (const row of editorial.reserveStatuses ?? []) put("reserve", `${row.team_slug}:${row.player}`, { player: row.player, team_slug: row.team_slug, status: row.status, asOf: row.asOf ?? null });
   for (const report of editorial.practiceReports ?? []) put("practice", `${report.date}:${report.team_slug}:${report.player}`, { date: report.date, week: report.week, player: report.player, team_slug: report.team_slug, participation: report.participation, report_type: report.report_type, injury: report.injury });
   for (const report of editorial.inactives ?? []) put("inactive", `${report.gameId}:${report.teamSlug}`, { gameId: report.gameId, week: report.week, teamSlug: report.teamSlug, complete: report.complete, players: [...report.players].sort((a,b) => a.name.localeCompare(b.name)) });
   for (const game of snapshot.schedule.filter(game => game.week <= 7)) put("result", game.id, {

@@ -31,6 +31,8 @@ The evidence file has `week:7`, `baseCommit` (exact 40-character commit), `obser
 
 For a source-date change, a module review is also required: module (`schedule`, `injuries` or `inactives`), sourceAsOf matching that module's date, dataSha256 from `digest` of that module's collected facts, and two sources each confirming `{dataSha256, complete:true}` for the full reviewed set. Record the actual fetchedAt on the module. This records the researcher's complete comparison attestation; the gate validates recorded evidence consistency, not the truth of an unread webpage. Actual live research remains mandatory. Metadata-only false freshness and unclaimed changed facts fail closed.
 
+A partial reserve-status update may carry its own `asOf` verification date and actual `checkedAt`, rendered on that record. Keep the last full injury-module review date unchanged. The release manifest's date may advance to the newest verified record date; this does not renew any untouched module's source date. Include the record date in its two-source observation.
+
 ## Checks and deployment
 
 `npm run week7:preflight` requires the evidence gate, full `npm run verify`, fresh `dataset:verify`, production dependency audit, Cloudflare types and a Wrangler dry run. `npm run week7:deploy` runs that preflight, deploys the checked build and runs `scripts/smoke-release.mjs` against the public domain. Preserve production flags and all commercial kill switches. No deployment for a source conflict, invalid data, failing test, failed audit, stale evidence or another active writer.

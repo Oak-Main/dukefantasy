@@ -46,7 +46,7 @@ test("Thursday-game walkthrough retains Monday date and week instead of filling 
 });
 
 test("reserve eligibility statuses remain separate from the injury ledger and carry two sources", () => {
-  assert.ok(Array.isArray(reserveStatuses));
+  assert.ok(reserveStatuses.length > 0);
   for (const row of reserveStatuses) {
     assert.ok(!["IR", "OUT", "QUESTIONABLE", "DOUBTFUL"].includes(row.status));
     assert.ok(new Set(row.sources.map(url => new URL(url).hostname)).size >= 2);

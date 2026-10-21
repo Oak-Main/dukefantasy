@@ -52,3 +52,5 @@ Week 7 timetable follow-up (2026-10-20): the public injury cadence reflects the 
 Official designations (2026-10-20): a dated no-designation report does not establish game-day active status. Watch entries may carry an official status separately from editorial likelihood.
 
 2026-10-21 Week 7 practice run: October 20 Patriots/Bears walkthrough estimates are dated participation, not official game designations or game-day active lists. Untouched module source dates remain October 20.
+
+2026-10-21 eligibility run: record-level verification may be newer than the last complete injury-module review. Keep prior module dates; date the new reserve/suspension listing explicitly, without confirming a return or Week 8 game designation.

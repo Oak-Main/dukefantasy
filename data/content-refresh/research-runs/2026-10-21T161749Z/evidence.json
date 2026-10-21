@@ -1,0 +1,260 @@
+{
+  "week": 7,
+  "baseCommit": "6f1ae4a94cdfc87fb1b2ebf413524b3010de9c62",
+  "run": "2026-10-21T161749Z",
+  "observations": [
+    {
+      "kind": "injury",
+      "key": "new-england-patriots:Jeremiah Webb",
+      "value": null,
+      "removalReason": "NFL waiver wire and dated reporting explicitly confirm waiver from injured reserve; removal is not a claim of health, active status or activation.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/transactions/league/waivers/2026/10",
+          "checkedAt": "2026-10-21T16:24:35.760Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-news/141513/patriots-waive-jeremiah-webb-injured-reserve",
+          "checkedAt": "2026-10-21T16:24:35.911Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "los-angeles-rams:Davante Adams",
+      "value": {
+        "player": "Davante Adams",
+        "team_slug": "los-angeles-rams",
+        "status": "IR",
+        "injury": "Hamstring",
+        "practice": {
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.therams.com/news/rams-sign-kicker-brandon-mcmanus-place-poona-ford-and-davante-adams-on-injured-reserve",
+          "checkedAt": "2026-10-21T16:24:35.563Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Davante Adams",
+            "team_slug": "los-angeles-rams",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": {
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-21T16:19:19.847Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Davante Adams",
+            "team_slug": "los-angeles-rams",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": {
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-21T16:19:19.807Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Davante Adams",
+            "team_slug": "los-angeles-rams",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": {
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "los-angeles-rams:Poona Ford",
+      "value": {
+        "player": "Poona Ford",
+        "team_slug": "los-angeles-rams",
+        "status": "IR",
+        "injury": "Triceps",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://www.therams.com/news/rams-sign-kicker-brandon-mcmanus-place-poona-ford-and-davante-adams-on-injured-reserve",
+          "checkedAt": "2026-10-21T16:24:35.563Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Poona Ford",
+            "team_slug": "los-angeles-rams",
+            "status": "IR",
+            "injury": "Triceps",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-21T16:19:19.847Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Poona Ford",
+            "team_slug": "los-angeles-rams",
+            "status": "IR",
+            "injury": "Triceps",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-21T16:19:19.807Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Poona Ford",
+            "team_slug": "los-angeles-rams",
+            "status": "IR",
+            "injury": "Triceps",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "san-francisco-49ers:Upton Stout",
+      "value": {
+        "player": "Upton Stout",
+        "team_slug": "san-francisco-49ers",
+        "status": null,
+        "injury": "Shoulder - AC Joint",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-21T16:19:19.847Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Upton Stout",
+            "team_slug": "san-francisco-49ers",
+            "status": null,
+            "injury": "Shoulder - AC Joint",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-21T16:19:19.807Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Upton Stout",
+            "team_slug": "san-francisco-49ers",
+            "status": null,
+            "injury": "Shoulder - AC Joint",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "buffalo-bills:Sam Franklin Jr.",
+      "value": {
+        "player": "Sam Franklin Jr.",
+        "team_slug": "buffalo-bills",
+        "status": "SUSPENSION",
+        "asOf": "2026-10-21"
+      },
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-21T16:19:19.847Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Sam Franklin Jr.",
+            "team_slug": "buffalo-bills",
+            "status": "SUSPENSION",
+            "asOf": "2026-10-21"
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-21T16:19:19.807Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Sam Franklin Jr.",
+            "team_slug": "buffalo-bills",
+            "status": "SUSPENSION",
+            "asOf": "2026-10-21"
+          }
+        }
+      ]
+    }
+  ],
+  "moduleReviews": []
+}

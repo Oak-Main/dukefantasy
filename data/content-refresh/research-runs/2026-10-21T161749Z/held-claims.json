@@ -1,0 +1,15 @@
+[
+  {
+    "player": "Kyle Monangai",
+    "claim": "Tuesday LP",
+    "reason": "CBS summary says LP; official Bears and Patriots tables and dated Pats Pulpit report say DNP. Retain the corroborated official DNP record; do not import the conflicting LP summary."
+  },
+  {
+    "claim": "Unilateral feed omissions and estimated return-week changes",
+    "reason": "No activation or recovery is inferred. Preserve unchanged native records unless two explicit current sources justify a change."
+  },
+  {
+    "claim": "Terry McLaurin Week 8 designation",
+    "reason": "Week 8 game designation is outside this Week 7 automation scope."
+  }
+]
