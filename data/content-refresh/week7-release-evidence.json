@@ -1,90 +1,52 @@
 {
   "week": 7,
-  "baseCommit": "96c475bd914dda1f7570b4cd6ada12cc1b3c4d59",
-  "run": "2026-10-22T223012Z",
-  "observations": [
+  "baseCommit": "a1d75d450fa94f7367094c54929ffe13790ff24e",
+  "run": "2026-10-22T224500Z",
+  "observations": [],
+  "moduleReviews": [
     {
-      "kind": "injury",
-      "key": "new-england-patriots:Alijah Vera-Tucker",
-      "value": {
-        "player": "Alijah Vera-Tucker",
-        "team_slug": "new-england-patriots",
-        "status": "IR",
-        "injury": "Hamstring",
-        "practice": null,
-        "designation_date": null,
-        "designation_week": null
-      },
-      "changedFields": [
-        "status",
-        "practice",
-        "designation_date",
-        "designation_week"
-      ],
-      "retainedFieldsFromBase": [
-        "player",
-        "team_slug",
-        "injury"
-      ],
+      "module": "schedule",
+      "sourceAsOf": "2026-10-22",
+      "dataSha256": "a40e226eb3718ea5508ea4c3376ea4e0d9e8e64a0c0270a4286637ee2a6027e6",
+      "scope": "Actual complete fresh NFL/ESPN reconciliation of all 107 games through Week 7, with 93 finals and 14 upcoming identities/kickoffs; no result or player fact changes.",
       "sources": [
         {
-          "url": "https://www.patriots.com/team/transactions/",
-          "checkedAt": "2026-10-22T22:31:26.394Z",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "relatedUrls": [
+            "https://www.nfl.com/schedules/2026/by-week/week-1",
+            "https://www.nfl.com/schedules/2026/by-week/week-2",
+            "https://www.nfl.com/schedules/2026/by-week/week-3",
+            "https://www.nfl.com/schedules/2026/by-week/week-4",
+            "https://www.nfl.com/schedules/2026/by-week/week-5",
+            "https://www.nfl.com/schedules/2026/by-week/week-6",
+            "https://www.nfl.com/schedules/2026/by-week/week-7"
+          ],
+          "checkedAt": "2026-10-22T22:44:53.695Z",
           "reportedWeek": 7,
           "value": {
-            "player": "Alijah Vera-Tucker",
-            "team_slug": "new-england-patriots",
-            "status": "IR",
-            "injury": "Hamstring",
-            "practice": null,
-            "designation_date": null,
-            "designation_week": null
+            "dataSha256": "a40e226eb3718ea5508ea4c3376ea4e0d9e8e64a0c0270a4286637ee2a6027e6",
+            "complete": true
           }
         },
         {
-          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
-          "checkedAt": "2026-10-22T22:31:26.514Z",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "relatedUrls": [
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+          ],
+          "checkedAt": "2026-10-22T22:44:53.633Z",
           "reportedWeek": 7,
           "value": {
-            "player": "Alijah Vera-Tucker",
-            "team_slug": "new-england-patriots",
-            "status": "IR",
-            "injury": "Hamstring",
-            "practice": null,
-            "designation_date": null,
-            "designation_week": null
-          }
-        },
-        {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-22T22:31:26.761Z",
-          "reportedWeek": 7,
-          "value": {
-            "player": "Alijah Vera-Tucker",
-            "team_slug": "new-england-patriots",
-            "status": "IR",
-            "injury": "Hamstring",
-            "practice": null,
-            "designation_date": null,
-            "designation_week": null
-          }
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-22T22:31:26.742Z",
-          "reportedWeek": 7,
-          "value": {
-            "player": "Alijah Vera-Tucker",
-            "team_slug": "new-england-patriots",
-            "status": "IR",
-            "injury": "Hamstring",
-            "practice": null,
-            "designation_date": null,
-            "designation_week": null
+            "dataSha256": "a40e226eb3718ea5508ea4c3376ea4e0d9e8e64a0c0270a4286637ee2a6027e6",
+            "complete": true
           }
         }
       ]
     }
-  ],
-  "moduleReviews": []
+  ]
 }

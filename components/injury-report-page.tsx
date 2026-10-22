@@ -265,7 +265,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
           </div>
         </div>
         {ledgerRows.length ? (
-          <div className="db-table-wrap db-desktop-data-table">
+          <div className="db-table-wrap">
             <table className="db-table inj-table">
               <thead>
                 <tr>
@@ -329,7 +329,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
           </p>
         )}
         {watchRows.length ? (
-          <div className="db-table-wrap db-desktop-data-table">
+          <div className="db-table-wrap">
             <table className="db-table inj-table inj-table--watch">
               <thead>
                 <tr>
