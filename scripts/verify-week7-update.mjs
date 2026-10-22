@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { collectFacts, validateEvidence, publisher } from "./week7-evidence.mjs";
+import { validatePublicationDates } from "./week7-publication-dates.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const read = path => JSON.parse(readFileSync(new URL(`../${path}`, import.meta.url), "utf8"));
@@ -12,13 +13,7 @@ const manifest = read("data/content-refresh/current.json");
 const oldManifest = old("data/content-refresh/current.json");
 const bundle = (load, selection) => ({ snapshot: load(`data/content-refresh/${selection.snapshot}`), injury: load("data/injury-research/current.json"), editorial: load("data/content-refresh/current-editorial.json") });
 const before = bundle(old, oldManifest), after = bundle(read, manifest);
-const todayEastern = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
-for (const row of after.editorial.reserveStatuses ?? []) {
-  if (row.asOf && (!/^\d{4}-\d{2}-\d{2}$/.test(row.asOf) || row.asOf > todayEastern || row.asOf > manifest.sourceAsOf || !Number.isFinite(Date.parse(row.checkedAt)) || Date.parse(row.checkedAt) > Date.now())) throw new Error("Dated reserve status needs a real nonfuture verification date and retrieval timestamp");
-}
-for (const row of after.injury.watch) {
-  if (row.published_status != null && (!["OUT", "DOUBTFUL", "QUESTIONABLE", "NO_DESIGNATION"].includes(row.published_status) || row.designation_week !== 7 || !/^\d{4}-\d{2}-\d{2}$/.test(row.designation_date ?? "") || row.designation_date > todayEastern)) throw new Error("Official designations need the correct dated Week 7 report");
-}
+validatePublicationDates(after, manifest);
 for (const row of [...after.injury.ledger, ...after.injury.watch, ...(after.editorial.reserveStatuses ?? []), ...(after.editorial.practiceReports ?? [])]) {
   if (!Array.isArray(row.sources) || new Set(row.sources.map(publisher)).size < 2) throw new Error("Every published injury/practice record requires two HTTPS publisher families");
 }
@@ -35,8 +30,6 @@ for (const report of after.editorial.inactives ?? []) {
 const verdict = validateEvidence(evidence, collectFacts(before), collectFacts(after));
 // Metadata-only freshness changes require a real, complete review of that module.
 for (const [module, source] of Object.entries(after.editorial.moduleSources)) {
-  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
-  if (source.sourceAsOf && (!/^\d{4}-\d{2}-\d{2}$/.test(source.sourceAsOf) || source.sourceAsOf > today)) throw new Error(`${module}: invalid or future source date`);
   if (source.sourceAsOf !== before.editorial.moduleSources?.[module]?.sourceAsOf && !(evidence.moduleReviews ?? []).some(review => review.module === module)) {
     throw new Error(`${module}: source date changed without a complete two-source review`);
   }

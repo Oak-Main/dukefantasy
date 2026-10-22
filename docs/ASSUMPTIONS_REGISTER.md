@@ -54,3 +54,5 @@ Official designations (2026-10-20): a dated no-designation report does not estab
 2026-10-21 Week 7 practice run: October 20 Patriots/Bears walkthrough estimates are dated participation, not official game designations or game-day active lists. Untouched module source dates remain October 20.
 
 2026-10-21 eligibility run: record-level verification may be newer than the last complete injury-module review. Keep prior module dates; date the new reserve/suspension listing explicitly, without confirming a return or Week 8 game designation.
+
+PR #34 calendar-date correction: date-only metadata uses strict YYYY-MM-DD calendar days; “today” remains America/New_York. A valid older date is not itself stale evidence: the separate two-hour source-retrieval rule still governs publication. Existing absent reserve dates and null unreviewed module dates remain supported. Archived evidence must not be restamped to release this code-only correction.
