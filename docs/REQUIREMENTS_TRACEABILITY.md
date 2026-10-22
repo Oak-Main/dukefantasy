@@ -55,3 +55,5 @@ Official designations (2026-10-20): injury and inactive evidence tests exercise 
 2026-10-21 Week 7 practice run: research-runs/2026-10-21T091337Z records 23 dated practice entries and 11 watch updates with two publisher families per changed fact. Two-source evidence gate and release preflight apply; results/standings and module source dates remain unchanged.
 
 2026-10-21 eligibility run: research-runs/2026-10-21T161749Z contains five changed-fact observations and held claims. Preserve all full-module dates, 272-game results/standings and unrelated editorial data; the release date advances solely for the dated October 21 reserve record.
+
+PR #34 date validation → scripts/week7-publication-dates.mjs, called by scripts/verify-week7-update.mjs; tests/week7-publication-dates.test.mjs is included in npm test. Covers invalid months/days, leap years including 1900/2000/2100, malformed types/strings, Eastern midnight and future limits, release-date bounds, retrieval/status/week guards, immutable historical publication inputs, and the executable two-publisher gate. NFL inputs and active update schedules are unchanged.
