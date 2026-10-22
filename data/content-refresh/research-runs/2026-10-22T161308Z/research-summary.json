@@ -1,0 +1,151 @@
+{
+  "run": "2026-10-22T161308Z",
+  "baseCommit": "898d8aa8e78bbe6f96570a45e9fa717841f1fa34",
+  "checkedAt": "2026-10-22T16:24:13.838Z",
+  "changedFacts": 39,
+  "moduleReviews": 0,
+  "newPracticeRows": 27,
+  "updatedWatchPracticeRows": 11,
+  "updatedWatch": [
+    "Andrew Vorhees",
+    "Baker Mayfield",
+    "Kaden Elliss",
+    "Anfernee Jennings",
+    "Cesar Ruiz",
+    "Trent McDuffie",
+    "Thomas Incoom",
+    "Darnell Mooney",
+    "Benjamin Morrison",
+    "Sean Tucker",
+    "Antoine Winfield Jr."
+  ],
+  "newIRPlacements": [
+    "Carson Steele"
+  ],
+  "unchangedModuleSources": {
+    "schedule": {
+      "sourceAsOf": "2026-10-22",
+      "fetchedAt": "2026-10-22T09:34:06.651Z",
+      "compiledAt": "2026-10-22T09:38:10.764Z"
+    },
+    "injuries": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "fantasy": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "transactions": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "leaders": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "inactives": {
+      "sourceAsOf": null,
+      "fetchedAt": null,
+      "compiledAt": null
+    }
+  },
+  "fullInjuryDate": "2026-10-20",
+  "sourceNormalization": "Match current official table headings and team identities. Tampa Bay precedes Carolina in NFL tables. Dated reports supply missing club tables; injuries publish only the condition shared by both sources (including quad/quadriceps and rib/ribs). A practice-window report never establishes activation. Retained watch fields preserve prior provenance.",
+  "sourceRetrievals": [
+    {
+      "url": "https://www.baltimoreravens.com/team/injury-report/",
+      "checkedAt": "2026-10-22T16:18:09.375Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.cbssports.com/nfl/injuries/",
+      "checkedAt": "2026-10-22T16:18:08.544Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.denverbroncos.com/team/injury-report/",
+      "checkedAt": "2026-10-22T16:18:10.240Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.buccaneers.com/team/injury-report/",
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
+      "checkedAt": "2026-10-22T16:20:13.223Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.raiders.com/news/las-vegas-raiders-los-angeles-rams-week-7-injury-report-2026",
+      "checkedAt": "2026-10-22T16:20:13.292Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://sports.yahoo.com/articles/rams-raiders-injury-report-trent-002503806.html",
+      "checkedAt": "2026-10-22T16:20:13.584Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.buccaneers.com/news/2026-game-preview-buccaneers-panthers-week-7",
+      "checkedAt": "2026-10-22T16:20:13.240Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.giants.com/team/injury-report/",
+      "checkedAt": "2026-10-22T16:18:09.423Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://staging-aws.sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html",
+      "checkedAt": "2026-10-22T16:20:14.466Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-22T16:18:09.768Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.fantasypros.com/nfl/news/615192/dalton-schultz-quad-doesnt-practice-wednesday.php",
+      "checkedAt": "2026-10-22T16:20:13.602Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+      "checkedAt": "2026-10-22T16:18:06.799Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.cbssports.com/nfl/injuries/daily/",
+      "checkedAt": "2026-10-22T16:18:11.120Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.fantasyguru.com/eagles-rb-carson-steele-placed-on-injured-reserve",
+      "checkedAt": "2026-10-22T16:20:13.574Z",
+      "reportedWeek": 7
+    }
+  ],
+  "results": {
+    "gamesCompared": 107,
+    "finalsCompared": 93,
+    "upcomingWeek7": 14,
+    "changes": 0
+  },
+  "heldClaims": 118,
+  "untouched": [
+    "All 272 schedule games, scores, standings and international metadata",
+    "All existing module source dates and snapshot selection",
+    "All official game designations and inactive publication state",
+    "All retained dated practice and reserve eligibility history",
+    "Fantasy, transaction and leader data"
+  ],
+  "heldClaimsNote": "Rebuilt from correctly assigned current team tables and dated articles; supersedes prior wrong-team held-table groupings. Unpublished and one-source records stay held."
+}

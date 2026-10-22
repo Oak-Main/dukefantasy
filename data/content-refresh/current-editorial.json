@@ -2799,6 +2799,411 @@
       ],
       "checkedAt": "2026-10-22T09:29:14.192Z",
       "note": "Wednesday walkthrough participation estimate. Official game designations and reserve eligibility are separate."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Andrew Vorhees",
+      "team_slug": "baltimore-ravens",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Foot",
+      "sources": [
+        "https://www.baltimoreravens.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:18:09.375Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Jonah Elliss",
+      "team_slug": "denver-broncos",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.denverbroncos.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.240Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Emeka Egbuka",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Luke Goedeke",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Bucky Irving",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Illness",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Calijah Kancey",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Illness",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Baker Mayfield",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Thumb",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Zyon McCollum",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Illness",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Christian Rozeboom",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Finger",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "CJ Donaldson",
+      "team_slug": "new-orleans-saints",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.223Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Kaden Elliss",
+      "team_slug": "new-orleans-saints",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.223Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Anfernee Jennings",
+      "team_slug": "new-orleans-saints",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.223Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Alvin Kamara",
+      "team_slug": "new-orleans-saints",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Back",
+      "sources": [
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.223Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Cesar Ruiz",
+      "team_slug": "new-orleans-saints",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.223Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Trent McDuffie",
+      "team_slug": "los-angeles-rams",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Groin",
+      "sources": [
+        "https://www.raiders.com/news/las-vegas-raiders-los-angeles-rams-week-7-injury-report-2026",
+        "https://sports.yahoo.com/articles/rams-raiders-injury-report-trent-002503806.html"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.584Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Nate Landman",
+      "team_slug": "los-angeles-rams",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.raiders.com/news/las-vegas-raiders-los-angeles-rams-week-7-injury-report-2026",
+        "https://sports.yahoo.com/articles/rams-raiders-injury-report-trent-002503806.html"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.584Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Josh Wallace",
+      "team_slug": "los-angeles-rams",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.raiders.com/news/las-vegas-raiders-los-angeles-rams-week-7-injury-report-2026",
+        "https://sports.yahoo.com/articles/rams-raiders-injury-report-trent-002503806.html"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.584Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Colby Parkinson",
+      "team_slug": "los-angeles-rams",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.raiders.com/news/las-vegas-raiders-los-angeles-rams-week-7-injury-report-2026",
+        "https://sports.yahoo.com/articles/rams-raiders-injury-report-trent-002503806.html"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.584Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Thomas Incoom",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.buccaneers.com/news/2026-game-preview-buccaneers-panthers-week-7",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.240Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Jaelan Phillips",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.buccaneers.com/news/2026-game-preview-buccaneers-panthers-week-7",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.240Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Paulson Adebo",
+      "team_slug": "new-york-giants",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://staging-aws.sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html"
+      ],
+      "checkedAt": "2026-10-22T16:20:14.466Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Thomas Fidone II",
+      "team_slug": "new-york-giants",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://staging-aws.sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html"
+      ],
+      "checkedAt": "2026-10-22T16:20:14.466Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Darnell Mooney",
+      "team_slug": "new-york-giants",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Neck",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://staging-aws.sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html"
+      ],
+      "checkedAt": "2026-10-22T16:20:14.466Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Benjamin Morrison",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Quadriceps",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Sean Tucker",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Quadriceps",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Antoine Winfield Jr.",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Rib",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ],
+      "checkedAt": "2026-10-22T16:18:10.318Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Dalton Schultz",
+      "team_slug": "houston-texans",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Quadriceps",
+      "sources": [
+        "https://www.fantasypros.com/nfl/news/615192/dalton-schultz-quad-doesnt-practice-wednesday.php",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "checkedAt": "2026-10-22T16:20:13.602Z",
+      "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
     }
   ],
   "limitations": [
