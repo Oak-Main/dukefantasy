@@ -1,0 +1,199 @@
+{
+  "run": "2026-10-22T091803Z",
+  "baseCommit": "5e3eacfaa0cc6a3d68dab89ecd59a60362577512",
+  "checkedAt": "2026-10-22T09:38:10.819Z",
+  "changedFacts": 181,
+  "moduleReviews": 1,
+  "datedPracticeRows": 118,
+  "updatedWatchPracticeRows": 55,
+  "officialDesignations": 15,
+  "newIRPlacements": [
+    "Kobie Turner"
+  ],
+  "practiceTeams": [
+    "arizona-cardinals",
+    "atlanta-falcons",
+    "baltimore-ravens",
+    "chicago-bears",
+    "cincinnati-bengals",
+    "cleveland-browns",
+    "denver-broncos",
+    "detroit-lions",
+    "green-bay-packers",
+    "kansas-city-chiefs",
+    "las-vegas-raiders",
+    "miami-dolphins",
+    "minnesota-vikings",
+    "new-york-giants",
+    "new-york-jets",
+    "new-england-patriots",
+    "pittsburgh-steelers",
+    "san-francisco-49ers",
+    "seattle-seahawks",
+    "tennessee-titans"
+  ],
+  "fullModuleDates": {
+    "schedule": "2026-10-22",
+    "injuries": "2026-10-20",
+    "fantasy": "2026-10-20",
+    "transactions": "2026-10-20",
+    "leaders": "2026-10-20"
+  },
+  "sourceNormalization": "Case, apostrophes and suffixes normalize player identity. Each dated practice injury uses the condition expressly shared by the club and corroborating publisher. Preserved watch fields retain their prior verified provenance; only changed fields are re-attested. Club team tables are matched to NFL team identities; wrong-team pages are held.",
+  "results": {
+    "gamesCompared": 107,
+    "finalsCompared": 93,
+    "upcomingWeek7": 14,
+    "changes": 0
+  },
+  "sourceRetrievals": [
+    {
+      "url": "https://www.azcardinals.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.984Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.cbssports.com/nfl/injuries/",
+      "checkedAt": "2026-10-22T09:19:02.334Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.atlantafalcons.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.036Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.baltimoreravens.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.024Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.chicagobears.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:19:02.083Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+      "checkedAt": "2026-10-22T09:21:48.637Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.bengals.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.185Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.559Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.denverbroncos.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.938Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.detroitlions.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:48.320Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.packers.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:48.316Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.chiefs.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:48.460Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.raiders.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.967Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.miamidolphins.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.735Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.vikings.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.775Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.giants.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.526Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.newyorkjets.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.485Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.patriots.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:19:02.092Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.steelers.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.000Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.49ers.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.042Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.seahawks.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:48.360Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.tennesseetitans.com/team/injury-report/",
+      "checkedAt": "2026-10-22T09:21:47.668Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-22T09:19:02.391Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kyle-monangai-ruled-out-jonah-jackson-set-to-play-vs-patriots",
+      "checkedAt": "2026-10-22T09:29:14.192Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.therams.com/team/transactions/",
+      "checkedAt": "2026-10-22T09:30:01.290Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+      "checkedAt": "2026-10-22T09:30:01.380Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.cbssports.com/nfl/injuries/daily/",
+      "checkedAt": "2026-10-22T09:30:06.038Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears",
+      "checkedAt": "2026-10-22T09:29:13.794Z",
+      "reportedWeek": 7
+    }
+  ],
+  "heldClaims": 124,
+  "untouched": [
+    "All 272 games and international metadata",
+    "All full injury, fantasy, transaction and leader module dates",
+    "Reserve eligibility except explicit Turner IR placement",
+    "Dated Monday/Tuesday history",
+    "Unpublished complete game-day inactive lists"
+  ]
+}
