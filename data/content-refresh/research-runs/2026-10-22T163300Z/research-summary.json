@@ -1,0 +1,86 @@
+{
+  "run": "2026-10-22T163300Z",
+  "baseCommit": "0b68947f5f1edb0e4d4be7ffbf777e5926d8b1cc",
+  "changedFacts": 0,
+  "moduleReviews": 1,
+  "checkedAt": "2026-10-22T16:35:07.556Z",
+  "purpose": "Replace three reader-facing staging-host practice citations and one watch citation with the fetched production canonical URL. Record PR37 decisions and this correction in all three required release registers.",
+  "playerFactsChanged": 0,
+  "priorPublication": {
+    "pr": 37,
+    "newPracticeRows": 27,
+    "watchPracticeRows": 11,
+    "IR": "Carson Steele",
+    "productionSmokeChecks": 16
+  },
+  "sourceDates": "Schedule stays October 22 with the actual newly completed full reconciliation retrieval. Full injury and untouched fantasy/transaction/leader dates stay October 20.",
+  "citationReviews": [
+    {
+      "player": "Paulson Adebo",
+      "team": "new-york-giants",
+      "date": "2026-10-21",
+      "participation": "LP",
+      "injury": "Knee",
+      "sources": [
+        {
+          "url": "https://www.giants.com/team/injury-report/",
+          "checkedAt": "2026-10-22T16:35:06.284Z",
+          "reportedWeek": 7
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html",
+          "checkedAt": "2026-10-22T16:33:29.935Z",
+          "reportedWeek": 7
+        }
+      ],
+      "reason": "Canonical production Yahoo URL observed in the staging page canonical/og:url tags, then fetched directly with HTTP 200 and the matching dated report."
+    },
+    {
+      "player": "Thomas Fidone II",
+      "team": "new-york-giants",
+      "date": "2026-10-21",
+      "participation": "FP",
+      "injury": "Shoulder",
+      "sources": [
+        {
+          "url": "https://www.giants.com/team/injury-report/",
+          "checkedAt": "2026-10-22T16:35:06.284Z",
+          "reportedWeek": 7
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html",
+          "checkedAt": "2026-10-22T16:33:29.935Z",
+          "reportedWeek": 7
+        }
+      ],
+      "reason": "Canonical production Yahoo URL observed in the staging page canonical/og:url tags, then fetched directly with HTTP 200 and the matching dated report."
+    },
+    {
+      "player": "Darnell Mooney",
+      "team": "new-york-giants",
+      "date": "2026-10-21",
+      "participation": "FP",
+      "injury": "Neck",
+      "sources": [
+        {
+          "url": "https://www.giants.com/team/injury-report/",
+          "checkedAt": "2026-10-22T16:35:06.284Z",
+          "reportedWeek": 7
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html",
+          "checkedAt": "2026-10-22T16:33:29.935Z",
+          "reportedWeek": 7
+        }
+      ],
+      "reason": "Canonical production Yahoo URL observed in the staging page canonical/og:url tags, then fetched directly with HTTP 200 and the matching dated report."
+    }
+  ],
+  "results": {
+    "games": 107,
+    "finals": 93,
+    "upcoming": 14,
+    "changes": 0
+  },
+  "heldClaims": "Retain data/content-refresh/research-runs/2026-10-22T161308Z/held-claims.json unchanged."
+}

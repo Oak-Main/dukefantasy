@@ -3110,9 +3110,9 @@
       "injury": "Knee",
       "sources": [
         "https://www.giants.com/team/injury-report/",
-        "https://staging-aws.sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html"
+        "https://sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html"
       ],
-      "checkedAt": "2026-10-22T16:20:14.466Z",
+      "checkedAt": "2026-10-22T16:35:06.284Z",
       "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
     },
     {
@@ -3125,9 +3125,9 @@
       "injury": "Shoulder",
       "sources": [
         "https://www.giants.com/team/injury-report/",
-        "https://staging-aws.sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html"
+        "https://sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html"
       ],
-      "checkedAt": "2026-10-22T16:20:14.466Z",
+      "checkedAt": "2026-10-22T16:35:06.284Z",
       "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
     },
     {
@@ -3140,9 +3140,9 @@
       "injury": "Neck",
       "sources": [
         "https://www.giants.com/team/injury-report/",
-        "https://staging-aws.sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html"
+        "https://sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html"
       ],
-      "checkedAt": "2026-10-22T16:20:14.466Z",
+      "checkedAt": "2026-10-22T16:35:06.284Z",
       "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
     },
     {
@@ -3360,8 +3360,8 @@
   "moduleSources": {
     "schedule": {
       "sourceAsOf": "2026-10-22",
-      "fetchedAt": "2026-10-22T09:34:06.651Z",
-      "compiledAt": "2026-10-22T09:38:10.764Z"
+      "fetchedAt": "2026-10-22T16:35:07.475Z",
+      "compiledAt": "2026-10-22T16:35:07.522Z"
     },
     "injuries": {
       "sourceAsOf": "2026-10-20",
