@@ -1,0 +1,16 @@
+{
+  "run": "2026-10-22T224500Z",
+  "changedFacts": 0,
+  "moduleReviews": 1,
+  "baseCommit": "a1d75d450fa94f7367094c54929ffe13790ff24e",
+  "purpose": "Keep both injury ledger and watch tables visible on mobile within their existing bounded scroll containers; the shared desktop-only class hid them without a mobile replacement.",
+  "priorVerifiedData": "PR39 Vera-Tucker IR and Next.js 16.4.2 remain in main; preserve all 169 dated practices, source dates and prior IR evidence.",
+  "rollback": "Prior Worker 4e89fdfd-8efe-4437-adec-7b9c80ed2797 restored and both domains verified after the failed mobile gate.",
+  "results": {
+    "games": 107,
+    "finals": 93,
+    "upcoming": 14,
+    "changes": 0
+  },
+  "validation": "Complete preflight and fresh desktop/mobile browser verification are required before acceptance."
+}

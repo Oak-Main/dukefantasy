@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-22T22:45:36.491Z",
+  "gameId": "401873010",
+  "week": 7,
+  "scope": "First game-day inactive-window check",
+  "publication": false,
+  "findings": [
+    {
+      "url": "https://www.patriots.com/news/week-7-inactives-patriots-at-bears",
+      "reportedDate": "2018-10-21",
+      "decision": "REJECT_WRONG_YEAR",
+      "reason": "Reused article URL resolves to a 2018 Patriots-Bears report despite current news links in its shared navigation."
+    },
+    {
+      "url": "https://www.patriots.com/news/archive",
+      "decision": "HOLD",
+      "reason": "No current complete inactive-list link observed."
+    },
+    {
+      "url": "https://www.chicagobears.com/news/",
+      "decision": "HOLD",
+      "reason": "No current complete inactive-list link observed."
+    },
+    {
+      "url": "https://www.patspulpit.com/new-england-patriots-news",
+      "decision": "HOLD",
+      "reason": "Only prior-week inactive article links were observed."
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873010",
+      "decision": "HOLD",
+      "reason": "No complete inactive list or emergency-quarterback designation was supplied."
+    }
+  ]
+}
