@@ -1,0 +1,90 @@
+{
+  "week": 7,
+  "baseCommit": "96c475bd914dda1f7570b4cd6ada12cc1b3c4d59",
+  "run": "2026-10-22T223012Z",
+  "observations": [
+    {
+      "kind": "injury",
+      "key": "new-england-patriots:Alijah Vera-Tucker",
+      "value": {
+        "player": "Alijah Vera-Tucker",
+        "team_slug": "new-england-patriots",
+        "status": "IR",
+        "injury": "Hamstring",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury"
+      ],
+      "sources": [
+        {
+          "url": "https://www.patriots.com/team/transactions/",
+          "checkedAt": "2026-10-22T22:31:26.394Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-22T22:31:26.514Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-22T22:31:26.761Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-22T22:31:26.742Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    }
+  ],
+  "moduleReviews": []
+}

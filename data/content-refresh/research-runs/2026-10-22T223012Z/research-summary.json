@@ -1,0 +1,138 @@
+{
+  "run": "2026-10-22T223012Z",
+  "baseCommit": "96c475bd914dda1f7570b4cd6ada12cc1b3c4d59",
+  "checkedAt": "2026-10-22T22:33:05.753Z",
+  "changedFacts": 1,
+  "moduleReviews": 0,
+  "newIRPlacement": "Alijah Vera-Tucker",
+  "priorOfficialDesignation": {
+    "player": "Alijah Vera-Tucker",
+    "team_slug": "new-england-patriots",
+    "position": "G",
+    "injury": "Hamstring",
+    "practice": {
+      "mon": null,
+      "tue": "DNP",
+      "wed": "DNP",
+      "thu": null,
+      "fri": null,
+      "sat": null
+    },
+    "likelihood": "unlikely",
+    "confidence": "high",
+    "note": "Official October 21 Week 7 game designation: OUT. Wednesday walkthrough estimate: DNP. This is not a complete game-day inactive list or proof of active roster eligibility.",
+    "sources": [
+      "https://www.espn.com/nfl/injuries",
+      "https://www.cbssports.com/nfl/injuries/",
+      "https://www.patriots.com/team/injury-report/",
+      "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+      "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
+    ],
+    "social": [],
+    "published_status": "OUT",
+    "designation_date": "2026-10-21",
+    "designation_week": 7
+  },
+  "retainedPracticeReports": [
+    {
+      "date": "2026-10-20",
+      "week": 7,
+      "player": "Alijah Vera-Tucker",
+      "team_slug": "new-england-patriots",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+      ],
+      "checkedAt": "2026-10-21T09:18:56.267Z",
+      "note": "Tuesday walkthrough estimate; no final game designation is published in these reports."
+    },
+    {
+      "date": "2026-10-21",
+      "week": 7,
+      "player": "Alijah Vera-Tucker",
+      "team_slug": "new-england-patriots",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.patriots.com/team/injury-report/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
+      ],
+      "checkedAt": "2026-10-22T09:19:02.391Z",
+      "note": "Wednesday walkthrough participation estimate. Official game designations and reserve eligibility are separate."
+    }
+  ],
+  "sourceRetrievals": [
+    {
+      "url": "https://www.patriots.com/team/transactions/",
+      "checkedAt": "2026-10-22T22:31:26.394Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+      "checkedAt": "2026-10-22T22:31:26.514Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-22T22:31:26.761Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.cbssports.com/nfl/injuries/",
+      "checkedAt": "2026-10-22T22:31:26.742Z",
+      "reportedWeek": 7
+    }
+  ],
+  "gameWindow": {
+    "kickoff": "2026-10-23T00:15:00Z",
+    "inactiveListsStart": "2026-10-22T22:45:00Z",
+    "inactives": "Not yet due at source retrieval; no list inferred from OUT or IR."
+  },
+  "unchangedModuleSources": {
+    "schedule": {
+      "sourceAsOf": "2026-10-22",
+      "fetchedAt": "2026-10-22T16:35:07.475Z",
+      "compiledAt": "2026-10-22T16:35:07.522Z"
+    },
+    "injuries": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "fantasy": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "transactions": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "leaders": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "inactives": {
+      "sourceAsOf": null,
+      "fetchedAt": null,
+      "compiledAt": null
+    }
+  },
+  "results": "NFL/ESPN Week 7 schedule still agrees; no finals published.",
+  "untouched": [
+    "All 272 games and international metadata",
+    "All module source dates",
+    "All 169 dated practice reports",
+    "Existing inactive state, fantasy, transactions and leaders"
+  ],
+  "notes": "The old ESPN news paragraph remains dated before the IR placement and mentions a possible Week 8 return. Only its explicit current IR/Hamstring fields corroborate this publication; do not republish that outdated return projection."
+}

@@ -1,114 +1,90 @@
 {
   "week": 7,
-  "baseCommit": "0b68947f5f1edb0e4d4be7ffbf777e5926d8b1cc",
-  "run": "2026-10-22T163300Z",
-  "observations": [],
-  "moduleReviews": [
+  "baseCommit": "96c475bd914dda1f7570b4cd6ada12cc1b3c4d59",
+  "run": "2026-10-22T223012Z",
+  "observations": [
     {
-      "module": "schedule",
-      "sourceAsOf": "2026-10-22",
-      "dataSha256": "a40e226eb3718ea5508ea4c3376ea4e0d9e8e64a0c0270a4286637ee2a6027e6",
-      "scope": "Fresh complete NFL/ESPN comparison of all 107 games through Week 7, including 93 finals and 14 upcoming game identities and kickoffs; no factual changes.",
+      "kind": "injury",
+      "key": "new-england-patriots:Alijah Vera-Tucker",
+      "value": {
+        "player": "Alijah Vera-Tucker",
+        "team_slug": "new-england-patriots",
+        "status": "IR",
+        "injury": "Hamstring",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury"
+      ],
       "sources": [
         {
-          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
-          "relatedUrls": [
-            "https://www.nfl.com/schedules/2026/by-week/week-1",
-            "https://www.nfl.com/schedules/2026/by-week/week-2",
-            "https://www.nfl.com/schedules/2026/by-week/week-3",
-            "https://www.nfl.com/schedules/2026/by-week/week-4",
-            "https://www.nfl.com/schedules/2026/by-week/week-5",
-            "https://www.nfl.com/schedules/2026/by-week/week-6",
-            "https://www.nfl.com/schedules/2026/by-week/week-7"
-          ],
-          "checkedAt": "2026-10-22T16:35:07.417Z",
+          "url": "https://www.patriots.com/team/transactions/",
+          "checkedAt": "2026-10-22T22:31:26.394Z",
           "reportedWeek": 7,
           "value": {
-            "dataSha256": "a40e226eb3718ea5508ea4c3376ea4e0d9e8e64a0c0270a4286637ee2a6027e6",
-            "complete": true
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
           }
         },
         {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
-          "relatedUrls": [
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
-          ],
-          "checkedAt": "2026-10-22T16:35:07.475Z",
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-22T22:31:26.514Z",
           "reportedWeek": 7,
           "value": {
-            "dataSha256": "a40e226eb3718ea5508ea4c3376ea4e0d9e8e64a0c0270a4286637ee2a6027e6",
-            "complete": true
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-22T22:31:26.761Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-22T22:31:26.742Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alijah Vera-Tucker",
+            "team_slug": "new-england-patriots",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
           }
         }
       ]
     }
   ],
-  "citationReviews": [
-    {
-      "player": "Paulson Adebo",
-      "team": "new-york-giants",
-      "date": "2026-10-21",
-      "participation": "LP",
-      "injury": "Knee",
-      "sources": [
-        {
-          "url": "https://www.giants.com/team/injury-report/",
-          "checkedAt": "2026-10-22T16:35:06.284Z",
-          "reportedWeek": 7
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html",
-          "checkedAt": "2026-10-22T16:33:29.935Z",
-          "reportedWeek": 7
-        }
-      ],
-      "reason": "Canonical production Yahoo URL observed in the staging page canonical/og:url tags, then fetched directly with HTTP 200 and the matching dated report."
-    },
-    {
-      "player": "Thomas Fidone II",
-      "team": "new-york-giants",
-      "date": "2026-10-21",
-      "participation": "FP",
-      "injury": "Shoulder",
-      "sources": [
-        {
-          "url": "https://www.giants.com/team/injury-report/",
-          "checkedAt": "2026-10-22T16:35:06.284Z",
-          "reportedWeek": 7
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html",
-          "checkedAt": "2026-10-22T16:33:29.935Z",
-          "reportedWeek": 7
-        }
-      ],
-      "reason": "Canonical production Yahoo URL observed in the staging page canonical/og:url tags, then fetched directly with HTTP 200 and the matching dated report."
-    },
-    {
-      "player": "Darnell Mooney",
-      "team": "new-york-giants",
-      "date": "2026-10-21",
-      "participation": "FP",
-      "injury": "Neck",
-      "sources": [
-        {
-          "url": "https://www.giants.com/team/injury-report/",
-          "checkedAt": "2026-10-22T16:35:06.284Z",
-          "reportedWeek": 7
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/york-giants-injury-report-paulson-201004992.html",
-          "checkedAt": "2026-10-22T16:33:29.935Z",
-          "reportedWeek": 7
-        }
-      ],
-      "reason": "Canonical production Yahoo URL observed in the staging page canonical/og:url tags, then fetched directly with HTTP 200 and the matching dated report."
-    }
-  ]
+  "moduleReviews": []
 }
