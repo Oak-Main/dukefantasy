@@ -3857,6 +3857,22 @@
         "https://www.fantasyguru.com/eagles-rb-carson-steele-placed-on-injured-reserve"
       ],
       "confidence": "high"
+    },
+    {
+      "player": "Alijah Vera-Tucker",
+      "team_slug": "new-england-patriots",
+      "position": "G",
+      "injury": "Hamstring",
+      "status": "IR",
+      "weeks_out": null,
+      "detail": "Placed on injured reserve October 22, confirmed by the Patriots and NFL transaction records, ESPN current status and CBS. His October 21 OUT designation and dated walkthrough reports remain historical evidence; an estimated return is not activation.",
+      "sources": [
+        "https://www.patriots.com/team/transactions/",
+        "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "confidence": "high"
     }
   ],
   "watch": [
@@ -5537,36 +5553,6 @@
       "team_slug": "new-england-patriots",
       "position": "C",
       "injury": "Knee",
-      "practice": {
-        "mon": null,
-        "tue": "DNP",
-        "wed": "DNP",
-        "thu": null,
-        "fri": null,
-        "sat": null
-      },
-      "likelihood": "unlikely",
-      "confidence": "high",
-      "note": "Official October 21 Week 7 game designation: OUT. Wednesday walkthrough estimate: DNP. This is not a complete game-day inactive list or proof of active roster eligibility.",
-      "sources": [
-        "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/",
-        "https://www.patriots.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
-        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
-      ],
-      "social": [],
-      "published_status": "OUT",
-      "designation_date": "2026-10-21",
-      "designation_week": 7
-    },
-    {
-      "player": "Alijah Vera-Tucker",
-      "team_slug": "new-england-patriots",
-      "position": "G",
-      "injury": "Hamstring",
       "practice": {
         "mon": null,
         "tue": "DNP",
