@@ -56,7 +56,7 @@ test("release date must also be a real nonfuture calendar day", () => {
 });
 test("reserve dates cannot exceed the release date and still require a nonfuture retrieval timestamp", () => {
   assert.throws(() => validatePublicationDates(candidate(), { sourceAsOf: "2026-10-20" }, now), /reserve status/);
-  for (const checkedAt of [undefined, "not-a-timestamp", "2026-10-22T02:00:01Z"]) {
+  for (const checkedAt of [undefined, "not-a-timestamp", "2026-10-22T02:00:01Z", 0, ["2026-10-21T16:19:19Z"], new Date("2026-10-21T16:19:19Z")]) {
     const data = candidate(); data.editorial.reserveStatuses[0].checkedAt = checkedAt;
     assert.throws(() => validatePublicationDates(data, manifest, now), /reserve status/);
   }
@@ -76,7 +76,8 @@ test("the actual published records retain their historical verification dates", 
   const read = path => JSON.parse(readFileSync(new URL(`../${path}`, import.meta.url), "utf8"));
   const data = { injury: read("data/injury-research/current.json"), editorial: read("data/content-refresh/current-editorial.json") };
   const original = structuredClone(data);
-  validatePublicationDates(data, read("data/content-refresh/current.json"), new Date("2026-10-22T12:00:00Z"));
+  // Publication inputs advance with the scheduled updater; fixed clocks belong to the fixtures above.
+  validatePublicationDates(data, read("data/content-refresh/current.json"));
   assert.deepEqual(data, original);
 });
 

@@ -12,7 +12,7 @@ export function validatePublicationDates(after, manifest, now = new Date()) {
     throw new Error("Invalid or future release source date");
   }
   for (const row of after.editorial.reserveStatuses ?? []) {
-    if (row.asOf != null && (!isCalendarDate(row.asOf) || row.asOf > todayEastern || row.asOf > manifest.sourceAsOf || !Number.isFinite(Date.parse(row.checkedAt)) || Date.parse(row.checkedAt) > now.getTime())) {
+    if (row.asOf != null && (!isCalendarDate(row.asOf) || row.asOf > todayEastern || row.asOf > manifest.sourceAsOf || typeof row.checkedAt !== "string" || !Number.isFinite(Date.parse(row.checkedAt)) || Date.parse(row.checkedAt) > now.getTime())) {
       throw new Error("Dated reserve status needs a real nonfuture verification date and retrieval timestamp");
     }
   }
