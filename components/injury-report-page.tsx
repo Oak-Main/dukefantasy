@@ -224,9 +224,9 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       </section>
       <section className="apex-container db-section" aria-labelledby="dated-practice-title">
         <h2 id="dated-practice-title">Dated Week 7 practice reports</h2>
-        {practiceReports.map(report => <article className="research-card" key={report.player + report.date}>
+        {practiceReports.filter(report => !teamFilter || report.team_slug === teamFilter).map(report => <article className="research-card" key={report.team_slug + report.player + report.date}>
           <h3>{report.player} · {report.participation}</h3>
-          <p><time dateTime={report.date}>{report.date}</time> · Week {report.week} · Estimated walkthrough · {report.injury}</p>
+          <p><time dateTime={report.date}>{report.date}</time> · Week {report.week} · {teamBySlug.get(report.team_slug)?.name ?? report.team_slug} · {report.report_type === "estimated_walkthrough" ? "Estimated walkthrough" : "Practice report"} · {report.injury}</p>
           <p>{report.note}</p><EvidenceLinks urls={report.sources} />
         </article>)}
       </section>

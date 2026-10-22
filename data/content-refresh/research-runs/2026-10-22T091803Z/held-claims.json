@@ -1,0 +1,736 @@
+[
+  {
+    "team": "houston-texans",
+    "reason": "The resolved club page does not contain the expected team table; exclude rather than import the opponent under this team."
+  },
+  {
+    "team": "los-angeles-rams",
+    "reason": "The resolved club page does not contain the expected team table; exclude rather than import the opponent under this team."
+  },
+  {
+    "team": "new-orleans-saints",
+    "reason": "The resolved club page does not contain the expected team table; exclude rather than import the opponent under this team."
+  },
+  {
+    "team": "tampa-bay-buccaneers",
+    "reason": "The resolved club page does not contain the expected team table; exclude rather than import the opponent under this team."
+  },
+  {
+    "team": "arizona-cardinals",
+    "player": "Walter Nolen",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "arizona-cardinals",
+    "player": "Isaac Seumalo",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "arizona-cardinals",
+    "player": "Josh Sweat",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "arizona-cardinals",
+    "player": "Jedrick Wills",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "atlanta-falcons",
+    "player": "Kendal Daniels",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "atlanta-falcons",
+    "player": "Beaux Collins",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "atlanta-falcons",
+    "player": "Michael Jerrell",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "atlanta-falcons",
+    "player": "A.J. Terrell",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "baltimore-ravens",
+    "player": "Mark Andrews",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "baltimore-ravens",
+    "player": "Calais Campbell",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "baltimore-ravens",
+    "player": "Trey Hendrickson",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "baltimore-ravens",
+    "player": "Matthew Hibner",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "baltimore-ravens",
+    "player": "Olaivavega Ioane",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "baltimore-ravens",
+    "player": "Ronnie Stanley",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "baltimore-ravens",
+    "player": "T.J. Tampa",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "baltimore-ravens",
+    "player": "Andrew Vorhees",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "baltimore-ravens",
+    "player": "Broderick Washington",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "chicago-bears",
+    "player": "Kyle Monangai",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "chicago-bears",
+    "player": "Keyshaun Elliott",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Riley Dixon",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Emeka Egbuka",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Luke Goedeke",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Bucky Irving",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Calijah Kancey",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Cody Mauch",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Baker Mayfield",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Zyon McCollum",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Chase McLaughlin",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Benjamin Morrison",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Christian Rozeboom",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "David Sills",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Josiah Trotter",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Sean Tucker",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Vita Vea",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "carolina-panthers",
+    "player": "Antoine Winfield Jr.",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "cleveland-browns",
+    "player": "KC Concepcion",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "cleveland-browns",
+    "player": "Kalia Davis",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "cleveland-browns",
+    "player": "Dillon Gabriel",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "cleveland-browns",
+    "player": "Mason Graham",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "cleveland-browns",
+    "player": "Mike Hall Jr.",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "cleveland-browns",
+    "player": "Justin Jefferson",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "cleveland-browns",
+    "player": "Dylan Sampson",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "denver-broncos",
+    "player": "Jonah Coleman",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "denver-broncos",
+    "player": "Riley Moss",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "denver-broncos",
+    "player": "Zach Allen",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "denver-broncos",
+    "player": "Pat Surtain II",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "denver-broncos",
+    "player": "Jonah Elliss",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "detroit-lions",
+    "player": "Brian Branch",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "detroit-lions",
+    "player": "Cade Mays",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "green-bay-packers",
+    "player": "Jordon Riley",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Austin Ajiake",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Keenan Allen",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Bryce Boettcher",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Jaylon Carlies",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Ashton Dulin",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Sauce Gardner",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Matt Goncalves",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Anthony Gould",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Andrew Ogletree",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Rigoberto Sanchez",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Jonathan Taylor",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Jerry Tillery",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Jalen Travis",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Justin Walley",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Charvarius Ward",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "indianapolis-colts",
+    "player": "Tyler Warren",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "kansas-city-chiefs",
+    "player": "Cyrus Allen",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "kansas-city-chiefs",
+    "player": "Chamarri Conner",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "kansas-city-chiefs",
+    "player": "Cooper McDonald",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "kansas-city-chiefs",
+    "player": "Trey Smith",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "kansas-city-chiefs",
+    "player": "Patrick Mahomes",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "las-vegas-raiders",
+    "player": "Spencer Burford",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "las-vegas-raiders",
+    "player": "Foley Fatukasi",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "las-vegas-raiders",
+    "player": "Segun Olubi",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "las-vegas-raiders",
+    "player": "Carter Runyon",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "las-vegas-raiders",
+    "player": "Dont'e Thornton Jr.",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "las-vegas-raiders",
+    "player": "Trey Zuhn III",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "miami-dolphins",
+    "player": "Rob Beal Jr.",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "miami-dolphins",
+    "player": "Kyle Louis",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "miami-dolphins",
+    "player": "Julius Brents",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "miami-dolphins",
+    "player": "Jordyn Brooks",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "miami-dolphins",
+    "player": "Jonah Savaiinaea",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "miami-dolphins",
+    "player": "Malik Willis",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "miami-dolphins",
+    "player": "Jackson Woodard",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "minnesota-vikings",
+    "player": "Jordan Addison",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "minnesota-vikings",
+    "player": "Charles Demmings",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "minnesota-vikings",
+    "player": "Jordan Mason",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-york-giants",
+    "player": "Paulson Adebo",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-york-giants",
+    "player": "Thomas Fidone II",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-york-giants",
+    "player": "Darnell Mooney",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-york-jets",
+    "player": "Demario Davis",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-york-jets",
+    "player": "Francisco Mauigoa",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-york-jets",
+    "player": "Harrison Phillips",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-england-patriots",
+    "player": "Andy Borregales",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-england-patriots",
+    "player": "Joshua Farmer",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-england-patriots",
+    "player": "Channing Canada",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-england-patriots",
+    "player": "Karon Prunty",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-england-patriots",
+    "player": "Marcus Bryant",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-england-patriots",
+    "player": "Will Campbell",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-england-patriots",
+    "player": "TreVeyon Henderson",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-england-patriots",
+    "player": "Dre'Mont Jones",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "new-england-patriots",
+    "player": "Drake Maye",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "pittsburgh-steelers",
+    "player": "DeShon Elliott",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "pittsburgh-steelers",
+    "player": "Sebastian Joseph-Day",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "pittsburgh-steelers",
+    "player": "T.J. Watt",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "pittsburgh-steelers",
+    "player": "Cameron Heyward",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "san-francisco-49ers",
+    "player": "Romello Height",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "san-francisco-49ers",
+    "player": "Christian Kirk",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "san-francisco-49ers",
+    "player": "Deebo Samuel Sr.",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "san-francisco-49ers",
+    "player": "Upton Stout",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "san-francisco-49ers",
+    "player": "Garret Wallow",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "san-francisco-49ers",
+    "player": "Trent Williams",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "seattle-seahawks",
+    "player": "Anthony Bradford",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "seattle-seahawks",
+    "player": "Zach Charbonnet",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "seattle-seahawks",
+    "player": "DeMarcus Lawrence",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "tennessee-titans",
+    "player": "John Franklin-Myers",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "tennessee-titans",
+    "player": "Dorian Mausi",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "team": "tennessee-titans",
+    "player": "Tyjae Spears",
+    "claim": "Wednesday participation record",
+    "reason": "A complete matching second-publisher observation of participation and injury detail was not established; retain prior verified record."
+  },
+  {
+    "player": "Carson Steele",
+    "claim": "October 21 Philadelphia reserve/injured entry",
+    "reason": "NFL wire has an entry, but neither current ESPN nor CBS injury feeds supplied a matching confirmation; do not move or remove the prior team record on one source."
+  },
+  {
+    "player": "Kyle Monangai",
+    "claim": "Prior Tuesday LP discrepancy",
+    "reason": "Prior corroborated Tuesday DNP remains. Publish the new corroborated OUT designation separately; do not infer Wednesday participation or reserve placement."
+  }
+]

@@ -102,6 +102,21 @@ test("critical product routes render dataset-backed content", async () => {
   }
 });
 
+test("dated practice cards distinguish practice reports from walkthrough estimates", async () => {
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const html = (await response.text()).replaceAll("<!-- -->", "");
+  const dated = html.match(/<section[^>]+aria-labelledby="dated-practice-title"[\s\S]*?<\/section>/)?.[0] ?? "";
+  const cards = [...dated.matchAll(/<article\b[\s\S]*?<\/article>/g)].map(match => match[0]);
+  const hall = cards.find(card => card.includes("Breece Hall") && card.includes("2026-10-21"));
+  const edwards = cards.find(card => card.includes("T.J. Edwards") && card.includes("2026-10-21"));
+  assert.ok(hall, "corroborated Wednesday practice card renders");
+  assert.match(hall, /Practice report/);
+  assert.doesNotMatch(hall, /Estimated walkthrough/);
+  assert.ok(edwards, "dated Bears walkthrough card renders");
+  assert.match(edwards, /Estimated walkthrough/);
+});
+
 test("game pages print the Eastern game day whatever zone the renderer runs in", async () => {
   // Sunday Night Football (Ravens at Falcons) is Sunday 2026-10-11 in the East.
   // A bare `new Date("2026-10-11")` is UTC midnight, which is Saturday evening

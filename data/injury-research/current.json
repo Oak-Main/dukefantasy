@@ -3826,6 +3826,22 @@
         "https://www.cbssports.com/nfl/injuries/"
       ],
       "confidence": "high"
+    },
+    {
+      "player": "Kobie Turner",
+      "team_slug": "los-angeles-rams",
+      "position": "DE",
+      "injury": "Groin",
+      "status": "IR",
+      "weeks_out": null,
+      "detail": "Placed on injured reserve October 21, confirmed by the club/NFL transaction records, ESPN and CBS daily report. An estimated return is not an activation.",
+      "sources": [
+        "https://www.therams.com/team/transactions/",
+        "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/daily/"
+      ],
+      "confidence": "high"
     }
   ],
   "watch": [
@@ -3837,17 +3853,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.azcardinals.com/team/injury-report/"
       ],
       "social": []
     },
@@ -3859,17 +3876,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.azcardinals.com/team/injury-report/"
       ],
       "social": []
     },
@@ -3881,18 +3899,19 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
-        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html"
+        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+        "https://www.azcardinals.com/team/injury-report/"
       ],
       "social": []
     },
@@ -3904,17 +3923,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.atlantafalcons.com/team/injury-report/"
       ],
       "social": []
     },
@@ -3948,17 +3968,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.atlantafalcons.com/team/injury-report/"
       ],
       "social": []
     },
@@ -3970,17 +3991,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.atlantafalcons.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4036,17 +4058,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "FP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: FP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.baltimoreravens.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4058,18 +4081,19 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
-        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html"
+        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+        "https://www.baltimoreravens.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4081,17 +4105,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.baltimoreravens.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4219,17 +4244,21 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: DNP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: OUT. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
         "https://www.chicagobears.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "T.J. Edwards",
@@ -4239,21 +4268,25 @@
       "practice": {
         "mon": null,
         "tue": "DNP",
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: DNP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "likelihood": "doubtful",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: DOUBTFUL. Wednesday walkthrough estimate: LP. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.chicagobears.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7"
       ],
-      "social": []
+      "social": [],
+      "published_status": "DOUBTFUL",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "Jonah Jackson",
@@ -4263,21 +4296,26 @@
       "practice": {
         "mon": null,
         "tue": "LP",
-        "wed": null,
+        "wed": "FP",
         "thu": null,
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "likelihood": "likely",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: NO DESIGNATION. Wednesday walkthrough estimate: FP. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.chicagobears.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kyle-monangai-ruled-out-jonah-jackson-set-to-play-vs-patriots",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "NO_DESIGNATION",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "Jack Sanborn",
@@ -4287,21 +4325,26 @@
       "practice": {
         "mon": null,
         "tue": "DNP",
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: DNP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: OUT. Wednesday walkthrough estimate: DNP. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.chicagobears.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "Colbie Young",
@@ -4333,17 +4376,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.bengals.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4355,18 +4399,19 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
-        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html"
+        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+        "https://www.clevelandbrowns.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4400,17 +4445,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.clevelandbrowns.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4444,17 +4490,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.clevelandbrowns.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4554,17 +4601,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "doubtful",
       "confidence": "medium",
-      "note": "DOUBTFUL in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.denverbroncos.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4576,17 +4624,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.denverbroncos.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4598,17 +4647,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.detroitlions.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4620,17 +4670,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.packers.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4642,17 +4693,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.packers.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4664,17 +4716,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.packers.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4952,18 +5005,19 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
-        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html"
+        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+        "https://www.chiefs.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4975,17 +5029,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.chiefs.com/team/injury-report/"
       ],
       "social": []
     },
@@ -4997,17 +5052,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.chiefs.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5019,17 +5075,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.raiders.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5232,28 +5289,6 @@
       "social": []
     },
     {
-      "player": "Kobie Turner",
-      "team_slug": "los-angeles-rams",
-      "position": "DE",
-      "injury": "Groin",
-      "practice": {
-        "mon": null,
-        "tue": null,
-        "wed": null,
-        "thu": null,
-        "fri": null,
-        "sat": null
-      },
-      "likelihood": "unlikely",
-      "confidence": "medium",
-      "note": "OUT in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
-      "sources": [
-        "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
-      ],
-      "social": []
-    },
-    {
       "player": "Jonah Savaiinaea",
       "team_slug": "miami-dolphins",
       "position": "G",
@@ -5283,17 +5318,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.miamidolphins.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5305,17 +5341,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.miamidolphins.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5393,17 +5430,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "FP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: FP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.vikings.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5460,17 +5498,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "FP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: FP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.vikings.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5482,21 +5521,27 @@
       "practice": {
         "mon": null,
         "tue": "DNP",
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
-      "likelihood": "doubtful",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: DNP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: OUT. Wednesday walkthrough estimate: DNP. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.patriots.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "Alijah Vera-Tucker",
@@ -5506,21 +5551,27 @@
       "practice": {
         "mon": null,
         "tue": "DNP",
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
-      "likelihood": "doubtful",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: DNP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: OUT. Wednesday walkthrough estimate: DNP. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.patriots.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "Karon Prunty",
@@ -5535,16 +5586,21 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: OUT. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.patriots.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "Channing Canada",
@@ -5559,16 +5615,21 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: OUT. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.patriots.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "Carlton Davis III",
@@ -5578,21 +5639,27 @@
       "practice": {
         "mon": null,
         "tue": "LP",
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: OUT. Wednesday walkthrough estimate: LP. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.patriots.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "A.J. Brown",
@@ -5602,21 +5669,26 @@
       "practice": {
         "mon": null,
         "tue": "LP",
-        "wed": null,
+        "wed": "FP",
         "thu": null,
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "likelihood": "likely",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: NO DESIGNATION. Wednesday walkthrough estimate: FP. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.patriots.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
       ],
-      "social": []
+      "social": [],
+      "published_status": "NO_DESIGNATION",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "Morgan Moses",
@@ -5626,21 +5698,26 @@
       "practice": {
         "mon": null,
         "tue": "LP",
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 20 Tuesday walkthrough estimate: LP. This is practice participation, not a final Week 7 game designation. The likelihood label remains the prior dated editorial assessment.",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: QUESTIONABLE. Wednesday walkthrough estimate: LP. This is not a complete game-day inactive list or proof of active roster eligibility.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.patriots.com/team/injury-report/",
-        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns"
+        "https://www.patspulpit.com/new-england-patriots-news/141485/patriots-vs-bears-tuesday-injury-report-carlton-davis-iii-returns",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_date": "2026-10-21",
+      "designation_week": 7
     },
     {
       "player": "Nathan Shepherd",
@@ -5782,17 +5859,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.giants.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5804,17 +5882,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.giants.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5826,17 +5905,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.giants.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5848,17 +5928,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.giants.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5870,17 +5951,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.giants.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5914,17 +5996,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.giants.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5936,17 +6019,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.newyorkjets.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5958,17 +6042,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.newyorkjets.com/team/injury-report/"
       ],
       "social": []
     },
@@ -5980,18 +6065,19 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "doubtful",
       "confidence": "medium",
-      "note": "DOUBTFUL in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
-        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html"
+        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+        "https://www.newyorkjets.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6003,17 +6089,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.newyorkjets.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6180,17 +6267,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.steelers.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6202,17 +6290,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.steelers.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6224,17 +6313,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.49ers.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6246,17 +6336,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.49ers.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6313,17 +6404,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.49ers.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6335,17 +6427,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.49ers.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6357,17 +6450,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.seahawks.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6379,17 +6473,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "DNP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.seahawks.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6512,17 +6607,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.tennesseetitans.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6534,17 +6630,18 @@
       "practice": {
         "mon": null,
         "tue": null,
-        "wed": null,
+        "wed": "LP",
         "thu": null,
         "fri": null,
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 21 Wednesday practice participation: LP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.tennesseetitans.com/team/injury-report/"
       ],
       "social": []
     },
@@ -6657,6 +6754,109 @@
         "https://www.cbssports.com/nfl/injuries/"
       ],
       "social": []
+    },
+    {
+      "player": "Christian Elliss",
+      "team_slug": "new-england-patriots",
+      "position": "LB",
+      "injury": "Chest",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": "FP",
+        "thu": null,
+        "fri": null,
+        "sat": null
+      },
+      "sources": [
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
+      ],
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_date": "2026-10-21",
+      "designation_week": 7,
+      "likelihood": "questionable",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: QUESTIONABLE. Wednesday walkthrough estimate: FP. This is not a complete game-day inactive list or proof of active roster eligibility."
+    },
+    {
+      "player": "Kevin Byard",
+      "team_slug": "new-england-patriots",
+      "position": "S",
+      "injury": "Chest",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": "FP",
+        "thu": null,
+        "fri": null,
+        "sat": null
+      },
+      "sources": [
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
+      ],
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_date": "2026-10-21",
+      "designation_week": 7,
+      "likelihood": "questionable",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: QUESTIONABLE. Wednesday walkthrough estimate: FP. This is not a complete game-day inactive list or proof of active roster eligibility."
+    },
+    {
+      "player": "Craig Woodson",
+      "team_slug": "new-england-patriots",
+      "position": "S",
+      "injury": "Shoulder",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": "FP",
+        "thu": null,
+        "fri": null,
+        "sat": null
+      },
+      "sources": [
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7",
+        "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears"
+      ],
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_date": "2026-10-21",
+      "designation_week": 7,
+      "likelihood": "questionable",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: QUESTIONABLE. Wednesday walkthrough estimate: FP. This is not a complete game-day inactive list or proof of active roster eligibility."
+    },
+    {
+      "player": "Tyrique Stevenson",
+      "team_slug": "chicago-bears",
+      "position": "DB",
+      "injury": "Hip",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": "FP",
+        "thu": null,
+        "fri": null,
+        "sat": null
+      },
+      "sources": [
+        "https://www.chicagobears.com/team/injury-report/",
+        "https://www.patspulpit.com/new-england-patriots-news/141602/patriots-vs-bears-wednesday-injury-report-alijah-vera-tucker-ben-brown-out-week-7"
+      ],
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_date": "2026-10-21",
+      "designation_week": 7,
+      "likelihood": "questionable",
+      "confidence": "high",
+      "note": "Official October 21 Week 7 game designation: QUESTIONABLE. Wednesday walkthrough estimate: FP. This is not a complete game-day inactive list or proof of active roster eligibility."
     }
   ]
 }
