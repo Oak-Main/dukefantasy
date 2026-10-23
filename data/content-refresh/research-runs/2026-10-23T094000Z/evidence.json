@@ -1,0 +1,96 @@
+{
+  "week": 7,
+  "baseCommit": "85cb04b832884770ccb8fdbb121265934e65fab2",
+  "run": "2026-10-23T094000Z",
+  "observations": [],
+  "moduleReviews": [
+    {
+      "module": "schedule",
+      "sourceAsOf": "2026-10-23",
+      "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
+      "scope": "Actual fresh NFL/ESPN comparison of all 107 games through Week 7 (94 finals, 13 upcoming), plus all 32 fresh ESPN standings rows archived with per-team observed and derived values.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "relatedUrls": [
+            "https://www.nfl.com/schedules/2026/by-week/week-1",
+            "https://www.nfl.com/schedules/2026/by-week/week-2",
+            "https://www.nfl.com/schedules/2026/by-week/week-3",
+            "https://www.nfl.com/schedules/2026/by-week/week-4",
+            "https://www.nfl.com/schedules/2026/by-week/week-5",
+            "https://www.nfl.com/schedules/2026/by-week/week-6",
+            "https://www.nfl.com/schedules/2026/by-week/week-7"
+          ],
+          "checkedAt": "2026-10-23T09:47:01.679Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "relatedUrls": [
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+          ],
+          "checkedAt": "2026-10-23T09:47:02.982Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
+            "complete": true
+          }
+        }
+      ]
+    },
+    {
+      "module": "inactives",
+      "sourceAsOf": "2026-10-22",
+      "dataSha256": "0893f29560f35e719fa9d8c35d1d38d134dc1b544f9e1b4afb09f9fdbc1ed807",
+      "scope": "Actual fresh comparison of both complete Thursday inactive lists across NFL, NBC, Patriots and Windy City Gridiron/Yahoo, including explicit emergency QB designations.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
+          "checkedAt": "2026-10-23T09:47:01.248Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "0893f29560f35e719fa9d8c35d1d38d134dc1b544f9e1b4afb09f9fdbc1ed807",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+          "checkedAt": "2026-10-23T09:47:02.764Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "0893f29560f35e719fa9d8c35d1d38d134dc1b544f9e1b4afb09f9fdbc1ed807",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://www.patriots.com/news/week-7-inactives-patriots-at-bears-x7631",
+          "checkedAt": "2026-10-23T09:47:01.224Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "0893f29560f35e719fa9d8c35d1d38d134dc1b544f9e1b4afb09f9fdbc1ed807",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/bears-patriots-inactives-t-j-225014547.html",
+          "checkedAt": "2026-10-23T09:47:02.669Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "0893f29560f35e719fa9d8c35d1d38d134dc1b544f9e1b4afb09f9fdbc1ed807",
+            "complete": true
+          }
+        }
+      ]
+    }
+  ]
+}

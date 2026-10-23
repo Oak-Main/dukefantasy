@@ -1,0 +1,621 @@
+{
+  "source": {
+    "url": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+    "checkedAt": "2026-10-23T09:18:04.171Z",
+    "status": 200,
+    "season": 2026
+  },
+  "recordedAt": "2026-10-23T09:49:13.718Z",
+  "compared": 32,
+  "failures": [],
+  "rows": [
+    {
+      "teamId": "2",
+      "teamSlug": "buffalo-bills",
+      "observed": {
+        "wins": 5,
+        "losses": 1,
+        "ties": 0,
+        "pf": 197,
+        "pa": 171
+      },
+      "derived": {
+        "wins": 5,
+        "losses": 1,
+        "ties": 0,
+        "pf": 197,
+        "pa": 171
+      },
+      "matches": true
+    },
+    {
+      "teamId": "17",
+      "teamSlug": "new-england-patriots",
+      "observed": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0,
+        "pf": 160,
+        "pa": 143
+      },
+      "derived": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0,
+        "pf": 160,
+        "pa": 143
+      },
+      "matches": true
+    },
+    {
+      "teamId": "20",
+      "teamSlug": "new-york-jets",
+      "observed": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 112,
+        "pa": 122
+      },
+      "derived": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 112,
+        "pa": 122
+      },
+      "matches": true
+    },
+    {
+      "teamId": "15",
+      "teamSlug": "miami-dolphins",
+      "observed": {
+        "wins": 0,
+        "losses": 5,
+        "ties": 0,
+        "pf": 70,
+        "pa": 132
+      },
+      "derived": {
+        "wins": 0,
+        "losses": 5,
+        "ties": 0,
+        "pf": 70,
+        "pa": 132
+      },
+      "matches": true
+    },
+    {
+      "teamId": "5",
+      "teamSlug": "cleveland-browns",
+      "observed": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 106,
+        "pa": 122
+      },
+      "derived": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 106,
+        "pa": 122
+      },
+      "matches": true
+    },
+    {
+      "teamId": "23",
+      "teamSlug": "pittsburgh-steelers",
+      "observed": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 137,
+        "pa": 128
+      },
+      "derived": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 137,
+        "pa": 128
+      },
+      "matches": true
+    },
+    {
+      "teamId": "33",
+      "teamSlug": "baltimore-ravens",
+      "observed": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 156,
+        "pa": 132
+      },
+      "derived": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 156,
+        "pa": 132
+      },
+      "matches": true
+    },
+    {
+      "teamId": "4",
+      "teamSlug": "cincinnati-bengals",
+      "observed": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 0,
+        "pf": 128,
+        "pa": 109
+      },
+      "derived": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 0,
+        "pf": 128,
+        "pa": 109
+      },
+      "matches": true
+    },
+    {
+      "teamId": "30",
+      "teamSlug": "jacksonville-jaguars",
+      "observed": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 154,
+        "pa": 104
+      },
+      "derived": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 154,
+        "pa": 104
+      },
+      "matches": true
+    },
+    {
+      "teamId": "11",
+      "teamSlug": "indianapolis-colts",
+      "observed": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 144,
+        "pa": 164
+      },
+      "derived": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 144,
+        "pa": 164
+      },
+      "matches": true
+    },
+    {
+      "teamId": "34",
+      "teamSlug": "houston-texans",
+      "observed": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 144,
+        "pa": 143
+      },
+      "derived": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 144,
+        "pa": 143
+      },
+      "matches": true
+    },
+    {
+      "teamId": "10",
+      "teamSlug": "tennessee-titans",
+      "observed": {
+        "wins": 1,
+        "losses": 5,
+        "ties": 0,
+        "pf": 84,
+        "pa": 129
+      },
+      "derived": {
+        "wins": 1,
+        "losses": 5,
+        "ties": 0,
+        "pf": 84,
+        "pa": 129
+      },
+      "matches": true
+    },
+    {
+      "teamId": "12",
+      "teamSlug": "kansas-city-chiefs",
+      "observed": {
+        "wins": 5,
+        "losses": 0,
+        "ties": 0,
+        "pf": 140,
+        "pa": 83
+      },
+      "derived": {
+        "wins": 5,
+        "losses": 0,
+        "ties": 0,
+        "pf": 140,
+        "pa": 83
+      },
+      "matches": true
+    },
+    {
+      "teamId": "7",
+      "teamSlug": "denver-broncos",
+      "observed": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 114,
+        "pa": 125
+      },
+      "derived": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 114,
+        "pa": 125
+      },
+      "matches": true
+    },
+    {
+      "teamId": "13",
+      "teamSlug": "las-vegas-raiders",
+      "observed": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0,
+        "pf": 162,
+        "pa": 162
+      },
+      "derived": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0,
+        "pf": 162,
+        "pa": 162
+      },
+      "matches": true
+    },
+    {
+      "teamId": "24",
+      "teamSlug": "los-angeles-chargers",
+      "observed": {
+        "wins": 0,
+        "losses": 6,
+        "ties": 0,
+        "pf": 90,
+        "pa": 151
+      },
+      "derived": {
+        "wins": 0,
+        "losses": 6,
+        "ties": 0,
+        "pf": 90,
+        "pa": 151
+      },
+      "matches": true
+    },
+    {
+      "teamId": "19",
+      "teamSlug": "new-york-giants",
+      "observed": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 1,
+        "pf": 136,
+        "pa": 140
+      },
+      "derived": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 1,
+        "pf": 136,
+        "pa": 140
+      },
+      "matches": true
+    },
+    {
+      "teamId": "21",
+      "teamSlug": "philadelphia-eagles",
+      "observed": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 106,
+        "pa": 137
+      },
+      "derived": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 106,
+        "pa": 137
+      },
+      "matches": true
+    },
+    {
+      "teamId": "6",
+      "teamSlug": "dallas-cowboys",
+      "observed": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 151,
+        "pa": 159
+      },
+      "derived": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 151,
+        "pa": 159
+      },
+      "matches": true
+    },
+    {
+      "teamId": "28",
+      "teamSlug": "washington-commanders",
+      "observed": {
+        "wins": 1,
+        "losses": 4,
+        "ties": 1,
+        "pf": 132,
+        "pa": 172
+      },
+      "derived": {
+        "wins": 1,
+        "losses": 4,
+        "ties": 1,
+        "pf": 132,
+        "pa": 172
+      },
+      "matches": true
+    },
+    {
+      "teamId": "16",
+      "teamSlug": "minnesota-vikings",
+      "observed": {
+        "wins": 5,
+        "losses": 0,
+        "ties": 0,
+        "pf": 109,
+        "pa": 64
+      },
+      "derived": {
+        "wins": 5,
+        "losses": 0,
+        "ties": 0,
+        "pf": 109,
+        "pa": 64
+      },
+      "matches": true
+    },
+    {
+      "teamId": "3",
+      "teamSlug": "chicago-bears",
+      "observed": {
+        "wins": 5,
+        "losses": 2,
+        "ties": 0,
+        "pf": 180,
+        "pa": 143
+      },
+      "derived": {
+        "wins": 5,
+        "losses": 2,
+        "ties": 0,
+        "pf": 180,
+        "pa": 143
+      },
+      "matches": true
+    },
+    {
+      "teamId": "9",
+      "teamSlug": "green-bay-packers",
+      "observed": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 127,
+        "pa": 125
+      },
+      "derived": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 0,
+        "pf": 127,
+        "pa": 125
+      },
+      "matches": true
+    },
+    {
+      "teamId": "8",
+      "teamSlug": "detroit-lions",
+      "observed": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 0,
+        "pf": 164,
+        "pa": 148
+      },
+      "derived": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 0,
+        "pf": 164,
+        "pa": 148
+      },
+      "matches": true
+    },
+    {
+      "teamId": "29",
+      "teamSlug": "carolina-panthers",
+      "observed": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 0,
+        "pf": 146,
+        "pa": 123
+      },
+      "derived": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 0,
+        "pf": 146,
+        "pa": 123
+      },
+      "matches": true
+    },
+    {
+      "teamId": "1",
+      "teamSlug": "atlanta-falcons",
+      "observed": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 142,
+        "pa": 153
+      },
+      "derived": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 142,
+        "pa": 153
+      },
+      "matches": true
+    },
+    {
+      "teamId": "18",
+      "teamSlug": "new-orleans-saints",
+      "observed": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 152,
+        "pa": 178
+      },
+      "derived": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 152,
+        "pa": 178
+      },
+      "matches": true
+    },
+    {
+      "teamId": "27",
+      "teamSlug": "tampa-bay-buccaneers",
+      "observed": {
+        "wins": 1,
+        "losses": 5,
+        "ties": 0,
+        "pf": 119,
+        "pa": 138
+      },
+      "derived": {
+        "wins": 1,
+        "losses": 5,
+        "ties": 0,
+        "pf": 119,
+        "pa": 138
+      },
+      "matches": true
+    },
+    {
+      "teamId": "25",
+      "teamSlug": "san-francisco-49ers",
+      "observed": {
+        "wins": 6,
+        "losses": 0,
+        "ties": 0,
+        "pf": 177,
+        "pa": 110
+      },
+      "derived": {
+        "wins": 6,
+        "losses": 0,
+        "ties": 0,
+        "pf": 177,
+        "pa": 110
+      },
+      "matches": true
+    },
+    {
+      "teamId": "26",
+      "teamSlug": "seattle-seahawks",
+      "observed": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0,
+        "pf": 148,
+        "pa": 122
+      },
+      "derived": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0,
+        "pf": 148,
+        "pa": 122
+      },
+      "matches": true
+    },
+    {
+      "teamId": "22",
+      "teamSlug": "arizona-cardinals",
+      "observed": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 126,
+        "pa": 178
+      },
+      "derived": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 126,
+        "pa": 178
+      },
+      "matches": true
+    },
+    {
+      "teamId": "14",
+      "teamSlug": "los-angeles-rams",
+      "observed": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 135,
+        "pa": 138
+      },
+      "derived": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0,
+        "pf": 135,
+        "pa": 138
+      },
+      "matches": true
+    }
+  ]
+}

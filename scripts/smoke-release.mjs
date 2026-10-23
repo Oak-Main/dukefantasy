@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFileSync, writeFileSync } from "node:fs";
+import { fetchReleaseResponse } from "./release-response.mjs";
 
 const base = new URL(process.argv[2] ?? "https://dukefantasy.com");
 const manifest = JSON.parse(readFileSync(new URL("../data/content-refresh/current.json", import.meta.url), "utf8"));
@@ -7,7 +8,7 @@ const generated = readFileSync(new URL("../lib/nfl-generated.ts", import.meta.ur
 const candidate = JSON.parse(generated.slice(generated.indexOf("export default ") + 15).replace(/;\s*$/, ""));
 const checks = [];
 async function get(path) {
-  const response = await fetch(new URL(path, base), { signal: AbortSignal.timeout(30_000), redirect: "manual" });
+  const response = await fetchReleaseResponse(new URL(path, base), { version: manifest.sourceAsOf, revision: candidate.publicationId });
   assert.equal(response.status, 200, `${path}: HTTP ${response.status}`);
   assert.equal(response.headers.get("x-content-version"), manifest.sourceAsOf, `${path}: wrong release`);
   assert.equal(response.headers.get("x-content-revision"), candidate.publicationId, `${path}: wrong content revision`);

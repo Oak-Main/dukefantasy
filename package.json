@@ -16,7 +16,7 @@
     "build": "vinext build",
     "start": "vinext start",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts tests/week7-evidence.test.mjs tests/week7-publication-dates.test.mjs",
+    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts tests/week7-evidence.test.mjs tests/week7-publication-dates.test.mjs tests/release-response.test.mjs",
     "test:integration": "node --test tests/rendered-html.test.mjs",
     "test:e2e": "node --test tests/rendered-html.test.mjs",
     "test:a11y": "node --test tests/a11y.test.mjs",
