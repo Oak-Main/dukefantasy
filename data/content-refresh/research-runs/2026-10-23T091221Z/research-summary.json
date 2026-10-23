@@ -337,5 +337,12 @@
     "All 169 previously published dated practices",
     "Existing official designations and historical reserve eligibility",
     "Fantasy, transaction and leader content/date fields"
-  ]
+  ],
+  "standingsEvidence": {
+    "file": "standings-reconciliation.json",
+    "url": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+    "checkedAt": "2026-10-23T09:18:04.171Z",
+    "compared": 32,
+    "failures": 0
+  }
 }

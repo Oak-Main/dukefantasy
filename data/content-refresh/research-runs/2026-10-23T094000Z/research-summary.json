@@ -1,0 +1,44 @@
+{
+  "run": "2026-10-23T094000Z",
+  "baseCommit": "85cb04b832884770ccb8fdbb121265934e65fab2",
+  "checkedAt": "2026-10-23T09:49:13.718Z",
+  "changedFacts": 0,
+  "moduleReviews": 2,
+  "results": {
+    "compared": 107,
+    "finals": 94,
+    "upcomingWeek7": 13,
+    "changes": 0
+  },
+  "standingsEvidence": {
+    "file": "standings-reconciliation.json",
+    "url": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+    "checkedAt": "2026-10-23T09:47:03.745Z",
+    "status": 200,
+    "season": 2026,
+    "compared": 32,
+    "failures": 0
+  },
+  "inactives": {
+    "teams": 2,
+    "listedPlayers": 13,
+    "emergencyQuarterbacks": 2
+  },
+  "retry": "At most 16 requests with 2-second spacing for a 200 response carrying an older release version/revision. HTTP failures and transport failures remain immediate errors; every accepted response still requires the exact date and publication hash.",
+  "priorProductionAttempt": {
+    "worker": "b913a51c-8cd1-4b14-aee0-6928b10b664e",
+    "failure": "The homepage returned the candidate but /scores returned the prior October 22 publication; mandatory smoke failed.",
+    "recovery": "Rolled back to b4caf699-0b2e-4f6c-baa7-f1db3e760ea3 and verified both public domains"
+  },
+  "sourceOmission": {
+    "player": "Anthony Johnson Jr.",
+    "publisher": "CBS",
+    "decision": "Omission is not activation. Preserve the dated last verified IR record; no player status changed."
+  },
+  "untouched": [
+    "All 200 original candidate facts",
+    "All 304 dated practices and full injury date October 20",
+    "Fantasy, transaction and leader contents/source dates",
+    "All 272 games and international metadata"
+  ]
+}
