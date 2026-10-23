@@ -1,14 +1,1203 @@
 {
   "week": 7,
-  "baseCommit": "85cb04b832884770ccb8fdbb121265934e65fab2",
-  "run": "2026-10-23T094000Z",
-  "observations": [],
+  "baseCommit": "98ceeb55037a3c6289c86df40b62dada8f83e246",
+  "run": "2026-10-23T161339Z",
+  "observations": [
+    {
+      "kind": "injury",
+      "key": "new-orleans-saints:Nathan Shepherd",
+      "value": {
+        "player": "Nathan Shepherd",
+        "team_slug": "new-orleans-saints",
+        "status": "QUESTIONABLE",
+        "injury": null,
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury",
+        "practice"
+      ],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Nathan Shepherd",
+            "team_slug": "new-orleans-saints",
+            "status": "QUESTIONABLE",
+            "injury": null,
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Nathan Shepherd",
+            "team_slug": "new-orleans-saints",
+            "status": "QUESTIONABLE",
+            "injury": null,
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.canalstreetchronicles.com/new-orleans-saints-injuries/116921/final-saints-vs-steelers-injury-report-paris-week-7ruled-out",
+          "checkedAt": "2026-10-23T16:17:43.232Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Nathan Shepherd",
+            "team_slug": "new-orleans-saints",
+            "status": "QUESTIONABLE",
+            "injury": null,
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-23T16:15:31.924Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Nathan Shepherd",
+            "team_slug": "new-orleans-saints",
+            "status": "QUESTIONABLE",
+            "injury": null,
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-orleans-saints:Kaden Elliss",
+      "value": {
+        "player": "Kaden Elliss",
+        "team_slug": "new-orleans-saints",
+        "status": "NO_DESIGNATION",
+        "injury": "Calf",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": "LP",
+          "thu": "LP",
+          "fri": "FP",
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [
+        "player",
+        "team_slug"
+      ],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Kaden Elliss",
+            "team_slug": "new-orleans-saints",
+            "status": "NO_DESIGNATION",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": "FP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-23T16:15:31.924Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Kaden Elliss",
+            "team_slug": "new-orleans-saints",
+            "status": "NO_DESIGNATION",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": "FP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Kaden Elliss",
+            "team_slug": "new-orleans-saints",
+            "status": "NO_DESIGNATION",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": "FP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-orleans-saints:Cesar Ruiz",
+      "value": {
+        "player": "Cesar Ruiz",
+        "team_slug": "new-orleans-saints",
+        "status": "QUESTIONABLE",
+        "injury": "Knee",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": "DNP",
+          "thu": "DNP",
+          "fri": "LP",
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury"
+      ],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cesar Ruiz",
+            "team_slug": "new-orleans-saints",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": "DNP",
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cesar Ruiz",
+            "team_slug": "new-orleans-saints",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": "DNP",
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.canalstreetchronicles.com/new-orleans-saints-injuries/116921/final-saints-vs-steelers-injury-report-paris-week-7ruled-out",
+          "checkedAt": "2026-10-23T16:17:43.232Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cesar Ruiz",
+            "team_slug": "new-orleans-saints",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": "DNP",
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "pittsburgh-steelers:Ben Skowronek",
+      "value": {
+        "player": "Ben Skowronek",
+        "team_slug": "pittsburgh-steelers",
+        "status": "OUT",
+        "injury": "Calf",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": "DNP",
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "injury",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "practice"
+      ],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Ben Skowronek",
+            "team_slug": "pittsburgh-steelers",
+            "status": "OUT",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.steelers.com/news/week-7-injury-report-saints",
+          "checkedAt": "2026-10-23T16:17:43.425Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Ben Skowronek",
+            "team_slug": "pittsburgh-steelers",
+            "status": "OUT",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-23T16:15:31.924Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Ben Skowronek",
+            "team_slug": "pittsburgh-steelers",
+            "status": "OUT",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Ben Skowronek",
+            "team_slug": "pittsburgh-steelers",
+            "status": "OUT",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "pittsburgh-steelers:Brandin Echols",
+      "value": {
+        "player": "Brandin Echols",
+        "team_slug": "pittsburgh-steelers",
+        "status": "OUT",
+        "injury": "Hamstring",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": "DNP",
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury",
+        "practice"
+      ],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Brandin Echols",
+            "team_slug": "pittsburgh-steelers",
+            "status": "OUT",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-23T16:15:31.924Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Brandin Echols",
+            "team_slug": "pittsburgh-steelers",
+            "status": "OUT",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Brandin Echols",
+            "team_slug": "pittsburgh-steelers",
+            "status": "OUT",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-orleans-saints:Alvin Kamara",
+      "value": {
+        "player": "Alvin Kamara",
+        "team_slug": "new-orleans-saints",
+        "status": "NO_DESIGNATION",
+        "injury": "Back",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": "LP",
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alvin Kamara",
+            "team_slug": "new-orleans-saints",
+            "status": "NO_DESIGNATION",
+            "injury": "Back",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-23T16:15:31.924Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alvin Kamara",
+            "team_slug": "new-orleans-saints",
+            "status": "NO_DESIGNATION",
+            "injury": "Back",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alvin Kamara",
+            "team_slug": "new-orleans-saints",
+            "status": "NO_DESIGNATION",
+            "injury": "Back",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "pittsburgh-steelers:Rico Dowdle",
+      "value": {
+        "player": "Rico Dowdle",
+        "team_slug": "pittsburgh-steelers",
+        "status": "QUESTIONABLE",
+        "injury": "Knee",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": "LP",
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Rico Dowdle",
+            "team_slug": "pittsburgh-steelers",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.rotowire.com/football/headlines/rico-dowdle-injury-questionable-for-week-7-643903",
+          "checkedAt": "2026-10-23T16:17:44.447Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Rico Dowdle",
+            "team_slug": "pittsburgh-steelers",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-23T16:15:31.924Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Rico Dowdle",
+            "team_slug": "pittsburgh-steelers",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Rico Dowdle",
+            "team_slug": "pittsburgh-steelers",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "pittsburgh-steelers:T.J. Watt",
+      "value": {
+        "player": "T.J. Watt",
+        "team_slug": "pittsburgh-steelers",
+        "status": "NO_DESIGNATION",
+        "injury": "Calf",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.steelers.com/news/week-7-injury-report-saints",
+          "checkedAt": "2026-10-23T16:17:43.425Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "T.J. Watt",
+            "team_slug": "pittsburgh-steelers",
+            "status": "NO_DESIGNATION",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-23T16:15:31.924Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "T.J. Watt",
+            "team_slug": "pittsburgh-steelers",
+            "status": "NO_DESIGNATION",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "pittsburgh-steelers:Alex Highsmith",
+      "value": {
+        "player": "Alex Highsmith",
+        "team_slug": "pittsburgh-steelers",
+        "status": "NO_DESIGNATION",
+        "injury": "Groin",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alex Highsmith",
+            "team_slug": "pittsburgh-steelers",
+            "status": "NO_DESIGNATION",
+            "injury": "Groin",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Alex Highsmith",
+            "team_slug": "pittsburgh-steelers",
+            "status": "NO_DESIGNATION",
+            "injury": "Groin",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-23:new-orleans-saints:Kaden Elliss",
+      "value": {
+        "date": "2026-10-23",
+        "week": 7,
+        "player": "Kaden Elliss",
+        "team_slug": "new-orleans-saints",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Calf"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "retainedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Kaden Elliss",
+            "team_slug": "new-orleans-saints",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Calf"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Kaden Elliss",
+            "team_slug": "new-orleans-saints",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Calf"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-23:new-orleans-saints:Cesar Ruiz",
+      "value": {
+        "date": "2026-10-23",
+        "week": 7,
+        "player": "Cesar Ruiz",
+        "team_slug": "new-orleans-saints",
+        "participation": "LP",
+        "report_type": "practice",
+        "injury": "Knee"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "retainedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Cesar Ruiz",
+            "team_slug": "new-orleans-saints",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Cesar Ruiz",
+            "team_slug": "new-orleans-saints",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-23:new-orleans-saints:Alvin Kamara",
+      "value": {
+        "date": "2026-10-23",
+        "week": 7,
+        "player": "Alvin Kamara",
+        "team_slug": "new-orleans-saints",
+        "participation": "LP",
+        "report_type": "practice",
+        "injury": "Back"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "retainedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Alvin Kamara",
+            "team_slug": "new-orleans-saints",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Back"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-23T16:15:31.924Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Alvin Kamara",
+            "team_slug": "new-orleans-saints",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Back"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+          "checkedAt": "2026-10-23T16:17:43.104Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Alvin Kamara",
+            "team_slug": "new-orleans-saints",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Back"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-23:pittsburgh-steelers:Rico Dowdle",
+      "value": {
+        "date": "2026-10-23",
+        "week": 7,
+        "player": "Rico Dowdle",
+        "team_slug": "pittsburgh-steelers",
+        "participation": "LP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Knee"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "retainedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Rico Dowdle",
+            "team_slug": "pittsburgh-steelers",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://www.rotowire.com/football/headlines/rico-dowdle-injury-questionable-for-week-7-643903",
+          "checkedAt": "2026-10-23T16:17:44.447Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Rico Dowdle",
+            "team_slug": "pittsburgh-steelers",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://www.steelers.com/news/week-7-injury-report-saints",
+          "checkedAt": "2026-10-23T16:17:43.425Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Rico Dowdle",
+            "team_slug": "pittsburgh-steelers",
+            "participation": "LP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Knee"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-23:pittsburgh-steelers:DeShon Elliott",
+      "value": {
+        "date": "2026-10-23",
+        "week": 7,
+        "player": "DeShon Elliott",
+        "team_slug": "pittsburgh-steelers",
+        "participation": "FP",
+        "report_type": "estimated_walkthrough",
+        "injury": "Knee"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "retainedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-23T16:15:30.339Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "DeShon Elliott",
+            "team_slug": "pittsburgh-steelers",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://plus.steelersnow.com/articles/steelers-reveal-deshon-elliotts-status-vs-saints",
+          "checkedAt": "2026-10-23T16:17:44.949Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "DeShon Elliott",
+            "team_slug": "pittsburgh-steelers",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://www.steelers.com/news/week-7-injury-report-saints",
+          "checkedAt": "2026-10-23T16:17:43.425Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "DeShon Elliott",
+            "team_slug": "pittsburgh-steelers",
+            "participation": "FP",
+            "report_type": "estimated_walkthrough",
+            "injury": "Knee"
+          }
+        }
+      ]
+    }
+  ],
   "moduleReviews": [
     {
       "module": "schedule",
       "sourceAsOf": "2026-10-23",
       "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
-      "scope": "Actual fresh NFL/ESPN comparison of all 107 games through Week 7 (94 finals, 13 upcoming), plus all 32 fresh ESPN standings rows archived with per-team observed and derived values.",
+      "scope": "Actual complete fresh NFL/ESPN review of all 107 games through Week 7, 94 finals and 13 upcoming; all 32 fresh ESPN standing rows match the retained derived standings.",
       "sources": [
         {
           "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
@@ -21,7 +1210,7 @@
             "https://www.nfl.com/schedules/2026/by-week/week-6",
             "https://www.nfl.com/schedules/2026/by-week/week-7"
           ],
-          "checkedAt": "2026-10-23T09:47:01.679Z",
+          "checkedAt": "2026-10-23T16:15:31.724Z",
           "reportedWeek": 7,
           "value": {
             "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
@@ -39,54 +1228,10 @@
             "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
             "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
           ],
-          "checkedAt": "2026-10-23T09:47:02.982Z",
+          "checkedAt": "2026-10-23T16:15:31.141Z",
           "reportedWeek": 7,
           "value": {
             "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
-            "complete": true
-          }
-        }
-      ]
-    },
-    {
-      "module": "inactives",
-      "sourceAsOf": "2026-10-22",
-      "dataSha256": "0893f29560f35e719fa9d8c35d1d38d134dc1b544f9e1b4afb09f9fdbc1ed807",
-      "scope": "Actual fresh comparison of both complete Thursday inactive lists across NFL, NBC, Patriots and Windy City Gridiron/Yahoo, including explicit emergency QB designations.",
-      "sources": [
-        {
-          "url": "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
-          "checkedAt": "2026-10-23T09:47:01.248Z",
-          "reportedWeek": 7,
-          "value": {
-            "dataSha256": "0893f29560f35e719fa9d8c35d1d38d134dc1b544f9e1b4afb09f9fdbc1ed807",
-            "complete": true
-          }
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
-          "checkedAt": "2026-10-23T09:47:02.764Z",
-          "reportedWeek": 7,
-          "value": {
-            "dataSha256": "0893f29560f35e719fa9d8c35d1d38d134dc1b544f9e1b4afb09f9fdbc1ed807",
-            "complete": true
-          }
-        },
-        {
-          "url": "https://www.patriots.com/news/week-7-inactives-patriots-at-bears-x7631",
-          "checkedAt": "2026-10-23T09:47:01.224Z",
-          "reportedWeek": 7,
-          "value": {
-            "dataSha256": "0893f29560f35e719fa9d8c35d1d38d134dc1b544f9e1b4afb09f9fdbc1ed807",
-            "complete": true
-          }
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/bears-patriots-inactives-t-j-225014547.html",
-          "checkedAt": "2026-10-23T09:47:02.669Z",
-          "reportedWeek": 7,
-          "value": {
-            "dataSha256": "0893f29560f35e719fa9d8c35d1d38d134dc1b544f9e1b4afb09f9fdbc1ed807",
             "complete": true
           }
         }

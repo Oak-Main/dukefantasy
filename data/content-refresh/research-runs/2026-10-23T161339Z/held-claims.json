@@ -1,0 +1,18 @@
+[
+  {
+    "player": "Nathan Shepherd",
+    "claim": "Friday injury condition and participation",
+    "official": "Illness/NIR-Rest, DNP",
+    "espn": "Achilles; questionable",
+    "decision": "Publish only the mutually corroborated QUESTIONABLE designation. Keep native injury detail null and do not add the conflicting practice condition."
+  },
+  {
+    "player": "DeShon Elliott",
+    "claim": "Activation and game-day availability",
+    "decision": "Friday QUESTIONABLE and estimated FP do not activate an IR player. Preserve the IR ledger; wait for explicit corroborated activation and complete Sunday inactive lists."
+  },
+  {
+    "claim": "Other Friday participation and final designations",
+    "decision": "Only the early Paris reports are currently dated Friday. Do not infer Friday values from Thursday NFL/CBS columns or generic Active feed status."
+  }
+]

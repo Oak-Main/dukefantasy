@@ -1,0 +1,196 @@
+{
+  "run": "2026-10-23T161339Z",
+  "baseCommit": "98ceeb55037a3c6289c86df40b62dada8f83e246",
+  "checkedAt": "2026-10-23T16:23:24.137Z",
+  "changedFacts": 14,
+  "moduleReviews": 1,
+  "officialDesignations": [
+    {
+      "player": "Kaden Elliss",
+      "team": "new-orleans-saints",
+      "status": "NO_DESIGNATION",
+      "date": "2026-10-23",
+      "participation": "FP"
+    },
+    {
+      "player": "Cesar Ruiz",
+      "team": "new-orleans-saints",
+      "status": "QUESTIONABLE",
+      "date": "2026-10-23",
+      "participation": "LP"
+    },
+    {
+      "player": "Nathan Shepherd",
+      "team": "new-orleans-saints",
+      "status": "QUESTIONABLE",
+      "date": "2026-10-23",
+      "participation": null
+    },
+    {
+      "player": "Alvin Kamara",
+      "team": "new-orleans-saints",
+      "status": "NO_DESIGNATION",
+      "date": "2026-10-23",
+      "participation": "LP"
+    },
+    {
+      "player": "Ben Skowronek",
+      "team": "pittsburgh-steelers",
+      "status": "OUT",
+      "date": "2026-10-23",
+      "participation": null
+    },
+    {
+      "player": "Brandin Echols",
+      "team": "pittsburgh-steelers",
+      "status": "OUT",
+      "date": "2026-10-23",
+      "participation": null
+    },
+    {
+      "player": "Rico Dowdle",
+      "team": "pittsburgh-steelers",
+      "status": "QUESTIONABLE",
+      "date": "2026-10-23",
+      "participation": "LP"
+    },
+    {
+      "player": "T.J. Watt",
+      "team": "pittsburgh-steelers",
+      "status": "NO_DESIGNATION",
+      "date": "2026-10-23",
+      "participation": null
+    },
+    {
+      "player": "Alex Highsmith",
+      "team": "pittsburgh-steelers",
+      "status": "NO_DESIGNATION",
+      "date": "2026-10-23",
+      "participation": null
+    }
+  ],
+  "newWatchRecords": [
+    "Alvin Kamara",
+    "Rico Dowdle",
+    "T.J. Watt",
+    "Alex Highsmith"
+  ],
+  "practiceReports": [
+    {
+      "player": "Kaden Elliss",
+      "team": "new-orleans-saints",
+      "injury": "Calf",
+      "participation": "FP",
+      "report_type": "practice",
+      "date": "2026-10-23"
+    },
+    {
+      "player": "Cesar Ruiz",
+      "team": "new-orleans-saints",
+      "injury": "Knee",
+      "participation": "LP",
+      "report_type": "practice",
+      "date": "2026-10-23"
+    },
+    {
+      "player": "Alvin Kamara",
+      "team": "new-orleans-saints",
+      "injury": "Back",
+      "participation": "LP",
+      "report_type": "practice",
+      "date": "2026-10-23"
+    },
+    {
+      "player": "Rico Dowdle",
+      "team": "pittsburgh-steelers",
+      "injury": "Knee",
+      "participation": "LP",
+      "report_type": "estimated_walkthrough",
+      "date": "2026-10-23"
+    },
+    {
+      "player": "DeShon Elliott",
+      "team": "pittsburgh-steelers",
+      "injury": "Knee",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "date": "2026-10-23"
+    }
+  ],
+  "totalPracticeRecords": 309,
+  "elliottIRRetained": true,
+  "results": {
+    "compared": 107,
+    "finals": 94,
+    "upcomingWeek7": 13,
+    "changes": 0
+  },
+  "standingsEvidence": "standings-reconciliation.json",
+  "untouchedModuleSources": {
+    "injuries": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "fantasy": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "transactions": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "leaders": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "inactives": {
+      "sourceAsOf": "2026-10-22",
+      "fetchedAt": "2026-10-23T09:47:02.764Z",
+      "compiledAt": "2026-10-23T09:49:13.718Z"
+    }
+  },
+  "normalization": "Explicit no-designation statements do not establish active status. Pittsburgh Friday estimates are not attended practices. Position errors in the Canal Street Chronicles list are not imported. Shepherd condition conflict is held; agreed status is published. Full injury, fantasy, transaction, leader and inactive module dates remain unchanged.",
+  "sources": [
+    {
+      "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+      "checkedAt": "2026-10-23T16:15:30.339Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+      "checkedAt": "2026-10-23T16:17:43.104Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-23T16:15:31.924Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.rotowire.com/football/headlines/rico-dowdle-injury-questionable-for-week-7-643903",
+      "checkedAt": "2026-10-23T16:17:44.447Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.steelers.com/news/week-7-injury-report-saints",
+      "checkedAt": "2026-10-23T16:17:43.425Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://plus.steelersnow.com/articles/steelers-reveal-deshon-elliotts-status-vs-saints",
+      "checkedAt": "2026-10-23T16:17:44.949Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.canalstreetchronicles.com/new-orleans-saints-injuries/116921/final-saints-vs-steelers-injury-report-paris-week-7ruled-out",
+      "checkedAt": "2026-10-23T16:17:43.232Z",
+      "reportedWeek": 7
+    }
+  ],
+  "likelihoodTreatment": "The two official OUT records use unlikely/high as the direct editorial consequence of corroborated OUT status; prior assessments remain separate for other updated rows. No designation is not active confirmation.",
+  "mobileFix": "Reuse existing mobile table card/primary-cell classes and labels; display note cells at full width and wrap likelihood badges. Manual 390px review caught squeezed notes and badge clipping before release."
+}
