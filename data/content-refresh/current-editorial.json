@@ -3204,6 +3204,2166 @@
       ],
       "checkedAt": "2026-10-22T16:20:13.602Z",
       "note": "Wednesday practice participation. This dated record does not establish a final game designation, activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Budda Baker",
+      "team_slug": "arizona-cardinals",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Groin",
+      "sources": [
+        "https://www.azcardinals.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jeremiyah Love",
+      "team_slug": "arizona-cardinals",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.azcardinals.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Garrett Williams",
+      "team_slug": "arizona-cardinals",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.azcardinals.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Andrew Wingard",
+      "team_slug": "arizona-cardinals",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.azcardinals.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Carson Beck",
+      "team_slug": "arizona-cardinals",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Back",
+      "sources": [
+        "https://www.azcardinals.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Max Melton",
+      "team_slug": "arizona-cardinals",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.azcardinals.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Wydett Williams Jr.",
+      "team_slug": "arizona-cardinals",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.azcardinals.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Darius Robinson",
+      "team_slug": "arizona-cardinals",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Back",
+      "sources": [
+        "https://www.azcardinals.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jon Gaines II",
+      "team_slug": "arizona-cardinals",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.azcardinals.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Kendal Daniels",
+      "team_slug": "atlanta-falcons",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Neck",
+      "sources": [
+        "https://www.atlantafalcons.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Samson Ebukam",
+      "team_slug": "atlanta-falcons",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.atlantafalcons.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "C.J. Henderson",
+      "team_slug": "atlanta-falcons",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Groin",
+      "sources": [
+        "https://www.atlantafalcons.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Brian Robinson",
+      "team_slug": "atlanta-falcons",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.atlantafalcons.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Za'Darius Smith",
+      "team_slug": "atlanta-falcons",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Neck",
+      "sources": [
+        "https://www.atlantafalcons.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Avieon Terrell",
+      "team_slug": "atlanta-falcons",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.atlantafalcons.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Olamide Zaccheaus",
+      "team_slug": "atlanta-falcons",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.atlantafalcons.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Billy Bowman Jr.",
+      "team_slug": "atlanta-falcons",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.atlantafalcons.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Divine Deablo",
+      "team_slug": "atlanta-falcons",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Forearm",
+      "sources": [
+        "https://www.atlantafalcons.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jaylinn Hawkins",
+      "team_slug": "baltimore-ravens",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.baltimoreravens.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Lamar Jackson",
+      "team_slug": "baltimore-ravens",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.baltimoreravens.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Cam Jurgens",
+      "team_slug": "baltimore-ravens",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.baltimoreravens.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Tavius Robinson",
+      "team_slug": "baltimore-ravens",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Pectoral",
+      "sources": [
+        "https://www.baltimoreravens.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jaelan Phillips",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Thomas Incoom",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Derek Barnett",
+      "team_slug": "cleveland-browns",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.clevelandbrowns.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Denzel Boston",
+      "team_slug": "cleveland-browns",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Foot",
+      "sources": [
+        "https://www.clevelandbrowns.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Grant Delpit",
+      "team_slug": "cleveland-browns",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.clevelandbrowns.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Tytus Howard",
+      "team_slug": "cleveland-browns",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.clevelandbrowns.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Elgton Jenkins",
+      "team_slug": "cleveland-browns",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.clevelandbrowns.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Teven Jenkins",
+      "team_slug": "cleveland-browns",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Back",
+      "sources": [
+        "https://www.clevelandbrowns.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Quinshon Judkins",
+      "team_slug": "cleveland-browns",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.clevelandbrowns.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Carson Schwesinger",
+      "team_slug": "cleveland-browns",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.clevelandbrowns.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Quincy Williams",
+      "team_slug": "cleveland-browns",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Neck",
+      "sources": [
+        "https://www.clevelandbrowns.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Drew Shelton",
+      "team_slug": "dallas-cowboys",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.dallascowboys.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.238Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "KaVontae Turpin",
+      "team_slug": "dallas-cowboys",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ribs",
+      "sources": [
+        "https://www.dallascowboys.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.238Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Dee Winters",
+      "team_slug": "dallas-cowboys",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.dallascowboys.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.238Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Tyler Guyton",
+      "team_slug": "dallas-cowboys",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.dallascowboys.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.238Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "George Pickens",
+      "team_slug": "dallas-cowboys",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.dallascowboys.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.238Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jaylen Waddle",
+      "team_slug": "denver-broncos",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Chest",
+      "sources": [
+        "https://www.denverbroncos.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Tyler Badie",
+      "team_slug": "denver-broncos",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Thumb",
+      "sources": [
+        "https://www.denverbroncos.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Talanoa Hufanga",
+      "team_slug": "denver-broncos",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.denverbroncos.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jonah Elliss",
+      "team_slug": "denver-broncos",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.denverbroncos.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Rock Ya-Sin",
+      "team_slug": "detroit-lions",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.detroitlions.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Aaron Banks",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Anthony Campbell",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Brandon Cisse",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Zaire Franklin",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Shin",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Matthew Golden",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Bo Melton",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Back",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Benjamin St-Juste",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Christian Watson",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Savion Williams",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Reed Blankenship",
+      "team_slug": "houston-texans",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.houstontexans.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Blake Fisher",
+      "team_slug": "houston-texans",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Thumb",
+      "sources": [
+        "https://www.houstontexans.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "David Montgomery",
+      "team_slug": "houston-texans",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Groin",
+      "sources": [
+        "https://www.houstontexans.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Dalton Schultz",
+      "team_slug": "houston-texans",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Quadriceps",
+      "sources": [
+        "https://www.houstontexans.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Henry To'oTo'o",
+      "team_slug": "houston-texans",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.houstontexans.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jaylon Moore",
+      "team_slug": "kansas-city-chiefs",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.chiefs.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Rashee Rice",
+      "team_slug": "kansas-city-chiefs",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.chiefs.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Travis Kelce",
+      "team_slug": "kansas-city-chiefs",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.chiefs.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "L'Jarius Sneed",
+      "team_slug": "kansas-city-chiefs",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.chiefs.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Tonka Hemingway",
+      "team_slug": "las-vegas-raiders",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.raiders.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Quay Walker",
+      "team_slug": "las-vegas-raiders",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Chest",
+      "sources": [
+        "https://www.raiders.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Mike Washington Jr.",
+      "team_slug": "las-vegas-raiders",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Foot",
+      "sources": [
+        "https://www.raiders.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Trent McDuffie",
+      "team_slug": "los-angeles-rams",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Groin",
+      "sources": [
+        "https://www.therams.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Nate Landman",
+      "team_slug": "los-angeles-rams",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.therams.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Puka Nacua",
+      "team_slug": "los-angeles-rams",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.therams.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Willie Gay Jr.",
+      "team_slug": "miami-dolphins",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Illness",
+      "sources": [
+        "https://www.miamidolphins.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Reese Taylor",
+      "team_slug": "miami-dolphins",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Quadriceps",
+      "sources": [
+        "https://www.miamidolphins.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Tucker Addington",
+      "team_slug": "miami-dolphins",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.miamidolphins.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Caleb Douglas",
+      "team_slug": "miami-dolphins",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.miamidolphins.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Will Kacmarek",
+      "team_slug": "miami-dolphins",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.miamidolphins.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jaylen Wright",
+      "team_slug": "miami-dolphins",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Foot",
+      "sources": [
+        "https://www.miamidolphins.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Christian Darrisaw",
+      "team_slug": "minnesota-vikings",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.vikings.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "T.J. Hockenson",
+      "team_slug": "minnesota-vikings",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.vikings.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Kaden Elliss",
+      "team_slug": "new-orleans-saints",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.neworleanssaints.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Anfernee Jennings",
+      "team_slug": "new-orleans-saints",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.neworleanssaints.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Alvin Kamara",
+      "team_slug": "new-orleans-saints",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Back",
+      "sources": [
+        "https://www.neworleanssaints.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Cesar Ruiz",
+      "team_slug": "new-orleans-saints",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.neworleanssaints.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Tremaine Edmunds",
+      "team_slug": "new-york-giants",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Chris Manhertz",
+      "team_slug": "new-york-giants",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Greg Newsome II",
+      "team_slug": "new-york-giants",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jermaine Eluemunor",
+      "team_slug": "new-york-giants",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jevon Holland",
+      "team_slug": "new-york-giants",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Theo Johnson",
+      "team_slug": "new-york-giants",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Neck",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Charlie Jones",
+      "team_slug": "new-york-giants",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Achilles",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Marcus Mbow",
+      "team_slug": "new-york-giants",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Tyler Nubin",
+      "team_slug": "new-york-giants",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Neck",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Andrew Thomas",
+      "team_slug": "new-york-giants",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Groin",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Colton Hood",
+      "team_slug": "new-york-giants",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.giants.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Max Mitchell",
+      "team_slug": "new-york-jets",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.newyorkjets.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Kene Nwangwu",
+      "team_slug": "new-york-jets",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.newyorkjets.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Joseph Ossai",
+      "team_slug": "new-york-jets",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.newyorkjets.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Breece Hall",
+      "team_slug": "new-york-jets",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Quadriceps",
+      "sources": [
+        "https://www.newyorkjets.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Will McDonald IV",
+      "team_slug": "new-york-jets",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Toe",
+      "sources": [
+        "https://www.newyorkjets.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Adonai Mitchell",
+      "team_slug": "new-york-jets",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Finger",
+      "sources": [
+        "https://www.newyorkjets.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Dylan Parham",
+      "team_slug": "new-york-jets",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.newyorkjets.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "T'Vondre Sweat",
+      "team_slug": "new-york-jets",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Elbow",
+      "sources": [
+        "https://www.newyorkjets.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Saquon Barkley",
+      "team_slug": "philadelphia-eagles",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Michael Carter II",
+      "team_slug": "philadelphia-eagles",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Abdomen",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "A.J. Epenesa",
+      "team_slug": "philadelphia-eagles",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Back",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Dallas Goedert",
+      "team_slug": "philadelphia-eagles",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jonathan Greenard",
+      "team_slug": "philadelphia-eagles",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jalyx Hunt",
+      "team_slug": "philadelphia-eagles",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Drew Kendall",
+      "team_slug": "philadelphia-eagles",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Willie Lampkin",
+      "team_slug": "philadelphia-eagles",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Illness",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Moro Ojomo",
+      "team_slug": "philadelphia-eagles",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Abdomen",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "DeVonta Smith",
+      "team_slug": "philadelphia-eagles",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Tyler Steen",
+      "team_slug": "philadelphia-eagles",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Dontayvion Wicks",
+      "team_slug": "philadelphia-eagles",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jalen Ramsey",
+      "team_slug": "pittsburgh-steelers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Wrist",
+      "sources": [
+        "https://www.steelers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Rico Dowdle",
+      "team_slug": "pittsburgh-steelers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.steelers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Alex Highsmith",
+      "team_slug": "pittsburgh-steelers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Groin",
+      "sources": [
+        "https://www.steelers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "T.J. Watt",
+      "team_slug": "pittsburgh-steelers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.steelers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Nick Bosa",
+      "team_slug": "san-francisco-49ers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Ashtyn Davis",
+      "team_slug": "san-francisco-49ers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Jaden Dugger",
+      "team_slug": "san-francisco-49ers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Mike Evans",
+      "team_slug": "san-francisco-49ers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Achilles",
+      "sources": [
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Luke Gifford",
+      "team_slug": "san-francisco-49ers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Groin",
+      "sources": [
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Siran Neal",
+      "team_slug": "san-francisco-49ers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Marques Sigle",
+      "team_slug": "san-francisco-49ers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Mykel Williams",
+      "team_slug": "san-francisco-49ers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Drew Lock",
+      "team_slug": "seattle-seahawks",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Elbow",
+      "sources": [
+        "https://www.seahawks.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Uchenna Nwosu",
+      "team_slug": "seattle-seahawks",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Hip",
+      "sources": [
+        "https://www.seahawks.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Connor O'Toole",
+      "team_slug": "seattle-seahawks",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.seahawks.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Chazz Surratt",
+      "team_slug": "seattle-seahawks",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.seahawks.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Drake Thomas",
+      "team_slug": "seattle-seahawks",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.seahawks.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Emeka Egbuka",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Luke Goedeke",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Bucky Irving",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Illness",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Baker Mayfield",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Thumb",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Zyon McCollum",
+      "team_slug": "tampa-bay-buccaneers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Illness",
+      "sources": [
+        "https://www.buccaneers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Tony Adams",
+      "team_slug": "tennessee-titans",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.tennesseetitans.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Calvin Ridley",
+      "team_slug": "tennessee-titans",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hip",
+      "sources": [
+        "https://www.tennesseetitans.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
+    },
+    {
+      "date": "2026-10-22",
+      "week": 7,
+      "player": "Kevin Winston Jr.",
+      "team_slug": "tennessee-titans",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Quadriceps",
+      "sources": [
+        "https://www.tennesseetitans.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "note": "Thursday practice participation; injury description is the condition shared by the official club report and CBS. This dated report does not establish a final designation, reserve activation or game-day active status."
     }
   ],
   "limitations": [
@@ -3359,9 +5519,9 @@
   ],
   "moduleSources": {
     "schedule": {
-      "sourceAsOf": "2026-10-22",
-      "fetchedAt": "2026-10-22T22:44:53.695Z",
-      "compiledAt": "2026-10-22T22:44:53.765Z"
+      "sourceAsOf": "2026-10-23",
+      "fetchedAt": "2026-10-23T09:18:04.758Z",
+      "compiledAt": "2026-10-23T09:26:16.354Z"
     },
     "injuries": {
       "sourceAsOf": "2026-10-20",
@@ -3384,10 +5544,95 @@
       "compiledAt": "2026-10-20T19:20:03.528Z"
     },
     "inactives": {
-      "sourceAsOf": null,
-      "fetchedAt": null,
-      "compiledAt": null
+      "sourceAsOf": "2026-10-22",
+      "fetchedAt": "2026-10-23T09:22:19.687Z",
+      "compiledAt": "2026-10-23T09:26:16.354Z"
     }
   },
-  "inactives": []
+  "inactives": [
+    {
+      "gameId": "401873010",
+      "week": 7,
+      "teamSlug": "new-england-patriots",
+      "publishedAt": "2026-10-22T22:48:23.219Z",
+      "checkedAt": "2026-10-23T09:22:19.687Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Ben Brown",
+          "designation": "inactive"
+        },
+        {
+          "name": "Channing Canada",
+          "designation": "inactive"
+        },
+        {
+          "name": "Carlton Davis III",
+          "designation": "inactive"
+        },
+        {
+          "name": "Karon Prunty",
+          "designation": "inactive"
+        },
+        {
+          "name": "Joshua Farmer",
+          "designation": "inactive"
+        },
+        {
+          "name": "Behren Morton",
+          "designation": "emergency_qb"
+        }
+      ],
+      "sources": [
+        "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+        "https://www.patriots.com/news/week-7-inactives-patriots-at-bears-x7631",
+        "https://sports.yahoo.com/articles/bears-patriots-inactives-t-j-225014547.html"
+      ]
+    },
+    {
+      "gameId": "401873010",
+      "week": 7,
+      "teamSlug": "chicago-bears",
+      "publishedAt": "2026-10-22T22:48:23.219Z",
+      "checkedAt": "2026-10-23T09:22:19.687Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Kyle Monangai",
+          "designation": "inactive"
+        },
+        {
+          "name": "Nick McCloud",
+          "designation": "inactive"
+        },
+        {
+          "name": "T.J. Edwards",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jack Sanborn",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jordan McFadden",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jayden Loving",
+          "designation": "inactive"
+        },
+        {
+          "name": "Case Keenum",
+          "designation": "emergency_qb"
+        }
+      ],
+      "sources": [
+        "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+        "https://www.patriots.com/news/week-7-inactives-patriots-at-bears-x7631",
+        "https://sports.yahoo.com/articles/bears-patriots-inactives-t-j-225014547.html"
+      ]
+    }
+  ]
 }

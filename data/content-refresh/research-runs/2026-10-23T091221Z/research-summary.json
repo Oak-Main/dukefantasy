@@ -1,0 +1,341 @@
+{
+  "run": "2026-10-23T091221Z",
+  "baseCommit": "c3cafe628ce763bf4188cbb80106aef7ac76af69",
+  "checkedAt": "2026-10-23T09:26:16.354Z",
+  "changedFacts": 200,
+  "moduleReviews": 2,
+  "practicesAdded": 135,
+  "watchPracticeUpdates": [
+    "Jeremiyah Love",
+    "Andrew Wingard",
+    "Wydett Williams Jr.",
+    "Kendal Daniels",
+    "C.J. Henderson",
+    "Billy Bowman Jr.",
+    "Divine Deablo",
+    "Lamar Jackson",
+    "Cam Jurgens",
+    "Thomas Incoom",
+    "Grant Delpit",
+    "Teven Jenkins",
+    "Quinshon Judkins",
+    "Drew Shelton",
+    "KaVontae Turpin",
+    "Dee Winters",
+    "Tyler Badie",
+    "Talanoa Hufanga",
+    "Rock Ya-Sin",
+    "Aaron Banks",
+    "Brandon Cisse",
+    "Benjamin St-Juste",
+    "Reed Blankenship",
+    "David Montgomery",
+    "Jaylon Moore",
+    "Rashee Rice",
+    "Tonka Hemingway",
+    "Trent McDuffie",
+    "Reese Taylor",
+    "Caleb Douglas",
+    "Christian Darrisaw",
+    "T.J. Hockenson",
+    "Kaden Elliss",
+    "Anfernee Jennings",
+    "Cesar Ruiz",
+    "Tremaine Edmunds",
+    "Greg Newsome II",
+    "Jermaine Eluemunor",
+    "Theo Johnson",
+    "Tyler Nubin",
+    "Colton Hood",
+    "Joseph Ossai",
+    "Breece Hall",
+    "Adonai Mitchell",
+    "Dylan Parham",
+    "Saquon Barkley",
+    "Michael Carter II",
+    "AJ Epenesa",
+    "Jalyx Hunt",
+    "Nick Bosa",
+    "Mike Evans",
+    "Luke Gifford",
+    "Marques Sigle",
+    "Chazz Surratt",
+    "Drake Thomas",
+    "Baker Mayfield",
+    "Tony Adams",
+    "Kevin Winston Jr."
+  ],
+  "newIRPlacements": [
+    "Sebastian Joseph-Day",
+    "Josh Simmons",
+    "Christian Rozeboom",
+    "Elijah Arroyo"
+  ],
+  "inactiveLists": 2,
+  "emergencyQuarterbacks": [
+    "Behren Morton",
+    "Case Keenum"
+  ],
+  "results": {
+    "gamesCompared": 107,
+    "finals": 94,
+    "week7Finals": 1,
+    "week7Upcoming": 13,
+    "changed": [
+      "401873010"
+    ]
+  },
+  "standingsCompared": 32,
+  "priorWatch": [
+    {
+      "player": "Josh Simmons",
+      "team_slug": "kansas-city-chiefs",
+      "position": "OT",
+      "injury": null,
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": "DNP",
+        "thu": null,
+        "fri": null,
+        "sat": null
+      },
+      "likelihood": "questionable",
+      "confidence": "medium",
+      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.chiefs.com/team/injury-report/"
+      ],
+      "social": []
+    },
+    {
+      "player": "Elijah Arroyo",
+      "team_slug": "seattle-seahawks",
+      "position": "TE",
+      "injury": "Shoulder",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": null,
+        "sat": null
+      },
+      "likelihood": "unlikely",
+      "confidence": "medium",
+      "note": "OUT in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "sources": [
+        "https://www.espn.com/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/"
+      ],
+      "social": []
+    }
+  ],
+  "unchangedModuleDates": {
+    "injuries": "2026-10-20",
+    "fantasy": "2026-10-20",
+    "transactions": "2026-10-20",
+    "leaders": "2026-10-20"
+  },
+  "sources": [
+    {
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "checkedAt": "2026-10-23T09:18:04.289Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+      "checkedAt": "2026-10-23T09:18:04.758Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.azcardinals.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:03.256Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.cbssports.com/nfl/injuries/",
+      "checkedAt": "2026-10-23T09:18:03.981Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.nfl.com/injuries/",
+      "checkedAt": "2026-10-23T09:18:03.762Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.atlantafalcons.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.078Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.baltimoreravens.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.389Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.panthers.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:03.081Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.834Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.dallascowboys.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:20:47.238Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.denverbroncos.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:03.273Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.detroitlions.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:03.567Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.packers.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:03.621Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.houstontexans.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.510Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.chiefs.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:03.603Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.raiders.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:03.357Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.therams.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:03.298Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.miamidolphins.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.590Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.vikings.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.994Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.neworleanssaints.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.027Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.giants.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.335Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.newyorkjets.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.667Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:20:47.371Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.steelers.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.073Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.49ers.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.067Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.seahawks.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:03.699Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.buccaneers.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:03.139Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.tennesseetitans.com/team/injury-report/",
+      "checkedAt": "2026-10-23T09:18:02.860Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.steelers.com/team/transactions/",
+      "checkedAt": "2026-10-23T09:20:47.083Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+      "checkedAt": "2026-10-23T09:18:03.887Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-23T09:18:04.080Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.chiefs.com/team/transactions/",
+      "checkedAt": "2026-10-23T09:20:47.259Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.buccaneers.com/team/transactions/",
+      "checkedAt": "2026-10-23T09:20:47.267Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.seahawks.com/team/transactions/",
+      "checkedAt": "2026-10-23T09:20:47.348Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
+      "checkedAt": "2026-10-23T09:22:19.364Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+      "checkedAt": "2026-10-23T09:22:19.687Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.patriots.com/news/week-7-inactives-patriots-at-bears-x7631",
+      "checkedAt": "2026-10-23T09:20:47.089Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://sports.yahoo.com/articles/bears-patriots-inactives-t-j-225014547.html",
+      "checkedAt": "2026-10-23T09:20:47.629Z",
+      "reportedWeek": 7
+    }
+  ],
+  "normalization": "Club/NFL/ESPN identities matched to native team ids. Carlton Davis and Carlton Davis III refer to the same cornerback. Shared conditions (quad/quadriceps etc.) are published; other condition details remain held. Emergency quarterbacks are explicitly labeled by NFL, NBC and Windy City Gridiron syndicated through Yahoo. These publisher lists do not imply active status for omitted players.",
+  "preserved": [
+    "All 272 game identities/kickoffs and international metadata",
+    "All 169 previously published dated practices",
+    "Existing official designations and historical reserve eligibility",
+    "Fantasy, transaction and leader content/date fields"
+  ]
+}
