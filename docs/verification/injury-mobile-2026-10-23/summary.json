@@ -1,0 +1,75 @@
+{
+  "baseCommit": "98ceeb55037a3c6289c86df40b62dada8f83e246",
+  "dataTree": "32750460fa99eac50fdb6a361cc2020d2689e2aa",
+  "publicationPathsUnchanged": [
+    "data",
+    "lib/nfl-generated.ts",
+    "lib/injury-report.ts",
+    "lib/content-refresh.ts",
+    "scripts/week7-evidence.mjs",
+    "scripts/verify-week7-update.mjs",
+    "scripts/week7-publication-dates.mjs",
+    "scripts/smoke-release.mjs",
+    "scripts/release-response.mjs",
+    "scripts/week7-lock.mjs",
+    "wrangler.deploy.jsonc"
+  ],
+  "allPreviouslyLockedPackageVersionsUnchanged": true,
+  "newDevDependencies": {
+    "@playwright/test": "1.64.1",
+    "@axe-core/playwright": "4.14.0"
+  },
+  "browserRuntime": {
+    "engine": "Chromium",
+    "version": "153.0.8010.0",
+    "playwright": "1.64.1",
+    "axe": "4.14.0"
+  },
+  "baseline390Stats": {
+    "startTime": "2026-10-23T14:54:28.177Z",
+    "duration": 86194.33799999999,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  },
+  "correctedChromiumStats": {
+    "startTime": "2026-10-23T15:04:31.478Z",
+    "duration": 89604.356,
+    "expected": 25,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": [
+    "chromium-320",
+    "chromium-390",
+    "chromium-679",
+    "chromium-680",
+    "chromium-1440"
+  ],
+  "counts": {
+    "ledgerPlayers": 279,
+    "ledgerColumns": 7,
+    "watchPlayers": 126,
+    "watchColumns": 11,
+    "datedPracticeReports": 304,
+    "inactiveTeamLists": 2,
+    "games": 272
+  },
+  "checks": {
+    "verify": "PASS: 147 unit, 9 rendered, a11y, SEO, links, visual artifacts, migration, seed; typecheck/lint/build",
+    "datasetVerify": "PASS: 272 games, 94 finals, 32 standings, no kickoff changes",
+    "productionAudit": "PASS: zero findings",
+    "cloudflareTypes": "PASS",
+    "cloudflareDryRun": "PASS",
+    "releasePreflight": "BLOCKED: schedule: missing, future or stale retrieval time",
+    "webkit390": "BLOCKED before assertions: missing Linux shared libraries; install-deps unavailable in sandbox"
+  },
+  "screenshotsSha256": {
+    "after-ledger-390.png": "ad9839a05b77294da29e11058e05b02e00a126dcb5a79a84c17c41d5c1609128",
+    "after-watch-390.png": "b611a465b775c451d23dd684f8cb10018c8185a2d9581ce29957a3027aeeef0f",
+    "before-ledger-390.png": "40b5c0826f1a7c130ae030ee455ca70ecd111cbf094f9e816608cf8da0bcab63",
+    "before-watch-390.png": "3c52b95d47d011b5f131588569b231030710383337d83d695a186307a7f1da7a"
+  }
+}
