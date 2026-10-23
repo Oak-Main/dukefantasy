@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { type ReactNode, useMemo, useState } from "react";
 import { CalendarClock, RefreshCw, ShieldCheck } from "lucide-react";
 import type { BroadcastTeam } from "@/lib/homepage";
 import { inactiveReports, practiceReports, reserveStatuses } from "@/lib/content-refresh";
@@ -50,6 +50,19 @@ function PracticeCell({ status }: { status: string | null }) {
   if (!status) return <span className="inj-practice inj-practice--none">—</span>;
   const cls = status === "FP" ? "inj-practice--fp" : status === "LP" ? "inj-practice--lp" : "inj-practice--dnp";
   return <span className={`inj-practice ${cls}`}>{status}</span>;
+}
+
+function InjuryTableCell({ label, headers, className, children }: {
+  label: string;
+  headers: string;
+  className?: string;
+  children: ReactNode;
+}) {
+  return (
+    <td data-label={label} headers={headers} className={className}>
+      <div className="inj-cell-value">{children}</div>
+    </td>
+  );
 }
 
 export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] }) {
@@ -265,48 +278,49 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
           </div>
         </div>
         {ledgerRows.length ? (
-          <div className="db-table-wrap">
-            <table className="db-table inj-table">
+          <section className="db-table-wrap" aria-labelledby="inj-ledger-title" tabIndex={0}>
+            {/* biome-ignore lint/a11y/noRedundantRoles: retain table semantics when mobile CSS changes display. */}
+            <table className="db-table inj-table" role="table" aria-labelledby="inj-ledger-title">
               <thead>
                 <tr>
-                  <th scope="col">Player</th>
-                  <th scope="col">Team</th>
-                  <th scope="col">Pos</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Weeks out</th>
-                  <th scope="col">Detail</th>
-                  <th scope="col">Sources</th>
+                  <th id="inj-ledger-player" scope="col">Player</th>
+                  <th id="inj-ledger-team" scope="col">Team</th>
+                  <th id="inj-ledger-position" scope="col">Pos</th>
+                  <th id="inj-ledger-status" scope="col">Status</th>
+                  <th id="inj-ledger-weeks" scope="col">Weeks out</th>
+                  <th id="inj-ledger-detail" scope="col">Detail</th>
+                  <th id="inj-ledger-sources" scope="col">Sources</th>
                 </tr>
               </thead>
               <tbody>
                 {ledgerRows.slice(0, 400).map((row) => {
                   const team = row.teamSlug ? teamBySlug.get(row.teamSlug) : undefined;
                   return (
-                    <tr key={`${row.player}-${row.teamSlug}-${row.status}`}>
-                      <td>
+                    <tr className="db-data-row" key={`${row.player}-${row.teamSlug}-${row.status}`}>
+                      <InjuryTableCell label="Player" headers="inj-ledger-player">
                         <strong>{row.player}</strong>
                         {row.confidence ? <small className="inj-conf"> · {row.confidence} confidence</small> : null}
-                      </td>
-                      <td>{team?.shortName ?? row.teamSlug ?? "—"}</td>
-                      <td>{row.position ?? "—"}</td>
-                      <td>
+                      </InjuryTableCell>
+                      <InjuryTableCell label="Team" headers="inj-ledger-team">{team?.shortName ?? row.teamSlug ?? "—"}</InjuryTableCell>
+                      <InjuryTableCell label="Pos" headers="inj-ledger-position">{row.position ?? "—"}</InjuryTableCell>
+                      <InjuryTableCell label="Status" headers="inj-ledger-status">
                         <StatusPill status={row.status} />
-                      </td>
-                      <td>{row.weeksOut != null ? `${row.weeksOut}+` : row.status === "IR" ? "Indefinite" : "—"}</td>
-                      <td className="inj-detail">{row.injury ?? row.detail ?? "Not published"}</td>
-                      <td>
+                      </InjuryTableCell>
+                      <InjuryTableCell label="Weeks out" headers="inj-ledger-weeks">{row.weeksOut != null ? `${row.weeksOut}+` : row.status === "IR" ? "Indefinite" : "—"}</InjuryTableCell>
+                      <InjuryTableCell label="Detail" headers="inj-ledger-detail" className="inj-detail">{row.injury ?? row.detail ?? "Not published"}</InjuryTableCell>
+                      <InjuryTableCell label="Sources" headers="inj-ledger-sources">
                         {row.sources.length ? (
                           <EvidenceLinks urls={row.sources} />
                         ) : (
                           <span className="inj-src-espn">ESPN</span>
                         )}
-                      </td>
+                      </InjuryTableCell>
                     </tr>
                   );
                 })}
               </tbody>
             </table>
-          </div>
+          </section>
         ) : (
           <p className="db-empty">No long-term injuries published{teamFilter ? " for this team" : ""}.</p>
         )}
@@ -329,21 +343,22 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
           </p>
         )}
         {watchRows.length ? (
-          <div className="db-table-wrap">
-            <table className="db-table inj-table inj-table--watch">
+          <section className="db-table-wrap" aria-labelledby="inj-watch-title" tabIndex={0}>
+            {/* biome-ignore lint/a11y/noRedundantRoles: retain table semantics when mobile CSS changes display. */}
+            <table className="db-table inj-table inj-table--watch" role="table" aria-labelledby="inj-watch-title">
               <thead>
                 <tr>
-                  <th scope="col">Player</th>
-                  <th scope="col">Team</th>
-                  <th scope="col">Pos</th>
-                  <th scope="col">Mon</th>
-                  <th scope="col">Tue</th>
-                  <th scope="col">Wed</th>
-                  <th scope="col">Thu</th>
-                  <th scope="col">Fri</th>
-                  <th scope="col">Sat</th>
-                  <th scope="col">Likelihood</th>
-                  <th scope="col">Note</th>
+                  <th id="inj-watch-player" scope="col">Player</th>
+                  <th id="inj-watch-team" scope="col">Team</th>
+                  <th id="inj-watch-position" scope="col">Pos</th>
+                  <th id="inj-watch-mon" scope="col">Mon</th>
+                  <th id="inj-watch-tue" scope="col">Tue</th>
+                  <th id="inj-watch-wed" scope="col">Wed</th>
+                  <th id="inj-watch-thu" scope="col">Thu</th>
+                  <th id="inj-watch-fri" scope="col">Fri</th>
+                  <th id="inj-watch-sat" scope="col">Sat</th>
+                  <th id="inj-watch-likelihood" scope="col">Likelihood</th>
+                  <th id="inj-watch-note" scope="col">Note</th>
                 </tr>
               </thead>
               <tbody>
@@ -351,23 +366,23 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
                   const team = row.teamSlug ? teamBySlug.get(row.teamSlug) : undefined;
                   const practice = row.practice;
                   return (
-                    <tr key={`${row.player}-${row.teamSlug}-watch`}>
-                      <td>
+                    <tr className="db-data-row" key={`${row.player}-${row.teamSlug}-watch`}>
+                      <InjuryTableCell label="Player" headers="inj-watch-player">
                         <strong>{row.player}</strong>
                         {row.injury ? <small className="inj-conf"> · {row.injury}</small> : null}
-                      </td>
-                      <td>{team?.shortName ?? row.teamSlug ?? "—"}</td>
-                      <td>{row.position ?? "—"}</td>
-                      <td><PracticeCell status={practice?.mon ?? null} /></td>
-                      <td><PracticeCell status={practice?.tue ?? null} /></td>
-                      <td><PracticeCell status={practice ? practice.wed : null} /></td>
-                      <td><PracticeCell status={practice ? practice.thu : null} /></td>
-                      <td><PracticeCell status={practice ? practice.fri : null} /></td>
-                      <td><PracticeCell status={practice ? practice.sat : null} /></td>
-                      <td>
+                      </InjuryTableCell>
+                      <InjuryTableCell label="Team" headers="inj-watch-team">{team?.shortName ?? row.teamSlug ?? "—"}</InjuryTableCell>
+                      <InjuryTableCell label="Pos" headers="inj-watch-position">{row.position ?? "—"}</InjuryTableCell>
+                      <InjuryTableCell label="Mon" headers="inj-watch-mon"><PracticeCell status={practice?.mon ?? null} /></InjuryTableCell>
+                      <InjuryTableCell label="Tue" headers="inj-watch-tue"><PracticeCell status={practice?.tue ?? null} /></InjuryTableCell>
+                      <InjuryTableCell label="Wed" headers="inj-watch-wed"><PracticeCell status={practice ? practice.wed : null} /></InjuryTableCell>
+                      <InjuryTableCell label="Thu" headers="inj-watch-thu"><PracticeCell status={practice ? practice.thu : null} /></InjuryTableCell>
+                      <InjuryTableCell label="Fri" headers="inj-watch-fri"><PracticeCell status={practice ? practice.fri : null} /></InjuryTableCell>
+                      <InjuryTableCell label="Sat" headers="inj-watch-sat"><PracticeCell status={practice ? practice.sat : null} /></InjuryTableCell>
+                      <InjuryTableCell label="Likelihood" headers="inj-watch-likelihood">
                         <LikelihoodPill likelihood={row.likelihood} confidence={row.confidence} />
-                      </td>
-                      <td className="inj-detail">
+                      </InjuryTableCell>
+                      <InjuryTableCell label="Note" headers="inj-watch-note" className="inj-detail">
                         {row.publishedStatus ? <p><strong>Official Week {injuryResearch.week} designation: {row.publishedStatus.replaceAll("_", " ")}</strong> · <time dateTime={row.designationDate ?? undefined}>{row.designationDate}</time></p> : null}
                         {row.note ?? "Not published"}
                         {row.sources.length || row.social.length ? (
@@ -378,13 +393,13 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
                             <span className="inj-src-espn">ESPN</span>
                           </>
                         ) : null}
-                      </td>
+                      </InjuryTableCell>
                     </tr>
                   );
                 })}
               </tbody>
             </table>
-          </div>
+          </section>
         ) : (
           <p className="db-empty">No week-to-week entries published{teamFilter ? " for this team" : ""}.</p>
         )}
