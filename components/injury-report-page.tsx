@@ -282,19 +282,19 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
                 {ledgerRows.slice(0, 400).map((row) => {
                   const team = row.teamSlug ? teamBySlug.get(row.teamSlug) : undefined;
                   return (
-                    <tr key={`${row.player}-${row.teamSlug}-${row.status}`}>
-                      <td>
+                    <tr className="db-data-row" key={`${row.player}-${row.teamSlug}-${row.status}`}>
+                      <td className="db-primary-cell" data-label="Player">
                         <strong>{row.player}</strong>
                         {row.confidence ? <small className="inj-conf"> · {row.confidence} confidence</small> : null}
                       </td>
-                      <td>{team?.shortName ?? row.teamSlug ?? "—"}</td>
-                      <td>{row.position ?? "—"}</td>
-                      <td>
+                      <td data-label="Team">{team?.shortName ?? row.teamSlug ?? "—"}</td>
+                      <td data-label="Position">{row.position ?? "—"}</td>
+                      <td data-label="Status">
                         <StatusPill status={row.status} />
                       </td>
-                      <td>{row.weeksOut != null ? `${row.weeksOut}+` : row.status === "IR" ? "Indefinite" : "—"}</td>
-                      <td className="inj-detail">{row.injury ?? row.detail ?? "Not published"}</td>
-                      <td>
+                      <td data-label="Weeks out">{row.weeksOut != null ? `${row.weeksOut}+` : row.status === "IR" ? "Indefinite" : "—"}</td>
+                      <td className="inj-detail" data-label="Detail">{row.injury ?? row.detail ?? "Not published"}</td>
+                      <td data-label="Sources">
                         {row.sources.length ? (
                           <EvidenceLinks urls={row.sources} />
                         ) : (
@@ -351,23 +351,23 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
                   const team = row.teamSlug ? teamBySlug.get(row.teamSlug) : undefined;
                   const practice = row.practice;
                   return (
-                    <tr key={`${row.player}-${row.teamSlug}-watch`}>
-                      <td>
+                    <tr className="db-data-row" key={`${row.player}-${row.teamSlug}-watch`}>
+                      <td className="db-primary-cell" data-label="Player">
                         <strong>{row.player}</strong>
                         {row.injury ? <small className="inj-conf"> · {row.injury}</small> : null}
                       </td>
-                      <td>{team?.shortName ?? row.teamSlug ?? "—"}</td>
-                      <td>{row.position ?? "—"}</td>
-                      <td><PracticeCell status={practice?.mon ?? null} /></td>
-                      <td><PracticeCell status={practice?.tue ?? null} /></td>
-                      <td><PracticeCell status={practice ? practice.wed : null} /></td>
-                      <td><PracticeCell status={practice ? practice.thu : null} /></td>
-                      <td><PracticeCell status={practice ? practice.fri : null} /></td>
-                      <td><PracticeCell status={practice ? practice.sat : null} /></td>
-                      <td>
+                      <td data-label="Team">{team?.shortName ?? row.teamSlug ?? "—"}</td>
+                      <td data-label="Position">{row.position ?? "—"}</td>
+                      <td data-label="Monday"><PracticeCell status={practice?.mon ?? null} /></td>
+                      <td data-label="Tuesday"><PracticeCell status={practice?.tue ?? null} /></td>
+                      <td data-label="Wednesday"><PracticeCell status={practice ? practice.wed : null} /></td>
+                      <td data-label="Thursday"><PracticeCell status={practice ? practice.thu : null} /></td>
+                      <td data-label="Friday"><PracticeCell status={practice ? practice.fri : null} /></td>
+                      <td data-label="Saturday"><PracticeCell status={practice ? practice.sat : null} /></td>
+                      <td data-label="Likelihood">
                         <LikelihoodPill likelihood={row.likelihood} confidence={row.confidence} />
                       </td>
-                      <td className="inj-detail">
+                      <td className="inj-detail" data-label="Note">
                         {row.publishedStatus ? <p><strong>Official Week {injuryResearch.week} designation: {row.publishedStatus.replaceAll("_", " ")}</strong> · <time dateTime={row.designationDate ?? undefined}>{row.designationDate}</time></p> : null}
                         {row.note ?? "Not published"}
                         {row.sources.length || row.social.length ? (

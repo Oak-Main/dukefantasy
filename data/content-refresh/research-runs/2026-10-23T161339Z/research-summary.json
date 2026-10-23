@@ -191,5 +191,6 @@
       "reportedWeek": 7
     }
   ],
-  "likelihoodTreatment": "The two official OUT records use unlikely/high as the direct editorial consequence of corroborated OUT status; prior assessments remain separate for other updated rows. No designation is not active confirmation."
+  "likelihoodTreatment": "The two official OUT records use unlikely/high as the direct editorial consequence of corroborated OUT status; prior assessments remain separate for other updated rows. No designation is not active confirmation.",
+  "mobileFix": "Reuse existing mobile table card/primary-cell classes and labels; display note cells at full width and wrap likelihood badges. Manual 390px review caught squeezed notes and badge clipping before release."
 }
