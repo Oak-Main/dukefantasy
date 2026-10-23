@@ -5820,37 +5820,50 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "Official Week 7 designation from the October 23 Paris-game report: QUESTIONABLE. The designation agrees across sources; the conflicting condition description and Friday participation remain held. The earlier likelihood assessment remains separate from this dated official designation. Reserve eligibility and complete Sunday inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+        "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+        "https://www.canalstreetchronicles.com/new-orleans-saints-injuries/116921/final-saints-vs-steelers-injury-report-paris-week-7ruled-out",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Kaden Elliss",
       "team_slug": "new-orleans-saints",
       "position": "LB",
-      "injury": null,
+      "injury": "Calf",
       "practice": {
         "mon": null,
         "tue": null,
         "wed": "LP",
         "thu": "LP",
-        "fri": null,
+        "fri": "FP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 Paris-game report: NO_DESIGNATION. No designation does not establish game-day active status. The earlier likelihood assessment remains separate from this dated official designation. Reserve eligibility and complete Sunday inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
         "https://www.neworleanssaints.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html"
       ],
-      "social": []
+      "social": [],
+      "published_status": "NO_DESIGNATION",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Anfernee Jennings",
@@ -5887,20 +5900,26 @@
         "tue": null,
         "wed": "DNP",
         "thu": "DNP",
-        "fri": null,
+        "fri": "LP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 Paris-game report: QUESTIONABLE. The earlier likelihood assessment remains separate from this dated official designation. Reserve eligibility and complete Sunday inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
         "https://www.neworleanssaints.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+        "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
+        "https://www.canalstreetchronicles.com/new-orleans-saints-injuries/116921/final-saints-vs-steelers-injury-report-paris-week-7ruled-out"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Kool-Aid McKinstry",
@@ -6356,7 +6375,7 @@
       "player": "Ben Skowronek",
       "team_slug": "pittsburgh-steelers",
       "position": "WR",
-      "injury": null,
+      "injury": "Calf",
       "practice": {
         "mon": null,
         "tue": null,
@@ -6365,15 +6384,22 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 Paris-game report: OUT. The likelihood label follows the corroborated official OUT designation. Complete game-day inactive lists are published separately.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
-        "https://www.steelers.com/team/injury-report/"
+        "https://www.steelers.com/team/injury-report/",
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+        "https://www.steelers.com/news/week-7-injury-report-saints",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Brandin Echols",
@@ -6388,15 +6414,21 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 21 Wednesday practice participation: DNP. The prior injury detail and likelihood assessment remain dated to the last complete review; this participation update is not an official game designation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 Paris-game report: OUT. The likelihood label follows the corroborated official OUT designation. Complete game-day inactive lists are published separately.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
-        "https://www.steelers.com/team/injury-report/"
+        "https://www.steelers.com/team/injury-report/",
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Marques Sigle",
@@ -6944,6 +6976,109 @@
       "likelihood": "questionable",
       "confidence": "high",
       "note": "Official October 21 Week 7 game designation: QUESTIONABLE. Wednesday walkthrough estimate: FP. This is not a complete game-day inactive list or proof of active roster eligibility."
+    },
+    {
+      "player": "Alvin Kamara",
+      "team_slug": "new-orleans-saints",
+      "position": "RB",
+      "injury": "Back",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": "LP",
+        "sat": null
+      },
+      "likelihood": null,
+      "confidence": null,
+      "sources": [
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html"
+      ],
+      "social": [],
+      "published_status": "NO_DESIGNATION",
+      "designation_week": 7,
+      "designation_date": "2026-10-23",
+      "note": "Official Week 7 designation from the October 23 Paris-game report: NO_DESIGNATION. No designation does not establish game-day active status. Reserve eligibility and complete Sunday inactive lists remain separate."
+    },
+    {
+      "player": "Rico Dowdle",
+      "team_slug": "pittsburgh-steelers",
+      "position": "RB",
+      "injury": "Knee",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": "LP",
+        "sat": null
+      },
+      "likelihood": null,
+      "confidence": null,
+      "sources": [
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+        "https://www.rotowire.com/football/headlines/rico-dowdle-injury-questionable-for-week-7-643903",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html"
+      ],
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23",
+      "note": "Official Week 7 designation from the October 23 Paris-game report: QUESTIONABLE. Friday LP is an estimate after Pittsburgh canceled its field session. Reserve eligibility and complete Sunday inactive lists remain separate."
+    },
+    {
+      "player": "T.J. Watt",
+      "team_slug": "pittsburgh-steelers",
+      "position": "LB",
+      "injury": "Calf",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": null,
+        "sat": null
+      },
+      "likelihood": null,
+      "confidence": null,
+      "sources": [
+        "https://www.steelers.com/news/week-7-injury-report-saints",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ],
+      "social": [],
+      "published_status": "NO_DESIGNATION",
+      "designation_week": 7,
+      "designation_date": "2026-10-23",
+      "note": "Official Week 7 designation from the October 23 Paris-game report: NO_DESIGNATION. No designation does not establish game-day active status. Reserve eligibility and complete Sunday inactive lists remain separate."
+    },
+    {
+      "player": "Alex Highsmith",
+      "team_slug": "pittsburgh-steelers",
+      "position": "LB",
+      "injury": "Groin",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": null,
+        "sat": null
+      },
+      "likelihood": null,
+      "confidence": null,
+      "sources": [
+        "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+        "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html"
+      ],
+      "social": [],
+      "published_status": "NO_DESIGNATION",
+      "designation_week": 7,
+      "designation_date": "2026-10-23",
+      "note": "Official Week 7 designation from the October 23 Paris-game report: NO_DESIGNATION. No designation does not establish game-day active status. Reserve eligibility and complete Sunday inactive lists remain separate."
     }
   ]
 }
