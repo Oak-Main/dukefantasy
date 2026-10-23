@@ -4,6 +4,7 @@ export async function fetchReleaseResponse(url, {
   version, revision, attempts = 16, delayMs = 2_000,
   request = fetch, wait = ms => new Promise(resolve => setTimeout(resolve, ms)),
 }) {
+  if (!Number.isInteger(attempts) || attempts < 1 || attempts > 16) throw new RangeError("Release response attempts must be an integer from 1 to 16");
   for (let attempt = 1; attempt <= attempts; attempt++) {
     const response = await request(url, { signal: AbortSignal.timeout(30_000), redirect: "manual" });
     // HTTP failures still fail immediately in the smoke caller.

@@ -5,6 +5,14 @@ import { fetchReleaseResponse } from "../scripts/release-response.mjs";
 const response = (version, revision, status = 200) => new Response("body", { status, headers: { "x-content-version": version, "x-content-revision": revision } });
 const expected = { version: "2026-10-23", revision: "checked-candidate", delayMs: 0, wait: async () => {} };
 
+test("release retries reject an excessive or invalid request count before any fetch", async () => {
+  let calls = 0;
+  for (const attempts of [17, 0, -1, 1.5, Number.NaN, Infinity, "16"]) {
+    await assert.rejects(fetchReleaseResponse("https://example.com/", { ...expected, attempts, request: async () => { calls++; return response(expected.version, expected.revision); } }), RangeError);
+  }
+  assert.equal(calls, 0);
+});
+
 test("release smoke waits for the exact revision after an older route response", async () => {
   const older = response("2026-10-22", "old"), current = response(expected.version, expected.revision);
   let calls = 0, waits = 0;
