@@ -1,6 +1,6 @@
 {
   "run": "2026-10-24T005358970Z",
-  "checkedAt": "2026-10-24T01:17:12.629Z",
+  "checkedAt": "2026-10-24T01:26:14.116Z",
   "baseCommit": "753a2cda24eeaac3f14e411ced9ed8b6507c7675",
   "changedFacts": 87,
   "moduleReviews": 1,
@@ -83,10 +83,11 @@
       "id": "cbs",
       "requestedUrl": "https://www.cbssports.com/nfl/injuries/",
       "resolvedUrl": "https://www.cbssports.com/nfl/injuries/",
-      "checkedAt": "2026-10-24T00:54:02.429Z",
+      "checkedAt": "2026-10-24T01:24:53.507Z",
       "status": 200,
-      "sha256": "2a33ce33454e82d60029326039c0d8dffa60efd18a239135f1b19f112e626f0e",
-      "bytes": 1100543
+      "sha256": "68f7be11d1d33d43fdb6695d729615953a2fabbdd50d6ab6e5f9828c7f8eb6b6",
+      "supersedesCheckedAt": "2026-10-24T00:54:02.429Z",
+      "bytes": 1101759
     },
     {
       "id": "cbsDaily",
@@ -146,11 +147,11 @@
       "id": "espnInjuries",
       "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
       "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "checkedAt": "2026-10-24T01:07:52.884Z",
+      "checkedAt": "2026-10-24T01:24:53.688Z",
       "status": 200,
-      "sha256": "d3439a1540cb7d09d6f903a89439a92549cbd419b06026d3205337810c883a66",
-      "supersedesCheckedAt": "2026-10-24T01:03:24.706Z",
-      "bytes": 8729614
+      "sha256": "6d4ddd4aef564e74935ba997739f0f5296384fceb8b6222e7db1865d11e1039e",
+      "supersedesCheckedAt": "2026-10-24T01:07:52.884Z",
+      "bytes": 8732556
     },
     {
       "id": "espnStandings",
@@ -1075,7 +1076,7 @@
     },
     {
       "url": "https://www.cbssports.com/nfl/injuries/",
-      "checkedAt": "2026-10-24T00:54:02.429Z",
+      "checkedAt": "2026-10-24T01:24:53.507Z",
       "reportedWeek": 7
     },
     {
@@ -1090,7 +1091,7 @@
     },
     {
       "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "checkedAt": "2026-10-24T01:07:52.884Z",
+      "checkedAt": "2026-10-24T01:24:53.688Z",
       "reportedWeek": 7
     },
     {

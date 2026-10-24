@@ -977,8 +977,8 @@
       ],
       "espn": {
         "status": "Out",
-        "date": "2026-10-23T00:54Z",
-        "comment": "Bosa (calf) did not participate at the 49ers' practice Thursday, Nick Wagoner of ESPN.com reports.",
+        "date": "2026-10-24T01:03Z",
+        "comment": "Bosa (knee) has been ruled out ahead of Sunday's game against the Falcons.",
         "injury": "Knee"
       },
       "cbs": {
@@ -1121,8 +1121,8 @@
       ],
       "espn": {
         "status": "Out",
-        "date": "2026-10-23T20:44Z",
-        "comment": "out",
+        "date": "2026-10-24T01:11Z",
+        "comment": "Sigle (ankle) has been ruled out ahead of Sunday's game against the Falcons.",
         "injury": "Ankle"
       },
       "cbs": {
@@ -1157,8 +1157,8 @@
       ],
       "espn": {
         "status": "Questionable",
-        "date": "2026-10-20T23:51Z",
-        "comment": "Head coach Kyle Shanahan said that Stout's removal from Monday's 23-17 win over the Commanders was due to an AC sprain in his shoulder, David Lombardi of SFStandard.com reports.",
+        "date": "2026-10-24T01:16Z",
+        "comment": "Stout (shoulder) is listed as questionable for Sunday's game against the Falcons.",
         "injury": "Shoulder - AC Joint"
       },
       "cbs": {
@@ -1309,7 +1309,7 @@
         "team": "new-york-giants",
         "player": "Tremaine Edmunds",
         "date": "Fri, Oct 23",
-        "injury": "Shoulder",
+        "injury": "Chest",
         "status": "Out for Week 7 at Houston",
         "participation": null
       }

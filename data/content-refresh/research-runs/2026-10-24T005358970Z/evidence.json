@@ -78,7 +78,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Andrew Wingard",
@@ -99,7 +99,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Andrew Wingard",
@@ -195,7 +195,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Jeremiyah Love",
@@ -216,7 +216,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Jeremiyah Love",
@@ -312,7 +312,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Broderick Washington Jr.",
@@ -333,7 +333,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Broderick Washington Jr.",
@@ -408,7 +408,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Lamar Jackson",
@@ -450,7 +450,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Lamar Jackson",
@@ -525,7 +525,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Monroe Freeling",
@@ -567,7 +567,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Monroe Freeling",
@@ -663,7 +663,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Thomas Incoom",
@@ -684,7 +684,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Thomas Incoom",
@@ -780,7 +780,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Teven Jenkins",
@@ -801,7 +801,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Teven Jenkins",
@@ -876,7 +876,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Grant Delpit",
@@ -918,7 +918,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Grant Delpit",
@@ -1014,7 +1014,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Talanoa Hufanga",
@@ -1035,7 +1035,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Talanoa Hufanga",
@@ -1131,7 +1131,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Tyler Badie",
@@ -1152,7 +1152,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Tyler Badie",
@@ -1248,7 +1248,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Jalen Pitre",
@@ -1269,7 +1269,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Jalen Pitre",
@@ -1365,7 +1365,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "David Montgomery",
@@ -1386,7 +1386,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "David Montgomery",
@@ -1482,7 +1482,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Reed Blankenship",
@@ -1503,7 +1503,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Reed Blankenship",
@@ -1599,7 +1599,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Tyler Warren",
@@ -1620,7 +1620,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Tyler Warren",
@@ -1716,7 +1716,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Sauce Gardner",
@@ -1737,7 +1737,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Sauce Gardner",
@@ -1812,7 +1812,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Rigoberto Sanchez",
@@ -1908,7 +1908,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Anthony Gould",
@@ -1929,7 +1929,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Anthony Gould",
@@ -2025,7 +2025,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Rashee Rice",
@@ -2046,7 +2046,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Rashee Rice",
@@ -2142,7 +2142,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Jaylon Moore",
@@ -2163,7 +2163,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Jaylon Moore",
@@ -2238,7 +2238,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Trent McDuffie",
@@ -2280,7 +2280,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Trent McDuffie",
@@ -2376,7 +2376,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Reese Taylor",
@@ -2397,7 +2397,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Reese Taylor",
@@ -2472,7 +2472,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Nathan Shepherd",
@@ -2514,7 +2514,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Nathan Shepherd",
@@ -2589,7 +2589,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Jermaine Eluemunor",
@@ -2631,7 +2631,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Jermaine Eluemunor",
@@ -2706,7 +2706,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Tyler Nubin",
@@ -2748,7 +2748,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Tyler Nubin",
@@ -2823,7 +2823,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Theo Johnson",
@@ -2865,7 +2865,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Theo Johnson",
@@ -2961,7 +2961,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Tremaine Edmunds",
@@ -2982,7 +2982,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Tremaine Edmunds",
@@ -3078,7 +3078,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Greg Newsome II",
@@ -3099,7 +3099,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Greg Newsome II",
@@ -3195,7 +3195,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Joseph Ossai",
@@ -3216,7 +3216,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Joseph Ossai",
@@ -3291,7 +3291,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Dylan Parham",
@@ -3333,7 +3333,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Dylan Parham",
@@ -3408,7 +3408,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Breece Hall",
@@ -3450,7 +3450,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Breece Hall",
@@ -3525,7 +3525,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Jalyx Hunt",
@@ -3600,7 +3600,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Michael Carter II",
@@ -3696,7 +3696,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Marques Sigle",
@@ -3717,7 +3717,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Marques Sigle",
@@ -3813,7 +3813,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Nick Bosa",
@@ -3834,7 +3834,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Nick Bosa",
@@ -3930,7 +3930,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Deebo Samuel Sr.",
@@ -3951,7 +3951,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Deebo Samuel Sr.",
@@ -4047,7 +4047,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Garret Wallow",
@@ -4068,7 +4068,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Garret Wallow",
@@ -4164,7 +4164,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Mike Evans",
@@ -4185,7 +4185,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Mike Evans",
@@ -4281,7 +4281,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Luke Gifford",
@@ -4302,7 +4302,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Luke Gifford",
@@ -4398,7 +4398,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Chazz Surratt",
@@ -4419,7 +4419,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Chazz Surratt",
@@ -4515,7 +4515,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Drake Thomas",
@@ -4536,7 +4536,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Drake Thomas",
@@ -4632,7 +4632,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Antoine Winfield Jr.",
@@ -4653,7 +4653,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Antoine Winfield Jr.",
@@ -4728,7 +4728,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Baker Mayfield",
@@ -4770,7 +4770,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Baker Mayfield",
@@ -4866,7 +4866,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Kevin Winston Jr.",
@@ -4887,7 +4887,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Kevin Winston Jr.",
@@ -4983,7 +4983,7 @@
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T01:07:52.884Z",
+          "checkedAt": "2026-10-24T01:24:53.688Z",
           "reportedWeek": 7,
           "value": {
             "player": "Upton Stout",
@@ -5004,7 +5004,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "player": "Upton Stout",
@@ -5064,7 +5064,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5117,7 +5117,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5170,7 +5170,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5223,7 +5223,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5276,7 +5276,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5329,7 +5329,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5382,7 +5382,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5435,7 +5435,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5488,7 +5488,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5541,7 +5541,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5594,7 +5594,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5647,7 +5647,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5700,7 +5700,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5753,7 +5753,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5806,7 +5806,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5859,7 +5859,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5912,7 +5912,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -5965,7 +5965,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6018,7 +6018,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6071,7 +6071,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6124,7 +6124,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6177,7 +6177,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6230,7 +6230,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6283,7 +6283,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6336,7 +6336,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6389,7 +6389,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6442,7 +6442,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6495,7 +6495,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6548,7 +6548,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6601,7 +6601,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6654,7 +6654,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6707,7 +6707,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6760,7 +6760,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6813,7 +6813,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6866,7 +6866,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6919,7 +6919,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -6972,7 +6972,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -7025,7 +7025,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -7078,7 +7078,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -7131,7 +7131,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -7184,7 +7184,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -7237,7 +7237,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
@@ -7290,7 +7290,7 @@
         },
         {
           "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T00:54:02.429Z",
+          "checkedAt": "2026-10-24T01:24:53.507Z",
           "reportedWeek": 7,
           "value": {
             "date": "2026-10-23",
