@@ -127,6 +127,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
     }));
     const researchRows = injuryResearch.watch.map((entry) => {
       const model = likelihoodFromPractice(entry.practice);
+      const ungraded = entry.publishedStatus === "NO_DESIGNATION";
       return {
         kind: "research" as const,
         player: entry.player,
@@ -136,8 +137,8 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         practice: entry.practice,
         publishedStatus: entry.publishedStatus,
         designationDate: entry.designationDate,
-        likelihood: entry.likelihood ?? model.likelihood,
-        confidence: entry.confidence ?? model.confidence,
+        likelihood: ungraded ? null : entry.likelihood ?? model.likelihood,
+        confidence: ungraded ? null : entry.confidence ?? model.confidence,
         note: entry.note ?? model.basis,
         sources: entry.sources,
         social: entry.social,

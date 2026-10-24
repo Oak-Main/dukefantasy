@@ -6130,6 +6130,565 @@
       ],
       "checkedAt": "2026-10-24T01:24:53.507Z",
       "note": "Friday Week 7 practice participation agrees between the club report and CBS, with NFL participation also agreeing. Only the mutually reported condition is included. Practice participation does not establish roster activation, game-day active status or a final designation."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Saquon Barkley",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ],
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Zack Baun",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Jakorian Bennett",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Marquise Brown",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Grant Calcaterra",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Back",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Jihaad Campbell",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Wrist",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Jalen Carter",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Wrist",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Michael Carter II",
+      "team_slug": "philadelphia-eagles",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Abdomen",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Britain Covey",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Jordan Davis",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Shin/Thumb",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Landon Dickerson",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Knee/Pectoral",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Arnold Ebiketie",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "AJ Epenesa",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Back",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Dallas Goedert",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ],
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Jonathan Greenard",
+      "team_slug": "philadelphia-eagles",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Jalyx Hunt",
+      "team_slug": "philadelphia-eagles",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee/Ankle",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Fred Johnson",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Illness",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Drew Kendall",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Willie Lampkin",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Illness",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Moro Ojomo",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Abdomen",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "DeVonta Smith",
+      "team_slug": "philadelphia-eagles",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ],
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Nolan Smith Jr.",
+      "team_slug": "philadelphia-eagles",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Concussion",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Tyler Steen",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Eli Stowers",
+      "team_slug": "philadelphia-eagles",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Quad",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:23.995Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Dontayvion Wicks",
+      "team_slug": "philadelphia-eagles",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.philadelphiaeagles.com/team/injury-report/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ],
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Drew Shelton",
+      "team_slug": "dallas-cowboys",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:24.054Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "KaVontae Turpin",
+      "team_slug": "dallas-cowboys",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Ribs",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:24.054Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Dee Winters",
+      "team_slug": "dallas-cowboys",
+      "participation": "DNP",
+      "report_type": "practice",
+      "injury": "Calf",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:24.054Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Marist Liufau",
+      "team_slug": "dallas-cowboys",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Forearm",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:24.054Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "P.J. Locke",
+      "team_slug": "dallas-cowboys",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Foot",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:24.054Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "George Pickens",
+      "team_slug": "dallas-cowboys",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Shoulder",
+      "sources": [
+        "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html",
+        "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:24.054Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Joey Porter Jr.",
+      "team_slug": "dallas-cowboys",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Ankle",
+      "sources": [
+        "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html",
+        "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html"
+      ],
+      "checkedAt": "2026-10-24T23:23:24.054Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-24",
+      "week": 7,
+      "player": "Cobie Durant",
+      "team_slug": "dallas-cowboys",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html"
+      ],
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-23",
+      "week": 7,
+      "player": "Aaron Banks",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Knee",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-24T23:15:37.324Z",
+      "note": "Friday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-23",
+      "week": 7,
+      "player": "Bo Melton",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Back",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-24T23:15:37.324Z",
+      "note": "Friday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-23",
+      "week": 7,
+      "player": "Benjamin St-Juste",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "practice",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.packers.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-24T23:15:37.324Z",
+      "note": "Friday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-23",
+      "week": 7,
+      "player": "Quay Walker",
+      "team_slug": "las-vegas-raiders",
+      "participation": "FP",
+      "report_type": "practice",
+      "injury": "Chest",
+      "sources": [
+        "https://www.raiders.com/team/injury-report/",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/injuries/"
+      ],
+      "checkedAt": "2026-10-24T23:15:37.324Z",
+      "note": "Friday practice participation. Reserve eligibility and game-day inactive lists are separate."
     }
   ],
   "limitations": [
@@ -6307,6 +6866,283 @@
         "https://www.steelers.com/news/steelers-make-roster-move-ahead-of-saints-game",
         "https://www.steelers.com/team/transactions/",
         "https://steelersdepot.com/2026/10/steelers-activate-safety-deshon-elliott-to-53-man-roster-in-boost-to-pittsburghs-secondary/"
+      ]
+    },
+    {
+      "player": "Jakorian Bennett",
+      "team_slug": "philadelphia-eagles",
+      "status": "IR; Week 7 QUESTIONABLE",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:23:24.005Z",
+      "note": "Official October 24 Week 7 designation: QUESTIONABLE. The player remains on injured reserve and needs a separately confirmed activation before joining the roster. Saturday participation is recorded separately.",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html"
+      ]
+    },
+    {
+      "player": "Grant Calcaterra",
+      "team_slug": "philadelphia-eagles",
+      "status": "IR; Week 7 QUESTIONABLE",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:23:24.005Z",
+      "note": "Official October 24 Week 7 designation: QUESTIONABLE. The player remains on injured reserve and needs a separately confirmed activation before joining the roster. Saturday participation is recorded separately.",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html"
+      ]
+    },
+    {
+      "player": "Landon Dickerson",
+      "team_slug": "philadelphia-eagles",
+      "status": "IR; Week 7 QUESTIONABLE",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:23:24.005Z",
+      "note": "Official October 24 Week 7 designation: QUESTIONABLE. The player remains on injured reserve and needs a separately confirmed activation before joining the roster. Saturday participation is recorded separately.",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html"
+      ]
+    },
+    {
+      "player": "Eli Stowers",
+      "team_slug": "philadelphia-eagles",
+      "status": "IR; Week 7 QUESTIONABLE",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:23:24.005Z",
+      "note": "Official October 24 Week 7 designation: QUESTIONABLE. The player remains on injured reserve and needs a separately confirmed activation before joining the roster. Saturday participation is recorded separately.",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html"
+      ]
+    },
+    {
+      "player": "Marist Liufau",
+      "team_slug": "dallas-cowboys",
+      "status": "IR; Week 7 QUESTIONABLE",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:17:50.570Z",
+      "note": "Official October 24 Week 7 designation: QUESTIONABLE while still on injured reserve. Participation in a return window does not establish activation or game-day status.",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html"
+      ]
+    },
+    {
+      "player": "P.J. Locke",
+      "team_slug": "dallas-cowboys",
+      "status": "IR; Week 7 QUESTIONABLE",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:17:50.570Z",
+      "note": "Official October 24 Week 7 designation: QUESTIONABLE while still on injured reserve. Participation in a return window does not establish activation or game-day status.",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+        "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html"
+      ]
+    },
+    {
+      "player": "Tremaine Edmunds",
+      "team_slug": "new-york-giants",
+      "status": "Placed on IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:21:19.257Z",
+      "note": "The October 24 IR placement is confirmed. Earlier shoulder and newer chest condition labels remain under review, so the dated October 23 OUT watch entry is retained without changing its condition.",
+      "sources": [
+        "https://www.giants.com/news/giants-activate-cb-paulson-adebo-off-ir-place-lb-tremaine-edmunds-on-ir-week-7-houston-texans",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.nfl.com/transactions/league/reserve-list/2026/10"
+      ]
+    },
+    {
+      "player": "A.J. Terrell Jr.",
+      "team_slug": "atlanta-falcons",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.atlantafalcons.com/news/falcons-activate-aj-terrell-announce-roster-moves-49ers-matchup",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "player": "Dylan Sampson",
+      "team_slug": "cleveland-browns",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.clevelandbrowns.com/team/transactions/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "player": "Jonah Coleman",
+      "team_slug": "denver-broncos",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.denverbroncos.com/news/broncos-activate-rb-jonah-coleman-and-olb-jonathon-cooper-place-rb-tyler-badie-and-olb-jonah-elliss-on-ir",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "player": "Christian Kirk",
+      "team_slug": "san-francisco-49ers",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.49ers.com/team/transactions/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "player": "Tank Dell",
+      "team_slug": "houston-texans",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.houstontexans.com/team/transactions/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "player": "Cooper McDonald",
+      "team_slug": "kansas-city-chiefs",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.chiefs.com/team/transactions/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "player": "Kyle Louis",
+      "team_slug": "miami-dolphins",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.miamidolphins.com/team/transactions/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "player": "Jordan Mason",
+      "team_slug": "minnesota-vikings",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.vikings.com/team/transactions/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "player": "Paulson Adebo",
+      "team_slug": "new-york-giants",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:31:07.117Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.giants.com/news/giants-activate-cb-paulson-adebo-off-ir-place-lb-tremaine-edmunds-on-ir-week-7-houston-texans",
+        "https://www.bigblueview.com/new-york-giants-roster/177240/ny-giants-roster-moves-tremaine-edmunds-paulson-adebo-jalin-hyatt"
+      ]
+    },
+    {
+      "player": "Bam Martin-Scott",
+      "team_slug": "carolina-panthers",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:23:24.371Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.panthers.com/news/panthers-place-thomas-incoom-on-ir-activate-bam-martin-scott",
+        "https://sports.yahoo.com/articles/panthers-handful-roster-moves-saturday-201404328.html"
+      ]
+    },
+    {
+      "player": "Cade Mays",
+      "team_slug": "detroit-lions",
+      "status": "Activated to roster",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:31:07.437Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.detroitlions.com/team/transactions/",
+        "https://sports.yahoo.com/articles/lions-activate-brian-branch-cade-203234072.html"
+      ]
+    },
+    {
+      "player": "Anthony Bradford",
+      "team_slug": "seattle-seahawks",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:38:11.397Z",
+      "note": "The October 24 roster activation is explicitly corroborated. Prior IR history is archived; practice reports, official game designations and complete game-day inactive lists remain separate.",
+      "sources": [
+        "https://www.aol.com/articles/seahawks-activate-anthony-bradford-ahead-205123000.html",
+        "https://www.fieldgulls.com/seattle-seahawks-news/178108/seattle-seahawks-turn-to-practice-squad-for-defensive-depth-bring-anthony-bradford-back-from-ir-week-7-chiefs"
+      ]
+    },
+    {
+      "player": "Brian Branch",
+      "team_slug": "detroit-lions",
+      "status": "Activated to roster",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:31:07.437Z",
+      "note": "Detroit announced the October 24 roster activation. Conflicting secondary origin-list labels are held; no game-day active status is inferred.",
+      "sources": [
+        "https://www.detroitlions.com/team/transactions/",
+        "https://sports.yahoo.com/articles/lions-activate-brian-branch-cade-203234072.html"
+      ]
+    },
+    {
+      "player": "Jordon Riley",
+      "team_slug": "green-bay-packers",
+      "status": "Activated from PUP",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:17:52.189Z",
+      "note": "The October 24 PUP activation is confirmed. His official October 23 QUESTIONABLE game designation remains dated separately.",
+      "sources": [
+        "https://www.packers.com/team/transactions/",
+        "https://www.cbssports.com/nfl/transactions/"
+      ]
+    },
+    {
+      "player": "Jonathon Cooper",
+      "team_slug": "denver-broncos",
+      "status": "Activated to roster",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:23:23.873Z",
+      "note": "Denver confirmed the October 24 roster activation. This record does not assign a date to exempt-list removal or establish game-day active status.",
+      "sources": [
+        "https://www.denverbroncos.com/news/broncos-activate-rb-jonah-coleman-and-olb-jonathon-cooper-place-rb-tyler-badie-and-olb-jonah-elliss-on-ir",
+        "https://www.denvergazette.com/2026/10/24/broncos-activate-jonathon-cooper-jonah-coleman-to-face-cardinals/"
+      ]
+    },
+    {
+      "player": "Josh Jacobs",
+      "team_slug": "green-bay-packers",
+      "status": "Roster exemption removed",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T23:42:18.080Z",
+      "note": "Green Bay removed Jacobs’ roster exemption October 24. This eligibility update does not establish the complete game-day active roster.",
+      "sources": [
+        "https://www.packers.com/team/transactions/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ]
     }
   ],

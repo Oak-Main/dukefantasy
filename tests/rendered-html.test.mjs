@@ -216,3 +216,17 @@ test("dated reserve verification advances the latest observation while retaining
   assert.ok(latest && latest >= reinstatement.asOf, "a newer reserve observation must not disappear from the latest-observation label");
   assert.ok(text.includes(`Status checked ${reinstatement.asOf}`));
 });
+
+test("a formal no-designation record retains practice history without inferring an availability grade", async () => {
+  const injury = JSON.parse(readFileSync(new URL("../data/injury-research/current.json", import.meta.url), "utf8"));
+  const cleared = injury.watch.find(row => row.published_status === "NO_DESIGNATION" && Object.values(row.practice ?? {}).some(status => status === "LP" || status === "DNP"));
+  assert.ok(cleared, "a cleared record with earlier limited/missed participation exercises the fallback");
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const row = [...html.matchAll(/<tr\b[\s\S]*?<\/tr>/g)].find(match => match[0].includes(cleared.player))?.[0];
+  assert.ok(row, "the player remains on the sourced watch");
+  assert.match(row, /NO DESIGNATION/);
+  assert.match(row, /inj-practice--(?:lp|dnp)/);
+  assert.match(row, /inj-pill--none[^>]*>Not graded/);
+});
