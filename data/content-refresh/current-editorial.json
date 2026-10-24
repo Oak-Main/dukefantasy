@@ -6281,13 +6281,27 @@
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/"
       ]
+    },
+    {
+      "player": "Montez Sweat",
+      "team_slug": "chicago-bears",
+      "status": "Suspension lifted",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T09:22:48.050Z",
+      "note": "The Commissioner lifted the suspension October 23, corroborated by the Bears announcement, ESPN and CBS transactions. This dated reinstatement does not change Thursday inactive history or confirm a future game-day roster.",
+      "sources": [
+        "https://www.chicagobears.com/news/roster-moves-chicago-bears-place-cole-kmet-on-ir",
+        "https://www.chicagobears.com/team/transactions/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.cbssports.com/nfl/transactions/"
+      ]
     }
   ],
   "moduleSources": {
     "schedule": {
-      "sourceAsOf": "2026-10-23",
-      "fetchedAt": "2026-10-24T00:54:03.451Z",
-      "compiledAt": "2026-10-24T01:26:14.116Z"
+      "sourceAsOf": "2026-10-24",
+      "fetchedAt": "2026-10-24T09:19:07.137Z",
+      "compiledAt": "2026-10-24T09:25:21.634Z"
     },
     "injuries": {
       "sourceAsOf": "2026-10-20",

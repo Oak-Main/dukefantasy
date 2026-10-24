@@ -3937,6 +3937,24 @@
         "https://www.cbssports.com/nfl/injuries/"
       ],
       "confidence": "high"
+    },
+    {
+      "player": "Cole Kmet",
+      "team_slug": "chicago-bears",
+      "position": "TE",
+      "injury": "Knee",
+      "status": "IR",
+      "weeks_out": null,
+      "detail": "Placed on Chicago injured reserve October 23 after the Week 7 Thursday game. Actual placement is confirmed by the Bears and NFL wires; ESPN and CBS corroborate IR status and the knee injury. No return date is inferred.",
+      "sources": [
+        "https://www.chicagobears.com/news/roster-moves-chicago-bears-place-cole-kmet-on-ir",
+        "https://www.chicagobears.com/team/transactions/",
+        "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.cbssports.com/nfl/transactions/"
+      ],
+      "confidence": "high"
     }
   ],
   "watch": [

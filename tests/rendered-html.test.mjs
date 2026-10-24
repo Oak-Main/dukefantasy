@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -200,4 +201,18 @@ test("official OUT designation replaces a prior questionable likelihood badge", 
   assert.match(text, /UNLIKELY/);
   assert.match(text, /high conf/);
   assert.doesNotMatch(text, /QUESTIONABLE/);
+});
+
+test("dated reserve verification advances the latest observation while retaining the comprehensive review date", async () => {
+  const editorial = JSON.parse(readFileSync(new URL("../data/content-refresh/current-editorial.json", import.meta.url), "utf8"));
+  const injury = JSON.parse(readFileSync(new URL("../data/injury-research/current.json", import.meta.url), "utf8"));
+  const reinstatement = editorial.reserveStatuses.find(row => row.player === "Montez Sweat");
+  assert.ok(reinstatement?.asOf, "the published reserve observation has its own verification date");
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const text = (await response.text()).replaceAll("<!-- -->", "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
+  assert.equal(text.match(/Full review as of (\d{4}-\d{2}-\d{2})/)?.[1], injury.as_of);
+  const latest = text.match(/Latest dated observation (\d{4}-\d{2}-\d{2})/)?.[1];
+  assert.ok(latest && latest >= reinstatement.asOf, "a newer reserve observation must not disappear from the latest-observation label");
+  assert.ok(text.includes(`Status checked ${reinstatement.asOf}`));
 });

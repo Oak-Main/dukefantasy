@@ -152,7 +152,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
     );
   }, [baseWatch, teamFilter]);
 
-  const latestObservationDate = [...practiceReports.map((row) => row.date), ...injuryResearch.watch.map((row) => row.designationDate).filter((date): date is string => Boolean(date))].sort().at(-1) ?? null;
+  const latestObservationDate = [...practiceReports.map((row) => row.date), ...injuryResearch.watch.map((row) => row.designationDate).filter((date): date is string => Boolean(date)), ...reserveStatuses.map((row) => row.asOf).filter((date): date is string => Boolean(date))].sort().at(-1) ?? null;
   const next = nextInjurySlot();
   const researchLive = injuryResearch.watch.length > 0 || injuryResearch.ledger.length > 0;
 
