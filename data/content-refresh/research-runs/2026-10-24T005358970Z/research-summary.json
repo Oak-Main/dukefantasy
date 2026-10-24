@@ -1,0 +1,1182 @@
+{
+  "run": "2026-10-24T005358970Z",
+  "checkedAt": "2026-10-24T01:10:10.605Z",
+  "baseCommit": "753a2cda24eeaac3f14e411ced9ed8b6507c7675",
+  "changedFacts": 87,
+  "moduleReviews": 1,
+  "practicesAdded": 43,
+  "practiceTotal": 352,
+  "designationsReviewed": 42,
+  "watchFridayUpdated": 14,
+  "resolvedConflict": "Nathan Shepherd current illness and Friday DNP agree across current sources; earlier conflict remains in historical evidence.",
+  "preserved": {
+    "games": 272,
+    "priorPracticeReports": 309,
+    "ledger": true,
+    "inactives": true,
+    "moduleSources": {
+      "injuries": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "fantasy": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "transactions": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "leaders": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "inactives": {
+        "sourceAsOf": "2026-10-22",
+        "fetchedAt": "2026-10-23T09:47:02.764Z",
+        "compiledAt": "2026-10-23T09:49:13.718Z"
+      }
+    }
+  },
+  "sourceReceipts": [
+    {
+      "id": "arizona-cardinals",
+      "requestedUrl": "https://www.azcardinals.com/team/injury-report/",
+      "resolvedUrl": "https://www.azcardinals.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.296Z",
+      "status": 200,
+      "sha256": "582b78da3b4a7d684eb3b665a746eacb60fa380054b707c6ef650fe7edd10073",
+      "bytes": 315623
+    },
+    {
+      "id": "atlanta-falcons",
+      "requestedUrl": "https://www.atlantafalcons.com/team/injury-report/",
+      "resolvedUrl": "https://www.atlantafalcons.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:53:59.969Z",
+      "status": 200,
+      "sha256": "5cc3fa686b7614db960aaebead31df2aa2eeb876183fc38ef2c265c6095e63bf",
+      "bytes": 393451
+    },
+    {
+      "id": "baltimore-ravens",
+      "requestedUrl": "https://www.baltimoreravens.com/team/injury-report/",
+      "resolvedUrl": "https://www.baltimoreravens.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.129Z",
+      "status": 200,
+      "sha256": "30a6c1ff7b8925a1f1900d830ddf1a6b11599c074f0e8552629fd1f4d57b29e9",
+      "bytes": 315409
+    },
+    {
+      "id": "carolina-panthers",
+      "requestedUrl": "https://www.panthers.com/team/injury-report/",
+      "resolvedUrl": "https://www.panthers.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.090Z",
+      "status": 200,
+      "sha256": "5fbad047a5a058e4a2d5e77a683d55f573af86f10e0c7b8a0f61fc85c407089b",
+      "bytes": 491695
+    },
+    {
+      "id": "cbs",
+      "requestedUrl": "https://www.cbssports.com/nfl/injuries/",
+      "resolvedUrl": "https://www.cbssports.com/nfl/injuries/",
+      "checkedAt": "2026-10-24T00:54:02.429Z",
+      "status": 200,
+      "sha256": "2a33ce33454e82d60029326039c0d8dffa60efd18a239135f1b19f112e626f0e",
+      "bytes": 1100543
+    },
+    {
+      "id": "cbsDaily",
+      "requestedUrl": "https://www.cbssports.com/nfl/injuries/daily/",
+      "resolvedUrl": "https://www.cbssports.com/nfl/injuries/daily/",
+      "checkedAt": "2026-10-24T00:54:05.860Z",
+      "status": 200,
+      "sha256": "18cfc71be2584fc862d3526c74e114ba222374299281807474f024242e94440b",
+      "bytes": 1313955
+    },
+    {
+      "id": "cincinnati-bengals",
+      "requestedUrl": "https://www.bengals.com/team/injury-report/",
+      "resolvedUrl": "https://www.bengals.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.093Z",
+      "status": 200,
+      "sha256": "26af04f88c8a1bd22c8638c5733dd6f9c237d8933fde2834c9cb0b6d5a9a3d97",
+      "bytes": 313418
+    },
+    {
+      "id": "cleveland-browns",
+      "requestedUrl": "https://www.clevelandbrowns.com/team/injury-report/",
+      "resolvedUrl": "https://www.clevelandbrowns.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.474Z",
+      "status": 200,
+      "sha256": "3f15dba8023746381bd3f5c67605226b09846099d565771d9562dc4cf32db838",
+      "bytes": 324684
+    },
+    {
+      "id": "dallas-cowboys",
+      "requestedUrl": "https://www.dallascowboys.com/team/injury-report/",
+      "resolvedUrl": "https://www.dallascowboys.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:02.150Z",
+      "status": 200,
+      "sha256": "143587cf244ed01dbfe553e8128c11109225688787e41b4a61feedfffe7e1608",
+      "bytes": 285363
+    },
+    {
+      "id": "denver-broncos",
+      "requestedUrl": "https://www.denverbroncos.com/team/injury-report/",
+      "resolvedUrl": "https://www.denverbroncos.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.061Z",
+      "status": 200,
+      "sha256": "f336451d6a82e8028eb5cbfcd06f9dd77f416bb76380aec3930fe5be6fd359de",
+      "bytes": 321377
+    },
+    {
+      "id": "detroit-lions",
+      "requestedUrl": "https://www.detroitlions.com/team/injury-report/",
+      "resolvedUrl": "https://www.detroitlions.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.705Z",
+      "status": 200,
+      "sha256": "824ecbd13d308c9a7cdb82573d8943d929e53ab783baaedcea2bb94309d4535e",
+      "bytes": 302377
+    },
+    {
+      "id": "espnInjuries",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-24T01:07:52.884Z",
+      "status": 200,
+      "sha256": "d3439a1540cb7d09d6f903a89439a92549cbd419b06026d3205337810c883a66",
+      "supersedesCheckedAt": "2026-10-24T01:03:24.706Z",
+      "bytes": 8729614
+    },
+    {
+      "id": "espnStandings",
+      "requestedUrl": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+      "resolvedUrl": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+      "checkedAt": "2026-10-24T00:54:03.269Z",
+      "status": 200,
+      "sha256": "628db10ea78eff580c8e813a8663a2d33d365cfad0b1cfd865a88bc7326e5d16",
+      "bytes": 160291
+    },
+    {
+      "id": "green-bay-packers",
+      "requestedUrl": "https://www.packers.com/team/injury-report/",
+      "resolvedUrl": "https://www.packers.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.594Z",
+      "status": 200,
+      "sha256": "30d29ec513f3376dfaf0db2b91433fc72214fb71880aaf4d2c2bf33fa1a3ce57",
+      "bytes": 310375
+    },
+    {
+      "id": "houston-texans",
+      "requestedUrl": "https://www.houstontexans.com/team/injury-report/",
+      "resolvedUrl": "https://www.houstontexans.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.207Z",
+      "status": 200,
+      "sha256": "1ad6be79699de1b72fed5d92f38ceb7f7be5b843514c782e916b39c01ce2ee93",
+      "bytes": 513825
+    },
+    {
+      "id": "inactiveNbc",
+      "requestedUrl": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+      "resolvedUrl": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+      "checkedAt": "2026-10-24T00:54:03.517Z",
+      "status": 200,
+      "sha256": "6271e051d930b6c3207014e57fb71eff6b09d78c094a35402c68e7991fe05847",
+      "bytes": 406926
+    },
+    {
+      "id": "inactiveNfl",
+      "requestedUrl": "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
+      "resolvedUrl": "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
+      "checkedAt": "2026-10-24T00:54:02.546Z",
+      "status": 200,
+      "sha256": "5898b71f4f1ed8a35e2c721e62d86bd25879bd5cf6ea6fb441b493fcc7027a58",
+      "bytes": 686712
+    },
+    {
+      "id": "indianapolis-colts",
+      "requestedUrl": "https://www.colts.com/team/injury-report/",
+      "resolvedUrl": "https://www.colts.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.733Z",
+      "status": 200,
+      "sha256": "10864d89e62ac47212c1963f42bd1a11acc7fd3e5af89b1b4d7f87d1aa56f2a0",
+      "bytes": 338551
+    },
+    {
+      "id": "kansas-city-chiefs",
+      "requestedUrl": "https://www.chiefs.com/team/injury-report/",
+      "resolvedUrl": "https://www.chiefs.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.822Z",
+      "status": 200,
+      "sha256": "11871b70e7d5a4a43eabba94ca0f299584ecd5ab31b7021da1f5ef0c510e0739",
+      "bytes": 328357
+    },
+    {
+      "id": "las-vegas-raiders",
+      "requestedUrl": "https://www.raiders.com/team/injury-report/",
+      "resolvedUrl": "https://www.raiders.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.485Z",
+      "status": 200,
+      "sha256": "36844e6a94307f607f57bc4750bf79e354d00f907fb117bb34c6d0619093b6bf",
+      "bytes": 311698
+    },
+    {
+      "id": "los-angeles-rams",
+      "requestedUrl": "https://www.therams.com/team/injury-report/",
+      "resolvedUrl": "https://www.therams.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.398Z",
+      "status": 200,
+      "sha256": "71100a39c548ad5c4d519957bb8ee80e98fc18154d91ce7ba598c272155b8447",
+      "bytes": 309832
+    },
+    {
+      "id": "miami-dolphins",
+      "requestedUrl": "https://www.miamidolphins.com/team/injury-report/",
+      "resolvedUrl": "https://www.miamidolphins.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.487Z",
+      "status": 200,
+      "sha256": "f30e633284baced064448e974ff01e28f8ae55b92425f0c6c8ad366d21cc1259",
+      "bytes": 306582
+    },
+    {
+      "id": "minnesota-vikings",
+      "requestedUrl": "https://www.vikings.com/team/injury-report/",
+      "resolvedUrl": "https://www.vikings.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.952Z",
+      "status": 200,
+      "sha256": "a8cb744696d4419b31a060e857a5a852573772b4659463a09239e74ba175f186",
+      "bytes": 334995
+    },
+    {
+      "id": "new-orleans-saints",
+      "requestedUrl": "https://www.neworleanssaints.com/team/injury-report/",
+      "resolvedUrl": "https://www.neworleanssaints.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:53:59.781Z",
+      "status": 200,
+      "sha256": "2b29f8206564ae5ac091fda206ccf7e5a9a526c01761555d03401e5998a595bc",
+      "bytes": 531400
+    },
+    {
+      "id": "new-york-giants",
+      "requestedUrl": "https://www.giants.com/team/injury-report/",
+      "resolvedUrl": "https://www.giants.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.274Z",
+      "status": 200,
+      "sha256": "0b3616c62fb1de9bea4d7c62f58de168d2999ff7a03f29293b5dd26101298630",
+      "bytes": 331856
+    },
+    {
+      "id": "new-york-jets",
+      "requestedUrl": "https://www.newyorkjets.com/team/injury-report/",
+      "resolvedUrl": "https://www.newyorkjets.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.612Z",
+      "status": 200,
+      "sha256": "65cda3748b8a9cb28d7aacb96327af6a26a285df90b46a1dfda2c6aa38e121ec",
+      "bytes": 315482
+    },
+    {
+      "id": "nflInjuries",
+      "requestedUrl": "https://www.nfl.com/injuries/",
+      "resolvedUrl": "https://www.nfl.com/injuries/",
+      "checkedAt": "2026-10-24T00:54:02.184Z",
+      "status": 200,
+      "sha256": "d69e98ead444114c0936fa5259d320d1daa7f33e223d144895d7f0c90e0f1b77",
+      "bytes": 404447
+    },
+    {
+      "id": "nflReserves",
+      "requestedUrl": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+      "resolvedUrl": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+      "checkedAt": "2026-10-24T00:54:02.447Z",
+      "status": 200,
+      "sha256": "ff4da0ba69af0112bbb71b7660990c7ee78913dcf5dcaa9b6a0630e0f6427b02",
+      "bytes": 250636
+    },
+    {
+      "id": "philadelphia-eagles",
+      "requestedUrl": "https://www.philadelphiaeagles.com/team/injury-report/",
+      "resolvedUrl": "https://www.philadelphiaeagles.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:02.455Z",
+      "status": 200,
+      "sha256": "8a133a75ded74e48b9915da3afd2e56eba258f6f4e2964e8b6a9d8a10251b526",
+      "bytes": 411171
+    },
+    {
+      "id": "pittsburgh-steelers",
+      "requestedUrl": "https://www.steelers.com/team/injury-report/",
+      "resolvedUrl": "https://www.steelers.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:53:59.769Z",
+      "status": 200,
+      "sha256": "e97c89418e4cb2e2bbf8b0ac22031907bce0c7aaa78b55faebcf5fb1669006b4",
+      "bytes": 340349
+    },
+    {
+      "id": "results-espn-1",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+      "checkedAt": "2026-10-24T00:54:03.308Z",
+      "status": 200,
+      "sha256": "ed5fa8d33c851c07054ebe4610f81feb6570251b409e8b94e92f955321c5bf19",
+      "bytes": 141247
+    },
+    {
+      "id": "results-espn-2",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+      "checkedAt": "2026-10-24T00:54:03.437Z",
+      "status": 200,
+      "sha256": "630f989c2d0a47cd0c1eb8253bd9ef7efdbb160c95be947a066670cf0f83f853",
+      "bytes": 141116
+    },
+    {
+      "id": "results-espn-3",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+      "checkedAt": "2026-10-24T00:54:03.343Z",
+      "status": 200,
+      "sha256": "e33fe24f747e841e1895833133dfcf7b2768a4d53f350651dee8ff26e1d28511",
+      "bytes": 140636
+    },
+    {
+      "id": "results-espn-4",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+      "checkedAt": "2026-10-24T00:54:03.295Z",
+      "status": 200,
+      "sha256": "975f223a293c8690f1a917ba2197c05944efa02d499fb5619c4ad287d861f0bf",
+      "bytes": 143702
+    },
+    {
+      "id": "results-espn-5",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "checkedAt": "2026-10-24T00:54:03.316Z",
+      "status": 200,
+      "sha256": "11452a662b5f9db93631ac3a9ed0d41ce8b21aca05ef4ae47846443f9a72dbda",
+      "bytes": 135393
+    },
+    {
+      "id": "results-espn-6",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+      "checkedAt": "2026-10-24T00:54:03.356Z",
+      "status": 200,
+      "sha256": "90430edd5f0fb73213334a5ebbd0fa790867c052321d8892cf3a999acb6ed4fa",
+      "bytes": 126583
+    },
+    {
+      "id": "results-espn-7",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+      "checkedAt": "2026-10-24T00:54:03.451Z",
+      "status": 200,
+      "sha256": "730d1240f70bea2333f649d7ce02e4c354ba4428a42ea84c01666a9d6d4f7358",
+      "bytes": 254050
+    },
+    {
+      "id": "results-nfl-1",
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-1",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-1",
+      "checkedAt": "2026-10-24T00:54:02.644Z",
+      "status": 200,
+      "sha256": "f1be59dc1b4c9fd66c9d24da9fe86f4357661609591be2c42d062b4d9512cbde",
+      "bytes": 2393750
+    },
+    {
+      "id": "results-nfl-2",
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-2",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-2",
+      "checkedAt": "2026-10-24T00:54:02.786Z",
+      "status": 200,
+      "sha256": "4d0d493185ae8dc4c0ef036da09579150278f8cfae260a15db837ba5ae91fc5f",
+      "bytes": 2384458
+    },
+    {
+      "id": "results-nfl-3",
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-3",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-3",
+      "checkedAt": "2026-10-24T00:54:02.948Z",
+      "status": 200,
+      "sha256": "afea96962b804be939e38a8f8c86559ac819650859feb462fd09e9f6534f5de8",
+      "bytes": 2391993
+    },
+    {
+      "id": "results-nfl-4",
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-4",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-4",
+      "checkedAt": "2026-10-24T00:54:02.999Z",
+      "status": 200,
+      "sha256": "b7c5b123b491789deadac19fad9192ceb963f8a42c6c947f015aacdd466aff08",
+      "bytes": 2392511
+    },
+    {
+      "id": "results-nfl-5",
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-5",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-5",
+      "checkedAt": "2026-10-24T00:54:02.830Z",
+      "status": 200,
+      "sha256": "94c8b9207835063404dcb5f8b6942be599563c51c76f7f79ca48825cbe86b769",
+      "bytes": 2377760
+    },
+    {
+      "id": "results-nfl-6",
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-6",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-6",
+      "checkedAt": "2026-10-24T00:54:02.903Z",
+      "status": 200,
+      "sha256": "c347ebc6fdd3565c3a8f30bb5e3d8036d0fd8061e53e8845a0ab0451b7ccaec3",
+      "bytes": 2362598
+    },
+    {
+      "id": "results-nfl-7",
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "checkedAt": "2026-10-24T00:54:02.863Z",
+      "status": 200,
+      "sha256": "a89891e2f62227ab07c2f88dd9c2b1140450e0c89684161d2485560431dea92e",
+      "bytes": 2415163
+    },
+    {
+      "id": "saintsFriday",
+      "requestedUrl": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+      "resolvedUrl": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+      "checkedAt": "2026-10-24T00:54:02.684Z",
+      "status": 200,
+      "sha256": "9ee74b6a72eb92f3ccf5beddcc60b129e5ba9c4dc9a653d7823346ebf7ab3660",
+      "bytes": 340474
+    },
+    {
+      "id": "san-francisco-49ers",
+      "requestedUrl": "https://www.49ers.com/team/injury-report/",
+      "resolvedUrl": "https://www.49ers.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:53:59.796Z",
+      "status": 200,
+      "sha256": "9add10438019443b6a74a18a634de21d5ef2338a6920c0ae5e261f7548d361ae",
+      "bytes": 381091
+    },
+    {
+      "id": "seattle-seahawks",
+      "requestedUrl": "https://www.seahawks.com/team/injury-report/",
+      "resolvedUrl": "https://www.seahawks.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.766Z",
+      "status": 200,
+      "sha256": "7921e417fe856e58eaf86bb369c19b978e8a587fa63c8a8495d876242dbb4e6d",
+      "bytes": 331872
+    },
+    {
+      "id": "tampa-bay-buccaneers",
+      "requestedUrl": "https://www.buccaneers.com/team/injury-report/",
+      "resolvedUrl": "https://www.buccaneers.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.067Z",
+      "status": 200,
+      "sha256": "b4fe88eddbba329ef38179899a9d9f6d2bb019537ea25888abb7bf6057f1561c",
+      "bytes": 329016
+    },
+    {
+      "id": "tennessee-titans",
+      "requestedUrl": "https://www.tennesseetitans.com/team/injury-report/",
+      "resolvedUrl": "https://www.tennesseetitans.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.583Z",
+      "status": 200,
+      "sha256": "1408353308cb43c3473c99b9b696ff016bfca3dabfba0240539b2c1182e7c27c",
+      "bytes": 330355
+    }
+  ],
+  "standings": {
+    "compared": 32,
+    "rows": [
+      {
+        "teamSlug": "buffalo-bills",
+        "observed": {
+          "wins": 5,
+          "losses": 1,
+          "ties": 0,
+          "pf": 197,
+          "pa": 171
+        },
+        "derived": {
+          "wins": 5,
+          "losses": 1,
+          "ties": 0,
+          "pf": 197,
+          "pa": 171
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "new-england-patriots",
+        "observed": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0,
+          "pf": 160,
+          "pa": 143
+        },
+        "derived": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0,
+          "pf": 160,
+          "pa": 143
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "new-york-jets",
+        "observed": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 112,
+          "pa": 122
+        },
+        "derived": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 112,
+          "pa": 122
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "miami-dolphins",
+        "observed": {
+          "wins": 0,
+          "losses": 5,
+          "ties": 0,
+          "pf": 70,
+          "pa": 132
+        },
+        "derived": {
+          "wins": 0,
+          "losses": 5,
+          "ties": 0,
+          "pf": 70,
+          "pa": 132
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "cleveland-browns",
+        "observed": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 106,
+          "pa": 122
+        },
+        "derived": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 106,
+          "pa": 122
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "pittsburgh-steelers",
+        "observed": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 137,
+          "pa": 128
+        },
+        "derived": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 137,
+          "pa": 128
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "baltimore-ravens",
+        "observed": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 156,
+          "pa": 132
+        },
+        "derived": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 156,
+          "pa": 132
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "cincinnati-bengals",
+        "observed": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 0,
+          "pf": 128,
+          "pa": 109
+        },
+        "derived": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 0,
+          "pf": 128,
+          "pa": 109
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "jacksonville-jaguars",
+        "observed": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 154,
+          "pa": 104
+        },
+        "derived": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 154,
+          "pa": 104
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "indianapolis-colts",
+        "observed": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 144,
+          "pa": 164
+        },
+        "derived": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 144,
+          "pa": 164
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "houston-texans",
+        "observed": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 144,
+          "pa": 143
+        },
+        "derived": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 144,
+          "pa": 143
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "tennessee-titans",
+        "observed": {
+          "wins": 1,
+          "losses": 5,
+          "ties": 0,
+          "pf": 84,
+          "pa": 129
+        },
+        "derived": {
+          "wins": 1,
+          "losses": 5,
+          "ties": 0,
+          "pf": 84,
+          "pa": 129
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "kansas-city-chiefs",
+        "observed": {
+          "wins": 5,
+          "losses": 0,
+          "ties": 0,
+          "pf": 140,
+          "pa": 83
+        },
+        "derived": {
+          "wins": 5,
+          "losses": 0,
+          "ties": 0,
+          "pf": 140,
+          "pa": 83
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "denver-broncos",
+        "observed": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 114,
+          "pa": 125
+        },
+        "derived": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 114,
+          "pa": 125
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "las-vegas-raiders",
+        "observed": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0,
+          "pf": 162,
+          "pa": 162
+        },
+        "derived": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0,
+          "pf": 162,
+          "pa": 162
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "los-angeles-chargers",
+        "observed": {
+          "wins": 0,
+          "losses": 6,
+          "ties": 0,
+          "pf": 90,
+          "pa": 151
+        },
+        "derived": {
+          "wins": 0,
+          "losses": 6,
+          "ties": 0,
+          "pf": 90,
+          "pa": 151
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "new-york-giants",
+        "observed": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 1,
+          "pf": 136,
+          "pa": 140
+        },
+        "derived": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 1,
+          "pf": 136,
+          "pa": 140
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "philadelphia-eagles",
+        "observed": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 106,
+          "pa": 137
+        },
+        "derived": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 106,
+          "pa": 137
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "dallas-cowboys",
+        "observed": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 151,
+          "pa": 159
+        },
+        "derived": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 151,
+          "pa": 159
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "washington-commanders",
+        "observed": {
+          "wins": 1,
+          "losses": 4,
+          "ties": 1,
+          "pf": 132,
+          "pa": 172
+        },
+        "derived": {
+          "wins": 1,
+          "losses": 4,
+          "ties": 1,
+          "pf": 132,
+          "pa": 172
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "minnesota-vikings",
+        "observed": {
+          "wins": 5,
+          "losses": 0,
+          "ties": 0,
+          "pf": 109,
+          "pa": 64
+        },
+        "derived": {
+          "wins": 5,
+          "losses": 0,
+          "ties": 0,
+          "pf": 109,
+          "pa": 64
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "chicago-bears",
+        "observed": {
+          "wins": 5,
+          "losses": 2,
+          "ties": 0,
+          "pf": 180,
+          "pa": 143
+        },
+        "derived": {
+          "wins": 5,
+          "losses": 2,
+          "ties": 0,
+          "pf": 180,
+          "pa": 143
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "green-bay-packers",
+        "observed": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 127,
+          "pa": 125
+        },
+        "derived": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 0,
+          "pf": 127,
+          "pa": 125
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "detroit-lions",
+        "observed": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 0,
+          "pf": 164,
+          "pa": 148
+        },
+        "derived": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 0,
+          "pf": 164,
+          "pa": 148
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "carolina-panthers",
+        "observed": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 0,
+          "pf": 146,
+          "pa": 123
+        },
+        "derived": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 0,
+          "pf": 146,
+          "pa": 123
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "atlanta-falcons",
+        "observed": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 142,
+          "pa": 153
+        },
+        "derived": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 142,
+          "pa": 153
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "new-orleans-saints",
+        "observed": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 152,
+          "pa": 178
+        },
+        "derived": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 152,
+          "pa": 178
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "tampa-bay-buccaneers",
+        "observed": {
+          "wins": 1,
+          "losses": 5,
+          "ties": 0,
+          "pf": 119,
+          "pa": 138
+        },
+        "derived": {
+          "wins": 1,
+          "losses": 5,
+          "ties": 0,
+          "pf": 119,
+          "pa": 138
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "san-francisco-49ers",
+        "observed": {
+          "wins": 6,
+          "losses": 0,
+          "ties": 0,
+          "pf": 177,
+          "pa": 110
+        },
+        "derived": {
+          "wins": 6,
+          "losses": 0,
+          "ties": 0,
+          "pf": 177,
+          "pa": 110
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "seattle-seahawks",
+        "observed": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0,
+          "pf": 148,
+          "pa": 122
+        },
+        "derived": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0,
+          "pf": 148,
+          "pa": 122
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "arizona-cardinals",
+        "observed": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 126,
+          "pa": 178
+        },
+        "derived": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 126,
+          "pa": 178
+        },
+        "matches": true
+      },
+      {
+        "teamSlug": "los-angeles-rams",
+        "observed": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 135,
+          "pa": 138
+        },
+        "derived": {
+          "wins": 2,
+          "losses": 4,
+          "ties": 0,
+          "pf": 135,
+          "pa": 138
+        },
+        "matches": true
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.azcardinals.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.296Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.cbssports.com/nfl/injuries/",
+      "checkedAt": "2026-10-24T00:54:02.429Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.baltimoreravens.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.129Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.nfl.com/injuries/",
+      "checkedAt": "2026-10-24T00:54:02.184Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-24T01:07:52.884Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.panthers.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.090Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.474Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.colts.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.733Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.chiefs.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.822Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.raiders.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.485Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.therams.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.398Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.miamidolphins.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.487Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.neworleanssaints.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:53:59.781Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.giants.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.274Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.newyorkjets.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.612Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:02.455Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.49ers.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:53:59.796Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.seahawks.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.766Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.buccaneers.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.067Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.tennesseetitans.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.583Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.houstontexans.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:00.207Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.denverbroncos.com/team/injury-report/",
+      "checkedAt": "2026-10-24T00:54:01.061Z",
+      "reportedWeek": 7
+    }
+  ]
+}

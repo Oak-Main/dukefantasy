@@ -1,0 +1,55 @@
+{
+  "reviewedAt": "2026-10-24T01:10:10.169Z",
+  "sourceCheckedAt": "2026-10-24T01:07:52.884Z",
+  "changes": [
+    {
+      "before": {
+        "name": "Tremaine Edmunds",
+        "status": "Out",
+        "date": "2026-10-23T20:49Z",
+        "short": "out",
+        "injury": "Shoulder"
+      },
+      "after": {
+        "name": "Tremaine Edmunds",
+        "status": "Out",
+        "date": "2026-10-24T01:03Z",
+        "short": "Edmunds will miss the rest of the 2026 season due to a torn chest muscle, Jordan Raanan of ESPN.com reports.",
+        "injury": "Chest"
+      }
+    },
+    {
+      "before": {
+        "name": "Jermaine Eluemunor",
+        "status": "Questionable",
+        "date": "2026-10-24T00:16Z",
+        "short": "questionable",
+        "injury": "Calf"
+      },
+      "after": {
+        "name": "Jermaine Eluemunor",
+        "status": "Questionable",
+        "date": "2026-10-24T01:03Z",
+        "short": "questionable",
+        "injury": "Calf"
+      }
+    },
+    {
+      "before": {
+        "name": "Andrew Wingard",
+        "status": "Out",
+        "date": "2026-10-23T01:25Z",
+        "short": "Wingard (knee) did not participate at practice Thursday, Darren Urban of the Cardinals' official site reports.",
+        "injury": "Knee"
+      },
+      "after": {
+        "name": "Andrew Wingard",
+        "status": "Out",
+        "date": "2026-10-24T00:57Z",
+        "short": "Wingard (knee) has been ruled out for Sunday's game against the Broncos, Darren Urban of the Cardinals' official site reports.",
+        "injury": "Knee"
+      }
+    }
+  ],
+  "decision": "Re-read each changed report. Preserve the mutually corroborated Week 7 designation. A condition change that conflicts with the club report is held, with the prior condition explicitly dated and no inferred IR placement. UTC publication dates are interpreted in Eastern time for the Week 7 report calendar. Restart preflight with the actual newer retrieval receipt."
+}
