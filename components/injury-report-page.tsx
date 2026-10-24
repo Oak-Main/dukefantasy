@@ -233,8 +233,8 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         </article>)}
       </section>
       <section className="apex-container db-section" aria-labelledby="reserve-status-title">
-        <h2 id="reserve-status-title">PUP, NFI & suspension listings</h2>
-        <p>These eligibility listings remain separate from injured reserve and the game-time watch. An estimated return is not an activation.</p>
+        <h2 id="reserve-status-title">Reserve and eligibility updates</h2>
+        <p>Activation, PUP, NFI and suspension updates are dated separately from the injury watch and game-day inactive lists.</p>
         <div className="research-card-grid">{reserveStatuses.filter(row => !teamFilter || row.team_slug === teamFilter).map(row => <article className="research-card" key={row.player + row.team_slug}>
           <h3>{row.player}</h3><p>{teamBySlug.get(row.team_slug)?.name ?? row.team_slug} · {row.status}</p>
           {row.asOf ? <p>Status checked <time dateTime={row.asOf}>{row.asOf}</time></p> : null}

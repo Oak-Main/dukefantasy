@@ -6295,6 +6295,19 @@
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
         "https://www.cbssports.com/nfl/transactions/"
       ]
+    },
+    {
+      "player": "DeShon Elliott",
+      "team_slug": "pittsburgh-steelers",
+      "status": "Activated from IR",
+      "asOf": "2026-10-24",
+      "checkedAt": "2026-10-24T16:17:49.991Z",
+      "note": "Pittsburgh activated Elliott to its 53-man roster October 24. His October 23 QUESTIONABLE designation and estimated Friday FP remain dated history. Activation does not confirm Sunday game-day status.",
+      "sources": [
+        "https://www.steelers.com/news/steelers-make-roster-move-ahead-of-saints-game",
+        "https://www.steelers.com/team/transactions/",
+        "https://steelersdepot.com/2026/10/steelers-activate-safety-deshon-elliott-to-53-man-roster-in-boost-to-pittsburghs-secondary/"
+      ]
     }
   ],
   "moduleSources": {

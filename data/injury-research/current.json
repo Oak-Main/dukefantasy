@@ -3140,20 +3140,6 @@
       "confidence": "medium"
     },
     {
-      "player": "DeShon Elliott",
-      "team_slug": "pittsburgh-steelers",
-      "position": "S",
-      "injury": "Knee",
-      "status": "IR",
-      "weeks_out": null,
-      "detail": "Listed on injured reserve by ESPN and CBS as of October 20. An estimated return is not an activation.",
-      "sources": [
-        "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
-      ],
-      "confidence": "medium"
-    },
-    {
       "player": "Michael Pittman Jr.",
       "team_slug": "pittsburgh-steelers",
       "position": "WR",
@@ -7279,6 +7265,34 @@
       "designation_week": 7,
       "designation_date": "2026-10-23",
       "note": "Official Week 7 designation from the October 23 Paris-game report: NO_DESIGNATION. No designation does not establish game-day active status. Reserve eligibility and complete Sunday inactive lists remain separate."
+    },
+    {
+      "player": "DeShon Elliott",
+      "team_slug": "pittsburgh-steelers",
+      "position": "S",
+      "injury": "Knee",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": "FP",
+        "sat": null
+      },
+      "likelihood": "questionable",
+      "confidence": "high",
+      "sources": [
+        "https://www.steelers.com/news/week-7-injury-report-saints",
+        "https://steelersdepot.com/2026/10/steelers-week-seven-friday-injury-report-t-j-watt-good-to-go-two-other-players-questionable/",
+        "https://www.steelers.com/news/steelers-make-roster-move-ahead-of-saints-game",
+        "https://www.steelers.com/team/transactions/",
+        "https://steelersdepot.com/2026/10/steelers-activate-safety-deshon-elliott-to-53-man-roster-in-boost-to-pittsburghs-secondary/"
+      ],
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23",
+      "note": "Activated from injured reserve October 24. Official October 23 Week 7 designation: QUESTIONABLE. Friday FP was an estimated walkthrough after the canceled field session. Sunday game-day status remains separate."
     }
   ]
 }
