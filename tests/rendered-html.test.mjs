@@ -184,3 +184,17 @@ test("simulation API rejects invalid scenario participants and caps work", async
   });
   assert.equal(unknownTeam.status, 400);
 });
+
+
+test("official OUT designation replaces a prior questionable likelihood badge", async () => {
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const row = [...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/g)].map(match => match[0]).find(row => row.includes("Tremaine Edmunds"));
+  assert.ok(row, "Tremaine Edmunds watch row renders");
+  const text = row.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
+  assert.match(text, /Official Week 7 designation: OUT/);
+  assert.match(text, /UNLIKELY/);
+  assert.match(text, /high conf/);
+  assert.doesNotMatch(text, /QUESTIONABLE/);
+});
