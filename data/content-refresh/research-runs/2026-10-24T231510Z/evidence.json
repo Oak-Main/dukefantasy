@@ -1,0 +1,5752 @@
+{
+  "week": 7,
+  "baseCommit": "059e8c994bab5033cc74fd441b365c89370d4b90",
+  "run": "2026-10-24T231510Z",
+  "observations": [
+    {
+      "kind": "injury",
+      "key": "atlanta-falcons:A.J. Terrell Jr.",
+      "value": null,
+      "removalReason": "Actual October 24 activation is explicitly corroborated; the previous IR record is archived. No omission is used.",
+      "changedFields": [],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-activate-aj-terrell-announce-roster-moves-49ers-matchup",
+          "checkedAt": "2026-10-24T23:21:18.954Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "atlanta-falcons:Beaux Collins",
+      "value": {
+        "player": "Beaux Collins",
+        "team_slug": "atlanta-falcons",
+        "status": "IR",
+        "injury": "Hip",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "injury"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "sources": [
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-activate-aj-terrell-announce-roster-moves-49ers-matchup",
+          "checkedAt": "2026-10-24T23:21:18.954Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Beaux Collins",
+            "team_slug": "atlanta-falcons",
+            "status": "IR",
+            "injury": "Hip",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Beaux Collins",
+            "team_slug": "atlanta-falcons",
+            "status": "IR",
+            "injury": "Hip",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Beaux Collins",
+            "team_slug": "atlanta-falcons",
+            "status": "IR",
+            "injury": "Hip",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "carolina-panthers:Bam Martin-Scott",
+      "value": null,
+      "removalReason": "Actual October 24 activation is explicitly corroborated; the previous IR record is archived. No omission is used.",
+      "changedFields": [],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.panthers.com/news/panthers-place-thomas-incoom-on-ir-activate-bam-martin-scott",
+          "checkedAt": "2026-10-24T23:23:24.224Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/panthers-handful-roster-moves-saturday-201404328.html",
+          "checkedAt": "2026-10-24T23:23:24.371Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "cleveland-browns:Dylan Sampson",
+      "value": null,
+      "removalReason": "Actual October 24 activation is explicitly corroborated; the previous IR record is archived. No omission is used.",
+      "changedFields": [],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.clevelandbrowns.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:51.591Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "denver-broncos:Jonah Coleman",
+      "value": {
+        "player": "Jonah Coleman",
+        "team_slug": "denver-broncos",
+        "status": "QUESTIONABLE",
+        "injury": "Ankle",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury"
+      ],
+      "sources": [
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonah Coleman",
+            "team_slug": "denver-broncos",
+            "status": "QUESTIONABLE",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonah Coleman",
+            "team_slug": "denver-broncos",
+            "status": "QUESTIONABLE",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonah Coleman",
+            "team_slug": "denver-broncos",
+            "status": "QUESTIONABLE",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "detroit-lions:Cade Mays",
+      "value": null,
+      "removalReason": "Actual October 24 activation is explicitly corroborated; the previous IR record is archived. No omission is used.",
+      "changedFields": [],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.detroitlions.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:52.219Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/lions-activate-brian-branch-cade-203234072.html",
+          "checkedAt": "2026-10-24T23:31:07.437Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "houston-texans:Tank Dell",
+      "value": null,
+      "removalReason": "Actual October 24 activation is explicitly corroborated; the previous IR record is archived. No omission is used.",
+      "changedFields": [],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.houstontexans.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:51.295Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "kansas-city-chiefs:Cooper McDonald",
+      "value": null,
+      "removalReason": "Actual October 24 activation is explicitly corroborated; the previous IR record is archived. No omission is used.",
+      "changedFields": [],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.chiefs.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:52.196Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "miami-dolphins:Kyle Louis",
+      "value": null,
+      "removalReason": "Actual October 24 activation is explicitly corroborated; the previous IR record is archived. No omission is used.",
+      "changedFields": [],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.miamidolphins.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:51.414Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "minnesota-vikings:Jordan Mason",
+      "value": null,
+      "removalReason": "Actual October 24 activation is explicitly corroborated; the previous IR record is archived. No omission is used.",
+      "changedFields": [],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.vikings.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:51.825Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-york-giants:Paulson Adebo",
+      "value": {
+        "player": "Paulson Adebo",
+        "team_slug": "new-york-giants",
+        "status": "QUESTIONABLE",
+        "injury": "Knee",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury"
+      ],
+      "sources": [
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Paulson Adebo",
+            "team_slug": "new-york-giants",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Paulson Adebo",
+            "team_slug": "new-york-giants",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Paulson Adebo",
+            "team_slug": "new-york-giants",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "san-francisco-49ers:Christian Kirk",
+      "value": null,
+      "removalReason": "Actual October 24 activation is explicitly corroborated; the previous IR record is archived. No omission is used.",
+      "changedFields": [],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.49ers.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:50.852Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "seattle-seahawks:Anthony Bradford",
+      "value": null,
+      "removalReason": "Actual October 24 activation is explicitly corroborated; the previous IR record is archived. No omission is used.",
+      "changedFields": [],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.aol.com/articles/seahawks-activate-anthony-bradford-ahead-205123000.html",
+          "checkedAt": "2026-10-24T23:38:11.397Z",
+          "reportedWeek": 7,
+          "value": null
+        },
+        {
+          "url": "https://www.fieldgulls.com/seattle-seahawks-news/178108/seattle-seahawks-turn-to-practice-squad-for-defensive-depth-bring-anthony-bradford-back-from-ir-week-7-chiefs",
+          "checkedAt": "2026-10-24T23:31:07.214Z",
+          "reportedWeek": 7,
+          "value": null
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "baltimore-ravens:Lamar Jackson",
+      "value": {
+        "player": "Lamar Jackson",
+        "team_slug": "baltimore-ravens",
+        "status": "OUT",
+        "injury": "Ankle",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": "LP",
+          "thu": "LP",
+          "fri": "LP",
+          "sat": null
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "designation_date"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury",
+        "practice",
+        "designation_week"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Lamar Jackson",
+            "team_slug": "baltimore-ravens",
+            "status": "OUT",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Lamar Jackson",
+            "team_slug": "baltimore-ravens",
+            "status": "OUT",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Lamar Jackson",
+            "team_slug": "baltimore-ravens",
+            "status": "OUT",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "carolina-panthers:Thomas Incoom",
+      "value": {
+        "player": "Thomas Incoom",
+        "team_slug": "carolina-panthers",
+        "status": "IR",
+        "injury": "Calf",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Thomas Incoom",
+            "team_slug": "carolina-panthers",
+            "status": "IR",
+            "injury": "Calf",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Thomas Incoom",
+            "team_slug": "carolina-panthers",
+            "status": "IR",
+            "injury": "Calf",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-24T23:15:37.387Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Thomas Incoom",
+            "team_slug": "carolina-panthers",
+            "status": "IR",
+            "injury": "Calf",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "cleveland-browns:Teven Jenkins",
+      "value": {
+        "player": "Teven Jenkins",
+        "team_slug": "cleveland-browns",
+        "status": "IR",
+        "injury": "Back",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Teven Jenkins",
+            "team_slug": "cleveland-browns",
+            "status": "IR",
+            "injury": "Back",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Teven Jenkins",
+            "team_slug": "cleveland-browns",
+            "status": "IR",
+            "injury": "Back",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-24T23:15:37.387Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Teven Jenkins",
+            "team_slug": "cleveland-browns",
+            "status": "IR",
+            "injury": "Back",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "cleveland-browns:Grant Delpit",
+      "value": {
+        "player": "Grant Delpit",
+        "team_slug": "cleveland-browns",
+        "status": "NO_DESIGNATION",
+        "injury": "Concussion",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": "DNP",
+          "thu": "LP",
+          "fri": "LP",
+          "sat": null
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "designation_date"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury",
+        "practice",
+        "designation_week"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Grant Delpit",
+            "team_slug": "cleveland-browns",
+            "status": "NO_DESIGNATION",
+            "injury": "Concussion",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": "LP",
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.dawgsbynature.com/cleveland-browns-news/136050/browns-roster-dylan-sampson-denzel-ward-quincy-williams-grant-delpit-injuries",
+          "checkedAt": "2026-10-24T23:21:19.210Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Grant Delpit",
+            "team_slug": "cleveland-browns",
+            "status": "NO_DESIGNATION",
+            "injury": "Concussion",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "DNP",
+              "thu": "LP",
+              "fri": "LP",
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "dallas-cowboys:Drew Shelton",
+      "value": {
+        "player": "Drew Shelton",
+        "team_slug": "dallas-cowboys",
+        "status": "OUT",
+        "injury": "Hamstring",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": "DNP",
+          "fri": null,
+          "sat": "DNP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug"
+      ],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Drew Shelton",
+            "team_slug": "dallas-cowboys",
+            "status": "OUT",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "DNP",
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Drew Shelton",
+            "team_slug": "dallas-cowboys",
+            "status": "OUT",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "DNP",
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "dallas-cowboys:KaVontae Turpin",
+      "value": {
+        "player": "KaVontae Turpin",
+        "team_slug": "dallas-cowboys",
+        "status": "OUT",
+        "injury": "Ribs",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": "DNP",
+          "fri": null,
+          "sat": "DNP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury"
+      ],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "KaVontae Turpin",
+            "team_slug": "dallas-cowboys",
+            "status": "OUT",
+            "injury": "Ribs",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "DNP",
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "KaVontae Turpin",
+            "team_slug": "dallas-cowboys",
+            "status": "OUT",
+            "injury": "Ribs",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "DNP",
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "dallas-cowboys:Dee Winters",
+      "value": {
+        "player": "Dee Winters",
+        "team_slug": "dallas-cowboys",
+        "status": "OUT",
+        "injury": "Calf",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": "DNP",
+          "fri": null,
+          "sat": "DNP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug"
+      ],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Dee Winters",
+            "team_slug": "dallas-cowboys",
+            "status": "OUT",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "DNP",
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Dee Winters",
+            "team_slug": "dallas-cowboys",
+            "status": "OUT",
+            "injury": "Calf",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "DNP",
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "denver-broncos:Tyler Badie",
+      "value": {
+        "player": "Tyler Badie",
+        "team_slug": "denver-broncos",
+        "status": "IR",
+        "injury": "Thumb",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tyler Badie",
+            "team_slug": "denver-broncos",
+            "status": "IR",
+            "injury": "Thumb",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tyler Badie",
+            "team_slug": "denver-broncos",
+            "status": "IR",
+            "injury": "Thumb",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-24T23:15:37.387Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tyler Badie",
+            "team_slug": "denver-broncos",
+            "status": "IR",
+            "injury": "Thumb",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "indianapolis-colts:Rigoberto Sanchez",
+      "value": {
+        "player": "Rigoberto Sanchez",
+        "team_slug": "indianapolis-colts",
+        "status": "NO_DESIGNATION",
+        "injury": "Foot",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": "DNP",
+          "sat": null
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury",
+        "practice"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Rigoberto Sanchez",
+            "team_slug": "indianapolis-colts",
+            "status": "NO_DESIGNATION",
+            "injury": "Foot",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "DNP",
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/colts-made-three-key-roster-162656867.html",
+          "checkedAt": "2026-10-24T23:23:24.278Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Rigoberto Sanchez",
+            "team_slug": "indianapolis-colts",
+            "status": "NO_DESIGNATION",
+            "injury": "Foot",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "DNP",
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-york-giants:Theo Johnson",
+      "value": {
+        "player": "Theo Johnson",
+        "team_slug": "new-york-giants",
+        "status": "OUT",
+        "injury": "Neck",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": "LP",
+          "thu": "LP",
+          "fri": "DNP",
+          "sat": null
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "injury",
+        "designation_date"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "practice",
+        "designation_week"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Theo Johnson",
+            "team_slug": "new-york-giants",
+            "status": "OUT",
+            "injury": "Neck",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": "DNP",
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Theo Johnson",
+            "team_slug": "new-york-giants",
+            "status": "OUT",
+            "injury": "Neck",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": "DNP",
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Theo Johnson",
+            "team_slug": "new-york-giants",
+            "status": "OUT",
+            "injury": "Neck",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": "DNP",
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Jalyx Hunt",
+      "value": {
+        "player": "Jalyx Hunt",
+        "team_slug": "philadelphia-eagles",
+        "status": "QUESTIONABLE",
+        "injury": "Knee/Ankle",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": "LP",
+          "fri": "LP",
+          "sat": "LP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug"
+      ],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jalyx Hunt",
+            "team_slug": "philadelphia-eagles",
+            "status": "QUESTIONABLE",
+            "injury": "Knee/Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "LP",
+              "fri": "LP",
+              "sat": "LP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jalyx Hunt",
+            "team_slug": "philadelphia-eagles",
+            "status": "QUESTIONABLE",
+            "injury": "Knee/Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "LP",
+              "fri": "LP",
+              "sat": "LP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Saquon Barkley",
+      "value": {
+        "player": "Saquon Barkley",
+        "team_slug": "philadelphia-eagles",
+        "status": "QUESTIONABLE",
+        "injury": "Hamstring",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": "LP",
+          "fri": null,
+          "sat": "FP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury"
+      ],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Saquon Barkley",
+            "team_slug": "philadelphia-eagles",
+            "status": "QUESTIONABLE",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "LP",
+              "fri": null,
+              "sat": "FP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Saquon Barkley",
+            "team_slug": "philadelphia-eagles",
+            "status": "QUESTIONABLE",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "LP",
+              "fri": null,
+              "sat": "FP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Michael Carter II",
+      "value": {
+        "player": "Michael Carter II",
+        "team_slug": "philadelphia-eagles",
+        "status": "OUT",
+        "injury": "Abdomen",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": "DNP",
+          "fri": "DNP",
+          "sat": "DNP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug"
+      ],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Michael Carter II",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Abdomen",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "DNP",
+              "fri": "DNP",
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Michael Carter II",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Abdomen",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "DNP",
+              "fri": "DNP",
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Nolan Smith Jr.",
+      "value": {
+        "player": "Nolan Smith Jr.",
+        "team_slug": "philadelphia-eagles",
+        "status": "OUT",
+        "injury": "Concussion",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": "DNP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "status",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [
+        "player",
+        "team_slug",
+        "injury"
+      ],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Nolan Smith Jr.",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Concussion",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Nolan Smith Jr.",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Concussion",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "atlanta-falcons:Michael Jerrell",
+      "value": {
+        "player": "Michael Jerrell",
+        "team_slug": "atlanta-falcons",
+        "status": "IR",
+        "injury": "Biceps",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Michael Jerrell",
+            "team_slug": "atlanta-falcons",
+            "status": "IR",
+            "injury": "Biceps",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Michael Jerrell",
+            "team_slug": "atlanta-falcons",
+            "status": "IR",
+            "injury": "Biceps",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-24T23:15:37.387Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Michael Jerrell",
+            "team_slug": "atlanta-falcons",
+            "status": "IR",
+            "injury": "Biceps",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "baltimore-ravens:Tavius Robinson",
+      "value": {
+        "player": "Tavius Robinson",
+        "team_slug": "baltimore-ravens",
+        "status": "IR",
+        "injury": "Pectoral",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tavius Robinson",
+            "team_slug": "baltimore-ravens",
+            "status": "IR",
+            "injury": "Pectoral",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tavius Robinson",
+            "team_slug": "baltimore-ravens",
+            "status": "IR",
+            "injury": "Pectoral",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-24T23:15:37.387Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tavius Robinson",
+            "team_slug": "baltimore-ravens",
+            "status": "IR",
+            "injury": "Pectoral",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "kansas-city-chiefs:Brashard Smith",
+      "value": {
+        "player": "Brashard Smith",
+        "team_slug": "kansas-city-chiefs",
+        "status": "IR",
+        "injury": "Hamstring",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Brashard Smith",
+            "team_slug": "kansas-city-chiefs",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Brashard Smith",
+            "team_slug": "kansas-city-chiefs",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-24T23:15:37.387Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Brashard Smith",
+            "team_slug": "kansas-city-chiefs",
+            "status": "IR",
+            "injury": "Hamstring",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "denver-broncos:Jonah Elliss",
+      "value": {
+        "player": "Jonah Elliss",
+        "team_slug": "denver-broncos",
+        "status": "IR",
+        "injury": "Ankle",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonah Elliss",
+            "team_slug": "denver-broncos",
+            "status": "IR",
+            "injury": "Ankle",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonah Elliss",
+            "team_slug": "denver-broncos",
+            "status": "IR",
+            "injury": "Ankle",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-24T23:15:37.387Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonah Elliss",
+            "team_slug": "denver-broncos",
+            "status": "IR",
+            "injury": "Ankle",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-york-jets:Francisco Mauigoa",
+      "value": {
+        "player": "Francisco Mauigoa",
+        "team_slug": "new-york-jets",
+        "status": "IR",
+        "injury": "Quadriceps",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-24T23:15:37.387Z",
+          "reportedWeek": 7,
+          "relatedUrls": [
+            "https://www.newyorkjets.com/team/injury-report/"
+          ],
+          "value": {
+            "player": "Francisco Mauigoa",
+            "team_slug": "new-york-jets",
+            "status": "IR",
+            "injury": "Quadriceps",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Francisco Mauigoa",
+            "team_slug": "new-york-jets",
+            "status": "IR",
+            "injury": "Quadriceps",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:DeVonta Smith",
+      "value": {
+        "player": "DeVonta Smith",
+        "team_slug": "philadelphia-eagles",
+        "status": "OUT",
+        "injury": "Hamstring",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": "DNP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "DeVonta Smith",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "DeVonta Smith",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Dontayvion Wicks",
+      "value": {
+        "player": "Dontayvion Wicks",
+        "team_slug": "philadelphia-eagles",
+        "status": "OUT",
+        "injury": "Ankle",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": "DNP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Dontayvion Wicks",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Dontayvion Wicks",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Jonathan Greenard",
+      "value": {
+        "player": "Jonathan Greenard",
+        "team_slug": "philadelphia-eagles",
+        "status": "QUESTIONABLE",
+        "injury": "Ankle",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": "DNP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonathan Greenard",
+            "team_slug": "philadelphia-eagles",
+            "status": "QUESTIONABLE",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonathan Greenard",
+            "team_slug": "philadelphia-eagles",
+            "status": "QUESTIONABLE",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "DNP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Dallas Goedert",
+      "value": {
+        "player": "Dallas Goedert",
+        "team_slug": "philadelphia-eagles",
+        "status": "NO_DESIGNATION",
+        "injury": "Knee",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": "FP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Dallas Goedert",
+            "team_slug": "philadelphia-eagles",
+            "status": "NO_DESIGNATION",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "FP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Dallas Goedert",
+            "team_slug": "philadelphia-eagles",
+            "status": "NO_DESIGNATION",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "FP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "dallas-cowboys:George Pickens",
+      "value": {
+        "player": "George Pickens",
+        "team_slug": "dallas-cowboys",
+        "status": "NO_DESIGNATION",
+        "injury": "Shoulder",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": "FP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html",
+          "checkedAt": "2026-10-24T23:17:50.570Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "George Pickens",
+            "team_slug": "dallas-cowboys",
+            "status": "NO_DESIGNATION",
+            "injury": "Shoulder",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "FP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "George Pickens",
+            "team_slug": "dallas-cowboys",
+            "status": "NO_DESIGNATION",
+            "injury": "Shoulder",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "FP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "dallas-cowboys:Joey Porter Jr.",
+      "value": {
+        "player": "Joey Porter Jr.",
+        "team_slug": "dallas-cowboys",
+        "status": "NO_DESIGNATION",
+        "injury": "Ankle",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": "FP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html",
+          "checkedAt": "2026-10-24T23:17:50.570Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Joey Porter Jr.",
+            "team_slug": "dallas-cowboys",
+            "status": "NO_DESIGNATION",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "FP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Joey Porter Jr.",
+            "team_slug": "dallas-cowboys",
+            "status": "NO_DESIGNATION",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "FP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "dallas-cowboys:Cobie Durant",
+      "value": {
+        "player": "Cobie Durant",
+        "team_slug": "dallas-cowboys",
+        "status": "NO_DESIGNATION",
+        "injury": "Hamstring",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": "FP"
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cobie Durant",
+            "team_slug": "dallas-cowboys",
+            "status": "NO_DESIGNATION",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "FP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cobie Durant",
+            "team_slug": "dallas-cowboys",
+            "status": "NO_DESIGNATION",
+            "injury": "Hamstring",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": "FP"
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "new-york-giants:Jevon Holland",
+      "value": {
+        "player": "Jevon Holland",
+        "team_slug": "new-york-giants",
+        "status": "OUT",
+        "injury": "Concussion",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jevon Holland",
+            "team_slug": "new-york-giants",
+            "status": "OUT",
+            "injury": "Concussion",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jevon Holland",
+            "team_slug": "new-york-giants",
+            "status": "OUT",
+            "injury": "Concussion",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jevon Holland",
+            "team_slug": "new-york-giants",
+            "status": "OUT",
+            "injury": "Concussion",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "indianapolis-colts:CJ Allen",
+      "value": {
+        "player": "CJ Allen",
+        "team_slug": "indianapolis-colts",
+        "status": "OUT",
+        "injury": "Ankle",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "CJ Allen",
+            "team_slug": "indianapolis-colts",
+            "status": "OUT",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "CJ Allen",
+            "team_slug": "indianapolis-colts",
+            "status": "OUT",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "CJ Allen",
+            "team_slug": "indianapolis-colts",
+            "status": "OUT",
+            "injury": "Ankle",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "kansas-city-chiefs:L'Jarius Sneed",
+      "value": {
+        "player": "L'Jarius Sneed",
+        "team_slug": "kansas-city-chiefs",
+        "status": "QUESTIONABLE",
+        "injury": "Knee",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "L'Jarius Sneed",
+            "team_slug": "kansas-city-chiefs",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "L'Jarius Sneed",
+            "team_slug": "kansas-city-chiefs",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "L'Jarius Sneed",
+            "team_slug": "kansas-city-chiefs",
+            "status": "QUESTIONABLE",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "green-bay-packers:Jordon Riley",
+      "value": {
+        "player": "Jordon Riley",
+        "team_slug": "green-bay-packers",
+        "status": "QUESTIONABLE",
+        "injury": "Achilles",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "injury",
+        "practice",
+        "designation_date",
+        "designation_week"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jordon Riley",
+            "team_slug": "green-bay-packers",
+            "status": "QUESTIONABLE",
+            "injury": "Achilles",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jordon Riley",
+            "team_slug": "green-bay-packers",
+            "status": "QUESTIONABLE",
+            "injury": "Achilles",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jordon Riley",
+            "team_slug": "green-bay-packers",
+            "status": "QUESTIONABLE",
+            "injury": "Achilles",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "philadelphia-eagles:Jakorian Bennett",
+      "value": {
+        "player": "Jakorian Bennett",
+        "team_slug": "philadelphia-eagles",
+        "status": "IR; Week 7 QUESTIONABLE",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jakorian Bennett",
+            "team_slug": "philadelphia-eagles",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html",
+          "checkedAt": "2026-10-24T23:23:24.005Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jakorian Bennett",
+            "team_slug": "philadelphia-eagles",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "philadelphia-eagles:Grant Calcaterra",
+      "value": {
+        "player": "Grant Calcaterra",
+        "team_slug": "philadelphia-eagles",
+        "status": "IR; Week 7 QUESTIONABLE",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Grant Calcaterra",
+            "team_slug": "philadelphia-eagles",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html",
+          "checkedAt": "2026-10-24T23:23:24.005Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Grant Calcaterra",
+            "team_slug": "philadelphia-eagles",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "philadelphia-eagles:Landon Dickerson",
+      "value": {
+        "player": "Landon Dickerson",
+        "team_slug": "philadelphia-eagles",
+        "status": "IR; Week 7 QUESTIONABLE",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Landon Dickerson",
+            "team_slug": "philadelphia-eagles",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html",
+          "checkedAt": "2026-10-24T23:23:24.005Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Landon Dickerson",
+            "team_slug": "philadelphia-eagles",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "philadelphia-eagles:Eli Stowers",
+      "value": {
+        "player": "Eli Stowers",
+        "team_slug": "philadelphia-eagles",
+        "status": "IR; Week 7 QUESTIONABLE",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Eli Stowers",
+            "team_slug": "philadelphia-eagles",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html",
+          "checkedAt": "2026-10-24T23:23:24.005Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Eli Stowers",
+            "team_slug": "philadelphia-eagles",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "dallas-cowboys:Marist Liufau",
+      "value": {
+        "player": "Marist Liufau",
+        "team_slug": "dallas-cowboys",
+        "status": "IR; Week 7 QUESTIONABLE",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Marist Liufau",
+            "team_slug": "dallas-cowboys",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html",
+          "checkedAt": "2026-10-24T23:17:50.570Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Marist Liufau",
+            "team_slug": "dallas-cowboys",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "dallas-cowboys:P.J. Locke",
+      "value": {
+        "player": "P.J. Locke",
+        "team_slug": "dallas-cowboys",
+        "status": "IR; Week 7 QUESTIONABLE",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "P.J. Locke",
+            "team_slug": "dallas-cowboys",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html",
+          "checkedAt": "2026-10-24T23:17:50.570Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "P.J. Locke",
+            "team_slug": "dallas-cowboys",
+            "status": "IR; Week 7 QUESTIONABLE",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "new-york-giants:Tremaine Edmunds",
+      "value": {
+        "player": "Tremaine Edmunds",
+        "team_slug": "new-york-giants",
+        "status": "Placed on IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.giants.com/news/giants-activate-cb-paulson-adebo-off-ir-place-lb-tremaine-edmunds-on-ir-week-7-houston-texans",
+          "checkedAt": "2026-10-24T23:21:19.257Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tremaine Edmunds",
+            "team_slug": "new-york-giants",
+            "status": "Placed on IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tremaine Edmunds",
+            "team_slug": "new-york-giants",
+            "status": "Placed on IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+          "checkedAt": "2026-10-24T23:15:37.387Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tremaine Edmunds",
+            "team_slug": "new-york-giants",
+            "status": "Placed on IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "atlanta-falcons:A.J. Terrell Jr.",
+      "value": {
+        "player": "A.J. Terrell Jr.",
+        "team_slug": "atlanta-falcons",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-activate-aj-terrell-announce-roster-moves-49ers-matchup",
+          "checkedAt": "2026-10-24T23:21:18.954Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "A.J. Terrell Jr.",
+            "team_slug": "atlanta-falcons",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "A.J. Terrell Jr.",
+            "team_slug": "atlanta-falcons",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "cleveland-browns:Dylan Sampson",
+      "value": {
+        "player": "Dylan Sampson",
+        "team_slug": "cleveland-browns",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.clevelandbrowns.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:51.591Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Dylan Sampson",
+            "team_slug": "cleveland-browns",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Dylan Sampson",
+            "team_slug": "cleveland-browns",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "denver-broncos:Jonah Coleman",
+      "value": {
+        "player": "Jonah Coleman",
+        "team_slug": "denver-broncos",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.denverbroncos.com/news/broncos-activate-rb-jonah-coleman-and-olb-jonathon-cooper-place-rb-tyler-badie-and-olb-jonah-elliss-on-ir",
+          "checkedAt": "2026-10-24T23:21:18.933Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonah Coleman",
+            "team_slug": "denver-broncos",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonah Coleman",
+            "team_slug": "denver-broncos",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "san-francisco-49ers:Christian Kirk",
+      "value": {
+        "player": "Christian Kirk",
+        "team_slug": "san-francisco-49ers",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.49ers.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:50.852Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Christian Kirk",
+            "team_slug": "san-francisco-49ers",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Christian Kirk",
+            "team_slug": "san-francisco-49ers",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "houston-texans:Tank Dell",
+      "value": {
+        "player": "Tank Dell",
+        "team_slug": "houston-texans",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.houstontexans.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:51.295Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tank Dell",
+            "team_slug": "houston-texans",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Tank Dell",
+            "team_slug": "houston-texans",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "kansas-city-chiefs:Cooper McDonald",
+      "value": {
+        "player": "Cooper McDonald",
+        "team_slug": "kansas-city-chiefs",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.chiefs.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:52.196Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cooper McDonald",
+            "team_slug": "kansas-city-chiefs",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cooper McDonald",
+            "team_slug": "kansas-city-chiefs",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "miami-dolphins:Kyle Louis",
+      "value": {
+        "player": "Kyle Louis",
+        "team_slug": "miami-dolphins",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.miamidolphins.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:51.414Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Kyle Louis",
+            "team_slug": "miami-dolphins",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Kyle Louis",
+            "team_slug": "miami-dolphins",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "minnesota-vikings:Jordan Mason",
+      "value": {
+        "player": "Jordan Mason",
+        "team_slug": "minnesota-vikings",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.vikings.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:51.825Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jordan Mason",
+            "team_slug": "minnesota-vikings",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jordan Mason",
+            "team_slug": "minnesota-vikings",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "new-york-giants:Paulson Adebo",
+      "value": {
+        "player": "Paulson Adebo",
+        "team_slug": "new-york-giants",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.giants.com/news/giants-activate-cb-paulson-adebo-off-ir-place-lb-tremaine-edmunds-on-ir-week-7-houston-texans",
+          "checkedAt": "2026-10-24T23:21:19.257Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Paulson Adebo",
+            "team_slug": "new-york-giants",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://www.bigblueview.com/new-york-giants-roster/177240/ny-giants-roster-moves-tremaine-edmunds-paulson-adebo-jalin-hyatt",
+          "checkedAt": "2026-10-24T23:31:07.117Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Paulson Adebo",
+            "team_slug": "new-york-giants",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "carolina-panthers:Bam Martin-Scott",
+      "value": {
+        "player": "Bam Martin-Scott",
+        "team_slug": "carolina-panthers",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.panthers.com/news/panthers-place-thomas-incoom-on-ir-activate-bam-martin-scott",
+          "checkedAt": "2026-10-24T23:23:24.224Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Bam Martin-Scott",
+            "team_slug": "carolina-panthers",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/panthers-handful-roster-moves-saturday-201404328.html",
+          "checkedAt": "2026-10-24T23:23:24.371Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Bam Martin-Scott",
+            "team_slug": "carolina-panthers",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "detroit-lions:Cade Mays",
+      "value": {
+        "player": "Cade Mays",
+        "team_slug": "detroit-lions",
+        "status": "Activated to roster",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.detroitlions.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:52.219Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cade Mays",
+            "team_slug": "detroit-lions",
+            "status": "Activated to roster",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/lions-activate-brian-branch-cade-203234072.html",
+          "checkedAt": "2026-10-24T23:31:07.437Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cade Mays",
+            "team_slug": "detroit-lions",
+            "status": "Activated to roster",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "seattle-seahawks:Anthony Bradford",
+      "value": {
+        "player": "Anthony Bradford",
+        "team_slug": "seattle-seahawks",
+        "status": "Activated from IR",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.aol.com/articles/seahawks-activate-anthony-bradford-ahead-205123000.html",
+          "checkedAt": "2026-10-24T23:38:11.397Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Anthony Bradford",
+            "team_slug": "seattle-seahawks",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://www.fieldgulls.com/seattle-seahawks-news/178108/seattle-seahawks-turn-to-practice-squad-for-defensive-depth-bring-anthony-bradford-back-from-ir-week-7-chiefs",
+          "checkedAt": "2026-10-24T23:31:07.214Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Anthony Bradford",
+            "team_slug": "seattle-seahawks",
+            "status": "Activated from IR",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "detroit-lions:Brian Branch",
+      "value": {
+        "player": "Brian Branch",
+        "team_slug": "detroit-lions",
+        "status": "Activated to roster",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.detroitlions.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:52.219Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Brian Branch",
+            "team_slug": "detroit-lions",
+            "status": "Activated to roster",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/lions-activate-brian-branch-cade-203234072.html",
+          "checkedAt": "2026-10-24T23:31:07.437Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Brian Branch",
+            "team_slug": "detroit-lions",
+            "status": "Activated to roster",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "green-bay-packers:Jordon Riley",
+      "value": {
+        "player": "Jordon Riley",
+        "team_slug": "green-bay-packers",
+        "status": "Activated from PUP",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.packers.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:52.189Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jordon Riley",
+            "team_slug": "green-bay-packers",
+            "status": "Activated from PUP",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/transactions/",
+          "checkedAt": "2026-10-24T23:15:37.122Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jordon Riley",
+            "team_slug": "green-bay-packers",
+            "status": "Activated from PUP",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "denver-broncos:Jonathon Cooper",
+      "value": {
+        "player": "Jonathon Cooper",
+        "team_slug": "denver-broncos",
+        "status": "Activated to roster",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.denverbroncos.com/news/broncos-activate-rb-jonah-coleman-and-olb-jonathon-cooper-place-rb-tyler-badie-and-olb-jonah-elliss-on-ir",
+          "checkedAt": "2026-10-24T23:21:18.933Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonathon Cooper",
+            "team_slug": "denver-broncos",
+            "status": "Activated to roster",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://www.denvergazette.com/2026/10/24/broncos-activate-jonathon-cooper-jonah-coleman-to-face-cardinals/",
+          "checkedAt": "2026-10-24T23:23:23.873Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jonathon Cooper",
+            "team_slug": "denver-broncos",
+            "status": "Activated to roster",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "green-bay-packers:Josh Jacobs",
+      "value": {
+        "player": "Josh Jacobs",
+        "team_slug": "green-bay-packers",
+        "status": "Roster exemption removed",
+        "asOf": "2026-10-24"
+      },
+      "changedFields": [
+        "player",
+        "team_slug",
+        "status",
+        "asOf"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.packers.com/team/transactions/",
+          "checkedAt": "2026-10-24T23:17:52.189Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Josh Jacobs",
+            "team_slug": "green-bay-packers",
+            "status": "Roster exemption removed",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Josh Jacobs",
+            "team_slug": "green-bay-packers",
+            "status": "Roster exemption removed",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Saquon Barkley",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Saquon Barkley",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Hamstring"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Saquon Barkley",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Saquon Barkley",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Zack Baun",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Zack Baun",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Shoulder"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Zack Baun",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shoulder"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Zack Baun",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shoulder"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Jakorian Bennett",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Jakorian Bennett",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Knee"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jakorian Bennett",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jakorian Bennett",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Marquise Brown",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Marquise Brown",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Ankle"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Marquise Brown",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Ankle"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Marquise Brown",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Ankle"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Grant Calcaterra",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Grant Calcaterra",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Back"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Grant Calcaterra",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Back"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Grant Calcaterra",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Back"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Jihaad Campbell",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Jihaad Campbell",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Wrist"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jihaad Campbell",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Wrist"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jihaad Campbell",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Wrist"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Jalen Carter",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Jalen Carter",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Wrist"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jalen Carter",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Wrist"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jalen Carter",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Wrist"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Michael Carter II",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Michael Carter II",
+        "team_slug": "philadelphia-eagles",
+        "participation": "DNP",
+        "report_type": "practice",
+        "injury": "Abdomen"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Michael Carter II",
+            "team_slug": "philadelphia-eagles",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Abdomen"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Michael Carter II",
+            "team_slug": "philadelphia-eagles",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Abdomen"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Britain Covey",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Britain Covey",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Shoulder"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shoulder"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shoulder"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Jordan Davis",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Jordan Davis",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Shin/Thumb"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jordan Davis",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shin/Thumb"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jordan Davis",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shin/Thumb"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Landon Dickerson",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Landon Dickerson",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Knee/Pectoral"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Landon Dickerson",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Knee/Pectoral"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Landon Dickerson",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Knee/Pectoral"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Arnold Ebiketie",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Arnold Ebiketie",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Shoulder"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Arnold Ebiketie",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shoulder"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Arnold Ebiketie",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shoulder"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:AJ Epenesa",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "AJ Epenesa",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Back"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "AJ Epenesa",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Back"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "AJ Epenesa",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Back"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Dallas Goedert",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Dallas Goedert",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Knee"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Dallas Goedert",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Dallas Goedert",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Jonathan Greenard",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Jonathan Greenard",
+        "team_slug": "philadelphia-eagles",
+        "participation": "DNP",
+        "report_type": "practice",
+        "injury": "Ankle"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jonathan Greenard",
+            "team_slug": "philadelphia-eagles",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Ankle"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jonathan Greenard",
+            "team_slug": "philadelphia-eagles",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Ankle"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Jalyx Hunt",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Jalyx Hunt",
+        "team_slug": "philadelphia-eagles",
+        "participation": "LP",
+        "report_type": "practice",
+        "injury": "Knee/Ankle"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jalyx Hunt",
+            "team_slug": "philadelphia-eagles",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Knee/Ankle"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Jalyx Hunt",
+            "team_slug": "philadelphia-eagles",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Knee/Ankle"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Fred Johnson",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Fred Johnson",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Illness"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Fred Johnson",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Illness"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Fred Johnson",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Illness"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Drew Kendall",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Drew Kendall",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Knee"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Drew Kendall",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Drew Kendall",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Willie Lampkin",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Willie Lampkin",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Illness"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Willie Lampkin",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Illness"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Willie Lampkin",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Illness"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Moro Ojomo",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Moro Ojomo",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Abdomen"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Moro Ojomo",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Abdomen"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Moro Ojomo",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Abdomen"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:DeVonta Smith",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "DeVonta Smith",
+        "team_slug": "philadelphia-eagles",
+        "participation": "DNP",
+        "report_type": "practice",
+        "injury": "Hamstring"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "DeVonta Smith",
+            "team_slug": "philadelphia-eagles",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "DeVonta Smith",
+            "team_slug": "philadelphia-eagles",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Nolan Smith Jr.",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Nolan Smith Jr.",
+        "team_slug": "philadelphia-eagles",
+        "participation": "DNP",
+        "report_type": "practice",
+        "injury": "Concussion"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Nolan Smith Jr.",
+            "team_slug": "philadelphia-eagles",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Concussion"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Nolan Smith Jr.",
+            "team_slug": "philadelphia-eagles",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Concussion"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Tyler Steen",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Tyler Steen",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Shoulder"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Tyler Steen",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shoulder"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Tyler Steen",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shoulder"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Eli Stowers",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Eli Stowers",
+        "team_slug": "philadelphia-eagles",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Quad"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Eli Stowers",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Quad"
+          }
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+          "checkedAt": "2026-10-24T23:23:23.995Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Eli Stowers",
+            "team_slug": "philadelphia-eagles",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Quad"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:philadelphia-eagles:Dontayvion Wicks",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Dontayvion Wicks",
+        "team_slug": "philadelphia-eagles",
+        "participation": "DNP",
+        "report_type": "practice",
+        "injury": "Ankle"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:37.023Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Dontayvion Wicks",
+            "team_slug": "philadelphia-eagles",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Ankle"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Dontayvion Wicks",
+            "team_slug": "philadelphia-eagles",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Ankle"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:dallas-cowboys:Drew Shelton",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Drew Shelton",
+        "team_slug": "dallas-cowboys",
+        "participation": "DNP",
+        "report_type": "practice",
+        "injury": "Hamstring"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Drew Shelton",
+            "team_slug": "dallas-cowboys",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Drew Shelton",
+            "team_slug": "dallas-cowboys",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:dallas-cowboys:KaVontae Turpin",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "KaVontae Turpin",
+        "team_slug": "dallas-cowboys",
+        "participation": "DNP",
+        "report_type": "practice",
+        "injury": "Ribs"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "KaVontae Turpin",
+            "team_slug": "dallas-cowboys",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Ribs"
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "KaVontae Turpin",
+            "team_slug": "dallas-cowboys",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Ribs"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:dallas-cowboys:Dee Winters",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Dee Winters",
+        "team_slug": "dallas-cowboys",
+        "participation": "DNP",
+        "report_type": "practice",
+        "injury": "Calf"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Dee Winters",
+            "team_slug": "dallas-cowboys",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Calf"
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Dee Winters",
+            "team_slug": "dallas-cowboys",
+            "participation": "DNP",
+            "report_type": "practice",
+            "injury": "Calf"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:dallas-cowboys:Marist Liufau",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Marist Liufau",
+        "team_slug": "dallas-cowboys",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Forearm"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Marist Liufau",
+            "team_slug": "dallas-cowboys",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Forearm"
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Marist Liufau",
+            "team_slug": "dallas-cowboys",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Forearm"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:dallas-cowboys:P.J. Locke",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "P.J. Locke",
+        "team_slug": "dallas-cowboys",
+        "participation": "LP",
+        "report_type": "practice",
+        "injury": "Foot"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "checkedAt": "2026-10-24T23:17:50.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "P.J. Locke",
+            "team_slug": "dallas-cowboys",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Foot"
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "P.J. Locke",
+            "team_slug": "dallas-cowboys",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Foot"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:dallas-cowboys:George Pickens",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "George Pickens",
+        "team_slug": "dallas-cowboys",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Shoulder"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html",
+          "checkedAt": "2026-10-24T23:17:50.570Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "George Pickens",
+            "team_slug": "dallas-cowboys",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shoulder"
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "George Pickens",
+            "team_slug": "dallas-cowboys",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Shoulder"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:dallas-cowboys:Joey Porter Jr.",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Joey Porter Jr.",
+        "team_slug": "dallas-cowboys",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Ankle"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html",
+          "checkedAt": "2026-10-24T23:17:50.570Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Joey Porter Jr.",
+            "team_slug": "dallas-cowboys",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Ankle"
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Joey Porter Jr.",
+            "team_slug": "dallas-cowboys",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Ankle"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-24:dallas-cowboys:Cobie Durant",
+      "value": {
+        "date": "2026-10-24",
+        "week": 7,
+        "player": "Cobie Durant",
+        "team_slug": "dallas-cowboys",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Hamstring"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T23:45:23.733Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Cobie Durant",
+            "team_slug": "dallas-cowboys",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        },
+        {
+          "url": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+          "checkedAt": "2026-10-24T23:23:24.054Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-24",
+            "week": 7,
+            "player": "Cobie Durant",
+            "team_slug": "dallas-cowboys",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-23:green-bay-packers:Aaron Banks",
+      "value": {
+        "date": "2026-10-23",
+        "week": 7,
+        "player": "Aaron Banks",
+        "team_slug": "green-bay-packers",
+        "participation": "LP",
+        "report_type": "practice",
+        "injury": "Knee"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.packers.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:36.435Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Aaron Banks",
+            "team_slug": "green-bay-packers",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Aaron Banks",
+            "team_slug": "green-bay-packers",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        },
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Aaron Banks",
+            "team_slug": "green-bay-packers",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Knee"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-23:green-bay-packers:Bo Melton",
+      "value": {
+        "date": "2026-10-23",
+        "week": 7,
+        "player": "Bo Melton",
+        "team_slug": "green-bay-packers",
+        "participation": "LP",
+        "report_type": "practice",
+        "injury": "Back"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.packers.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:36.435Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Bo Melton",
+            "team_slug": "green-bay-packers",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Back"
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Bo Melton",
+            "team_slug": "green-bay-packers",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Back"
+          }
+        },
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Bo Melton",
+            "team_slug": "green-bay-packers",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Back"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-23:green-bay-packers:Benjamin St-Juste",
+      "value": {
+        "date": "2026-10-23",
+        "week": 7,
+        "player": "Benjamin St-Juste",
+        "team_slug": "green-bay-packers",
+        "participation": "LP",
+        "report_type": "practice",
+        "injury": "Hamstring"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.packers.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:36.435Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Benjamin St-Juste",
+            "team_slug": "green-bay-packers",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Benjamin St-Juste",
+            "team_slug": "green-bay-packers",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        },
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Benjamin St-Juste",
+            "team_slug": "green-bay-packers",
+            "participation": "LP",
+            "report_type": "practice",
+            "injury": "Hamstring"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "key": "2026-10-23:las-vegas-raiders:Quay Walker",
+      "value": {
+        "date": "2026-10-23",
+        "week": 7,
+        "player": "Quay Walker",
+        "team_slug": "las-vegas-raiders",
+        "participation": "FP",
+        "report_type": "practice",
+        "injury": "Chest"
+      },
+      "changedFields": [
+        "date",
+        "week",
+        "player",
+        "team_slug",
+        "participation",
+        "report_type",
+        "injury"
+      ],
+      "preservedFieldsFromBase": [],
+      "sources": [
+        {
+          "url": "https://www.raiders.com/team/injury-report/",
+          "checkedAt": "2026-10-24T23:15:36.415Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Quay Walker",
+            "team_slug": "las-vegas-raiders",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Chest"
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.324Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Quay Walker",
+            "team_slug": "las-vegas-raiders",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Chest"
+          }
+        },
+        {
+          "url": "https://www.nfl.com/injuries/",
+          "checkedAt": "2026-10-24T23:15:37.197Z",
+          "reportedWeek": 7,
+          "value": {
+            "date": "2026-10-23",
+            "week": 7,
+            "player": "Quay Walker",
+            "team_slug": "las-vegas-raiders",
+            "participation": "FP",
+            "report_type": "practice",
+            "injury": "Chest"
+          }
+        }
+      ]
+    }
+  ],
+  "moduleReviews": []
+}

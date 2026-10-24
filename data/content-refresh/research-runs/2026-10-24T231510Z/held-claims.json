@@ -1,0 +1,39 @@
+{
+  "claims": [
+    {
+      "player": "Tremaine Edmunds",
+      "claim": "Shoulder versus chest condition and IR-ledger transition",
+      "decision": "Publish the unconflicted October 24 reserve-status placement separately; retain the earlier verified watch/condition pending reconciliation."
+    },
+    {
+      "player": "Quay Walker",
+      "claim": "Game designation",
+      "decision": "The current generic club/NFL tables and ESPN/CBS say QUESTIONABLE, while the dated Raiders final article and another final-report publication show no designation. Hold the designation; publish only the matching Friday FP/Chest participation."
+    },
+    {
+      "claim": "Dallas additional cleared-player Saturday participation",
+      "decision": "Durant is now corroborated and published. Hold the remaining additional Saturday participation claims for Guyton, Clark, Overshown, Speed, Jones and Miller until a second explicitly dated report agrees."
+    },
+    {
+      "claim": "Brian Branch/Cade Mays origin-list labels",
+      "decision": "Actual activation is corroborated, but ESPN and another secondary report disagree with the explicit club list origins. Publish generic roster activation without replacing the disputed origin labels."
+    },
+    {
+      "claim": "NFL aggregate injury article",
+      "decision": "Its Lamar Jackson and Quay Walker status sections are stale/conflicting. Use fresh explicit player observations and retain the discrepancies here."
+    },
+    {
+      "claim": "Sunday inactive lists and provisional/future scores",
+      "decision": "Do not infer any new inactive/active status or final result. Retain complete Thursday history."
+    },
+    {
+      "player": "Jonathon Cooper",
+      "claim": "Exempt-list removal timing",
+      "decision": "The new ESPN report dates removal to Saturday while Denver Gazette describes an earlier removal. Publish only the unconflicted October 24 roster activation; no removal date is assigned."
+    },
+    {
+      "claim": "ESPN Dee Winters weekday",
+      "decision": "A new short comment says Sunday, while its detailed report and the verified NFL/ESPN game schedule say Monday. Reject the weekday typo; the published Cowboys–Eagles kickoff remains Monday October 26."
+    }
+  ]
+}
