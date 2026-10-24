@@ -1,166 +1,118 @@
 {
   "week": 7,
-  "baseCommit": "28e416a2e2e548e64193445cba307f2601f18ada",
-  "run": "2026-10-24T091730Z",
+  "baseCommit": "45fb535aa6bb2d22e5f3b9483b5c94f55c12622a",
+  "run": "2026-10-24T161505Z",
   "observations": [
     {
       "kind": "injury",
-      "key": "chicago-bears:Cole Kmet",
+      "key": "pittsburgh-steelers:DeShon Elliott",
       "value": {
-        "player": "Cole Kmet",
-        "team_slug": "chicago-bears",
-        "status": "IR",
+        "player": "DeShon Elliott",
+        "team_slug": "pittsburgh-steelers",
+        "status": "QUESTIONABLE",
         "injury": "Knee",
-        "practice": null,
-        "designation_date": null,
-        "designation_week": null
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": "FP",
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
       },
       "sources": [
         {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T09:19:07.532Z",
+          "url": "https://www.steelers.com/news/week-7-injury-report-saints",
+          "checkedAt": "2026-10-24T16:17:50.053Z",
           "reportedWeek": 7,
           "value": {
-            "player": "Cole Kmet",
-            "team_slug": "chicago-bears",
-            "status": "IR",
+            "player": "DeShon Elliott",
+            "team_slug": "pittsburgh-steelers",
+            "status": "QUESTIONABLE",
             "injury": "Knee",
-            "practice": null,
-            "designation_date": null,
-            "designation_week": null
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "FP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
           }
         },
         {
-          "url": "https://www.cbssports.com/nfl/injuries/",
-          "checkedAt": "2026-10-24T09:19:06.344Z",
+          "url": "https://steelersdepot.com/2026/10/steelers-week-seven-friday-injury-report-t-j-watt-good-to-go-two-other-players-questionable/",
+          "checkedAt": "2026-10-24T16:17:50.074Z",
           "reportedWeek": 7,
           "value": {
-            "player": "Cole Kmet",
-            "team_slug": "chicago-bears",
-            "status": "IR",
+            "player": "DeShon Elliott",
+            "team_slug": "pittsburgh-steelers",
+            "status": "QUESTIONABLE",
             "injury": "Knee",
-            "practice": null,
-            "designation_date": null,
-            "designation_week": null
-          }
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/transactions/",
-          "checkedAt": "2026-10-24T09:22:48.050Z",
-          "reportedWeek": 7,
-          "value": {
-            "player": "Cole Kmet",
-            "team_slug": "chicago-bears",
-            "status": "IR",
-            "injury": "Knee",
-            "practice": null,
-            "designation_date": null,
-            "designation_week": null
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": "FP",
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
           }
         }
-      ]
+      ],
+      "transitionReason": "Actual October 24 activation is explicitly confirmed by the Steelers and Steelers Depot; move from the current IR ledger to the dated QUESTIONABLE watch, preserving the prior IR record in this archive."
     },
     {
       "kind": "reserve",
-      "key": "chicago-bears:Montez Sweat",
+      "key": "pittsburgh-steelers:DeShon Elliott",
       "value": {
-        "player": "Montez Sweat",
-        "team_slug": "chicago-bears",
-        "status": "Suspension lifted",
+        "player": "DeShon Elliott",
+        "team_slug": "pittsburgh-steelers",
+        "status": "Activated from IR",
         "asOf": "2026-10-24"
       },
       "sources": [
         {
-          "url": "https://www.chicagobears.com/news/roster-moves-chicago-bears-place-cole-kmet-on-ir",
-          "checkedAt": "2026-10-24T09:21:08.256Z",
+          "url": "https://www.steelers.com/news/steelers-make-roster-move-ahead-of-saints-game",
+          "checkedAt": "2026-10-24T16:17:49.960Z",
           "reportedWeek": 7,
           "value": {
-            "player": "Montez Sweat",
-            "team_slug": "chicago-bears",
-            "status": "Suspension lifted",
+            "player": "DeShon Elliott",
+            "team_slug": "pittsburgh-steelers",
+            "status": "Activated from IR",
             "asOf": "2026-10-24"
           }
         },
         {
-          "url": "https://www.chicagobears.com/team/transactions/",
-          "checkedAt": "2026-10-24T09:20:28.356Z",
+          "url": "https://www.steelers.com/team/transactions/",
+          "checkedAt": "2026-10-24T16:15:59.475Z",
           "reportedWeek": 7,
           "value": {
-            "player": "Montez Sweat",
-            "team_slug": "chicago-bears",
-            "status": "Suspension lifted",
+            "player": "DeShon Elliott",
+            "team_slug": "pittsburgh-steelers",
+            "status": "Activated from IR",
             "asOf": "2026-10-24"
           }
         },
         {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-24T09:19:07.532Z",
+          "url": "https://steelersdepot.com/2026/10/steelers-activate-safety-deshon-elliott-to-53-man-roster-in-boost-to-pittsburghs-secondary/",
+          "checkedAt": "2026-10-24T16:17:49.991Z",
           "reportedWeek": 7,
           "value": {
-            "player": "Montez Sweat",
-            "team_slug": "chicago-bears",
-            "status": "Suspension lifted",
-            "asOf": "2026-10-24"
-          }
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/transactions/",
-          "checkedAt": "2026-10-24T09:22:48.050Z",
-          "reportedWeek": 7,
-          "value": {
-            "player": "Montez Sweat",
-            "team_slug": "chicago-bears",
-            "status": "Suspension lifted",
+            "player": "DeShon Elliott",
+            "team_slug": "pittsburgh-steelers",
+            "status": "Activated from IR",
             "asOf": "2026-10-24"
           }
         }
       ]
     }
   ],
-  "moduleReviews": [
-    {
-      "module": "schedule",
-      "sourceAsOf": "2026-10-24",
-      "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
-      "scope": "Actual complete October 24 NFL/ESPN re-verification of all 107 games through Week 7: 94 finals and 13 upcoming games; all 32 fresh ESPN standings rows match the retained derived rows. The module review date advances only after that complete comparison.",
-      "sources": [
-        {
-          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
-          "relatedUrls": [
-            "https://www.nfl.com/schedules/2026/by-week/week-1",
-            "https://www.nfl.com/schedules/2026/by-week/week-2",
-            "https://www.nfl.com/schedules/2026/by-week/week-3",
-            "https://www.nfl.com/schedules/2026/by-week/week-4",
-            "https://www.nfl.com/schedules/2026/by-week/week-5",
-            "https://www.nfl.com/schedules/2026/by-week/week-6",
-            "https://www.nfl.com/schedules/2026/by-week/week-7"
-          ],
-          "checkedAt": "2026-10-24T09:19:07.137Z",
-          "reportedWeek": 7,
-          "value": {
-            "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
-            "complete": true
-          }
-        },
-        {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
-          "relatedUrls": [
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
-          ],
-          "checkedAt": "2026-10-24T09:19:07.044Z",
-          "reportedWeek": 7,
-          "value": {
-            "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
-            "complete": true
-          }
-        }
-      ]
-    }
-  ]
+  "moduleReviews": []
 }

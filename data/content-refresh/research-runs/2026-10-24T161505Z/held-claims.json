@@ -1,0 +1,24 @@
+{
+  "claims": [
+    {
+      "claim": "Sunday active/inactive status for Elliott",
+      "decision": "Actual activation is verified; do not infer game-day active status. Friday QUESTIONABLE remains the dated official designation."
+    },
+    {
+      "claim": "CBS no longer lists Elliott",
+      "decision": "Omission is not used as evidence. Activation has two explicit publisher confirmations; fresh ESPN Active is supporting roster context only."
+    },
+    {
+      "claim": "Saturday Dallas/Philadelphia practice/designations",
+      "decision": "Current official Saturday columns are blank. No future final report is fabricated."
+    },
+    {
+      "claim": "Other ESPN changes",
+      "decision": "Gardner-Johnson is on a Week 7 bye; Anthony Johnson Jr., CJ Allen and Jermaine Eluemunor have no newly corroborated factual change; Sanchez Active has no explicit two-source activation claim. Preserve publication."
+    },
+    {
+      "claim": "Additional Friday reports",
+      "decision": "44 currently matching club/NFL/CBS candidates are already in the 352-record publication. No new practice records or conflicts were found."
+    }
+  ]
+}
