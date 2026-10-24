@@ -3977,16 +3977,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.azcardinals.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Jeremiyah Love",
@@ -4001,17 +4005,21 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
         "https://www.azcardinals.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "C.J. Henderson",
@@ -4147,12 +4155,18 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.baltimoreravens.com/team/injury-report/",
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Cam Jurgens",
@@ -4188,20 +4202,24 @@
         "tue": null,
         "wed": "LP",
         "thu": "LP",
-        "fri": null,
+        "fri": "LP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
         "https://www.baltimoreravens.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Rashod Bateman",
@@ -4281,17 +4299,23 @@
         "tue": null,
         "wed": null,
         "thu": null,
-        "fri": null,
+        "fri": "FP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "AJ Dillon",
@@ -4328,17 +4352,21 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.buccaneers.com/news/2026-game-preview-buccaneers-panthers-week-7",
         "https://www.panthers.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Kyle Monangai",
@@ -4560,16 +4588,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.clevelandbrowns.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Justin Jefferson",
@@ -4603,19 +4635,23 @@
         "tue": null,
         "wed": "DNP",
         "thu": "LP",
-        "fri": null,
+        "fri": "LP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.clevelandbrowns.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "DeMarvion Overshown",
@@ -4724,16 +4760,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "doubtful",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.denverbroncos.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Tyler Badie",
@@ -4748,16 +4788,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.denverbroncos.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Rock Ya-Sin",
@@ -4868,14 +4912,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "doubtful",
-      "confidence": "medium",
-      "note": "DOUBTFUL in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.houstontexans.com/team/injury-report/",
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "David Montgomery",
@@ -4890,17 +4940,21 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
         "https://www.houstontexans.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Reed Blankenship",
@@ -4915,16 +4969,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.houstontexans.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Tyler Warren",
@@ -4939,15 +4997,21 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
-        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html"
+        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+        "https://www.colts.com/team/injury-report/",
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Jaylon Carlies",
@@ -5006,14 +5070,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "doubtful",
-      "confidence": "medium",
-      "note": "DOUBTFUL in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.colts.com/team/injury-report/",
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Rigoberto Sanchez",
@@ -5025,15 +5095,17 @@
         "tue": null,
         "wed": null,
         "thu": null,
-        "fri": null,
+        "fri": "DNP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "note": "October 23 Friday participation: DNP. Prior condition and likelihood retain their dated full-review context. A dated official designation, when present, is displayed separately; participation does not establish roster activation or game-day active status.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.colts.com/team/injury-report/",
+        "https://www.nfl.com/injuries/"
       ],
       "social": []
     },
@@ -5050,14 +5122,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "QUESTIONABLE in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.colts.com/team/injury-report/",
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Ross Matiscik",
@@ -5138,17 +5216,21 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
         "https://www.chiefs.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Jaylon Moore",
@@ -5163,16 +5245,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.chiefs.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Tonka Hemingway",
@@ -5384,21 +5470,25 @@
         "tue": null,
         "wed": "DNP",
         "thu": "DNP",
-        "fri": null,
+        "fri": "DNP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.raiders.com/news/las-vegas-raiders-los-angeles-rams-week-7-injury-report-2026",
         "https://sports.yahoo.com/articles/rams-raiders-injury-report-trent-002503806.html",
         "https://www.therams.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Jonah Savaiinaea",
@@ -5459,16 +5549,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.miamidolphins.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Justin Joly",
@@ -5809,25 +5903,27 @@
       "player": "Nathan Shepherd",
       "team_slug": "new-orleans-saints",
       "position": "DT",
-      "injury": null,
+      "injury": "Illness",
       "practice": {
         "mon": null,
         "tue": null,
         "wed": null,
         "thu": null,
-        "fri": null,
+        "fri": "DNP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "Official Week 7 designation from the October 23 Paris-game report: QUESTIONABLE. The designation agrees across sources; the conflicting condition description and Friday participation remain held. The earlier likelihood assessment remains separate from this dated official designation. Reserve eligibility and complete Sunday inactive lists remain separate.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The current club, NFL, ESPN and CBS observations now agree on illness; the earlier conflicting observation is retained in release history. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
         "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
         "https://www.canalstreetchronicles.com/new-orleans-saints-injuries/116921/final-saints-vs-steelers-injury-report-paris-week-7ruled-out",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.neworleanssaints.com/team/injury-report/",
+        "https://www.nfl.com/injuries/"
       ],
       "social": [],
       "published_status": "QUESTIONABLE",
@@ -5905,7 +6001,7 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "Official Week 7 designation from the October 23 Paris-game report: QUESTIONABLE. The earlier likelihood assessment remains separate from this dated official designation. Reserve eligibility and complete Sunday inactive lists remain separate.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
@@ -5914,7 +6010,8 @@
         "https://www.nfl.com/injuries/",
         "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
         "https://sports.yahoo.com/articles/saints-vs-steelers-final-week-143001051.html",
-        "https://www.canalstreetchronicles.com/new-orleans-saints-injuries/116921/final-saints-vs-steelers-injury-report-paris-week-7ruled-out"
+        "https://www.canalstreetchronicles.com/new-orleans-saints-injuries/116921/final-saints-vs-steelers-injury-report-paris-week-7ruled-out",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
       "social": [],
       "published_status": "QUESTIONABLE",
@@ -5975,19 +6072,23 @@
         "tue": null,
         "wed": "DNP",
         "thu": "LP",
-        "fri": null,
+        "fri": "LP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.giants.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Tyler Nubin",
@@ -5999,19 +6100,23 @@
         "tue": null,
         "wed": "LP",
         "thu": "LP",
-        "fri": null,
+        "fri": "LP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.giants.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Colton Hood",
@@ -6047,19 +6152,23 @@
         "tue": null,
         "wed": "LP",
         "thu": "LP",
-        "fri": null,
+        "fri": "DNP",
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "doubtful",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: DOUBTFUL. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.giants.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "DOUBTFUL",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Tremaine Edmunds",
@@ -6074,16 +6183,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The new conflicting condition description remains held; the displayed condition retains its prior dated review. No IR placement is inferred. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.giants.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Darnell Mooney",
@@ -6122,16 +6235,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.giants.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Joseph Ossai",
@@ -6146,16 +6263,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.newyorkjets.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Dylan Parham",
@@ -6167,19 +6288,23 @@
         "tue": null,
         "wed": "LP",
         "thu": "LP",
-        "fri": null,
+        "fri": "LP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.newyorkjets.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Adonai Mitchell",
@@ -6216,19 +6341,23 @@
         "tue": null,
         "wed": "DNP",
         "thu": "LP",
-        "fri": null,
+        "fri": "LP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.newyorkjets.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "AJ Epenesa",
@@ -6264,12 +6393,12 @@
         "tue": null,
         "wed": null,
         "thu": "LP",
-        "fri": null,
+        "fri": "LP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "October 23 Friday participation: LP. Prior condition and likelihood retain their dated full-review context. A dated official designation, when present, is displayed separately; participation does not establish roster activation or game-day active status.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
@@ -6313,12 +6442,12 @@
         "tue": null,
         "wed": null,
         "thu": "DNP",
-        "fri": null,
+        "fri": "DNP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "October 23 Friday participation: DNP. Prior condition and likelihood retain their dated full-review context. A dated official designation, when present, is displayed separately; participation does not establish roster activation or game-day active status.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
@@ -6443,16 +6572,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.49ers.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Nick Bosa",
@@ -6467,16 +6600,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.49ers.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Deebo Samuel Sr.",
@@ -6492,14 +6629,20 @@
         "sat": null
       },
       "likelihood": "unlikely",
-      "confidence": "medium",
-      "note": "OUT in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
-        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html"
+        "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Garret Wallow",
@@ -6515,13 +6658,19 @@
         "sat": null
       },
       "likelihood": "unlikely",
-      "confidence": "medium",
-      "note": "OUT in both publisher listings; this is a sourced watch label, not a new official Week 7 designation. ",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Mike Evans",
@@ -6536,16 +6685,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.49ers.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Luke Gifford",
@@ -6560,16 +6713,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.49ers.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Chazz Surratt",
@@ -6584,16 +6741,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.seahawks.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Drake Thomas",
@@ -6608,16 +6769,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "questionable",
-      "confidence": "medium",
-      "note": "October 22 Thursday practice participation: DNP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.seahawks.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Antoine Winfield Jr.",
@@ -6632,16 +6797,20 @@
         "fri": null,
         "sat": null
       },
-      "likelihood": "doubtful",
-      "confidence": "medium",
-      "note": "October 21 Wednesday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update is not an official game designation or roster activation.",
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "Official Week 7 designation from the October 23 report: OUT. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.buccaneers.com/team/injury-report/",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.nfl.com/injuries/"
       ],
-      "social": []
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Sean Tucker",
@@ -6677,20 +6846,24 @@
         "tue": null,
         "wed": "FP",
         "thu": "FP",
-        "fri": null,
+        "fri": "FP",
         "sat": null
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: FP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
         "https://www.buccaneers.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Benjamin Morrison",
@@ -6731,14 +6904,18 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://www.espn.com/nfl/injuries",
         "https://www.cbssports.com/nfl/injuries/",
         "https://www.tennesseetitans.com/team/injury-report/",
-        "https://www.nfl.com/injuries/"
+        "https://www.nfl.com/injuries/",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Tony Adams",
@@ -6867,12 +7044,17 @@
       },
       "likelihood": "questionable",
       "confidence": "medium",
-      "note": "October 20 injury update is corroborated in ESPN and CBS listings. This watch label is not an official Week 7 game designation or clearance.",
+      "note": "Official Week 7 designation from the October 23 report: QUESTIONABLE. The likelihood badge follows this dated official designation. Prior condition retains its separately dated review unless a correction is explicitly stated. Friday participation, where shown, is a separate dated observation. No designation or practice record establishes roster activation or game-day active status; complete game-day inactive lists remain separate.",
       "sources": [
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-        "https://www.cbssports.com/nfl/injuries/"
+        "https://www.cbssports.com/nfl/injuries/",
+        "https://www.49ers.com/team/injury-report/",
+        "https://www.nfl.com/injuries/"
       ],
-      "social": []
+      "social": [],
+      "published_status": "QUESTIONABLE",
+      "designation_week": 7,
+      "designation_date": "2026-10-23"
     },
     {
       "player": "Christian Elliss",

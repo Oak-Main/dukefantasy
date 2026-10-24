@@ -152,6 +152,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
     );
   }, [baseWatch, teamFilter]);
 
+  const latestObservationDate = [...practiceReports.map((row) => row.date), ...injuryResearch.watch.map((row) => row.designationDate).filter((date): date is string => Boolean(date))].sort().at(-1) ?? null;
   const next = nextInjurySlot();
   const researchLive = injuryResearch.watch.length > 0 || injuryResearch.ledger.length > 0;
 
@@ -170,12 +171,13 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       />
       <DataBoardSummary
         label="Injury desk summary"
-        caption={`${INJURY_METHOD.schedule} Research as of ${injuryResearch.asOf ?? espnInjuriesAsOf ?? "not published"}.`}
+        caption={`${INJURY_METHOD.schedule} Full review as of ${injuryResearch.asOf ?? espnInjuriesAsOf ?? "not published"}. Latest dated observation ${latestObservationDate ?? "not published"}; individual records retain their own source dates.`}
         items={[
           { label: "Long-term ledger", value: ledgerRows.length, emphasis: true },
           { label: "Week-to-week watch", value: watchRows.length },
           { label: "Research entries", value: injuryResearch.ledger.length + injuryResearch.watch.length },
-          { label: "Research as of", value: injuryResearch.asOf ?? "Not published" },
+          { label: "Full review as of", value: injuryResearch.asOf ?? "Not published" },
+          { label: "Latest dated observation", value: latestObservationDate ?? "Not published" },
           { label: "Teams covered", value: new Set([...ledgerRows, ...watchRows].map((row) => row.teamSlug)).size },
         ]}
       />
