@@ -1,0 +1,49 @@
+{
+  "run": "2026-10-25T123007Z",
+  "baseCommit": "7f86c8aba13da49d25eea3a5025e3ee6a91e5150",
+  "changedFacts": 2,
+  "moduleReviews": 1,
+  "newCompleteLists": 2,
+  "newEntries": 13,
+  "newEmergencyQBs": [
+    "Will Howard",
+    "Zach Wilson"
+  ],
+  "totalCompleteLists": 4,
+  "totalEntries": 26,
+  "fullModuleReview": "All four complete lists compared with two distinct publisher families per claim; emergency QBs explicitly corroborated.",
+  "inactivesSourceAsOf": "2026-10-25",
+  "untouchedModuleDates": {
+    "schedule": {
+      "sourceAsOf": "2026-10-24",
+      "fetchedAt": "2026-10-24T09:19:07.137Z",
+      "compiledAt": "2026-10-24T09:25:21.634Z"
+    },
+    "injuries": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "fantasy": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "transactions": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "leaders": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "inactives": {
+      "sourceAsOf": "2026-10-22",
+      "fetchedAt": "2026-10-23T09:47:02.764Z",
+      "compiledAt": "2026-10-23T09:49:13.718Z"
+    }
+  },
+  "preserved": "All 272 games/international metadata, standings, injury and reserve records, 389 practices, fantasy/transaction/leader sources and the schedule snapshot."
+}
