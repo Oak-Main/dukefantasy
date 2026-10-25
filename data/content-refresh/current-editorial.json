@@ -7904,6 +7904,120 @@
         "https://www.panthers.com/news/week-7-inactives-vs-tampa-bay-no-jaelan-phillips-this-week",
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ]
+    },
+    {
+      "gameId": "401873019",
+      "week": 7,
+      "teamSlug": "arizona-cardinals",
+      "publishedAt": "2026-10-25T18:35:04.608Z",
+      "checkedAt": "2026-10-25T19:03:13.665Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Albert Reese IV",
+          "designation": "inactive"
+        },
+        {
+          "name": "Andrew Wingard",
+          "designation": "inactive"
+        },
+        {
+          "name": "Carson Beck",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "Jeremiyah Love",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jon Gaines II",
+          "designation": "inactive"
+        },
+        {
+          "name": "Max Melton",
+          "designation": "inactive"
+        },
+        {
+          "name": "Walter Nolen III",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.azcardinals.com/news/cornerback-max-melton-inactive-for-game-against-broncos",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "gameId": "401873020",
+      "week": 7,
+      "teamSlug": "green-bay-packers",
+      "publishedAt": "2026-10-25T18:55:00.000Z",
+      "checkedAt": "2026-10-25T19:02:36.624Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Benjamin St-Juste",
+          "designation": "inactive"
+        },
+        {
+          "name": "Donovan Jennings",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jager Burton",
+          "designation": "inactive"
+        },
+        {
+          "name": "Kaleb Johnson",
+          "designation": "inactive"
+        },
+        {
+          "name": "Kevin Zeitler",
+          "designation": "inactive"
+        },
+        {
+          "name": "Zaire Franklin",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.packers.com/news/packers-lions-week-7-inactives-oct-25-2026",
+        "https://www.prideofdetroit.com/detroit-lions-news/178064/lions-week-7-inactives-edge-ahmed-hassanein-out-vs-packers"
+      ]
+    },
+    {
+      "gameId": "401873020",
+      "week": 7,
+      "teamSlug": "detroit-lions",
+      "publishedAt": "2026-10-25T18:55:29.405Z",
+      "checkedAt": "2026-10-25T19:02:36.629Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Ahmed Hassanein",
+          "designation": "inactive"
+        },
+        {
+          "name": "Bishop Fitzgerald",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jackson Meeks",
+          "designation": "inactive"
+        },
+        {
+          "name": "Mekhi Wingo",
+          "designation": "inactive"
+        },
+        {
+          "name": "Seth McLaughlin",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.detroitlions.com/news/inactives-lions-vs-packers-branch-mays",
+        "https://www.prideofdetroit.com/detroit-lions-news/178064/lions-week-7-inactives-edge-ahmed-hassanein-out-vs-packers"
+      ]
     }
   ]
 }

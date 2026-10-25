@@ -1,0 +1,20 @@
+{
+  "claims": [
+    {
+      "team": "Denver Broncos",
+      "decision": "Hold complete publication: seven-name membership is corroborated but the current Sam Ehlinger emergency-third role is explicit only in the NFL/club publisher family; Mile High Report and ESPN do not yet label the role. Exclude NFL Dallan/Dallen spelling discrepancy."
+    },
+    {
+      "team": "Los Angeles Rams",
+      "decision": "Hold: no current complete corroborated list retrieved yet."
+    },
+    {
+      "team": "Las Vegas Raiders",
+      "decision": "Hold: official seven-player complete list includes Aidan O’Connell as emergency QB, but no complete second-publisher corroboration yet."
+    },
+    {
+      "claim": "Other existing injury/reserve discrepancies and live provisional scores",
+      "decision": "Unchanged. No status transition or final result inferred."
+    }
+  ]
+}
