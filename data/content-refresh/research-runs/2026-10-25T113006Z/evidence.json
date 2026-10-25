@@ -1,0 +1,100 @@
+{
+  "week": 7,
+  "run": "2026-10-25T113006Z",
+  "baseCommit": "60d479ae16013e7d8325e4c0ea81ffd0143854cf",
+  "createdAt": "2026-10-25T11:34:47.861Z",
+  "observations": [
+    {
+      "kind": "injury",
+      "key": "new-orleans-saints:Anfernee Jennings",
+      "value": {
+        "player": "Anfernee Jennings",
+        "team_slug": "new-orleans-saints",
+        "status": "NO_DESIGNATION",
+        "injury": "Knee",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": "LP",
+          "thu": "LP",
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-23",
+        "designation_week": 7
+      },
+      "observedFields": [
+        "status",
+        "injury",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFields": {
+        "practice": "Exact unchanged base record; earlier Wednesday/Thursday LP evidence is preserved."
+      },
+      "sources": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "checkedAt": "2026-10-25T11:31:36.906Z",
+          "reportedWeek": 7,
+          "reportDate": "2026-10-23",
+          "value": {
+            "player": "Anfernee Jennings",
+            "team_slug": "new-orleans-saints",
+            "status": "NO_DESIGNATION",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          },
+          "observedClaim": {
+            "player": "Anfernee Jennings",
+            "injury": "Knee",
+            "status": "NO_DESIGNATION",
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          },
+          "sourceDetail": "Dated complete Saints final table explicitly lists Jennings with knee condition and no game designation."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-25T11:31:36.837Z",
+          "reportedWeek": 7,
+          "reportDate": "2026-10-23",
+          "value": {
+            "player": "Anfernee Jennings",
+            "team_slug": "new-orleans-saints",
+            "status": "NO_DESIGNATION",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": "LP",
+              "thu": "LP",
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          },
+          "observedClaim": {
+            "player": "Anfernee Jennings",
+            "injury": "Knee",
+            "status": "NO_DESIGNATION",
+            "designation_date": "2026-10-23",
+            "designation_week": 7
+          },
+          "sourceDetail": "Explicit no-designation report at 2026-10-24T01:27Z (October 23 in the game-report time zone); Active feed label is not published as game-day active status."
+        }
+      ]
+    }
+  ],
+  "moduleReviews": []
+}

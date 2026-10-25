@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "publisher": "saintsFinal",
+      "requestedUrl": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+      "resolvedUrl": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+      "checkedAt": "2026-10-25T11:31:36.906Z",
+      "status": 200
+    },
+    {
+      "publisher": "espnInjuries",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-25T11:31:36.837Z",
+      "status": 200
+    }
+  ],
+  "sourceReportDate": "2026-10-23",
+  "verifiedAt": "2026-10-25T11:34:47.956Z",
+  "rawSources": "outputs/week7-automation/2026-10-25T113006Z/",
+  "sourceScope": "Only the changed Jennings knee/no-designation fields were freshly reviewed. No module freshness is renewed."
+}
