@@ -1,0 +1,540 @@
+{
+  "sources": [
+    {
+      "id": "colts",
+      "requestedUrl": "https://www.colts.com/news/colts-announce-7-inactive-players-for-week-7-game-at-minnesota-vikings",
+      "resolvedUrl": "https://www.colts.com/news/colts-announce-7-inactive-players-for-week-7-game-at-minnesota-vikings",
+      "status": 200,
+      "checkedAt": "2026-10-25T17:01:10.814Z",
+      "title": "Colts announce 7 inactive players for Week 7 game at Minnesota Vikings",
+      "publishedAt": "2026-10-25T15:32:06.226Z",
+      "modifiedAt": "2026-10-25T15:32:06.226Z",
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T170011Z/colts.html",
+      "rawSha256": "bc0a91ab6af5831712d5c2b42405756b678be507c5ae29cbb0dd102ef2f7ffd0",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:32:06.226Z\"",
+      "exactListExcerpt": "LB CJ Allen (ankle) LB Bryce Boettcher (groin) CB Sauce Gardner (calf) WR Anthony Gould (concussion)"
+    },
+    {
+      "id": "falcons",
+      "requestedUrl": "https://www.atlantafalcons.com/news/atlanta-falcons-week-7-inactives-vs-san-francisco-49ers",
+      "resolvedUrl": "https://www.atlantafalcons.com/news/atlanta-falcons-week-7-inactives-vs-san-francisco-49ers",
+      "status": 200,
+      "checkedAt": "2026-10-25T17:01:10.096Z",
+      "title": "Atlanta Falcons Week 7 inactives vs. San Francisco 49ers",
+      "publishedAt": "2026-10-25T15:29:36.331Z",
+      "modifiedAt": "2026-10-25T15:29:36.331Z",
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T170011Z/falcons.html",
+      "rawSha256": "2708b537665c3143f3621d1a388bb2220a08eb869131c29d5b8a490476400a6a",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:29:36.331Z\"",
+      "exactListExcerpt": "QB Jack Strand (emergency third quarterback) ILB Divine Deablo CB Avieon Terrell QB Andy Dalton WR"
+    },
+    {
+      "id": "panthers",
+      "requestedUrl": "https://www.panthers.com/news/week-7-inactives-vs-tampa-bay-no-jaelan-phillips-this-week",
+      "resolvedUrl": "https://www.panthers.com/news/week-7-inactives-vs-tampa-bay-no-jaelan-phillips-this-week",
+      "status": 200,
+      "checkedAt": "2026-10-25T17:01:10.680Z",
+      "title": "Week 7 Inactives vs. Tampa Bay: No Jaelan Phillips this week",
+      "publishedAt": "2026-10-25T15:33:03.841Z",
+      "modifiedAt": "2026-10-25T16:47:19.104Z",
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T170011Z/panthers.html",
+      "rawSha256": "2bd038bcf6c2b1acbe8725352214328107dc33dc79324b38323fd2f0e9688f8a",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:33:03.841Z\"",
+      "exactListExcerpt": "TE Ja'Tavion Sanders OLB Jaelan Phillips QB Haynes King (emergency third QB) RB AJ Dillon C"
+    },
+    {
+      "id": "espnInjuries",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "status": 200,
+      "checkedAt": "2026-10-25T17:01:11.149Z",
+      "title": null,
+      "publishedAt": null,
+      "modifiedAt": null,
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T170011Z/espnInjuries.html",
+      "rawSha256": "8afe6e4f5141fb3e964a9e3bb9b429b170b1afec94fc06c5d9b4856fc87b3280",
+      "publicationFieldExcerpt": null,
+      "exactListExcerpt": null
+    }
+  ],
+  "proofs": {
+    "colts": {
+      "publishedAt": "2026-10-25T15:32:06.226Z",
+      "exactListExcerpt": "LB CJ Allen (ankle) LB Bryce Boettcher (groin) CB Sauce Gardner (calf) WR Anthony Gould (concussion)",
+      "reports": [
+        {
+          "teamSlug": "indianapolis-colts",
+          "complete": true,
+          "players": [
+            {
+              "name": "Anthony Gould",
+              "designation": "inactive"
+            },
+            {
+              "name": "Bryce Boettcher",
+              "designation": "inactive"
+            },
+            {
+              "name": "CJ Allen",
+              "designation": "inactive"
+            },
+            {
+              "name": "Dalton Tucker",
+              "designation": "inactive"
+            },
+            {
+              "name": "Riley Leonard",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Sauce Gardner",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tyler Warren",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "falcons": {
+      "publishedAt": "2026-10-25T15:29:36.331Z",
+      "exactListExcerpt": "QB Jack Strand (emergency third quarterback) ILB Divine Deablo CB Avieon Terrell QB Andy Dalton WR",
+      "reports": [
+        {
+          "teamSlug": "atlanta-falcons",
+          "complete": true,
+          "players": [
+            {
+              "name": "Andy Dalton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Avieon Terrell",
+              "designation": "inactive"
+            },
+            {
+              "name": "Billy Bowman Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Brian Robinson Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Divine Deablo",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jack Strand",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Olamide Zaccheaus",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "panthers": {
+      "publishedAt": "2026-10-25T15:33:03.841Z",
+      "exactListExcerpt": "TE Ja'Tavion Sanders OLB Jaelan Phillips QB Haynes King (emergency third QB) RB AJ Dillon C",
+      "reports": [
+        {
+          "teamSlug": "carolina-panthers",
+          "complete": true,
+          "players": [
+            {
+              "name": "AJ Dillon",
+              "designation": "inactive"
+            },
+            {
+              "name": "Haynes King",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Ja'Tavion Sanders",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jaelan Phillips",
+              "designation": "inactive"
+            },
+            {
+              "name": "Sam Hecht",
+              "designation": "inactive"
+            },
+            {
+              "name": "Stone Forsythe",
+              "designation": "inactive"
+            },
+            {
+              "name": "TeRah Edwards",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "espnInjuries": {
+      "reports": [
+        {
+          "teamSlug": "indianapolis-colts",
+          "complete": true,
+          "players": [
+            {
+              "name": "Anthony Gould",
+              "designation": "inactive"
+            },
+            {
+              "name": "Bryce Boettcher",
+              "designation": "inactive"
+            },
+            {
+              "name": "CJ Allen",
+              "designation": "inactive"
+            },
+            {
+              "name": "Dalton Tucker",
+              "designation": "inactive"
+            },
+            {
+              "name": "Riley Leonard",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Sauce Gardner",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tyler Warren",
+              "designation": "inactive"
+            }
+          ],
+          "explicitFlagCount": 7,
+          "rawTeamRecordCount": 25,
+          "observations": [
+            {
+              "player": "Bryce Boettcher",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:43Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "Boettcher (groin) is inactive against the Vikings on Sunday."
+            },
+            {
+              "player": "Riley Leonard",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:41Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "Leonard (coach's decision) is inactive but will serve as the Colts' emergency third quarterback against the Vikings on Sunday."
+            },
+            {
+              "player": "Sauce Gardner",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:40Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "Gardner (calf) is inactive for Sunday's game against the Vikings."
+            },
+            {
+              "player": "Dalton Tucker",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:38Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            },
+            {
+              "player": "Tyler Warren",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:38Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            },
+            {
+              "player": "Anthony Gould",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:38Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            },
+            {
+              "player": "CJ Allen",
+              "status": "Out",
+              "reportDate": "2026-10-24T18:30Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "Allen (ankle) has been ruled out ahead of Sunday's game against the Vikings."
+            }
+          ]
+        },
+        {
+          "teamSlug": "atlanta-falcons",
+          "complete": true,
+          "players": [
+            {
+              "name": "Andy Dalton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Avieon Terrell",
+              "designation": "inactive"
+            },
+            {
+              "name": "Billy Bowman Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Brian Robinson Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Divine Deablo",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jack Strand",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Olamide Zaccheaus",
+              "designation": "inactive"
+            }
+          ],
+          "explicitFlagCount": 7,
+          "rawTeamRecordCount": 25,
+          "observations": [
+            {
+              "player": "Avieon Terrell",
+              "status": "Out",
+              "reportDate": "2026-10-25T16:11Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "Terrell (back/illness) is inactive against the 49ers on Sunday, Tori McElhaney of the Falcons' official site reports."
+            },
+            {
+              "player": "Jack Strand",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:56Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "Strand (coach's decision) is inactive as the emergency third quarterback for Sunday's game against the 49ers, Tori McElhaney of the Falcons' official site reports."
+            },
+            {
+              "player": "Andy Dalton",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:54Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "Dalton (coach's decision) is inactive for Sunday's game against the 49ers, Tori McElhaney of the Falcons' official site reports."
+            },
+            {
+              "player": "Olamide Zaccheaus",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:52Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "Zaccheaus (shoulder) is inactive for Sunday's game against the 49ers, Tori McElhaney of the Falcons' official site reports."
+            },
+            {
+              "player": "Brian Robinson Jr.",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:41Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            },
+            {
+              "player": "Billy Bowman Jr.",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:41Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            },
+            {
+              "player": "Divine Deablo",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:41Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "carolina-panthers",
+          "complete": true,
+          "players": [
+            {
+              "name": "AJ Dillon",
+              "designation": "inactive"
+            },
+            {
+              "name": "Haynes King",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Ja'Tavion Sanders",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jaelan Phillips",
+              "designation": "inactive"
+            },
+            {
+              "name": "Sam Hecht",
+              "designation": "inactive"
+            },
+            {
+              "name": "Stone Forsythe",
+              "designation": "inactive"
+            },
+            {
+              "name": "TeRah Edwards",
+              "designation": "inactive"
+            }
+          ],
+          "explicitFlagCount": 7,
+          "rawTeamRecordCount": 25,
+          "observations": [
+            {
+              "player": "Haynes King",
+              "status": "Out",
+              "reportDate": "2026-10-25T16:00Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "King (coach's decision) is inactive but will serve as the emergency third quarterback against the Buccaneers on Sunday, Darin Gantt of the Panthers' official site reports."
+            },
+            {
+              "player": "AJ Dillon",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:47Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "Dillon (coach's decision) is inactive for Sunday's game against the Buccaneers, Darin Gantt of the team's official site reports."
+            },
+            {
+              "player": "Ja'Tavion Sanders",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:37Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            },
+            {
+              "player": "Jaelan Phillips",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:37Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            },
+            {
+              "player": "Stone Forsythe",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:37Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            },
+            {
+              "player": "Sam Hecht",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:37Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            },
+            {
+              "player": "TeRah Edwards",
+              "status": "Out",
+              "reportDate": "2026-10-25T15:37Z",
+              "explicitInactiveFlag": "INACTIVE",
+              "shortComment": "inactive"
+            }
+          ]
+        }
+      ],
+      "sourceSemantics": "The explicit INACTIVE metadata set was read and counted in full for each team, not inferred from generic Out/Active labels or absence. All seven flagged names and the explicit emergency-QB statement are compared with the official complete seven-entry list. Unflagged and reserve records are not treated as active."
+    }
+  },
+  "coverage": [
+    {
+      "teamSlug": "indianapolis-colts",
+      "teamName": "Indianapolis Colts",
+      "primary": "colts",
+      "emergency": "Riley Leonard",
+      "opponent": "Vikings"
+    },
+    {
+      "teamSlug": "atlanta-falcons",
+      "teamName": "Atlanta Falcons",
+      "primary": "falcons",
+      "emergency": "Jack Strand",
+      "opponent": "49ers"
+    },
+    {
+      "teamSlug": "carolina-panthers",
+      "teamName": "Carolina Panthers",
+      "primary": "panthers",
+      "emergency": "Haynes King",
+      "opponent": "Buccaneers"
+    }
+  ],
+  "membershipConfirmation": {
+    "id": "fftoday",
+    "requestedUrl": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+    "resolvedUrl": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+    "status": 200,
+    "checkedAt": "2026-10-25T17:01:09.987Z",
+    "title": "NFL Inactives: Week 7, 2026 | FFToday",
+    "publishedAt": null,
+    "modifiedAt": null,
+    "rawSha256": "acf9055f1925c3ed781cc453bd676d248ebd56e57229e46240df1b8669fdf60a",
+    "actualUpdatedText": "Updated: 10/25/26; 11:47 AM ET Choose We",
+    "comparisons": [
+      {
+        "teamSlug": "indianapolis-colts",
+        "source": "fftoday",
+        "names": [
+          "Bryce Boettcher.",
+          "CJ Allen",
+          "Sauce Gardner",
+          "Tyler Warren",
+          "Anthony Gould",
+          "Dalton Tucker",
+          "Riley Leonard"
+        ],
+        "completeMembershipMatches": true,
+        "roleScope": "Membership confirmation only. Emergency roles are proved by the club and explicit ESPN statements, never inferred from FFToday omissions."
+      },
+      {
+        "teamSlug": "atlanta-falcons",
+        "source": "fftoday",
+        "names": [
+          "Jack Strand",
+          "Divine Deablo",
+          "Avieon Terrell",
+          "Andy Dalton",
+          "Olamide Zaccheaus",
+          "Brian Robinson Jr.",
+          "Billy Bowman Jr."
+        ],
+        "completeMembershipMatches": true,
+        "roleScope": "Membership confirmation only. Emergency roles are proved by the club and explicit ESPN statements, never inferred from FFToday omissions."
+      },
+      {
+        "teamSlug": "carolina-panthers",
+        "source": "fftoday",
+        "names": [
+          "Ja'Tavion Sanders",
+          "Jaelan Phillips",
+          "Haynes King",
+          "AJ Dillon",
+          "Sam Hecht",
+          "Stone Forsythe",
+          "TeRah Edwards"
+        ],
+        "completeMembershipMatches": true,
+        "roleScope": "Membership confirmation only. Emergency roles are proved by the club and explicit ESPN statements, never inferred from FFToday omissions."
+      }
+    ]
+  },
+  "resolvedHolds": [
+    "Official and ESPN both identify Bryce Boettcher; the conflicting Daily Norseman Bruce spelling remains excluded.",
+    "Each ESPN full-team record array contains an exactly matching seven-player explicit INACTIVE subset. The full membership is also checked against FFToday, which independently lists the seven names.",
+    "Emergency roles are explicitly agreed by the club and ESPN. FFToday is used only for membership, not its omitted QB-role labels."
+  ],
+  "sourceScope": "Partial addition of three complete lists after full set comparison. All 15 earlier lists/times, every module date and all unrelated data stay unchanged. ESPN credits some reports to club authors; two publisher families are not described as independent original reporting."
+}
