@@ -1,0 +1,176 @@
+{
+  "sources": [
+    {
+      "id": "broncos-0",
+      "requestedUrl": "https://www.denverbroncos.com/news/cb-pat-surtain-ii-among-broncos-inactive-players-for-week-7-game-vs-cardinals",
+      "resolvedUrl": "https://www.denverbroncos.com/news/cb-pat-surtain-ii-among-broncos-inactive-players-for-week-7-game-vs-cardinals",
+      "status": 200,
+      "checkedAt": "2026-10-25T19:30:43.843Z",
+      "title": "CB Pat Surtain II among Broncos&#x2019; inactive players for Week 7 game vs. Cardinals&#xA;",
+      "publishedAt": "2026-10-25T18:35:00Z",
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T193014Z/broncos-0.html",
+      "rawSha256": "171a3db2f97b2a6766fae4d3197145de5c5c6fcf97ab42e4227df6ea765abc63",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T18:35:00Z\"",
+      "exactListExcerpt": "Ehlinger will serve as the team's emergency third quarterback."
+    },
+    {
+      "id": "espnInjuries",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "status": 200,
+      "checkedAt": "2026-10-25T19:30:41.993Z",
+      "title": null,
+      "publishedAt": null,
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T193014Z/espnInjuries.html",
+      "rawSha256": "0950b523fdcae7d43c66216ccee9ef517bb09618ea61586249668eaf10fad989",
+      "publicationFieldExcerpt": null,
+      "exactListExcerpt": null
+    }
+  ],
+  "proofs": {
+    "broncos-0": {
+      "publishedAt": "2026-10-25T18:35:00Z",
+      "exactListExcerpt": "Ehlinger will serve as the team's emergency third quarterback.",
+      "completeListParagraph": "Sam Ehlinger, offensive lineman Kage Casey, tight end Dallen Bentley and defensive linemen Jordan Jackson and Tyler Onyedim",
+      "reports": [
+        {
+          "teamSlug": "denver-broncos",
+          "complete": true,
+          "players": [
+            {
+              "name": "Dallen Bentley",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jordan Jackson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kage Casey",
+              "designation": "inactive"
+            },
+            {
+              "name": "Pat Surtain II",
+              "designation": "inactive"
+            },
+            {
+              "name": "Sam Ehlinger",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Talanoa Hufanga",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tyler Onyedim",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "espnInjuries": {
+      "reports": [
+        {
+          "teamSlug": "denver-broncos",
+          "complete": true,
+          "players": [
+            {
+              "name": "Dallen Bentley",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jordan Jackson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kage Casey",
+              "designation": "inactive"
+            },
+            {
+              "name": "Pat Surtain II",
+              "designation": "inactive"
+            },
+            {
+              "name": "Sam Ehlinger",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Talanoa Hufanga",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tyler Onyedim",
+              "designation": "inactive"
+            }
+          ],
+          "explicitFlagCount": 7,
+          "observations": [
+            {
+              "player": "Sam Ehlinger",
+              "date": "2026-10-25T18:57Z",
+              "flag": "INACTIVE",
+              "comment": "Ehlinger (coach's decision) is inactive but will serve as the emergency third quarterback in Sunday's game against the Cardinals, Aric DiLalla of the Broncos' official site reports."
+            },
+            {
+              "player": "Pat Surtain II",
+              "date": "2026-10-25T18:54Z",
+              "flag": "INACTIVE",
+              "comment": "Surtain (ankle) is inactive for Sunday's game against the Cardinals, Aric DiLalla of the Broncos' official site reports."
+            },
+            {
+              "player": "Tyler Onyedim",
+              "date": "2026-10-25T18:44Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Talanoa Hufanga",
+              "date": "2026-10-25T18:44Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Jordan Jackson",
+              "date": "2026-10-25T18:44Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Dallen Bentley",
+              "date": "2026-10-25T18:44Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Kage Casey",
+              "date": "2026-10-25T18:44Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "coverage": [
+    {
+      "teamSlug": "denver-broncos",
+      "teamName": "Denver Broncos",
+      "primary": "broncos-0",
+      "secondary": "espnInjuries",
+      "count": 7,
+      "emergency": "Sam Ehlinger"
+    }
+  ],
+  "resolvedHold": "ESPN now explicitly reports Sam Ehlinger as emergency third quarterback against the Cardinals; full seven-name set and role match the Broncos club report.",
+  "excludedSources": [
+    "NFL aggregate Dallan Bentley spelling remains excluded; Broncos, ESPN and Mile High Report say Dallen Bentley. No silent spelling normalization is applied.",
+    "FFToday Rams and Raiders lists omit emergency labels and the Raiders list says Bryan Cabeldue; excluded from complete publication proof.",
+    "Silver and Black Pride inactive section embeds a post without a readable complete list in the retrieved article; no names inferred from an unread embed.",
+    "Older Ty Simpson and Aidan O’Connell emergency-QB reports concern other weeks/opponents; rejected for Week 7."
+  ],
+  "sourceScope": "Partial addition of Denver complete list. Distinct publisher families may share upstream reporting; no claim of independent original reporting. All prior lists, module dates, manifest and unrelated data preserved."
+}
