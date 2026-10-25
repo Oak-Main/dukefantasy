@@ -1,443 +1,356 @@
 {
   "week": 7,
-  "run": "2026-10-25T170011Z",
-  "baseCommit": "998e5d1b0b465de3ff3024e56745c7e21faef45c",
-  "createdAt": "2026-10-25T17:08:56.529Z",
+  "run": "2026-10-25T190013Z",
+  "baseCommit": "398dbe39256545378085b9e2831d99ccd18e20ad",
+  "createdAt": "2026-10-25T19:06:04.311Z",
   "observations": [
     {
       "kind": "inactive",
-      "key": "401873014:indianapolis-colts",
+      "key": "401873019:arizona-cardinals",
       "value": {
-        "gameId": "401873014",
+        "gameId": "401873019",
         "week": 7,
-        "teamSlug": "indianapolis-colts",
+        "teamSlug": "arizona-cardinals",
         "complete": true,
         "players": [
           {
-            "name": "Anthony Gould",
+            "name": "Albert Reese IV",
             "designation": "inactive"
           },
           {
-            "name": "Bryce Boettcher",
+            "name": "Andrew Wingard",
             "designation": "inactive"
           },
           {
-            "name": "CJ Allen",
-            "designation": "inactive"
-          },
-          {
-            "name": "Dalton Tucker",
-            "designation": "inactive"
-          },
-          {
-            "name": "Riley Leonard",
+            "name": "Carson Beck",
             "designation": "emergency_qb"
           },
           {
-            "name": "Sauce Gardner",
+            "name": "Jeremiyah Love",
             "designation": "inactive"
           },
           {
-            "name": "Tyler Warren",
+            "name": "Jon Gaines II",
+            "designation": "inactive"
+          },
+          {
+            "name": "Max Melton",
+            "designation": "inactive"
+          },
+          {
+            "name": "Walter Nolen III",
             "designation": "inactive"
           }
         ]
       },
       "sources": [
         {
-          "url": "https://www.colts.com/news/colts-announce-7-inactive-players-for-week-7-game-at-minnesota-vikings",
-          "checkedAt": "2026-10-25T17:01:10.814Z",
+          "url": "https://www.azcardinals.com/news/cornerback-max-melton-inactive-for-game-against-broncos",
+          "checkedAt": "2026-10-25T19:01:22.012Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873014",
+            "gameId": "401873019",
             "week": 7,
-            "teamSlug": "indianapolis-colts",
+            "teamSlug": "arizona-cardinals",
             "complete": true,
             "players": [
               {
-                "name": "Anthony Gould",
+                "name": "Albert Reese IV",
                 "designation": "inactive"
               },
               {
-                "name": "Bryce Boettcher",
+                "name": "Andrew Wingard",
                 "designation": "inactive"
               },
               {
-                "name": "CJ Allen",
-                "designation": "inactive"
-              },
-              {
-                "name": "Dalton Tucker",
-                "designation": "inactive"
-              },
-              {
-                "name": "Riley Leonard",
+                "name": "Carson Beck",
                 "designation": "emergency_qb"
               },
               {
-                "name": "Sauce Gardner",
+                "name": "Jeremiyah Love",
                 "designation": "inactive"
               },
               {
-                "name": "Tyler Warren",
+                "name": "Jon Gaines II",
+                "designation": "inactive"
+              },
+              {
+                "name": "Max Melton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Walter Nolen III",
                 "designation": "inactive"
               }
             ]
           },
-          "rawSha256": "bc0a91ab6af5831712d5c2b42405756b678be507c5ae29cbb0dd102ef2f7ffd0",
-          "sourceDetail": "Correct dated Week 7 complete seven-entry club list, including explicit emergency-third-quarterback label."
+          "rawSha256": "1ba53d360255417296697e75baf20adceb5d55be1086e8fa5ae836e7b31a3cac",
+          "sourceDetail": "Complete seven-player set and explicit Carson Beck emergency-third role agree. Albert Reese/Albert Reese IV identity is separately verified with both current roster profiles (Arizona, rookie offensive lineman, Mississippi State, age 24, height 79 inches, weight 330 pounds)."
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-25T17:01:11.149Z",
+          "checkedAt": "2026-10-25T19:03:13.665Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873014",
+            "gameId": "401873019",
             "week": 7,
-            "teamSlug": "indianapolis-colts",
+            "teamSlug": "arizona-cardinals",
             "complete": true,
             "players": [
               {
-                "name": "Anthony Gould",
+                "name": "Albert Reese IV",
                 "designation": "inactive"
               },
               {
-                "name": "Bryce Boettcher",
+                "name": "Andrew Wingard",
                 "designation": "inactive"
               },
               {
-                "name": "CJ Allen",
-                "designation": "inactive"
-              },
-              {
-                "name": "Dalton Tucker",
-                "designation": "inactive"
-              },
-              {
-                "name": "Riley Leonard",
+                "name": "Carson Beck",
                 "designation": "emergency_qb"
               },
               {
-                "name": "Sauce Gardner",
+                "name": "Jeremiyah Love",
                 "designation": "inactive"
               },
               {
-                "name": "Tyler Warren",
+                "name": "Jon Gaines II",
+                "designation": "inactive"
+              },
+              {
+                "name": "Max Melton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Walter Nolen III",
                 "designation": "inactive"
               }
             ]
           },
-          "rawSha256": "8afe6e4f5141fb3e964a9e3bb9b429b170b1afec94fc06c5d9b4856fc87b3280",
-          "sourceDetail": "All seven explicit INACTIVE-flagged records were read, counted and matched with the full club list; the quarterback report explicitly states the emergency-third role. This is not inferred from generic Out/Active statuses or omission."
+          "rawSha256": "9e45daf6b796e53f49d15eba29aab32ec76519d75eb931c29268201d4e3f601a",
+          "sourceDetail": "Complete seven-player set and explicit Carson Beck emergency-third role agree. Albert Reese/Albert Reese IV identity is separately verified with both current roster profiles (Arizona, rookie offensive lineman, Mississippi State, age 24, height 79 inches, weight 330 pounds)."
         }
-      ],
-      "membershipConfirmation": {
-        "teamSlug": "indianapolis-colts",
-        "source": "fftoday",
-        "names": [
-          "Bryce Boettcher.",
-          "CJ Allen",
-          "Sauce Gardner",
-          "Tyler Warren",
-          "Anthony Gould",
-          "Dalton Tucker",
-          "Riley Leonard"
-        ],
-        "completeMembershipMatches": true,
-        "roleScope": "Membership confirmation only. Emergency roles are proved by the club and explicit ESPN statements, never inferred from FFToday omissions.",
-        "url": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
-        "checkedAt": "2026-10-25T17:01:09.987Z"
-      }
+      ]
     },
     {
       "kind": "inactive",
-      "key": "401873017:atlanta-falcons",
+      "key": "401873020:green-bay-packers",
       "value": {
-        "gameId": "401873017",
+        "gameId": "401873020",
         "week": 7,
-        "teamSlug": "atlanta-falcons",
+        "teamSlug": "green-bay-packers",
         "complete": true,
         "players": [
           {
-            "name": "Andy Dalton",
+            "name": "Benjamin St-Juste",
             "designation": "inactive"
           },
           {
-            "name": "Avieon Terrell",
+            "name": "Donovan Jennings",
             "designation": "inactive"
           },
           {
-            "name": "Billy Bowman Jr.",
+            "name": "Jager Burton",
             "designation": "inactive"
           },
           {
-            "name": "Brian Robinson Jr.",
+            "name": "Kaleb Johnson",
             "designation": "inactive"
           },
           {
-            "name": "Divine Deablo",
+            "name": "Kevin Zeitler",
             "designation": "inactive"
           },
           {
-            "name": "Jack Strand",
-            "designation": "emergency_qb"
-          },
-          {
-            "name": "Olamide Zaccheaus",
+            "name": "Zaire Franklin",
             "designation": "inactive"
           }
         ]
       },
       "sources": [
         {
-          "url": "https://www.atlantafalcons.com/news/atlanta-falcons-week-7-inactives-vs-san-francisco-49ers",
-          "checkedAt": "2026-10-25T17:01:10.096Z",
+          "url": "https://www.packers.com/news/packers-lions-week-7-inactives-oct-25-2026",
+          "checkedAt": "2026-10-25T19:02:36.624Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873017",
+            "gameId": "401873020",
             "week": 7,
-            "teamSlug": "atlanta-falcons",
+            "teamSlug": "green-bay-packers",
             "complete": true,
             "players": [
               {
-                "name": "Andy Dalton",
+                "name": "Benjamin St-Juste",
                 "designation": "inactive"
               },
               {
-                "name": "Avieon Terrell",
+                "name": "Donovan Jennings",
                 "designation": "inactive"
               },
               {
-                "name": "Billy Bowman Jr.",
+                "name": "Jager Burton",
                 "designation": "inactive"
               },
               {
-                "name": "Brian Robinson Jr.",
+                "name": "Kaleb Johnson",
                 "designation": "inactive"
               },
               {
-                "name": "Divine Deablo",
+                "name": "Kevin Zeitler",
                 "designation": "inactive"
               },
               {
-                "name": "Jack Strand",
-                "designation": "emergency_qb"
-              },
-              {
-                "name": "Olamide Zaccheaus",
+                "name": "Zaire Franklin",
                 "designation": "inactive"
               }
             ]
           },
-          "rawSha256": "2708b537665c3143f3621d1a388bb2220a08eb869131c29d5b8a490476400a6a",
-          "sourceDetail": "Correct dated Week 7 complete seven-entry club list, including explicit emergency-third-quarterback label."
+          "rawSha256": "5c6749390cd4a2371939c9b795059a1e6b5b44fd78e388eb9c4c2531e5333a26",
+          "sourceDetail": "Complete own-team club list agrees exactly with the complete Pride of Detroit Week 7 list. No inactive or active status is inferred from omission."
         },
         {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-25T17:01:11.149Z",
+          "url": "https://www.prideofdetroit.com/detroit-lions-news/178064/lions-week-7-inactives-edge-ahmed-hassanein-out-vs-packers",
+          "checkedAt": "2026-10-25T19:02:36.418Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873017",
+            "gameId": "401873020",
             "week": 7,
-            "teamSlug": "atlanta-falcons",
+            "teamSlug": "green-bay-packers",
             "complete": true,
             "players": [
               {
-                "name": "Andy Dalton",
+                "name": "Benjamin St-Juste",
                 "designation": "inactive"
               },
               {
-                "name": "Avieon Terrell",
+                "name": "Donovan Jennings",
                 "designation": "inactive"
               },
               {
-                "name": "Billy Bowman Jr.",
+                "name": "Jager Burton",
                 "designation": "inactive"
               },
               {
-                "name": "Brian Robinson Jr.",
+                "name": "Kaleb Johnson",
                 "designation": "inactive"
               },
               {
-                "name": "Divine Deablo",
+                "name": "Kevin Zeitler",
                 "designation": "inactive"
               },
               {
-                "name": "Jack Strand",
-                "designation": "emergency_qb"
-              },
-              {
-                "name": "Olamide Zaccheaus",
+                "name": "Zaire Franklin",
                 "designation": "inactive"
               }
             ]
           },
-          "rawSha256": "8afe6e4f5141fb3e964a9e3bb9b429b170b1afec94fc06c5d9b4856fc87b3280",
-          "sourceDetail": "All seven explicit INACTIVE-flagged records were read, counted and matched with the full club list; the quarterback report explicitly states the emergency-third role. This is not inferred from generic Out/Active statuses or omission."
+          "rawSha256": "ef07193e400795c8aaef638a4b01f7c4f16c80ffb497d73fad36e6cd561d274f",
+          "sourceDetail": "Complete own-team club list agrees exactly with the complete Pride of Detroit Week 7 list. No inactive or active status is inferred from omission."
         }
-      ],
-      "membershipConfirmation": {
-        "teamSlug": "atlanta-falcons",
-        "source": "fftoday",
-        "names": [
-          "Jack Strand",
-          "Divine Deablo",
-          "Avieon Terrell",
-          "Andy Dalton",
-          "Olamide Zaccheaus",
-          "Brian Robinson Jr.",
-          "Billy Bowman Jr."
-        ],
-        "completeMembershipMatches": true,
-        "roleScope": "Membership confirmation only. Emergency roles are proved by the club and explicit ESPN statements, never inferred from FFToday omissions.",
-        "url": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
-        "checkedAt": "2026-10-25T17:01:09.987Z"
-      }
+      ]
     },
     {
       "kind": "inactive",
-      "key": "401873018:carolina-panthers",
+      "key": "401873020:detroit-lions",
       "value": {
-        "gameId": "401873018",
+        "gameId": "401873020",
         "week": 7,
-        "teamSlug": "carolina-panthers",
+        "teamSlug": "detroit-lions",
         "complete": true,
         "players": [
           {
-            "name": "AJ Dillon",
+            "name": "Ahmed Hassanein",
             "designation": "inactive"
           },
           {
-            "name": "Haynes King",
-            "designation": "emergency_qb"
-          },
-          {
-            "name": "Ja'Tavion Sanders",
+            "name": "Bishop Fitzgerald",
             "designation": "inactive"
           },
           {
-            "name": "Jaelan Phillips",
+            "name": "Jackson Meeks",
             "designation": "inactive"
           },
           {
-            "name": "Sam Hecht",
+            "name": "Mekhi Wingo",
             "designation": "inactive"
           },
           {
-            "name": "Stone Forsythe",
-            "designation": "inactive"
-          },
-          {
-            "name": "TeRah Edwards",
+            "name": "Seth McLaughlin",
             "designation": "inactive"
           }
         ]
       },
       "sources": [
         {
-          "url": "https://www.panthers.com/news/week-7-inactives-vs-tampa-bay-no-jaelan-phillips-this-week",
-          "checkedAt": "2026-10-25T17:01:10.680Z",
+          "url": "https://www.detroitlions.com/news/inactives-lions-vs-packers-branch-mays",
+          "checkedAt": "2026-10-25T19:02:36.629Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873018",
+            "gameId": "401873020",
             "week": 7,
-            "teamSlug": "carolina-panthers",
+            "teamSlug": "detroit-lions",
             "complete": true,
             "players": [
               {
-                "name": "AJ Dillon",
+                "name": "Ahmed Hassanein",
                 "designation": "inactive"
               },
               {
-                "name": "Haynes King",
-                "designation": "emergency_qb"
-              },
-              {
-                "name": "Ja'Tavion Sanders",
+                "name": "Bishop Fitzgerald",
                 "designation": "inactive"
               },
               {
-                "name": "Jaelan Phillips",
+                "name": "Jackson Meeks",
                 "designation": "inactive"
               },
               {
-                "name": "Sam Hecht",
+                "name": "Mekhi Wingo",
                 "designation": "inactive"
               },
               {
-                "name": "Stone Forsythe",
-                "designation": "inactive"
-              },
-              {
-                "name": "TeRah Edwards",
+                "name": "Seth McLaughlin",
                 "designation": "inactive"
               }
             ]
           },
-          "rawSha256": "2bd038bcf6c2b1acbe8725352214328107dc33dc79324b38323fd2f0e9688f8a",
-          "sourceDetail": "Correct dated Week 7 complete seven-entry club list, including explicit emergency-third-quarterback label."
+          "rawSha256": "13742d1767af2c5163c8a7218d3ff921abb4ca4ffdbff4386741669f80d32663",
+          "sourceDetail": "Complete own-team club list agrees exactly with the complete Pride of Detroit Week 7 list. No inactive or active status is inferred from omission."
         },
         {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-25T17:01:11.149Z",
+          "url": "https://www.prideofdetroit.com/detroit-lions-news/178064/lions-week-7-inactives-edge-ahmed-hassanein-out-vs-packers",
+          "checkedAt": "2026-10-25T19:02:36.418Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873018",
+            "gameId": "401873020",
             "week": 7,
-            "teamSlug": "carolina-panthers",
+            "teamSlug": "detroit-lions",
             "complete": true,
             "players": [
               {
-                "name": "AJ Dillon",
+                "name": "Ahmed Hassanein",
                 "designation": "inactive"
               },
               {
-                "name": "Haynes King",
-                "designation": "emergency_qb"
-              },
-              {
-                "name": "Ja'Tavion Sanders",
+                "name": "Bishop Fitzgerald",
                 "designation": "inactive"
               },
               {
-                "name": "Jaelan Phillips",
+                "name": "Jackson Meeks",
                 "designation": "inactive"
               },
               {
-                "name": "Sam Hecht",
+                "name": "Mekhi Wingo",
                 "designation": "inactive"
               },
               {
-                "name": "Stone Forsythe",
-                "designation": "inactive"
-              },
-              {
-                "name": "TeRah Edwards",
+                "name": "Seth McLaughlin",
                 "designation": "inactive"
               }
             ]
           },
-          "rawSha256": "8afe6e4f5141fb3e964a9e3bb9b429b170b1afec94fc06c5d9b4856fc87b3280",
-          "sourceDetail": "All seven explicit INACTIVE-flagged records were read, counted and matched with the full club list; the quarterback report explicitly states the emergency-third role. This is not inferred from generic Out/Active statuses or omission."
+          "rawSha256": "ef07193e400795c8aaef638a4b01f7c4f16c80ffb497d73fad36e6cd561d274f",
+          "sourceDetail": "Complete own-team club list agrees exactly with the complete Pride of Detroit Week 7 list. No inactive or active status is inferred from omission."
         }
-      ],
-      "membershipConfirmation": {
-        "teamSlug": "carolina-panthers",
-        "source": "fftoday",
-        "names": [
-          "Ja'Tavion Sanders",
-          "Jaelan Phillips",
-          "Haynes King",
-          "AJ Dillon",
-          "Sam Hecht",
-          "Stone Forsythe",
-          "TeRah Edwards"
-        ],
-        "completeMembershipMatches": true,
-        "roleScope": "Membership confirmation only. Emergency roles are proved by the club and explicit ESPN statements, never inferred from FFToday omissions.",
-        "url": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
-        "checkedAt": "2026-10-25T17:01:09.987Z"
-      }
+      ]
     }
   ],
   "moduleReviews": []

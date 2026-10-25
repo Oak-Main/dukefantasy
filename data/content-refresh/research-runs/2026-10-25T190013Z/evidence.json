@@ -1,0 +1,357 @@
+{
+  "week": 7,
+  "run": "2026-10-25T190013Z",
+  "baseCommit": "398dbe39256545378085b9e2831d99ccd18e20ad",
+  "createdAt": "2026-10-25T19:06:04.311Z",
+  "observations": [
+    {
+      "kind": "inactive",
+      "key": "401873019:arizona-cardinals",
+      "value": {
+        "gameId": "401873019",
+        "week": 7,
+        "teamSlug": "arizona-cardinals",
+        "complete": true,
+        "players": [
+          {
+            "name": "Albert Reese IV",
+            "designation": "inactive"
+          },
+          {
+            "name": "Andrew Wingard",
+            "designation": "inactive"
+          },
+          {
+            "name": "Carson Beck",
+            "designation": "emergency_qb"
+          },
+          {
+            "name": "Jeremiyah Love",
+            "designation": "inactive"
+          },
+          {
+            "name": "Jon Gaines II",
+            "designation": "inactive"
+          },
+          {
+            "name": "Max Melton",
+            "designation": "inactive"
+          },
+          {
+            "name": "Walter Nolen III",
+            "designation": "inactive"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.azcardinals.com/news/cornerback-max-melton-inactive-for-game-against-broncos",
+          "checkedAt": "2026-10-25T19:01:22.012Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873019",
+            "week": 7,
+            "teamSlug": "arizona-cardinals",
+            "complete": true,
+            "players": [
+              {
+                "name": "Albert Reese IV",
+                "designation": "inactive"
+              },
+              {
+                "name": "Andrew Wingard",
+                "designation": "inactive"
+              },
+              {
+                "name": "Carson Beck",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "Jeremiyah Love",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jon Gaines II",
+                "designation": "inactive"
+              },
+              {
+                "name": "Max Melton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Walter Nolen III",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "1ba53d360255417296697e75baf20adceb5d55be1086e8fa5ae836e7b31a3cac",
+          "sourceDetail": "Complete seven-player set and explicit Carson Beck emergency-third role agree. Albert Reese/Albert Reese IV identity is separately verified with both current roster profiles (Arizona, rookie offensive lineman, Mississippi State, age 24, height 79 inches, weight 330 pounds)."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-25T19:03:13.665Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873019",
+            "week": 7,
+            "teamSlug": "arizona-cardinals",
+            "complete": true,
+            "players": [
+              {
+                "name": "Albert Reese IV",
+                "designation": "inactive"
+              },
+              {
+                "name": "Andrew Wingard",
+                "designation": "inactive"
+              },
+              {
+                "name": "Carson Beck",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "Jeremiyah Love",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jon Gaines II",
+                "designation": "inactive"
+              },
+              {
+                "name": "Max Melton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Walter Nolen III",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "9e45daf6b796e53f49d15eba29aab32ec76519d75eb931c29268201d4e3f601a",
+          "sourceDetail": "Complete seven-player set and explicit Carson Beck emergency-third role agree. Albert Reese/Albert Reese IV identity is separately verified with both current roster profiles (Arizona, rookie offensive lineman, Mississippi State, age 24, height 79 inches, weight 330 pounds)."
+        }
+      ]
+    },
+    {
+      "kind": "inactive",
+      "key": "401873020:green-bay-packers",
+      "value": {
+        "gameId": "401873020",
+        "week": 7,
+        "teamSlug": "green-bay-packers",
+        "complete": true,
+        "players": [
+          {
+            "name": "Benjamin St-Juste",
+            "designation": "inactive"
+          },
+          {
+            "name": "Donovan Jennings",
+            "designation": "inactive"
+          },
+          {
+            "name": "Jager Burton",
+            "designation": "inactive"
+          },
+          {
+            "name": "Kaleb Johnson",
+            "designation": "inactive"
+          },
+          {
+            "name": "Kevin Zeitler",
+            "designation": "inactive"
+          },
+          {
+            "name": "Zaire Franklin",
+            "designation": "inactive"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.packers.com/news/packers-lions-week-7-inactives-oct-25-2026",
+          "checkedAt": "2026-10-25T19:02:36.624Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873020",
+            "week": 7,
+            "teamSlug": "green-bay-packers",
+            "complete": true,
+            "players": [
+              {
+                "name": "Benjamin St-Juste",
+                "designation": "inactive"
+              },
+              {
+                "name": "Donovan Jennings",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jager Burton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Kaleb Johnson",
+                "designation": "inactive"
+              },
+              {
+                "name": "Kevin Zeitler",
+                "designation": "inactive"
+              },
+              {
+                "name": "Zaire Franklin",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "5c6749390cd4a2371939c9b795059a1e6b5b44fd78e388eb9c4c2531e5333a26",
+          "sourceDetail": "Complete own-team club list agrees exactly with the complete Pride of Detroit Week 7 list. No inactive or active status is inferred from omission."
+        },
+        {
+          "url": "https://www.prideofdetroit.com/detroit-lions-news/178064/lions-week-7-inactives-edge-ahmed-hassanein-out-vs-packers",
+          "checkedAt": "2026-10-25T19:02:36.418Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873020",
+            "week": 7,
+            "teamSlug": "green-bay-packers",
+            "complete": true,
+            "players": [
+              {
+                "name": "Benjamin St-Juste",
+                "designation": "inactive"
+              },
+              {
+                "name": "Donovan Jennings",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jager Burton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Kaleb Johnson",
+                "designation": "inactive"
+              },
+              {
+                "name": "Kevin Zeitler",
+                "designation": "inactive"
+              },
+              {
+                "name": "Zaire Franklin",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "ef07193e400795c8aaef638a4b01f7c4f16c80ffb497d73fad36e6cd561d274f",
+          "sourceDetail": "Complete own-team club list agrees exactly with the complete Pride of Detroit Week 7 list. No inactive or active status is inferred from omission."
+        }
+      ]
+    },
+    {
+      "kind": "inactive",
+      "key": "401873020:detroit-lions",
+      "value": {
+        "gameId": "401873020",
+        "week": 7,
+        "teamSlug": "detroit-lions",
+        "complete": true,
+        "players": [
+          {
+            "name": "Ahmed Hassanein",
+            "designation": "inactive"
+          },
+          {
+            "name": "Bishop Fitzgerald",
+            "designation": "inactive"
+          },
+          {
+            "name": "Jackson Meeks",
+            "designation": "inactive"
+          },
+          {
+            "name": "Mekhi Wingo",
+            "designation": "inactive"
+          },
+          {
+            "name": "Seth McLaughlin",
+            "designation": "inactive"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.detroitlions.com/news/inactives-lions-vs-packers-branch-mays",
+          "checkedAt": "2026-10-25T19:02:36.629Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873020",
+            "week": 7,
+            "teamSlug": "detroit-lions",
+            "complete": true,
+            "players": [
+              {
+                "name": "Ahmed Hassanein",
+                "designation": "inactive"
+              },
+              {
+                "name": "Bishop Fitzgerald",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jackson Meeks",
+                "designation": "inactive"
+              },
+              {
+                "name": "Mekhi Wingo",
+                "designation": "inactive"
+              },
+              {
+                "name": "Seth McLaughlin",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "13742d1767af2c5163c8a7218d3ff921abb4ca4ffdbff4386741669f80d32663",
+          "sourceDetail": "Complete own-team club list agrees exactly with the complete Pride of Detroit Week 7 list. No inactive or active status is inferred from omission."
+        },
+        {
+          "url": "https://www.prideofdetroit.com/detroit-lions-news/178064/lions-week-7-inactives-edge-ahmed-hassanein-out-vs-packers",
+          "checkedAt": "2026-10-25T19:02:36.418Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873020",
+            "week": 7,
+            "teamSlug": "detroit-lions",
+            "complete": true,
+            "players": [
+              {
+                "name": "Ahmed Hassanein",
+                "designation": "inactive"
+              },
+              {
+                "name": "Bishop Fitzgerald",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jackson Meeks",
+                "designation": "inactive"
+              },
+              {
+                "name": "Mekhi Wingo",
+                "designation": "inactive"
+              },
+              {
+                "name": "Seth McLaughlin",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "ef07193e400795c8aaef638a4b01f7c4f16c80ffb497d73fad36e6cd561d274f",
+          "sourceDetail": "Complete own-team club list agrees exactly with the complete Pride of Detroit Week 7 list. No inactive or active status is inferred from omission."
+        }
+      ]
+    }
+  ],
+  "moduleReviews": []
+}

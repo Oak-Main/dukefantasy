@@ -1,0 +1,419 @@
+{
+  "sources": [
+    {
+      "id": "cardinals-1",
+      "requestedUrl": "https://www.azcardinals.com/news/cornerback-max-melton-inactive-for-game-against-broncos",
+      "resolvedUrl": "https://www.azcardinals.com/news/cornerback-max-melton-inactive-for-game-against-broncos",
+      "status": 200,
+      "checkedAt": "2026-10-25T19:01:22.012Z",
+      "title": "Cornerback Max Melton Inactive For Game Against Broncos",
+      "publishedAt": "2026-10-25T18:35:04.608Z",
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T190013Z/cardinals-1.html",
+      "rawSha256": "1ba53d360255417296697e75baf20adceb5d55be1086e8fa5ae836e7b31a3cac",
+      "exactListExcerpt": "RB Jeremiyah Love (ankle) CB Max Melton (knee) QB Carson Beck (emergency 3rd QB) S Andrew Wingard (knee) OL Jon",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T18:35:04.608Z\""
+    },
+    {
+      "id": "espnFresh",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "status": 200,
+      "checkedAt": "2026-10-25T19:03:13.665Z",
+      "title": null,
+      "publishedAt": null,
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T190013Z/espnFresh.html",
+      "rawSha256": "9e45daf6b796e53f49d15eba29aab32ec76519d75eb931c29268201d4e3f601a",
+      "exactListExcerpt": null,
+      "publicationFieldExcerpt": null
+    },
+    {
+      "id": "packers-2",
+      "requestedUrl": "https://www.packers.com/news/packers-lions-week-7-inactives-oct-25-2026",
+      "resolvedUrl": "https://www.packers.com/news/packers-lions-week-7-inactives-oct-25-2026",
+      "status": 200,
+      "checkedAt": "2026-10-25T19:02:36.624Z",
+      "title": "G Aaron Banks active for Green Bay | Packers-Lions inactives",
+      "publishedAt": "2026-10-25T18:55:00Z",
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T190013Z/packers-2.html",
+      "rawSha256": "5c6749390cd4a2371939c9b795059a1e6b5b44fd78e388eb9c4c2531e5333a26",
+      "exactListExcerpt": "21 CB Benjamin St-Juste 26 RB Kaleb Johnson 44 LB Zaire Franklin 52 OL Jager Burton 67 OL Donovan Jennings",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T18:55:00Z\""
+    },
+    {
+      "id": "pride",
+      "requestedUrl": "https://www.prideofdetroit.com/detroit-lions-news/178064/lions-week-7-inactives-edge-ahmed-hassanein-out-vs-packers",
+      "resolvedUrl": "https://www.prideofdetroit.com/detroit-lions-news/178064/lions-week-7-inactives-edge-ahmed-hassanein-out-vs-packers",
+      "status": 200,
+      "checkedAt": "2026-10-25T19:02:36.418Z",
+      "title": "Lions Week 7 inactives: EDGE Ahmed Hassanein OUT vs. Packers | Pride Of Detroit",
+      "publishedAt": "2026-10-25T18:59:03+00:00",
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T190013Z/pride.html",
+      "rawSha256": "ef07193e400795c8aaef638a4b01f7c4f16c80ffb497d73fad36e6cd561d274f",
+      "exactListExcerpt": "TE Jackson Meeks C Seth McLaughlin EDGE Ahmed Hassanein DL Mekhi Wingo S Bishop Fitzgerald LB Zaire Franklin (shin) —",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T18:59:03+00:00\""
+    },
+    {
+      "id": "lions-6",
+      "requestedUrl": "https://www.detroitlions.com/news/inactives-lions-vs-packers-branch-mays",
+      "resolvedUrl": "https://www.detroitlions.com/news/inactives-lions-vs-packers-branch-mays",
+      "status": 200,
+      "checkedAt": "2026-10-25T19:02:36.629Z",
+      "title": "INACTIVES: Green Bay Packers vs. Detroit Lions, Sunday October 25",
+      "publishedAt": "2026-10-25T18:55:29.405Z",
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T190013Z/lions-6.html",
+      "rawSha256": "13742d1767af2c5163c8a7218d3ff921abb4ca4ffdbff4386741669f80d32663",
+      "exactListExcerpt": "Tight end Jackson Meeks , defensive lineman Mekhi Wingo , edge rusher Ahmed Hassanein , safety Bishop Fitzgerald and center",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T18:55:29.405Z\""
+    },
+    {
+      "id": "cardinalsReese",
+      "requestedUrl": "https://www.azcardinals.com/team/players-roster/albert-reese/",
+      "resolvedUrl": "https://www.azcardinals.com/team/players-roster/albert-reese/",
+      "status": 200,
+      "checkedAt": "2026-10-25T19:04:01.074Z",
+      "title": "Albert Reese",
+      "publishedAt": null,
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T190013Z/cardinalsReese.html",
+      "rawSha256": "71c769c3b0cfa6b31262d1528c5efc60694ce5e1a80a39bf48f98bba4a3ea6d0",
+      "exactListExcerpt": "Albert Reese OL #76 Experience: R Height: 6-7 Age: 24 Weight: 330 lbs College: Mississippi State",
+      "publicationFieldExcerpt": null
+    },
+    {
+      "id": "espnCardinalsRoster",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/22/roster?season=2026",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/22/roster?season=2026",
+      "status": 200,
+      "checkedAt": "2026-10-25T19:03:59.344Z",
+      "title": null,
+      "publishedAt": null,
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T190013Z/espnCardinalsRoster.html",
+      "rawSha256": "1cbb81e36349c3105cd4a56926bf4837b93d29126bf77d451cc505c04bfed8dd",
+      "exactListExcerpt": null,
+      "publicationFieldExcerpt": null
+    }
+  ],
+  "proofs": {
+    "cardinals-1": {
+      "publishedAt": "2026-10-25T18:35:04.608Z",
+      "exactListExcerpt": "RB Jeremiyah Love (ankle) CB Max Melton (knee) QB Carson Beck (emergency 3rd QB) S Andrew Wingard (knee) OL Jon",
+      "reports": [
+        {
+          "teamSlug": "arizona-cardinals",
+          "complete": true,
+          "players": [
+            {
+              "name": "Albert Reese IV",
+              "designation": "inactive"
+            },
+            {
+              "name": "Andrew Wingard",
+              "designation": "inactive"
+            },
+            {
+              "name": "Carson Beck",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Jeremiyah Love",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jon Gaines II",
+              "designation": "inactive"
+            },
+            {
+              "name": "Max Melton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Walter Nolen III",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "espnFresh": {
+      "reports": [
+        {
+          "teamSlug": "arizona-cardinals",
+          "complete": true,
+          "players": [
+            {
+              "name": "Albert Reese IV",
+              "designation": "inactive"
+            },
+            {
+              "name": "Andrew Wingard",
+              "designation": "inactive"
+            },
+            {
+              "name": "Carson Beck",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Jeremiyah Love",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jon Gaines II",
+              "designation": "inactive"
+            },
+            {
+              "name": "Max Melton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Walter Nolen III",
+              "designation": "inactive"
+            }
+          ],
+          "explicitFlagCount": 7,
+          "observations": [
+            {
+              "player": "Max Melton",
+              "date": "2026-10-25T18:48Z",
+              "flag": "INACTIVE",
+              "comment": "Melton (knee) is inactive for Sunday's game against the Broncos, Darren Urban of the Cardinals' official site reports."
+            },
+            {
+              "player": "Carson Beck",
+              "date": "2026-10-25T18:44Z",
+              "flag": "INACTIVE",
+              "comment": "Beck (back) is inactive but will serve as the emergency third quarterback against the Broncos on Sunday, Darren Urban of the Cardinals' official site reports."
+            },
+            {
+              "player": "Andrew Wingard",
+              "date": "2026-10-25T18:42Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Albert Reese IV",
+              "date": "2026-10-25T18:42Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Jeremiyah Love",
+              "date": "2026-10-25T18:42Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Walter Nolen III",
+              "date": "2026-10-25T18:42Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Jon Gaines II",
+              "date": "2026-10-25T18:42Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "packers-2": {
+      "publishedAt": "2026-10-25T18:55:00Z",
+      "exactListExcerpt": "21 CB Benjamin St-Juste 26 RB Kaleb Johnson 44 LB Zaire Franklin 52 OL Jager Burton 67 OL Donovan Jennings",
+      "reports": [
+        {
+          "teamSlug": "green-bay-packers",
+          "complete": true,
+          "players": [
+            {
+              "name": "Benjamin St-Juste",
+              "designation": "inactive"
+            },
+            {
+              "name": "Donovan Jennings",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jager Burton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kaleb Johnson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kevin Zeitler",
+              "designation": "inactive"
+            },
+            {
+              "name": "Zaire Franklin",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "pride": {
+      "publishedAt": "2026-10-25T18:59:03+00:00",
+      "exactListExcerpt": "TE Jackson Meeks C Seth McLaughlin EDGE Ahmed Hassanein DL Mekhi Wingo S Bishop Fitzgerald LB Zaire Franklin (shin) —",
+      "reports": [
+        {
+          "teamSlug": "detroit-lions",
+          "complete": true,
+          "players": [
+            {
+              "name": "Ahmed Hassanein",
+              "designation": "inactive"
+            },
+            {
+              "name": "Bishop Fitzgerald",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jackson Meeks",
+              "designation": "inactive"
+            },
+            {
+              "name": "Mekhi Wingo",
+              "designation": "inactive"
+            },
+            {
+              "name": "Seth McLaughlin",
+              "designation": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "green-bay-packers",
+          "complete": true,
+          "players": [
+            {
+              "name": "Benjamin St-Juste",
+              "designation": "inactive"
+            },
+            {
+              "name": "Donovan Jennings",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jager Burton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kaleb Johnson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kevin Zeitler",
+              "designation": "inactive"
+            },
+            {
+              "name": "Zaire Franklin",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "lions-6": {
+      "publishedAt": "2026-10-25T18:55:29.405Z",
+      "exactListExcerpt": "Tight end Jackson Meeks , defensive lineman Mekhi Wingo , edge rusher Ahmed Hassanein , safety Bishop Fitzgerald and center",
+      "reports": [
+        {
+          "teamSlug": "detroit-lions",
+          "complete": true,
+          "players": [
+            {
+              "name": "Ahmed Hassanein",
+              "designation": "inactive"
+            },
+            {
+              "name": "Bishop Fitzgerald",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jackson Meeks",
+              "designation": "inactive"
+            },
+            {
+              "name": "Mekhi Wingo",
+              "designation": "inactive"
+            },
+            {
+              "name": "Seth McLaughlin",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "cardinalsReese": {
+      "identity": {
+        "team": "Arizona Cardinals",
+        "name": "Albert Reese",
+        "position": "OL",
+        "height": 79,
+        "weight": 330,
+        "age": 24,
+        "college": "Mississippi State",
+        "rookie": true
+      },
+      "exactListExcerpt": "Albert Reese OL #76 Experience: R Height: 6-7 Age: 24 Weight: 330 lbs College: Mississippi State"
+    },
+    "espnCardinalsRoster": {
+      "identity": {
+        "id": "4683506",
+        "team": "Arizona Cardinals",
+        "name": "Albert Reese IV",
+        "position": "OT",
+        "height": 79,
+        "weight": 330,
+        "age": 24,
+        "college": "Mississippi State",
+        "rookie": true
+      }
+    }
+  },
+  "coverage": [
+    {
+      "teamSlug": "arizona-cardinals",
+      "teamName": "Arizona Cardinals",
+      "primary": "cardinals-1",
+      "secondary": "espnFresh",
+      "count": 7,
+      "emergency": "Carson Beck"
+    },
+    {
+      "teamSlug": "green-bay-packers",
+      "primary": "packers-2",
+      "secondary": "pride",
+      "count": 6
+    },
+    {
+      "teamSlug": "detroit-lions",
+      "primary": "lions-6",
+      "secondary": "pride",
+      "count": 5
+    }
+  ],
+  "identityNormalization": {
+    "from": "Albert Reese",
+    "to": "Albert Reese IV",
+    "espnAthleteId": "4683506",
+    "reason": "Both current Cardinals profiles agree on team, rookie offensive-line role, Mississippi State, age 24, 6-foot-7 height and 330-pound weight. The club uses the short name; ESPN uses the full suffix. Only this explicitly reviewed identity alias is applied."
+  },
+  "excludedSources": [
+    "Packers article supplementary opponent section contains only four Lions names; it is excluded from Detroit evidence. The Lions own article explicitly declares five healthy scratches and Pride lists the same five. Omission is not treated as an active-status claim.",
+    "Mile High Report Arizona list spells Jeremiyah as Jeremiah and omits Carson Beck emergency role; excluded from Arizona evidence.",
+    "NFL aggregate spells Denver tight end Dallan while the club, Mile High Report and ESPN say Dallen; Denver role also lacks a second publisher confirmation.",
+    "Earlier ESPN Detroit record refers to Arizona on October 11; excluded from the current Week 7 list.",
+    "FFToday late sections are still empty; FantasyPros has partial/preliminary membership. Neither is used as a complete late list."
+  ],
+  "sourceScope": "Partial three-list addition, no full-module date renewal. Distinct publisher families may share upstream club reporting; no claim of independent original reporting."
+}
