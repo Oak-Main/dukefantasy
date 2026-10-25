@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { collectFacts, validateEvidence } from "../scripts/week7-evidence.mjs";
+import { collectFacts, validateEvidence, validateResultIdentities } from "../scripts/week7-evidence.mjs";
 const now = new Date("2026-10-22T18:00:00Z");
 const value = { week: 7, status: "final", awayScore: 20, homeScore: 17 };
 const after = new Map([["result:game", { kind: "result", key: "game", value }]]);
@@ -49,4 +49,47 @@ test("a reserve record verification date must agree across both recorded observa
   assert.equal(validateEvidence(p,new Map(),candidate,now).changedFacts,1);
   p.observations[0].sources[1].value={...fact.value,asOf:'2026-10-21'};
   assert.throws(()=>validateEvidence(p,new Map(),candidate,now),/disagree/);
+});
+
+const identity = { id: "game", week: 7, awaySlug: "away-team", homeSlug: "home-team", kickoffUtc: "2026-10-22T17:00:00.000Z" };
+const identitySnapshot = { schedule: [{ ...identity }] };
+const identityProof = () => {
+  const p = proof();
+  p.observations[0].gameIdentity = { ...identity };
+  for (const source of p.observations[0].sources) source.gameIdentity = { ...identity };
+  return p;
+};
+
+test("result source identities bind the keyed game, teams, week and kickoff", () => {
+  assert.equal(validateResultIdentities(identityProof(), identitySnapshot), 1);
+});
+
+test("a result or source with no game identity cannot pass", () => {
+  const p = identityProof(); delete p.observations[0].gameIdentity;
+  assert.throws(() => validateResultIdentities(p, identitySnapshot), /game identity/);
+  const q = identityProof(); delete q.observations[0].sources[1].gameIdentity;
+  assert.throws(() => validateResultIdentities(q, identitySnapshot), /source game identity/);
+});
+
+test("wrong game keys, swapped teams and incorrect kickoffs cannot pass", () => {
+  for (const change of [{ key: "other-game" }, { gameIdentity: { ...identity, awaySlug: identity.homeSlug } }, { gameIdentity: { ...identity, kickoffUtc: "2026-10-23T17:00:00.000Z" } }]) {
+    const p = identityProof(); Object.assign(p.observations[0], change);
+    assert.throws(() => validateResultIdentities(p, identitySnapshot), /game identity/);
+  }
+});
+
+test("matching score values cannot hide a source bound to another game", () => {
+  const p = identityProof(); p.observations[0].sources[1].gameIdentity = { ...identity, id: "other-game" };
+  assert.throws(() => validateResultIdentities(p, identitySnapshot), /source game identity/);
+});
+
+test("retained pending-release observations enforce values, freshness and two publishers", () => {
+  const p = proof(); p.observations[0].sources[1].value = { ...value, awayScore: 99 };
+  assert.throws(() => validateEvidence(p, after, after, now), /disagree/);
+  const q = proof(); q.observations[0].sources.pop();
+  assert.throws(() => validateEvidence(q, after, after, now), /two publisher/);
+  const r = proof(); r.observations[0].value = { ...value, homeScore: 99 };
+  assert.throws(() => validateEvidence(r, after, after, now), /retained evidence does not match/);
+  const s = proof(); s.observations[0].sources[1].checkedAt = "2026-10-21T00:00:00Z";
+  assert.throws(() => validateEvidence(s, after, after, now), /stale/);
 });

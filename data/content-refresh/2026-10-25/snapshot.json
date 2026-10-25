@@ -172,7 +172,7 @@
       "division": "AFC South",
       "color": "#03202F",
       "logo": "/logos/houston-texans.png",
-      "record": "2-4"
+      "record": "2-5"
     },
     {
       "id": "11",
@@ -315,7 +315,7 @@
       "division": "NFC East",
       "color": "#0B2265",
       "logo": "/logos/new-york-giants.png",
-      "record": "3-2-1"
+      "record": "4-2-1"
     },
     {
       "id": "20",
@@ -2365,10 +2365,10 @@
       "homeSlug": "houston-texans",
       "awayAbbr": "NYG",
       "homeAbbr": "HOU",
-      "status": "scheduled",
-      "statusDetail": "Sun, October 25th at 1:00 PM EDT",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "final",
+      "statusDetail": "Final/OT",
+      "awayScore": 27,
+      "homeScore": 21,
       "broadcast": "FOX",
       "venue": "Reliant Stadium",
       "networks": [
@@ -2382,14 +2382,19 @@
       "kickoff_pt": "Sun, Oct 25, 10:00 AM PT",
       "sources": [
         "https://www.nfl.com/games/giants-at-texans-2026-reg-7",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+        "https://www.nfl.com/schedules/2026/by-week/week-7"
       ],
       "verification": "two_publishers",
       "verified_fields": [
         "opponents",
         "date",
         "kickoff",
-        "primary_network"
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score",
+        "overtime_status"
       ],
       "weather": null
     },
@@ -5759,11 +5764,11 @@
     "houston-texans": {
       "slug": "houston-texans",
       "wins": 2,
-      "losses": 4,
+      "losses": 5,
       "ties": 0,
-      "pf": 144,
-      "pa": 143,
-      "record": "2-4"
+      "pf": 165,
+      "pa": 170,
+      "record": "2-5"
     },
     "indianapolis-colts": {
       "slug": "indianapolis-colts",
@@ -5857,12 +5862,12 @@
     },
     "new-york-giants": {
       "slug": "new-york-giants",
-      "wins": 3,
+      "wins": 4,
       "losses": 2,
       "ties": 1,
-      "pf": 136,
-      "pa": 140,
-      "record": "3-2-1"
+      "pf": 163,
+      "pa": 161,
+      "record": "4-2-1"
     },
     "new-york-jets": {
       "slug": "new-york-jets",
@@ -6999,10 +7004,10 @@
     "asOf": "2026-10-20",
     "entries": []
   },
-  "generatedAt": "2026-10-25T20:14:17.611Z",
+  "generatedAt": "2026-10-25T20:29:05.517Z",
   "sourceAsOf": "2026-10-25",
-  "fetchedAt": "2026-10-25T20:14:17.611Z",
-  "verification": "All 107 results through Week 7 reviewed against fresh NFL and ESPN: 101 final and 6 ungraded upcoming/live games; all 32 recalculated standings match fresh ESPN. All 272 games and international metadata retained; Weeks 8–18 retain their existing planning scope.",
-  "compiledAt": "2026-10-25T20:15:04.308Z",
+  "fetchedAt": "2026-10-25T20:29:05.517Z",
+  "verification": "All 107 results through Week 7 reviewed against fresh NFL and ESPN: 102 final and 5 ungraded upcoming/live games; all 32 recalculated standings match fresh ESPN. All 272 games and international metadata retained; Weeks 8–18 retain their existing planning scope.",
+  "compiledAt": "2026-10-25T20:30:06.023Z",
   "collectedOn": "2026-10-25"
 }
