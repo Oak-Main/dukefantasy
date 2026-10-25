@@ -269,7 +269,14 @@
             "homeScore": 13
           },
           "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873012",
+            "week": 7,
+            "awaySlug": "cincinnati-bengals",
+            "homeSlug": "baltimore-ravens",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -282,9 +289,23 @@
             "homeScore": 13
           },
           "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873012",
+            "week": 7,
+            "awaySlug": "cincinnati-bengals",
+            "homeSlug": "baltimore-ravens",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         }
-      ]
+      ],
+      "gameIdentity": {
+        "id": "401873012",
+        "week": 7,
+        "awaySlug": "cincinnati-bengals",
+        "homeSlug": "baltimore-ravens",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
     },
     {
       "kind": "result",
@@ -307,7 +328,14 @@
             "homeScore": 24
           },
           "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873013",
+            "week": 7,
+            "awaySlug": "cleveland-browns",
+            "homeSlug": "tennessee-titans",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -320,9 +348,23 @@
             "homeScore": 24
           },
           "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873013",
+            "week": 7,
+            "awaySlug": "cleveland-browns",
+            "homeSlug": "tennessee-titans",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         }
-      ]
+      ],
+      "gameIdentity": {
+        "id": "401873013",
+        "week": 7,
+        "awaySlug": "cleveland-browns",
+        "homeSlug": "tennessee-titans",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
     },
     {
       "kind": "result",
@@ -345,7 +387,14 @@
             "homeScore": 16
           },
           "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873014",
+            "week": 7,
+            "awaySlug": "indianapolis-colts",
+            "homeSlug": "minnesota-vikings",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -358,9 +407,23 @@
             "homeScore": 16
           },
           "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873014",
+            "week": 7,
+            "awaySlug": "indianapolis-colts",
+            "homeSlug": "minnesota-vikings",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         }
-      ]
+      ],
+      "gameIdentity": {
+        "id": "401873014",
+        "week": 7,
+        "awaySlug": "indianapolis-colts",
+        "homeSlug": "minnesota-vikings",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
     },
     {
       "kind": "result",
@@ -383,7 +446,14 @@
             "homeScore": 25
           },
           "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873015",
+            "week": 7,
+            "awaySlug": "miami-dolphins",
+            "homeSlug": "new-york-jets",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -396,9 +466,23 @@
             "homeScore": 25
           },
           "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873015",
+            "week": 7,
+            "awaySlug": "miami-dolphins",
+            "homeSlug": "new-york-jets",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         }
-      ]
+      ],
+      "gameIdentity": {
+        "id": "401873015",
+        "week": 7,
+        "awaySlug": "miami-dolphins",
+        "homeSlug": "new-york-jets",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
     },
     {
       "kind": "result",
@@ -421,7 +505,14 @@
             "homeScore": 29
           },
           "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873017",
+            "week": 7,
+            "awaySlug": "san-francisco-49ers",
+            "homeSlug": "atlanta-falcons",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -434,9 +525,23 @@
             "homeScore": 29
           },
           "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873017",
+            "week": 7,
+            "awaySlug": "san-francisco-49ers",
+            "homeSlug": "atlanta-falcons",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         }
-      ]
+      ],
+      "gameIdentity": {
+        "id": "401873017",
+        "week": 7,
+        "awaySlug": "san-francisco-49ers",
+        "homeSlug": "atlanta-falcons",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
     },
     {
       "kind": "result",
@@ -459,7 +564,14 @@
             "homeScore": 13
           },
           "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873018",
+            "week": 7,
+            "awaySlug": "tampa-bay-buccaneers",
+            "homeSlug": "carolina-panthers",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -472,9 +584,23 @@
             "homeScore": 13
           },
           "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
-          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree."
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873018",
+            "week": 7,
+            "awaySlug": "tampa-bay-buccaneers",
+            "homeSlug": "carolina-panthers",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
         }
-      ]
+      ],
+      "gameIdentity": {
+        "id": "401873018",
+        "week": 7,
+        "awaySlug": "tampa-bay-buccaneers",
+        "homeSlug": "carolina-panthers",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
     }
   ],
   "moduleReviews": [

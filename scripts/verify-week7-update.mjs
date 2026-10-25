@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { collectFacts, validateEvidence, publisher } from "./week7-evidence.mjs";
+import { collectFacts, validateEvidence, validateResultIdentities, publisher } from "./week7-evidence.mjs";
 import { validatePublicationDates } from "./week7-publication-dates.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
@@ -27,6 +27,7 @@ for (const report of after.editorial.inactives ?? []) {
   if (!Number.isFinite(Date.parse(report.publishedAt)) || Date.parse(report.publishedAt) > Date.now()) throw new Error("Invalid inactive publication time");
   if (Date.parse(report.publishedAt) < Date.parse(game.kickoffUtc) - 2 * 3_600_000) throw new Error("An early injury designation is not a game-day inactive list");
 }
+validateResultIdentities(evidence, after.snapshot);
 const verdict = validateEvidence(evidence, collectFacts(before), collectFacts(after));
 // Metadata-only freshness changes require a real, complete review of that module.
 for (const [module, source] of Object.entries(after.editorial.moduleSources)) {

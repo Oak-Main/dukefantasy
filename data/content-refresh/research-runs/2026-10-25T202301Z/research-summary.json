@@ -1,0 +1,27 @@
+{
+  "run": "2026-10-25T202301Z",
+  "baseCommit": "eee847dc48203956fcd2382516a17c570382b954",
+  "changedFacts": 1,
+  "newResults": [
+    {
+      "id": "401873016",
+      "week": 7,
+      "away": "new-york-giants",
+      "home": "houston-texans",
+      "awayScore": 27,
+      "homeScore": 21
+    }
+  ],
+  "newCompleteLists": 0,
+  "newEntries": 0,
+  "pendingPublicationLists": 2,
+  "pendingPublicationEntries": 13,
+  "totalCompleteLists": 24,
+  "totalEntries": 155,
+  "emergencyQuarterbacks": 15,
+  "completeScheduleReviews": 1,
+  "reviewedResults": 107,
+  "finals": 102,
+  "standingsCompared": 32,
+  "preserved": "All 272 games/international metadata and future planning fields, 389 practices, all 22 prior complete inactive lists/times, medical/reserve records, and every non-schedule module date."
+}

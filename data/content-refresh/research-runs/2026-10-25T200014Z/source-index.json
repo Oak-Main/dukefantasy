@@ -54,7 +54,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.274Z",
       "rawSha256": "9ef1221d37f355dfef00572485cbd5f7694fd63262ecfde6a46a509bec7b50a3",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espnStandings.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espnStandings.html"
     },
     {
       "id": "nfl-1",
@@ -65,7 +65,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.192Z",
       "rawSha256": "7785826de1f778c1109ff91b817b8815c99ec12bd3191f17ef6e167c8f902a48",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-1.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-1.html"
     },
     {
       "id": "espn-1",
@@ -76,7 +76,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.357Z",
       "rawSha256": "992dce612a771152500e9e84a9266b5643fe7545ed0ccf00eb235f0329ebeafc",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-1.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-1.html"
     },
     {
       "id": "nfl-2",
@@ -87,7 +87,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.241Z",
       "rawSha256": "326d41143ead2790172ee9a1d2a2fbd6972116dc9d68d5074cea6cf0f578224c",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-2.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-2.html"
     },
     {
       "id": "espn-2",
@@ -98,7 +98,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.350Z",
       "rawSha256": "3a1db5376192b292b488b62f737bc1c8726c81e71a726f480321567077f503aa",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-2.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-2.html"
     },
     {
       "id": "nfl-3",
@@ -109,7 +109,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.284Z",
       "rawSha256": "6c0bc94288760967e84bf89f99bf553a3b64c955f84321f5b8231fe248195dfe",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-3.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-3.html"
     },
     {
       "id": "espn-3",
@@ -120,7 +120,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.343Z",
       "rawSha256": "1f27279407ec141a8e5db2d95fa7c44375c8be7dc4abe66fcab92ab6943aa692",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-3.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-3.html"
     },
     {
       "id": "nfl-4",
@@ -131,7 +131,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.380Z",
       "rawSha256": "211723e79b82e0a4e526f75e65513d9bcfafbae2ada08f316d73ea318138a82f",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-4.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-4.html"
     },
     {
       "id": "espn-4",
@@ -142,7 +142,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.371Z",
       "rawSha256": "d04d1dc59780efe45607ebaa447385aa1c584a8850036ab3d169e4fe903378b8",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-4.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-4.html"
     },
     {
       "id": "nfl-5",
@@ -153,7 +153,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.313Z",
       "rawSha256": "91bcd04e2d1fab1f8e449cc410a706c078b6df8ec17b2dd179443fc4e5f86efb",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-5.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-5.html"
     },
     {
       "id": "espn-5",
@@ -164,7 +164,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.462Z",
       "rawSha256": "11452a662b5f9db93631ac3a9ed0d41ce8b21aca05ef4ae47846443f9a72dbda",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-5.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-5.html"
     },
     {
       "id": "nfl-6",
@@ -175,7 +175,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.415Z",
       "rawSha256": "0a5af9163c4aa3e1a1b41cc402e3c57c59eba63cfd9c45187a6540d29ec63fe4",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-6.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-6.html"
     },
     {
       "id": "espn-6",
@@ -186,7 +186,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.611Z",
       "rawSha256": "d8e99f2affc61c6cde89c70209ce18e4d3a4173b31a8f07f14974f3d102c046c",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-6.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-6.html"
     },
     {
       "id": "nfl-7",
@@ -197,7 +197,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.472Z",
       "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-7.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/nfl-7.html"
     },
     {
       "id": "espn-7",
@@ -208,7 +208,7 @@
       "status": 200,
       "checkedAt": "2026-10-25T20:14:17.512Z",
       "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
-      "rawFile": "C:/Users/User/Documents/Codex/2026-10-20/run-full-content-refresh-package-via/outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-7.html"
+      "rawFile": "outputs/week7-automation/2026-10-25T200014Z/result-state-20261025201416312/espn-7.html"
     }
   ],
   "proofs": {

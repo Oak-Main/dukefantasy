@@ -1,0 +1,466 @@
+{
+  "sources": [
+    {
+      "id": "rams-7",
+      "requestedUrl": "https://www.therams.com/news/trent-mcduffie-among-rams-inactives-for-week-7-2026-at-raiders",
+      "resolvedUrl": "https://www.therams.com/news/trent-mcduffie-among-rams-inactives-for-week-7-2026-at-raiders",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:24:47.033Z",
+      "title": "Trent McDuffie among Los Angeles Rams&#x27; inactives for Week 7 at Las Vegas Raiders",
+      "publishedAt": "2026-10-25T19:14:08.181Z",
+      "reportedWeek": 7,
+      "publisher": "nfl",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/rams-7.html",
+      "rawSha256": "8d75c8140badd4640af60cb0d2da7474a0d743c5ef0dc41107f8adff42fa1f27",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T19:14:08.181Z\"",
+      "exactListExcerpt": "QB Ty Simpson (emergency 3rd QB) CB Trent McDuffie (groin) ILB Nate Landman (concussion) OL Bill Murray OL Keagen Trost"
+    },
+    {
+      "id": "raiders-8",
+      "requestedUrl": "https://www.raiders.com/news/las-vegas-raiders-week-7-inactives-vs-los-angeles-rams",
+      "resolvedUrl": "https://www.raiders.com/news/las-vegas-raiders-week-7-inactives-vs-los-angeles-rams",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:24:47.044Z",
+      "title": "Las Vegas Raiders Week 7 Inactives vs. Los Angeles Rams",
+      "publishedAt": "2026-10-25T18:55:00Z",
+      "reportedWeek": 7,
+      "publisher": "nfl",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/raiders-8.html",
+      "rawSha256": "d1de7f48f7d917f6d1ab462ae2e9a1142772693434c39c7f285dd07755e75dac",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T18:55:00Z\"",
+      "exactListExcerpt": "QB Aidan O'Connell (emergency 3rd QB) S Tristin McCollum S Dalton Johnson DE Cian Slone G Bryce Cabeldue DT Jonah"
+    },
+    {
+      "id": "espnInjuries",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:24:47.162Z",
+      "title": null,
+      "publishedAt": null,
+      "reportedWeek": 7,
+      "publisher": "espn",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/espnInjuries.html",
+      "rawSha256": "b1384902f29bf31a91b5785172dd4f52074a610bcfcdcbac3be63b77c92c05e7",
+      "publicationFieldExcerpt": null,
+      "exactListExcerpt": null
+    },
+    {
+      "id": "espnStandings",
+      "publisher": "espn",
+      "week": 7,
+      "requestedUrl": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+      "resolvedUrl": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.186Z",
+      "rawSha256": "05c1dd198d5585ed578480fdf52a7ce18290915528a5786daa6d23d1c3452a5f",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/espnStandings.html"
+    },
+    {
+      "id": "nfl-1",
+      "publisher": "nfl",
+      "week": 1,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-1",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-1",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:04.881Z",
+      "rawSha256": "63fba3b8503bddc97b1cd6a2488caefcfede092fce5e41404dc77889ee91af33",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/nfl-1.html"
+    },
+    {
+      "id": "espn-1",
+      "publisher": "espn",
+      "week": 1,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.111Z",
+      "rawSha256": "992dce612a771152500e9e84a9266b5643fe7545ed0ccf00eb235f0329ebeafc",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/espn-1.html"
+    },
+    {
+      "id": "nfl-2",
+      "publisher": "nfl",
+      "week": 2,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-2",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-2",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:04.917Z",
+      "rawSha256": "615438cbd43fb4519c8fa0daae22815e5aa5f13a53b38a0a0b731c3cffbede34",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/nfl-2.html"
+    },
+    {
+      "id": "espn-2",
+      "publisher": "espn",
+      "week": 2,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.480Z",
+      "rawSha256": "411710dced4bc2f6a53aff40b91a89b659102a803e13a58bf16aa45a4c94aa36",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/espn-2.html"
+    },
+    {
+      "id": "nfl-3",
+      "publisher": "nfl",
+      "week": 3,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-3",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-3",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:04.979Z",
+      "rawSha256": "726912d86a0e0e9bba8f390668d92a80c3f7312dd6f859d869584913b81d7967",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/nfl-3.html"
+    },
+    {
+      "id": "espn-3",
+      "publisher": "espn",
+      "week": 3,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.123Z",
+      "rawSha256": "0ad62bef8df05485872b7faee465973b087e40522847cb6b4fee0b082e93a860",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/espn-3.html"
+    },
+    {
+      "id": "nfl-4",
+      "publisher": "nfl",
+      "week": 4,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-4",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-4",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.060Z",
+      "rawSha256": "70007dc2d0ba6e5fee4b2b04cebd4635a2af92d36b90291dc18d42ab360103b4",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/nfl-4.html"
+    },
+    {
+      "id": "espn-4",
+      "publisher": "espn",
+      "week": 4,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.195Z",
+      "rawSha256": "be6f1ec742aee5adc9503681b2f2b816d66e80c242a0c579b0a8824b5b6881eb",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/espn-4.html"
+    },
+    {
+      "id": "nfl-5",
+      "publisher": "nfl",
+      "week": 5,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-5",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-5",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.140Z",
+      "rawSha256": "58d0c85498216bab509faccca2564511e6cf8b4f5231e3893cfe6e16322300e4",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/nfl-5.html"
+    },
+    {
+      "id": "espn-5",
+      "publisher": "espn",
+      "week": 5,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.499Z",
+      "rawSha256": "11452a662b5f9db93631ac3a9ed0d41ce8b21aca05ef4ae47846443f9a72dbda",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/espn-5.html"
+    },
+    {
+      "id": "nfl-6",
+      "publisher": "nfl",
+      "week": 6,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-6",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-6",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.259Z",
+      "rawSha256": "c1254c6ab1ef644682a5dc9295926ac6c9bd333ce48d8c909b0faa50972dd963",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/nfl-6.html"
+    },
+    {
+      "id": "espn-6",
+      "publisher": "espn",
+      "week": 6,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.489Z",
+      "rawSha256": "90430edd5f0fb73213334a5ebbd0fa790867c052321d8892cf3a999acb6ed4fa",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/espn-6.html"
+    },
+    {
+      "id": "nfl-7",
+      "publisher": "nfl",
+      "week": 7,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.213Z",
+      "rawSha256": "2895f800a1aedc70d10305ee73ace2123815c67a3d9ecd9771ce4ae9ec035a78",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/nfl-7.html"
+    },
+    {
+      "id": "espn-7",
+      "publisher": "espn",
+      "week": 7,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-25T20:29:05.517Z",
+      "rawSha256": "ef2078af74ba9288503988390272588d672db243dbb8b547be6d6cb9502a011d",
+      "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/espn-7.html"
+    }
+  ],
+  "proofs": {
+    "rams-7": {
+      "publishedAt": "2026-10-25T19:14:08.181Z",
+      "exactListExcerpt": "QB Ty Simpson (emergency 3rd QB) CB Trent McDuffie (groin) ILB Nate Landman (concussion) OL Bill Murray OL Keagen Trost",
+      "reports": [
+        {
+          "teamSlug": "los-angeles-rams",
+          "complete": true,
+          "players": [
+            {
+              "name": "Bill Murray",
+              "designation": "inactive"
+            },
+            {
+              "name": "Keagen Trost",
+              "designation": "inactive"
+            },
+            {
+              "name": "Max Klare",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nate Landman",
+              "designation": "inactive"
+            },
+            {
+              "name": "Trent McDuffie",
+              "designation": "inactive"
+            },
+            {
+              "name": "Ty Simpson",
+              "designation": "emergency_qb"
+            }
+          ]
+        }
+      ]
+    },
+    "raiders-8": {
+      "publishedAt": "2026-10-25T18:55:00Z",
+      "exactListExcerpt": "QB Aidan O'Connell (emergency 3rd QB) S Tristin McCollum S Dalton Johnson DE Cian Slone G Bryce Cabeldue DT Jonah",
+      "reports": [
+        {
+          "teamSlug": "las-vegas-raiders",
+          "complete": true,
+          "players": [
+            {
+              "name": "Aidan O'Connell",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Bryce Cabeldue",
+              "designation": "inactive"
+            },
+            {
+              "name": "Cian Slone",
+              "designation": "inactive"
+            },
+            {
+              "name": "Dalton Johnson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jonah Laulu",
+              "designation": "inactive"
+            },
+            {
+              "name": "Thomas Booker IV",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tristin McCollum",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "espnInjuries": {
+      "reports": [
+        {
+          "teamSlug": "los-angeles-rams",
+          "complete": true,
+          "players": [
+            {
+              "name": "Bill Murray",
+              "designation": "inactive"
+            },
+            {
+              "name": "Keagen Trost",
+              "designation": "inactive"
+            },
+            {
+              "name": "Max Klare",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nate Landman",
+              "designation": "inactive"
+            },
+            {
+              "name": "Trent McDuffie",
+              "designation": "inactive"
+            },
+            {
+              "name": "Ty Simpson",
+              "designation": "emergency_qb"
+            }
+          ],
+          "explicitFlagCount": 6,
+          "observations": [
+            {
+              "player": "Trent McDuffie",
+              "date": "2026-10-25T19:30Z",
+              "flag": "INACTIVE",
+              "comment": "McDuffie (groin) is inactive for Sunday's game against the Raiders, Sarah Barshop of ESPN.com reports."
+            },
+            {
+              "player": "Ty Simpson",
+              "date": "2026-10-25T19:27Z",
+              "flag": "INACTIVE",
+              "comment": "Simpson (coach's decision) is inactive but will serve as the Rams' emergency third quarterback against the Raiders on Sunday, Sarah Barshop of ESPN.com reports."
+            },
+            {
+              "player": "Keagen Trost",
+              "date": "2026-10-25T19:05Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Bill Murray",
+              "date": "2026-10-25T19:05Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Max Klare",
+              "date": "2026-10-25T19:05Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Nate Landman",
+              "date": "2026-10-25T19:05Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "las-vegas-raiders",
+          "complete": true,
+          "players": [
+            {
+              "name": "Aidan O'Connell",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Bryce Cabeldue",
+              "designation": "inactive"
+            },
+            {
+              "name": "Cian Slone",
+              "designation": "inactive"
+            },
+            {
+              "name": "Dalton Johnson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jonah Laulu",
+              "designation": "inactive"
+            },
+            {
+              "name": "Thomas Booker IV",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tristin McCollum",
+              "designation": "inactive"
+            }
+          ],
+          "explicitFlagCount": 7,
+          "observations": [
+            {
+              "player": "Aidan O'Connell",
+              "date": "2026-10-25T19:24Z",
+              "flag": "INACTIVE",
+              "comment": "O'Connell (coach's decision) is inactive but will serve as the Raiders' emergency third quarterback against the Rams on Sunday."
+            },
+            {
+              "player": "Cian Slone",
+              "date": "2026-10-25T19:05Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Dalton Johnson",
+              "date": "2026-10-25T19:05Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Jonah Laulu",
+              "date": "2026-10-25T19:05Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Tristin McCollum",
+              "date": "2026-10-25T19:05Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Thomas Booker IV",
+              "date": "2026-10-25T19:05Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            },
+            {
+              "player": "Bryce Cabeldue",
+              "date": "2026-10-25T19:05Z",
+              "flag": "INACTIVE",
+              "comment": "inactive"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "coverage": [
+    {
+      "teamSlug": "los-angeles-rams",
+      "teamName": "Los Angeles Rams",
+      "primary": "rams-7",
+      "secondary": "espnInjuries",
+      "count": 6,
+      "emergency": "Ty Simpson",
+      "opponent": "Raiders"
+    },
+    {
+      "teamSlug": "las-vegas-raiders",
+      "teamName": "Las Vegas Raiders",
+      "primary": "raiders-8",
+      "secondary": "espnInjuries",
+      "count": 7,
+      "emergency": "Aidan O'Connell",
+      "opponent": "Rams"
+    }
+  ],
+  "sourceScope": "Actual full two-source review of all 107 result facts through Week 7 (102 finals, 5 ungraded upcoming/live). Every final flag, game identity and both final scores agree; all 32 W-L-T/PF/PA rows match fresh ESPN. Provisional scores are not published. Future Weeks 8–18 retain planning scope.",
+  "priorContextAudit": "The archived Denver run now separately indexes its actually captured Mile High Report membership context with original 19:31 retrieval time; it remains outside that run’s two required publication sources."
+}
