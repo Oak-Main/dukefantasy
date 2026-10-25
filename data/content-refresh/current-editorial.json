@@ -7778,6 +7778,132 @@
         "https://www.fftoday.com/nfl/26-inactives-wk7.html",
         "https://www.thephinsider.com/miami-dolphins-injuries/124100/dolphins-vs-jets-inactives-willie-gay-jr-out-with-continued-illness-breece-hall-out-for-new-york"
       ]
+    },
+    {
+      "gameId": "401873014",
+      "week": 7,
+      "teamSlug": "indianapolis-colts",
+      "publishedAt": "2026-10-25T15:32:06.226Z",
+      "checkedAt": "2026-10-25T17:01:11.149Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Anthony Gould",
+          "designation": "inactive"
+        },
+        {
+          "name": "Bryce Boettcher",
+          "designation": "inactive"
+        },
+        {
+          "name": "CJ Allen",
+          "designation": "inactive"
+        },
+        {
+          "name": "Dalton Tucker",
+          "designation": "inactive"
+        },
+        {
+          "name": "Riley Leonard",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "Sauce Gardner",
+          "designation": "inactive"
+        },
+        {
+          "name": "Tyler Warren",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.colts.com/news/colts-announce-7-inactive-players-for-week-7-game-at-minnesota-vikings",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "gameId": "401873017",
+      "week": 7,
+      "teamSlug": "atlanta-falcons",
+      "publishedAt": "2026-10-25T15:29:36.331Z",
+      "checkedAt": "2026-10-25T17:01:11.149Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Andy Dalton",
+          "designation": "inactive"
+        },
+        {
+          "name": "Avieon Terrell",
+          "designation": "inactive"
+        },
+        {
+          "name": "Billy Bowman Jr.",
+          "designation": "inactive"
+        },
+        {
+          "name": "Brian Robinson Jr.",
+          "designation": "inactive"
+        },
+        {
+          "name": "Divine Deablo",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jack Strand",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "Olamide Zaccheaus",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.atlantafalcons.com/news/atlanta-falcons-week-7-inactives-vs-san-francisco-49ers",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "gameId": "401873018",
+      "week": 7,
+      "teamSlug": "carolina-panthers",
+      "publishedAt": "2026-10-25T15:33:03.841Z",
+      "checkedAt": "2026-10-25T17:01:11.149Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "AJ Dillon",
+          "designation": "inactive"
+        },
+        {
+          "name": "Haynes King",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "Ja'Tavion Sanders",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jaelan Phillips",
+          "designation": "inactive"
+        },
+        {
+          "name": "Sam Hecht",
+          "designation": "inactive"
+        },
+        {
+          "name": "Stone Forsythe",
+          "designation": "inactive"
+        },
+        {
+          "name": "TeRah Edwards",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.panthers.com/news/week-7-inactives-vs-tampa-bay-no-jaelan-phillips-this-week",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
     }
   ]
 }

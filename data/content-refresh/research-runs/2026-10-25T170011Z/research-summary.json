@@ -1,0 +1,18 @@
+{
+  "run": "2026-10-25T170011Z",
+  "baseCommit": "998e5d1b0b465de3ff3024e56745c7e21faef45c",
+  "changedFacts": 3,
+  "moduleReviews": 0,
+  "newCompleteLists": 3,
+  "newEntries": 21,
+  "totalCompleteLists": 18,
+  "totalEntries": 117,
+  "emergencyQuarterbacks": 11,
+  "newEmergencyQuarterbacks": [
+    "Riley Leonard",
+    "Jack Strand",
+    "Haynes King"
+  ],
+  "earlyWindowCoverage": "All seven early Sunday matchups now have complete corroborated lists for both teams.",
+  "preserved": "Snapshot and all 272 games/international metadata, 95 finals/standings, injury/reserve data, 389 practices, 15 prior complete lists, manifest and every module date."
+}
