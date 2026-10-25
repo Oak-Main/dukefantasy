@@ -1,0 +1,304 @@
+{
+  "sources": [
+    {
+      "id": "seahawks",
+      "requestedUrl": "https://www.seahawks.com/news/seahawks-vs-chiefs-week-7-inactives",
+      "resolvedUrl": "https://www.seahawks.com/news/seahawks-vs-chiefs-week-7-inactives",
+      "status": 200,
+      "checkedAt": "2026-10-25T23:17:11.516Z",
+      "publishedAt": "2026-10-25T22:50:54.297Z",
+      "rawSha256": "0dad0904bfc81d6abb54d32ffe380083a9dfe997a5f4d055f448b1447024f98d",
+      "rawFile": "outputs/week7-automation/2026-10-25T231517Z/seahawks.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "chiefs",
+      "requestedUrl": "https://www.chiefs.com/news/week-7-inactive-players-chiefs-vs-seahawks",
+      "resolvedUrl": "https://www.chiefs.com/news/week-7-inactive-players-chiefs-vs-seahawks",
+      "status": 200,
+      "checkedAt": "2026-10-25T23:17:30.758Z",
+      "publishedAt": "2026-10-25T23:03:11.568Z",
+      "rawSha256": "5cbb24a832820ce777b961c264f65b470227d65e8210c92557d5b139c1a16925",
+      "rawFile": "outputs/week7-automation/2026-10-25T231517Z/chiefs.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "atoz",
+      "requestedUrl": "https://atozsports.com/nfl/kansas-city-chiefs-news/chiefs-inactive-players-list-week-7-vs-seahawks/",
+      "resolvedUrl": "https://atozsports.com/nfl/kansas-city-chiefs-news/chiefs-inactive-players-list-week-7-vs-seahawks/",
+      "status": 200,
+      "checkedAt": "2026-10-25T23:17:11.648Z",
+      "publishedAt": "2026-10-25T23:03:49+00:00",
+      "rawSha256": "e5d969b18767bf4eab2f8a7ba481f9e6452cf84e2faa3f5ac7e082749e0d4234",
+      "rawFile": "outputs/week7-automation/2026-10-25T231517Z/atoz.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "cowboysUpdates",
+      "requestedUrl": "https://www.dallascowboys.com/news/updates-october-2026",
+      "resolvedUrl": "https://www.dallascowboys.com/news/updates-october-2026",
+      "status": 200,
+      "checkedAt": "2026-10-25T23:17:30.806Z",
+      "publishedAt": "2026-10-25T18:05:00Z",
+      "rawSha256": "1757d361bcbefe5c9d25ac37dd7f7eb8b9692ebbe5e9b1aeb1cbd3944ef99459",
+      "rawFile": "outputs/week7-automation/2026-10-25T231517Z/cowboysUpdates.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "espnInjuries",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "status": 200,
+      "rawSha256": "13e2ddbac2c63ef44b6890c68accf1b2f8f98c4e97fee286feab419890aaec39",
+      "checkedAt": "2026-10-25T23:15:56.597Z",
+      "title": null,
+      "publishedAt": null,
+      "modifiedAt": null,
+      "reportedWeek": 7,
+      "rawFile": "outputs/week7-automation/2026-10-25T231517Z/espnInjuries.html"
+    }
+  ],
+  "proofs": {
+    "seahawks": {
+      "publishedAt": "2026-10-25T22:50:54.297Z",
+      "exactListExcerpt": "QB Drew Lock (emergency third QB) RB Zach Charbonnet LB Drake Thomas RB Robert Henry Jr. LB Chazz Surratt LB Connor O'Toole G Beau Stephens ",
+      "reports": [
+        {
+          "teamSlug": "seattle-seahawks",
+          "complete": true,
+          "players": [
+            {
+              "name": "Beau Stephens",
+              "designation": "inactive"
+            },
+            {
+              "name": "Chazz Surratt",
+              "designation": "inactive"
+            },
+            {
+              "name": "Connor O'Toole",
+              "designation": "inactive"
+            },
+            {
+              "name": "Drake Thomas",
+              "designation": "inactive"
+            },
+            {
+              "name": "Drew Lock",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Robert Henry Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Zach Charbonnet",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "chiefs": {
+      "publishedAt": "2026-10-25T23:03:11.568Z",
+      "exactListExcerpt": "4 WR Rashee Rice 19 QB Garrett Nussmeier (3rd QB) 22 DB Jadon Canady 47 FB Ben VanSumeren 54 DE Jack Pyburn 77 OL Jaylon Moore ",
+      "reports": [
+        {
+          "teamSlug": "kansas-city-chiefs",
+          "complete": true,
+          "players": [
+            {
+              "name": "Ben VanSumeren",
+              "designation": "inactive"
+            },
+            {
+              "name": "Garrett Nussmeier",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Jack Pyburn",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jadon Canady",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jaylon Moore",
+              "designation": "inactive"
+            },
+            {
+              "name": "Rashee Rice",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "atoz": {
+      "publishedAt": "2026-10-25T23:03:49+00:00",
+      "exactListExcerpt": " QB Garrett Nussmeier (Emergency 3rd QB) FB Ben VanSumeren DB Jadon Canady DE Jack Pyburn WR Rashee Rice OT Jaylon Moore ",
+      "reports": [
+        {
+          "teamSlug": "kansas-city-chiefs",
+          "complete": true,
+          "players": [
+            {
+              "name": "Ben VanSumeren",
+              "designation": "inactive"
+            },
+            {
+              "name": "Garrett Nussmeier",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Jack Pyburn",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jadon Canady",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jaylon Moore",
+              "designation": "inactive"
+            },
+            {
+              "name": "Rashee Rice",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "cowboysUpdates": {
+      "publishedAt": "2026-10-25T18:05:00Z",
+      "reportDate": "2026-10-25",
+      "players": [
+        "Marist Liufau",
+        "P.J. Locke"
+      ],
+      "status": "IR; Week 7 OUT",
+      "excerpt": "Oct. 25 Marist Liufau #35 OLB Height: 6-2 Weight: 238 lbs College: Notre Dame 12:21 -- Despite opening the practice window this week for both players, the Cowboys have ruled out Marist Liufau and P.J. Locke for this week's game in Philly. Liufau (wrist) and Locke (foot) are both still on IR-designated for return but were able to practice this week after the Cowboys opened the 21-day window. Still, neither player seems ready enough for action against the Eagles on Monday night. But with the Cowboys coming back on a short week to prepare for Arizona on Nov. 1, it's likely both players could have a chance to return for that. The Cowboys would have to create two spots for them on the 53-man roster. ------------------ "
+    },
+    "espnInjuries": {
+      "reports": [
+        {
+          "teamSlug": "seattle-seahawks",
+          "complete": true,
+          "players": [
+            {
+              "name": "Beau Stephens",
+              "designation": "inactive"
+            },
+            {
+              "name": "Chazz Surratt",
+              "designation": "inactive"
+            },
+            {
+              "name": "Connor O'Toole",
+              "designation": "inactive"
+            },
+            {
+              "name": "Drake Thomas",
+              "designation": "inactive"
+            },
+            {
+              "name": "Drew Lock",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Robert Henry Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Zach Charbonnet",
+              "designation": "inactive"
+            }
+          ],
+          "explicitFlagCount": 7
+        }
+      ],
+      "reserveClaims": [
+        {
+          "player": "P.J. Locke",
+          "status": "IR; Week 7 OUT",
+          "asOf": "2026-10-25"
+        },
+        {
+          "player": "Marist Liufau",
+          "status": "IR; Week 7 OUT",
+          "asOf": "2026-10-25"
+        }
+      ],
+      "observations": [
+        {
+          "name": "Connor O'Toole",
+          "date": "2026-10-25T23:05Z",
+          "flag": "INACTIVE",
+          "comment": "O'Toole (hamstring) is inactive for Sunday night's game against the Chiefs."
+        },
+        {
+          "name": "Drew Lock",
+          "date": "2026-10-25T23:00Z",
+          "flag": "INACTIVE",
+          "comment": "Lock (elbow) is inactive but serving as the Seahawks' emergency third quarterback for Sunday night's contest against the Chiefs, Curtis Crabtree of Fox 13 Seattle reports."
+        },
+        {
+          "name": "Beau Stephens",
+          "date": "2026-10-25T22:52Z",
+          "flag": "INACTIVE",
+          "comment": "inactive"
+        },
+        {
+          "name": "Chazz Surratt",
+          "date": "2026-10-25T22:52Z",
+          "flag": "INACTIVE",
+          "comment": "inactive"
+        },
+        {
+          "name": "Drake Thomas",
+          "date": "2026-10-25T22:52Z",
+          "flag": "INACTIVE",
+          "comment": "inactive"
+        },
+        {
+          "name": "Robert Henry Jr.",
+          "date": "2026-10-25T22:52Z",
+          "flag": "INACTIVE",
+          "comment": "inactive"
+        },
+        {
+          "name": "Zach Charbonnet",
+          "date": "2026-10-25T22:52Z",
+          "flag": "INACTIVE",
+          "comment": "inactive"
+        }
+      ]
+    }
+  },
+  "coverage": [
+    {
+      "teamSlug": "seattle-seahawks",
+      "teamName": "Seattle Seahawks",
+      "primary": "seahawks",
+      "secondary": "espnInjuries",
+      "count": 7,
+      "emergency": "Drew Lock"
+    },
+    {
+      "teamSlug": "kansas-city-chiefs",
+      "teamName": "Kansas City Chiefs",
+      "primary": "chiefs",
+      "secondary": "atoz",
+      "count": 6,
+      "emergency": "Garrett Nussmeier"
+    }
+  ],
+  "sourceScope": "Partial complete Seattle/Kansas City additions plus two October 25 Dallas reserve designations. All module dates, full review dates, game data and prior practice/inactive history retained.",
+  "excluded": [
+    "ESPN Chiefs set lacks Jaylon Moore and current explicit Garrett Nussmeier emergency role; required Chiefs proof uses club plus complete A to Z Sports list instead.",
+    "Dallas club calls Liufau wrist and ESPN forearm: no changed condition claim; only agreed OUT and continuing IR are published.",
+    "Earlier Seattle generic inactive-only record was held; current ESPN explicitly reports Drew Lock emergency-third role against the Chiefs."
+  ]
+}
