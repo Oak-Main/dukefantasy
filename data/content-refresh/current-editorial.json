@@ -7382,6 +7382,402 @@
         "https://www.clevelandbrowns.com/news/browns-announce-inactives-for-week-7-vs-the-titans",
         "https://www.dawgsbynature.com/cleveland-browns-injuries/136143/browns-titans-inactives-will-denzel-ward-play-today-and-titans-lose-two-players-on-offense"
       ]
+    },
+    {
+      "gameId": "401873012",
+      "week": 7,
+      "teamSlug": "cincinnati-bengals",
+      "publishedAt": "2026-10-25T15:48:45.000Z",
+      "checkedAt": "2026-10-25T16:00:36.074Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Connor Lew",
+          "designation": "inactive"
+        },
+        {
+          "name": "Landon Robinson",
+          "designation": "inactive"
+        },
+        {
+          "name": "Myles Hinton",
+          "designation": "inactive"
+        },
+        {
+          "name": "Russ Yeast",
+          "designation": "inactive"
+        },
+        {
+          "name": "Shemar Stewart",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.bengals.com/news/bengals-ravens-inactives-week-7-2026",
+        "https://www.cincyjungle.com/cincinnati-bengals-injuries/203139/ravens-inactives-shemar-stewart-trade-rumors-heat-up"
+      ]
+    },
+    {
+      "gameId": "401873012",
+      "week": 7,
+      "teamSlug": "baltimore-ravens",
+      "publishedAt": "2026-10-25T15:48:45.000Z",
+      "checkedAt": "2026-10-25T16:00:36.074Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Andrew Vorhees",
+          "designation": "inactive"
+        },
+        {
+          "name": "Broderick Washington",
+          "designation": "inactive"
+        },
+        {
+          "name": "Elijah Sarratt",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jaylinn Hawkins",
+          "designation": "inactive"
+        },
+        {
+          "name": "Lamar Jackson",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.bengals.com/news/bengals-ravens-inactives-week-7-2026",
+        "https://www.cincyjungle.com/cincinnati-bengals-injuries/203139/ravens-inactives-shemar-stewart-trade-rumors-heat-up"
+      ]
+    },
+    {
+      "gameId": "401873013",
+      "week": 7,
+      "teamSlug": "tennessee-titans",
+      "publishedAt": "2026-10-25T15:36:00.000Z",
+      "checkedAt": "2026-10-25T16:00:36.088Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Brandon Crenshaw-Dickson",
+          "designation": "inactive"
+        },
+        {
+          "name": "Calvin Ridley",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jackie Marshall",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jaylon Jones",
+          "designation": "inactive"
+        },
+        {
+          "name": "Kylen Granson",
+          "designation": "inactive"
+        },
+        {
+          "name": "Nick Singleton",
+          "designation": "inactive"
+        },
+        {
+          "name": "Tyjae Spears",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.nfl.com/news/nfl-week-7-inactives-players-ruled-out-sunday-2026-season",
+        "https://www.dawgsbynature.com/cleveland-browns-injuries/136143/browns-titans-inactives-will-denzel-ward-play-today-and-titans-lose-two-players-on-offense"
+      ]
+    },
+    {
+      "gameId": "401873014",
+      "week": 7,
+      "teamSlug": "minnesota-vikings",
+      "publishedAt": "2026-10-25T15:40:51.000Z",
+      "checkedAt": "2026-10-25T16:00:36.100Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Caleb Tiernan",
+          "designation": "inactive"
+        },
+        {
+          "name": "Chuck Demmings",
+          "designation": "inactive"
+        },
+        {
+          "name": "Demond Claiborne",
+          "designation": "inactive"
+        },
+        {
+          "name": "Elijah Williams",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jakobe Thomas",
+          "designation": "inactive"
+        },
+        {
+          "name": "Max Brosmer",
+          "designation": "emergency_qb"
+        }
+      ],
+      "sources": [
+        "https://www.vikings.com/news/inactives-colts-week-7-2026",
+        "https://www.dailynorseman.com/minnesota-vikings-news/100715/indianapolis-colts-minnesota-vikings-inactive-lists"
+      ]
+    },
+    {
+      "gameId": "401873016",
+      "week": 7,
+      "teamSlug": "new-york-giants",
+      "publishedAt": "2026-10-25T15:44:22.000Z",
+      "checkedAt": "2026-10-25T16:00:36.092Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Greg Newsome II",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jake Haener",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "Jevon Holland",
+          "designation": "inactive"
+        },
+        {
+          "name": "Josh Sills",
+          "designation": "inactive"
+        },
+        {
+          "name": "Marcus Mbow",
+          "designation": "inactive"
+        },
+        {
+          "name": "Nikko Reed",
+          "designation": "inactive"
+        },
+        {
+          "name": "Theo Johnson",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.giants.com/news/inactives-who-s-in-who-s-out-for-giants-at-texans",
+        "https://www.bigblueview.com/new-york-giants-roster/177302/inactives-tyler-nubin-jermaine-eluemunor-available-for-new-york"
+      ]
+    },
+    {
+      "gameId": "401873016",
+      "week": 7,
+      "teamSlug": "houston-texans",
+      "publishedAt": "2026-10-25T15:30:32.982Z",
+      "checkedAt": "2026-10-25T16:00:32.910Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Blake Fisher",
+          "designation": "inactive"
+        },
+        {
+          "name": "David Montgomery",
+          "designation": "inactive"
+        },
+        {
+          "name": "Febechi Nwaiwu",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jalen Pitre",
+          "designation": "inactive"
+        },
+        {
+          "name": "Marlin Klein",
+          "designation": "inactive"
+        },
+        {
+          "name": "Nate Thomas",
+          "designation": "inactive"
+        },
+        {
+          "name": "Reed Blankenship",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.houstontexans.com/news/texans-inactives-week-7-vs-new-york-giants",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
+      ]
+    },
+    {
+      "gameId": "401873017",
+      "week": 7,
+      "teamSlug": "san-francisco-49ers",
+      "publishedAt": "2026-10-25T15:48:28.000Z",
+      "checkedAt": "2026-10-25T16:00:36.063Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Deebo Samuel",
+          "designation": "inactive"
+        },
+        {
+          "name": "Garret Wallow",
+          "designation": "inactive"
+        },
+        {
+          "name": "Kurtis Rourke",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "Luke Gifford",
+          "designation": "inactive"
+        },
+        {
+          "name": "Marques Sigle",
+          "designation": "inactive"
+        },
+        {
+          "name": "Mike Evans",
+          "designation": "inactive"
+        },
+        {
+          "name": "Nick Bosa",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.nfl.com/news/nfl-week-7-inactives-players-ruled-out-sunday-2026-season",
+        "https://www.ninersnation.com/san-francisco-49ers-injuries/164787/49ers-inactive-list-the-top-4-wrs-from-week-1-wont-play"
+      ]
+    },
+    {
+      "gameId": "401873018",
+      "week": 7,
+      "teamSlug": "tampa-bay-buccaneers",
+      "publishedAt": "2026-10-25T15:30:00.000Z",
+      "checkedAt": "2026-10-25T16:00:32.690Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Antoine Winfield Jr.",
+          "designation": "inactive"
+        },
+        {
+          "name": "Ayden Garnes",
+          "designation": "inactive"
+        },
+        {
+          "name": "Billy Schrauth",
+          "designation": "inactive"
+        },
+        {
+          "name": "DeMonte Capehart",
+          "designation": "inactive"
+        },
+        {
+          "name": "Emeka Egbuka",
+          "designation": "inactive"
+        },
+        {
+          "name": "Luke Goedeke",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.buccaneers.com/news/bucs-panthers-inactives-baker-mayfield-returns-action",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
+      ]
+    },
+    {
+      "gameId": "401873015",
+      "week": 7,
+      "teamSlug": "new-york-jets",
+      "publishedAt": "2026-10-25T15:50:34.000Z",
+      "checkedAt": "2026-10-25T16:00:36.152Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Breece Hall",
+          "designation": "inactive"
+        },
+        {
+          "name": "Dylan Parham",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jack Heflin",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jarvis Brownlee Jr.",
+          "designation": "inactive"
+        },
+        {
+          "name": "Joseph Ossai",
+          "designation": "inactive"
+        },
+        {
+          "name": "Kene Nwangwu",
+          "designation": "inactive"
+        },
+        {
+          "name": "Max Mitchell",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.nfl.com/news/nfl-week-7-inactives-players-ruled-out-sunday-2026-season",
+        "https://www.thephinsider.com/miami-dolphins-injuries/124100/dolphins-vs-jets-inactives-willie-gay-jr-out-with-continued-illness-breece-hall-out-for-new-york"
+      ]
+    },
+    {
+      "gameId": "401873015",
+      "week": 7,
+      "teamSlug": "miami-dolphins",
+      "publishedAt": "2026-10-25T15:50:34.000Z",
+      "checkedAt": "2026-10-25T16:00:36.152Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Chukwuebuka Godrick",
+          "designation": "inactive"
+        },
+        {
+          "name": "DJ Campbell",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jalen Tolbert",
+          "designation": "inactive"
+        },
+        {
+          "name": "Marcellas Dial Jr.",
+          "designation": "inactive"
+        },
+        {
+          "name": "Reese Taylor",
+          "designation": "inactive"
+        },
+        {
+          "name": "Robert Beal Jr.",
+          "designation": "inactive"
+        },
+        {
+          "name": "Willie Gay Jr.",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+        "https://www.thephinsider.com/miami-dolphins-injuries/124100/dolphins-vs-jets-inactives-willie-gay-jr-out-with-continued-illness-breece-hall-out-for-new-york"
+      ]
     }
   ]
 }
