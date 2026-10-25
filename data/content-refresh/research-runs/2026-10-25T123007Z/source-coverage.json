@@ -1,0 +1,428 @@
+{
+  "proofs": {
+    "article-0": [
+      {
+        "teamSlug": "pittsburgh-steelers",
+        "players": [
+          {
+            "name": "Ben Skowronek",
+            "designation": "inactive"
+          },
+          {
+            "name": "Brandin Echols",
+            "designation": "inactive"
+          },
+          {
+            "name": "Drew Allar",
+            "designation": "inactive"
+          },
+          {
+            "name": "Eli Heidenreich",
+            "designation": "inactive"
+          },
+          {
+            "name": "Terell Smith",
+            "designation": "inactive"
+          },
+          {
+            "name": "Will Howard",
+            "designation": "emergency_qb"
+          }
+        ]
+      },
+      {
+        "teamSlug": "new-orleans-saints",
+        "players": [
+          {
+            "name": "Cesar Ruiz",
+            "designation": "inactive"
+          },
+          {
+            "name": "John Ridgeway III",
+            "designation": "inactive"
+          },
+          {
+            "name": "Mike Reid",
+            "designation": "inactive"
+          },
+          {
+            "name": "Nathan Shepherd",
+            "designation": "inactive"
+          },
+          {
+            "name": "Treyton Welch",
+            "designation": "inactive"
+          },
+          {
+            "name": "Tyree Wilson",
+            "designation": "inactive"
+          },
+          {
+            "name": "Zach Wilson",
+            "designation": "emergency_qb"
+          }
+        ]
+      }
+    ],
+    "depot": [
+      {
+        "teamSlug": "pittsburgh-steelers",
+        "players": [
+          {
+            "name": "Ben Skowronek",
+            "designation": "inactive"
+          },
+          {
+            "name": "Brandin Echols",
+            "designation": "inactive"
+          },
+          {
+            "name": "Drew Allar",
+            "designation": "inactive"
+          },
+          {
+            "name": "Eli Heidenreich",
+            "designation": "inactive"
+          },
+          {
+            "name": "Terell Smith",
+            "designation": "inactive"
+          },
+          {
+            "name": "Will Howard",
+            "designation": "emergency_qb"
+          }
+        ]
+      },
+      {
+        "teamSlug": "new-orleans-saints",
+        "players": [
+          {
+            "name": "Cesar Ruiz",
+            "designation": "inactive"
+          },
+          {
+            "name": "John Ridgeway III",
+            "designation": "inactive"
+          },
+          {
+            "name": "Mike Reid",
+            "designation": "inactive"
+          },
+          {
+            "name": "Nathan Shepherd",
+            "designation": "inactive"
+          },
+          {
+            "name": "Treyton Welch",
+            "designation": "inactive"
+          },
+          {
+            "name": "Tyree Wilson",
+            "designation": "inactive"
+          },
+          {
+            "name": "Zach Wilson",
+            "designation": "emergency_qb"
+          }
+        ]
+      }
+    ],
+    "fftoday": [
+      {
+        "teamSlug": "new-england-patriots",
+        "players": [
+          {
+            "name": "Behren Morton",
+            "designation": "unmarked"
+          },
+          {
+            "name": "Ben Brown",
+            "designation": "unmarked"
+          },
+          {
+            "name": "Carlton Davis III",
+            "designation": "unmarked"
+          },
+          {
+            "name": "Channing Canada",
+            "designation": "unmarked"
+          },
+          {
+            "name": "Joshua Farmer",
+            "designation": "unmarked"
+          },
+          {
+            "name": "Karon Prunty",
+            "designation": "unmarked"
+          }
+        ]
+      },
+      {
+        "teamSlug": "chicago-bears",
+        "players": [
+          {
+            "name": "Case Keenum",
+            "designation": "unmarked"
+          },
+          {
+            "name": "Jack Sanborn",
+            "designation": "unmarked"
+          },
+          {
+            "name": "Jayden Loving",
+            "designation": "unmarked"
+          },
+          {
+            "name": "Jordan McFadden",
+            "designation": "unmarked"
+          },
+          {
+            "name": "Kyle Monangai",
+            "designation": "unmarked"
+          },
+          {
+            "name": "Nick McCloud",
+            "designation": "unmarked"
+          },
+          {
+            "name": "T.J. Edwards",
+            "designation": "unmarked"
+          }
+        ]
+      },
+      {
+        "teamSlug": "pittsburgh-steelers",
+        "players": [
+          {
+            "name": "Ben Skowronek",
+            "designation": "inactive"
+          },
+          {
+            "name": "Brandin Echols",
+            "designation": "inactive"
+          },
+          {
+            "name": "Drew Allar",
+            "designation": "inactive"
+          },
+          {
+            "name": "Eli Heidenreich",
+            "designation": "inactive"
+          },
+          {
+            "name": "Terell Smith",
+            "designation": "inactive"
+          },
+          {
+            "name": "Will Howard",
+            "designation": "emergency_qb"
+          }
+        ]
+      },
+      {
+        "teamSlug": "new-orleans-saints",
+        "players": [
+          {
+            "name": "Cesar Ruiz",
+            "designation": "inactive"
+          },
+          {
+            "name": "John Ridgeway III",
+            "designation": "inactive"
+          },
+          {
+            "name": "Mike Reid",
+            "designation": "inactive"
+          },
+          {
+            "name": "Nathan Shepherd",
+            "designation": "inactive"
+          },
+          {
+            "name": "Treyton Welch",
+            "designation": "inactive"
+          },
+          {
+            "name": "Tyree Wilson",
+            "designation": "inactive"
+          },
+          {
+            "name": "Zach Wilson",
+            "designation": "emergency_qb"
+          }
+        ]
+      }
+    ],
+    "nflThursday": [
+      {
+        "teamSlug": "new-england-patriots",
+        "players": [
+          {
+            "name": "Behren Morton",
+            "designation": "emergency_qb"
+          },
+          {
+            "name": "Ben Brown",
+            "designation": "inactive"
+          },
+          {
+            "name": "Carlton Davis III",
+            "designation": "inactive"
+          },
+          {
+            "name": "Channing Canada",
+            "designation": "inactive"
+          },
+          {
+            "name": "Joshua Farmer",
+            "designation": "inactive"
+          },
+          {
+            "name": "Karon Prunty",
+            "designation": "inactive"
+          }
+        ]
+      },
+      {
+        "teamSlug": "chicago-bears",
+        "players": [
+          {
+            "name": "Case Keenum",
+            "designation": "emergency_qb"
+          },
+          {
+            "name": "Jack Sanborn",
+            "designation": "inactive"
+          },
+          {
+            "name": "Jayden Loving",
+            "designation": "inactive"
+          },
+          {
+            "name": "Jordan McFadden",
+            "designation": "inactive"
+          },
+          {
+            "name": "Kyle Monangai",
+            "designation": "inactive"
+          },
+          {
+            "name": "Nick McCloud",
+            "designation": "inactive"
+          },
+          {
+            "name": "T.J. Edwards",
+            "designation": "inactive"
+          }
+        ]
+      }
+    ],
+    "nbcThursday": [
+      {
+        "teamSlug": "new-england-patriots",
+        "players": [
+          {
+            "name": "Behren Morton",
+            "designation": "emergency_qb"
+          },
+          {
+            "name": "Ben Brown",
+            "designation": "inactive"
+          },
+          {
+            "name": "Carlton Davis III",
+            "designation": "inactive"
+          },
+          {
+            "name": "Channing Canada",
+            "designation": "inactive"
+          },
+          {
+            "name": "Joshua Farmer",
+            "designation": "inactive"
+          },
+          {
+            "name": "Karon Prunty",
+            "designation": "inactive"
+          }
+        ]
+      },
+      {
+        "teamSlug": "chicago-bears",
+        "players": [
+          {
+            "name": "Case Keenum",
+            "designation": "emergency_qb"
+          },
+          {
+            "name": "Jack Sanborn",
+            "designation": "inactive"
+          },
+          {
+            "name": "Jayden Loving",
+            "designation": "inactive"
+          },
+          {
+            "name": "Jordan McFadden",
+            "designation": "inactive"
+          },
+          {
+            "name": "Kyle Monangai",
+            "designation": "inactive"
+          },
+          {
+            "name": "Nick McCloud",
+            "designation": "inactive"
+          },
+          {
+            "name": "T.J. Edwards",
+            "designation": "inactive"
+          }
+        ]
+      }
+    ]
+  },
+  "coverage": [
+    {
+      "key": "401873010:new-england-patriots",
+      "primary": [
+        "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears"
+      ],
+      "secondary": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
+      ]
+    },
+    {
+      "key": "401873010:chicago-bears",
+      "primary": [
+        "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears"
+      ],
+      "secondary": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
+      ]
+    },
+    {
+      "key": "401873011:pittsburgh-steelers",
+      "primary": [
+        "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints"
+      ],
+      "secondary": [
+        "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
+      ]
+    },
+    {
+      "key": "401873011:new-orleans-saints",
+      "primary": [
+        "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints"
+      ],
+      "secondary": [
+        "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
+      ]
+    }
+  ]
+}

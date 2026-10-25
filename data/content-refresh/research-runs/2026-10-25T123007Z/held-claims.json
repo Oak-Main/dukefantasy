@@ -1,0 +1,16 @@
+{
+  "claims": [
+    {
+      "claim": "Saints article opening names the New York Giants",
+      "decision": "Reject that conflicting boilerplate/opponent line as game-identity evidence. The required two-source proof uses the correct Steelers Week 7 official article plus Steelers Depot and FFToday; all identify the current Paris matchup and matching complete lists."
+    },
+    {
+      "claim": "Game-day active status for players absent from inactive lists",
+      "decision": "No active status, activation or injury-designation replacement is inferred. Friday formal designations and reserve eligibility remain separately dated."
+    },
+    {
+      "claim": "Other held injury/reserve discrepancies",
+      "decision": "The prior publication and held-claims history remain unchanged."
+    }
+  ]
+}
