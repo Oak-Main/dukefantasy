@@ -7149,8 +7149,8 @@
   "moduleSources": {
     "schedule": {
       "sourceAsOf": "2026-10-25",
-      "fetchedAt": "2026-10-25T16:43:44.936Z",
-      "compiledAt": "2026-10-25T16:43:46.443Z"
+      "fetchedAt": "2026-10-25T20:14:17.611Z",
+      "compiledAt": "2026-10-25T20:15:04.308Z"
     },
     "injuries": {
       "sourceAsOf": "2026-10-20",
@@ -8058,6 +8058,86 @@
       ],
       "sources": [
         "https://www.denverbroncos.com/news/cb-pat-surtain-ii-among-broncos-inactive-players-for-week-7-game-vs-cardinals",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "gameId": "401873021",
+      "week": 7,
+      "teamSlug": "los-angeles-rams",
+      "publishedAt": "2026-10-25T19:14:08.181Z",
+      "checkedAt": "2026-10-25T20:00:48.628Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Bill Murray",
+          "designation": "inactive"
+        },
+        {
+          "name": "Keagen Trost",
+          "designation": "inactive"
+        },
+        {
+          "name": "Max Klare",
+          "designation": "inactive"
+        },
+        {
+          "name": "Nate Landman",
+          "designation": "inactive"
+        },
+        {
+          "name": "Trent McDuffie",
+          "designation": "inactive"
+        },
+        {
+          "name": "Ty Simpson",
+          "designation": "emergency_qb"
+        }
+      ],
+      "sources": [
+        "https://www.therams.com/news/trent-mcduffie-among-rams-inactives-for-week-7-2026-at-raiders",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "gameId": "401873021",
+      "week": 7,
+      "teamSlug": "las-vegas-raiders",
+      "publishedAt": "2026-10-25T18:55:00.000Z",
+      "checkedAt": "2026-10-25T20:00:48.620Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Aidan O'Connell",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "Bryce Cabeldue",
+          "designation": "inactive"
+        },
+        {
+          "name": "Cian Slone",
+          "designation": "inactive"
+        },
+        {
+          "name": "Dalton Johnson",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jonah Laulu",
+          "designation": "inactive"
+        },
+        {
+          "name": "Thomas Booker IV",
+          "designation": "inactive"
+        },
+        {
+          "name": "Tristin McCollum",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.raiders.com/news/las-vegas-raiders-week-7-inactives-vs-los-angeles-rams",
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ]
     }

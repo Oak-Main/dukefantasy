@@ -29,7 +29,7 @@
       "division": "NFC South",
       "color": "#A71930",
       "logo": "/logos/atlanta-falcons.png",
-      "record": "2-4"
+      "record": "3-4"
     },
     {
       "id": "33",
@@ -42,7 +42,7 @@
       "division": "AFC North",
       "color": "#241773",
       "logo": "/logos/baltimore-ravens.png",
-      "record": "4-2"
+      "record": "4-3"
     },
     {
       "id": "2",
@@ -68,7 +68,7 @@
       "division": "NFC South",
       "color": "#0085CA",
       "logo": "/logos/carolina-panthers.png",
-      "record": "3-2"
+      "record": "3-3"
     },
     {
       "id": "3",
@@ -94,7 +94,7 @@
       "division": "AFC North",
       "color": "#FB4F14",
       "logo": "/logos/cincinnati-bengals.png",
-      "record": "3-2"
+      "record": "4-2"
     },
     {
       "id": "5",
@@ -107,7 +107,7 @@
       "division": "AFC North",
       "color": "#311D00",
       "logo": "/logos/cleveland-browns.png",
-      "record": "4-2"
+      "record": "5-2"
     },
     {
       "id": "6",
@@ -185,7 +185,7 @@
       "division": "AFC South",
       "color": "#002C5F",
       "logo": "/logos/indianapolis-colts.png",
-      "record": "2-4"
+      "record": "2-5"
     },
     {
       "id": "30",
@@ -263,7 +263,7 @@
       "division": "AFC East",
       "color": "#008E97",
       "logo": "/logos/miami-dolphins.png",
-      "record": "0-5"
+      "record": "1-5"
     },
     {
       "id": "16",
@@ -276,7 +276,7 @@
       "division": "NFC North",
       "color": "#4F2683",
       "logo": "/logos/minnesota-vikings.png",
-      "record": "5-0"
+      "record": "6-0"
     },
     {
       "id": "17",
@@ -328,7 +328,7 @@
       "division": "AFC East",
       "color": "#125740",
       "logo": "/logos/new-york-jets.png",
-      "record": "2-4"
+      "record": "2-5"
     },
     {
       "id": "21",
@@ -367,7 +367,7 @@
       "division": "NFC West",
       "color": "#AA0000",
       "logo": "/logos/san-francisco-49ers.png",
-      "record": "6-0"
+      "record": "6-1"
     },
     {
       "id": "26",
@@ -393,7 +393,7 @@
       "division": "NFC South",
       "color": "#D50A0A",
       "logo": "/logos/tampa-bay-buccaneers.png",
-      "record": "1-5"
+      "record": "2-5"
     },
     {
       "id": "10",
@@ -406,7 +406,7 @@
       "division": "AFC South",
       "color": "#4B92DB",
       "logo": "/logos/tennessee-titans.png",
-      "record": "1-5"
+      "record": "1-6"
     },
     {
       "id": "28",
@@ -2193,10 +2193,10 @@
       "homeSlug": "baltimore-ravens",
       "awayAbbr": "CIN",
       "homeAbbr": "BAL",
-      "status": "scheduled",
-      "statusDetail": "Sun, October 25th at 1:00 PM EDT",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "final",
+      "statusDetail": "Final",
+      "awayScore": 35,
+      "homeScore": 13,
       "broadcast": "CBS",
       "venue": "M&T Bank Stadium",
       "networks": [
@@ -2210,14 +2210,18 @@
       "kickoff_pt": "Sun, Oct 25, 10:00 AM PT",
       "sources": [
         "https://www.nfl.com/games/bengals-at-ravens-2026-reg-7",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+        "https://www.nfl.com/schedules/2026/by-week/week-7"
       ],
       "verification": "two_publishers",
       "verified_fields": [
         "opponents",
         "date",
         "kickoff",
-        "primary_network"
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
       ],
       "weather": null
     },
@@ -2232,10 +2236,10 @@
       "homeSlug": "tennessee-titans",
       "awayAbbr": "CLE",
       "homeAbbr": "TEN",
-      "status": "scheduled",
-      "statusDetail": "Sun, October 25th at 1:00 PM EDT",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "final",
+      "statusDetail": "Final",
+      "awayScore": 27,
+      "homeScore": 24,
       "broadcast": "CBS",
       "venue": "Nissan Stadium",
       "networks": [
@@ -2249,14 +2253,18 @@
       "kickoff_pt": "Sun, Oct 25, 10:00 AM PT",
       "sources": [
         "https://www.nfl.com/games/browns-at-titans-2026-reg-7",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+        "https://www.nfl.com/schedules/2026/by-week/week-7"
       ],
       "verification": "two_publishers",
       "verified_fields": [
         "opponents",
         "date",
         "kickoff",
-        "primary_network"
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
       ],
       "weather": null
     },
@@ -2271,10 +2279,10 @@
       "homeSlug": "minnesota-vikings",
       "awayAbbr": "IND",
       "homeAbbr": "MIN",
-      "status": "scheduled",
-      "statusDetail": "Sun, October 25th at 1:00 PM EDT",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "final",
+      "statusDetail": "Final",
+      "awayScore": 10,
+      "homeScore": 16,
       "broadcast": "CBS",
       "venue": "U.S. Bank Stadium",
       "networks": [
@@ -2288,14 +2296,18 @@
       "kickoff_pt": "Sun, Oct 25, 10:00 AM PT",
       "sources": [
         "https://www.nfl.com/games/colts-at-vikings-2026-reg-7",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+        "https://www.nfl.com/schedules/2026/by-week/week-7"
       ],
       "verification": "two_publishers",
       "verified_fields": [
         "opponents",
         "date",
         "kickoff",
-        "primary_network"
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
       ],
       "weather": null
     },
@@ -2310,10 +2322,10 @@
       "homeSlug": "new-york-jets",
       "awayAbbr": "MIA",
       "homeAbbr": "NYJ",
-      "status": "scheduled",
-      "statusDetail": "Sun, October 25th at 1:00 PM EDT",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "final",
+      "statusDetail": "Final",
+      "awayScore": 28,
+      "homeScore": 25,
       "broadcast": "CBS",
       "venue": "MetLife Stadium",
       "networks": [
@@ -2327,14 +2339,18 @@
       "kickoff_pt": "Sun, Oct 25, 10:00 AM PT",
       "sources": [
         "https://www.nfl.com/games/dolphins-at-jets-2026-reg-7",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+        "https://www.nfl.com/schedules/2026/by-week/week-7"
       ],
       "verification": "two_publishers",
       "verified_fields": [
         "opponents",
         "date",
         "kickoff",
-        "primary_network"
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
       ],
       "weather": null
     },
@@ -2388,10 +2404,10 @@
       "homeSlug": "atlanta-falcons",
       "awayAbbr": "SF",
       "homeAbbr": "ATL",
-      "status": "scheduled",
-      "statusDetail": "Sun, October 25th at 1:00 PM EDT",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "final",
+      "statusDetail": "Final",
+      "awayScore": 20,
+      "homeScore": 29,
       "broadcast": "FOX",
       "venue": "Mercedes-Benz Stadium",
       "networks": [
@@ -2405,14 +2421,18 @@
       "kickoff_pt": "Sun, Oct 25, 10:00 AM PT",
       "sources": [
         "https://www.nfl.com/games/49ers-at-falcons-2026-reg-7",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+        "https://www.nfl.com/schedules/2026/by-week/week-7"
       ],
       "verification": "two_publishers",
       "verified_fields": [
         "opponents",
         "date",
         "kickoff",
-        "primary_network"
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
       ],
       "weather": null
     },
@@ -2427,10 +2447,10 @@
       "homeSlug": "carolina-panthers",
       "awayAbbr": "TB",
       "homeAbbr": "CAR",
-      "status": "scheduled",
-      "statusDetail": "Sun, October 25th at 1:00 PM EDT",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "final",
+      "statusDetail": "Final",
+      "awayScore": 43,
+      "homeScore": 13,
       "broadcast": "FOX",
       "venue": "Bank of America Stadium",
       "networks": [
@@ -2444,14 +2464,18 @@
       "kickoff_pt": "Sun, Oct 25, 10:00 AM PT",
       "sources": [
         "https://www.nfl.com/games/buccaneers-at-panthers-2026-reg-7",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+        "https://www.nfl.com/schedules/2026/by-week/week-7"
       ],
       "verification": "two_publishers",
       "verified_fields": [
         "opponents",
         "date",
         "kickoff",
-        "primary_network"
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
       ],
       "weather": null
     },
@@ -5635,21 +5659,21 @@
     },
     "atlanta-falcons": {
       "slug": "atlanta-falcons",
-      "wins": 2,
+      "wins": 3,
       "losses": 4,
       "ties": 0,
-      "pf": 142,
-      "pa": 153,
-      "record": "2-4"
+      "pf": 171,
+      "pa": 173,
+      "record": "3-4"
     },
     "baltimore-ravens": {
       "slug": "baltimore-ravens",
       "wins": 4,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "pf": 156,
-      "pa": 132,
-      "record": "4-2"
+      "pf": 169,
+      "pa": 167,
+      "record": "4-3"
     },
     "buffalo-bills": {
       "slug": "buffalo-bills",
@@ -5663,11 +5687,11 @@
     "carolina-panthers": {
       "slug": "carolina-panthers",
       "wins": 3,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "pf": 146,
-      "pa": 123,
-      "record": "3-2"
+      "pf": 159,
+      "pa": 166,
+      "record": "3-3"
     },
     "chicago-bears": {
       "slug": "chicago-bears",
@@ -5680,21 +5704,21 @@
     },
     "cincinnati-bengals": {
       "slug": "cincinnati-bengals",
-      "wins": 3,
-      "losses": 2,
-      "ties": 0,
-      "pf": 128,
-      "pa": 109,
-      "record": "3-2"
-    },
-    "cleveland-browns": {
-      "slug": "cleveland-browns",
       "wins": 4,
       "losses": 2,
       "ties": 0,
-      "pf": 106,
+      "pf": 163,
       "pa": 122,
       "record": "4-2"
+    },
+    "cleveland-browns": {
+      "slug": "cleveland-browns",
+      "wins": 5,
+      "losses": 2,
+      "ties": 0,
+      "pf": 133,
+      "pa": 146,
+      "record": "5-2"
     },
     "dallas-cowboys": {
       "slug": "dallas-cowboys",
@@ -5744,11 +5768,11 @@
     "indianapolis-colts": {
       "slug": "indianapolis-colts",
       "wins": 2,
-      "losses": 4,
+      "losses": 5,
       "ties": 0,
-      "pf": 144,
-      "pa": 164,
-      "record": "2-4"
+      "pf": 154,
+      "pa": 180,
+      "record": "2-5"
     },
     "jacksonville-jaguars": {
       "slug": "jacksonville-jaguars",
@@ -5797,21 +5821,21 @@
     },
     "miami-dolphins": {
       "slug": "miami-dolphins",
-      "wins": 0,
+      "wins": 1,
       "losses": 5,
       "ties": 0,
-      "pf": 70,
-      "pa": 132,
-      "record": "0-5"
+      "pf": 98,
+      "pa": 157,
+      "record": "1-5"
     },
     "minnesota-vikings": {
       "slug": "minnesota-vikings",
-      "wins": 5,
+      "wins": 6,
       "losses": 0,
       "ties": 0,
-      "pf": 109,
-      "pa": 64,
-      "record": "5-0"
+      "pf": 125,
+      "pa": 74,
+      "record": "6-0"
     },
     "new-england-patriots": {
       "slug": "new-england-patriots",
@@ -5843,11 +5867,11 @@
     "new-york-jets": {
       "slug": "new-york-jets",
       "wins": 2,
-      "losses": 4,
+      "losses": 5,
       "ties": 0,
-      "pf": 112,
-      "pa": 122,
-      "record": "2-4"
+      "pf": 137,
+      "pa": 150,
+      "record": "2-5"
     },
     "philadelphia-eagles": {
       "slug": "philadelphia-eagles",
@@ -5870,11 +5894,11 @@
     "san-francisco-49ers": {
       "slug": "san-francisco-49ers",
       "wins": 6,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "pf": 177,
-      "pa": 110,
-      "record": "6-0"
+      "pf": 197,
+      "pa": 139,
+      "record": "6-1"
     },
     "seattle-seahawks": {
       "slug": "seattle-seahawks",
@@ -5887,21 +5911,21 @@
     },
     "tampa-bay-buccaneers": {
       "slug": "tampa-bay-buccaneers",
-      "wins": 1,
+      "wins": 2,
       "losses": 5,
       "ties": 0,
-      "pf": 119,
-      "pa": 138,
-      "record": "1-5"
+      "pf": 162,
+      "pa": 151,
+      "record": "2-5"
     },
     "tennessee-titans": {
       "slug": "tennessee-titans",
       "wins": 1,
-      "losses": 5,
+      "losses": 6,
       "ties": 0,
-      "pf": 84,
-      "pa": 129,
-      "record": "1-5"
+      "pf": 108,
+      "pa": 156,
+      "record": "1-6"
     },
     "washington-commanders": {
       "slug": "washington-commanders",
@@ -6975,10 +6999,10 @@
     "asOf": "2026-10-20",
     "entries": []
   },
-  "generatedAt": "2026-10-25T16:43:44.936Z",
+  "generatedAt": "2026-10-25T20:14:17.611Z",
   "sourceAsOf": "2026-10-25",
-  "fetchedAt": "2026-10-25T16:43:44.936Z",
-  "verification": "Weeks 1–6, both Week 7 Thursday/Paris finals, remaining Week 7 identities/kickoffs, and recalculated standings corroborated by NFL and ESPN. Weeks 8–18 remain the retained ESPN planning schedule subject to flex changes.",
-  "compiledAt": "2026-10-25T16:43:46.443Z",
+  "fetchedAt": "2026-10-25T20:14:17.611Z",
+  "verification": "All 107 results through Week 7 reviewed against fresh NFL and ESPN: 101 final and 6 ungraded upcoming/live games; all 32 recalculated standings match fresh ESPN. All 272 games and international metadata retained; Weeks 8–18 retain their existing planning scope.",
+  "compiledAt": "2026-10-25T20:15:04.308Z",
   "collectedOn": "2026-10-25"
 }

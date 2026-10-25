@@ -172,5 +172,19 @@
     "Silver and Black Pride inactive section embeds a post without a readable complete list in the retrieved article; no names inferred from an unread embed.",
     "Older Ty Simpson and Aidan O’Connell emergency-QB reports concern other weeks/opponents; rejected for Week 7."
   ],
-  "sourceScope": "Partial addition of Denver complete list. Distinct publisher families may share upstream reporting; no claim of independent original reporting. All prior lists, module dates, manifest and unrelated data preserved."
+  "sourceScope": "Partial addition of Denver complete list. Distinct publisher families may share upstream reporting; no claim of independent original reporting. All prior lists, module dates, manifest and unrelated data preserved.",
+  "contextSources": [
+    {
+      "id": "milehigh",
+      "requestedUrl": "https://www.milehighreport.com/denver-broncos-news/189868/broncos-vs-cardinals-inactives-week-7",
+      "resolvedUrl": "https://www.milehighreport.com/denver-broncos-news/189868/broncos-vs-cardinals-inactives-week-7",
+      "status": 200,
+      "checkedAt": "2026-10-25T19:31:03.886Z",
+      "title": "Denver Broncos vs. Arizona Cardinals inactives for Week 7 | Mile High Report",
+      "publishedAt": "2026-10-25T18:37:31+00:00",
+      "rawFile": "outputs/week7-automation/2026-10-25T193014Z/milehigh.html",
+      "rawSha256": "1ded6df0d3a2b721fe44c284171584f0c009e87107b550bd409c4759b16f4263",
+      "scope": "Additional complete membership/spelling context only. The required Broncos/ESPN sources establish the emergency role. Original retrieval time retained; no freshness renewal."
+    }
+  ]
 }
