@@ -1,431 +1,133 @@
 {
   "week": 7,
-  "run": "2026-10-25T123007Z",
-  "baseCommit": "7f86c8aba13da49d25eea3a5025e3ee6a91e5150",
-  "createdAt": "2026-10-25T12:38:43.327Z",
+  "run": "2026-10-25T153010Z",
+  "baseCommit": "68ed10d84c497e03cd677607e66a6728b48e88cf",
+  "createdAt": "2026-10-25T15:46:14.589Z",
   "observations": [
     {
       "kind": "inactive",
-      "key": "401873011:pittsburgh-steelers",
+      "key": "401873013:cleveland-browns",
       "value": {
-        "gameId": "401873011",
+        "gameId": "401873013",
         "week": 7,
-        "teamSlug": "pittsburgh-steelers",
+        "teamSlug": "cleveland-browns",
         "complete": true,
         "players": [
           {
-            "name": "Ben Skowronek",
+            "name": "Audric Estime",
             "designation": "inactive"
           },
           {
-            "name": "Brandin Echols",
+            "name": "Justin Jefferson",
             "designation": "inactive"
           },
           {
-            "name": "Drew Allar",
+            "name": "Mike Hall Jr.",
             "designation": "inactive"
           },
           {
-            "name": "Eli Heidenreich",
+            "name": "Noah Igbinoghene",
             "designation": "inactive"
           },
           {
-            "name": "Terell Smith",
+            "name": "Parker Brailsford",
             "designation": "inactive"
           },
           {
-            "name": "Will Howard",
+            "name": "Taylen Green",
             "designation": "emergency_qb"
           }
         ]
       },
-      "sources": [
-        {
-          "url": "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints",
-          "checkedAt": "2026-10-25T12:30:40.234Z",
-          "reportedWeek": 7,
-          "value": {
-            "gameId": "401873011",
-            "week": 7,
-            "teamSlug": "pittsburgh-steelers",
-            "complete": true,
-            "players": [
-              {
-                "name": "Ben Skowronek",
-                "designation": "inactive"
-              },
-              {
-                "name": "Brandin Echols",
-                "designation": "inactive"
-              },
-              {
-                "name": "Drew Allar",
-                "designation": "inactive"
-              },
-              {
-                "name": "Eli Heidenreich",
-                "designation": "inactive"
-              },
-              {
-                "name": "Terell Smith",
-                "designation": "inactive"
-              },
-              {
-                "name": "Will Howard",
-                "designation": "emergency_qb"
-              }
-            ]
-          },
-          "completeListActuallyCompared": true
-        },
-        {
-          "url": "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
-          "checkedAt": "2026-10-25T12:33:15.876Z",
-          "reportedWeek": 7,
-          "value": {
-            "gameId": "401873011",
-            "week": 7,
-            "teamSlug": "pittsburgh-steelers",
-            "complete": true,
-            "players": [
-              {
-                "name": "Ben Skowronek",
-                "designation": "inactive"
-              },
-              {
-                "name": "Brandin Echols",
-                "designation": "inactive"
-              },
-              {
-                "name": "Drew Allar",
-                "designation": "inactive"
-              },
-              {
-                "name": "Eli Heidenreich",
-                "designation": "inactive"
-              },
-              {
-                "name": "Terell Smith",
-                "designation": "inactive"
-              },
-              {
-                "name": "Will Howard",
-                "designation": "emergency_qb"
-              }
-            ]
-          },
-          "completeListActuallyCompared": true
-        },
-        {
-          "url": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
-          "checkedAt": "2026-10-25T12:33:16.12Z",
-          "reportedWeek": 7,
-          "value": {
-            "gameId": "401873011",
-            "week": 7,
-            "teamSlug": "pittsburgh-steelers",
-            "complete": true,
-            "players": [
-              {
-                "name": "Ben Skowronek",
-                "designation": "inactive"
-              },
-              {
-                "name": "Brandin Echols",
-                "designation": "inactive"
-              },
-              {
-                "name": "Drew Allar",
-                "designation": "inactive"
-              },
-              {
-                "name": "Eli Heidenreich",
-                "designation": "inactive"
-              },
-              {
-                "name": "Terell Smith",
-                "designation": "inactive"
-              },
-              {
-                "name": "Will Howard",
-                "designation": "emergency_qb"
-              }
-            ]
-          },
-          "completeListActuallyCompared": true
-        }
-      ]
-    },
-    {
-      "kind": "inactive",
-      "key": "401873011:new-orleans-saints",
-      "value": {
-        "gameId": "401873011",
-        "week": 7,
-        "teamSlug": "new-orleans-saints",
-        "complete": true,
-        "players": [
-          {
-            "name": "Cesar Ruiz",
-            "designation": "inactive"
-          },
-          {
-            "name": "John Ridgeway III",
-            "designation": "inactive"
-          },
-          {
-            "name": "Mike Reid",
-            "designation": "inactive"
-          },
-          {
-            "name": "Nathan Shepherd",
-            "designation": "inactive"
-          },
-          {
-            "name": "Treyton Welch",
-            "designation": "inactive"
-          },
-          {
-            "name": "Tyree Wilson",
-            "designation": "inactive"
-          },
-          {
-            "name": "Zach Wilson",
-            "designation": "emergency_qb"
-          }
-        ]
+      "publicationProvenance": {
+        "selectedSource": "https://www.dawgsbynature.com/cleveland-browns-injuries/136143/browns-titans-inactives-will-denzel-ward-play-today-and-titans-lose-two-players-on-offense",
+        "selectedSourcePublishedAt": "2026-10-25T15:36:00+00:00",
+        "reportPublishedAt": "2026-10-25T15:36:00.000Z",
+        "semantics": "Actual later corroborating article time, not a claim that both sources published simultaneously or an inferred official first-release time."
       },
       "sources": [
         {
-          "url": "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints",
-          "checkedAt": "2026-10-25T12:30:40.234Z",
+          "url": "https://www.clevelandbrowns.com/news/browns-announce-inactives-for-week-7-vs-the-titans",
+          "checkedAt": "2026-10-25T15:32:51.542Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873011",
+            "gameId": "401873013",
             "week": 7,
-            "teamSlug": "new-orleans-saints",
+            "teamSlug": "cleveland-browns",
             "complete": true,
             "players": [
               {
-                "name": "Cesar Ruiz",
+                "name": "Audric Estime",
                 "designation": "inactive"
               },
               {
-                "name": "John Ridgeway III",
+                "name": "Justin Jefferson",
                 "designation": "inactive"
               },
               {
-                "name": "Mike Reid",
+                "name": "Mike Hall Jr.",
                 "designation": "inactive"
               },
               {
-                "name": "Nathan Shepherd",
+                "name": "Noah Igbinoghene",
                 "designation": "inactive"
               },
               {
-                "name": "Treyton Welch",
+                "name": "Parker Brailsford",
                 "designation": "inactive"
               },
               {
-                "name": "Tyree Wilson",
-                "designation": "inactive"
-              },
-              {
-                "name": "Zach Wilson",
+                "name": "Taylen Green",
                 "designation": "emergency_qb"
               }
             ]
           },
-          "completeListActuallyCompared": true
+          "publishedAt": "2026-10-25T15:30:07.989Z",
+          "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:30:07.989Z\"",
+          "rawSha256": "59d45d370c453dcab583d31ed1d62b23669ece375bf42df75226c0085f97d070"
         },
         {
-          "url": "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
-          "checkedAt": "2026-10-25T12:33:15.876Z",
+          "url": "https://www.dawgsbynature.com/cleveland-browns-injuries/136143/browns-titans-inactives-will-denzel-ward-play-today-and-titans-lose-two-players-on-offense",
+          "checkedAt": "2026-10-25T15:37:13.588Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873011",
+            "gameId": "401873013",
             "week": 7,
-            "teamSlug": "new-orleans-saints",
+            "teamSlug": "cleveland-browns",
             "complete": true,
             "players": [
               {
-                "name": "Cesar Ruiz",
+                "name": "Audric Estime",
                 "designation": "inactive"
               },
               {
-                "name": "John Ridgeway III",
+                "name": "Justin Jefferson",
                 "designation": "inactive"
               },
               {
-                "name": "Mike Reid",
+                "name": "Mike Hall Jr.",
                 "designation": "inactive"
               },
               {
-                "name": "Nathan Shepherd",
+                "name": "Noah Igbinoghene",
                 "designation": "inactive"
               },
               {
-                "name": "Treyton Welch",
+                "name": "Parker Brailsford",
                 "designation": "inactive"
               },
               {
-                "name": "Tyree Wilson",
-                "designation": "inactive"
-              },
-              {
-                "name": "Zach Wilson",
+                "name": "Taylen Green",
                 "designation": "emergency_qb"
               }
             ]
           },
-          "completeListActuallyCompared": true
-        },
-        {
-          "url": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
-          "checkedAt": "2026-10-25T12:33:16.12Z",
-          "reportedWeek": 7,
-          "value": {
-            "gameId": "401873011",
-            "week": 7,
-            "teamSlug": "new-orleans-saints",
-            "complete": true,
-            "players": [
-              {
-                "name": "Cesar Ruiz",
-                "designation": "inactive"
-              },
-              {
-                "name": "John Ridgeway III",
-                "designation": "inactive"
-              },
-              {
-                "name": "Mike Reid",
-                "designation": "inactive"
-              },
-              {
-                "name": "Nathan Shepherd",
-                "designation": "inactive"
-              },
-              {
-                "name": "Treyton Welch",
-                "designation": "inactive"
-              },
-              {
-                "name": "Tyree Wilson",
-                "designation": "inactive"
-              },
-              {
-                "name": "Zach Wilson",
-                "designation": "emergency_qb"
-              }
-            ]
-          },
-          "completeListActuallyCompared": true
+          "publishedAt": "2026-10-25T15:36:00+00:00",
+          "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:36:00+00:00\"",
+          "rawSha256": "4f86a4eaf4f2d014bbd39faca68ab4d2777abf3d284bb41a568849df681bc17c"
         }
       ]
     }
   ],
-  "moduleReviews": [
-    {
-      "module": "inactives",
-      "sourceAsOf": "2026-10-25",
-      "dataSha256": "3b960075ac785624d5bbd8b4bdb254b5363f6a7b907dbb4ab8e32a5fdf1f09e0",
-      "coverage": [
-        {
-          "key": "401873010:new-england-patriots",
-          "primary": [
-            "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears"
-          ],
-          "secondary": [
-            "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
-            "https://www.fftoday.com/nfl/26-inactives-wk7.html"
-          ]
-        },
-        {
-          "key": "401873010:chicago-bears",
-          "primary": [
-            "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears"
-          ],
-          "secondary": [
-            "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
-            "https://www.fftoday.com/nfl/26-inactives-wk7.html"
-          ]
-        },
-        {
-          "key": "401873011:pittsburgh-steelers",
-          "primary": [
-            "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints"
-          ],
-          "secondary": [
-            "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
-            "https://www.fftoday.com/nfl/26-inactives-wk7.html"
-          ]
-        },
-        {
-          "key": "401873011:new-orleans-saints",
-          "primary": [
-            "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints"
-          ],
-          "secondary": [
-            "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
-            "https://www.fftoday.com/nfl/26-inactives-wk7.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "url": "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints",
-          "relatedUrls": [
-            "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears"
-          ],
-          "checkedAt": "2026-10-25T12:30:40.234Z",
-          "reportedWeek": 7,
-          "value": {
-            "dataSha256": "3b960075ac785624d5bbd8b4bdb254b5363f6a7b907dbb4ab8e32a5fdf1f09e0",
-            "complete": true
-          },
-          "sourceScope": "Researcher complete-module comparison attestation across NFL/club reports: Steelers official article covers both Paris teams; NFL Thursday report covers Patriots/Bears.",
-          "relatedSourceObservations": [
-            {
-              "id": "nflThursday",
-              "requestedUrl": "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
-              "resolvedUrl": "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
-              "checkedAt": "2026-10-25T12:33:15.891Z",
-              "status": 200
-            }
-          ]
-        },
-        {
-          "url": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
-          "relatedUrls": [
-            "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
-            "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/"
-          ],
-          "checkedAt": "2026-10-25T12:33:16.12Z",
-          "reportedWeek": 7,
-          "value": {
-            "dataSha256": "3b960075ac785624d5bbd8b4bdb254b5363f6a7b907dbb4ab8e32a5fdf1f09e0",
-            "complete": true
-          },
-          "sourceScope": "Researcher complete-module comparison attestation: FFToday supplies all four complete name sets and both Paris emergency QB labels; fresh NBC/PFT explicitly corroborates both Thursday emergency QBs, and Steelers Depot corroborates both complete Paris lists. These are separate publisher families, not one page or independent original reporting.",
-          "relatedSourceObservations": [
-            {
-              "id": "nbcThursday",
-              "requestedUrl": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
-              "resolvedUrl": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
-              "checkedAt": "2026-10-25T12:33:16.002Z",
-              "status": 200
-            },
-            {
-              "id": "depot",
-              "requestedUrl": "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
-              "resolvedUrl": "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
-              "checkedAt": "2026-10-25T12:33:15.876Z",
-              "status": 200
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "moduleReviews": []
 }

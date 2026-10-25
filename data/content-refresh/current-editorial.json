@@ -7344,6 +7344,44 @@
         "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
         "https://www.fftoday.com/nfl/26-inactives-wk7.html"
       ]
+    },
+    {
+      "gameId": "401873013",
+      "week": 7,
+      "teamSlug": "cleveland-browns",
+      "publishedAt": "2026-10-25T15:36:00.000Z",
+      "checkedAt": "2026-10-25T15:37:13.588Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Audric Estime",
+          "designation": "inactive"
+        },
+        {
+          "name": "Justin Jefferson",
+          "designation": "inactive"
+        },
+        {
+          "name": "Mike Hall Jr.",
+          "designation": "inactive"
+        },
+        {
+          "name": "Noah Igbinoghene",
+          "designation": "inactive"
+        },
+        {
+          "name": "Parker Brailsford",
+          "designation": "inactive"
+        },
+        {
+          "name": "Taylen Green",
+          "designation": "emergency_qb"
+        }
+      ],
+      "sources": [
+        "https://www.clevelandbrowns.com/news/browns-announce-inactives-for-week-7-vs-the-titans",
+        "https://www.dawgsbynature.com/cleveland-browns-injuries/136143/browns-titans-inactives-will-denzel-ward-play-today-and-titans-lose-two-players-on-offense"
+      ]
     }
   ]
 }
