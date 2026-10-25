@@ -1,0 +1,22 @@
+{
+  "run": "2026-10-25T163411Z",
+  "baseCommit": "9a0b9db7f8085953cffe4a81bc92cb10ec4fe5d7",
+  "changedFacts": 1,
+  "completeScheduleReviews": 1,
+  "result": {
+    "gameId": "401873011",
+    "away": "Pittsburgh Steelers",
+    "home": "New Orleans Saints",
+    "awayScore": 16,
+    "homeScore": 10,
+    "status": "final"
+  },
+  "records": {
+    "pittsburgh": "5-2",
+    "newOrleans": "2-5"
+  },
+  "reviewedResults": 107,
+  "finals": 95,
+  "standingsCompared": 32,
+  "preserved": "All 272 games/international metadata, 389 practices, 15 complete inactive lists/96 entries, all injury/reserve records and every non-schedule module date."
+}

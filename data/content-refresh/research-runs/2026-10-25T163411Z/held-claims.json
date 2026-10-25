@@ -1,0 +1,16 @@
+{
+  "claims": [
+    {
+      "claim": "IND, ATL and CAR complete inactive lists",
+      "decision": "Existing holds remain: second complete reports with correct names and explicit emergency roles are still incomplete. Partial ESPN game-summary injury arrays are not complete inactive-list proof."
+    },
+    {
+      "claim": "Old NFL current-game status",
+      "decision": "Initial Q4 status was held until the actual schedule Game Card updated to FINAL. Previous Matchup FINAL widgets were excluded. Both current publishers now agree 16–10 final."
+    },
+    {
+      "claim": "Future Week 7 results and other modules",
+      "decision": "No provisional/future score, active-status inference, new practice/designation or untouched-module freshness is published."
+    }
+  ]
+}
