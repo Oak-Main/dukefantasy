@@ -23,5 +23,12 @@
   "reviewedResults": 107,
   "finals": 102,
   "standingsCompared": 32,
-  "preserved": "All 272 games/international metadata and future planning fields, 389 practices, all 22 prior complete inactive lists/times, medical/reserve records, and every non-schedule module date."
+  "preserved": "All 272 games/international metadata and future planning fields, 389 practices, all 22 prior complete inactive lists/times, medical/reserve records, and every non-schedule module date.",
+  "overtimeProvenance": {
+    "gameId": "401873016",
+    "statusDetail": "Final/OT",
+    "nflObservedLabel": "Giants 27, Texans 21, OT, FOX",
+    "nflCheckedAt": "2026-10-25T20:27:43.534Z",
+    "espnPeriod": 5
+  }
 }

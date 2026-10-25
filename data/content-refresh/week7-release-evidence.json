@@ -709,5 +709,65 @@
         }
       ]
     }
+  ],
+  "overtimeReviews": [
+    {
+      "value": {
+        "gameId": "401873016",
+        "overtime": true,
+        "statusDetail": "Final/OT"
+      },
+      "method": "Official same-game OT-phase capture confirms overtime; the later NFL FINAL card and ESPN completed period 5 confirm the final result. The earlier OT phase is not used alone as final-status proof.",
+      "sources": [
+        {
+          "id": "nfl-7",
+          "publisher": "nfl",
+          "week": 7,
+          "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "status": 200,
+          "checkedAt": "2026-10-25T20:27:43.534Z",
+          "rawSha256": "e12afc6ec6666400bafec64905cf8313d707975c5f3ac2fcace1eb7823fa4355",
+          "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202742089/nfl-7.html",
+          "nflGameUrl": "https://www.nfl.com/games/giants-at-texans-2026-reg-7",
+          "observedState": "INGAME",
+          "observedLabel": "Giants 27, Texans 21, OT, FOX",
+          "value": {
+            "gameId": "401873016",
+            "overtime": true,
+            "statusDetail": "Final/OT"
+          },
+          "reportedWeek": 7
+        },
+        {
+          "id": "espn-7",
+          "publisher": "espn",
+          "week": 7,
+          "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "status": 200,
+          "checkedAt": "2026-10-25T20:29:05.517Z",
+          "rawSha256": "ef2078af74ba9288503988390272588d672db243dbb8b547be6d6cb9502a011d",
+          "rawFile": "outputs/week7-automation/2026-10-25T202301Z/result-state-20261025202903840/espn-7.html",
+          "value": {
+            "gameId": "401873016",
+            "overtime": true,
+            "statusDetail": "Final/OT"
+          },
+          "reportedWeek": 7,
+          "observedPeriod": 5,
+          "observedStatus": {
+            "id": "3",
+            "name": "STATUS_FINAL",
+            "state": "post",
+            "completed": true,
+            "description": "Final",
+            "detail": "Final/OT",
+            "shortDetail": "Final/OT",
+            "altDetail": "OT"
+          }
+        }
+      ]
+    }
   ]
 }

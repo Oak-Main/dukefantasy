@@ -2366,7 +2366,7 @@
       "awayAbbr": "NYG",
       "homeAbbr": "HOU",
       "status": "final",
-      "statusDetail": "Final",
+      "statusDetail": "Final/OT",
       "awayScore": 27,
       "homeScore": 21,
       "broadcast": "FOX",
@@ -2393,7 +2393,8 @@
         "primary_network",
         "final_status",
         "away_score",
-        "home_score"
+        "home_score",
+        "overtime_status"
       ],
       "weather": null
     },

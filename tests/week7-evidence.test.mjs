@@ -83,9 +83,13 @@ test("matching score values cannot hide a source bound to another game", () => {
   assert.throws(() => validateResultIdentities(p, identitySnapshot), /source game identity/);
 });
 
-test("retained pending-release observations still need two matching source values", () => {
+test("retained pending-release observations enforce values, freshness and two publishers", () => {
   const p = proof(); p.observations[0].sources[1].value = { ...value, awayScore: 99 };
   assert.throws(() => validateEvidence(p, after, after, now), /disagree/);
   const q = proof(); q.observations[0].sources.pop();
   assert.throws(() => validateEvidence(q, after, after, now), /two publisher/);
+  const r = proof(); r.observations[0].value = { ...value, homeScore: 99 };
+  assert.throws(() => validateEvidence(r, after, after, now), /retained evidence does not match/);
+  const s = proof(); s.observations[0].sources[1].checkedAt = "2026-10-21T00:00:00Z";
+  assert.throws(() => validateEvidence(s, after, after, now), /stale/);
 });
