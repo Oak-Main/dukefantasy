@@ -1,0 +1,90 @@
+{
+  "sources": [
+    {
+      "id": "philadelphia-eagles",
+      "requestedUrl": "https://www.philadelphiaeagles.com/team/injury-report/",
+      "resolvedUrl": "https://www.philadelphiaeagles.com/team/injury-report/",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:19:35.021Z",
+      "title": "Philadelphia Eagles Injury Report",
+      "publishedAt": null,
+      "modifiedAt": null,
+      "reportedWeek": 7,
+      "rawSha256": "b5a9eea53ca76782af70ac3f532d8983ff6b667f3082cd39b36b88bc63004e07",
+      "rawFile": "outputs/week7-automation/2026-10-25T161811Z/philadelphia-eagles.html",
+      "proof": {
+        "claim": {
+          "player": "AJ Epenesa",
+          "team_slug": "philadelphia-eagles",
+          "injury": "Back",
+          "status": "NO_DESIGNATION",
+          "designation_date": "2026-10-24",
+          "designation_week": 7
+        },
+        "row": [
+          "A.J. Epenesa",
+          "OLB",
+          "Back",
+          "LP",
+          "FP",
+          "FP",
+          "UNSPECIFIED"
+        ],
+        "semantics": "The current complete final Week 7 table has no assigned game designation (UNSPECIFIED) for Epenesa; this is not an active-status claim."
+      }
+    },
+    {
+      "id": "espnInjuries",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:19:36.019Z",
+      "title": null,
+      "publishedAt": null,
+      "modifiedAt": null,
+      "reportedWeek": 7,
+      "rawSha256": "43ef450b14878e73208ea11c83148fc53694d7cce21ac58139fd7f40bc28d903",
+      "rawFile": "outputs/week7-automation/2026-10-25T161811Z/espnInjuries.html",
+      "proof": {
+        "claim": {
+          "player": "AJ Epenesa",
+          "team_slug": "philadelphia-eagles",
+          "injury": "Back",
+          "status": "NO_DESIGNATION",
+          "designation_date": "2026-10-24",
+          "designation_week": 7
+        },
+        "reportDate": "2026-10-25T00:19Z",
+        "explicitClearance": "Epenesa (back) does not carry an injury designation into Monday's game against Dallas.",
+        "semantics": "The explicit no-designation statement is used; the generic Active feed label is not published as game-day active status."
+      }
+    }
+  ],
+  "datedOfficialContext": {
+    "id": "eaglesFinal",
+    "requestedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+    "resolvedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+    "status": 200,
+    "checkedAt": "2026-10-25T16:23:08.577Z",
+    "title": "Cowboys vs. Eagles Injury Report",
+    "publishedAt": "2026-10-24T20:00:00Z"
+  },
+  "claim": {
+    "player": "AJ Epenesa",
+    "team_slug": "philadelphia-eagles",
+    "injury": "Back",
+    "status": "NO_DESIGNATION",
+    "designation_date": "2026-10-24",
+    "designation_week": 7
+  },
+  "observedFields": [
+    "status",
+    "injury",
+    "designation_date",
+    "designation_week"
+  ],
+  "retainedFields": {
+    "practice": "Exact base record; the prior Thursday LP watch cell and separate dated Saturday FP report remain unchanged."
+  },
+  "sourceScope": "Partial Epenesa Back/no-designation correction only. Every module date and prior verification scope remains unchanged."
+}

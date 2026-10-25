@@ -1,0 +1,24 @@
+{
+  "claims": [
+    {
+      "claim": "Three pending complete inactive lists",
+      "decision": "Retain the prior IND spelling/role and ATL/CAR complete-list role corroboration holds. Individual ESPN role reports are not automatically relabeled as an independently published complete inactive list."
+    },
+    {
+      "claim": "Sunday expected-to-play reports",
+      "decision": "Do not convert expectations for Surtain, Nacua, Baker, Emmanwori or Nwosu into official designations or confirmed active status."
+    },
+    {
+      "claim": "Historical formal designations versus game-day updates",
+      "decision": "Keep explicit Sunday active/inactive reports separate from dated Friday/Saturday official game designations; complete lists already published retain their scope."
+    },
+    {
+      "claim": "Other held injury/reserve discrepancies",
+      "decision": "Keep previous Quay Walker, Tremaine Edmunds, source-list origin and exempt-removal timing holds. No newly corroborated reserve transition or final result appeared in the 45-source daily check."
+    },
+    {
+      "claim": "Newly completed Atlanta Friday landing-table cells",
+      "decision": "The club/NFL tables now expose Friday participation, but fresh CBS and ESPN game-day reports do not provide matching dated Friday practice proof for these held rows. No new Friday participation is corroborated by a second publisher; preserve 389 dated practices."
+    }
+  ]
+}
