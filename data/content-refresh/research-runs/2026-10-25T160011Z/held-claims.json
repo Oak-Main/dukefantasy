@@ -1,0 +1,24 @@
+{
+  "claims": [
+    {
+      "team": "indianapolis-colts",
+      "reason": "Daily Norseman lists Bruce Boettcher, while official/NFL/FFToday say Bryce. FFToday omits Riley Leonard emergency role. Hold the complete list rather than silently correcting or inferring."
+    },
+    {
+      "team": "atlanta-falcons",
+      "reason": "Official/NFL mark Jack Strand emergency QB; FFToday lists his name without the role. No second publisher explicitly corroborates complete list and role yet."
+    },
+    {
+      "team": "carolina-panthers",
+      "reason": "Official/NFL mark Haynes King emergency QB; FFToday omits role. Hold complete list pending explicit second-publisher role proof."
+    },
+    {
+      "claim": "Excluded source sections",
+      "reason": "Titans club Week 6/Tyjaw boilerplate; Big Blue View Houston section labeled Saints; NFL Miami Godrik misspelling; 49ers club list omits Rourke emergency label. Correct current sources supply only the accepted team proofs."
+    },
+    {
+      "claim": "Paris result",
+      "reason": "Still in progress at collection. No provisional result published."
+    }
+  ]
+}
