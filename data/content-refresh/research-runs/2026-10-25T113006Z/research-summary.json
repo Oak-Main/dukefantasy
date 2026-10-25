@@ -1,0 +1,11 @@
+{
+  "run": "2026-10-25T113006Z",
+  "baseCommit": "60d479ae16013e7d8325e4c0ea81ffd0143854cf",
+  "changedFacts": 1,
+  "claim": "Jennings Knee / NO_DESIGNATION, official Week 7 designation dated October 23",
+  "sourceCount": 2,
+  "publishedGameDayActiveStatus": false,
+  "earlierPracticePreserved": true,
+  "injuryFullReviewDate": "2026-10-20",
+  "sourceReviewScope": "Partial record correction only; all native module dates, 272 games/international metadata, standings, 389 practices, reserve and complete Thursday inactive history retained."
+}

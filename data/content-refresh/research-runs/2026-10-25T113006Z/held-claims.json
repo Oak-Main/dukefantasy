@@ -1,0 +1,20 @@
+{
+  "claims": [
+    {
+      "claim": "Jennings Friday FP",
+      "decision": "Official table has FP but the explicit ESPN clearance does not date full participation to Friday; do not add a Friday practice record."
+    },
+    {
+      "claim": "Quincy Riley / Kool-Aid McKinstry game-day active status",
+      "decision": "Do not infer formal clearance, roster activation or game-day active status from omission or generic Active feed values."
+    },
+    {
+      "claim": "Steelers dedicated landing report",
+      "decision": "Its Friday cells are blank and two statuses lag the dated final report; retain the published Friday designations and use the dated report, not this stale landing table."
+    },
+    {
+      "claim": "Other previously held injury and reserve discrepancies",
+      "decision": "Retain the prior publication and archived held claims; this partial pregame correction does not resolve them."
+    }
+  ]
+}
