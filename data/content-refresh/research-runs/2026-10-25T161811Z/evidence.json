@@ -1,0 +1,104 @@
+{
+  "week": 7,
+  "run": "2026-10-25T161811Z",
+  "baseCommit": "89d5c64dc53e99034de6ad9b5c62781bbc2942b0",
+  "createdAt": "2026-10-25T16:25:05.835Z",
+  "observations": [
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:AJ Epenesa",
+      "value": {
+        "player": "AJ Epenesa",
+        "team_slug": "philadelphia-eagles",
+        "status": "NO_DESIGNATION",
+        "injury": "Back",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": "LP",
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-24",
+        "designation_week": 7
+      },
+      "observedFields": [
+        "status",
+        "injury",
+        "designation_date",
+        "designation_week"
+      ],
+      "retainedFields": {
+        "practice": "Exact base record; the prior Thursday LP watch cell and separate dated Saturday FP report remain unchanged."
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/team/injury-report/",
+          "checkedAt": "2026-10-25T16:19:35.021Z",
+          "reportedWeek": 7,
+          "reportDate": "2026-10-24",
+          "value": {
+            "player": "AJ Epenesa",
+            "team_slug": "philadelphia-eagles",
+            "status": "NO_DESIGNATION",
+            "injury": "Back",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "LP",
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          },
+          "observedClaim": {
+            "player": "AJ Epenesa",
+            "team_slug": "philadelphia-eagles",
+            "injury": "Back",
+            "status": "NO_DESIGNATION",
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          },
+          "sourceDetail": "The current complete final Week 7 table has no assigned game designation (UNSPECIFIED) for Epenesa; this is not an active-status claim.",
+          "rawSha256": "b5a9eea53ca76782af70ac3f532d8983ff6b667f3082cd39b36b88bc63004e07"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-25T16:19:36.019Z",
+          "reportedWeek": 7,
+          "reportDate": "2026-10-24",
+          "value": {
+            "player": "AJ Epenesa",
+            "team_slug": "philadelphia-eagles",
+            "status": "NO_DESIGNATION",
+            "injury": "Back",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": "LP",
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          },
+          "observedClaim": {
+            "player": "AJ Epenesa",
+            "team_slug": "philadelphia-eagles",
+            "injury": "Back",
+            "status": "NO_DESIGNATION",
+            "designation_date": "2026-10-24",
+            "designation_week": 7
+          },
+          "sourceDetail": "The explicit no-designation statement is used; the generic Active feed label is not published as game-day active status.",
+          "rawSha256": "43ef450b14878e73208ea11c83148fc53694d7cce21ac58139fd7f40bc28d903"
+        }
+      ]
+    }
+  ],
+  "moduleReviews": []
+}
