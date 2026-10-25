@@ -6919,25 +6919,25 @@
     {
       "player": "Marist Liufau",
       "team_slug": "dallas-cowboys",
-      "status": "IR; Week 7 QUESTIONABLE",
-      "asOf": "2026-10-24",
-      "checkedAt": "2026-10-24T23:17:50.570Z",
-      "note": "Official October 24 Week 7 designation: QUESTIONABLE while still on injured reserve. Participation in a return window does not establish activation or game-day status.",
+      "status": "IR; Week 7 OUT",
+      "asOf": "2026-10-25",
+      "checkedAt": "2026-10-25T23:17:30.806Z",
+      "note": "Official October 25 Week 7 update: OUT for Monday against Philadelphia and remains on injured reserve with a return designation. The practice window remains separate from activation; no activation or game-day active status is inferred.",
       "sources": [
-        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
-        "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html"
+        "https://www.dallascowboys.com/news/updates-october-2026",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ]
     },
     {
       "player": "P.J. Locke",
       "team_slug": "dallas-cowboys",
-      "status": "IR; Week 7 QUESTIONABLE",
-      "asOf": "2026-10-24",
-      "checkedAt": "2026-10-24T23:17:50.570Z",
-      "note": "Official October 24 Week 7 designation: QUESTIONABLE while still on injured reserve. Participation in a return window does not establish activation or game-day status.",
+      "status": "IR; Week 7 OUT",
+      "asOf": "2026-10-25",
+      "checkedAt": "2026-10-25T23:17:30.806Z",
+      "note": "Official October 25 Week 7 update: OUT for Monday against Philadelphia and remains on injured reserve with a return designation. The practice window remains separate from activation; no activation or game-day active status is inferred.",
       "sources": [
-        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
-        "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html"
+        "https://www.dallascowboys.com/news/updates-october-2026",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ]
     },
     {
@@ -8139,6 +8139,86 @@
       "sources": [
         "https://www.raiders.com/news/las-vegas-raiders-week-7-inactives-vs-los-angeles-rams",
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "gameId": "401873022",
+      "week": 7,
+      "teamSlug": "seattle-seahawks",
+      "publishedAt": "2026-10-25T22:50:54.297Z",
+      "checkedAt": "2026-10-25T23:17:11.516Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Beau Stephens",
+          "designation": "inactive"
+        },
+        {
+          "name": "Chazz Surratt",
+          "designation": "inactive"
+        },
+        {
+          "name": "Connor O'Toole",
+          "designation": "inactive"
+        },
+        {
+          "name": "Drake Thomas",
+          "designation": "inactive"
+        },
+        {
+          "name": "Drew Lock",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "Robert Henry Jr.",
+          "designation": "inactive"
+        },
+        {
+          "name": "Zach Charbonnet",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.seahawks.com/news/seahawks-vs-chiefs-week-7-inactives",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+      ]
+    },
+    {
+      "gameId": "401873022",
+      "week": 7,
+      "teamSlug": "kansas-city-chiefs",
+      "publishedAt": "2026-10-25T23:03:11.568Z",
+      "checkedAt": "2026-10-25T23:17:30.758Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Ben VanSumeren",
+          "designation": "inactive"
+        },
+        {
+          "name": "Garrett Nussmeier",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "Jack Pyburn",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jadon Canady",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jaylon Moore",
+          "designation": "inactive"
+        },
+        {
+          "name": "Rashee Rice",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.chiefs.com/news/week-7-inactive-players-chiefs-vs-seahawks",
+        "https://atozsports.com/nfl/kansas-city-chiefs-news/chiefs-inactive-players-list-week-7-vs-seahawks/"
       ]
     }
   ]
