@@ -1,0 +1,22 @@
+{
+  "run": "2026-10-26T033017Z",
+  "baseCommit": "2745265fbd437f12dc9a6a9a06da7e98af450c65",
+  "changedFacts": 1,
+  "newResults": [
+    {
+      "id": "401873022",
+      "week": 7,
+      "away": "kansas-city-chiefs",
+      "home": "seattle-seahawks",
+      "awayScore": 3,
+      "homeScore": 20
+    }
+  ],
+  "completeScheduleReviews": 1,
+  "reviewedResults": 107,
+  "finals": 106,
+  "week7Finals": 13,
+  "remainingWeek7": 1,
+  "standingsCompared": 32,
+  "preserved": "All 272 games/international/future metadata, all 26 complete inactive records/times (168 entries, 17 emergency QBs), medical/reserve history, 389 practices and all non-schedule module dates. October 25 Pacific report day retained with actual October 26 UTC retrieval times."
+}

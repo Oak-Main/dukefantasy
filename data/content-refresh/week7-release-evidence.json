@@ -1,183 +1,65 @@
 {
   "week": 7,
-  "run": "2026-10-26T000014Z",
-  "baseCommit": "b5c139a345f66eef1e573e3905ad485f9d5e0aa1",
-  "createdAt": "2026-10-26T00:02:27.835Z",
+  "run": "2026-10-26T033017Z",
+  "baseCommit": "2745265fbd437f12dc9a6a9a06da7e98af450c65",
+  "createdAt": "2026-10-26T03:32:01.824Z",
   "observations": [
     {
       "kind": "result",
-      "key": "401873019",
+      "key": "401873022",
       "value": {
         "week": 7,
         "status": "final",
-        "awayScore": 30,
-        "homeScore": 16
-      },
-      "gameIdentity": {
-        "id": "401873019",
-        "week": 7,
-        "awaySlug": "denver-broncos",
-        "homeSlug": "arizona-cardinals",
-        "kickoffUtc": "2026-10-25T20:05:00.000Z"
-      },
-      "sources": [
-        {
-          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
-          "checkedAt": "2026-10-26T00:00:46.408Z",
-          "reportedWeek": 7,
-          "value": {
-            "week": 7,
-            "status": "final",
-            "awayScore": 30,
-            "homeScore": 16
-          },
-          "gameIdentity": {
-            "id": "401873019",
-            "week": 7,
-            "awaySlug": "denver-broncos",
-            "homeSlug": "arizona-cardinals",
-            "kickoffUtc": "2026-10-25T20:05:00.000Z"
-          },
-          "rawSha256": "f0945c3ef5e94b5880bb7b4e245a97ddafd0f4af38e6e37006591ee170f09c7d",
-          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
-        },
-        {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
-          "checkedAt": "2026-10-26T00:00:46.550Z",
-          "reportedWeek": 7,
-          "value": {
-            "week": 7,
-            "status": "final",
-            "awayScore": 30,
-            "homeScore": 16
-          },
-          "gameIdentity": {
-            "id": "401873019",
-            "week": 7,
-            "awaySlug": "denver-broncos",
-            "homeSlug": "arizona-cardinals",
-            "kickoffUtc": "2026-10-25T20:05:00.000Z"
-          },
-          "rawSha256": "87b08a7b55811039cfc592a87be1d152f07cb65004f06776b9241a8a5e6a38db",
-          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
-        }
-      ]
-    },
-    {
-      "kind": "result",
-      "key": "401873020",
-      "value": {
-        "week": 7,
-        "status": "final",
-        "awayScore": 17,
+        "awayScore": 3,
         "homeScore": 20
       },
       "gameIdentity": {
-        "id": "401873020",
+        "id": "401873022",
         "week": 7,
-        "awaySlug": "green-bay-packers",
-        "homeSlug": "detroit-lions",
-        "kickoffUtc": "2026-10-25T20:25:00.000Z"
+        "awaySlug": "kansas-city-chiefs",
+        "homeSlug": "seattle-seahawks",
+        "kickoffUtc": "2026-10-26T00:20:00.000Z"
       },
       "sources": [
         {
           "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
-          "checkedAt": "2026-10-26T00:00:46.408Z",
+          "checkedAt": "2026-10-26T03:30:35.826Z",
           "reportedWeek": 7,
           "value": {
             "week": 7,
             "status": "final",
-            "awayScore": 17,
+            "awayScore": 3,
             "homeScore": 20
           },
           "gameIdentity": {
-            "id": "401873020",
+            "id": "401873022",
             "week": 7,
-            "awaySlug": "green-bay-packers",
-            "homeSlug": "detroit-lions",
-            "kickoffUtc": "2026-10-25T20:25:00.000Z"
+            "awaySlug": "kansas-city-chiefs",
+            "homeSlug": "seattle-seahawks",
+            "kickoffUtc": "2026-10-26T00:20:00.000Z"
           },
-          "rawSha256": "f0945c3ef5e94b5880bb7b4e245a97ddafd0f4af38e6e37006591ee170f09c7d",
-          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
+          "rawSha256": "b798e92b9bb7009defc380ef95c804b5dc6b848d27c61be89a5f11b2eff76bfc",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. Publish only corroborated completed status and both scores."
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
-          "checkedAt": "2026-10-26T00:00:46.550Z",
+          "checkedAt": "2026-10-26T03:30:35.940Z",
           "reportedWeek": 7,
           "value": {
             "week": 7,
             "status": "final",
-            "awayScore": 17,
+            "awayScore": 3,
             "homeScore": 20
           },
           "gameIdentity": {
-            "id": "401873020",
+            "id": "401873022",
             "week": 7,
-            "awaySlug": "green-bay-packers",
-            "homeSlug": "detroit-lions",
-            "kickoffUtc": "2026-10-25T20:25:00.000Z"
+            "awaySlug": "kansas-city-chiefs",
+            "homeSlug": "seattle-seahawks",
+            "kickoffUtc": "2026-10-26T00:20:00.000Z"
           },
-          "rawSha256": "87b08a7b55811039cfc592a87be1d152f07cb65004f06776b9241a8a5e6a38db",
-          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
-        }
-      ]
-    },
-    {
-      "kind": "result",
-      "key": "401873021",
-      "value": {
-        "week": 7,
-        "status": "final",
-        "awayScore": 35,
-        "homeScore": 21
-      },
-      "gameIdentity": {
-        "id": "401873021",
-        "week": 7,
-        "awaySlug": "los-angeles-rams",
-        "homeSlug": "las-vegas-raiders",
-        "kickoffUtc": "2026-10-25T20:25:00.000Z"
-      },
-      "sources": [
-        {
-          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
-          "checkedAt": "2026-10-26T00:00:46.408Z",
-          "reportedWeek": 7,
-          "value": {
-            "week": 7,
-            "status": "final",
-            "awayScore": 35,
-            "homeScore": 21
-          },
-          "gameIdentity": {
-            "id": "401873021",
-            "week": 7,
-            "awaySlug": "los-angeles-rams",
-            "homeSlug": "las-vegas-raiders",
-            "kickoffUtc": "2026-10-25T20:25:00.000Z"
-          },
-          "rawSha256": "f0945c3ef5e94b5880bb7b4e245a97ddafd0f4af38e6e37006591ee170f09c7d",
-          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
-        },
-        {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
-          "checkedAt": "2026-10-26T00:00:46.550Z",
-          "reportedWeek": 7,
-          "value": {
-            "week": 7,
-            "status": "final",
-            "awayScore": 35,
-            "homeScore": 21
-          },
-          "gameIdentity": {
-            "id": "401873021",
-            "week": 7,
-            "awaySlug": "los-angeles-rams",
-            "homeSlug": "las-vegas-raiders",
-            "kickoffUtc": "2026-10-25T20:25:00.000Z"
-          },
-          "rawSha256": "87b08a7b55811039cfc592a87be1d152f07cb65004f06776b9241a8a5e6a38db",
-          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
+          "rawSha256": "dc5c829d611a40926cf4297cd544f9d57fe33b3c0f76006ab72b20f99c6da48b",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. Publish only corroborated completed status and both scores."
         }
       ]
     }
@@ -186,8 +68,8 @@
     {
       "module": "schedule",
       "sourceAsOf": "2026-10-25",
-      "dataSha256": "12b640d018294cc9b8421e75f270e2d9168013451cc980c960ea5b3b4f3273be",
-      "scope": "Complete actual two-publisher review of all 107 result facts through Week 7 (105 final, two ungraded upcoming/live); every final identity/status/both scores agree and all 32 recalculated standings match fresh ESPN. The source report day remains October 25 Pacific; retrieval timestamps are actual October 26 UTC.",
+      "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+      "scope": "Complete actual two-publisher review of all 107 result facts through Week 7 (106 final, one ungraded upcoming/live); every final identity/status/both scores agree and all 32 recalculated standings match fresh ESPN. The source report day remains October 25 Pacific; retrieval timestamps are actual October 26 UTC.",
       "sources": [
         {
           "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
@@ -200,10 +82,10 @@
             "https://www.nfl.com/schedules/2026/by-week/week-6",
             "https://www.nfl.com/schedules/2026/by-week/week-7"
           ],
-          "checkedAt": "2026-10-26T00:00:46.513Z",
+          "checkedAt": "2026-10-26T03:30:35.916Z",
           "reportedWeek": 7,
           "value": {
-            "dataSha256": "12b640d018294cc9b8421e75f270e2d9168013451cc980c960ea5b3b4f3273be",
+            "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
             "complete": true
           }
         },
@@ -218,10 +100,10 @@
             "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
             "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
           ],
-          "checkedAt": "2026-10-26T00:00:46.577Z",
+          "checkedAt": "2026-10-26T03:30:35.940Z",
           "reportedWeek": 7,
           "value": {
-            "dataSha256": "12b640d018294cc9b8421e75f270e2d9168013451cc980c960ea5b3b4f3273be",
+            "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
             "complete": true
           }
         }
