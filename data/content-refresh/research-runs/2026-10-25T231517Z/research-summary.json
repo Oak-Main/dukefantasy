@@ -1,0 +1,20 @@
+{
+  "run": "2026-10-25T231517Z",
+  "baseCommit": "9a48fb9694ccab4b1bb99d66e0f758f5a7bcfebd",
+  "changedFacts": 4,
+  "newLists": 2,
+  "newEntries": 13,
+  "newEmergencyQBs": [
+    "Drew Lock",
+    "Garrett Nussmeier"
+  ],
+  "reserveChanges": [
+    "P.J. Locke: IR; Week 7 OUT",
+    "Marist Liufau: IR; Week 7 OUT"
+  ],
+  "totalLists": 26,
+  "totalEntries": 168,
+  "emergencyQBs": 17,
+  "practiceReports": 389,
+  "preserved": "All 272 games/international metadata, 102 finals and 32 standings, prior 24 complete lists/verification times, all 389 practices, unrelated medical/reserve history, manifest and module dates."
+}

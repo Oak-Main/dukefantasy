@@ -1,0 +1,20 @@
+{
+  "claims": [
+    {
+      "claim": "Other early-game complete lists",
+      "decision": "Club reports are arriving, but league and FFToday aggregates remain incomplete for the early window. Hold all lists without fresh two-publisher corroboration."
+    },
+    {
+      "claim": "Titans list in club article",
+      "decision": "The article title and date are Week 7, but its list introduction says Week 6 and misspells Tyjae Spears as Tyjaw. Do not use this inconsistent report to publish a Titans list; Dawgs By Nature alone is insufficient."
+    },
+    {
+      "claim": "Staging RotoWire and speculative injury previews",
+      "decision": "Do not use staging-domain or projected/incomplete lists as complete game-day proof."
+    },
+    {
+      "claim": "Paris provisional score",
+      "decision": "The game remains nonfinal. Never publish an in-progress observation as final or renew the schedule review date."
+    }
+  ]
+}

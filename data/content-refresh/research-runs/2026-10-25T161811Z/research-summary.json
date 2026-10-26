@@ -1,0 +1,16 @@
+{
+  "run": "2026-10-25T161811Z",
+  "baseCommit": "89d5c64dc53e99034de6ad9b5c62781bbc2942b0",
+  "changedFacts": 1,
+  "moduleReviews": 0,
+  "claim": {
+    "player": "AJ Epenesa",
+    "team_slug": "philadelphia-eagles",
+    "injury": "Back",
+    "status": "NO_DESIGNATION",
+    "designation_date": "2026-10-24",
+    "designation_week": 7
+  },
+  "publishedActiveStatus": false,
+  "preserved": "272 games/international metadata, standings, 389 practices, all reserve and 15 inactive lists/96 entries, manifest, module dates and every other watch/ledger record."
+}

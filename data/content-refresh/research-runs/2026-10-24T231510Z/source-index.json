@@ -1,0 +1,243 @@
+{
+  "sources": [
+    {
+      "id": "philadelphia-eagles",
+      "requestedUrl": "https://www.philadelphiaeagles.com/team/injury-report/",
+      "resolvedUrl": "https://www.philadelphiaeagles.com/team/injury-report/",
+      "checkedAt": "2026-10-24T23:15:37.023Z",
+      "status": 200
+    },
+    {
+      "id": "espnInjuries",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-24T23:45:23.733Z",
+      "status": 200
+    },
+    {
+      "id": "eaglesUsa",
+      "requestedUrl": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+      "resolvedUrl": "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:23:23.995Z"
+    },
+    {
+      "id": "eaglesFinal",
+      "requestedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+      "resolvedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:17:50.472Z"
+    },
+    {
+      "id": "cowboysUsa",
+      "requestedUrl": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+      "resolvedUrl": "https://www.aol.com/articles/week-7-injury-report-cowboys-223349000.html",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:23:24.054Z"
+    },
+    {
+      "id": "cowboysPft",
+      "requestedUrl": "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html",
+      "resolvedUrl": "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:17:50.570Z"
+    },
+    {
+      "id": "green-bay-packers",
+      "requestedUrl": "https://www.packers.com/team/injury-report/",
+      "resolvedUrl": "https://www.packers.com/team/injury-report/",
+      "checkedAt": "2026-10-24T23:15:36.435Z",
+      "status": 200
+    },
+    {
+      "id": "cbs",
+      "requestedUrl": "https://www.cbssports.com/nfl/injuries/",
+      "resolvedUrl": "https://www.cbssports.com/nfl/injuries/",
+      "checkedAt": "2026-10-24T23:15:37.324Z",
+      "status": 200
+    },
+    {
+      "id": "nflInjuries",
+      "requestedUrl": "https://www.nfl.com/injuries/",
+      "resolvedUrl": "https://www.nfl.com/injuries/",
+      "checkedAt": "2026-10-24T23:15:37.197Z",
+      "status": 200
+    },
+    {
+      "id": "las-vegas-raiders",
+      "requestedUrl": "https://www.raiders.com/team/injury-report/",
+      "resolvedUrl": "https://www.raiders.com/team/injury-report/",
+      "checkedAt": "2026-10-24T23:15:36.415Z",
+      "status": 200
+    },
+    {
+      "id": "eaglesSecondary",
+      "requestedUrl": "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html",
+      "resolvedUrl": "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:23:24.005Z"
+    },
+    {
+      "id": "brownsSecondary",
+      "requestedUrl": "https://www.dawgsbynature.com/cleveland-browns-news/136050/browns-roster-dylan-sampson-denzel-ward-quincy-williams-grant-delpit-injuries",
+      "resolvedUrl": "https://www.dawgsbynature.com/cleveland-browns-news/136050/browns-roster-dylan-sampson-denzel-ward-quincy-williams-grant-delpit-injuries",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:21:19.210Z"
+    },
+    {
+      "id": "coltsSecondary",
+      "requestedUrl": "https://sports.yahoo.com/articles/colts-made-three-key-roster-162656867.html",
+      "resolvedUrl": "https://sports.yahoo.com/articles/colts-made-three-key-roster-162656867.html",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:23:24.278Z"
+    },
+    {
+      "id": "nflReserves",
+      "requestedUrl": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+      "resolvedUrl": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+      "checkedAt": "2026-10-24T23:15:37.387Z",
+      "status": 200
+    },
+    {
+      "id": "new-york-jets",
+      "requestedUrl": "https://www.newyorkjets.com/team/injury-report/",
+      "resolvedUrl": "https://www.newyorkjets.com/team/injury-report/",
+      "checkedAt": "2026-10-24T23:15:35.063Z",
+      "status": 200
+    },
+    {
+      "id": "falconsMoves",
+      "requestedUrl": "https://www.atlantafalcons.com/news/falcons-activate-aj-terrell-announce-roster-moves-49ers-matchup",
+      "resolvedUrl": "https://www.atlantafalcons.com/news/falcons-activate-aj-terrell-announce-roster-moves-49ers-matchup",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:21:18.954Z"
+    },
+    {
+      "id": "giantsMoves",
+      "requestedUrl": "https://www.giants.com/news/giants-activate-cb-paulson-adebo-off-ir-place-lb-tremaine-edmunds-on-ir-week-7-houston-texans",
+      "resolvedUrl": "https://www.giants.com/news/giants-activate-cb-paulson-adebo-off-ir-place-lb-tremaine-edmunds-on-ir-week-7-houston-texans",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:21:19.257Z"
+    },
+    {
+      "id": "transactions-cleveland-browns",
+      "requestedUrl": "https://www.clevelandbrowns.com/team/transactions/",
+      "resolvedUrl": "https://www.clevelandbrowns.com/team/transactions/",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:17:51.591Z"
+    },
+    {
+      "id": "broncosMoves",
+      "requestedUrl": "https://www.denverbroncos.com/news/broncos-activate-rb-jonah-coleman-and-olb-jonathon-cooper-place-rb-tyler-badie-and-olb-jonah-elliss-on-ir",
+      "resolvedUrl": "https://www.denverbroncos.com/news/broncos-activate-rb-jonah-coleman-and-olb-jonathon-cooper-place-rb-tyler-badie-and-olb-jonah-elliss-on-ir",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:21:18.933Z"
+    },
+    {
+      "id": "transactions-san-francisco-49ers",
+      "requestedUrl": "https://www.49ers.com/team/transactions/",
+      "resolvedUrl": "https://www.49ers.com/team/transactions/",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:17:50.852Z"
+    },
+    {
+      "id": "transactions-houston-texans",
+      "requestedUrl": "https://www.houstontexans.com/team/transactions/",
+      "resolvedUrl": "https://www.houstontexans.com/team/transactions/",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:17:51.295Z"
+    },
+    {
+      "id": "transactions-kansas-city-chiefs",
+      "requestedUrl": "https://www.chiefs.com/team/transactions/",
+      "resolvedUrl": "https://www.chiefs.com/team/transactions/",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:17:52.196Z"
+    },
+    {
+      "id": "transactions-miami-dolphins",
+      "requestedUrl": "https://www.miamidolphins.com/team/transactions/",
+      "resolvedUrl": "https://www.miamidolphins.com/team/transactions/",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:17:51.414Z"
+    },
+    {
+      "id": "transactions-minnesota-vikings",
+      "requestedUrl": "https://www.vikings.com/team/transactions/",
+      "resolvedUrl": "https://www.vikings.com/team/transactions/",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:17:51.825Z"
+    },
+    {
+      "id": "giantsSecondary",
+      "requestedUrl": "https://www.bigblueview.com/new-york-giants-roster/177240/ny-giants-roster-moves-tremaine-edmunds-paulson-adebo-jalin-hyatt",
+      "resolvedUrl": "https://www.bigblueview.com/new-york-giants-roster/177240/ny-giants-roster-moves-tremaine-edmunds-paulson-adebo-jalin-hyatt",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:31:07.117Z"
+    },
+    {
+      "id": "panthersMoves",
+      "requestedUrl": "https://www.panthers.com/news/panthers-place-thomas-incoom-on-ir-activate-bam-martin-scott",
+      "resolvedUrl": "https://www.panthers.com/news/panthers-place-thomas-incoom-on-ir-activate-bam-martin-scott",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:23:24.224Z"
+    },
+    {
+      "id": "panthersSecondary",
+      "requestedUrl": "https://sports.yahoo.com/articles/panthers-handful-roster-moves-saturday-201404328.html",
+      "resolvedUrl": "https://sports.yahoo.com/articles/panthers-handful-roster-moves-saturday-201404328.html",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:23:24.371Z"
+    },
+    {
+      "id": "transactions-detroit-lions",
+      "requestedUrl": "https://www.detroitlions.com/team/transactions/",
+      "resolvedUrl": "https://www.detroitlions.com/team/transactions/",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:17:52.219Z"
+    },
+    {
+      "id": "lionsSecondary",
+      "requestedUrl": "https://sports.yahoo.com/articles/lions-activate-brian-branch-cade-203234072.html",
+      "resolvedUrl": "https://sports.yahoo.com/articles/lions-activate-brian-branch-cade-203234072.html",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:31:07.437Z"
+    },
+    {
+      "id": "seahawksUsa",
+      "requestedUrl": "https://www.aol.com/articles/seahawks-activate-anthony-bradford-ahead-205123000.html",
+      "resolvedUrl": "https://www.aol.com/articles/seahawks-activate-anthony-bradford-ahead-205123000.html",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:38:11.397Z"
+    },
+    {
+      "id": "seahawksFieldGulls",
+      "requestedUrl": "https://www.fieldgulls.com/seattle-seahawks-news/178108/seattle-seahawks-turn-to-practice-squad-for-defensive-depth-bring-anthony-bradford-back-from-ir-week-7-chiefs",
+      "resolvedUrl": "https://www.fieldgulls.com/seattle-seahawks-news/178108/seattle-seahawks-turn-to-practice-squad-for-defensive-depth-bring-anthony-bradford-back-from-ir-week-7-chiefs",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:31:07.214Z"
+    },
+    {
+      "id": "transactions-green-bay-packers",
+      "requestedUrl": "https://www.packers.com/team/transactions/",
+      "resolvedUrl": "https://www.packers.com/team/transactions/",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:17:52.189Z"
+    },
+    {
+      "id": "cbsTransactions",
+      "requestedUrl": "https://www.cbssports.com/nfl/transactions/",
+      "resolvedUrl": "https://www.cbssports.com/nfl/transactions/",
+      "checkedAt": "2026-10-24T23:15:37.122Z",
+      "status": 200
+    },
+    {
+      "id": "denverSecondary",
+      "requestedUrl": "https://www.denvergazette.com/2026/10/24/broncos-activate-jonathon-cooper-jonah-coleman-to-face-cardinals/",
+      "resolvedUrl": "https://www.denvergazette.com/2026/10/24/broncos-activate-jonathon-cooper-jonah-coleman-to-face-cardinals/",
+      "status": 200,
+      "checkedAt": "2026-10-24T23:23:23.873Z"
+    }
+  ],
+  "sourceFamiliesNote": "Club/NFL is one family. USA TODAY and NBC/PFT syndication retains its original publisher identity; shared reporting is not independent original reporting."
+}

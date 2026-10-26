@@ -1,0 +1,25 @@
+{
+  "resolvedCompleteLists": [
+    "indianapolis-colts",
+    "atlanta-falcons",
+    "carolina-panthers"
+  ],
+  "claims": [
+    {
+      "claim": "Daily Norseman Bruce Boettcher spelling",
+      "decision": "Excluded. Correct Bryce identity is explicitly corroborated by the Colts, ESPN and FFToday."
+    },
+    {
+      "claim": "ESPN partial game-summary injury arrays",
+      "decision": "The capped game-summary arrays are not used. The separate full-team feed was examined for explicit INACTIVE flags, and all seven entries per team match official and FFToday membership."
+    },
+    {
+      "claim": "Generic Out/Active labels and absent players",
+      "decision": "Neither generic status nor omission is used as inactive/active proof. Only the explicit inactive flags, dated complete lists and specific QB-role statements are used."
+    },
+    {
+      "claim": "Other injury/reserve discrepancies and provisional results",
+      "decision": "Prior unrelated holds remain. No current score is promoted to final and no module date is renewed."
+    }
+  ]
+}

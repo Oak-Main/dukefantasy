@@ -1,0 +1,124 @@
+{
+  "run": "2026-10-24T161505Z",
+  "baseCommit": "45fb535aa6bb2d22e5f3b9483b5c94f55c12622a",
+  "checkedAt": "2026-10-24T16:20:23.613Z",
+  "changedFacts": 2,
+  "moduleReviews": 0,
+  "changes": [
+    {
+      "player": "DeShon Elliott",
+      "transition": "IR ledger to dated QUESTIONABLE watch after actual October 24 activation",
+      "officialDesignationDate": "2026-10-23",
+      "FridayPractice": "FP estimated_walkthrough"
+    },
+    {
+      "player": "DeShon Elliott",
+      "reserveStatus": "Activated from IR",
+      "asOf": "2026-10-24"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.steelers.com/news/week-7-injury-report-saints",
+      "checkedAt": "2026-10-24T16:17:50.053Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://steelersdepot.com/2026/10/steelers-week-seven-friday-injury-report-t-j-watt-good-to-go-two-other-players-questionable/",
+      "checkedAt": "2026-10-24T16:17:50.074Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.steelers.com/news/steelers-make-roster-move-ahead-of-saints-game",
+      "checkedAt": "2026-10-24T16:17:49.960Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.steelers.com/team/transactions/",
+      "checkedAt": "2026-10-24T16:15:59.475Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://steelersdepot.com/2026/10/steelers-activate-safety-deshon-elliott-to-53-man-roster-in-boost-to-pittsburghs-secondary/",
+      "checkedAt": "2026-10-24T16:17:49.991Z",
+      "reportedWeek": 7
+    }
+  ],
+  "supportingEspn": {
+    "id": "espnInjuries",
+    "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+    "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+    "checkedAt": "2026-10-24T16:16:01.186Z",
+    "status": 200,
+    "observed": {
+      "player": "DeShon Elliott",
+      "status": "Active",
+      "reportDate": "2026-10-24T14:35Z"
+    },
+    "scope": "Explicit roster status only; not an activation statement or game-day active confirmation"
+  },
+  "previousIRRecord": {
+    "player": "DeShon Elliott",
+    "team_slug": "pittsburgh-steelers",
+    "position": "S",
+    "injury": "Knee",
+    "status": "IR",
+    "weeks_out": null,
+    "detail": "Listed on injured reserve by ESPN and CBS as of October 20. An estimated return is not an activation.",
+    "sources": [
+      "https://www.espn.com/nfl/injuries",
+      "https://www.cbssports.com/nfl/injuries/"
+    ],
+    "confidence": "medium"
+  },
+  "results": {
+    "compared": 107,
+    "finals": 94,
+    "week7Finals": 1,
+    "upcomingWeek7": 13,
+    "changes": 0
+  },
+  "standingsEvidence": "standings-reconciliation.json",
+  "preserved": {
+    "all272GamesAndInternationalMetadata": true,
+    "all352Practices": true,
+    "allCompleteThursdayInactives": true,
+    "allOtherWatchAndIRRecords": true,
+    "allExistingReserveRecords": true,
+    "allModuleSources": {
+      "schedule": {
+        "sourceAsOf": "2026-10-24",
+        "fetchedAt": "2026-10-24T09:19:07.137Z",
+        "compiledAt": "2026-10-24T09:25:21.634Z"
+      },
+      "injuries": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "fantasy": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "transactions": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "leaders": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "inactives": {
+        "sourceAsOf": "2026-10-22",
+        "fetchedAt": "2026-10-23T09:47:02.764Z",
+        "compiledAt": "2026-10-23T09:49:13.718Z"
+      }
+    },
+    "injuryFullReviewDate": "2026-10-20"
+  },
+  "sourceInterpretation": "The October 23 reports describe IR and QUESTIONABLE before the October 24 activation. Preserve the former designation as dated history, and use only explicit October 24 activation reports for the roster transition. ESPN Active and CBS omission do not establish Sunday game-day availability. Sources may share the club announcement; no claim of independent original reporting.",
+  "badgeDecision": "Keep the explicit QUESTIONABLE badge aligned to the verified formal designation; an estimated walkthrough FP must not produce a LIKELY badge for Elliott."
+}

@@ -1,0 +1,652 @@
+{
+  "week": 7,
+  "run": "2026-10-25T200014Z",
+  "baseCommit": "fb6d0794849b0f06db7343f8aaad8e67fd197a1b",
+  "createdAt": "2026-10-25T20:15:04.308Z",
+  "observations": [
+    {
+      "kind": "inactive",
+      "key": "401873021:los-angeles-rams",
+      "value": {
+        "gameId": "401873021",
+        "week": 7,
+        "teamSlug": "los-angeles-rams",
+        "complete": true,
+        "players": [
+          {
+            "name": "Bill Murray",
+            "designation": "inactive"
+          },
+          {
+            "name": "Keagen Trost",
+            "designation": "inactive"
+          },
+          {
+            "name": "Max Klare",
+            "designation": "inactive"
+          },
+          {
+            "name": "Nate Landman",
+            "designation": "inactive"
+          },
+          {
+            "name": "Trent McDuffie",
+            "designation": "inactive"
+          },
+          {
+            "name": "Ty Simpson",
+            "designation": "emergency_qb"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.therams.com/news/trent-mcduffie-among-rams-inactives-for-week-7-2026-at-raiders",
+          "checkedAt": "2026-10-25T20:00:48.628Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873021",
+            "week": 7,
+            "teamSlug": "los-angeles-rams",
+            "complete": true,
+            "players": [
+              {
+                "name": "Bill Murray",
+                "designation": "inactive"
+              },
+              {
+                "name": "Keagen Trost",
+                "designation": "inactive"
+              },
+              {
+                "name": "Max Klare",
+                "designation": "inactive"
+              },
+              {
+                "name": "Nate Landman",
+                "designation": "inactive"
+              },
+              {
+                "name": "Trent McDuffie",
+                "designation": "inactive"
+              },
+              {
+                "name": "Ty Simpson",
+                "designation": "emergency_qb"
+              }
+            ]
+          },
+          "rawSha256": "df5c8adcc71394fdb34ba5076b61edde8a0dcf5aeeb3e6b52a82a732128cdaa4",
+          "sourceDetail": "Complete own-team club list and every current ESPN explicit INACTIVE record agree on full membership and explicit emergency role."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-25T20:00:45.125Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873021",
+            "week": 7,
+            "teamSlug": "los-angeles-rams",
+            "complete": true,
+            "players": [
+              {
+                "name": "Bill Murray",
+                "designation": "inactive"
+              },
+              {
+                "name": "Keagen Trost",
+                "designation": "inactive"
+              },
+              {
+                "name": "Max Klare",
+                "designation": "inactive"
+              },
+              {
+                "name": "Nate Landman",
+                "designation": "inactive"
+              },
+              {
+                "name": "Trent McDuffie",
+                "designation": "inactive"
+              },
+              {
+                "name": "Ty Simpson",
+                "designation": "emergency_qb"
+              }
+            ]
+          },
+          "rawSha256": "ca9d2cebfaf5ec90e278fd05cf850465063fef5ecc4f02fe7e30447042ecc914",
+          "sourceDetail": "Complete own-team club list and every current ESPN explicit INACTIVE record agree on full membership and explicit emergency role."
+        }
+      ]
+    },
+    {
+      "kind": "inactive",
+      "key": "401873021:las-vegas-raiders",
+      "value": {
+        "gameId": "401873021",
+        "week": 7,
+        "teamSlug": "las-vegas-raiders",
+        "complete": true,
+        "players": [
+          {
+            "name": "Aidan O'Connell",
+            "designation": "emergency_qb"
+          },
+          {
+            "name": "Bryce Cabeldue",
+            "designation": "inactive"
+          },
+          {
+            "name": "Cian Slone",
+            "designation": "inactive"
+          },
+          {
+            "name": "Dalton Johnson",
+            "designation": "inactive"
+          },
+          {
+            "name": "Jonah Laulu",
+            "designation": "inactive"
+          },
+          {
+            "name": "Thomas Booker IV",
+            "designation": "inactive"
+          },
+          {
+            "name": "Tristin McCollum",
+            "designation": "inactive"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.raiders.com/news/las-vegas-raiders-week-7-inactives-vs-los-angeles-rams",
+          "checkedAt": "2026-10-25T20:00:48.620Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873021",
+            "week": 7,
+            "teamSlug": "las-vegas-raiders",
+            "complete": true,
+            "players": [
+              {
+                "name": "Aidan O'Connell",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "Bryce Cabeldue",
+                "designation": "inactive"
+              },
+              {
+                "name": "Cian Slone",
+                "designation": "inactive"
+              },
+              {
+                "name": "Dalton Johnson",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jonah Laulu",
+                "designation": "inactive"
+              },
+              {
+                "name": "Thomas Booker IV",
+                "designation": "inactive"
+              },
+              {
+                "name": "Tristin McCollum",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "5ee0f1298c91c6bab4221f7858afc6a08533aa2edb6e56a2ee301f1a9d2303c2",
+          "sourceDetail": "Complete own-team club list and every current ESPN explicit INACTIVE record agree on full membership and explicit emergency role."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-25T20:00:45.125Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873021",
+            "week": 7,
+            "teamSlug": "las-vegas-raiders",
+            "complete": true,
+            "players": [
+              {
+                "name": "Aidan O'Connell",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "Bryce Cabeldue",
+                "designation": "inactive"
+              },
+              {
+                "name": "Cian Slone",
+                "designation": "inactive"
+              },
+              {
+                "name": "Dalton Johnson",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jonah Laulu",
+                "designation": "inactive"
+              },
+              {
+                "name": "Thomas Booker IV",
+                "designation": "inactive"
+              },
+              {
+                "name": "Tristin McCollum",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "ca9d2cebfaf5ec90e278fd05cf850465063fef5ecc4f02fe7e30447042ecc914",
+          "sourceDetail": "Complete own-team club list and every current ESPN explicit INACTIVE record agree on full membership and explicit emergency role."
+        }
+      ]
+    },
+    {
+      "kind": "result",
+      "key": "401873012",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 35,
+        "homeScore": 13
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-25T20:14:17.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 35,
+            "homeScore": 13
+          },
+          "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873012",
+            "week": 7,
+            "awaySlug": "cincinnati-bengals",
+            "homeSlug": "baltimore-ravens",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-25T20:14:17.512Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 35,
+            "homeScore": 13
+          },
+          "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873012",
+            "week": 7,
+            "awaySlug": "cincinnati-bengals",
+            "homeSlug": "baltimore-ravens",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        }
+      ],
+      "gameIdentity": {
+        "id": "401873012",
+        "week": 7,
+        "awaySlug": "cincinnati-bengals",
+        "homeSlug": "baltimore-ravens",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
+    },
+    {
+      "kind": "result",
+      "key": "401873013",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 27,
+        "homeScore": 24
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-25T20:14:17.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 27,
+            "homeScore": 24
+          },
+          "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873013",
+            "week": 7,
+            "awaySlug": "cleveland-browns",
+            "homeSlug": "tennessee-titans",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-25T20:14:17.512Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 27,
+            "homeScore": 24
+          },
+          "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873013",
+            "week": 7,
+            "awaySlug": "cleveland-browns",
+            "homeSlug": "tennessee-titans",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        }
+      ],
+      "gameIdentity": {
+        "id": "401873013",
+        "week": 7,
+        "awaySlug": "cleveland-browns",
+        "homeSlug": "tennessee-titans",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
+    },
+    {
+      "kind": "result",
+      "key": "401873014",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 10,
+        "homeScore": 16
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-25T20:14:17.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 10,
+            "homeScore": 16
+          },
+          "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873014",
+            "week": 7,
+            "awaySlug": "indianapolis-colts",
+            "homeSlug": "minnesota-vikings",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-25T20:14:17.512Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 10,
+            "homeScore": 16
+          },
+          "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873014",
+            "week": 7,
+            "awaySlug": "indianapolis-colts",
+            "homeSlug": "minnesota-vikings",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        }
+      ],
+      "gameIdentity": {
+        "id": "401873014",
+        "week": 7,
+        "awaySlug": "indianapolis-colts",
+        "homeSlug": "minnesota-vikings",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
+    },
+    {
+      "kind": "result",
+      "key": "401873015",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 28,
+        "homeScore": 25
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-25T20:14:17.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 28,
+            "homeScore": 25
+          },
+          "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873015",
+            "week": 7,
+            "awaySlug": "miami-dolphins",
+            "homeSlug": "new-york-jets",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-25T20:14:17.512Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 28,
+            "homeScore": 25
+          },
+          "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873015",
+            "week": 7,
+            "awaySlug": "miami-dolphins",
+            "homeSlug": "new-york-jets",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        }
+      ],
+      "gameIdentity": {
+        "id": "401873015",
+        "week": 7,
+        "awaySlug": "miami-dolphins",
+        "homeSlug": "new-york-jets",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
+    },
+    {
+      "kind": "result",
+      "key": "401873017",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 20,
+        "homeScore": 29
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-25T20:14:17.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 20,
+            "homeScore": 29
+          },
+          "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873017",
+            "week": 7,
+            "awaySlug": "san-francisco-49ers",
+            "homeSlug": "atlanta-falcons",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-25T20:14:17.512Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 20,
+            "homeScore": 29
+          },
+          "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873017",
+            "week": 7,
+            "awaySlug": "san-francisco-49ers",
+            "homeSlug": "atlanta-falcons",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        }
+      ],
+      "gameIdentity": {
+        "id": "401873017",
+        "week": 7,
+        "awaySlug": "san-francisco-49ers",
+        "homeSlug": "atlanta-falcons",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
+    },
+    {
+      "kind": "result",
+      "key": "401873018",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 43,
+        "homeScore": 13
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-25T20:14:17.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 43,
+            "homeScore": 13
+          },
+          "rawSha256": "dfee64d546b82e3a86998a424bea5e744d2ab310609a01351479df73199d21af",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873018",
+            "week": 7,
+            "awaySlug": "tampa-bay-buccaneers",
+            "homeSlug": "carolina-panthers",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-25T20:14:17.512Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 43,
+            "homeScore": 13
+          },
+          "rawSha256": "3a243caad6d459d75e764a4ab3f4dbb41c21df34f3d91f52f0c88aa47a4811f9",
+          "sourceDetail": "Correct-season/week official schedule Game Card and ESPN game identity, completed final status and both final scores agree.",
+          "gameIdentity": {
+            "id": "401873018",
+            "week": 7,
+            "awaySlug": "tampa-bay-buccaneers",
+            "homeSlug": "carolina-panthers",
+            "kickoffUtc": "2026-10-25T17:00:00.000Z"
+          }
+        }
+      ],
+      "gameIdentity": {
+        "id": "401873018",
+        "week": 7,
+        "awaySlug": "tampa-bay-buccaneers",
+        "homeSlug": "carolina-panthers",
+        "kickoffUtc": "2026-10-25T17:00:00.000Z"
+      }
+    }
+  ],
+  "moduleReviews": [
+    {
+      "module": "schedule",
+      "sourceAsOf": "2026-10-25",
+      "dataSha256": "c6944d0e44e521d23dc196345db2f91c9e32fb509c83838fd4eee009be218977",
+      "scope": "Actual full two-source review of all 107 result facts through Week 7 (101 finals, 6 ungraded upcoming/live). Every final flag, game identity and both final scores agree; all 32 W-L-T/PF/PA rows match fresh ESPN. Provisional scores are not published. Future Weeks 8–18 retain planning scope.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "relatedUrls": [
+            "https://www.nfl.com/schedules/2026/by-week/week-1",
+            "https://www.nfl.com/schedules/2026/by-week/week-2",
+            "https://www.nfl.com/schedules/2026/by-week/week-3",
+            "https://www.nfl.com/schedules/2026/by-week/week-4",
+            "https://www.nfl.com/schedules/2026/by-week/week-5",
+            "https://www.nfl.com/schedules/2026/by-week/week-6",
+            "https://www.nfl.com/schedules/2026/by-week/week-7"
+          ],
+          "checkedAt": "2026-10-25T20:14:17.472Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "c6944d0e44e521d23dc196345db2f91c9e32fb509c83838fd4eee009be218977",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "relatedUrls": [
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+          ],
+          "checkedAt": "2026-10-25T20:14:17.611Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "c6944d0e44e521d23dc196345db2f91c9e32fb509c83838fd4eee009be218977",
+            "complete": true
+          }
+        }
+      ]
+    }
+  ]
+}

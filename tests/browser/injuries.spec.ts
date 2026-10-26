@@ -8,8 +8,8 @@ const research = JSON.parse(readFileSync(new URL("../../data/injury-research/cur
   watch: InjuryRow[];
 };
 const tables = [
-  { heading: "Out for the long haul", id: "inj-ledger-title", rows: research.ledger, labels: ["Player", "Team", "Pos", "Status", "Weeks out", "Detail", "Sources"] },
-  { heading: "Game-time decisions, graded", id: "inj-watch-title", rows: research.watch, labels: ["Player", "Team", "Pos", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Likelihood", "Note"] },
+  { heading: "Out for the long haul", id: "inj-ledger-title", scrollName: "Long-term injury table scroll area", rows: research.ledger, labels: ["Player", "Team", "Pos", "Status", "Weeks out", "Detail", "Sources"] },
+  { heading: "Game-time decisions, graded", id: "inj-watch-title", scrollName: "Weekly injury table scroll area", rows: research.watch, labels: ["Player", "Team", "Pos", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Likelihood", "Note"] },
 ];
 
 test.beforeEach(async ({ page }) => {
@@ -83,7 +83,7 @@ test("mobile labels and complete values reflow without clipping at the breakpoin
   expect(overflow.document, JSON.stringify(overflow)).toBeLessThanOrEqual(overflow.viewport);
 });
 
-test("keyboard team filtering preserves every matching player and source link", async ({ page }) => {
+test("keyboard team filtering preserves every matching player and source link", async ({ page, context, browserName }) => {
   const filter = page.getByLabel("Filter by team", { exact: true });
   await filter.focus();
   await expect(filter).toBeFocused();
@@ -100,7 +100,7 @@ test("keyboard team filtering preserves every matching player and source link", 
   await expect(filter).toHaveValue("new-england-patriots");
   for (const table of tables) {
     const board = page.getByRole("table", { name: table.heading, exact: true });
-    const scroller = page.locator(`.db-table-wrap[aria-labelledby="${table.id}"]`);
+    const scroller = page.getByRole("region", { name: table.scrollName, exact: true });
     await scroller.focus();
     await expect(scroller).toBeFocused();
     expect(await scroller.evaluate(element => getComputedStyle(element).outlineStyle)).not.toBe("none");
@@ -126,10 +126,29 @@ test("keyboard team filtering preserves every matching player and source link", 
     await firstLink.focus();
     await expect(firstLink).toBeFocused();
     expect(await firstLink.evaluate(element => getComputedStyle(element).outlineStyle)).not.toBe("none");
-    await firstLink.press("Tab");
-    await expect(board.getByRole("link").nth(1)).toBeFocused();
-    await page.keyboard.press("Shift+Tab");
-    await expect(firstLink).toBeFocused();
+    // Windows WebKit's native Tab mode skips links; do not change site markup
+    // or browser preferences to make a Chromium-specific traversal claim.
+    if (browserName === "chromium") {
+      await firstLink.press("Tab");
+      await expect(board.getByRole("link").nth(1)).toBeFocused();
+      await page.keyboard.press("Shift+Tab");
+      await expect(firstLink).toBeFocused();
+    }
+    // Verify real keyboard activation in both engines without requesting an
+    // external publisher or allowing its network availability to affect QA.
+    const sourceUrl = await firstLink.getAttribute("href");
+    expect(sourceUrl).toMatch(/^https:\/\//);
+    const fulfillSource = async (route: import("@playwright/test").Route) => {
+      await route.fulfill({ contentType: "text/html", body: "<title>Source link target</title>" });
+    };
+    await context.route(sourceUrl ?? "", fulfillSource);
+    const popupPromise = page.waitForEvent("popup");
+    await firstLink.press("Enter");
+    const popup = await popupPromise;
+    await popup.waitForLoadState();
+    expect(popup.url()).toBe(sourceUrl);
+    await popup.close();
+    await context.unroute(sourceUrl ?? "", fulfillSource);
   }
   await resetFilter(page);
 });
@@ -137,6 +156,8 @@ test("keyboard team filtering preserves every matching player and source link", 
 test("accessibility tree retains named tables, headers, ordered cells and no axe violations", async ({ page, context, browserName }, testInfo) => {
   for (const table of tables) {
     const board = page.getByRole("table", { name: table.heading, exact: true });
+    await expect(page.getByRole("region", { name: table.heading, exact: true })).toHaveCount(1);
+    await expect(page.getByRole("region", { name: table.scrollName, exact: true })).toHaveCount(1);
     const snapshot = await board.ariaSnapshot();
     expect(snapshot).toContain(`table "${table.heading}"`);
     for (const label of table.labels) expect(snapshot).toContain(`columnheader "${label}"`);
@@ -174,7 +195,8 @@ test("accessibility tree retains named tables, headers, ordered cells and no axe
     await session.detach();
   }
   const result = await new AxeBuilder({ page })
-    .include(".inj-table")
+    .include('section[aria-labelledby="inj-ledger-title"]')
+    .include('section[aria-labelledby="inj-watch-title"]')
     .include("#inj-team-filter")
     .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa", "best-practice"])
     .analyze();

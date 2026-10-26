@@ -1,0 +1,38 @@
+{
+  "run": "2026-10-26T000014Z",
+  "baseCommit": "b5c139a345f66eef1e573e3905ad485f9d5e0aa1",
+  "changedFacts": 3,
+  "newResults": [
+    {
+      "id": "401873019",
+      "week": 7,
+      "away": "denver-broncos",
+      "home": "arizona-cardinals",
+      "awayScore": 30,
+      "homeScore": 16
+    },
+    {
+      "id": "401873020",
+      "week": 7,
+      "away": "green-bay-packers",
+      "home": "detroit-lions",
+      "awayScore": 17,
+      "homeScore": 20
+    },
+    {
+      "id": "401873021",
+      "week": 7,
+      "away": "los-angeles-rams",
+      "home": "las-vegas-raiders",
+      "awayScore": 35,
+      "homeScore": 21
+    }
+  ],
+  "completeScheduleReviews": 1,
+  "reviewedResults": 107,
+  "finals": 105,
+  "week7Finals": 12,
+  "remainingWeek7": 2,
+  "standingsCompared": 32,
+  "preserved": "All 272 games/international/future metadata, all 26 complete inactive records/times (168 entries, 17 emergency QBs), medical/reserve history, 389 practices and all non-schedule module dates. October 25 Pacific report day retained with actual October 26 UTC retrieval times."
+}

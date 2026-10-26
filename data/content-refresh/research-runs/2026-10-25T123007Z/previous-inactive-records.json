@@ -1,0 +1,86 @@
+[
+  {
+    "gameId": "401873010",
+    "week": 7,
+    "teamSlug": "new-england-patriots",
+    "publishedAt": "2026-10-22T22:48:23.219Z",
+    "checkedAt": "2026-10-23T09:22:19.687Z",
+    "complete": true,
+    "players": [
+      {
+        "name": "Ben Brown",
+        "designation": "inactive"
+      },
+      {
+        "name": "Channing Canada",
+        "designation": "inactive"
+      },
+      {
+        "name": "Carlton Davis III",
+        "designation": "inactive"
+      },
+      {
+        "name": "Karon Prunty",
+        "designation": "inactive"
+      },
+      {
+        "name": "Joshua Farmer",
+        "designation": "inactive"
+      },
+      {
+        "name": "Behren Morton",
+        "designation": "emergency_qb"
+      }
+    ],
+    "sources": [
+      "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
+      "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+      "https://www.patriots.com/news/week-7-inactives-patriots-at-bears-x7631",
+      "https://sports.yahoo.com/articles/bears-patriots-inactives-t-j-225014547.html"
+    ]
+  },
+  {
+    "gameId": "401873010",
+    "week": 7,
+    "teamSlug": "chicago-bears",
+    "publishedAt": "2026-10-22T22:48:23.219Z",
+    "checkedAt": "2026-10-23T09:22:19.687Z",
+    "complete": true,
+    "players": [
+      {
+        "name": "Kyle Monangai",
+        "designation": "inactive"
+      },
+      {
+        "name": "Nick McCloud",
+        "designation": "inactive"
+      },
+      {
+        "name": "T.J. Edwards",
+        "designation": "inactive"
+      },
+      {
+        "name": "Jack Sanborn",
+        "designation": "inactive"
+      },
+      {
+        "name": "Jordan McFadden",
+        "designation": "inactive"
+      },
+      {
+        "name": "Jayden Loving",
+        "designation": "inactive"
+      },
+      {
+        "name": "Case Keenum",
+        "designation": "emergency_qb"
+      }
+    ],
+    "sources": [
+      "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
+      "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+      "https://www.patriots.com/news/week-7-inactives-patriots-at-bears-x7631",
+      "https://sports.yahoo.com/articles/bears-patriots-inactives-t-j-225014547.html"
+    ]
+  }
+]

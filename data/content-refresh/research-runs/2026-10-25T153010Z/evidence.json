@@ -1,0 +1,133 @@
+{
+  "week": 7,
+  "run": "2026-10-25T153010Z",
+  "baseCommit": "68ed10d84c497e03cd677607e66a6728b48e88cf",
+  "createdAt": "2026-10-25T15:46:14.589Z",
+  "observations": [
+    {
+      "kind": "inactive",
+      "key": "401873013:cleveland-browns",
+      "value": {
+        "gameId": "401873013",
+        "week": 7,
+        "teamSlug": "cleveland-browns",
+        "complete": true,
+        "players": [
+          {
+            "name": "Audric Estime",
+            "designation": "inactive"
+          },
+          {
+            "name": "Justin Jefferson",
+            "designation": "inactive"
+          },
+          {
+            "name": "Mike Hall Jr.",
+            "designation": "inactive"
+          },
+          {
+            "name": "Noah Igbinoghene",
+            "designation": "inactive"
+          },
+          {
+            "name": "Parker Brailsford",
+            "designation": "inactive"
+          },
+          {
+            "name": "Taylen Green",
+            "designation": "emergency_qb"
+          }
+        ]
+      },
+      "publicationProvenance": {
+        "selectedSource": "https://www.dawgsbynature.com/cleveland-browns-injuries/136143/browns-titans-inactives-will-denzel-ward-play-today-and-titans-lose-two-players-on-offense",
+        "selectedSourcePublishedAt": "2026-10-25T15:36:00+00:00",
+        "reportPublishedAt": "2026-10-25T15:36:00.000Z",
+        "semantics": "Actual later corroborating article time, not a claim that both sources published simultaneously or an inferred official first-release time."
+      },
+      "sources": [
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-announce-inactives-for-week-7-vs-the-titans",
+          "checkedAt": "2026-10-25T15:32:51.542Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873013",
+            "week": 7,
+            "teamSlug": "cleveland-browns",
+            "complete": true,
+            "players": [
+              {
+                "name": "Audric Estime",
+                "designation": "inactive"
+              },
+              {
+                "name": "Justin Jefferson",
+                "designation": "inactive"
+              },
+              {
+                "name": "Mike Hall Jr.",
+                "designation": "inactive"
+              },
+              {
+                "name": "Noah Igbinoghene",
+                "designation": "inactive"
+              },
+              {
+                "name": "Parker Brailsford",
+                "designation": "inactive"
+              },
+              {
+                "name": "Taylen Green",
+                "designation": "emergency_qb"
+              }
+            ]
+          },
+          "publishedAt": "2026-10-25T15:30:07.989Z",
+          "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:30:07.989Z\"",
+          "rawSha256": "59d45d370c453dcab583d31ed1d62b23669ece375bf42df75226c0085f97d070"
+        },
+        {
+          "url": "https://www.dawgsbynature.com/cleveland-browns-injuries/136143/browns-titans-inactives-will-denzel-ward-play-today-and-titans-lose-two-players-on-offense",
+          "checkedAt": "2026-10-25T15:37:13.588Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873013",
+            "week": 7,
+            "teamSlug": "cleveland-browns",
+            "complete": true,
+            "players": [
+              {
+                "name": "Audric Estime",
+                "designation": "inactive"
+              },
+              {
+                "name": "Justin Jefferson",
+                "designation": "inactive"
+              },
+              {
+                "name": "Mike Hall Jr.",
+                "designation": "inactive"
+              },
+              {
+                "name": "Noah Igbinoghene",
+                "designation": "inactive"
+              },
+              {
+                "name": "Parker Brailsford",
+                "designation": "inactive"
+              },
+              {
+                "name": "Taylen Green",
+                "designation": "emergency_qb"
+              }
+            ]
+          },
+          "publishedAt": "2026-10-25T15:36:00+00:00",
+          "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:36:00+00:00\"",
+          "rawSha256": "4f86a4eaf4f2d014bbd39faca68ab4d2777abf3d284bb41a568849df681bc17c"
+        }
+      ]
+    }
+  ],
+  "moduleReviews": []
+}

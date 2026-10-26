@@ -1,0 +1,78 @@
+{
+  "run": "2026-10-24T231510Z",
+  "baseCommit": "059e8c994bab5033cc74fd441b365c89370d4b90",
+  "preparedAt": "2026-10-24T23:44:30.617Z",
+  "changedFacts": 103,
+  "moduleReviews": 0,
+  "counts": {
+    "newPracticeReports": 37,
+    "saturdayPracticeReports": 33,
+    "fridayPracticeReports": 4,
+    "totalPracticeReports": 389,
+    "newReserveObservations": 23,
+    "actualIRReturns": 12,
+    "actualNewIRPlacements": 9,
+    "watchRecords": 141,
+    "ledgerRecords": 275
+  },
+  "changedFactKinds": {
+    "injury": 43,
+    "reserve": 23,
+    "practice": 37
+  },
+  "sourceSemantics": "Two publisher families are required for each changed claim. Retained unchanged fields remain tied to the exact base and retain their historical dates; no full-module freshness is renewed. USA TODAY and NBC/PFT syndication is identified by its original publisher, not treated as independent original reporting. Activation, official designations, dated participation and game-day lists remain distinct.",
+  "coverageFile": "source-coverage.json",
+  "previousRecordsFile": "previous-injury-records.json",
+  "sourceIndexFile": "source-index.json",
+  "results": {
+    "games": 107,
+    "finals": 94,
+    "week7Finals": 1,
+    "remainingWeek7": 13,
+    "changes": 0
+  },
+  "standings": {
+    "compared": 32,
+    "changes": 0
+  },
+  "preserved": {
+    "fullInjuryReviewDate": "2026-10-20",
+    "moduleSources": {
+      "schedule": {
+        "sourceAsOf": "2026-10-24",
+        "fetchedAt": "2026-10-24T09:19:07.137Z",
+        "compiledAt": "2026-10-24T09:25:21.634Z"
+      },
+      "injuries": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "fantasy": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "transactions": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "leaders": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "inactives": {
+        "sourceAsOf": "2026-10-22",
+        "fetchedAt": "2026-10-23T09:47:02.764Z",
+        "compiledAt": "2026-10-23T09:49:13.718Z"
+      }
+    },
+    "all272GamesAndInternationalMetadata": true,
+    "all352EarlierPractices": true,
+    "completeThursdayInactives": true,
+    "manifestAndSnapshot": true
+  },
+  "sourceTransition": "source-transition.json"
+}

@@ -1,0 +1,20 @@
+{
+  "recordedAt": "2026-10-24T23:44:21.430Z",
+  "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+  "oldRetrieval": "2026-10-24T23:15:38.956Z",
+  "newRetrieval": "2026-10-24T23:42:18.080Z",
+  "beforeSha": "4dc40381cf8cb81dd458405278f958720458f97f41211c0293abdf383fbbf907",
+  "afterSha": "2ab0b857075d7215898a6c34b442f5442b0cb1ab9acbc20d7a245205c6faea7f",
+  "review": "Add newly corroborated Durant Saturday FP/no designation; existing Winters/Turpin OUT and Badie/Elliss IR values are unchanged. Exempt-list timing and the Winters weekday typo are held; no unverified date or future return is published.",
+  "action": "Retain original baseline, collect new final state and restart the full preflight.",
+  "additionalReviews": [
+    {
+      "reviewedAt": "2026-10-24T23:47:44.312Z",
+      "retrievedAt": "2026-10-24T23:45:23.733Z",
+      "beforeSha": "04684cbba92817be54d9745a73d3e37ee7ab7acf951d19e2885137af39ce7417",
+      "afterSha": "424ca3bf60ccb5c542ddd36700b51178d4aa0168d4e995ab6ce8d8ff76daccf5",
+      "decision": "Adebo activation and Edmunds IR prose became explicit, while their already-reviewed QUESTIONABLE/Knee and IR/Chest fields did not change. Jalin Hyatt is a practice-squad elevation outside this injury publication. No new published factual value or freshness date is created.",
+      "guardScope": "Project only source fields actually used by this publication: status, condition, report day, explicit activation/clearance and corroborated Saturday participation. Unused prose and minute-level editorial timestamps do not alter a factual claim. Any claimed field change or loss of an explicit supporting statement still blocks deployment."
+    }
+  ]
+}

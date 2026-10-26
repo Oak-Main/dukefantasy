@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -110,6 +111,9 @@ test("injury tables server-render complete mobile labels and scoped column relat
     ["inj-ledger-title", ["Player", "Team", "Pos", "Status", "Weeks out", "Detail", "Sources"]],
     ["inj-watch-title", ["Player", "Team", "Pos", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Likelihood", "Note"]],
   ];
+  assert.match(html, /<section class="db-table-wrap" aria-label="Long-term injury table scroll area" tabindex="0"/);
+  assert.match(html, /<section class="db-table-wrap" aria-label="Weekly injury table scroll area" tabindex="0"/);
+  assert.doesNotMatch(html, /class="db-table-wrap" aria-labelledby="inj-(ledger|watch)-title"/);
   for (const [heading, labels] of structures) {
     const table = html.match(new RegExp(`<table[^>]*aria-labelledby="${heading}"[^>]*>([\\s\\S]*?)</table>`))?.[1];
     assert.ok(table, `${heading}: named table available without JavaScript`);
@@ -213,4 +217,49 @@ test("simulation API rejects invalid scenario participants and caps work", async
     body: JSON.stringify({ forced: { "scenario-1": "clemson" }, iterations: 100_000 }),
   });
   assert.equal(unknownTeam.status, 400);
+});
+
+
+test("official OUT designation replaces a prior questionable likelihood badge", async () => {
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const row = [...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/g)].map(match => match[0]).find(row => row.includes("Tremaine Edmunds"));
+  assert.ok(row, "Tremaine Edmunds watch row renders");
+  assert.match(html, /Full review as of/);
+  assert.match(html, /Latest dated observation/);
+  assert.match(html, /2026-10-23/);
+  const text = row.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
+  assert.match(text, /Official Week 7 designation: OUT/);
+  assert.match(text, /UNLIKELY/);
+  assert.match(text, /high conf/);
+  assert.doesNotMatch(text, /QUESTIONABLE/);
+});
+
+test("dated reserve verification advances the latest observation while retaining the comprehensive review date", async () => {
+  const editorial = JSON.parse(readFileSync(new URL("../data/content-refresh/current-editorial.json", import.meta.url), "utf8"));
+  const injury = JSON.parse(readFileSync(new URL("../data/injury-research/current.json", import.meta.url), "utf8"));
+  const reinstatement = editorial.reserveStatuses.find(row => row.player === "Montez Sweat");
+  assert.ok(reinstatement?.asOf, "the published reserve observation has its own verification date");
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const text = (await response.text()).replaceAll("<!-- -->", "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
+  assert.equal(text.match(/Full review as of (\d{4}-\d{2}-\d{2})/)?.[1], injury.as_of);
+  const latest = text.match(/Latest dated observation (\d{4}-\d{2}-\d{2})/)?.[1];
+  assert.ok(latest && latest >= reinstatement.asOf, "a newer reserve observation must not disappear from the latest-observation label");
+  assert.ok(text.includes(`Status checked ${reinstatement.asOf}`));
+});
+
+test("a formal no-designation record retains practice history without inferring an availability grade", async () => {
+  const injury = JSON.parse(readFileSync(new URL("../data/injury-research/current.json", import.meta.url), "utf8"));
+  const cleared = injury.watch.find(row => row.published_status === "NO_DESIGNATION" && Object.values(row.practice ?? {}).some(status => status === "LP" || status === "DNP"));
+  assert.ok(cleared, "a cleared record with earlier limited/missed participation exercises the fallback");
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const row = [...html.matchAll(/<tr\b[\s\S]*?<\/tr>/g)].find(match => match[0].includes(cleared.player))?.[0];
+  assert.ok(row, "the player remains on the sourced watch");
+  assert.match(row, /NO DESIGNATION/);
+  assert.match(row, /inj-practice--(?:lp|dnp)/);
+  assert.match(row, /inj-pill--none[^>]*>Not graded/);
 });

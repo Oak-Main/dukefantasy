@@ -2334,3 +2334,21 @@
   margin: 0 0 14px;
   max-width: 78ch;
 }
+
+@media (max-width: 679px) {
+  .inj-table td.inj-detail {
+    display: block;
+    max-width: none;
+  }
+
+  .inj-table td.inj-detail::before {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .inj-table .inj-pill {
+    flex-wrap: wrap;
+    max-width: 100%;
+    white-space: normal;
+  }
+}

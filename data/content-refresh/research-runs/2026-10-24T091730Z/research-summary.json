@@ -1,0 +1,98 @@
+{
+  "run": "2026-10-24T091730Z",
+  "baseCommit": "28e416a2e2e548e64193445cba307f2601f18ada",
+  "checkedAt": "2026-10-24T09:25:21.634Z",
+  "changedFacts": 2,
+  "moduleReviews": 1,
+  "changes": [
+    {
+      "player": "Cole Kmet",
+      "team": "chicago-bears",
+      "status": "IR",
+      "injury": "Knee",
+      "placementDate": "2026-10-23"
+    },
+    {
+      "player": "Montez Sweat",
+      "team": "chicago-bears",
+      "status": "Suspension lifted",
+      "asOf": "2026-10-24"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.chicagobears.com/news/roster-moves-chicago-bears-place-cole-kmet-on-ir",
+      "checkedAt": "2026-10-24T09:21:08.256Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.chicagobears.com/team/transactions/",
+      "checkedAt": "2026-10-24T09:20:28.356Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.nfl.com/transactions/league/reserve-list/2026/10",
+      "checkedAt": "2026-10-24T09:19:06.272Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "checkedAt": "2026-10-24T09:19:07.532Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.cbssports.com/nfl/injuries/",
+      "checkedAt": "2026-10-24T09:19:06.344Z",
+      "reportedWeek": 7
+    },
+    {
+      "url": "https://www.cbssports.com/nfl/transactions/",
+      "checkedAt": "2026-10-24T09:22:48.050Z",
+      "reportedWeek": 7
+    }
+  ],
+  "results": {
+    "compared": 107,
+    "finals": 94,
+    "week7Finals": 1,
+    "upcomingWeek7": 13,
+    "changes": 0
+  },
+  "standingsEvidence": "standings-reconciliation.json",
+  "preserved": {
+    "all272GameRecordsAndInternationalMetadata": true,
+    "all352PriorPractices": true,
+    "allWatchDesignations": true,
+    "allThursdayInactives": true,
+    "fullInjuryDate": "2026-10-20",
+    "moduleSources": {
+      "injuries": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "fantasy": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "transactions": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "leaders": {
+        "sourceAsOf": "2026-10-20",
+        "fetchedAt": null,
+        "compiledAt": "2026-10-20T19:20:03.528Z"
+      },
+      "inactives": {
+        "sourceAsOf": "2026-10-22",
+        "fetchedAt": "2026-10-23T09:47:02.764Z",
+        "compiledAt": "2026-10-23T09:49:13.718Z"
+      }
+    }
+  },
+  "normalization": "The official October 23 placement and reinstatement statements supersede older injury-page status summaries; ESPN and current CBS transaction entries agree. No feed omission is used as activation. Original report dates and actual UTC retrievals stay separate. Source families can share reporting; no claim of independent original reporting is made. The official Bears/NFL wires corroborate the actual placement, while ESPN and CBS explicitly corroborate both IR status and the knee condition. Only ESPN/CBS attest the full normalized injury value in the evidence contract.",
+  "dateSemantics": "Both official moves occurred October 23. Sweat eligibility is newly verified October 24 with its actual UTC checkedAt. The October 24 release and schedule review date are supported by a real complete 107-game, 32-standings comparison. Full injury/fantasy/transaction/leader/inactive dates remain unchanged. The latest-observation label includes dated reserve verification."
+}

@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "url": "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints",
+      "text": "Steelers inactives for Week 7 at Saints Find out who won't play today as the Steelers take on the Saints at Stade de France in Paris",
+      "parent": "steelersNews",
+      "id": "article-0",
+      "resolvedUrl": "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints",
+      "checkedAt": "2026-10-25T12:30:40.234Z",
+      "status": 200
+    },
+    {
+      "id": "depot",
+      "requestedUrl": "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
+      "resolvedUrl": "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
+      "checkedAt": "2026-10-25T12:33:15.876Z",
+      "status": 200
+    },
+    {
+      "id": "fftoday",
+      "requestedUrl": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+      "resolvedUrl": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+      "checkedAt": "2026-10-25T12:33:16.120Z",
+      "status": 200
+    },
+    {
+      "id": "nflThursday",
+      "requestedUrl": "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
+      "resolvedUrl": "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears",
+      "checkedAt": "2026-10-25T12:33:15.891Z",
+      "status": 200
+    },
+    {
+      "id": "nbcThursday",
+      "requestedUrl": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+      "resolvedUrl": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+      "checkedAt": "2026-10-25T12:33:16.002Z",
+      "status": 200
+    }
+  ],
+  "coverage": [
+    {
+      "key": "401873010:new-england-patriots",
+      "primary": [
+        "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears"
+      ],
+      "secondary": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
+      ]
+    },
+    {
+      "key": "401873010:chicago-bears",
+      "primary": [
+        "https://www.nfl.com/news/week-7-thursday-night-inactives-new-england-patriots-at-chicago-bears"
+      ],
+      "secondary": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-patriots-cb-christian-gonzalez-is-active",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
+      ]
+    },
+    {
+      "key": "401873011:pittsburgh-steelers",
+      "primary": [
+        "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints"
+      ],
+      "secondary": [
+        "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
+      ]
+    },
+    {
+      "key": "401873011:new-orleans-saints",
+      "primary": [
+        "https://www.steelers.com/news/steelers-inactives-for-week-7-at-saints"
+      ],
+      "secondary": [
+        "https://steelersdepot.com/2026/10/steelers-vs-saints-inactives-for-week-7/",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
+      ]
+    }
+  ],
+  "rawSources": "outputs/week7-automation/2026-10-25T123007Z/",
+  "aliases": {
+    "Carlton Davis": "Carlton Davis III (corroborated explicitly by NBC/PFT)",
+    "TJ Edwards": "T.J. Edwards (punctuation only)"
+  },
+  "publicationTimestamp": "The later corroborating Depot article time is used for both new complete lists; original official timestamps are retained in raw metadata."
+}

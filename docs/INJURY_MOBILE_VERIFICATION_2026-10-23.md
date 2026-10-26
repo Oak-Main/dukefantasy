@@ -1,5 +1,7 @@
 # Injury-table mobile presentation correction
 
+Historical October 23 evidence. See [the October 26 review](PR44_REVIEW_2026-10-26.md) for the current merged-main candidate, corrections and completed release/WebKit checks.
+
 Acceptance: **PASS WITH CONDITIONS for the corrective source PR. Release acceptance remains blocked.**
 
 Mission: repair both injury tables below 680 CSS pixels while preserving published facts, evidence, source dates and the Week 7 publication path. Inputs reviewed: current `main` at `98ceeb55037a3c6289c86df40b62dada8f83e246`, PRs #40–#43, `components/injury-report-page.tsx`, `app/data-boards.css`, `AGENTS.md`, the accessibility standard and Week 7 runbook. The earlier calendar-date worktree was preserved; this correction uses a separate worktree and branch.

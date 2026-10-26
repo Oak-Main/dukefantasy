@@ -1,0 +1,26 @@
+[
+  {
+    "player": "Marist Liufau",
+    "team_slug": "dallas-cowboys",
+    "status": "IR; Week 7 QUESTIONABLE",
+    "asOf": "2026-10-24",
+    "checkedAt": "2026-10-24T23:17:50.570Z",
+    "note": "Official October 24 Week 7 designation: QUESTIONABLE while still on injured reserve. Participation in a return window does not establish activation or game-day status.",
+    "sources": [
+      "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+      "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html"
+    ]
+  },
+  {
+    "player": "P.J. Locke",
+    "team_slug": "dallas-cowboys",
+    "status": "IR; Week 7 QUESTIONABLE",
+    "asOf": "2026-10-24",
+    "checkedAt": "2026-10-24T23:17:50.570Z",
+    "note": "Official October 24 Week 7 designation: QUESTIONABLE while still on injured reserve. Participation in a return window does not establish activation or game-day status.",
+    "sources": [
+      "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+      "https://sports.yahoo.com/articles/wr-george-pickens-cb-joey-204650907.html"
+    ]
+  }
+]

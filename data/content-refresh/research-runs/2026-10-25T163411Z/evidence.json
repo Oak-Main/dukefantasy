@@ -1,0 +1,96 @@
+{
+  "week": 7,
+  "run": "2026-10-25T163411Z",
+  "baseCommit": "9a0b9db7f8085953cffe4a81bc92cb10ec4fe5d7",
+  "createdAt": "2026-10-25T16:43:46.443Z",
+  "observations": [
+    {
+      "kind": "result",
+      "key": "401873011",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 16,
+        "homeScore": 10
+      },
+      "gameIdentity": {
+        "id": "401873011",
+        "awaySlug": "pittsburgh-steelers",
+        "homeSlug": "new-orleans-saints",
+        "kickoffUtc": "2026-10-25T13:30Z"
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-25T16:43:44.936Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 16,
+            "homeScore": 10
+          },
+          "rawSha256": "9cf3df73532baa3f2280cbd3a9d9d2f0dbfcecc885a43c0bf10dd504df05013a"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-25T16:43:44.809Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 16,
+            "homeScore": 10
+          },
+          "rawSha256": "95ed73e0791c53bef3942a7611bd8e2db711fca2e58d49958ef057b791e07f62"
+        }
+      ]
+    }
+  ],
+  "moduleReviews": [
+    {
+      "module": "schedule",
+      "sourceAsOf": "2026-10-25",
+      "dataSha256": "3d252c69ade99d2ec3ce48dfb5b5e9eb2667bab43f0d533c8614d1998b519c02",
+      "scope": "Actual complete two-publisher reconciliation of all 107 collected result records through Week 7: 95 finals and 12 upcoming games. All 32 recalculated standing rows match fresh ESPN standings. All 272 games and international/future metadata are retained; Weeks 8–18 remain their existing planning scope.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "relatedUrls": [
+            "https://www.nfl.com/schedules/2026/by-week/week-1",
+            "https://www.nfl.com/schedules/2026/by-week/week-2",
+            "https://www.nfl.com/schedules/2026/by-week/week-3",
+            "https://www.nfl.com/schedules/2026/by-week/week-4",
+            "https://www.nfl.com/schedules/2026/by-week/week-5",
+            "https://www.nfl.com/schedules/2026/by-week/week-6",
+            "https://www.nfl.com/schedules/2026/by-week/week-7"
+          ],
+          "checkedAt": "2026-10-25T16:43:44.936Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "3d252c69ade99d2ec3ce48dfb5b5e9eb2667bab43f0d533c8614d1998b519c02",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "relatedUrls": [
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+          ],
+          "checkedAt": "2026-10-25T16:43:44.809Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "3d252c69ade99d2ec3ce48dfb5b5e9eb2667bab43f0d533c8614d1998b519c02",
+            "complete": true
+          }
+        }
+      ]
+    }
+  ]
+}

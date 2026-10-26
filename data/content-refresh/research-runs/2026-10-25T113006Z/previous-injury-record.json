@@ -1,0 +1,25 @@
+{
+  "player": "Anfernee Jennings",
+  "team_slug": "new-orleans-saints",
+  "position": "LB",
+  "injury": null,
+  "practice": {
+    "mon": null,
+    "tue": null,
+    "wed": "LP",
+    "thu": "LP",
+    "fri": null,
+    "sat": null
+  },
+  "likelihood": "questionable",
+  "confidence": "medium",
+  "note": "October 22 Thursday practice participation: LP. Prior injury detail and likelihood remain dated to the last complete review. This participation update does not establish an official final game designation or roster activation.",
+  "sources": [
+    "https://www.espn.com/nfl/injuries",
+    "https://www.cbssports.com/nfl/injuries/",
+    "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
+    "https://www.neworleanssaints.com/team/injury-report/",
+    "https://www.nfl.com/injuries/"
+  ],
+  "social": []
+}

@@ -42,6 +42,12 @@ export function validateEvidence(evidence, before, after, now = new Date()) {
     if (actual === null && !observation.removalReason) throw new Error(`${id}: removal needs an explicit sourced reason; omission is not activation`);
     checkSources(observation.sources, actual, id);
   }
+  for (const [id, observation] of observations) {
+    if (changed.includes(id)) continue;
+    const actual = after.get(id)?.value;
+    if (!after.has(id) || canonical(observation.value) !== canonical(actual)) throw new Error(`${id}: retained evidence does not match the candidate`);
+    checkSources(observation.sources, actual, id);
+  }
   for (const review of evidence.moduleReviews ?? []) {
     const selected = [...after.values()].filter(row => review.module === "injuries" ? ["injury", "reserve", "practice"].includes(row.kind) : review.module === "schedule" ? row.kind === "result" : review.module === "inactives" ? row.kind === "inactive" : false);
     if (selected.length === 0 || review.dataSha256 !== digest(selected)) throw new Error(`${review.module}: complete module review hash does not match`);
@@ -49,4 +55,26 @@ export function validateEvidence(evidence, before, after, now = new Date()) {
   }
   if (changed.length === 0 && !(evidence.moduleReviews?.length)) throw new Error("NOOP: no changed verified facts or completed module reviews");
   return { changedFacts: changed.length, moduleReviews: evidence.moduleReviews?.length ?? 0 };
+}
+
+export function validateResultIdentities(evidence, snapshot) {
+  const games = new Map(snapshot.schedule.map(game => [String(game.id), game]));
+  let checked = 0;
+  for (const observation of evidence.observations ?? []) {
+    if (observation.kind !== "result") continue;
+    const game = games.get(String(observation.key));
+    if (!game) throw new Error(`${observation.key}: unknown result game identity`);
+    const expected = {
+      id: String(game.id), week: game.week, awaySlug: game.awaySlug, homeSlug: game.homeSlug,
+      kickoffUtc: new Date(game.kickoffUtc).toISOString(),
+    };
+    if (observation.value?.week !== game.week || canonical(observation.gameIdentity) !== canonical(expected)) {
+      throw new Error(`${observation.key}: result game identity does not match the snapshot`);
+    }
+    if (!observation.sources?.length || observation.sources.some(source => canonical(source.gameIdentity) !== canonical(expected))) {
+      throw new Error(`${observation.key}: source game identity does not match the keyed result`);
+    }
+    checked++;
+  }
+  return checked;
 }

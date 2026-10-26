@@ -1,0 +1,990 @@
+{
+  "sources": [
+    {
+      "id": "article-0",
+      "requestedUrl": "https://www.bengals.com/news/bengals-ravens-inactives-week-7-2026",
+      "resolvedUrl": "https://www.bengals.com/news/bengals-ravens-inactives-week-7-2026",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:32.889Z",
+      "title": "Bengals Ravens Inactives Week 7",
+      "publishedAt": "2026-10-25T15:30:19.931Z",
+      "modifiedAt": "2026-10-25T15:31:00.362Z",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:30:19.931Z\"",
+      "exactListExcerpt": "Connor Lew 77 OT Myles Hinton 94 DE Shemar Stewart 96 DT Landon Robinson Tennessee Titans",
+      "rawSha256": "0ce684f5cf3baf59d9cad9c871265c64c3cce6091cd8c41cf4e47f4dc2e4b73b",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/article-0.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "secondary-article-0",
+      "requestedUrl": "https://www.cincyjungle.com/cincinnati-bengals-injuries/203139/ravens-inactives-shemar-stewart-trade-rumors-heat-up",
+      "resolvedUrl": "https://www.cincyjungle.com/cincinnati-bengals-injuries/203139/ravens-inactives-shemar-stewart-trade-rumors-heat-up",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:36.074Z",
+      "title": "Bengals vs. Ravens Inactives: Shemar Stewart is a healthy scratch as trade rumors heat up | Cincy Jungle",
+      "publishedAt": "2026-10-25T15:48:45+00:00",
+      "modifiedAt": "2026-10-25T15:48:45+00:00",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:48:45+00:00\"",
+      "exactListExcerpt": "Connor Lew OT Myles Hinton DT Landon Robinson The big name here, obviously, is Stewart, who",
+      "rawSha256": "537fe2e01bcba47292f37bd42212781601108f140c6d9f430ecbb1b02c7212e0",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/secondary-article-0.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "article-14",
+      "requestedUrl": "https://www.nfl.com/news/nfl-week-7-inactives-players-ruled-out-sunday-2026-season",
+      "resolvedUrl": "https://www.nfl.com/news/nfl-week-7-inactives-players-ruled-out-sunday-2026-season",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:32.717Z",
+      "title": "NFL Week 7 inactives: Players ruled out for Sunday&#x27;s 12 games | Latest NFL News, Analysis &amp; Updates | NFL.com",
+      "publishedAt": "2026-10-25T12:11:44.22Z",
+      "modifiedAt": "2026-10-25T15:45:26.973Z",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T12:11:44.22Z\"",
+      "exactListExcerpt": "Brandon Crenshaw-Dickson TE Kylen Granson DT Jackie Marshall LATE GAMES Denver Broncos 4-2 AT Arizona Cardinals",
+      "rawSha256": "b4d7d332e41d3f3aafb01971169406fd1b53d10e4bdf075b1b2e45be600ee6c1",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/article-14.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "secondary-article-1",
+      "requestedUrl": "https://www.dawgsbynature.com/cleveland-browns-injuries/136143/browns-titans-inactives-will-denzel-ward-play-today-and-titans-lose-two-players-on-offense",
+      "resolvedUrl": "https://www.dawgsbynature.com/cleveland-browns-injuries/136143/browns-titans-inactives-will-denzel-ward-play-today-and-titans-lose-two-players-on-offense",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:36.088Z",
+      "title": "Browns, Titans inactives: Will Denzel Ward play today? And Titans lose two players on offense | Dawgs By Nature",
+      "publishedAt": "2026-10-25T15:36:00+00:00",
+      "modifiedAt": "2026-10-25T15:36:00+00:00",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:36:00+00:00\"",
+      "exactListExcerpt": "Brandon Crenshaw-Dickson DT Jackie Marshall CB Jaylon Jones Meanwhile, the Titans, who already rank 32nd in",
+      "rawSha256": "4f86a4eaf4f2d014bbd39faca68ab4d2777abf3d284bb41a568849df681bc17c",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/secondary-article-1.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "article-5",
+      "requestedUrl": "https://www.vikings.com/news/inactives-colts-week-7-2026",
+      "resolvedUrl": "https://www.vikings.com/news/inactives-colts-week-7-2026",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:32.699Z",
+      "title": "Vikings vs. Colts Inactives Week 7 2026",
+      "publishedAt": "2026-10-25T15:30:00Z",
+      "modifiedAt": "2026-10-25T15:35:47.038Z",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:30:00Z\"",
+      "exactListExcerpt": "Caleb Tiernan Defensive lineman Elijah Williams Thomas and Williams are inactive for the sixth consecutive game.",
+      "rawSha256": "db4d12b2008868542eef637019a07e28fd9f55cb4b4f66cb146996d55823c729",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/article-5.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "secondary-article-2",
+      "requestedUrl": "https://www.dailynorseman.com/minnesota-vikings-news/100715/indianapolis-colts-minnesota-vikings-inactive-lists",
+      "resolvedUrl": "https://www.dailynorseman.com/minnesota-vikings-news/100715/indianapolis-colts-minnesota-vikings-inactive-lists",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:36.100Z",
+      "title": "Indianapolis Colts at Minnesota Vikings: Inactive Lists for Both Teams | Daily Norseman",
+      "publishedAt": "2026-10-25T15:40:51+00:00",
+      "modifiedAt": "2026-10-25T15:40:51+00:00",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:40:51+00:00\"",
+      "exactListExcerpt": "Caleb Tiernan DL Elijah Williams Claiborne goes to being inactive with the return of Jordan Mason,",
+      "rawSha256": "74db7c66df9948281920e9b21d6e2647abb02d1d8c2bb0ba8b6eac042087ae89",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/secondary-article-2.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "article-6",
+      "requestedUrl": "https://www.giants.com/news/inactives-who-s-in-who-s-out-for-giants-at-texans",
+      "resolvedUrl": "https://www.giants.com/news/inactives-who-s-in-who-s-out-for-giants-at-texans",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:32.900Z",
+      "title": "Inactives: Who&#x27;s in, who&#x27;s out for Giants at Texans",
+      "publishedAt": "2026-10-25T15:30:00Z",
+      "modifiedAt": "2026-10-25T15:36:59.361Z",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:30:00Z\"",
+      "exactListExcerpt": "Greg Newsome II CB Nikko Reed OL Josh Sills TEXANS INACTIVES S Reed Blankenship OT Blake",
+      "rawSha256": "b15fad15c62c74b4c3f54ede8402da408c71ba4541bd0526fb51bee2328adb49",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/article-6.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "secondary-article-4",
+      "requestedUrl": "https://www.bigblueview.com/new-york-giants-roster/177302/inactives-tyler-nubin-jermaine-eluemunor-available-for-new-york",
+      "resolvedUrl": "https://www.bigblueview.com/new-york-giants-roster/177302/inactives-tyler-nubin-jermaine-eluemunor-available-for-new-york",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:36.092Z",
+      "title": "Giants-Texans inactives: Tyler Nubin, Jermaine Eluemunor available for New York | Big Blue View",
+      "publishedAt": "2026-10-25T15:44:22+00:00",
+      "modifiedAt": "2026-10-25T15:48:14+00:00",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:44:22+00:00\"",
+      "exactListExcerpt": "Greg Newsome II. The Giants already have starters Brian Burns, Tremaine Edmunds, and Chauncey Golston on",
+      "rawSha256": "554782ca5ae797a0fef30289d7dd77448a4f00f560f29f42ccb7078fdb7e8ef7",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/secondary-article-4.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "article-7",
+      "requestedUrl": "https://www.houstontexans.com/news/texans-inactives-week-7-vs-new-york-giants",
+      "resolvedUrl": "https://www.houstontexans.com/news/texans-inactives-week-7-vs-new-york-giants",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:32.910Z",
+      "title": "Texans Inactives: Week 7 vs New York Giants",
+      "publishedAt": "2026-10-25T15:30:32.982Z",
+      "modifiedAt": "2026-10-25T15:30:32.982Z",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:30:32.982Z\"",
+      "exactListExcerpt": "Blake Fisher No. 64 G Febechi Nwaiwu No. 78 T Nate Thomas No. 83 TE Marlin",
+      "rawSha256": "bf2bf067f1cc75177f69c3f224f1144cd5a3750328b79c705a9d034cf50cd764",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/article-7.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "fftoday",
+      "requestedUrl": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+      "resolvedUrl": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:32.551Z",
+      "title": "NFL Inactives: Week 7, 2026 | FFToday",
+      "publishedAt": null,
+      "modifiedAt": null,
+      "publicationFieldExcerpt": null,
+      "exactListExcerpt": "Blake Fisher, OL Febechi Nwaiwu, OT Nate Thomas, TE Marlin Klein Denver @ Arizona LA Rams",
+      "rawSha256": "46427516bfa92f7adc100ab95c2fbc35069933ce464de0aec3fa7a2dc8e2d4d2",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/fftoday.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "secondary-article-5",
+      "requestedUrl": "https://www.ninersnation.com/san-francisco-49ers-injuries/164787/49ers-inactive-list-the-top-4-wrs-from-week-1-wont-play",
+      "resolvedUrl": "https://www.ninersnation.com/san-francisco-49ers-injuries/164787/49ers-inactive-list-the-top-4-wrs-from-week-1-wont-play",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:36.063Z",
+      "title": "49ers inactive list: The top 4 WRs from Week 1 won’t play | Niners Nation",
+      "publishedAt": "2026-10-25T15:48:28+00:00",
+      "modifiedAt": "2026-10-25T15:48:28+00:00",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:48:28+00:00\"",
+      "exactListExcerpt": "Deebo Samuel against the Rams. Neither of those players will be in uniform in Atlanta. by",
+      "rawSha256": "1a92dde7d98a564ecac8077ee6e8b0405400dc974a108edf85017514a1d562cc",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/secondary-article-5.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "article-10",
+      "requestedUrl": "https://www.buccaneers.com/news/bucs-panthers-inactives-baker-mayfield-returns-action",
+      "resolvedUrl": "https://www.buccaneers.com/news/bucs-panthers-inactives-baker-mayfield-returns-action",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:32.690Z",
+      "title": "Bucs vs. Panthers Inactive Report | NFL Week 7 2026",
+      "publishedAt": "2026-10-25T15:30:00Z",
+      "modifiedAt": "2026-10-25T15:37:37.271Z",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:30:00Z\"",
+      "exactListExcerpt": "Antoine Winfield Jr. are all inactive in Week Seven Oct 25, 2026 at 11:30 AM Scott",
+      "rawSha256": "8c8ac808fa02aae770d0dc1b3c508a3cc0e39e02def9607bb9e516e7d8783225",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/article-10.html",
+      "reportedWeek": 7
+    },
+    {
+      "id": "secondary-article-3",
+      "requestedUrl": "https://www.thephinsider.com/miami-dolphins-injuries/124100/dolphins-vs-jets-inactives-willie-gay-jr-out-with-continued-illness-breece-hall-out-for-new-york",
+      "resolvedUrl": "https://www.thephinsider.com/miami-dolphins-injuries/124100/dolphins-vs-jets-inactives-willie-gay-jr-out-with-continued-illness-breece-hall-out-for-new-york",
+      "status": 200,
+      "checkedAt": "2026-10-25T16:00:36.152Z",
+      "title": "Dolphins vs. Jets inactives: Willie Gay Jr. out with continued illness; Breece Hall out for New York | The Phinsider",
+      "publishedAt": "2026-10-25T15:50:34+00:00",
+      "modifiedAt": "2026-10-25T15:50:34+00:00",
+      "publicationFieldExcerpt": "\"datePublished\":\"2026-10-25T15:50:34+00:00\"",
+      "exactListExcerpt": "Breece Hall out for New York | The Phinsider Skip to main content SB Nation SB",
+      "rawSha256": "4afba110de2f52278107f54f3211fd716e5c6985af591300b60db40fbd138989",
+      "rawFile": "outputs/week7-automation/2026-10-25T160011Z/secondary-article-3.html",
+      "reportedWeek": 7
+    }
+  ],
+  "coverage": [
+    {
+      "teamSlug": "cincinnati-bengals",
+      "count": 5,
+      "emergency": null,
+      "sources": [
+        "article-0",
+        "secondary-article-0"
+      ]
+    },
+    {
+      "teamSlug": "baltimore-ravens",
+      "count": 5,
+      "emergency": null,
+      "sources": [
+        "article-0",
+        "secondary-article-0"
+      ]
+    },
+    {
+      "teamSlug": "tennessee-titans",
+      "count": 7,
+      "emergency": null,
+      "sources": [
+        "article-14",
+        "secondary-article-1"
+      ]
+    },
+    {
+      "teamSlug": "minnesota-vikings",
+      "count": 6,
+      "emergency": "Max Brosmer",
+      "sources": [
+        "article-5",
+        "secondary-article-2"
+      ]
+    },
+    {
+      "teamSlug": "new-york-giants",
+      "count": 7,
+      "emergency": "Jake Haener",
+      "sources": [
+        "article-6",
+        "secondary-article-4"
+      ]
+    },
+    {
+      "teamSlug": "houston-texans",
+      "count": 7,
+      "emergency": null,
+      "sources": [
+        "article-7",
+        "fftoday"
+      ]
+    },
+    {
+      "teamSlug": "san-francisco-49ers",
+      "count": 7,
+      "emergency": "Kurtis Rourke",
+      "sources": [
+        "article-14",
+        "secondary-article-5"
+      ]
+    },
+    {
+      "teamSlug": "tampa-bay-buccaneers",
+      "count": 6,
+      "emergency": null,
+      "sources": [
+        "article-10",
+        "fftoday"
+      ]
+    },
+    {
+      "teamSlug": "new-york-jets",
+      "count": 7,
+      "emergency": null,
+      "sources": [
+        "article-14",
+        "secondary-article-3"
+      ]
+    },
+    {
+      "teamSlug": "miami-dolphins",
+      "count": 7,
+      "emergency": null,
+      "sources": [
+        "fftoday",
+        "secondary-article-3"
+      ]
+    }
+  ],
+  "proofs": {
+    "article-0": {
+      "publishedAt": "2026-10-25T15:30:19.931Z",
+      "exactListExcerpt": "Connor Lew 77 OT Myles Hinton 94 DE Shemar Stewart 96 DT Landon Robinson Tennessee Titans",
+      "reports": [
+        {
+          "teamSlug": "cincinnati-bengals",
+          "players": [
+            {
+              "name": "Connor Lew",
+              "designation": "inactive"
+            },
+            {
+              "name": "Landon Robinson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Myles Hinton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Russ Yeast",
+              "designation": "inactive"
+            },
+            {
+              "name": "Shemar Stewart",
+              "designation": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "baltimore-ravens",
+          "players": [
+            {
+              "name": "Andrew Vorhees",
+              "designation": "inactive"
+            },
+            {
+              "name": "Broderick Washington",
+              "designation": "inactive"
+            },
+            {
+              "name": "Elijah Sarratt",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jaylinn Hawkins",
+              "designation": "inactive"
+            },
+            {
+              "name": "Lamar Jackson",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "secondary-article-0": {
+      "publishedAt": "2026-10-25T15:48:45+00:00",
+      "exactListExcerpt": "Connor Lew OT Myles Hinton DT Landon Robinson The big name here, obviously, is Stewart, who",
+      "reports": [
+        {
+          "teamSlug": "cincinnati-bengals",
+          "players": [
+            {
+              "name": "Connor Lew",
+              "designation": "inactive"
+            },
+            {
+              "name": "Landon Robinson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Myles Hinton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Russ Yeast",
+              "designation": "inactive"
+            },
+            {
+              "name": "Shemar Stewart",
+              "designation": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "baltimore-ravens",
+          "players": [
+            {
+              "name": "Andrew Vorhees",
+              "designation": "inactive"
+            },
+            {
+              "name": "Broderick Washington",
+              "designation": "inactive"
+            },
+            {
+              "name": "Elijah Sarratt",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jaylinn Hawkins",
+              "designation": "inactive"
+            },
+            {
+              "name": "Lamar Jackson",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "article-14": {
+      "publishedAt": "2026-10-25T12:11:44.22Z",
+      "exactListExcerpt": "Brandon Crenshaw-Dickson TE Kylen Granson DT Jackie Marshall LATE GAMES Denver Broncos 4-2 AT Arizona Cardinals",
+      "reports": [
+        {
+          "teamSlug": "tennessee-titans",
+          "players": [
+            {
+              "name": "Brandon Crenshaw-Dickson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Calvin Ridley",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jackie Marshall",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jaylon Jones",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kylen Granson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nick Singleton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tyjae Spears",
+              "designation": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "san-francisco-49ers",
+          "players": [
+            {
+              "name": "Deebo Samuel",
+              "designation": "inactive"
+            },
+            {
+              "name": "Garret Wallow",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kurtis Rourke",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Luke Gifford",
+              "designation": "inactive"
+            },
+            {
+              "name": "Marques Sigle",
+              "designation": "inactive"
+            },
+            {
+              "name": "Mike Evans",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nick Bosa",
+              "designation": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "new-york-jets",
+          "players": [
+            {
+              "name": "Breece Hall",
+              "designation": "inactive"
+            },
+            {
+              "name": "Dylan Parham",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jack Heflin",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jarvis Brownlee Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Joseph Ossai",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kene Nwangwu",
+              "designation": "inactive"
+            },
+            {
+              "name": "Max Mitchell",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "secondary-article-1": {
+      "publishedAt": "2026-10-25T15:36:00+00:00",
+      "exactListExcerpt": "Brandon Crenshaw-Dickson DT Jackie Marshall CB Jaylon Jones Meanwhile, the Titans, who already rank 32nd in",
+      "reports": [
+        {
+          "teamSlug": "tennessee-titans",
+          "players": [
+            {
+              "name": "Brandon Crenshaw-Dickson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Calvin Ridley",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jackie Marshall",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jaylon Jones",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kylen Granson",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nick Singleton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tyjae Spears",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "article-5": {
+      "publishedAt": "2026-10-25T15:30:00Z",
+      "exactListExcerpt": "Caleb Tiernan Defensive lineman Elijah Williams Thomas and Williams are inactive for the sixth consecutive game.",
+      "reports": [
+        {
+          "teamSlug": "minnesota-vikings",
+          "players": [
+            {
+              "name": "Caleb Tiernan",
+              "designation": "inactive"
+            },
+            {
+              "name": "Chuck Demmings",
+              "designation": "inactive"
+            },
+            {
+              "name": "Demond Claiborne",
+              "designation": "inactive"
+            },
+            {
+              "name": "Elijah Williams",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jakobe Thomas",
+              "designation": "inactive"
+            },
+            {
+              "name": "Max Brosmer",
+              "designation": "emergency_qb"
+            }
+          ]
+        }
+      ]
+    },
+    "secondary-article-2": {
+      "publishedAt": "2026-10-25T15:40:51+00:00",
+      "exactListExcerpt": "Caleb Tiernan DL Elijah Williams Claiborne goes to being inactive with the return of Jordan Mason,",
+      "reports": [
+        {
+          "teamSlug": "minnesota-vikings",
+          "players": [
+            {
+              "name": "Caleb Tiernan",
+              "designation": "inactive"
+            },
+            {
+              "name": "Chuck Demmings",
+              "designation": "inactive"
+            },
+            {
+              "name": "Demond Claiborne",
+              "designation": "inactive"
+            },
+            {
+              "name": "Elijah Williams",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jakobe Thomas",
+              "designation": "inactive"
+            },
+            {
+              "name": "Max Brosmer",
+              "designation": "emergency_qb"
+            }
+          ]
+        }
+      ]
+    },
+    "article-6": {
+      "publishedAt": "2026-10-25T15:30:00Z",
+      "exactListExcerpt": "Greg Newsome II CB Nikko Reed OL Josh Sills TEXANS INACTIVES S Reed Blankenship OT Blake",
+      "reports": [
+        {
+          "teamSlug": "new-york-giants",
+          "players": [
+            {
+              "name": "Greg Newsome II",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jake Haener",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Jevon Holland",
+              "designation": "inactive"
+            },
+            {
+              "name": "Josh Sills",
+              "designation": "inactive"
+            },
+            {
+              "name": "Marcus Mbow",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nikko Reed",
+              "designation": "inactive"
+            },
+            {
+              "name": "Theo Johnson",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "secondary-article-4": {
+      "publishedAt": "2026-10-25T15:44:22+00:00",
+      "exactListExcerpt": "Greg Newsome II. The Giants already have starters Brian Burns, Tremaine Edmunds, and Chauncey Golston on",
+      "reports": [
+        {
+          "teamSlug": "new-york-giants",
+          "players": [
+            {
+              "name": "Greg Newsome II",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jake Haener",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Jevon Holland",
+              "designation": "inactive"
+            },
+            {
+              "name": "Josh Sills",
+              "designation": "inactive"
+            },
+            {
+              "name": "Marcus Mbow",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nikko Reed",
+              "designation": "inactive"
+            },
+            {
+              "name": "Theo Johnson",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "article-7": {
+      "publishedAt": "2026-10-25T15:30:32.982Z",
+      "exactListExcerpt": "Blake Fisher No. 64 G Febechi Nwaiwu No. 78 T Nate Thomas No. 83 TE Marlin",
+      "reports": [
+        {
+          "teamSlug": "houston-texans",
+          "players": [
+            {
+              "name": "Blake Fisher",
+              "designation": "inactive"
+            },
+            {
+              "name": "David Montgomery",
+              "designation": "inactive"
+            },
+            {
+              "name": "Febechi Nwaiwu",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jalen Pitre",
+              "designation": "inactive"
+            },
+            {
+              "name": "Marlin Klein",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nate Thomas",
+              "designation": "inactive"
+            },
+            {
+              "name": "Reed Blankenship",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "fftoday": {
+      "publishedAt": null,
+      "exactListExcerpt": "Blake Fisher, OL Febechi Nwaiwu, OT Nate Thomas, TE Marlin Klein Denver @ Arizona LA Rams",
+      "reports": [
+        {
+          "teamSlug": "houston-texans",
+          "players": [
+            {
+              "name": "Blake Fisher",
+              "designation": "inactive"
+            },
+            {
+              "name": "David Montgomery",
+              "designation": "inactive"
+            },
+            {
+              "name": "Febechi Nwaiwu",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jalen Pitre",
+              "designation": "inactive"
+            },
+            {
+              "name": "Marlin Klein",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nate Thomas",
+              "designation": "inactive"
+            },
+            {
+              "name": "Reed Blankenship",
+              "designation": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "tampa-bay-buccaneers",
+          "players": [
+            {
+              "name": "Antoine Winfield Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Ayden Garnes",
+              "designation": "inactive"
+            },
+            {
+              "name": "Billy Schrauth",
+              "designation": "inactive"
+            },
+            {
+              "name": "DeMonte Capehart",
+              "designation": "inactive"
+            },
+            {
+              "name": "Emeka Egbuka",
+              "designation": "inactive"
+            },
+            {
+              "name": "Luke Goedeke",
+              "designation": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "miami-dolphins",
+          "players": [
+            {
+              "name": "Chukwuebuka Godrick",
+              "designation": "inactive"
+            },
+            {
+              "name": "DJ Campbell",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jalen Tolbert",
+              "designation": "inactive"
+            },
+            {
+              "name": "Marcellas Dial Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Reese Taylor",
+              "designation": "inactive"
+            },
+            {
+              "name": "Robert Beal Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Willie Gay Jr.",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "secondary-article-5": {
+      "publishedAt": "2026-10-25T15:48:28+00:00",
+      "exactListExcerpt": "Deebo Samuel against the Rams. Neither of those players will be in uniform in Atlanta. by",
+      "reports": [
+        {
+          "teamSlug": "san-francisco-49ers",
+          "players": [
+            {
+              "name": "Deebo Samuel",
+              "designation": "inactive"
+            },
+            {
+              "name": "Garret Wallow",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kurtis Rourke",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "Luke Gifford",
+              "designation": "inactive"
+            },
+            {
+              "name": "Marques Sigle",
+              "designation": "inactive"
+            },
+            {
+              "name": "Mike Evans",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nick Bosa",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "article-10": {
+      "publishedAt": "2026-10-25T15:30:00Z",
+      "exactListExcerpt": "Antoine Winfield Jr. are all inactive in Week Seven Oct 25, 2026 at 11:30 AM Scott",
+      "reports": [
+        {
+          "teamSlug": "tampa-bay-buccaneers",
+          "players": [
+            {
+              "name": "Antoine Winfield Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Ayden Garnes",
+              "designation": "inactive"
+            },
+            {
+              "name": "Billy Schrauth",
+              "designation": "inactive"
+            },
+            {
+              "name": "DeMonte Capehart",
+              "designation": "inactive"
+            },
+            {
+              "name": "Emeka Egbuka",
+              "designation": "inactive"
+            },
+            {
+              "name": "Luke Goedeke",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "secondary-article-3": {
+      "publishedAt": "2026-10-25T15:50:34+00:00",
+      "exactListExcerpt": "Breece Hall out for New York | The Phinsider Skip to main content SB Nation SB",
+      "reports": [
+        {
+          "teamSlug": "new-york-jets",
+          "players": [
+            {
+              "name": "Breece Hall",
+              "designation": "inactive"
+            },
+            {
+              "name": "Dylan Parham",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jack Heflin",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jarvis Brownlee Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Joseph Ossai",
+              "designation": "inactive"
+            },
+            {
+              "name": "Kene Nwangwu",
+              "designation": "inactive"
+            },
+            {
+              "name": "Max Mitchell",
+              "designation": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "miami-dolphins",
+          "players": [
+            {
+              "name": "Chukwuebuka Godrick",
+              "designation": "inactive"
+            },
+            {
+              "name": "DJ Campbell",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jalen Tolbert",
+              "designation": "inactive"
+            },
+            {
+              "name": "Marcellas Dial Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Reese Taylor",
+              "designation": "inactive"
+            },
+            {
+              "name": "Robert Beal Jr.",
+              "designation": "inactive"
+            },
+            {
+              "name": "Willie Gay Jr.",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "normalization": [
+    "Jevón/Jevon uses accent-insensitive identity.",
+    "FFToday Rob Beal Jr. matches The Phinsider Robert Beal Jr., the retained native injury identity, same team/position.",
+    "FFToday Antoine Winfield matches the official Antoine Winfield Jr., the retained native injury identity, same team/position.",
+    "No spelling correction is inferred for Bruce/Bryce Boettcher, Godrik/Godrick, or Tyjaw/Tyjae. Inconsistent sections are excluded."
+  ],
+  "sourcePolicy": "Partial addition of ten complete lists. All prior lists/times and module dates remain unchanged; no full-module re-verification or active-status inference. Provisional scores/quarters are excluded from final-result deployment comparisons."
+}

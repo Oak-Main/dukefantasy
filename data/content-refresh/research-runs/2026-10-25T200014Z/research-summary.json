@@ -1,0 +1,65 @@
+{
+  "run": "2026-10-25T200014Z",
+  "baseCommit": "fb6d0794849b0f06db7343f8aaad8e67fd197a1b",
+  "changedFacts": 8,
+  "newResults": [
+    {
+      "id": "401873012",
+      "week": 7,
+      "away": "cincinnati-bengals",
+      "home": "baltimore-ravens",
+      "awayScore": 35,
+      "homeScore": 13
+    },
+    {
+      "id": "401873013",
+      "week": 7,
+      "away": "cleveland-browns",
+      "home": "tennessee-titans",
+      "awayScore": 27,
+      "homeScore": 24
+    },
+    {
+      "id": "401873014",
+      "week": 7,
+      "away": "indianapolis-colts",
+      "home": "minnesota-vikings",
+      "awayScore": 10,
+      "homeScore": 16
+    },
+    {
+      "id": "401873015",
+      "week": 7,
+      "away": "miami-dolphins",
+      "home": "new-york-jets",
+      "awayScore": 28,
+      "homeScore": 25
+    },
+    {
+      "id": "401873017",
+      "week": 7,
+      "away": "san-francisco-49ers",
+      "home": "atlanta-falcons",
+      "awayScore": 20,
+      "homeScore": 29
+    },
+    {
+      "id": "401873018",
+      "week": 7,
+      "away": "tampa-bay-buccaneers",
+      "home": "carolina-panthers",
+      "awayScore": 43,
+      "homeScore": 13
+    }
+  ],
+  "newCompleteLists": 2,
+  "newEntries": 13,
+  "totalCompleteLists": 24,
+  "totalEntries": 155,
+  "emergencyQuarterbacks": 15,
+  "completeScheduleReviews": 1,
+  "reviewedResults": 107,
+  "finals": 101,
+  "standingsCompared": 32,
+  "preserved": "All 272 games/international metadata and future planning fields, 389 practices, all 22 prior complete inactive lists/times, medical/reserve records, and every non-schedule module date."
+}

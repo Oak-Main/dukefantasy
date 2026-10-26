@@ -140,6 +140,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
     }));
     const researchRows = injuryResearch.watch.map((entry) => {
       const model = likelihoodFromPractice(entry.practice);
+      const ungraded = entry.publishedStatus === "NO_DESIGNATION";
       return {
         kind: "research" as const,
         player: entry.player,
@@ -149,8 +150,8 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         practice: entry.practice,
         publishedStatus: entry.publishedStatus,
         designationDate: entry.designationDate,
-        likelihood: entry.likelihood ?? model.likelihood,
-        confidence: entry.confidence ?? model.confidence,
+        likelihood: ungraded ? null : entry.likelihood ?? model.likelihood,
+        confidence: ungraded ? null : entry.confidence ?? model.confidence,
         note: entry.note ?? model.basis,
         sources: entry.sources,
         social: entry.social,
@@ -165,6 +166,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
     );
   }, [baseWatch, teamFilter]);
 
+  const latestObservationDate = [...practiceReports.map((row) => row.date), ...injuryResearch.watch.map((row) => row.designationDate).filter((date): date is string => Boolean(date)), ...reserveStatuses.map((row) => row.asOf).filter((date): date is string => Boolean(date))].sort().at(-1) ?? null;
   const next = nextInjurySlot();
   const researchLive = injuryResearch.watch.length > 0 || injuryResearch.ledger.length > 0;
 
@@ -183,12 +185,13 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       />
       <DataBoardSummary
         label="Injury desk summary"
-        caption={`${INJURY_METHOD.schedule} Research as of ${injuryResearch.asOf ?? espnInjuriesAsOf ?? "not published"}.`}
+        caption={`${INJURY_METHOD.schedule} Full review as of ${injuryResearch.asOf ?? espnInjuriesAsOf ?? "not published"}. Latest dated observation ${latestObservationDate ?? "not published"}; individual records retain their own source dates.`}
         items={[
           { label: "Long-term ledger", value: ledgerRows.length, emphasis: true },
           { label: "Week-to-week watch", value: watchRows.length },
           { label: "Research entries", value: injuryResearch.ledger.length + injuryResearch.watch.length },
-          { label: "Research as of", value: injuryResearch.asOf ?? "Not published" },
+          { label: "Full review as of", value: injuryResearch.asOf ?? "Not published" },
+          { label: "Latest dated observation", value: latestObservationDate ?? "Not published" },
           { label: "Teams covered", value: new Set([...ledgerRows, ...watchRows].map((row) => row.teamSlug)).size },
         ]}
       />
@@ -244,8 +247,8 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         </article>)}
       </section>
       <section className="apex-container db-section" aria-labelledby="reserve-status-title">
-        <h2 id="reserve-status-title">PUP, NFI & suspension listings</h2>
-        <p>These eligibility listings remain separate from injured reserve and the game-time watch. An estimated return is not an activation.</p>
+        <h2 id="reserve-status-title">Reserve and eligibility updates</h2>
+        <p>Activation, PUP, NFI and suspension updates are dated separately from the injury watch and game-day inactive lists.</p>
         <div className="research-card-grid">{reserveStatuses.filter(row => !teamFilter || row.team_slug === teamFilter).map(row => <article className="research-card" key={row.player + row.team_slug}>
           <h3>{row.player}</h3><p>{teamBySlug.get(row.team_slug)?.name ?? row.team_slug} · {row.status}</p>
           {row.asOf ? <p>Status checked <time dateTime={row.asOf}>{row.asOf}</time></p> : null}
@@ -278,7 +281,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
           </div>
         </div>
         {ledgerRows.length ? (
-          <section className="db-table-wrap" aria-labelledby="inj-ledger-title" tabIndex={0}>
+          <section className="db-table-wrap" aria-label="Long-term injury table scroll area" tabIndex={0}>
             {/* biome-ignore lint/a11y/noRedundantRoles: retain table semantics when mobile CSS changes display. */}
             <table className="db-table inj-table" role="table" aria-labelledby="inj-ledger-title">
               <thead>
@@ -343,7 +346,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
           </p>
         )}
         {watchRows.length ? (
-          <section className="db-table-wrap" aria-labelledby="inj-watch-title" tabIndex={0}>
+          <section className="db-table-wrap" aria-label="Weekly injury table scroll area" tabIndex={0}>
             {/* biome-ignore lint/a11y/noRedundantRoles: retain table semantics when mobile CSS changes display. */}
             <table className="db-table inj-table inj-table--watch" role="table" aria-labelledby="inj-watch-title">
               <thead>

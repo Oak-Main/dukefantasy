@@ -1,0 +1,2398 @@
+{
+  "practice": [
+    {
+      "team": "arizona-cardinals",
+      "player": "Budda Baker",
+      "position": "S",
+      "injury": "Groin/Illness",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "arizona-cardinals",
+        "player": "Budda Baker",
+        "date": "Wed, Oct 21",
+        "injury": "Groin",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Denver",
+        "participation": "LP"
+      },
+      "clubId": "arizona-cardinals",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Groin"
+    },
+    {
+      "team": "arizona-cardinals",
+      "player": "Carson Beck",
+      "position": "QB",
+      "injury": "Back",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "arizona-cardinals",
+        "player": "Carson Beck",
+        "date": "Wed, Oct 21",
+        "injury": "Back",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. Denver",
+        "participation": "DNP"
+      },
+      "clubId": "arizona-cardinals",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Back"
+    },
+    {
+      "team": "arizona-cardinals",
+      "player": "Max Melton",
+      "position": "CB",
+      "injury": "Knee",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "arizona-cardinals",
+        "player": "Max Melton",
+        "date": "Wed, Oct 21",
+        "injury": "Knee",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. Denver",
+        "participation": "DNP"
+      },
+      "clubId": "arizona-cardinals",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "arizona-cardinals",
+      "player": "Darius Robinson",
+      "position": "DL",
+      "injury": "Back",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "arizona-cardinals",
+        "player": "Darius Robinson",
+        "date": "Thu, Oct 22",
+        "injury": "Back",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Denver",
+        "participation": "LP"
+      },
+      "clubId": "arizona-cardinals",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Back"
+    },
+    {
+      "team": "baltimore-ravens",
+      "player": "Lamar Jackson",
+      "position": "QB",
+      "injury": "Ankle",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "baltimore-ravens",
+        "player": "Lamar Jackson",
+        "date": "Mon, Oct 19",
+        "injury": "Ankle",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Cincinnati",
+        "participation": "LP"
+      },
+      "clubId": "baltimore-ravens",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Ankle"
+    },
+    {
+      "team": "carolina-panthers",
+      "player": "Monroe Freeling",
+      "position": "T",
+      "injury": "Knee",
+      "participation": "FP",
+      "nflParticipation": "FP",
+      "cbs": {
+        "team": "carolina-panthers",
+        "player": "Monroe Freeling",
+        "date": "Fri, Oct 23",
+        "injury": "Knee",
+        "status": "Full Practice on Friday. Questionable for Week 7 vs. Tampa Bay",
+        "participation": "FP"
+      },
+      "clubId": "carolina-panthers",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "cleveland-browns",
+      "player": "Grant Delpit",
+      "position": "S",
+      "injury": "Concussion, Shoulder",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "cleveland-browns",
+        "player": "Grant Delpit",
+        "date": "Sun, Oct 18",
+        "injury": "Concussion",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Tennessee",
+        "participation": "LP"
+      },
+      "clubId": "cleveland-browns",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Concussion"
+    },
+    {
+      "team": "cleveland-browns",
+      "player": "Denzel Ward",
+      "position": "CB",
+      "injury": "Hand",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "cleveland-browns",
+        "player": "Denzel Ward",
+        "date": "Fri, Oct 23",
+        "injury": "Hand",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Tennessee",
+        "participation": "LP"
+      },
+      "clubId": "cleveland-browns",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Hand"
+    },
+    {
+      "team": "cleveland-browns",
+      "player": "Quincy Williams",
+      "position": "LB",
+      "injury": "Neck",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "cleveland-browns",
+        "player": "Quincy Williams",
+        "date": "Thu, Oct 22",
+        "injury": "Neck",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Tennessee",
+        "participation": "LP"
+      },
+      "clubId": "cleveland-browns",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Neck"
+    },
+    {
+      "team": "indianapolis-colts",
+      "player": "Rigoberto Sanchez",
+      "position": "P",
+      "injury": "Foot",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "indianapolis-colts",
+        "player": "Rigoberto Sanchez",
+        "date": "Mon, Oct 19",
+        "injury": "Foot",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 at Minnesota",
+        "participation": "DNP"
+      },
+      "clubId": "indianapolis-colts",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Foot"
+    },
+    {
+      "team": "indianapolis-colts",
+      "player": "Justin Walley",
+      "position": "CB",
+      "injury": "Knee",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "indianapolis-colts",
+        "player": "Justin Walley",
+        "date": "Wed, Oct 21",
+        "injury": "Knee",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Minnesota",
+        "participation": "LP"
+      },
+      "clubId": "indianapolis-colts",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "kansas-city-chiefs",
+      "player": "L'Jarius Sneed",
+      "position": "CB",
+      "injury": "Knee",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "kansas-city-chiefs",
+        "player": "L'Jarius Sneed",
+        "date": "Wed, Oct 21",
+        "injury": "Knee",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Seattle",
+        "participation": "LP"
+      },
+      "clubId": "kansas-city-chiefs",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "las-vegas-raiders",
+      "player": "Mike Washington Jr.",
+      "position": "RB",
+      "injury": "Foot/Back",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "las-vegas-raiders",
+        "player": "Mike Washington Jr.",
+        "date": "Wed, Oct 21",
+        "injury": "Foot",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. L.A. Rams",
+        "participation": "DNP"
+      },
+      "clubId": "las-vegas-raiders",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Foot"
+    },
+    {
+      "team": "los-angeles-rams",
+      "player": "Trent McDuffie",
+      "position": "CB",
+      "injury": "Groin",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "los-angeles-rams",
+        "player": "Trent McDuffie",
+        "date": "Mon, Oct 19",
+        "injury": "Groin",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 at Las Vegas",
+        "participation": "DNP"
+      },
+      "clubId": "los-angeles-rams",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Groin"
+    },
+    {
+      "team": "los-angeles-rams",
+      "player": "Puka Nacua",
+      "position": "WR",
+      "injury": "Calf",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "los-angeles-rams",
+        "player": "Puka Nacua",
+        "date": "Thu, Oct 22",
+        "injury": "Calf",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 at Las Vegas",
+        "participation": "DNP"
+      },
+      "clubId": "los-angeles-rams",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Calf"
+    },
+    {
+      "team": "miami-dolphins",
+      "player": "Willie Gay Jr.",
+      "position": "ILB",
+      "injury": "Illness",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "miami-dolphins",
+        "player": "Willie Gay Jr.",
+        "date": "Thu, Oct 22",
+        "injury": "Illness",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at N.Y. Jets",
+        "participation": "LP"
+      },
+      "clubId": "miami-dolphins",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Illness"
+    },
+    {
+      "team": "new-orleans-saints",
+      "player": "Cesar Ruiz",
+      "position": "G",
+      "injury": "Knee",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "new-orleans-saints",
+        "player": "Cesar Ruiz",
+        "date": "Sun, Oct 18",
+        "injury": "Knee",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Pittsburgh",
+        "participation": "LP"
+      },
+      "clubId": "new-orleans-saints",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "new-orleans-saints",
+      "player": "Nathan Shepherd",
+      "position": "DL",
+      "injury": "Illness, NIR-Rest",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "new-orleans-saints",
+        "player": "Nathan Shepherd",
+        "date": "Fri, Oct 23",
+        "injury": "Illness",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. Pittsburgh",
+        "participation": "DNP"
+      },
+      "clubId": "new-orleans-saints",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Illness"
+    },
+    {
+      "team": "new-york-giants",
+      "player": "Jermaine Eluemunor",
+      "position": "OL",
+      "injury": "Calf",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "new-york-giants",
+        "player": "Jermaine Eluemunor",
+        "date": "Mon, Oct 19",
+        "injury": "Calf",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Houston",
+        "participation": "LP"
+      },
+      "clubId": "new-york-giants",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Calf"
+    },
+    {
+      "team": "new-york-giants",
+      "player": "Jevon Holland",
+      "position": "S",
+      "injury": "Concussion (non-contact)",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "new-york-giants",
+        "player": "Jevon Holland",
+        "date": "Wed, Oct 21",
+        "injury": "Concussion",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Houston",
+        "participation": "LP"
+      },
+      "clubId": "new-york-giants",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Concussion"
+    },
+    {
+      "team": "new-york-giants",
+      "player": "Theo Johnson",
+      "position": "TE",
+      "injury": "Neck",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "new-york-giants",
+        "player": "Theo Johnson",
+        "date": "Fri, Oct 23",
+        "injury": "Neck",
+        "status": "Did Not Practice on Friday. Doubtful for Week 7 at Houston",
+        "participation": "DNP"
+      },
+      "clubId": "new-york-giants",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Neck"
+    },
+    {
+      "team": "new-york-giants",
+      "player": "Marcus Mbow",
+      "position": "OL",
+      "injury": "Knee",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "new-york-giants",
+        "player": "Marcus Mbow",
+        "date": "Wed, Oct 21",
+        "injury": "Knee",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Houston",
+        "participation": "LP"
+      },
+      "clubId": "new-york-giants",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "new-york-giants",
+      "player": "Tyler Nubin",
+      "position": "S",
+      "injury": "Neck",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "new-york-giants",
+        "player": "Tyler Nubin",
+        "date": "Mon, Oct 19",
+        "injury": "Neck",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Houston",
+        "participation": "LP"
+      },
+      "clubId": "new-york-giants",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Neck"
+    },
+    {
+      "team": "new-york-jets",
+      "player": "Breece Hall",
+      "position": "RB",
+      "injury": "Quad",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "new-york-jets",
+        "player": "Breece Hall",
+        "date": "Mon, Oct 19",
+        "injury": "Quadriceps",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Miami",
+        "participation": "LP"
+      },
+      "clubId": "new-york-jets",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Quadriceps"
+    },
+    {
+      "team": "new-york-jets",
+      "player": "Kene Nwangwu",
+      "position": "RB",
+      "injury": "Knee",
+      "participation": "FP",
+      "nflParticipation": "FP",
+      "cbs": {
+        "team": "new-york-jets",
+        "player": "Kene Nwangwu",
+        "date": "Wed, Oct 21",
+        "injury": "Knee",
+        "status": "Full Practice on Friday. Questionable for Week 7 vs. Miami",
+        "participation": "FP"
+      },
+      "clubId": "new-york-jets",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "new-york-jets",
+      "player": "Dylan Parham",
+      "position": "OL",
+      "injury": "Knee",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "new-york-jets",
+        "player": "Dylan Parham",
+        "date": "Mon, Oct 19",
+        "injury": "Knee",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Miami",
+        "participation": "LP"
+      },
+      "clubId": "new-york-jets",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "philadelphia-eagles",
+      "player": "Michael Carter II",
+      "position": "DB",
+      "injury": "Abdomen",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "philadelphia-eagles",
+        "player": "Michael Carter II",
+        "date": "Mon, Oct 19",
+        "injury": "Abdomen",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. Dallas",
+        "participation": "DNP"
+      },
+      "clubId": "philadelphia-eagles",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Abdomen"
+    },
+    {
+      "team": "philadelphia-eagles",
+      "player": "Dallas Goedert",
+      "position": "TE",
+      "injury": "Knee",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "philadelphia-eagles",
+        "player": "Dallas Goedert",
+        "date": "Thu, Oct 22",
+        "injury": "Knee",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. Dallas",
+        "participation": "DNP"
+      },
+      "clubId": "philadelphia-eagles",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "philadelphia-eagles",
+      "player": "Jalyx Hunt",
+      "position": "OLB",
+      "injury": "Knee/Ankle",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "philadelphia-eagles",
+        "player": "Jalyx Hunt",
+        "date": "Thu, Oct 22",
+        "injury": "Knee",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Dallas",
+        "participation": "LP"
+      },
+      "clubId": "philadelphia-eagles",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "philadelphia-eagles",
+      "player": "Jonathan Greenard",
+      "position": "OLB",
+      "injury": "Ankle",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "philadelphia-eagles",
+        "player": "Jonathan Greenard",
+        "date": "Thu, Oct 22",
+        "injury": "Ankle",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. Dallas",
+        "participation": "DNP"
+      },
+      "clubId": "philadelphia-eagles",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Ankle"
+    },
+    {
+      "team": "philadelphia-eagles",
+      "player": "Fred Johnson",
+      "position": "T",
+      "injury": "Illness",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "philadelphia-eagles",
+        "player": "Fred Johnson",
+        "date": "Fri, Oct 23",
+        "injury": "Illness",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Dallas",
+        "participation": "LP"
+      },
+      "clubId": "philadelphia-eagles",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Illness"
+    },
+    {
+      "team": "philadelphia-eagles",
+      "player": "Willie Lampkin",
+      "position": "C/G",
+      "injury": "Illness",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "philadelphia-eagles",
+        "player": "Willie Lampkin",
+        "date": "Thu, Oct 22",
+        "injury": "Illness",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Dallas",
+        "participation": "LP"
+      },
+      "clubId": "philadelphia-eagles",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Illness"
+    },
+    {
+      "team": "philadelphia-eagles",
+      "player": "Moro Ojomo",
+      "position": "DT",
+      "injury": "Abdomen",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "philadelphia-eagles",
+        "player": "Moro Ojomo",
+        "date": "Thu, Oct 22",
+        "injury": "Abdomen",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Dallas",
+        "participation": "LP"
+      },
+      "clubId": "philadelphia-eagles",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Abdomen"
+    },
+    {
+      "team": "philadelphia-eagles",
+      "player": "DeVonta Smith",
+      "position": "WR",
+      "injury": "Hamstring",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "philadelphia-eagles",
+        "player": "DeVonta Smith",
+        "date": "Thu, Oct 22",
+        "injury": "Hamstring",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. Dallas",
+        "participation": "DNP"
+      },
+      "clubId": "philadelphia-eagles",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Hamstring"
+    },
+    {
+      "team": "philadelphia-eagles",
+      "player": "Tyler Steen",
+      "position": "G",
+      "injury": "Shoulder",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "philadelphia-eagles",
+        "player": "Tyler Steen",
+        "date": "Thu, Oct 22",
+        "injury": "Shoulder",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Dallas",
+        "participation": "LP"
+      },
+      "clubId": "philadelphia-eagles",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Shoulder"
+    },
+    {
+      "team": "philadelphia-eagles",
+      "player": "Dontayvion Wicks",
+      "position": "WR",
+      "injury": "Ankle",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "philadelphia-eagles",
+        "player": "Dontayvion Wicks",
+        "date": "Thu, Oct 22",
+        "injury": "Ankle",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. Dallas",
+        "participation": "DNP"
+      },
+      "clubId": "philadelphia-eagles",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Ankle"
+    },
+    {
+      "team": "san-francisco-49ers",
+      "player": "Siran Neal",
+      "position": "DB",
+      "injury": "Knee",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "san-francisco-49ers",
+        "player": "Siran Neal",
+        "date": "Wed, Oct 21",
+        "injury": "Knee",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Atlanta",
+        "participation": "LP"
+      },
+      "clubId": "san-francisco-49ers",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    },
+    {
+      "team": "seattle-seahawks",
+      "player": "Nick Emmanwori",
+      "position": "S",
+      "injury": "Hip",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "seattle-seahawks",
+        "player": "Nick Emmanwori",
+        "date": "Fri, Oct 23",
+        "injury": "Hip",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Kansas City",
+        "participation": "LP"
+      },
+      "clubId": "seattle-seahawks",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Hip"
+    },
+    {
+      "team": "seattle-seahawks",
+      "player": "Drew Lock",
+      "position": "QB",
+      "injury": "Right Elbow",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "seattle-seahawks",
+        "player": "Drew Lock",
+        "date": "Wed, Oct 21",
+        "injury": "Elbow",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Kansas City",
+        "participation": "LP"
+      },
+      "clubId": "seattle-seahawks",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Elbow"
+    },
+    {
+      "team": "seattle-seahawks",
+      "player": "Uchenna Nwosu",
+      "position": "LB",
+      "injury": "Hip",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "seattle-seahawks",
+        "player": "Uchenna Nwosu",
+        "date": "Thu, Oct 22",
+        "injury": "Hip",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Kansas City",
+        "participation": "LP"
+      },
+      "clubId": "seattle-seahawks",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Hip"
+    },
+    {
+      "team": "seattle-seahawks",
+      "player": "Connor O'Toole",
+      "position": "LB",
+      "injury": "Hamstring",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "seattle-seahawks",
+        "player": "Connor O'Toole",
+        "date": "Wed, Oct 21",
+        "injury": "Hamstring",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Kansas City",
+        "participation": "LP"
+      },
+      "clubId": "seattle-seahawks",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Hamstring"
+    },
+    {
+      "team": "tampa-bay-buccaneers",
+      "player": "Baker Mayfield",
+      "position": "QB",
+      "injury": "Right Thumb",
+      "participation": "FP",
+      "nflParticipation": "FP",
+      "cbs": {
+        "team": "tampa-bay-buccaneers",
+        "player": "Baker Mayfield",
+        "date": "Fri, Oct 23",
+        "injury": "Thumb",
+        "status": "Full Practice on Friday. Questionable for Week 7 at Carolina",
+        "participation": "FP"
+      },
+      "clubId": "tampa-bay-buccaneers",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Thumb"
+    },
+    {
+      "team": "tennessee-titans",
+      "player": "Calvin Ridley",
+      "position": "WR",
+      "injury": "Hip",
+      "participation": "DNP",
+      "nflParticipation": "DNP",
+      "cbs": {
+        "team": "tennessee-titans",
+        "player": "Calvin Ridley",
+        "date": "Wed, Oct 21",
+        "injury": "Hip",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. Cleveland",
+        "participation": "DNP"
+      },
+      "clubId": "tennessee-titans",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Hip"
+    },
+    {
+      "team": "tennessee-titans",
+      "player": "Tyjae Spears",
+      "position": "RB",
+      "injury": "NIR-Rest/Knee",
+      "participation": "LP",
+      "nflParticipation": "LP",
+      "cbs": {
+        "team": "tennessee-titans",
+        "player": "Tyjae Spears",
+        "date": "Fri, Oct 23",
+        "injury": "Knee",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Cleveland",
+        "participation": "LP"
+      },
+      "clubId": "tennessee-titans",
+      "secondary": "cbs",
+      "notes": [],
+      "publishedPracticeInjury": "Knee"
+    }
+  ],
+  "designations": [
+    {
+      "team": "new-orleans-saints",
+      "player": "Cesar Ruiz",
+      "clubPlayer": "Cesar Ruiz",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Cesar Ruiz",
+        "G",
+        "Knee",
+        "DNP",
+        "DNP",
+        "LP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Cesar Ruiz",
+        "G",
+        "Knee",
+        "Limited Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-20T00:17Z",
+        "comment": "Ruiz (knee) made the trip to Paris ahead of the Saints' game against the Steelers in Week 7, Nick Underhill of NewOrleans.Football reports.",
+        "injury": "Knee"
+      },
+      "cbs": {
+        "team": "new-orleans-saints",
+        "player": "Cesar Ruiz",
+        "date": "Sun, Oct 18",
+        "injury": "Knee",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Pittsburgh",
+        "participation": "LP"
+      }
+    },
+    {
+      "team": "new-orleans-saints",
+      "player": "Nathan Shepherd",
+      "clubPlayer": "Nathan Shepherd",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Nathan Shepherd",
+        "DL",
+        "Illness, NIR-Rest",
+        "FP",
+        "FP",
+        "DNP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Nathan Shepherd",
+        "DT",
+        "Illness, Not injury related - resting player",
+        "Did Not Participate In Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-23T22:00Z",
+        "comment": "Shepherd (illness) is listed as questionable for Sunday's game against the Steelers in Paris.",
+        "injury": "Illness"
+      },
+      "cbs": {
+        "team": "new-orleans-saints",
+        "player": "Nathan Shepherd",
+        "date": "Fri, Oct 23",
+        "injury": "Illness",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 vs. Pittsburgh",
+        "participation": "DNP"
+      }
+    },
+    {
+      "team": "san-francisco-49ers",
+      "player": "Nick Bosa",
+      "clubPlayer": "Nick Bosa",
+      "status": "OUT",
+      "clubRow": [
+        "Nick Bosa",
+        "DL",
+        "Knee, Calf",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Nick Bosa",
+        "DE",
+        "Knee, Calf",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-24T01:03Z",
+        "comment": "Bosa (knee) has been ruled out ahead of Sunday's game against the Falcons.",
+        "injury": "Knee"
+      },
+      "cbs": {
+        "team": "san-francisco-49ers",
+        "player": "Nick Bosa",
+        "date": "Fri, Oct 23",
+        "injury": "Knee",
+        "status": "Out for Week 7 at Atlanta. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "san-francisco-49ers",
+      "player": "Mike Evans",
+      "clubPlayer": "Mike Evans",
+      "status": "OUT",
+      "clubRow": [
+        "Mike Evans",
+        "WR",
+        "Ribs, Achilles",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Mike Evans",
+        "WR",
+        "Ribs, Achilles",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T20:37Z",
+        "comment": "Evans (Achilles) is out for Sunday's game against the Falcons, Matt Barrows of The Athletic reports.",
+        "injury": "Achilles"
+      },
+      "cbs": {
+        "team": "san-francisco-49ers",
+        "player": "Mike Evans",
+        "date": "Fri, Oct 23",
+        "injury": "Achilles",
+        "status": "Out for Week 7 at Atlanta. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "san-francisco-49ers",
+      "player": "Luke Gifford",
+      "clubPlayer": "Luke Gifford",
+      "status": "OUT",
+      "clubRow": [
+        "Luke Gifford",
+        "LB",
+        "Groin",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Luke Gifford",
+        "LB",
+        "Groin",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T20:44Z",
+        "comment": "out",
+        "injury": "Groin"
+      },
+      "cbs": {
+        "team": "san-francisco-49ers",
+        "player": "Luke Gifford",
+        "date": "Fri, Oct 23",
+        "injury": "Groin",
+        "status": "Out for Week 7 at Atlanta. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "san-francisco-49ers",
+      "player": "Deebo Samuel Sr.",
+      "clubPlayer": "Deebo Samuel Sr.",
+      "status": "OUT",
+      "clubRow": [
+        "Deebo Samuel Sr.",
+        "WR",
+        "Hamstring",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Deebo Samuel Sr.",
+        "WR",
+        "Hamstring",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T21:35Z",
+        "comment": "Samuel (hamstring) has been ruled out for Sunday's game at Atlanta, Matt Barrows of The Athletic reports.",
+        "injury": "Hamstring"
+      },
+      "cbs": {
+        "team": "san-francisco-49ers",
+        "player": "Deebo Samuel",
+        "date": "Tue, Oct 20",
+        "injury": "Hamstring",
+        "status": "Out for Week 7 at Atlanta. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "san-francisco-49ers",
+      "player": "Marques Sigle",
+      "clubPlayer": "Marques Sigle",
+      "status": "OUT",
+      "clubRow": [
+        "Marques Sigle",
+        "S",
+        "Ankle",
+        "DNP",
+        "DNP",
+        "LP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Marques Sigle",
+        "S",
+        "Ankle",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-24T01:11Z",
+        "comment": "Sigle (ankle) has been ruled out ahead of Sunday's game against the Falcons.",
+        "injury": "Ankle"
+      },
+      "cbs": {
+        "team": "san-francisco-49ers",
+        "player": "Marques Sigle",
+        "date": "Fri, Oct 23",
+        "injury": "Ankle",
+        "status": "Out for Week 7 at Atlanta. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "san-francisco-49ers",
+      "player": "Upton Stout",
+      "clubPlayer": "Upton Stout",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Upton Stout",
+        "CB",
+        "Shoulder",
+        "DNP",
+        "DNP",
+        "LP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Upton Stout",
+        "CB",
+        "Shoulder",
+        "Limited Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-24T01:16Z",
+        "comment": "Stout (shoulder) is listed as questionable for Sunday's game against the Falcons.",
+        "injury": "Shoulder - AC Joint"
+      },
+      "cbs": {
+        "team": "san-francisco-49ers",
+        "player": "Upton Stout",
+        "date": "Tue, Oct 20",
+        "injury": "Shoulder - AC Joint",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Atlanta",
+        "participation": "LP"
+      }
+    },
+    {
+      "team": "san-francisco-49ers",
+      "player": "Garret Wallow",
+      "clubPlayer": "Garret Wallow",
+      "status": "OUT",
+      "clubRow": [
+        "Garret Wallow",
+        "LB",
+        "Hamstring",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Garret Wallow",
+        "LB",
+        "Hamstring",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-20T16:04Z",
+        "comment": "out",
+        "injury": "Hamstring"
+      },
+      "cbs": {
+        "team": "san-francisco-49ers",
+        "player": "Garret Wallow",
+        "date": "Tue, Oct 20",
+        "injury": "Hamstring",
+        "status": "Out for Week 7 at Atlanta. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "baltimore-ravens",
+      "player": "Lamar Jackson",
+      "clubPlayer": "Lamar Jackson",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Lamar Jackson",
+        "QB",
+        "Ankle",
+        "LP",
+        "LP",
+        "LP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Lamar Jackson",
+        "QB",
+        "Ankle",
+        "Limited Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-23T19:49Z",
+        "comment": "Jackson (ankle) was a limited participant in Friday's practice and is listed as questionable for Sunday's game against the Bengals.",
+        "injury": "Ankle"
+      },
+      "cbs": {
+        "team": "baltimore-ravens",
+        "player": "Lamar Jackson",
+        "date": "Mon, Oct 19",
+        "injury": "Ankle",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Cincinnati",
+        "participation": "LP"
+      }
+    },
+    {
+      "team": "baltimore-ravens",
+      "player": "Broderick Washington Jr.",
+      "clubPlayer": "Broderick Washington",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Broderick Washington",
+        "DL",
+        "Ankle",
+        "LP",
+        "LP",
+        "LP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Broderick Washington",
+        "DE",
+        "Ankle",
+        "Limited Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-23T23:51Z",
+        "comment": "Washington (ankle) is listed as questionable for Sunday's game against the Bengals.",
+        "injury": "Ankle"
+      },
+      "cbs": {
+        "team": "baltimore-ravens",
+        "player": "Broderick Washington",
+        "date": "Thu, Oct 22",
+        "injury": "Ankle",
+        "status": "Questionable for Week 7 vs. Cincinnati",
+        "participation": null
+      }
+    },
+    {
+      "team": "new-york-giants",
+      "player": "Tremaine Edmunds",
+      "clubPlayer": "Tremaine Edmunds",
+      "status": "OUT",
+      "clubRow": [
+        "Tremaine Edmunds",
+        "LB",
+        "Shoulder",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Tremaine Edmunds",
+        "LB",
+        "Shoulder",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-24T01:03Z",
+        "comment": "Edmunds will miss the rest of the 2026 season due to a torn chest muscle, Jordan Raanan of ESPN.com reports.",
+        "injury": "Chest"
+      },
+      "cbs": {
+        "team": "new-york-giants",
+        "player": "Tremaine Edmunds",
+        "date": "Fri, Oct 23",
+        "injury": "Chest",
+        "status": "Out for Week 7 at Houston",
+        "participation": null
+      }
+    },
+    {
+      "team": "new-york-giants",
+      "player": "Greg Newsome II",
+      "clubPlayer": "Greg Newsome II",
+      "status": "OUT",
+      "clubRow": [
+        "Greg Newsome II",
+        "CB",
+        "Concussion",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Greg Newsome II",
+        "CB",
+        "Concussion",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-24T00:25Z",
+        "comment": "Newsome (concussion) has been ruled out for Sunday's game against the Texans.",
+        "injury": "Concussion"
+      },
+      "cbs": {
+        "team": "new-york-giants",
+        "player": "Greg Newsome II",
+        "date": "Fri, Oct 23",
+        "injury": "Concussion",
+        "status": "Out for Week 7 at Houston. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "new-york-giants",
+      "player": "Jermaine Eluemunor",
+      "clubPlayer": "Jermaine Eluemunor",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Jermaine Eluemunor",
+        "OL",
+        "Calf",
+        "DNP",
+        "LP",
+        "LP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Jermaine Eluemunor",
+        "T",
+        "Calf",
+        "Limited Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-24T01:03Z",
+        "comment": "questionable",
+        "injury": "Calf"
+      },
+      "cbs": {
+        "team": "new-york-giants",
+        "player": "Jermaine Eluemunor",
+        "date": "Mon, Oct 19",
+        "injury": "Calf",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Houston",
+        "participation": "LP"
+      }
+    },
+    {
+      "team": "new-york-giants",
+      "player": "Theo Johnson",
+      "clubPlayer": "Theo Johnson",
+      "status": "DOUBTFUL",
+      "clubRow": [
+        "Theo Johnson",
+        "TE",
+        "Neck",
+        "LP",
+        "LP",
+        "DNP",
+        "DOUBTFUL"
+      ],
+      "nflRow": [
+        "Theo Johnson",
+        "TE",
+        "Neck",
+        "Did Not Participate In Practice",
+        "Doubtful"
+      ],
+      "espn": {
+        "status": "Doubtful",
+        "date": "2026-10-24T00:16Z",
+        "comment": "Johnson (neck) is listed as doubtful for Sunday's game against the Texans.",
+        "injury": "Neck"
+      },
+      "cbs": {
+        "team": "new-york-giants",
+        "player": "Theo Johnson",
+        "date": "Fri, Oct 23",
+        "injury": "Neck",
+        "status": "Did Not Practice on Friday. Doubtful for Week 7 at Houston",
+        "participation": "DNP"
+      }
+    },
+    {
+      "team": "new-york-giants",
+      "player": "Tyler Nubin",
+      "clubPlayer": "Tyler Nubin",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Tyler Nubin",
+        "S",
+        "Neck",
+        "LP",
+        "LP",
+        "LP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Tyler Nubin",
+        "S",
+        "Neck",
+        "Limited Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-20T16:10Z",
+        "comment": "questionable",
+        "injury": "Neck"
+      },
+      "cbs": {
+        "team": "new-york-giants",
+        "player": "Tyler Nubin",
+        "date": "Mon, Oct 19",
+        "injury": "Neck",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Houston",
+        "participation": "LP"
+      }
+    },
+    {
+      "team": "houston-texans",
+      "player": "Reed Blankenship",
+      "clubPlayer": "Reed Blankenship",
+      "status": "OUT",
+      "clubRow": [
+        "Reed Blankenship",
+        "S",
+        "Concussion / Hand",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Reed Blankenship",
+        "S",
+        "Concussion, Hand",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-24T00:19Z",
+        "comment": "Blankenship (concussion/hand) has been ruled out ahead of Sunday's game against the Giants, Adam Caplan of SiriusXM NFL Radio reports.",
+        "injury": "Concussion"
+      },
+      "cbs": {
+        "team": "houston-texans",
+        "player": "Reed Blankenship",
+        "date": "Fri, Oct 23",
+        "injury": "Concussion",
+        "status": "Out for Week 7 vs. N.Y. Giants. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "houston-texans",
+      "player": "David Montgomery",
+      "clubPlayer": "David Montgomery",
+      "status": "OUT",
+      "clubRow": [
+        "David Montgomery",
+        "RB",
+        "Groin",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "David Montgomery",
+        "RB",
+        "Groin",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T20:32Z",
+        "comment": "Montgomery (groin) has been ruled out for Sunday's game against the Giants, Adam Caplan of SiriusXM NFL Radio reports.",
+        "injury": "Groin"
+      },
+      "cbs": {
+        "team": "houston-texans",
+        "player": "David Montgomery",
+        "date": "Fri, Oct 23",
+        "injury": "Groin",
+        "status": "Out for Week 7 vs. N.Y. Giants. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "houston-texans",
+      "player": "Jalen Pitre",
+      "clubPlayer": "Jalen Pitre",
+      "status": "OUT",
+      "clubRow": [
+        "Jalen Pitre",
+        "S",
+        "Shoulder",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Jalen Pitre",
+        "S",
+        "Shoulder",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-24T00:23Z",
+        "comment": "Pitre (shoulder) has been ruled out ahead of Sunday's game against the Giants, Adam Caplan of SiriusXM NFL Radio reports.",
+        "injury": "Shoulder - AC Joint"
+      },
+      "cbs": {
+        "team": "houston-texans",
+        "player": "Jalen Pitre",
+        "date": "Fri, Oct 23",
+        "injury": "Shoulder - AC Joint",
+        "status": "Out for Week 7 vs. N.Y. Giants. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "miami-dolphins",
+      "player": "Reese Taylor",
+      "clubPlayer": "Reese Taylor",
+      "status": "OUT",
+      "clubRow": [
+        "Reese Taylor",
+        "CB",
+        "Quad",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Reese Taylor",
+        "CB",
+        "Quadricep",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T20:18Z",
+        "comment": "out",
+        "injury": "Quadriceps"
+      },
+      "cbs": {
+        "team": "miami-dolphins",
+        "player": "Reese Taylor",
+        "date": "Fri, Oct 23",
+        "injury": "Quadriceps",
+        "status": "Out for Week 7 at N.Y. Jets. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "new-york-jets",
+      "player": "Joseph Ossai",
+      "clubPlayer": "Joseph Ossai",
+      "status": "OUT",
+      "clubRow": [
+        "Joseph Ossai",
+        "EDGE",
+        "Ankle",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Joseph Ossai",
+        "DE",
+        "Ankle",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T22:04Z",
+        "comment": "Ossai (ankle) has been ruled out for Sunday's game against the Dolphins, Rich Cimini of ESPN.com reports.",
+        "injury": "Ankle"
+      },
+      "cbs": {
+        "team": "new-york-jets",
+        "player": "Joseph Ossai",
+        "date": "Fri, Oct 23",
+        "injury": "Ankle",
+        "status": "Out for Week 7 vs. Miami. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "new-york-jets",
+      "player": "Breece Hall",
+      "clubPlayer": "Breece Hall",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Breece Hall",
+        "RB",
+        "Quad",
+        "DNP",
+        "LP",
+        "LP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Breece Hall",
+        "RB",
+        "Quadricep",
+        "Limited Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-23T15:05Z",
+        "comment": "Hall (quadriceps) is listed as questionable for Sunday's game against the Dolphins, Brian Costello of the New York Post reports.",
+        "injury": "Quadriceps"
+      },
+      "cbs": {
+        "team": "new-york-jets",
+        "player": "Breece Hall",
+        "date": "Mon, Oct 19",
+        "injury": "Quadriceps",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Miami",
+        "participation": "LP"
+      }
+    },
+    {
+      "team": "new-york-jets",
+      "player": "Dylan Parham",
+      "clubPlayer": "Dylan Parham",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Dylan Parham",
+        "OL",
+        "Knee",
+        "LP",
+        "LP",
+        "LP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Dylan Parham",
+        "G",
+        "Knee",
+        "Limited Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-22T01:11Z",
+        "comment": "Parham (knee) was a limited participant in Wednesday's practice.",
+        "injury": "Knee"
+      },
+      "cbs": {
+        "team": "new-york-jets",
+        "player": "Dylan Parham",
+        "date": "Mon, Oct 19",
+        "injury": "Knee",
+        "status": "Limited Practice on Friday. Questionable for Week 7 vs. Miami",
+        "participation": "LP"
+      }
+    },
+    {
+      "team": "tampa-bay-buccaneers",
+      "player": "Baker Mayfield",
+      "clubPlayer": "Baker Mayfield",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Baker Mayfield",
+        "QB",
+        "Right Thumb",
+        "FP",
+        "FP",
+        "FP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Baker Mayfield",
+        "QB",
+        "Thumb",
+        "Full Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-23T16:40Z",
+        "comment": "Head coach Todd Bowles said Friday that Mayfield (right thumb) is ready for Sunday's game at Carolina, Greg Auman of Fox Sports reports.",
+        "injury": "Thumb"
+      },
+      "cbs": {
+        "team": "tampa-bay-buccaneers",
+        "player": "Baker Mayfield",
+        "date": "Fri, Oct 23",
+        "injury": "Thumb",
+        "status": "Full Practice on Friday. Questionable for Week 7 at Carolina",
+        "participation": "FP"
+      }
+    },
+    {
+      "team": "tampa-bay-buccaneers",
+      "player": "Antoine Winfield Jr.",
+      "clubPlayer": "Antoine Winfield Jr.",
+      "status": "OUT",
+      "clubRow": [
+        "Antoine Winfield Jr.",
+        "S",
+        "Rib",
+        "LP",
+        "LP",
+        "LP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Antoine Winfield Jr.",
+        "S",
+        "Rib",
+        "Limited Participation in Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T22:34Z",
+        "comment": "Winfield (ribs) has been ruled out for Sunday's game against Carolina, Greg Auman of Fox Sports reports.",
+        "injury": "Ribs"
+      },
+      "cbs": {
+        "team": "tampa-bay-buccaneers",
+        "player": "Antoine Winfield Jr.",
+        "date": "Fri, Oct 23",
+        "injury": "Ribs",
+        "status": "Out for Week 7 at Carolina. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "carolina-panthers",
+      "player": "Monroe Freeling",
+      "clubPlayer": "Monroe Freeling",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Monroe Freeling",
+        "T",
+        "Knee",
+        "FP",
+        "FP",
+        "FP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Monroe Freeling",
+        "T",
+        "Knee",
+        "Full Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-23T16:49Z",
+        "comment": "questionable",
+        "injury": "Knee"
+      },
+      "cbs": {
+        "team": "carolina-panthers",
+        "player": "Monroe Freeling",
+        "date": "Fri, Oct 23",
+        "injury": "Knee",
+        "status": "Full Practice on Friday. Questionable for Week 7 vs. Tampa Bay",
+        "participation": "FP"
+      }
+    },
+    {
+      "team": "carolina-panthers",
+      "player": "Thomas Incoom",
+      "clubPlayer": "Thomas Incoom",
+      "status": "OUT",
+      "clubRow": [
+        "Thomas Incoom",
+        "OLB",
+        "Calf",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Thomas Incoom",
+        "LB",
+        "Calf",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T16:49Z",
+        "comment": "out",
+        "injury": "Calf"
+      },
+      "cbs": {
+        "team": "carolina-panthers",
+        "player": "Thomas Incoom",
+        "date": "Fri, Oct 23",
+        "injury": "Calf",
+        "status": "Out for Week 7 vs. Tampa Bay. Expected Return - Week 9",
+        "participation": null
+      }
+    },
+    {
+      "team": "indianapolis-colts",
+      "player": "Sauce Gardner",
+      "clubPlayer": "Sauce Gardner",
+      "status": "OUT",
+      "clubRow": [
+        "Sauce Gardner",
+        "CB",
+        "Calf",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Sauce Gardner",
+        "CB",
+        "Calf",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T19:21Z",
+        "comment": "out",
+        "injury": "Calf"
+      },
+      "cbs": {
+        "team": "indianapolis-colts",
+        "player": "Sauce Gardner",
+        "date": "Fri, Oct 23",
+        "injury": "Calf",
+        "status": "Out for Week 7 at Minnesota. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "indianapolis-colts",
+      "player": "Anthony Gould",
+      "clubPlayer": "Anthony Gould",
+      "status": "OUT",
+      "clubRow": [
+        "Anthony Gould",
+        "WR",
+        "Concussion",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Anthony Gould",
+        "WR",
+        "Concussion",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-22T23:26Z",
+        "comment": "Gould (concussion) did not practice Wednesday or Thursday.",
+        "injury": "Concussion"
+      },
+      "cbs": {
+        "team": "indianapolis-colts",
+        "player": "Anthony Gould",
+        "date": "Fri, Oct 23",
+        "injury": "Concussion",
+        "status": "Out for Week 7 at Minnesota. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "indianapolis-colts",
+      "player": "Tyler Warren",
+      "clubPlayer": "Tyler Warren",
+      "status": "OUT",
+      "clubRow": [
+        "Tyler Warren",
+        "TE",
+        "Groin",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Tyler Warren",
+        "TE",
+        "Groin",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T16:52Z",
+        "comment": "Warren (groin) is ruled out for Sunday's game against the Vikings, FOX59's Mike Chappell reports.",
+        "injury": "Groin"
+      },
+      "cbs": {
+        "team": "indianapolis-colts",
+        "player": "Tyler Warren",
+        "date": "Fri, Oct 23",
+        "injury": "Groin",
+        "status": "Out for Week 7 at Minnesota. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "cleveland-browns",
+      "player": "Grant Delpit",
+      "clubPlayer": "Grant Delpit",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Grant Delpit",
+        "S",
+        "Concussion, Shoulder",
+        "DNP",
+        "LP",
+        "LP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Grant Delpit",
+        "S",
+        "Concussion, Shoulder",
+        "Limited Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-23T23:37Z",
+        "comment": "Delpit (concussion) is listed as questionable for Sunday's game against the Titans, Zac Jackson of The Athletic reports.",
+        "injury": "Concussion"
+      },
+      "cbs": {
+        "team": "cleveland-browns",
+        "player": "Grant Delpit",
+        "date": "Sun, Oct 18",
+        "injury": "Concussion",
+        "status": "Limited Practice on Friday. Questionable for Week 7 at Tennessee",
+        "participation": "LP"
+      }
+    },
+    {
+      "team": "cleveland-browns",
+      "player": "Teven Jenkins",
+      "clubPlayer": "Teven Jenkins",
+      "status": "OUT",
+      "clubRow": [
+        "Teven Jenkins",
+        "G",
+        "Back",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Teven Jenkins",
+        "G",
+        "Back",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T17:48Z",
+        "comment": "out",
+        "injury": "Back"
+      },
+      "cbs": {
+        "team": "cleveland-browns",
+        "player": "Teven Jenkins",
+        "date": "Fri, Oct 23",
+        "injury": "Back",
+        "status": "Out for Week 7 at Tennessee. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "tennessee-titans",
+      "player": "Kevin Winston Jr.",
+      "clubPlayer": "Kevin Winston Jr.",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Kevin Winston Jr.",
+        "S",
+        "Quad",
+        "LP",
+        "LP",
+        "FP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Kevin Winston Jr.",
+        "S",
+        "Quadricep",
+        "Limited Participation in Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-23T23:53Z",
+        "comment": "Winston (quadriceps) is listed as questionable for Sunday's game against the Browns, Jim Wyatt of the Titans' official site reports.",
+        "injury": "Quadriceps"
+      },
+      "cbs": {
+        "team": "tennessee-titans",
+        "player": "Kevin Winston Jr.",
+        "date": "Mon, Oct 19",
+        "injury": "Quadriceps",
+        "status": "Full Practice on Friday. Questionable for Week 7 vs. Cleveland",
+        "participation": "FP"
+      }
+    },
+    {
+      "team": "denver-broncos",
+      "player": "Tyler Badie",
+      "clubPlayer": "Tyler Badie",
+      "status": "OUT",
+      "clubRow": [
+        "Tyler Badie",
+        "RB",
+        "Thumb",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Tyler Badie",
+        "RB",
+        "Thumb",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-24T00:40Z",
+        "comment": "Badie (thumb) has been ruled out for Sunday's game against the Cardinals.",
+        "injury": "Thumb"
+      },
+      "cbs": {
+        "team": "denver-broncos",
+        "player": "Tyler Badie",
+        "date": "Fri, Oct 23",
+        "injury": "Thumb",
+        "status": "Out for Week 7 at Arizona. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "denver-broncos",
+      "player": "Talanoa Hufanga",
+      "clubPlayer": "Talanoa Hufanga",
+      "status": "OUT",
+      "clubRow": [
+        "Talanoa Hufanga",
+        "S",
+        "Ankle",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Talanoa Hufanga",
+        "S",
+        "Ankle",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-24T00:44Z",
+        "comment": "Hufanga (ankle) has been ruled out for Sunday's game against the Cardinals.",
+        "injury": "Ankle"
+      },
+      "cbs": {
+        "team": "denver-broncos",
+        "player": "Talanoa Hufanga",
+        "date": "Fri, Oct 23",
+        "injury": "Ankle",
+        "status": "Out for Week 7 at Arizona. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "arizona-cardinals",
+      "player": "Jeremiyah Love",
+      "clubPlayer": "Jeremiyah Love",
+      "status": "OUT",
+      "clubRow": [
+        "Jeremiyah Love",
+        "RB",
+        "Ankle",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Jeremiyah Love",
+        "RB",
+        "Ankle",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T17:41Z",
+        "comment": "Head coach Mike LaFleur said Friday that Love (ankle) won't play Sunday against the Broncos, Darren Urban of the Cardinals' official site reports.",
+        "injury": "Ankle"
+      },
+      "cbs": {
+        "team": "arizona-cardinals",
+        "player": "Jeremiyah Love",
+        "date": "Fri, Oct 23",
+        "injury": "Ankle",
+        "status": "Out for Week 7 vs. Denver. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "arizona-cardinals",
+      "player": "Andrew Wingard",
+      "clubPlayer": "Andrew Wingard",
+      "status": "OUT",
+      "clubRow": [
+        "Andrew Wingard",
+        "S",
+        "Knee",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Andrew Wingard",
+        "S",
+        "Knee",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-24T00:57Z",
+        "comment": "Wingard (knee) has been ruled out for Sunday's game against the Broncos, Darren Urban of the Cardinals' official site reports.",
+        "injury": "Knee"
+      },
+      "cbs": {
+        "team": "arizona-cardinals",
+        "player": "Andrew Wingard",
+        "date": "Fri, Oct 23",
+        "injury": "Knee",
+        "status": "Out for Week 7 vs. Denver. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "los-angeles-rams",
+      "player": "Trent McDuffie",
+      "clubPlayer": "Trent McDuffie",
+      "status": "QUESTIONABLE",
+      "clubRow": [
+        "Trent McDuffie",
+        "CB",
+        "Groin",
+        "DNP",
+        "DNP",
+        "DNP",
+        "QUESTIONABLE"
+      ],
+      "nflRow": [
+        "Trent McDuffie",
+        "CB",
+        "Groin",
+        "Did Not Participate In Practice",
+        "Questionable"
+      ],
+      "espn": {
+        "status": "Questionable",
+        "date": "2026-10-23T23:40Z",
+        "comment": "McDuffie (groin) is listed as questionable for Sunday's game against the Raiders, Sarah Barshop of ESPN.com reports.",
+        "injury": "Groin"
+      },
+      "cbs": {
+        "team": "los-angeles-rams",
+        "player": "Trent McDuffie",
+        "date": "Mon, Oct 19",
+        "injury": "Groin",
+        "status": "Did Not Practice on Friday. Questionable for Week 7 at Las Vegas",
+        "participation": "DNP"
+      }
+    },
+    {
+      "team": "kansas-city-chiefs",
+      "player": "Jaylon Moore",
+      "clubPlayer": "Jaylon Moore",
+      "status": "OUT",
+      "clubRow": [
+        "Jaylon Moore",
+        "OL",
+        "Concussion",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Jaylon Moore",
+        "T",
+        "Concussion",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T19:32Z",
+        "comment": "out",
+        "injury": "Concussion"
+      },
+      "cbs": {
+        "team": "kansas-city-chiefs",
+        "player": "Jaylon Moore",
+        "date": "Fri, Oct 23",
+        "injury": "Concussion",
+        "status": "Out for Week 7 at Seattle. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "kansas-city-chiefs",
+      "player": "Rashee Rice",
+      "clubPlayer": "Rashee Rice",
+      "status": "OUT",
+      "clubRow": [
+        "Rashee Rice",
+        "WR",
+        "Hamstring/Knee",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Rashee Rice",
+        "WR",
+        "Hamstring, Knee",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T17:04Z",
+        "comment": "Rice (hamstring/knee) was not present during the portion of Friday's practice open to the media, Pete Sweeney of The Kansas City Star reports.",
+        "injury": "Hamstring"
+      },
+      "cbs": {
+        "team": "kansas-city-chiefs",
+        "player": "Rashee Rice",
+        "date": "Fri, Oct 23",
+        "injury": "Hamstring",
+        "status": "Out for Week 7 at Seattle. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "seattle-seahawks",
+      "player": "Chazz Surratt",
+      "clubPlayer": "Chazz Surratt",
+      "status": "OUT",
+      "clubRow": [
+        "Chazz Surratt",
+        "LB",
+        "Calf",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Chazz Surratt",
+        "LB",
+        "Calf",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-23T21:18Z",
+        "comment": "out",
+        "injury": "Calf"
+      },
+      "cbs": {
+        "team": "seattle-seahawks",
+        "player": "Chazz Surratt",
+        "date": "Fri, Oct 23",
+        "injury": "Calf",
+        "status": "Out for Week 7 vs. Kansas City. Expected Return - Week 8",
+        "participation": null
+      }
+    },
+    {
+      "team": "seattle-seahawks",
+      "player": "Drake Thomas",
+      "clubPlayer": "Drake Thomas",
+      "status": "OUT",
+      "clubRow": [
+        "Drake Thomas",
+        "LB",
+        "Ankle",
+        "DNP",
+        "DNP",
+        "DNP",
+        "OUT"
+      ],
+      "nflRow": [
+        "Drake Thomas",
+        "LB",
+        "Ankle",
+        "Did Not Participate In Practice",
+        "Out"
+      ],
+      "espn": {
+        "status": "Out",
+        "date": "2026-10-24T00:47Z",
+        "comment": "Thomas (ankle) has been ruled out ahead of Sunday's game against the Chiefs, John Boyle of the Seahawks' official site reports.",
+        "injury": "Ankle"
+      },
+      "cbs": {
+        "team": "seattle-seahawks",
+        "player": "Drake Thomas",
+        "date": "Fri, Oct 23",
+        "injury": "Ankle",
+        "status": "Out for Week 7 vs. Kansas City. Expected Return - Week 8",
+        "participation": null
+      }
+    }
+  ]
+}

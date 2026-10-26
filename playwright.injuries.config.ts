@@ -31,7 +31,7 @@ export default defineConfig({
     { name: "webkit-390", use: { browserName: "webkit" } },
   ],
   webServer: {
-    command: "npx wrangler dev --config wrangler.deploy.jsonc --local --ip 127.0.0.1 --port 8796",
+    command: `"${process.execPath}" node_modules/wrangler/bin/wrangler.js dev --config wrangler.deploy.jsonc --local --ip 127.0.0.1 --port 8796`,
     url: "http://127.0.0.1:8796/injuries",
     reuseExistingServer: false,
     timeout: 120_000,

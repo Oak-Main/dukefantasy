@@ -1,0 +1,166 @@
+{
+  "week": 7,
+  "baseCommit": "28e416a2e2e548e64193445cba307f2601f18ada",
+  "run": "2026-10-24T091730Z",
+  "observations": [
+    {
+      "kind": "injury",
+      "key": "chicago-bears:Cole Kmet",
+      "value": {
+        "player": "Cole Kmet",
+        "team_slug": "chicago-bears",
+        "status": "IR",
+        "injury": "Knee",
+        "practice": null,
+        "designation_date": null,
+        "designation_week": null
+      },
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T09:19:07.532Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cole Kmet",
+            "team_slug": "chicago-bears",
+            "status": "IR",
+            "injury": "Knee",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/injuries/",
+          "checkedAt": "2026-10-24T09:19:06.344Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cole Kmet",
+            "team_slug": "chicago-bears",
+            "status": "IR",
+            "injury": "Knee",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/transactions/",
+          "checkedAt": "2026-10-24T09:22:48.050Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Cole Kmet",
+            "team_slug": "chicago-bears",
+            "status": "IR",
+            "injury": "Knee",
+            "practice": null,
+            "designation_date": null,
+            "designation_week": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "chicago-bears:Montez Sweat",
+      "value": {
+        "player": "Montez Sweat",
+        "team_slug": "chicago-bears",
+        "status": "Suspension lifted",
+        "asOf": "2026-10-24"
+      },
+      "sources": [
+        {
+          "url": "https://www.chicagobears.com/news/roster-moves-chicago-bears-place-cole-kmet-on-ir",
+          "checkedAt": "2026-10-24T09:21:08.256Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Montez Sweat",
+            "team_slug": "chicago-bears",
+            "status": "Suspension lifted",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://www.chicagobears.com/team/transactions/",
+          "checkedAt": "2026-10-24T09:20:28.356Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Montez Sweat",
+            "team_slug": "chicago-bears",
+            "status": "Suspension lifted",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-24T09:19:07.532Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Montez Sweat",
+            "team_slug": "chicago-bears",
+            "status": "Suspension lifted",
+            "asOf": "2026-10-24"
+          }
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/transactions/",
+          "checkedAt": "2026-10-24T09:22:48.050Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Montez Sweat",
+            "team_slug": "chicago-bears",
+            "status": "Suspension lifted",
+            "asOf": "2026-10-24"
+          }
+        }
+      ]
+    }
+  ],
+  "moduleReviews": [
+    {
+      "module": "schedule",
+      "sourceAsOf": "2026-10-24",
+      "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
+      "scope": "Actual complete October 24 NFL/ESPN re-verification of all 107 games through Week 7: 94 finals and 13 upcoming games; all 32 fresh ESPN standings rows match the retained derived rows. The module review date advances only after that complete comparison.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "relatedUrls": [
+            "https://www.nfl.com/schedules/2026/by-week/week-1",
+            "https://www.nfl.com/schedules/2026/by-week/week-2",
+            "https://www.nfl.com/schedules/2026/by-week/week-3",
+            "https://www.nfl.com/schedules/2026/by-week/week-4",
+            "https://www.nfl.com/schedules/2026/by-week/week-5",
+            "https://www.nfl.com/schedules/2026/by-week/week-6",
+            "https://www.nfl.com/schedules/2026/by-week/week-7"
+          ],
+          "checkedAt": "2026-10-24T09:19:07.137Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "relatedUrls": [
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+          ],
+          "checkedAt": "2026-10-24T09:19:07.044Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "c7384643b2471bd4946efbeac07126de993c9819cc21fd45d005ad111ce475d4",
+            "complete": true
+          }
+        }
+      ]
+    }
+  ]
+}

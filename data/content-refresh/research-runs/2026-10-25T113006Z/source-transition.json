@@ -1,0 +1,33 @@
+{
+  "reviewedAt": "2026-10-25T11:37:31.870Z",
+  "before": {
+    "publisher": "nfl",
+    "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+    "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+    "checkedAt": "2026-10-25T11:31:36.472Z",
+    "status": 200
+  },
+  "after": {
+    "id": "nfl",
+    "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+    "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+    "checkedAt": "2026-10-25T11:36:14.084Z",
+    "status": 200
+  },
+  "changes": [
+    {
+      "label": "Bengals at Ravens, Sunday, October 25th, 1:00 PM, CBS",
+      "before": null,
+      "after": "PREGAME"
+    }
+  ],
+  "decision": "NFL adds PREGAME to previously unpopulated scheduled card metadata. All 14 labels/identities/kickoffs and the Thursday final remain unchanged; fresh ESPN confirms one final and 13 scheduled games. Normalize only absent/PREGAME to scheduled; actual live/final states, scores and kickoff changes still fail the guard. No public data or source freshness changes.",
+  "evidence": {
+    "id": "espn",
+    "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+    "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+    "checkedAt": "2026-10-25T11:36:15.073Z",
+    "status": 200
+  },
+  "all14ComparedWithNative": true
+}

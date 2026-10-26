@@ -1,0 +1,444 @@
+{
+  "week": 7,
+  "run": "2026-10-25T170011Z",
+  "baseCommit": "998e5d1b0b465de3ff3024e56745c7e21faef45c",
+  "createdAt": "2026-10-25T17:08:56.529Z",
+  "observations": [
+    {
+      "kind": "inactive",
+      "key": "401873014:indianapolis-colts",
+      "value": {
+        "gameId": "401873014",
+        "week": 7,
+        "teamSlug": "indianapolis-colts",
+        "complete": true,
+        "players": [
+          {
+            "name": "Anthony Gould",
+            "designation": "inactive"
+          },
+          {
+            "name": "Bryce Boettcher",
+            "designation": "inactive"
+          },
+          {
+            "name": "CJ Allen",
+            "designation": "inactive"
+          },
+          {
+            "name": "Dalton Tucker",
+            "designation": "inactive"
+          },
+          {
+            "name": "Riley Leonard",
+            "designation": "emergency_qb"
+          },
+          {
+            "name": "Sauce Gardner",
+            "designation": "inactive"
+          },
+          {
+            "name": "Tyler Warren",
+            "designation": "inactive"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.colts.com/news/colts-announce-7-inactive-players-for-week-7-game-at-minnesota-vikings",
+          "checkedAt": "2026-10-25T17:01:10.814Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873014",
+            "week": 7,
+            "teamSlug": "indianapolis-colts",
+            "complete": true,
+            "players": [
+              {
+                "name": "Anthony Gould",
+                "designation": "inactive"
+              },
+              {
+                "name": "Bryce Boettcher",
+                "designation": "inactive"
+              },
+              {
+                "name": "CJ Allen",
+                "designation": "inactive"
+              },
+              {
+                "name": "Dalton Tucker",
+                "designation": "inactive"
+              },
+              {
+                "name": "Riley Leonard",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "Sauce Gardner",
+                "designation": "inactive"
+              },
+              {
+                "name": "Tyler Warren",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "bc0a91ab6af5831712d5c2b42405756b678be507c5ae29cbb0dd102ef2f7ffd0",
+          "sourceDetail": "Correct dated Week 7 complete seven-entry club list, including explicit emergency-third-quarterback label."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-25T17:01:11.149Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873014",
+            "week": 7,
+            "teamSlug": "indianapolis-colts",
+            "complete": true,
+            "players": [
+              {
+                "name": "Anthony Gould",
+                "designation": "inactive"
+              },
+              {
+                "name": "Bryce Boettcher",
+                "designation": "inactive"
+              },
+              {
+                "name": "CJ Allen",
+                "designation": "inactive"
+              },
+              {
+                "name": "Dalton Tucker",
+                "designation": "inactive"
+              },
+              {
+                "name": "Riley Leonard",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "Sauce Gardner",
+                "designation": "inactive"
+              },
+              {
+                "name": "Tyler Warren",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "8afe6e4f5141fb3e964a9e3bb9b429b170b1afec94fc06c5d9b4856fc87b3280",
+          "sourceDetail": "All seven explicit INACTIVE-flagged records were read, counted and matched with the full club list; the quarterback report explicitly states the emergency-third role. This is not inferred from generic Out/Active statuses or omission."
+        }
+      ],
+      "membershipConfirmation": {
+        "teamSlug": "indianapolis-colts",
+        "source": "fftoday",
+        "names": [
+          "Bryce Boettcher.",
+          "CJ Allen",
+          "Sauce Gardner",
+          "Tyler Warren",
+          "Anthony Gould",
+          "Dalton Tucker",
+          "Riley Leonard"
+        ],
+        "completeMembershipMatches": true,
+        "roleScope": "Membership confirmation only. Emergency roles are proved by the club and explicit ESPN statements, never inferred from FFToday omissions.",
+        "url": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+        "checkedAt": "2026-10-25T17:01:09.987Z"
+      }
+    },
+    {
+      "kind": "inactive",
+      "key": "401873017:atlanta-falcons",
+      "value": {
+        "gameId": "401873017",
+        "week": 7,
+        "teamSlug": "atlanta-falcons",
+        "complete": true,
+        "players": [
+          {
+            "name": "Andy Dalton",
+            "designation": "inactive"
+          },
+          {
+            "name": "Avieon Terrell",
+            "designation": "inactive"
+          },
+          {
+            "name": "Billy Bowman Jr.",
+            "designation": "inactive"
+          },
+          {
+            "name": "Brian Robinson Jr.",
+            "designation": "inactive"
+          },
+          {
+            "name": "Divine Deablo",
+            "designation": "inactive"
+          },
+          {
+            "name": "Jack Strand",
+            "designation": "emergency_qb"
+          },
+          {
+            "name": "Olamide Zaccheaus",
+            "designation": "inactive"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.atlantafalcons.com/news/atlanta-falcons-week-7-inactives-vs-san-francisco-49ers",
+          "checkedAt": "2026-10-25T17:01:10.096Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873017",
+            "week": 7,
+            "teamSlug": "atlanta-falcons",
+            "complete": true,
+            "players": [
+              {
+                "name": "Andy Dalton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Avieon Terrell",
+                "designation": "inactive"
+              },
+              {
+                "name": "Billy Bowman Jr.",
+                "designation": "inactive"
+              },
+              {
+                "name": "Brian Robinson Jr.",
+                "designation": "inactive"
+              },
+              {
+                "name": "Divine Deablo",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jack Strand",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "Olamide Zaccheaus",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "2708b537665c3143f3621d1a388bb2220a08eb869131c29d5b8a490476400a6a",
+          "sourceDetail": "Correct dated Week 7 complete seven-entry club list, including explicit emergency-third-quarterback label."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-25T17:01:11.149Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873017",
+            "week": 7,
+            "teamSlug": "atlanta-falcons",
+            "complete": true,
+            "players": [
+              {
+                "name": "Andy Dalton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Avieon Terrell",
+                "designation": "inactive"
+              },
+              {
+                "name": "Billy Bowman Jr.",
+                "designation": "inactive"
+              },
+              {
+                "name": "Brian Robinson Jr.",
+                "designation": "inactive"
+              },
+              {
+                "name": "Divine Deablo",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jack Strand",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "Olamide Zaccheaus",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "8afe6e4f5141fb3e964a9e3bb9b429b170b1afec94fc06c5d9b4856fc87b3280",
+          "sourceDetail": "All seven explicit INACTIVE-flagged records were read, counted and matched with the full club list; the quarterback report explicitly states the emergency-third role. This is not inferred from generic Out/Active statuses or omission."
+        }
+      ],
+      "membershipConfirmation": {
+        "teamSlug": "atlanta-falcons",
+        "source": "fftoday",
+        "names": [
+          "Jack Strand",
+          "Divine Deablo",
+          "Avieon Terrell",
+          "Andy Dalton",
+          "Olamide Zaccheaus",
+          "Brian Robinson Jr.",
+          "Billy Bowman Jr."
+        ],
+        "completeMembershipMatches": true,
+        "roleScope": "Membership confirmation only. Emergency roles are proved by the club and explicit ESPN statements, never inferred from FFToday omissions.",
+        "url": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+        "checkedAt": "2026-10-25T17:01:09.987Z"
+      }
+    },
+    {
+      "kind": "inactive",
+      "key": "401873018:carolina-panthers",
+      "value": {
+        "gameId": "401873018",
+        "week": 7,
+        "teamSlug": "carolina-panthers",
+        "complete": true,
+        "players": [
+          {
+            "name": "AJ Dillon",
+            "designation": "inactive"
+          },
+          {
+            "name": "Haynes King",
+            "designation": "emergency_qb"
+          },
+          {
+            "name": "Ja'Tavion Sanders",
+            "designation": "inactive"
+          },
+          {
+            "name": "Jaelan Phillips",
+            "designation": "inactive"
+          },
+          {
+            "name": "Sam Hecht",
+            "designation": "inactive"
+          },
+          {
+            "name": "Stone Forsythe",
+            "designation": "inactive"
+          },
+          {
+            "name": "TeRah Edwards",
+            "designation": "inactive"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.panthers.com/news/week-7-inactives-vs-tampa-bay-no-jaelan-phillips-this-week",
+          "checkedAt": "2026-10-25T17:01:10.680Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873018",
+            "week": 7,
+            "teamSlug": "carolina-panthers",
+            "complete": true,
+            "players": [
+              {
+                "name": "AJ Dillon",
+                "designation": "inactive"
+              },
+              {
+                "name": "Haynes King",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "Ja'Tavion Sanders",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jaelan Phillips",
+                "designation": "inactive"
+              },
+              {
+                "name": "Sam Hecht",
+                "designation": "inactive"
+              },
+              {
+                "name": "Stone Forsythe",
+                "designation": "inactive"
+              },
+              {
+                "name": "TeRah Edwards",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "2bd038bcf6c2b1acbe8725352214328107dc33dc79324b38323fd2f0e9688f8a",
+          "sourceDetail": "Correct dated Week 7 complete seven-entry club list, including explicit emergency-third-quarterback label."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-25T17:01:11.149Z",
+          "reportedWeek": 7,
+          "value": {
+            "gameId": "401873018",
+            "week": 7,
+            "teamSlug": "carolina-panthers",
+            "complete": true,
+            "players": [
+              {
+                "name": "AJ Dillon",
+                "designation": "inactive"
+              },
+              {
+                "name": "Haynes King",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "Ja'Tavion Sanders",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jaelan Phillips",
+                "designation": "inactive"
+              },
+              {
+                "name": "Sam Hecht",
+                "designation": "inactive"
+              },
+              {
+                "name": "Stone Forsythe",
+                "designation": "inactive"
+              },
+              {
+                "name": "TeRah Edwards",
+                "designation": "inactive"
+              }
+            ]
+          },
+          "rawSha256": "8afe6e4f5141fb3e964a9e3bb9b429b170b1afec94fc06c5d9b4856fc87b3280",
+          "sourceDetail": "All seven explicit INACTIVE-flagged records were read, counted and matched with the full club list; the quarterback report explicitly states the emergency-third role. This is not inferred from generic Out/Active statuses or omission."
+        }
+      ],
+      "membershipConfirmation": {
+        "teamSlug": "carolina-panthers",
+        "source": "fftoday",
+        "names": [
+          "Ja'Tavion Sanders",
+          "Jaelan Phillips",
+          "Haynes King",
+          "AJ Dillon",
+          "Sam Hecht",
+          "Stone Forsythe",
+          "TeRah Edwards"
+        ],
+        "completeMembershipMatches": true,
+        "roleScope": "Membership confirmation only. Emergency roles are proved by the club and explicit ESPN statements, never inferred from FFToday omissions.",
+        "url": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+        "checkedAt": "2026-10-25T17:01:09.987Z"
+      }
+    }
+  ],
+  "moduleReviews": []
+}
