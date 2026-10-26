@@ -211,7 +211,7 @@
       "division": "AFC West",
       "color": "#E31837",
       "logo": "/logos/kansas-city-chiefs.png",
-      "record": "5-0"
+      "record": "5-1"
     },
     {
       "id": "13",
@@ -380,7 +380,7 @@
       "division": "NFC West",
       "color": "#002244",
       "logo": "/logos/seattle-seahawks.png",
-      "record": "3-3"
+      "record": "4-3"
     },
     {
       "id": "27",
@@ -2624,10 +2624,10 @@
       "homeSlug": "seattle-seahawks",
       "awayAbbr": "KC",
       "homeAbbr": "SEA",
-      "status": "scheduled",
-      "statusDetail": "Sun, October 25th at 8:20 PM EDT",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "final",
+      "statusDetail": "Final",
+      "awayScore": 3,
+      "homeScore": 20,
       "broadcast": "NBC",
       "venue": "Lumen Field",
       "networks": [
@@ -2641,14 +2641,18 @@
       "kickoff_pt": "Sun, Oct 25, 5:20 PM PT",
       "sources": [
         "https://www.nfl.com/games/chiefs-at-seahawks-2026-reg-7",
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+        "https://www.nfl.com/schedules/2026/by-week/week-7"
       ],
       "verification": "two_publishers",
       "verified_fields": [
         "opponents",
         "date",
         "kickoff",
-        "primary_network"
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
       ],
       "weather": null
     },
@@ -5803,11 +5807,11 @@
     "kansas-city-chiefs": {
       "slug": "kansas-city-chiefs",
       "wins": 5,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "pf": 140,
-      "pa": 83,
-      "record": "5-0"
+      "pf": 143,
+      "pa": 103,
+      "record": "5-1"
     },
     "las-vegas-raiders": {
       "slug": "las-vegas-raiders",
@@ -5919,12 +5923,12 @@
     },
     "seattle-seahawks": {
       "slug": "seattle-seahawks",
-      "wins": 3,
+      "wins": 4,
       "losses": 3,
       "ties": 0,
-      "pf": 148,
-      "pa": 122,
-      "record": "3-3"
+      "pf": 168,
+      "pa": 125,
+      "record": "4-3"
     },
     "tampa-bay-buccaneers": {
       "slug": "tampa-bay-buccaneers",
@@ -7016,10 +7020,10 @@
     "asOf": "2026-10-20",
     "entries": []
   },
-  "generatedAt": "2026-10-26T00:00:46.577Z",
+  "generatedAt": "2026-10-26T03:30:35.940Z",
   "sourceAsOf": "2026-10-25",
-  "fetchedAt": "2026-10-26T00:00:46.577Z",
-  "verification": "All 107 result facts through Week 7 reviewed against current NFL and ESPN: 105 final and two ungraded upcoming/live games. All 32 recalculated W-L-T/PF/PA rows match fresh ESPN. Preserve all 272 games, international metadata and future planning scope.",
-  "compiledAt": "2026-10-26T00:02:27.835Z",
+  "fetchedAt": "2026-10-26T03:30:35.940Z",
+  "verification": "All 107 result facts through Week 7 reviewed against current NFL and ESPN: 106 final and one ungraded upcoming/live games. All 32 recalculated W-L-T/PF/PA rows match fresh ESPN. Preserve all 272 games, international metadata and future planning scope.",
+  "compiledAt": "2026-10-26T03:32:01.824Z",
   "collectedOn": "2026-10-25"
 }

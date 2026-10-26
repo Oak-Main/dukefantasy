@@ -1,0 +1,113 @@
+{
+  "week": 7,
+  "run": "2026-10-26T033017Z",
+  "baseCommit": "2745265fbd437f12dc9a6a9a06da7e98af450c65",
+  "createdAt": "2026-10-26T03:32:01.824Z",
+  "observations": [
+    {
+      "kind": "result",
+      "key": "401873022",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 3,
+        "homeScore": 20
+      },
+      "gameIdentity": {
+        "id": "401873022",
+        "week": 7,
+        "awaySlug": "kansas-city-chiefs",
+        "homeSlug": "seattle-seahawks",
+        "kickoffUtc": "2026-10-26T00:20:00.000Z"
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-26T03:30:35.826Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 3,
+            "homeScore": 20
+          },
+          "gameIdentity": {
+            "id": "401873022",
+            "week": 7,
+            "awaySlug": "kansas-city-chiefs",
+            "homeSlug": "seattle-seahawks",
+            "kickoffUtc": "2026-10-26T00:20:00.000Z"
+          },
+          "rawSha256": "b798e92b9bb7009defc380ef95c804b5dc6b848d27c61be89a5f11b2eff76bfc",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. Publish only corroborated completed status and both scores."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-26T03:30:35.940Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 3,
+            "homeScore": 20
+          },
+          "gameIdentity": {
+            "id": "401873022",
+            "week": 7,
+            "awaySlug": "kansas-city-chiefs",
+            "homeSlug": "seattle-seahawks",
+            "kickoffUtc": "2026-10-26T00:20:00.000Z"
+          },
+          "rawSha256": "dc5c829d611a40926cf4297cd544f9d57fe33b3c0f76006ab72b20f99c6da48b",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. Publish only corroborated completed status and both scores."
+        }
+      ]
+    }
+  ],
+  "moduleReviews": [
+    {
+      "module": "schedule",
+      "sourceAsOf": "2026-10-25",
+      "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+      "scope": "Complete actual two-publisher review of all 107 result facts through Week 7 (106 final, one ungraded upcoming/live); every final identity/status/both scores agree and all 32 recalculated standings match fresh ESPN. The source report day remains October 25 Pacific; retrieval timestamps are actual October 26 UTC.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "relatedUrls": [
+            "https://www.nfl.com/schedules/2026/by-week/week-1",
+            "https://www.nfl.com/schedules/2026/by-week/week-2",
+            "https://www.nfl.com/schedules/2026/by-week/week-3",
+            "https://www.nfl.com/schedules/2026/by-week/week-4",
+            "https://www.nfl.com/schedules/2026/by-week/week-5",
+            "https://www.nfl.com/schedules/2026/by-week/week-6",
+            "https://www.nfl.com/schedules/2026/by-week/week-7"
+          ],
+          "checkedAt": "2026-10-26T03:30:35.916Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "relatedUrls": [
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+          ],
+          "checkedAt": "2026-10-26T03:30:35.940Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+            "complete": true
+          }
+        }
+      ]
+    }
+  ]
+}
