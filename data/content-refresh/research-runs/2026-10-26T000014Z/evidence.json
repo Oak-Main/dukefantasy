@@ -1,0 +1,231 @@
+{
+  "week": 7,
+  "run": "2026-10-26T000014Z",
+  "baseCommit": "b5c139a345f66eef1e573e3905ad485f9d5e0aa1",
+  "createdAt": "2026-10-26T00:02:27.835Z",
+  "observations": [
+    {
+      "kind": "result",
+      "key": "401873019",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 30,
+        "homeScore": 16
+      },
+      "gameIdentity": {
+        "id": "401873019",
+        "week": 7,
+        "awaySlug": "denver-broncos",
+        "homeSlug": "arizona-cardinals",
+        "kickoffUtc": "2026-10-25T20:05:00.000Z"
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-26T00:00:46.408Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 30,
+            "homeScore": 16
+          },
+          "gameIdentity": {
+            "id": "401873019",
+            "week": 7,
+            "awaySlug": "denver-broncos",
+            "homeSlug": "arizona-cardinals",
+            "kickoffUtc": "2026-10-25T20:05:00.000Z"
+          },
+          "rawSha256": "f0945c3ef5e94b5880bb7b4e245a97ddafd0f4af38e6e37006591ee170f09c7d",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-26T00:00:46.550Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 30,
+            "homeScore": 16
+          },
+          "gameIdentity": {
+            "id": "401873019",
+            "week": 7,
+            "awaySlug": "denver-broncos",
+            "homeSlug": "arizona-cardinals",
+            "kickoffUtc": "2026-10-25T20:05:00.000Z"
+          },
+          "rawSha256": "87b08a7b55811039cfc592a87be1d152f07cb65004f06776b9241a8a5e6a38db",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
+        }
+      ]
+    },
+    {
+      "kind": "result",
+      "key": "401873020",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 17,
+        "homeScore": 20
+      },
+      "gameIdentity": {
+        "id": "401873020",
+        "week": 7,
+        "awaySlug": "green-bay-packers",
+        "homeSlug": "detroit-lions",
+        "kickoffUtc": "2026-10-25T20:25:00.000Z"
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-26T00:00:46.408Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 17,
+            "homeScore": 20
+          },
+          "gameIdentity": {
+            "id": "401873020",
+            "week": 7,
+            "awaySlug": "green-bay-packers",
+            "homeSlug": "detroit-lions",
+            "kickoffUtc": "2026-10-25T20:25:00.000Z"
+          },
+          "rawSha256": "f0945c3ef5e94b5880bb7b4e245a97ddafd0f4af38e6e37006591ee170f09c7d",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-26T00:00:46.550Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 17,
+            "homeScore": 20
+          },
+          "gameIdentity": {
+            "id": "401873020",
+            "week": 7,
+            "awaySlug": "green-bay-packers",
+            "homeSlug": "detroit-lions",
+            "kickoffUtc": "2026-10-25T20:25:00.000Z"
+          },
+          "rawSha256": "87b08a7b55811039cfc592a87be1d152f07cb65004f06776b9241a8a5e6a38db",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
+        }
+      ]
+    },
+    {
+      "kind": "result",
+      "key": "401873021",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 35,
+        "homeScore": 21
+      },
+      "gameIdentity": {
+        "id": "401873021",
+        "week": 7,
+        "awaySlug": "los-angeles-rams",
+        "homeSlug": "las-vegas-raiders",
+        "kickoffUtc": "2026-10-25T20:25:00.000Z"
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-26T00:00:46.408Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 35,
+            "homeScore": 21
+          },
+          "gameIdentity": {
+            "id": "401873021",
+            "week": 7,
+            "awaySlug": "los-angeles-rams",
+            "homeSlug": "las-vegas-raiders",
+            "kickoffUtc": "2026-10-25T20:25:00.000Z"
+          },
+          "rawSha256": "f0945c3ef5e94b5880bb7b4e245a97ddafd0f4af38e6e37006591ee170f09c7d",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-26T00:00:46.550Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 35,
+            "homeScore": 21
+          },
+          "gameIdentity": {
+            "id": "401873021",
+            "week": 7,
+            "awaySlug": "los-angeles-rams",
+            "homeSlug": "las-vegas-raiders",
+            "kickoffUtc": "2026-10-25T20:25:00.000Z"
+          },
+          "rawSha256": "87b08a7b55811039cfc592a87be1d152f07cb65004f06776b9241a8a5e6a38db",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
+        }
+      ]
+    }
+  ],
+  "moduleReviews": [
+    {
+      "module": "schedule",
+      "sourceAsOf": "2026-10-25",
+      "dataSha256": "12b640d018294cc9b8421e75f270e2d9168013451cc980c960ea5b3b4f3273be",
+      "scope": "Complete actual two-publisher review of all 107 result facts through Week 7 (105 final, two ungraded upcoming/live); every final identity/status/both scores agree and all 32 recalculated standings match fresh ESPN. The source report day remains October 25 Pacific; retrieval timestamps are actual October 26 UTC.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "relatedUrls": [
+            "https://www.nfl.com/schedules/2026/by-week/week-1",
+            "https://www.nfl.com/schedules/2026/by-week/week-2",
+            "https://www.nfl.com/schedules/2026/by-week/week-3",
+            "https://www.nfl.com/schedules/2026/by-week/week-4",
+            "https://www.nfl.com/schedules/2026/by-week/week-5",
+            "https://www.nfl.com/schedules/2026/by-week/week-6",
+            "https://www.nfl.com/schedules/2026/by-week/week-7"
+          ],
+          "checkedAt": "2026-10-26T00:00:46.513Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "12b640d018294cc9b8421e75f270e2d9168013451cc980c960ea5b3b4f3273be",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "relatedUrls": [
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+          ],
+          "checkedAt": "2026-10-26T00:00:46.577Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "12b640d018294cc9b8421e75f270e2d9168013451cc980c960ea5b3b4f3273be",
+            "complete": true
+          }
+        }
+      ]
+    }
+  ]
+}
