@@ -10,7 +10,10 @@
  *     on the 19.2 line, so react, react-dom and react-server-dom-webpack must
  *     all be >= 19.2.9.
  *   GHSA-8969-277p-8rrm / GHSA-2956-r8mj-w5c4  vinext < 1.2.0, fixed in vinext
- *     1.2.0 together with @vitejs/plugin-rsc >= 0.5.37.
+ *     1.2.0 together with @vitejs/plugin-rsc >= 0.5.37. This script asks for
+ *     @vitejs/plugin-rsc >= 0.5.38, the first release whose notes record the
+ *     React 19.3.1 update (the vendored Flight code); 0.5.37 predates it.
+ *   GHSA-2464-fhr4-w9xw / GHSA-p3m5-59mp-jv5r / GHSA-673q-mjm6-r5xr  next < 16.4.1.
  *
  * Usage:
  *   node scripts/check-security-floor.mjs                  # React / RSC floor
@@ -30,7 +33,9 @@ const rootFlag = args.indexOf("--root");
 const root = resolve(rootFlag >= 0 ? args[rootFlag + 1] : fileURLToPath(new URL("..", import.meta.url)));
 
 const REACT_FLOOR = "19.2.9";
-const PLUGIN_RSC_FLOOR = "0.5.37";
+const PLUGIN_RSC_FLOOR = "0.5.38";
+const NEXT_FLOOR = "16.4.1";
+const SHARP_FLOOR = "0.35.5";
 const VINEXT_FLOOR = "1.2.0";
 const RSDW_PACKAGES = ["react-server-dom-webpack", "react-server-dom-turbopack", "react-server-dom-parcel"];
 // 19.3.0 is vulnerable even though it sorts above the 19.2.9 floor.
@@ -122,6 +127,14 @@ for (const name of ["react", "react-dom"]) {
 }
 
 requireAtLeast("@vitejs/plugin-rsc", PLUGIN_RSC_FLOOR);
+requireAtLeast("next", NEXT_FLOOR);
+
+// sharp is informational here: the copies in this tree come from the dev toolchain
+// (miniflare / wrangler), so a sub-floor copy is reported but does not fail the check.
+for (const copy of installedCopies("sharp")) {
+  const state = compareVersions(copy.version, SHARP_FLOOR) < 0 ? "below" : "at or above";
+  notes.push(`sharp@${copy.version} at ${relative(copy.path)} is ${state} ${SHARP_FLOOR}; informational, not asserted`);
+}
 
 const vinext = installedCopies("vinext");
 if (requireVinext) {
