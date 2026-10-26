@@ -1,0 +1,231 @@
+{
+  "sources": [
+    {
+      "id": "eaglesMnf",
+      "requestedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-inactives-saquon-barkley-jalyx-hunt-2026-week-7-monday-night-football",
+      "resolvedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-inactives-saquon-barkley-jalyx-hunt-2026-week-7-monday-night-football",
+      "status": 200,
+      "checkedAt": "2026-10-26T23:06:42.264Z",
+      "rawSha256": "351e3426ee250e9e2ee0d824c887af3f62ccbbaa6cae832acdaaed50d65246bf",
+      "rawFile": "outputs/week7-automation/2026-10-26T230023Z/eaglesMnf.html",
+      "publishedAt": "2026-10-26T22:45:13.336Z",
+      "reportedWeek": 7
+    },
+    {
+      "id": "cowboysUpdates",
+      "requestedUrl": "https://www.dallascowboys.com/news/updates-october-2026",
+      "resolvedUrl": "https://www.dallascowboys.com/news/updates-october-2026",
+      "status": 200,
+      "checkedAt": "2026-10-26T23:06:42.500Z",
+      "rawSha256": "25050862cc27bece8d3564b3420e76900be976cb8b29c4f60f9825ed33875fff",
+      "rawFile": "outputs/week7-automation/2026-10-26T230023Z/cowboysUpdates.html",
+      "publishedAt": "2026-10-26T22:45:00Z",
+      "reportedWeek": 7
+    },
+    {
+      "id": "bgnMnf",
+      "requestedUrl": "https://www.bleedinggreennation.com/news/188220/eagles-cowboys-inactives-saquon-barkley-will-play",
+      "resolvedUrl": "https://www.bleedinggreennation.com/news/188220/eagles-cowboys-inactives-saquon-barkley-will-play",
+      "status": 200,
+      "checkedAt": "2026-10-26T23:06:42.198Z",
+      "rawFile": "outputs/week7-automation/2026-10-26T230023Z/bgnMnf.html",
+      "rawSha256": "4674db5cc6a7a7a532a71c5e571507fc9fac6acc25ff756121a6c763dcb4111d",
+      "publishedAt": "2026-10-26T23:00:58+00:00",
+      "reportedWeek": 7
+    },
+    {
+      "id": "fftodayWeek7",
+      "requestedUrl": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+      "resolvedUrl": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+      "status": 200,
+      "checkedAt": "2026-10-26T23:06:42.688Z",
+      "rawSha256": "d7d1595ab3334c856f3d3aecf24f9309021dc399179839b071f8e5321a54866c",
+      "rawFile": "outputs/week7-automation/2026-10-26T230023Z/fftodayWeek7.html",
+      "publishedAt": null,
+      "reportedWeek": 7
+    }
+  ],
+  "proofs": {
+    "eaglesMnf": {
+      "publishedAt": "2026-10-26T22:45:13.336Z",
+      "reportDate": "2026-10-26",
+      "reportedWeek": 7,
+      "reports": [
+        {
+          "teamSlug": "philadelphia-eagles",
+          "complete": true,
+          "players": [
+            {
+              "name": "Cole Payton",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "DeVonta Smith",
+              "designation": "inactive"
+            },
+            {
+              "name": "Dontayvion Wicks",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jake Majors",
+              "designation": "inactive"
+            },
+            {
+              "name": "Michael Carter II",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nolan Smith",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "cowboysUpdates": {
+      "publishedAt": "2026-10-26T22:45:00Z",
+      "reportDate": "2026-10-26",
+      "reportedWeek": 7,
+      "reports": [
+        {
+          "teamSlug": "dallas-cowboys",
+          "complete": true,
+          "players": [
+            {
+              "name": "Dee Winters",
+              "designation": "inactive"
+            },
+            {
+              "name": "Drew Shelton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Emari Demercado",
+              "designation": "inactive"
+            },
+            {
+              "name": "KaVontae Turpin",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tyrus Wheat",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "bgnMnf": {
+      "publishedAt": "2026-10-26T23:00:58+00:00",
+      "reportDate": "2026-10-26",
+      "reportedWeek": 7,
+      "reports": [
+        {
+          "teamSlug": "philadelphia-eagles",
+          "complete": true,
+          "players": [
+            {
+              "name": "Cole Payton",
+              "designation": "emergency_qb"
+            },
+            {
+              "name": "DeVonta Smith",
+              "designation": "inactive"
+            },
+            {
+              "name": "Dontayvion Wicks",
+              "designation": "inactive"
+            },
+            {
+              "name": "Jake Majors",
+              "designation": "inactive"
+            },
+            {
+              "name": "Michael Carter II",
+              "designation": "inactive"
+            },
+            {
+              "name": "Nolan Smith",
+              "designation": "inactive"
+            }
+          ]
+        },
+        {
+          "teamSlug": "dallas-cowboys",
+          "complete": true,
+          "players": [
+            {
+              "name": "Dee Winters",
+              "designation": "inactive"
+            },
+            {
+              "name": "Drew Shelton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Emari Demercado",
+              "designation": "inactive"
+            },
+            {
+              "name": "KaVontae Turpin",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tyrus Wheat",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    },
+    "fftodayWeek7": {
+      "reportDate": "2026-10-26",
+      "reportedWeek": 7,
+      "reports": [
+        {
+          "teamSlug": "dallas-cowboys",
+          "complete": true,
+          "players": [
+            {
+              "name": "Dee Winters",
+              "designation": "inactive"
+            },
+            {
+              "name": "Drew Shelton",
+              "designation": "inactive"
+            },
+            {
+              "name": "Emari Demercado",
+              "designation": "inactive"
+            },
+            {
+              "name": "KaVontae Turpin",
+              "designation": "inactive"
+            },
+            {
+              "name": "Tyrus Wheat",
+              "designation": "inactive"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "coverage": [
+    {
+      "teamSlug": "philadelphia-eagles",
+      "primary": "eaglesMnf",
+      "secondary": "bgnMnf",
+      "count": 6,
+      "emergency": "Cole Payton"
+    },
+    {
+      "teamSlug": "dallas-cowboys",
+      "primary": "cowboysUpdates",
+      "secondary": "bgnMnf",
+      "count": 5
+    }
+  ],
+  "scope": "Partial additions of two complete Monday inactive lists. Prior 26 lists/times, practice/formal/reserve history, all games and every module source date remain unchanged."
+}
