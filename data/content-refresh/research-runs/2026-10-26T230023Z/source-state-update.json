@@ -1,0 +1,35 @@
+{
+  "recordedAt": "2026-10-26T23:07:39.455Z",
+  "reason": "Official Eagles page appended the Dallas list after its unchanged Philadelphia list. Limit Philadelphia parsing to its explicit section, recapture all four current source states, confirm both independently parsed memberships/emergency roles are unchanged, and restart complete preflight.",
+  "relevantFactsUnchanged": true,
+  "changes": [
+    {
+      "id": "eaglesMnf",
+      "oldSha": "f3d68b54ce8969b8df28f4d73054c09c542e27408a3590a17bf6fce758d247b8",
+      "newSha": "351e3426ee250e9e2ee0d824c887af3f62ccbbaa6cae832acdaaed50d65246bf",
+      "checkedAt": "2026-10-26T23:06:42.264Z",
+      "relevantFactsUnchanged": true
+    },
+    {
+      "id": "cowboysUpdates",
+      "oldSha": "931a874515895d5ba780b03f1c96ab1cbc7df886798430e9f27cf8d2ea024bf9",
+      "newSha": "25050862cc27bece8d3564b3420e76900be976cb8b29c4f60f9825ed33875fff",
+      "checkedAt": "2026-10-26T23:06:42.500Z",
+      "relevantFactsUnchanged": true
+    },
+    {
+      "id": "bgnMnf",
+      "oldSha": "4674db5cc6a7a7a532a71c5e571507fc9fac6acc25ff756121a6c763dcb4111d",
+      "newSha": "4674db5cc6a7a7a532a71c5e571507fc9fac6acc25ff756121a6c763dcb4111d",
+      "checkedAt": "2026-10-26T23:06:42.198Z",
+      "relevantFactsUnchanged": true
+    },
+    {
+      "id": "fftodayWeek7",
+      "oldSha": "21fb0056625209cabadec31f2bddab2f90b70cbee985875f71ae184d1737daa9",
+      "newSha": "d7d1595ab3334c856f3d3aecf24f9309021dc399179839b071f8e5321a54866c",
+      "checkedAt": "2026-10-26T23:06:42.688Z",
+      "relevantFactsUnchanged": true
+    }
+  ]
+}

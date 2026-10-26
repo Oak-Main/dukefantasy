@@ -6692,7 +6692,7 @@
     }
   ],
   "limitations": [
-    "Final Week 7 designations/inactives have not all been issued.",
+    "Verified Week 7 inactive lists cover all 28 participating teams. Medical designations and reserve eligibility retain their separate dated records.",
     "Two-publisher corroboration may share an upstream feed.",
     "No complete 32-team roster/depth refresh, film review, scheme audit or all-rookie census.",
     "No three-source compatible numeric projection set.",
@@ -8222,6 +8222,79 @@
       "sources": [
         "https://www.chiefs.com/news/week-7-inactive-players-chiefs-vs-seahawks",
         "https://atozsports.com/nfl/kansas-city-chiefs-news/chiefs-inactive-players-list-week-7-vs-seahawks/"
+      ]
+    },
+    {
+      "gameId": "401873009",
+      "week": 7,
+      "teamSlug": "philadelphia-eagles",
+      "publishedAt": "2026-10-26T22:45:13.336Z",
+      "checkedAt": "2026-10-26T23:06:42.264Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Cole Payton",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "DeVonta Smith",
+          "designation": "inactive"
+        },
+        {
+          "name": "Dontayvion Wicks",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jake Majors",
+          "designation": "inactive"
+        },
+        {
+          "name": "Michael Carter II",
+          "designation": "inactive"
+        },
+        {
+          "name": "Nolan Smith",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-inactives-saquon-barkley-jalyx-hunt-2026-week-7-monday-night-football",
+        "https://www.bleedinggreennation.com/news/188220/eagles-cowboys-inactives-saquon-barkley-will-play"
+      ]
+    },
+    {
+      "gameId": "401873009",
+      "week": 7,
+      "teamSlug": "dallas-cowboys",
+      "publishedAt": "2026-10-26T22:45:00.000Z",
+      "checkedAt": "2026-10-26T23:06:42.688Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Dee Winters",
+          "designation": "inactive"
+        },
+        {
+          "name": "Drew Shelton",
+          "designation": "inactive"
+        },
+        {
+          "name": "Emari Demercado",
+          "designation": "inactive"
+        },
+        {
+          "name": "KaVontae Turpin",
+          "designation": "inactive"
+        },
+        {
+          "name": "Tyrus Wheat",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.dallascowboys.com/news/updates-october-2026",
+        "https://www.bleedinggreennation.com/news/188220/eagles-cowboys-inactives-saquon-barkley-will-play",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
       ]
     }
   ]
