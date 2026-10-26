@@ -1,329 +1,231 @@
 {
   "week": 7,
-  "run": "2026-10-25T231517Z",
-  "baseCommit": "9a48fb9694ccab4b1bb99d66e0f758f5a7bcfebd",
-  "createdAt": "2026-10-25T23:19:59.244Z",
+  "run": "2026-10-26T000014Z",
+  "baseCommit": "b5c139a345f66eef1e573e3905ad485f9d5e0aa1",
+  "createdAt": "2026-10-26T00:02:27.835Z",
   "observations": [
     {
-      "kind": "reserve",
-      "key": "dallas-cowboys:Marist Liufau",
+      "kind": "result",
+      "key": "401873019",
       "value": {
-        "player": "Marist Liufau",
-        "team_slug": "dallas-cowboys",
-        "status": "IR; Week 7 OUT",
-        "asOf": "2026-10-25"
-      },
-      "sources": [
-        {
-          "url": "https://www.dallascowboys.com/news/updates-october-2026",
-          "checkedAt": "2026-10-25T23:17:30.806Z",
-          "reportedWeek": 7,
-          "value": {
-            "player": "Marist Liufau",
-            "team_slug": "dallas-cowboys",
-            "status": "IR; Week 7 OUT",
-            "asOf": "2026-10-25"
-          },
-          "rawSha256": "1757d361bcbefe5c9d25ac37dd7f7eb8b9692ebbe5e9b1aeb1cbd3944ef99459",
-          "sourceDetail": "Explicit October 25 Week 7 out designation and continuing injured-reserve status; no condition label or activation claim is changed."
-        },
-        {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-25T23:15:56.597Z",
-          "reportedWeek": 7,
-          "value": {
-            "player": "Marist Liufau",
-            "team_slug": "dallas-cowboys",
-            "status": "IR; Week 7 OUT",
-            "asOf": "2026-10-25"
-          },
-          "rawSha256": "13e2ddbac2c63ef44b6890c68accf1b2f8f98c4e97fee286feab419890aaec39",
-          "sourceDetail": "Explicit October 25 Week 7 out designation and continuing injured-reserve status; no condition label or activation claim is changed."
-        }
-      ]
-    },
-    {
-      "kind": "reserve",
-      "key": "dallas-cowboys:P.J. Locke",
-      "value": {
-        "player": "P.J. Locke",
-        "team_slug": "dallas-cowboys",
-        "status": "IR; Week 7 OUT",
-        "asOf": "2026-10-25"
-      },
-      "sources": [
-        {
-          "url": "https://www.dallascowboys.com/news/updates-october-2026",
-          "checkedAt": "2026-10-25T23:17:30.806Z",
-          "reportedWeek": 7,
-          "value": {
-            "player": "P.J. Locke",
-            "team_slug": "dallas-cowboys",
-            "status": "IR; Week 7 OUT",
-            "asOf": "2026-10-25"
-          },
-          "rawSha256": "1757d361bcbefe5c9d25ac37dd7f7eb8b9692ebbe5e9b1aeb1cbd3944ef99459",
-          "sourceDetail": "Explicit October 25 Week 7 out designation and continuing injured-reserve status; no condition label or activation claim is changed."
-        },
-        {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-25T23:15:56.597Z",
-          "reportedWeek": 7,
-          "value": {
-            "player": "P.J. Locke",
-            "team_slug": "dallas-cowboys",
-            "status": "IR; Week 7 OUT",
-            "asOf": "2026-10-25"
-          },
-          "rawSha256": "13e2ddbac2c63ef44b6890c68accf1b2f8f98c4e97fee286feab419890aaec39",
-          "sourceDetail": "Explicit October 25 Week 7 out designation and continuing injured-reserve status; no condition label or activation claim is changed."
-        }
-      ]
-    },
-    {
-      "kind": "inactive",
-      "key": "401873022:seattle-seahawks",
-      "value": {
-        "gameId": "401873022",
         "week": 7,
-        "teamSlug": "seattle-seahawks",
-        "complete": true,
-        "players": [
-          {
-            "name": "Beau Stephens",
-            "designation": "inactive"
-          },
-          {
-            "name": "Chazz Surratt",
-            "designation": "inactive"
-          },
-          {
-            "name": "Connor O'Toole",
-            "designation": "inactive"
-          },
-          {
-            "name": "Drake Thomas",
-            "designation": "inactive"
-          },
-          {
-            "name": "Drew Lock",
-            "designation": "emergency_qb"
-          },
-          {
-            "name": "Robert Henry Jr.",
-            "designation": "inactive"
-          },
-          {
-            "name": "Zach Charbonnet",
-            "designation": "inactive"
-          }
-        ]
+        "status": "final",
+        "awayScore": 30,
+        "homeScore": 16
+      },
+      "gameIdentity": {
+        "id": "401873019",
+        "week": 7,
+        "awaySlug": "denver-broncos",
+        "homeSlug": "arizona-cardinals",
+        "kickoffUtc": "2026-10-25T20:05:00.000Z"
       },
       "sources": [
         {
-          "url": "https://www.seahawks.com/news/seahawks-vs-chiefs-week-7-inactives",
-          "checkedAt": "2026-10-25T23:17:11.516Z",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-26T00:00:46.408Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873022",
             "week": 7,
-            "teamSlug": "seattle-seahawks",
-            "complete": true,
-            "players": [
-              {
-                "name": "Beau Stephens",
-                "designation": "inactive"
-              },
-              {
-                "name": "Chazz Surratt",
-                "designation": "inactive"
-              },
-              {
-                "name": "Connor O'Toole",
-                "designation": "inactive"
-              },
-              {
-                "name": "Drake Thomas",
-                "designation": "inactive"
-              },
-              {
-                "name": "Drew Lock",
-                "designation": "emergency_qb"
-              },
-              {
-                "name": "Robert Henry Jr.",
-                "designation": "inactive"
-              },
-              {
-                "name": "Zach Charbonnet",
-                "designation": "inactive"
-              }
-            ]
+            "status": "final",
+            "awayScore": 30,
+            "homeScore": 16
           },
-          "rawSha256": "0dad0904bfc81d6abb54d32ffe380083a9dfe997a5f4d055f448b1447024f98d",
-          "sourceDetail": "Complete current game list and explicit emergency-third-quarterback role agree; no omissions or generic inactive flags establish emergency eligibility."
+          "gameIdentity": {
+            "id": "401873019",
+            "week": 7,
+            "awaySlug": "denver-broncos",
+            "homeSlug": "arizona-cardinals",
+            "kickoffUtc": "2026-10-25T20:05:00.000Z"
+          },
+          "rawSha256": "f0945c3ef5e94b5880bb7b4e245a97ddafd0f4af38e6e37006591ee170f09c7d",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
         },
         {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "checkedAt": "2026-10-25T23:15:56.597Z",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-26T00:00:46.550Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873022",
             "week": 7,
-            "teamSlug": "seattle-seahawks",
-            "complete": true,
-            "players": [
-              {
-                "name": "Beau Stephens",
-                "designation": "inactive"
-              },
-              {
-                "name": "Chazz Surratt",
-                "designation": "inactive"
-              },
-              {
-                "name": "Connor O'Toole",
-                "designation": "inactive"
-              },
-              {
-                "name": "Drake Thomas",
-                "designation": "inactive"
-              },
-              {
-                "name": "Drew Lock",
-                "designation": "emergency_qb"
-              },
-              {
-                "name": "Robert Henry Jr.",
-                "designation": "inactive"
-              },
-              {
-                "name": "Zach Charbonnet",
-                "designation": "inactive"
-              }
-            ]
+            "status": "final",
+            "awayScore": 30,
+            "homeScore": 16
           },
-          "rawSha256": "13e2ddbac2c63ef44b6890c68accf1b2f8f98c4e97fee286feab419890aaec39",
-          "sourceDetail": "Complete current game list and explicit emergency-third-quarterback role agree; no omissions or generic inactive flags establish emergency eligibility."
+          "gameIdentity": {
+            "id": "401873019",
+            "week": 7,
+            "awaySlug": "denver-broncos",
+            "homeSlug": "arizona-cardinals",
+            "kickoffUtc": "2026-10-25T20:05:00.000Z"
+          },
+          "rawSha256": "87b08a7b55811039cfc592a87be1d152f07cb65004f06776b9241a8a5e6a38db",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
         }
       ]
     },
     {
-      "kind": "inactive",
-      "key": "401873022:kansas-city-chiefs",
+      "kind": "result",
+      "key": "401873020",
       "value": {
-        "gameId": "401873022",
         "week": 7,
-        "teamSlug": "kansas-city-chiefs",
-        "complete": true,
-        "players": [
-          {
-            "name": "Ben VanSumeren",
-            "designation": "inactive"
-          },
-          {
-            "name": "Garrett Nussmeier",
-            "designation": "emergency_qb"
-          },
-          {
-            "name": "Jack Pyburn",
-            "designation": "inactive"
-          },
-          {
-            "name": "Jadon Canady",
-            "designation": "inactive"
-          },
-          {
-            "name": "Jaylon Moore",
-            "designation": "inactive"
-          },
-          {
-            "name": "Rashee Rice",
-            "designation": "inactive"
-          }
-        ]
+        "status": "final",
+        "awayScore": 17,
+        "homeScore": 20
+      },
+      "gameIdentity": {
+        "id": "401873020",
+        "week": 7,
+        "awaySlug": "green-bay-packers",
+        "homeSlug": "detroit-lions",
+        "kickoffUtc": "2026-10-25T20:25:00.000Z"
       },
       "sources": [
         {
-          "url": "https://www.chiefs.com/news/week-7-inactive-players-chiefs-vs-seahawks",
-          "checkedAt": "2026-10-25T23:17:30.758Z",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-26T00:00:46.408Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873022",
             "week": 7,
-            "teamSlug": "kansas-city-chiefs",
-            "complete": true,
-            "players": [
-              {
-                "name": "Ben VanSumeren",
-                "designation": "inactive"
-              },
-              {
-                "name": "Garrett Nussmeier",
-                "designation": "emergency_qb"
-              },
-              {
-                "name": "Jack Pyburn",
-                "designation": "inactive"
-              },
-              {
-                "name": "Jadon Canady",
-                "designation": "inactive"
-              },
-              {
-                "name": "Jaylon Moore",
-                "designation": "inactive"
-              },
-              {
-                "name": "Rashee Rice",
-                "designation": "inactive"
-              }
-            ]
+            "status": "final",
+            "awayScore": 17,
+            "homeScore": 20
           },
-          "rawSha256": "5cbb24a832820ce777b961c264f65b470227d65e8210c92557d5b139c1a16925",
-          "sourceDetail": "Complete current game list and explicit emergency-third-quarterback role agree; no omissions or generic inactive flags establish emergency eligibility."
+          "gameIdentity": {
+            "id": "401873020",
+            "week": 7,
+            "awaySlug": "green-bay-packers",
+            "homeSlug": "detroit-lions",
+            "kickoffUtc": "2026-10-25T20:25:00.000Z"
+          },
+          "rawSha256": "f0945c3ef5e94b5880bb7b4e245a97ddafd0f4af38e6e37006591ee170f09c7d",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
         },
         {
-          "url": "https://atozsports.com/nfl/kansas-city-chiefs-news/chiefs-inactive-players-list-week-7-vs-seahawks/",
-          "checkedAt": "2026-10-25T23:17:11.648Z",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-26T00:00:46.550Z",
           "reportedWeek": 7,
           "value": {
-            "gameId": "401873022",
             "week": 7,
-            "teamSlug": "kansas-city-chiefs",
-            "complete": true,
-            "players": [
-              {
-                "name": "Ben VanSumeren",
-                "designation": "inactive"
-              },
-              {
-                "name": "Garrett Nussmeier",
-                "designation": "emergency_qb"
-              },
-              {
-                "name": "Jack Pyburn",
-                "designation": "inactive"
-              },
-              {
-                "name": "Jadon Canady",
-                "designation": "inactive"
-              },
-              {
-                "name": "Jaylon Moore",
-                "designation": "inactive"
-              },
-              {
-                "name": "Rashee Rice",
-                "designation": "inactive"
-              }
-            ]
+            "status": "final",
+            "awayScore": 17,
+            "homeScore": 20
           },
-          "rawSha256": "e5d969b18767bf4eab2f8a7ba481f9e6452cf84e2faa3f5ac7e082749e0d4234",
-          "sourceDetail": "Complete current game list and explicit emergency-third-quarterback role agree; no omissions or generic inactive flags establish emergency eligibility."
+          "gameIdentity": {
+            "id": "401873020",
+            "week": 7,
+            "awaySlug": "green-bay-packers",
+            "homeSlug": "detroit-lions",
+            "kickoffUtc": "2026-10-25T20:25:00.000Z"
+          },
+          "rawSha256": "87b08a7b55811039cfc592a87be1d152f07cb65004f06776b9241a8a5e6a38db",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
+        }
+      ]
+    },
+    {
+      "kind": "result",
+      "key": "401873021",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 35,
+        "homeScore": 21
+      },
+      "gameIdentity": {
+        "id": "401873021",
+        "week": 7,
+        "awaySlug": "los-angeles-rams",
+        "homeSlug": "las-vegas-raiders",
+        "kickoffUtc": "2026-10-25T20:25:00.000Z"
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-26T00:00:46.408Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 35,
+            "homeScore": 21
+          },
+          "gameIdentity": {
+            "id": "401873021",
+            "week": 7,
+            "awaySlug": "los-angeles-rams",
+            "homeSlug": "las-vegas-raiders",
+            "kickoffUtc": "2026-10-25T20:25:00.000Z"
+          },
+          "rawSha256": "f0945c3ef5e94b5880bb7b4e245a97ddafd0f4af38e6e37006591ee170f09c7d",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-26T00:00:46.550Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 35,
+            "homeScore": 21
+          },
+          "gameIdentity": {
+            "id": "401873021",
+            "week": 7,
+            "awaySlug": "los-angeles-rams",
+            "homeSlug": "las-vegas-raiders",
+            "kickoffUtc": "2026-10-25T20:25:00.000Z"
+          },
+          "rawSha256": "87b08a7b55811039cfc592a87be1d152f07cb65004f06776b9241a8a5e6a38db",
+          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. ESPN confirms regulation period 4; no overtime claim."
         }
       ]
     }
   ],
-  "moduleReviews": []
+  "moduleReviews": [
+    {
+      "module": "schedule",
+      "sourceAsOf": "2026-10-25",
+      "dataSha256": "12b640d018294cc9b8421e75f270e2d9168013451cc980c960ea5b3b4f3273be",
+      "scope": "Complete actual two-publisher review of all 107 result facts through Week 7 (105 final, two ungraded upcoming/live); every final identity/status/both scores agree and all 32 recalculated standings match fresh ESPN. The source report day remains October 25 Pacific; retrieval timestamps are actual October 26 UTC.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "relatedUrls": [
+            "https://www.nfl.com/schedules/2026/by-week/week-1",
+            "https://www.nfl.com/schedules/2026/by-week/week-2",
+            "https://www.nfl.com/schedules/2026/by-week/week-3",
+            "https://www.nfl.com/schedules/2026/by-week/week-4",
+            "https://www.nfl.com/schedules/2026/by-week/week-5",
+            "https://www.nfl.com/schedules/2026/by-week/week-6",
+            "https://www.nfl.com/schedules/2026/by-week/week-7"
+          ],
+          "checkedAt": "2026-10-26T00:00:46.513Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "12b640d018294cc9b8421e75f270e2d9168013451cc980c960ea5b3b4f3273be",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "relatedUrls": [
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+          ],
+          "checkedAt": "2026-10-26T00:00:46.577Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "12b640d018294cc9b8421e75f270e2d9168013451cc980c960ea5b3b4f3273be",
+            "complete": true
+          }
+        }
+      ]
+    }
+  ]
 }
