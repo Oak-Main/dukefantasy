@@ -2291,6 +2291,31 @@
   max-width: 340px;
 }
 
+.inj-cell-value {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.inj-table .inj-pill small {
+  opacity: 1;
+}
+
+@media (max-width: 679px) {
+  .inj-table td {
+    max-width: none;
+  }
+
+  .inj-cell-value .inj-pill {
+    max-width: 100%;
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+
+  .inj-cell-value .research-sources {
+    margin-top: 0;
+  }
+}
+
 .inj-conf {
   color: var(--muted-2);
   font-size: 11px;

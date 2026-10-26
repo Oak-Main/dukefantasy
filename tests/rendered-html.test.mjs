@@ -103,6 +103,39 @@ test("critical product routes render dataset-backed content", async () => {
   }
 });
 
+test("injury tables server-render complete mobile labels and scoped column relationships", async () => {
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const structures = [
+    ["inj-ledger-title", ["Player", "Team", "Pos", "Status", "Weeks out", "Detail", "Sources"]],
+    ["inj-watch-title", ["Player", "Team", "Pos", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Likelihood", "Note"]],
+  ];
+  assert.match(html, /<section class="db-table-wrap" aria-label="Long-term injury table scroll area" tabindex="0"/);
+  assert.match(html, /<section class="db-table-wrap" aria-label="Weekly injury table scroll area" tabindex="0"/);
+  assert.doesNotMatch(html, /class="db-table-wrap" aria-labelledby="inj-(ledger|watch)-title"/);
+  for (const [heading, labels] of structures) {
+    const table = html.match(new RegExp(`<table[^>]*aria-labelledby="${heading}"[^>]*>([\\s\\S]*?)</table>`))?.[1];
+    assert.ok(table, `${heading}: named table available without JavaScript`);
+    const headers = [...table.matchAll(/<th\b([^>]*)>([^<]*)<\/th>/g)];
+    assert.deepEqual(headers.map(header => header[2]), labels);
+    const rows = [...table.matchAll(/<tr class="db-data-row">([\s\S]*?)<\/tr>/g)];
+    assert.ok(rows.length > 0, `${heading}: published rows remain visible`);
+    for (const [rowIndex, row] of rows.entries()) {
+      const cells = [...row[1].matchAll(/<td\b([^>]*)>([\s\S]*?)<\/td>/g)];
+      assert.equal(cells.length, labels.length, `${heading}/${rowIndex}: column count`);
+      cells.forEach((cell, index) => {
+        const id = headers[index][1].match(/\bid="([^"]+)"/)?.[1];
+        assert.match(headers[index][1], /\bscope="col"/);
+        assert.ok(id, "column has a stable ID");
+        assert.ok(cell[1].includes(`headers="${id}"`), `${heading}/${rowIndex}/${index}: header association`);
+        assert.ok(cell[1].includes(`data-label="${labels[index]}"`), `${heading}/${rowIndex}/${index}: visible mobile label`);
+        assert.match(cell[2], /^<div class="inj-cell-value">[\s\S]*<\/div>$/, "label stays beside the complete cell value");
+      });
+    }
+  }
+});
+
 test("dated practice cards distinguish practice reports from walkthrough estimates", async () => {
   const response = await fetchRoute("/injuries");
   assert.equal(response.status, 200);

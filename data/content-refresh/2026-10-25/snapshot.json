@@ -3133,18 +3133,18 @@
       "id": "401873047",
       "date": "2026-11-08",
       "week": 9,
-      "kickoffUtc": "2026-11-08T21:05Z",
+      "kickoffUtc": "2026-11-08T21:25Z",
       "timeTbd": false,
-      "kickoffLabel": "Sun · 2026-11-08 · 4:05 PM ET",
+      "kickoffLabel": "Sun · 2026-11-08 · 4:25 PM ET",
       "awaySlug": "las-vegas-raiders",
       "homeSlug": "san-francisco-49ers",
       "awayAbbr": "LV",
       "homeAbbr": "SF",
       "status": "scheduled",
-      "statusDetail": "Sun, November 8th at 4:05 PM EST",
+      "statusDetail": "Sun, November 8th at 4:25 PM EST",
       "awayScore": null,
       "homeScore": null,
-      "broadcast": "CBS",
+      "broadcast": "FOX",
       "venue": "Levi's Stadium"
     },
     {
@@ -7020,10 +7020,10 @@
     "asOf": "2026-10-20",
     "entries": []
   },
-  "generatedAt": "2026-10-26T03:44:01.656Z",
-  "sourceAsOf": "2026-10-25",
-  "fetchedAt": "2026-10-26T03:44:01.656Z",
-  "verification": "All 107 result facts through Week 7 reviewed against current NFL and ESPN: 106 final and one ungraded upcoming/live game. All 32 recalculated W-L-T/PF/PA rows match fresh ESPN. Preserve all 272 games, international metadata and future planning scope.",
-  "compiledAt": "2026-10-26T03:44:13.801Z",
-  "collectedOn": "2026-10-25"
+  "generatedAt": "2026-10-26T21:15:36.169Z",
+  "sourceAsOf": "2026-10-26",
+  "fetchedAt": "2026-10-26T21:15:36.169Z",
+  "verification": "All 107 result facts through Week 7 reviewed against current NFL and ESPN: 106 final and one ungraded upcoming/live game. All 32 recalculated W-L-T/PF/PA rows match fresh ESPN. Preserve all 272 games, international metadata and future planning scope. The November 8 Raiders–49ers kickoff is 4:25 PM ET on FOX, verified with NFL and ESPN.",
+  "compiledAt": "2026-10-26T21:17:05.439Z",
+  "collectedOn": "2026-10-26"
 }

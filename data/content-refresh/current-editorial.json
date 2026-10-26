@@ -7148,9 +7148,9 @@
   ],
   "moduleSources": {
     "schedule": {
-      "sourceAsOf": "2026-10-25",
-      "fetchedAt": "2026-10-26T03:44:01.656Z",
-      "compiledAt": "2026-10-26T03:44:13.801Z"
+      "sourceAsOf": "2026-10-26",
+      "fetchedAt": "2026-10-26T21:15:36.169Z",
+      "compiledAt": "2026-10-26T21:17:05.439Z"
     },
     "injuries": {
       "sourceAsOf": "2026-10-20",
