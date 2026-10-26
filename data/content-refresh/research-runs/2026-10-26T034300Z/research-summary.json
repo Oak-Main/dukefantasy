@@ -1,0 +1,16 @@
+{
+  "run": "2026-10-26T034300Z",
+  "baseCommit": "e48a141b81ad18471a767fc29115dea1c1d16624",
+  "changedFacts": 0,
+  "completeScheduleReviews": 1,
+  "reviewedResults": 107,
+  "finals": 106,
+  "week7Finals": 13,
+  "remainingWeek7": 1,
+  "standingsCompared": 32,
+  "corrections": [
+    "Clarify that the matched NFL Game Card is embedded in the captured weekly schedule HTML",
+    "Use singular game for one ungraded upcoming/live game"
+  ],
+  "preserved": "All game facts, standings, 26 complete inactive records/times, 389 practices, all medical/reserve records and every non-schedule source date."
+}

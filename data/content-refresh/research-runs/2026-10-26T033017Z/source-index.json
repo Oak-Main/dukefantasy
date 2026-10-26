@@ -152,7 +152,15 @@
       "status": 200,
       "checkedAt": "2026-10-26T03:30:35.826Z",
       "rawSha256": "b798e92b9bb7009defc380ef95c804b5dc6b848d27c61be89a5f11b2eff76bfc",
-      "rawFile": "outputs/week7-automation/2026-10-26T033017Z/result-state-20261026033034472/nfl-7.html"
+      "rawFile": "outputs/week7-automation/2026-10-26T033017Z/result-state-20261026033034472/nfl-7.html",
+      "matchedGameCard": {
+        "gameId": "401873022",
+        "href": "/games/chiefs-at-seahawks-2026-reg-7",
+        "linkModule": "Game Card",
+        "gameState": "FINAL",
+        "label": "Chiefs 3, Seahawks 20, FINAL, Sunday, October 25th",
+        "capturedWithin": "https://www.nfl.com/schedules/2026/by-week/week-7"
+      }
     },
     {
       "id": "espn-7",

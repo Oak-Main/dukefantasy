@@ -1,0 +1,53 @@
+{
+  "week": 7,
+  "run": "2026-10-26T034300Z",
+  "baseCommit": "e48a141b81ad18471a767fc29115dea1c1d16624",
+  "createdAt": "2026-10-26T03:44:13.801Z",
+  "observations": [],
+  "moduleReviews": [
+    {
+      "module": "schedule",
+      "sourceAsOf": "2026-10-25",
+      "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+      "scope": "Actual complete fresh NFL weekly schedule Game Card and ESPN review of all 107 game facts: 106 completed finals and one upcoming Week 7 game, with all 32 standings matching. This release corrects provenance wording and singular grammar; no game fact changes.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "relatedUrls": [
+            "https://www.nfl.com/schedules/2026/by-week/week-1",
+            "https://www.nfl.com/schedules/2026/by-week/week-2",
+            "https://www.nfl.com/schedules/2026/by-week/week-3",
+            "https://www.nfl.com/schedules/2026/by-week/week-4",
+            "https://www.nfl.com/schedules/2026/by-week/week-5",
+            "https://www.nfl.com/schedules/2026/by-week/week-6",
+            "https://www.nfl.com/schedules/2026/by-week/week-7"
+          ],
+          "checkedAt": "2026-10-26T03:44:01.554Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+            "complete": true
+          }
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "relatedUrls": [
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+          ],
+          "checkedAt": "2026-10-26T03:44:01.656Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+            "complete": true
+          }
+        }
+      ]
+    }
+  ]
+}
