@@ -1,189 +1,336 @@
 {
   "week": 7,
-  "baseCommit": "7e259cf5ef0115c91bc850be828b4fb4a625c968",
-  "observations": [],
-  "moduleReviews": [
+  "run": "2026-10-26T223027Z",
+  "baseCommit": "80cbdddbfad339c8885cac347b26b36ac69027a5",
+  "createdAt": "2026-10-26T22:39:05.827Z",
+  "observations": [
     {
-      "module": "schedule",
-      "sourceAsOf": "2026-10-26",
-      "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+      "kind": "injury",
+      "key": "philadelphia-eagles:Landon Dickerson",
+      "value": null,
+      "removalReason": "Explicit October 26 activation from injured reserve confirmed by named club, Eagles Wire and Bleeding Green Nation reports; remove the obsolete current IR classification and retain it in dated history. This is not an omission-derived recovery or game-day active claim.",
       "sources": [
         {
-          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
-          "checkedAt": "2026-10-26T21:08:42.243Z",
+          "url": "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+          "checkedAt": "2026-10-26T22:33:03.929Z",
           "reportedWeek": 7,
-          "value": {
-            "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
-            "complete": true
-          },
-          "sourceDetail": "Complete comparison of all 107 result facts through Week 7, including identity, completion, both final scores and remaining kickoff, across all seven captured weekly sources. NFL observations come from exact matched Game Cards embedded in the weekly schedule HTML. Fresh ESPN standings independently match all 32 derived records.",
-          "reviewedUrls": [
-            "https://www.nfl.com/schedules/2026/by-week/week-1",
-            "https://www.nfl.com/schedules/2026/by-week/week-2",
-            "https://www.nfl.com/schedules/2026/by-week/week-3",
-            "https://www.nfl.com/schedules/2026/by-week/week-4",
-            "https://www.nfl.com/schedules/2026/by-week/week-5",
-            "https://www.nfl.com/schedules/2026/by-week/week-6",
-            "https://www.nfl.com/schedules/2026/by-week/week-7"
-          ],
-          "rawEvidence": [
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-1.html",
-              "sha256": "54cecedb64699b24243f8cd17c0532f56916617f2298b51372b75028d7e05d98",
-              "checkedAt": "2026-10-26T21:08:42.303Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-2.html",
-              "sha256": "0bbb95818adf96091d7180b3ab544ac85df6ccc108985fccf2f0b89ae90e3906",
-              "checkedAt": "2026-10-26T21:08:42.522Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-3.html",
-              "sha256": "c352e41129a04b5ef65493a064e31d009d4f4c84580f1c8b86d025a709648f88",
-              "checkedAt": "2026-10-26T21:08:42.361Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-4.html",
-              "sha256": "0d567b1c40ea897d527111af608526ec0ed40f7fdcae74130d8e6df3d5294e09",
-              "checkedAt": "2026-10-26T21:08:42.243Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-5.html",
-              "sha256": "38ee03f6a842b2f7f0d588ddb493d332c6f6bf4b3ccf836b5389ffe176603d7d",
-              "checkedAt": "2026-10-26T21:08:42.337Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-6.html",
-              "sha256": "c507c2b7a15f5825e20cdcc5aa50ae77c6272d651b2314fabf7e86e3ee0239d2",
-              "checkedAt": "2026-10-26T21:08:42.450Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-7.html",
-              "sha256": "46763a2ff577e46bbd6e32f948a8de3315205191fa253e7286a52d1223013679",
-              "checkedAt": "2026-10-26T21:08:42.483Z"
-            }
-          ]
+          "value": null,
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesActivations.html",
+          "rawSha256": "8aa41dc429c5b38fc240327999d4680be440f2d8249dcdfa3a066e0b54333952",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
         },
         {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
-          "checkedAt": "2026-10-26T21:08:42.198Z",
+          "url": "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+          "checkedAt": "2026-10-26T22:35:30.880Z",
+          "reportedWeek": 7,
+          "value": null,
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesWire.html",
+          "rawSha256": "e3a41ef31f17542d96fe214dcaefcc0cf918a6871970ade842ead131ac1c176f",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced",
+          "checkedAt": "2026-10-26T22:35:30.453Z",
+          "reportedWeek": 7,
+          "value": null,
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/bgnRoster.html",
+          "rawSha256": "e720245492a73bf80189a884bdfb8e1e60569ec5e01ad7f2688f8c3ad7692c7b",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Eli Stowers",
+      "value": null,
+      "removalReason": "Explicit October 26 activation from injured reserve confirmed by named club, Eagles Wire and Bleeding Green Nation reports; remove the obsolete current IR classification and retain it in dated history. This is not an omission-derived recovery or game-day active claim.",
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+          "checkedAt": "2026-10-26T22:33:03.929Z",
+          "reportedWeek": 7,
+          "value": null,
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesActivations.html",
+          "rawSha256": "8aa41dc429c5b38fc240327999d4680be440f2d8249dcdfa3a066e0b54333952",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+          "checkedAt": "2026-10-26T22:35:30.880Z",
+          "reportedWeek": 7,
+          "value": null,
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesWire.html",
+          "rawSha256": "e3a41ef31f17542d96fe214dcaefcc0cf918a6871970ade842ead131ac1c176f",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced",
+          "checkedAt": "2026-10-26T22:35:30.453Z",
+          "reportedWeek": 7,
+          "value": null,
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/bgnRoster.html",
+          "rawSha256": "e720245492a73bf80189a884bdfb8e1e60569ec5e01ad7f2688f8c3ad7692c7b",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Grant Calcaterra",
+      "value": null,
+      "removalReason": "Explicit October 26 activation from injured reserve confirmed by named club, Eagles Wire and Bleeding Green Nation reports; remove the obsolete current IR classification and retain it in dated history. This is not an omission-derived recovery or game-day active claim.",
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+          "checkedAt": "2026-10-26T22:33:03.929Z",
+          "reportedWeek": 7,
+          "value": null,
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesActivations.html",
+          "rawSha256": "8aa41dc429c5b38fc240327999d4680be440f2d8249dcdfa3a066e0b54333952",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+          "checkedAt": "2026-10-26T22:35:30.880Z",
+          "reportedWeek": 7,
+          "value": null,
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesWire.html",
+          "rawSha256": "e3a41ef31f17542d96fe214dcaefcc0cf918a6871970ade842ead131ac1c176f",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced",
+          "checkedAt": "2026-10-26T22:35:30.453Z",
+          "reportedWeek": 7,
+          "value": null,
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/bgnRoster.html",
+          "rawSha256": "e720245492a73bf80189a884bdfb8e1e60569ec5e01ad7f2688f8c3ad7692c7b",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "philadelphia-eagles:Jakorian Bennett",
+      "value": {
+        "player": "Jakorian Bennett",
+        "team_slug": "philadelphia-eagles",
+        "status": "IR; Week 7 OUT",
+        "asOf": "2026-10-26"
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+          "checkedAt": "2026-10-26T22:33:03.929Z",
           "reportedWeek": 7,
           "value": {
-            "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
-            "complete": true
+            "player": "Jakorian Bennett",
+            "team_slug": "philadelphia-eagles",
+            "status": "IR; Week 7 OUT",
+            "asOf": "2026-10-26"
           },
-          "sourceDetail": "Complete comparison of all 107 result facts through Week 7, including identity, completion, both final scores and remaining kickoff, across all seven captured weekly sources. NFL observations come from exact matched Game Cards embedded in the weekly schedule HTML. Fresh ESPN standings independently match all 32 derived records.",
-          "reviewedUrls": [
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
-          ],
-          "rawEvidence": [
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-1.html",
-              "sha256": "e6975896181529cb16d4213e68be66f9e65bdb7a6749bd95b921776739e90ef8",
-              "checkedAt": "2026-10-26T21:08:42.198Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-2.html",
-              "sha256": "499fce30098d302919efc78636b72407341f58e1f94b4df2745069c70364fc81",
-              "checkedAt": "2026-10-26T21:08:42.293Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-3.html",
-              "sha256": "e84e059039d60115f61c992f7d9cdb2d128236be20434d3f2903abcce16718a0",
-              "checkedAt": "2026-10-26T21:08:42.325Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-4.html",
-              "sha256": "75eec422ee189de7770380d552ebdeba8ff6b07cea7415e82c178ba446ce2a31",
-              "checkedAt": "2026-10-26T21:08:42.404Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-5.html",
-              "sha256": "a16b3a5636c3a20798544de6d0a16b2f12aae9bd54baffee55f3c8195f86fae3",
-              "checkedAt": "2026-10-26T21:08:42.328Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-6.html",
-              "sha256": "90430edd5f0fb73213334a5ebbd0fa790867c052321d8892cf3a999acb6ed4fa",
-              "checkedAt": "2026-10-26T21:08:42.400Z"
-            },
-            {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-7.html",
-              "sha256": "5fd16b2f4dc06e8923d16f58417616a89e5062df44a45921a6a703b1b377a509",
-              "checkedAt": "2026-10-26T21:08:42.410Z"
-            }
-          ]
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesActivations.html",
+          "rawSha256": "8aa41dc429c5b38fc240327999d4680be440f2d8249dcdfa3a066e0b54333952",
+          "observedStatus": "Remains on IR; ruled OUT against Dallas",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced",
+          "checkedAt": "2026-10-26T22:35:30.453Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Jakorian Bennett",
+            "team_slug": "philadelphia-eagles",
+            "status": "IR; Week 7 OUT",
+            "asOf": "2026-10-26"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/bgnRoster.html",
+          "rawSha256": "e720245492a73bf80189a884bdfb8e1e60569ec5e01ad7f2688f8c3ad7692c7b",
+          "observedStatus": "Remains on IR; ruled OUT against Dallas",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "philadelphia-eagles:Grant Calcaterra",
+      "value": {
+        "player": "Grant Calcaterra",
+        "team_slug": "philadelphia-eagles",
+        "status": "Activated from IR",
+        "asOf": "2026-10-26"
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+          "checkedAt": "2026-10-26T22:33:03.929Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Grant Calcaterra",
+            "team_slug": "philadelphia-eagles",
+            "status": "Activated from IR",
+            "asOf": "2026-10-26"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesActivations.html",
+          "rawSha256": "8aa41dc429c5b38fc240327999d4680be440f2d8249dcdfa3a066e0b54333952",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+          "checkedAt": "2026-10-26T22:35:30.880Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Grant Calcaterra",
+            "team_slug": "philadelphia-eagles",
+            "status": "Activated from IR",
+            "asOf": "2026-10-26"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesWire.html",
+          "rawSha256": "e3a41ef31f17542d96fe214dcaefcc0cf918a6871970ade842ead131ac1c176f",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced",
+          "checkedAt": "2026-10-26T22:35:30.453Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Grant Calcaterra",
+            "team_slug": "philadelphia-eagles",
+            "status": "Activated from IR",
+            "asOf": "2026-10-26"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/bgnRoster.html",
+          "rawSha256": "e720245492a73bf80189a884bdfb8e1e60569ec5e01ad7f2688f8c3ad7692c7b",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "philadelphia-eagles:Landon Dickerson",
+      "value": {
+        "player": "Landon Dickerson",
+        "team_slug": "philadelphia-eagles",
+        "status": "Activated from IR",
+        "asOf": "2026-10-26"
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+          "checkedAt": "2026-10-26T22:33:03.929Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Landon Dickerson",
+            "team_slug": "philadelphia-eagles",
+            "status": "Activated from IR",
+            "asOf": "2026-10-26"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesActivations.html",
+          "rawSha256": "8aa41dc429c5b38fc240327999d4680be440f2d8249dcdfa3a066e0b54333952",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+          "checkedAt": "2026-10-26T22:35:30.880Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Landon Dickerson",
+            "team_slug": "philadelphia-eagles",
+            "status": "Activated from IR",
+            "asOf": "2026-10-26"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesWire.html",
+          "rawSha256": "e3a41ef31f17542d96fe214dcaefcc0cf918a6871970ade842ead131ac1c176f",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced",
+          "checkedAt": "2026-10-26T22:35:30.453Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Landon Dickerson",
+            "team_slug": "philadelphia-eagles",
+            "status": "Activated from IR",
+            "asOf": "2026-10-26"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/bgnRoster.html",
+          "rawSha256": "e720245492a73bf80189a884bdfb8e1e60569ec5e01ad7f2688f8c3ad7692c7b",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        }
+      ]
+    },
+    {
+      "kind": "reserve",
+      "key": "philadelphia-eagles:Eli Stowers",
+      "value": {
+        "player": "Eli Stowers",
+        "team_slug": "philadelphia-eagles",
+        "status": "Activated from IR",
+        "asOf": "2026-10-26"
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+          "checkedAt": "2026-10-26T22:33:03.929Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Eli Stowers",
+            "team_slug": "philadelphia-eagles",
+            "status": "Activated from IR",
+            "asOf": "2026-10-26"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesActivations.html",
+          "rawSha256": "8aa41dc429c5b38fc240327999d4680be440f2d8249dcdfa3a066e0b54333952",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+          "checkedAt": "2026-10-26T22:35:30.880Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Eli Stowers",
+            "team_slug": "philadelphia-eagles",
+            "status": "Activated from IR",
+            "asOf": "2026-10-26"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesWire.html",
+          "rawSha256": "e3a41ef31f17542d96fe214dcaefcc0cf918a6871970ade842ead131ac1c176f",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced",
+          "checkedAt": "2026-10-26T22:35:30.453Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Eli Stowers",
+            "team_slug": "philadelphia-eagles",
+            "status": "Activated from IR",
+            "asOf": "2026-10-26"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-26T223027Z/bgnRoster.html",
+          "rawSha256": "e720245492a73bf80189a884bdfb8e1e60569ec5e01ad7f2688f8c3ad7692c7b",
+          "observedStatus": "Explicitly activated from IR on October 26",
+          "sourceDetail": "Correct 2026 Week 7 Monday Dallas–Philadelphia roster report. The named activation/remains-IR and OUT statements are explicit. Separate publishers may rely on the club announcement; no independent upstream reporting claim is made."
         }
       ]
     }
   ],
-  "futureScheduleCorrections": [
-    {
-      "reason": "Full required live-dataset preflight detected a kickoff disagreement; correct only the matched existing future fixture after two publisher families agree.",
-      "gameIdentity": {
-        "id": "401873047",
-        "week": 9,
-        "awaySlug": "las-vegas-raiders",
-        "homeSlug": "san-francisco-49ers",
-        "kickoffUtc": "2026-11-08T21:25:00.000Z"
-      },
-      "before": {
-        "kickoffUtc": "2026-11-08T21:05Z",
-        "kickoffLabel": "Sun · 2026-11-08 · 4:05 PM ET",
-        "statusDetail": "Sun, November 8th at 4:05 PM EST",
-        "broadcast": "CBS"
-      },
-      "value": {
-        "kickoffUtc": "2026-11-08T21:25Z",
-        "broadcast": "FOX"
-      },
-      "sources": [
-        {
-          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
-          "checkedAt": "2026-10-26T21:15:35.946Z",
-          "reportedWeek": 9,
-          "reportDate": "2026-10-26",
-          "value": {
-            "kickoffUtc": "2026-11-08T21:25Z",
-            "broadcast": "FOX"
-          },
-          "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-9.html",
-          "rawSha256": "6eed0a43c93682f102360a4fb0a7d789de6d0ae375bf8a99743ec01362b25481",
-          "matchedGameCard": {
-            "contentLocation": "1",
-            "contentPosition": "12",
-            "gameId": "ab581766-4feb-11f1-abca-2c54536568a9",
-            "linkModule": "Game Card",
-            "linkName": "Raiders at 49ers, Sunday, November 8th, 4:25 PM, FOX",
-            "linkPosition": "1:1",
-            "linkType": "DGX Access Point"
-          }
-        },
-        {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
-          "checkedAt": "2026-10-26T21:15:36.169Z",
-          "reportedWeek": 9,
-          "reportDate": "2026-10-26",
-          "value": {
-            "kickoffUtc": "2026-11-08T21:25Z",
-            "broadcast": "FOX"
-          },
-          "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-9.html",
-          "rawSha256": "0a42e98245c857b4facc5d2a96c23d88e34dd53c218b28bcdfd71a58bc80b65e",
-          "gameId": "401873047",
-          "statusDetail": "Sun, November 8th at 4:25 PM EST",
-          "teamIds": [
-            "13",
-            "25"
-          ]
-        }
-      ]
-    }
-  ]
+  "moduleReviews": []
 }

@@ -1,0 +1,53 @@
+[
+  {
+    "player": "Jakorian Bennett",
+    "team_slug": "philadelphia-eagles",
+    "status": "IR; Week 7 OUT",
+    "asOf": "2026-10-26",
+    "checkedAt": "2026-10-26T22:35:30.880Z",
+    "note": "Official October 26 Week 7 update: OUT against Dallas and remains on injured reserve. This is a dated reserve designation, separate from a complete game-day inactive list; no activation is inferred.",
+    "sources": [
+      "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+      "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced"
+    ]
+  },
+  {
+    "player": "Grant Calcaterra",
+    "team_slug": "philadelphia-eagles",
+    "status": "Activated from IR",
+    "asOf": "2026-10-26",
+    "checkedAt": "2026-10-26T22:35:30.880Z",
+    "note": "Official October 26 Week 7 roster move: activated from injured reserve. The prior IR ledger and reserve records are retained in dated history. This confirms roster eligibility, not medical recovery or a complete game-day active/inactive list.",
+    "sources": [
+      "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+      "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+      "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced"
+    ]
+  },
+  {
+    "player": "Landon Dickerson",
+    "team_slug": "philadelphia-eagles",
+    "status": "Activated from IR",
+    "asOf": "2026-10-26",
+    "checkedAt": "2026-10-26T22:35:30.880Z",
+    "note": "Official October 26 Week 7 roster move: activated from injured reserve. The prior IR ledger and reserve records are retained in dated history. This confirms roster eligibility, not medical recovery or a complete game-day active/inactive list.",
+    "sources": [
+      "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+      "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+      "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced"
+    ]
+  },
+  {
+    "player": "Eli Stowers",
+    "team_slug": "philadelphia-eagles",
+    "status": "Activated from IR",
+    "asOf": "2026-10-26",
+    "checkedAt": "2026-10-26T22:35:30.880Z",
+    "note": "Official October 26 Week 7 roster move: activated from injured reserve. The prior IR ledger and reserve records are retained in dated history. This confirms roster eligibility, not medical recovery or a complete game-day active/inactive list.",
+    "sources": [
+      "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+      "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+      "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced"
+    ]
+  }
+]
