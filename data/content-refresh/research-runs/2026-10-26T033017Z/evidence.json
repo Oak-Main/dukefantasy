@@ -39,7 +39,7 @@
             "kickoffUtc": "2026-10-26T00:20:00.000Z"
           },
           "rawSha256": "b798e92b9bb7009defc380ef95c804b5dc6b848d27c61be89a5f11b2eff76bfc",
-          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. Publish only corroborated completed status and both scores."
+          "sourceDetail": "NFL 2026 Week 7 weekly schedule HTML: its embedded Game Card matched /games/chiefs-at-seahawks-2026-reg-7 and reports FINAL, Chiefs 3, Seahawks 20. This hash and URL identify the captured weekly schedule page."
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -59,7 +59,7 @@
             "kickoffUtc": "2026-10-26T00:20:00.000Z"
           },
           "rawSha256": "dc5c829d611a40926cf4297cd544f9d57fe33b3c0f76006ab72b20f99c6da48b",
-          "sourceDetail": "Current exact-game official NFL Game Card and ESPN completed game: identity, final status and both scores agree. Publish only corroborated completed status and both scores."
+          "sourceDetail": "ESPN 2026 Week 7 scoreboard event 401873022 matches the game identity, completed final status and scores Kansas City 3, Seattle 20."
         }
       ]
     }

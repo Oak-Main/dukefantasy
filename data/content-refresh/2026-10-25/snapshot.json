@@ -7020,10 +7020,10 @@
     "asOf": "2026-10-20",
     "entries": []
   },
-  "generatedAt": "2026-10-26T03:30:35.940Z",
+  "generatedAt": "2026-10-26T03:44:01.656Z",
   "sourceAsOf": "2026-10-25",
-  "fetchedAt": "2026-10-26T03:30:35.940Z",
-  "verification": "All 107 result facts through Week 7 reviewed against current NFL and ESPN: 106 final and one ungraded upcoming/live games. All 32 recalculated W-L-T/PF/PA rows match fresh ESPN. Preserve all 272 games, international metadata and future planning scope.",
-  "compiledAt": "2026-10-26T03:32:01.824Z",
+  "fetchedAt": "2026-10-26T03:44:01.656Z",
+  "verification": "All 107 result facts through Week 7 reviewed against current NFL and ESPN: 106 final and one ungraded upcoming/live game. All 32 recalculated W-L-T/PF/PA rows match fresh ESPN. Preserve all 272 games, international metadata and future planning scope.",
+  "compiledAt": "2026-10-26T03:44:13.801Z",
   "collectedOn": "2026-10-25"
 }
