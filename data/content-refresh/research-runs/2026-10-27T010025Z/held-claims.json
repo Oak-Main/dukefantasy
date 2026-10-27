@@ -1,0 +1,23 @@
+{
+  "resolved": [
+    "Britain Covey knee injury and OUT for the remainder of this Week 7 game: explicit club/ESPN/Bleeding Green Nation agreement"
+  ],
+  "claims": [
+    {
+      "claim": "ESPN returnDate November 1",
+      "decision": "No verified prognosis or Week 8 availability claim; exclude the feed estimate."
+    },
+    {
+      "claim": "Cole Payton ESPN prose change",
+      "decision": "Only wording changed; existing conditional emergency role is already verified and unchanged."
+    },
+    {
+      "claim": "Live Monday score",
+      "decision": "Provisional; preserve 13 published Week 7 finals and frozen Monday planning record until NFL/ESPN final reconciliation."
+    },
+    {
+      "claim": "Earlier shoulder practice observation",
+      "decision": "Retain the dated report; they do not describe the new knee event."
+    }
+  ]
+}
