@@ -6,6 +6,16 @@ function isCalendarDate(value) {
   return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
 }
 
+export function validateDesignationPhase(row) {
+  if (row.designation_phase == null) return;
+  if (!["injury_report", "in_game"].includes(row.designation_phase) || row.published_status == null || (row.designation_phase === "in_game" && row.published_status === "NO_DESIGNATION")) {
+    throw new Error("Invalid injury status phase; in-game status must be distinct from an injury-report designation");
+  }
+  if (row.designation_phase === "in_game" && (typeof row.game_id !== "string" || !row.game_id || row.status_scope !== "remainder_of_game")) {
+    throw new Error("In-game injury status requires game identity and remainder-of-game scope");
+  }
+}
+
 export function validatePublicationDates(after, manifest, now = new Date()) {
   const todayEastern = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(now);
   if (!isCalendarDate(manifest.sourceAsOf) || manifest.sourceAsOf > todayEastern) {
@@ -17,6 +27,7 @@ export function validatePublicationDates(after, manifest, now = new Date()) {
     }
   }
   for (const row of after.injury.watch) {
+    validateDesignationPhase(row);
     if (row.published_status != null && (!["OUT", "DOUBTFUL", "QUESTIONABLE", "NO_DESIGNATION"].includes(row.published_status) || row.designation_week !== 7 || !isCalendarDate(row.designation_date) || row.designation_date > todayEastern)) {
       throw new Error("Official designations need the correct dated Week 7 report");
     }

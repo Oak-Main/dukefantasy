@@ -7500,6 +7500,35 @@
       "designation_week": 7,
       "designation_date": "2026-10-23",
       "note": "Official Week 7 designation on 2026-10-23: QUESTIONABLE. Practice reports and roster eligibility are dated separately; no game-day active status is inferred."
+    },
+    {
+      "player": "Britain Covey",
+      "team_slug": "philadelphia-eagles",
+      "position": "WR",
+      "injury": "Knee",
+      "practice": {
+        "mon": null,
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": null,
+        "sat": null
+      },
+      "likelihood": "unlikely",
+      "confidence": "high",
+      "note": "October 26 Week 7 in-game update vs. Dallas: ruled OUT for the remainder of the game with a knee injury. Earlier shoulder practice reports remain dated separately. Availability after this game has not been verified.",
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-game-recap-2026-nfl-week-7-monday-night-football-saquon-barkley-dak-prescott",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+        "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/188272/britain-covey-ruled-out-of-eagles-cowboys-mnf-game"
+      ],
+      "social": [],
+      "published_status": "OUT",
+      "designation_week": 7,
+      "designation_date": "2026-10-26",
+      "designation_phase": "in_game",
+      "game_id": "401873009",
+      "status_scope": "remainder_of_game"
     }
   ]
 }

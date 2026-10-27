@@ -1,0 +1,30 @@
+{
+  "run": "2026-10-27T010025Z",
+  "baseCommit": "d0825ff08530a8624921c620e49fa56af63badca",
+  "changedFacts": 1,
+  "moduleReviews": 0,
+  "player": "Britain Covey",
+  "reportPhase": "in_game",
+  "scope": "remainder_of_week7_game",
+  "injury": "Knee",
+  "status": "OUT",
+  "gameIdentity": {
+    "id": "401873009",
+    "week": 7,
+    "awaySlug": "dallas-cowboys",
+    "homeSlug": "philadelphia-eagles",
+    "kickoffUtc": "2026-10-27T00:15:00.000Z"
+  },
+  "reportDate": "2026-10-26",
+  "totalWatch": 142,
+  "totalLedger": 272,
+  "retainedPracticeReports": 389,
+  "retainedInactiveLists": 28,
+  "retainedEntries": 179,
+  "retainedEmergencyQbs": 18,
+  "fullMedicalReviewDateUnchanged": true,
+  "all272GamesAndInternationalMetadataPreserved": true,
+  "designationPhase": "in_game",
+  "publicLabel": "Official Week 7 in-game status: OUT (remainder of this game)",
+  "statusScope": "remainder_of_game"
+}
