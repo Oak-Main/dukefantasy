@@ -1,0 +1,13 @@
+{
+  "acceptance": "PASS",
+  "recordedAt": "2026-10-27T03:52:03.382Z",
+  "changedResultFacts": 1,
+  "retainedCoveyObservations": 1,
+  "coveySourceObservations": 3,
+  "gameId": "401873009",
+  "phase": "in_game",
+  "scope": "remainder_of_game",
+  "allRawHashesAndParsedFactsVerified": true,
+  "nativeClinicalHistoryAndDatesUnchanged": true,
+  "reason": "Carry forward the retained Covey in-game game/team/week/phase/scope and post-kickoff source bindings with this run’s actual three fresh captures. The observation already deployed in PR 70 remains unchanged."
+}

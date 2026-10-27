@@ -1,7 +1,7 @@
 {
   "week": 7,
   "baseCommit": "6ac7223771c06e0e922beb378f74d5db5b5c88a3",
-  "createdAt": "2026-10-27T03:36:22.245Z",
+  "createdAt": "2026-10-27T03:52:03.129Z",
   "observations": [
     {
       "kind": "result",
@@ -59,6 +59,148 @@
           },
           "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-7.html",
           "rawSha256": "ec033c5c705c65b3c4e9e6e2f8aa8bccb86dd53da6d6b74688aa0574c63134fd"
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Britain Covey",
+      "value": {
+        "player": "Britain Covey",
+        "team_slug": "philadelphia-eagles",
+        "status": "OUT",
+        "injury": "Knee",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-26",
+        "designation_week": 7,
+        "designation_phase": "in_game",
+        "game_id": "401873009",
+        "status_scope": "remainder_of_game"
+      },
+      "gameIdentity": {
+        "id": "401873009",
+        "week": 7,
+        "awaySlug": "dallas-cowboys",
+        "homeSlug": "philadelphia-eagles",
+        "kickoffUtc": "2026-10-27T00:15:00.000Z"
+      },
+      "reportPhase": "in_game",
+      "scope": "remainder_of_game",
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-game-recap-2026-nfl-week-7-monday-night-football-saquon-barkley-dak-prescott",
+          "checkedAt": "2026-10-27T03:34:18.723Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-26",
+            "designation_week": 7,
+            "designation_phase": "in_game",
+            "game_id": "401873009",
+            "status_scope": "remainder_of_game"
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "reportPhase": "in_game",
+          "rawFile": "outputs/week7-automation/2026-10-27T033027Z/eaglesLive.html",
+          "rawSha256": "c6dd548b0a6d278ba27a1b2e6e9a5f7bd0070f8f2ab52bb29deb73fad779937d",
+          "sourceDetail": "This publisher explicitly reports Britain Covey ruled out with a knee injury for the remainder of the October 26 Dallas–Philadelphia Week 7 game. This is an in-game ruling; no pregame inactive list, historical shoulder-practice record, prognosis or Week 8 status is changed.",
+          "scope": "remainder_of_game"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-27T03:34:18.758Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-26",
+            "designation_week": 7,
+            "designation_phase": "in_game",
+            "game_id": "401873009",
+            "status_scope": "remainder_of_game"
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "reportPhase": "in_game",
+          "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espnCovey.html",
+          "rawSha256": "e83048a0ab35a1b3624aea239aad3ffc82039c346763a8f35b9b021c139970a4",
+          "sourceDetail": "This publisher explicitly reports Britain Covey ruled out with a knee injury for the remainder of the October 26 Dallas–Philadelphia Week 7 game. This is an in-game ruling; no pregame inactive list, historical shoulder-practice record, prognosis or Week 8 status is changed.",
+          "scope": "remainder_of_game"
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/188272/britain-covey-ruled-out-of-eagles-cowboys-mnf-game",
+          "checkedAt": "2026-10-27T03:34:18.574Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-26",
+            "designation_week": 7,
+            "designation_phase": "in_game",
+            "game_id": "401873009",
+            "status_scope": "remainder_of_game"
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "reportPhase": "in_game",
+          "rawFile": "outputs/week7-automation/2026-10-27T033027Z/bgnCovey.html",
+          "rawSha256": "91efeff216339516f33bc4df36d33307f3d863ee266be214044bdb6eb6b4bfb7",
+          "sourceDetail": "This publisher explicitly reports Britain Covey ruled out with a knee injury for the remainder of the October 26 Dallas–Philadelphia Week 7 game. This is an in-game ruling; no pregame inactive list, historical shoulder-practice record, prognosis or Week 8 status is changed.",
+          "scope": "remainder_of_game"
         }
       ]
     }
