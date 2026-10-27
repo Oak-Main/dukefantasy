@@ -1,0 +1,272 @@
+{
+  "week": 7,
+  "baseCommit": "6ac7223771c06e0e922beb378f74d5db5b5c88a3",
+  "createdAt": "2026-10-27T03:36:22.245Z",
+  "observations": [
+    {
+      "kind": "result",
+      "key": "401873009",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 38,
+        "homeScore": 21
+      },
+      "gameIdentity": {
+        "id": "401873009",
+        "week": 7,
+        "awaySlug": "dallas-cowboys",
+        "homeSlug": "philadelphia-eagles",
+        "kickoffUtc": "2026-10-27T00:15:00.000Z"
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-27T03:31:33.660Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 38,
+            "homeScore": 21
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-7.html",
+          "rawSha256": "adc92da991346bb00284d213a6b660a496cebccb07d5b4d8ee031f0c25e23431"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-27T03:31:33.601Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 38,
+            "homeScore": 21
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-7.html",
+          "rawSha256": "ec033c5c705c65b3c4e9e6e2f8aa8bccb86dd53da6d6b74688aa0574c63134fd"
+        }
+      ]
+    }
+  ],
+  "moduleReviews": [
+    {
+      "module": "schedule",
+      "sourceAsOf": "2026-10-26",
+      "dataSha256": "5e900da6f22a00db3af90feef3484d97e2f81fe04501e28dfd97a25b9ef2acdb",
+      "scope": "All 107 result facts for weeks 1–7; all are final. Retain future fixtures and all international metadata unchanged.",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-27T03:31:33.678Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "5e900da6f22a00db3af90feef3484d97e2f81fe04501e28dfd97a25b9ef2acdb",
+            "complete": true
+          },
+          "reviewedWeeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "reviewedRecords": 107,
+          "rawSources": [
+            {
+              "id": "nfl-1",
+              "publisher": "nfl",
+              "week": 1,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-1",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-1",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.474Z",
+              "rawSha256": "5de34e19e590109670e0f10f4afcda2d66ebe4d7a69df1afdc4a855408681c4c",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-1.html"
+            },
+            {
+              "id": "nfl-2",
+              "publisher": "nfl",
+              "week": 2,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-2",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-2",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.523Z",
+              "rawSha256": "42668f55c3804a3a1f1b4cffee8c0221ae4aa17190fe7886e66d09be605d807f",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-2.html"
+            },
+            {
+              "id": "nfl-3",
+              "publisher": "nfl",
+              "week": 3,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-3",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-3",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.612Z",
+              "rawSha256": "1146988df1480a30369972b5533093df0b9b482c3911e9962cb696c6076b1e59",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-3.html"
+            },
+            {
+              "id": "nfl-4",
+              "publisher": "nfl",
+              "week": 4,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-4",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-4",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.631Z",
+              "rawSha256": "fea1ef615f5d2ba1771f40f17a0e9f35b477f56c2fce6a1aa39fff3eb314717b",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-4.html"
+            },
+            {
+              "id": "nfl-5",
+              "publisher": "nfl",
+              "week": 5,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-5",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-5",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.580Z",
+              "rawSha256": "5d8bcb4e088a618081e88745f92419b77d088a8a91421e8fe31426e4ce2b8581",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-5.html"
+            },
+            {
+              "id": "nfl-6",
+              "publisher": "nfl",
+              "week": 6,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-6",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-6",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.678Z",
+              "rawSha256": "c124b88d3e8b1a43b29fc371f9bfcd66304736e0ea52ee6d76bc857372dfc0cf",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-6.html"
+            },
+            {
+              "id": "nfl-7",
+              "publisher": "nfl",
+              "week": 7,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.660Z",
+              "rawSha256": "adc92da991346bb00284d213a6b660a496cebccb07d5b4d8ee031f0c25e23431",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-7.html"
+            }
+          ]
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-27T03:31:33.647Z",
+          "reportedWeek": 7,
+          "value": {
+            "dataSha256": "5e900da6f22a00db3af90feef3484d97e2f81fe04501e28dfd97a25b9ef2acdb",
+            "complete": true
+          },
+          "reviewedWeeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "reviewedRecords": 107,
+          "rawSources": [
+            {
+              "id": "espn-1",
+              "publisher": "espn",
+              "week": 1,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.647Z",
+              "rawSha256": "992dce612a771152500e9e84a9266b5643fe7545ed0ccf00eb235f0329ebeafc",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-1.html"
+            },
+            {
+              "id": "espn-2",
+              "publisher": "espn",
+              "week": 2,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.498Z",
+              "rawSha256": "da49672ac97c20bcd71d1462cd78022ff145304077ccc9583491e7d0c009ee20",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-2.html"
+            },
+            {
+              "id": "espn-3",
+              "publisher": "espn",
+              "week": 3,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.542Z",
+              "rawSha256": "2c0426be873910d9afcebe62b31b4ce40d313bd7767a2406f33e3933293fc353",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-3.html"
+            },
+            {
+              "id": "espn-4",
+              "publisher": "espn",
+              "week": 4,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.547Z",
+              "rawSha256": "33f042912f0489539bf00ad3b8b747b512242d2c362ff50db65415c0770698ce",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-4.html"
+            },
+            {
+              "id": "espn-5",
+              "publisher": "espn",
+              "week": 5,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.565Z",
+              "rawSha256": "cf9743cdc9cca2577287bceff76d2d3b93f04a44a429237deb45b94c5bd44088",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-5.html"
+            },
+            {
+              "id": "espn-6",
+              "publisher": "espn",
+              "week": 6,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.560Z",
+              "rawSha256": "90430edd5f0fb73213334a5ebbd0fa790867c052321d8892cf3a999acb6ed4fa",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-6.html"
+            },
+            {
+              "id": "espn-7",
+              "publisher": "espn",
+              "week": 7,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.601Z",
+              "rawSha256": "ec033c5c705c65b3c4e9e6e2f8aa8bccb86dd53da6d6b74688aa0574c63134fd",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-7.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

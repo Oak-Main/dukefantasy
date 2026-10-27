@@ -32,11 +32,32 @@ test("server-renders the finished home utility", async () => {
 
   const html = await response.text();
   assert.match(html, /Every Sunday/);
-  assert.match(html, /GAME OF THE WEEK|MARQUEE MATCHUP/);
+  const manifest = JSON.parse(readFileSync(new URL("../data/content-refresh/current.json", import.meta.url), "utf8"));
+  const snapshot = JSON.parse(readFileSync(new URL(`../data/content-refresh/${manifest.snapshot}`, import.meta.url), "utf8"));
+  const slate = snapshot.schedule.filter((game) => game.week === snapshot.season.currentWeek);
+  if (slate.length > 0 && slate.every((game) => game.status === "final")) {
+    const text = html.replace(/<!--[\s\S]*?-->/g, "");
+    assert.ok(text.includes(`Week ${snapshot.season.currentWeek} complete`));
+    assert.ok(text.includes(`All ${slate.length} final results are published.`));
+    assert.ok(html.includes(`href="/scores?week=${snapshot.season.currentWeek}"`));
+    assert.doesNotMatch(text, /This week&#x27;s marquee matchup is not published/);
+  } else {
+    assert.match(html, /GAME OF THE WEEK|MARQUEE MATCHUP/);
+  }
   assert.match(html, /32/);
   assert.match(html, /NFL teams/);
   assert.match(html, /Clean Mode/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
+});
+
+test("Week 7 Monday final and updated team records render from the verified snapshot", async () => {
+  const response = await fetchRoute("/games/401873009");
+  assert.equal(response.status, 200);
+  const html = (await response.text()).replace(/<!--[\s\S]*?-->/g, "");
+  const hero = html.match(/class="game-hero__matchup"[\s\S]*?class="game-action-row"/)?.[0] ?? "";
+  assert.match(html, /class="status status--final">Final<\/span>/);
+  assert.match(hero, /Dallas Cowboys<\/strong><em>3-4<\/em>[\s\S]*?<b>38<\/b>/);
+  assert.match(hero, /Philadelphia Eagles<\/strong><em>2-5<\/em>[\s\S]*?<b>21<\/b>/);
 });
 
 test("www canonicalizes to the apex domain without losing the request target", async () => {

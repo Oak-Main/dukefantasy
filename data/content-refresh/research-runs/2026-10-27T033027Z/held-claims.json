@@ -1,0 +1,26 @@
+{
+  "player": "Saquon Barkley",
+  "gameId": "401873009",
+  "week": 7,
+  "observedEspn": {
+    "date": "2026-10-27T02:50Z",
+    "status": "Questionable",
+    "details": {
+      "fantasyStatus": {
+        "description": "QUESTIONABLE",
+        "abbreviation": "QUESTIONABLE"
+      },
+      "type": "Back",
+      "location": "Torso",
+      "returnDate": "2026-10-26"
+    },
+    "shortComment": "Barkley is questionable to return to Monday's game against the Cowboys due to a back injury.",
+    "longComment": "Barkley entered Monday's contest managing a hamstring injury but was ultimately able to suit up. The star running back looked hobbled throughout much of the game but was able to tally 62 yards and a touchdown on just seven carries along with two catches on two targets for nine yards before being deemed questionable to return early in the fourth period. The Eagles indicated that Barkley is dealing with a back issue when announcing his 'questionable' tag, so it's unclear if the hamstring is also still bothering him."
+  },
+  "sourceUrls": [
+    "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+    "https://www.cbssports.com/nfl/injuries/"
+  ],
+  "decision": "HOLD: ESPN now has a dated in-game Week 7 back/Questionable narrative; the available CBS entry explicitly applies to Week 8. The official Eagles recap and NBC coverage do not supply a matching dated back/status claim. Keep the dated hamstring/formal/practice history and publish no inferred return, recovery or Week 8 status.",
+  "additionalContext": "Quinyon Mitchell is described as injured on one play without a corroborated normalized diagnosis/status; no new clinical claim inferred."
+}
