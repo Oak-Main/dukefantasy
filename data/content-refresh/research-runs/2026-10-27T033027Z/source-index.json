@@ -1,0 +1,542 @@
+{
+  "resultSources": [
+    {
+      "id": "espnStandings",
+      "publisher": "espn",
+      "week": 7,
+      "requestedUrl": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+      "resolvedUrl": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.503Z",
+      "rawSha256": "497674752f41850a4ee680b07a8dd7530d221a32407b8e6c4b87ba21c939ae3c",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espnStandings.html"
+    },
+    {
+      "id": "nfl-1",
+      "publisher": "nfl",
+      "week": 1,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-1",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-1",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.474Z",
+      "rawSha256": "5de34e19e590109670e0f10f4afcda2d66ebe4d7a69df1afdc4a855408681c4c",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-1.html"
+    },
+    {
+      "id": "espn-1",
+      "publisher": "espn",
+      "week": 1,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.647Z",
+      "rawSha256": "992dce612a771152500e9e84a9266b5643fe7545ed0ccf00eb235f0329ebeafc",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-1.html"
+    },
+    {
+      "id": "nfl-2",
+      "publisher": "nfl",
+      "week": 2,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-2",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-2",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.523Z",
+      "rawSha256": "42668f55c3804a3a1f1b4cffee8c0221ae4aa17190fe7886e66d09be605d807f",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-2.html"
+    },
+    {
+      "id": "espn-2",
+      "publisher": "espn",
+      "week": 2,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.498Z",
+      "rawSha256": "da49672ac97c20bcd71d1462cd78022ff145304077ccc9583491e7d0c009ee20",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-2.html"
+    },
+    {
+      "id": "nfl-3",
+      "publisher": "nfl",
+      "week": 3,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-3",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-3",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.612Z",
+      "rawSha256": "1146988df1480a30369972b5533093df0b9b482c3911e9962cb696c6076b1e59",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-3.html"
+    },
+    {
+      "id": "espn-3",
+      "publisher": "espn",
+      "week": 3,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.542Z",
+      "rawSha256": "2c0426be873910d9afcebe62b31b4ce40d313bd7767a2406f33e3933293fc353",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-3.html"
+    },
+    {
+      "id": "nfl-4",
+      "publisher": "nfl",
+      "week": 4,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-4",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-4",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.631Z",
+      "rawSha256": "fea1ef615f5d2ba1771f40f17a0e9f35b477f56c2fce6a1aa39fff3eb314717b",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-4.html"
+    },
+    {
+      "id": "espn-4",
+      "publisher": "espn",
+      "week": 4,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.547Z",
+      "rawSha256": "33f042912f0489539bf00ad3b8b747b512242d2c362ff50db65415c0770698ce",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-4.html"
+    },
+    {
+      "id": "nfl-5",
+      "publisher": "nfl",
+      "week": 5,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-5",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-5",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.580Z",
+      "rawSha256": "5d8bcb4e088a618081e88745f92419b77d088a8a91421e8fe31426e4ce2b8581",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-5.html"
+    },
+    {
+      "id": "espn-5",
+      "publisher": "espn",
+      "week": 5,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.565Z",
+      "rawSha256": "cf9743cdc9cca2577287bceff76d2d3b93f04a44a429237deb45b94c5bd44088",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-5.html"
+    },
+    {
+      "id": "nfl-6",
+      "publisher": "nfl",
+      "week": 6,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-6",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-6",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.678Z",
+      "rawSha256": "c124b88d3e8b1a43b29fc371f9bfcd66304736e0ea52ee6d76bc857372dfc0cf",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-6.html"
+    },
+    {
+      "id": "espn-6",
+      "publisher": "espn",
+      "week": 6,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.560Z",
+      "rawSha256": "90430edd5f0fb73213334a5ebbd0fa790867c052321d8892cf3a999acb6ed4fa",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-6.html"
+    },
+    {
+      "id": "nfl-7",
+      "publisher": "nfl",
+      "week": 7,
+      "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.660Z",
+      "rawSha256": "adc92da991346bb00284d213a6b660a496cebccb07d5b4d8ee031f0c25e23431",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-7.html"
+    },
+    {
+      "id": "espn-7",
+      "publisher": "espn",
+      "week": 7,
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:31:33.601Z",
+      "rawSha256": "ec033c5c705c65b3c4e9e6e2f8aa8bccb86dd53da6d6b74688aa0574c63134fd",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-7.html"
+    }
+  ],
+  "retainedClinicalSources": [
+    {
+      "id": "eaglesMnf",
+      "kind": "inactive",
+      "requestedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-inactives-saquon-barkley-jalyx-hunt-2026-week-7-monday-night-football",
+      "resolvedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-inactives-saquon-barkley-jalyx-hunt-2026-week-7-monday-night-football",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:34:18.493Z",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/eaglesMnf.html",
+      "rawSha256": "93605aa9ff4b26b8635a937708febca489882a3243df1d335558e7f78c5905e7",
+      "proof": {
+        "publishedAt": "2026-10-26T22:45:13.336Z",
+        "reportDate": "2026-10-26",
+        "reportedWeek": 7,
+        "reports": [
+          {
+            "teamSlug": "philadelphia-eagles",
+            "complete": true,
+            "players": [
+              {
+                "name": "Cole Payton",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "DeVonta Smith",
+                "designation": "inactive"
+              },
+              {
+                "name": "Dontayvion Wicks",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jake Majors",
+                "designation": "inactive"
+              },
+              {
+                "name": "Michael Carter II",
+                "designation": "inactive"
+              },
+              {
+                "name": "Nolan Smith",
+                "designation": "inactive"
+              }
+            ]
+          }
+        ]
+      },
+      "unchanged": true
+    },
+    {
+      "id": "cowboysUpdates",
+      "kind": "inactive",
+      "requestedUrl": "https://www.dallascowboys.com/news/updates-october-2026",
+      "resolvedUrl": "https://www.dallascowboys.com/news/updates-october-2026",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:34:18.356Z",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/cowboysUpdates.html",
+      "rawSha256": "6995dcdcdb036922baddab8883baa49c64152e4d79cfb33945106405f5efb78c",
+      "proof": {
+        "publishedAt": "2026-10-26T22:45:00Z",
+        "reportDate": "2026-10-26",
+        "reportedWeek": 7,
+        "reports": [
+          {
+            "teamSlug": "dallas-cowboys",
+            "complete": true,
+            "players": [
+              {
+                "name": "Dee Winters",
+                "designation": "inactive"
+              },
+              {
+                "name": "Drew Shelton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Emari Demercado",
+                "designation": "inactive"
+              },
+              {
+                "name": "KaVontae Turpin",
+                "designation": "inactive"
+              },
+              {
+                "name": "Tyrus Wheat",
+                "designation": "inactive"
+              }
+            ]
+          }
+        ]
+      },
+      "unchanged": true
+    },
+    {
+      "id": "bgnMnf",
+      "kind": "inactive",
+      "requestedUrl": "https://www.bleedinggreennation.com/news/188220/eagles-cowboys-inactives-saquon-barkley-will-play",
+      "resolvedUrl": "https://www.bleedinggreennation.com/news/188220/eagles-cowboys-inactives-saquon-barkley-will-play",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:34:18.481Z",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/bgnMnf.html",
+      "rawSha256": "c557312884465513fd47e7c894c404fae3f9a4dd82040541cc79eaa5cb7a6ec4",
+      "proof": {
+        "publishedAt": "2026-10-26T23:00:58+00:00",
+        "reportDate": "2026-10-26",
+        "reportedWeek": 7,
+        "reports": [
+          {
+            "teamSlug": "philadelphia-eagles",
+            "complete": true,
+            "players": [
+              {
+                "name": "Cole Payton",
+                "designation": "emergency_qb"
+              },
+              {
+                "name": "DeVonta Smith",
+                "designation": "inactive"
+              },
+              {
+                "name": "Dontayvion Wicks",
+                "designation": "inactive"
+              },
+              {
+                "name": "Jake Majors",
+                "designation": "inactive"
+              },
+              {
+                "name": "Michael Carter II",
+                "designation": "inactive"
+              },
+              {
+                "name": "Nolan Smith",
+                "designation": "inactive"
+              }
+            ]
+          },
+          {
+            "teamSlug": "dallas-cowboys",
+            "complete": true,
+            "players": [
+              {
+                "name": "Dee Winters",
+                "designation": "inactive"
+              },
+              {
+                "name": "Drew Shelton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Emari Demercado",
+                "designation": "inactive"
+              },
+              {
+                "name": "KaVontae Turpin",
+                "designation": "inactive"
+              },
+              {
+                "name": "Tyrus Wheat",
+                "designation": "inactive"
+              }
+            ]
+          }
+        ]
+      },
+      "unchanged": true
+    },
+    {
+      "id": "fftodayWeek7",
+      "kind": "inactive",
+      "requestedUrl": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+      "resolvedUrl": "https://www.fftoday.com/nfl/26-inactives-wk7.html",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:34:18.391Z",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/fftodayWeek7.html",
+      "rawSha256": "37a0a0b84d5f395a26f440a0e1812a62a84f7d9c318ac6fd160060b6216ba4e8",
+      "proof": {
+        "reportDate": "2026-10-26",
+        "reportedWeek": 7,
+        "reports": [
+          {
+            "teamSlug": "dallas-cowboys",
+            "complete": true,
+            "players": [
+              {
+                "name": "Dee Winters",
+                "designation": "inactive"
+              },
+              {
+                "name": "Drew Shelton",
+                "designation": "inactive"
+              },
+              {
+                "name": "Emari Demercado",
+                "designation": "inactive"
+              },
+              {
+                "name": "KaVontae Turpin",
+                "designation": "inactive"
+              },
+              {
+                "name": "Tyrus Wheat",
+                "designation": "inactive"
+              }
+            ]
+          }
+        ]
+      },
+      "unchanged": true
+    },
+    {
+      "id": "eaglesActivations",
+      "kind": "reserve",
+      "requestedUrl": "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+      "resolvedUrl": "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:34:18.180Z",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/eaglesActivations.html",
+      "rawSha256": "bcda4bf9243f7cca0361041a1336c37d94c7e37e5b954af289c8339aadaba5a7",
+      "proof": {
+        "reportDate": "2026-10-26",
+        "reportedWeek": 7,
+        "teamSlug": "philadelphia-eagles",
+        "gameId": "401873009",
+        "publishedAt": "2026-10-26T20:00:00Z",
+        "activated": [
+          "Eli Stowers",
+          "Grant Calcaterra",
+          "Landon Dickerson"
+        ],
+        "bennett": {
+          "out": true,
+          "remainsOnIr": true
+        }
+      },
+      "unchanged": true
+    },
+    {
+      "id": "eaglesWire",
+      "kind": "reserve",
+      "requestedUrl": "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+      "resolvedUrl": "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:34:18.610Z",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/eaglesWire.html",
+      "rawSha256": "df1692f04452f9cdd5944936848e533cb0cc3eb041dfc216591d5216e3db0c2d",
+      "proof": {
+        "reportDate": "2026-10-26",
+        "reportedWeek": 7,
+        "teamSlug": "philadelphia-eagles",
+        "gameId": "401873009",
+        "publishedAt": "2026-10-26T20:07:15Z",
+        "activated": [
+          "Eli Stowers",
+          "Grant Calcaterra",
+          "Landon Dickerson"
+        ],
+        "bennett": {
+          "out": true
+        }
+      },
+      "unchanged": true
+    },
+    {
+      "id": "bgnRoster",
+      "kind": "reserve",
+      "requestedUrl": "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced",
+      "resolvedUrl": "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:34:18.516Z",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/bgnRoster.html",
+      "rawSha256": "69b148767d30416d650933fc3736de5533b6544bcb4645499b36f76a46466bd7",
+      "proof": {
+        "reportDate": "2026-10-26",
+        "reportedWeek": 7,
+        "teamSlug": "philadelphia-eagles",
+        "gameId": "401873009",
+        "publishedAt": "2026-10-26T20:07:43+00:00",
+        "activated": [
+          "Eli Stowers",
+          "Grant Calcaterra",
+          "Landon Dickerson"
+        ],
+        "bennett": {
+          "out": true,
+          "remainsOnIr": true
+        }
+      },
+      "unchanged": true
+    },
+    {
+      "id": "eaglesLive",
+      "kind": "covey",
+      "requestedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-game-recap-2026-nfl-week-7-monday-night-football-saquon-barkley-dak-prescott",
+      "resolvedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-game-recap-2026-nfl-week-7-monday-night-football-saquon-barkley-dak-prescott",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:34:18.723Z",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/eaglesLive.html",
+      "rawSha256": "c6dd548b0a6d278ba27a1b2e6e9a5f7bd0070f8f2ab52bb29deb73fad779937d",
+      "proof": {
+        "player": "Britain Covey",
+        "teamSlug": "philadelphia-eagles",
+        "injury": "Knee",
+        "status": "OUT",
+        "reportDate": "2026-10-26",
+        "scope": "remainder_of_week7_game",
+        "gameIdentity": {
+          "id": "401873009",
+          "week": 7,
+          "awaySlug": "dallas-cowboys",
+          "homeSlug": "philadelphia-eagles",
+          "kickoffUtc": "2026-10-27T00:15Z"
+        },
+        "publisherReportDate": "2026-10-26"
+      },
+      "unchanged": true
+    },
+    {
+      "id": "espnCovey",
+      "kind": "covey",
+      "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:34:18.758Z",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espnCovey.html",
+      "rawSha256": "e83048a0ab35a1b3624aea239aad3ffc82039c346763a8f35b9b021c139970a4",
+      "proof": {
+        "player": "Britain Covey",
+        "teamSlug": "philadelphia-eagles",
+        "injury": "Knee",
+        "status": "OUT",
+        "reportDate": "2026-10-26",
+        "scope": "remainder_of_week7_game",
+        "gameIdentity": {
+          "id": "401873009",
+          "week": 7,
+          "awaySlug": "dallas-cowboys",
+          "homeSlug": "philadelphia-eagles",
+          "kickoffUtc": "2026-10-27T00:15Z"
+        },
+        "reportedAt": "2026-10-27T00:59Z"
+      },
+      "unchanged": true
+    },
+    {
+      "id": "bgnCovey",
+      "kind": "covey",
+      "requestedUrl": "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/188272/britain-covey-ruled-out-of-eagles-cowboys-mnf-game",
+      "resolvedUrl": "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/188272/britain-covey-ruled-out-of-eagles-cowboys-mnf-game",
+      "status": 200,
+      "checkedAt": "2026-10-27T03:34:18.574Z",
+      "rawFile": "outputs/week7-automation/2026-10-27T033027Z/bgnCovey.html",
+      "rawSha256": "91efeff216339516f33bc4df36d33307f3d863ee266be214044bdb6eb6b4bfb7",
+      "proof": {
+        "player": "Britain Covey",
+        "teamSlug": "philadelphia-eagles",
+        "injury": "Knee",
+        "status": "OUT",
+        "reportDate": "2026-10-26",
+        "scope": "remainder_of_week7_game",
+        "gameIdentity": {
+          "id": "401873009",
+          "week": 7,
+          "awaySlug": "dallas-cowboys",
+          "homeSlug": "philadelphia-eagles",
+          "kickoffUtc": "2026-10-27T00:15Z"
+        },
+        "publishedAt": "2026-10-27T01:03:12+00:00"
+      },
+      "unchanged": true
+    }
+  ],
+  "scope": "One newly final game plus an actual complete two-publisher review of all 107 result facts; fresh ESPN comparison of all 32 derived standings rows. No other module renewed."
+}
