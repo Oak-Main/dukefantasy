@@ -59,6 +59,7 @@ export interface InjuryWatchEntry {
   injury: string | null;
   publishedStatus: GameDesignation | null;
   designationDate: string | null;
+  designationPhase: "injury_report" | "in_game" | null;
   practice: { mon?: PracticeStatus | null; tue?: PracticeStatus | null; wed: PracticeStatus | null; thu: PracticeStatus | null; fri: PracticeStatus | null; sat: PracticeStatus | null };
   likelihood: Likelihood | null;
   confidence: Confidence | null;
@@ -121,6 +122,7 @@ export const injuryResearch: InjuryResearchDoc = {
     injury: (row.injury as string | null) ?? null,
     publishedStatus: (row.published_status as GameDesignation | null) ?? null,
     designationDate: (row.designation_date as string | null) ?? null,
+    designationPhase: (row.designation_phase as InjuryWatchEntry["designationPhase"]) ?? null,
     practice: mapPractice(row),
     likelihood: (row.likelihood as Likelihood | null) ?? null,
     confidence: (row.confidence as Confidence | null) ?? null,

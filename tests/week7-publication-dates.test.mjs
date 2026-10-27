@@ -72,6 +72,18 @@ test("undated legacy reserves and unreviewed modules remain supported", () => {
   delete data.editorial.reserveStatuses[0].checkedAt;
   assert.doesNotThrow(() => validatePublicationDates(data, manifest, now));
 });
+
+test("in-game status is an explicit phase and cannot masquerade as no injury-report designation", () => {
+  const data = candidate(); Object.assign(data.injury.watch[0], { designation_phase: "in_game", game_id: "test-game", status_scope: "remainder_of_game" });
+  assert.doesNotThrow(() => validatePublicationDates(data, manifest, now));
+  for (const patch of [{ designation_phase: "pregame_guess" }, { published_status: null }, { published_status: "NO_DESIGNATION" }]) {
+    const invalid = structuredClone(data); Object.assign(invalid.injury.watch[0], patch);
+    assert.throws(() => validatePublicationDates(invalid, manifest, now), /status phase/);
+  }
+  data.injury.watch[0].designation_phase = "injury_report";
+  data.injury.watch[0].published_status = "NO_DESIGNATION";
+  assert.doesNotThrow(() => validatePublicationDates(data, manifest, now));
+});
 test("the actual published records retain their historical verification dates", () => {
   const read = path => JSON.parse(readFileSync(new URL(`../${path}`, import.meta.url), "utf8"));
   const data = { injury: read("data/injury-research/current.json"), editorial: read("data/content-refresh/current-editorial.json") };

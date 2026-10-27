@@ -132,6 +132,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       practice: null as InjuryWatchEntry["practice"] | null,
       publishedStatus: null as InjuryWatchEntry["publishedStatus"],
       designationDate: null as string | null,
+      designationPhase: null as InjuryWatchEntry["designationPhase"],
       likelihood: entry.status === "OUT" ? ("unlikely" as const) : entry.status === "DOUBTFUL" ? ("doubtful" as const) : null,
       confidence: null as string | null,
       note: entry.detail,
@@ -150,6 +151,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         practice: entry.practice,
         publishedStatus: entry.publishedStatus,
         designationDate: entry.designationDate,
+        designationPhase: entry.designationPhase,
         likelihood: ungraded ? null : entry.likelihood ?? model.likelihood,
         confidence: ungraded ? null : entry.confidence ?? model.confidence,
         note: entry.note ?? model.basis,
@@ -386,7 +388,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
                         <LikelihoodPill likelihood={row.likelihood} confidence={row.confidence} />
                       </InjuryTableCell>
                       <InjuryTableCell label="Note" headers="inj-watch-note" className="inj-detail">
-                        {row.publishedStatus ? <p><strong>Official Week {injuryResearch.week} designation: {row.publishedStatus.replaceAll("_", " ")}</strong> · <time dateTime={row.designationDate ?? undefined}>{row.designationDate}</time></p> : null}
+                        {row.publishedStatus ? <p><strong>{`Official Week ${injuryResearch.week} ${row.designationPhase === "in_game" ? "in-game status" : "designation"}: ${row.publishedStatus.replaceAll("_", " ")}${row.designationPhase === "in_game" ? " (remainder of this game)" : ""}`}</strong> · <time dateTime={row.designationDate ?? undefined}>{row.designationDate}</time></p> : null}
                         {row.note ?? "Not published"}
                         {row.sources.length || row.social.length ? (
                           <EvidenceLinks urls={[...row.sources, ...row.social]} />

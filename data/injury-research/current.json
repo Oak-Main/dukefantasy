@@ -7525,7 +7525,10 @@
       "social": [],
       "published_status": "OUT",
       "designation_week": 7,
-      "designation_date": "2026-10-26"
+      "designation_date": "2026-10-26",
+      "designation_phase": "in_game",
+      "game_id": "401873009",
+      "status_scope": "remainder_of_game"
     }
   ]
 }

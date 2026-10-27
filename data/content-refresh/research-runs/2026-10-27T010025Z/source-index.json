@@ -5,30 +5,33 @@
       "requestedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-game-recap-2026-nfl-week-7-monday-night-football-saquon-barkley-dak-prescott",
       "resolvedUrl": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-game-recap-2026-nfl-week-7-monday-night-football-saquon-barkley-dak-prescott",
       "status": 200,
-      "checkedAt": "2026-10-27T01:08:52.503Z",
+      "checkedAt": "2026-10-27T01:30:01.726Z",
       "rawFile": "outputs/week7-automation/2026-10-27T010025Z/eaglesLive.html",
-      "rawSha256": "fe0913a1a9c95a29d7252d5874dadf245c6d0bb7de8c42ff0f3b6a219bf2843f",
-      "reportedWeek": 7
+      "rawSha256": "5d7dd5cbd36dfbddba788d026bbba85007a80c996f23e54ddb6e95f6fc27fc99",
+      "reportedWeek": 7,
+      "publishedAt": "2026-10-27T01:26:00Z"
     },
     {
       "id": "espnCovey",
       "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
       "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
       "status": 200,
-      "checkedAt": "2026-10-27T01:08:52.547Z",
+      "checkedAt": "2026-10-27T01:30:02.510Z",
       "rawFile": "outputs/week7-automation/2026-10-27T010025Z/espnCovey.html",
-      "rawSha256": "48f20a2519c144795fd8a0942afa82eb73896f0d888ec7a75312ee6d3e356719",
-      "reportedWeek": 7
+      "rawSha256": "3cb68496a66f227b11d92b96ec37851ca77b0b2614c72f81e08e3f65bc694d13",
+      "reportedWeek": 7,
+      "publishedAt": null
     },
     {
       "id": "bgnCovey",
       "requestedUrl": "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/188272/britain-covey-ruled-out-of-eagles-cowboys-mnf-game",
       "resolvedUrl": "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/188272/britain-covey-ruled-out-of-eagles-cowboys-mnf-game",
       "status": 200,
-      "checkedAt": "2026-10-27T01:08:52.603Z",
+      "checkedAt": "2026-10-27T01:30:01.663Z",
       "rawFile": "outputs/week7-automation/2026-10-27T010025Z/bgnCovey.html",
-      "rawSha256": "d0e9e34e06f069e4c1d3fb652578d82985ab27d03ced84ccbcc1c31d5fdd948f",
-      "reportedWeek": 7
+      "rawSha256": "b62f23b092feb63df9cc035755f1a01b2ccdaf5d048e4184d942c20f2c85448d",
+      "reportedWeek": 7,
+      "publishedAt": "2026-10-27T01:03:12+00:00"
     }
   ],
   "proofs": {
@@ -46,7 +49,7 @@
         "homeSlug": "philadelphia-eagles",
         "kickoffUtc": "2026-10-27T00:15Z"
       },
-      "publishedAt": "2026-10-27T00:58:00Z"
+      "publisherReportDate": "2026-10-26"
     },
     "espnCovey": {
       "player": "Britain Covey",

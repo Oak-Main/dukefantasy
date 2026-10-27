@@ -13,7 +13,7 @@
     "week": 7,
     "awaySlug": "dallas-cowboys",
     "homeSlug": "philadelphia-eagles",
-    "kickoffUtc": "2026-10-27T00:15Z"
+    "kickoffUtc": "2026-10-27T00:15:00.000Z"
   },
   "reportDate": "2026-10-26",
   "totalWatch": 142,
@@ -23,5 +23,8 @@
   "retainedEntries": 179,
   "retainedEmergencyQbs": 18,
   "fullMedicalReviewDateUnchanged": true,
-  "all272GamesAndInternationalMetadataPreserved": true
+  "all272GamesAndInternationalMetadataPreserved": true,
+  "designationPhase": "in_game",
+  "publicLabel": "Official Week 7 in-game status: OUT (remainder of this game)",
+  "statusScope": "remainder_of_game"
 }

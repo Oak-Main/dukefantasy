@@ -1,0 +1,16 @@
+{
+  "acceptance": "PASS",
+  "gameIdentity": {
+    "id": "401873009",
+    "week": 7,
+    "awaySlug": "dallas-cowboys",
+    "homeSlug": "philadelphia-eagles",
+    "kickoffUtc": "2026-10-27T00:15:00.000Z"
+  },
+  "phase": "in_game",
+  "statusScope": "remainder_of_game",
+  "sourceIdentityPhaseAndScopeBindingsValidated": 3,
+  "changedFacts": 1,
+  "oldRecordsAndFullModuleDatesUnchanged": true,
+  "recordedAt": "2026-10-27T01:27:17.327Z"
+}

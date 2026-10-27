@@ -236,6 +236,19 @@ test("official OUT designation replaces a prior questionable likelihood badge", 
   assert.doesNotMatch(text, /QUESTIONABLE/);
 });
 
+test("in-game OUT ruling renders separately from an injury-report designation", async () => {
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const row = [...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/g)].map(match => match[0]).find(row => row.includes("Britain Covey"));
+  assert.ok(row, "Covey's dated in-game watch record renders");
+  const text = row.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
+  assert.match(text, /Official Week 7 in-game status: OUT \(remainder of this game\)/);
+  assert.match(text, /2026-10-26/);
+  assert.match(text, /knee injury/);
+  assert.doesNotMatch(text, /Official Week 7 designation: OUT/);
+});
+
 test("dated reserve verification advances the latest observation while retaining the comprehensive review date", async () => {
   const editorial = JSON.parse(readFileSync(new URL("../data/content-refresh/current-editorial.json", import.meta.url), "utf8"));
   const injury = JSON.parse(readFileSync(new URL("../data/injury-research/current.json", import.meta.url), "utf8"));
