@@ -46,6 +46,8 @@ test("server-renders the finished home utility", async () => {
   }
   assert.match(html, /32/);
   assert.match(html, /NFL teams/);
+  assert.match(html, /Current decision boards are not published/);
+  assert.doesNotMatch(html, /Researched null|transactions in the October 14–20 window/);
   assert.match(html, /Clean Mode/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });

@@ -7024,10 +7024,10 @@
     "asOf": "2026-10-20",
     "entries": []
   },
-  "generatedAt": "2026-10-28T20:34:19Z",
+  "generatedAt": "2026-10-28T21:02:11.058956Z",
   "sourceAsOf": "2026-10-28",
-  "fetchedAt": "2026-10-28T20:34:19Z",
-  "verification": "Core schedule/results/standings reviewed at 2026-10-28T20:34:19Z. All 107 season finals and 32 recalculated W/L/T/PF/PA rows retained; all 14 Week 7 finals and 14 Week 8 fixtures plus four byes corroborated with NFL and ESPN. Week 8 kickoff instants include the November 1 DST change. Other modules retain their own source dates; later schedules remain single-source planning data.",
-  "compiledAt": "2026-10-28T20:46:07.029980Z",
+  "fetchedAt": "2026-10-28T21:02:11.058956Z",
+  "verification": "Core schedule/results/standings reviewed at 2026-10-28T21:02:11.058956Z. All 107 season finals and 32 recalculated W/L/T/PF/PA rows retained; all 14 Week 7 finals and 14 Week 8 fixtures plus four byes corroborated with NFL and ESPN. Week 8 kickoff instants include the November 1 DST change. Other modules retain their own source dates; later schedules remain single-source planning data.",
+  "compiledAt": "2026-10-28T21:02:11.058956Z",
   "collectedOn": "2026-10-28"
 }

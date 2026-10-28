@@ -34,7 +34,7 @@ export function materializeVerifiedSnapshot(root) {
     if (!report.complete || !Array.isArray(report.players) || new Set(report.players.map(player => player.name)).size !== report.players.length || report.players.some(player => !player.name || !["inactive", "emergency_qb"].includes(player.designation))) throw new Error("Inactive lists must be complete, unique and distinguish emergency quarterbacks");
     if (!Array.isArray(report.sources) || new Set(report.sources.map(publisher)).size < 2) throw new Error("Inactive lists require two HTTPS publisher families");
     const published = Date.parse(report.publishedAt), checked = Date.parse(report.checkedAt);
-    if (!Number.isFinite(published) || !Number.isFinite(checked) || published > checked || checked > Date.now() || published < Date.parse(game.kickoffUtc) - 2 * 3_600_000) throw new Error("Inactive lists require actual game-day publication and retrieval times");
+    if (!Number.isFinite(published) || !Number.isFinite(checked) || published > checked || checked > Date.now() || published > Date.parse(game.kickoffUtc) || published < Date.parse(game.kickoffUtc) - 2 * 3_600_000) throw new Error("Inactive lists require actual pre-kickoff publication and retrieval times");
   }
   if (snapshot.teams.length !== 32 || snapshot.schedule.length !== 272 || new Set(snapshot.schedule.map(g => g.id)).size !== 272) {
     throw new Error("Incomplete verified NFL snapshot; keeping the previous generated file");

@@ -1,6 +1,6 @@
 "use client";
 
-import { byeTeams, fantasyResearchAsOf, refreshWeek, transactions } from "@/lib/content-refresh";
+import { byeTeams, fantasyResearchAsOf, refreshWeek, transactions, transactionCoverage } from "@/lib/content-refresh";
 import { featuredGame, weekGames, type HomepageData } from "@/lib/homepage";
 import { FinalsStrip } from "./finals-strip";
 import { MarqueeGame } from "./marquee-game";
@@ -78,14 +78,14 @@ export function BroadcastHomepage({
         />
         <section className="apex-lane research-card" aria-labelledby="weekly-desk-title">
           <h2 id="weekly-desk-title">Week {refreshWeek} Fantasy Desk</h2>
-          <p>Early half-PPR redraft edition · Researched {fantasyResearchAsOf}. Conditional waiver candidates, lineup tiers, rookie usage and trade notes.</p>
-          <a href="/fantasy-desk">Open the decision boards →</a>
+          {fantasyResearchAsOf ? <p>Half-PPR redraft research · Source date {fantasyResearchAsOf}. Check each board's week and availability.</p> : <p>Current decision boards are not published. Prior fantasy research remains archived; no current ownership or complete usage feed is available.</p>}
+          <a href="/fantasy-desk">Review fantasy coverage & status →</a>
           <p>Byes: {byeTeams.map(slug => data.teams.find(team => team.slug === slug)?.name ?? slug).join(", ")}</p>
         </section>
       </div>
       <section className="research-card-grid" aria-label="Verified NFL research">
         <article className="research-card"><h2>NFL results & season leaders</h2><p>{data.games.filter(game => game.status === "final").length} completed games, 32 standings and the published yardage leaders. Each module retains its own source date.</p><a href="/scores">NFL scores →</a> <a href="/stats">Season leaders →</a></article>
-        <article className="research-card"><h2>Verified roster moves</h2><p>{transactions.length} corroborated transactions in the October 14–20 window.</p><a href="/transactions">Read the transaction wire →</a></article>
+        <article className="research-card"><h2>Verified roster moves</h2><p>{transactions.length} dated announcements. {transactionCoverage}</p><a href="/transactions">Read the transaction wire →</a></article>
       </section>
       <GamedayLane stadium={stadium} team={stadiumTeam} />
       <p className="apex-data-note">

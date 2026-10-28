@@ -8,6 +8,7 @@ export function TransactionsPage({ teamSlug }: { teamSlug?: string }) {
   const rows = transactions.filter(row => !teamSlug || row.from_team_slug === teamSlug || row.to_team_slug === teamSlug);
   return <div className="db-page">
     <DataBoardHero eyebrow={`Roster wire · As of ${moduleSources.transactions.sourceAsOf}`} title="NFL transactions, on the record." description={transactionCoverage} />
+    <p className="apex-container apex-data-note">Last complete wire review: {moduleSources.transactions.sourceAsOf}. The five October 27–28 additions are targeted observations, not a renewed complete review.</p>
     <section className="apex-container db-section" aria-label="Verified NFL transactions">
       <p className="apex-data-note">{rows.length} corroborated moves · October 14–28, 2026 (targeted updates; each move retains its date) · <a href="/data-sources">Coverage & source dates</a></p>
       {rows.length ? <div className="research-card-grid">{rows.map(row => <article className="research-card" key={`${row.date}-${row.player}-${row.transaction_type}`}>
@@ -41,7 +42,7 @@ export function ContentSourcesPage() {
         <p>Source as of {row.sourceAsOf ? <time dateTime={row.sourceAsOf}>{row.sourceAsOf}</time> : "Not published"}<br />{row.fetchedAt ? `Fetched ${row.fetchedAt}` : "Precise fetch time not recorded"}<br />{row.compiledAt ? `Package compiled ${row.compiledAt}` : "No published package"}</p>
       </article>)}</div>
       <h2>Verification standard</h2><p>{verificationPolicy}</p>
-      <EvidenceLinks urls={["https://www.nfl.com/schedules/2026/by-week/week-7", "https://www.espn.com/nfl/scoreboard/_/week/7/year/2026/seasontype/2", "https://www.cbssports.com/nfl/injuries/"]} />
+      <EvidenceLinks urls={["https://www.nfl.com/schedules/2026/by-week/week-7", "https://www.espn.com/nfl/scoreboard/_/week/7/year/2026/seasontype/2", "https://www.nfl.com/schedules/2026/reg8/", "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100", "https://www.cbssports.com/nfl/injuries/"]} />
       <h2>Coverage limits</h2><ul>{refreshLimitations.map(note => <li key={note}>{note}</li>)}</ul>
       <h2>Prior editions</h2><p><a href="/scores?week=7">Week 7 final scores</a> · <a href="https://github.com/Oak-Main/dukefantasy/blob/main/data/fantasy-desk/archive/2026-10-20.json">October 20 fantasy research archive</a> · <a href="https://github.com/Oak-Main/dukefantasy/blob/main/data/injury-research/archive/week7-through-2026-10-26.json">Week 7 injury research archive</a>. Historical evidence is not current availability advice.</p>
     </section>

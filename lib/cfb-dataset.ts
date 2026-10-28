@@ -124,7 +124,7 @@ export const games: Game[] = (nfl.schedule as Array<Record<string, unknown>>).ma
   neutralSite: g.neutral_site === true,
   modelHomeWinProbability: 0.5,
   modelUncertainty: 0,
-  provenance: { ...provenance, verificationStatus: (g.week as number) <= 8 ? "corroborated" : "single_source" },
+  provenance: { ...provenance, providerRecordId: String(g.id), verificationStatus: (g.week as number) <= 8 ? "corroborated" : "single_source", ...((g.week as number) === 8 ? { sourceUrl: "https://www.nfl.com/schedules/2026/reg8/", sourceDocumentId: `data/content-refresh/2026-10-28/review.json#week8GameEvidence/${g.id}` } : {}) },
 }));
 
 export function getGame(id: string): Game | undefined {

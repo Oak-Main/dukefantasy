@@ -11,6 +11,8 @@ const injury = read("data/injury-research/current.json");
 const fantasy = read("data/fantasy-desk/current.json");
 const editorial = read("data/content-refresh/current-editorial.json");
 const evidence = read("data/content-refresh/2026-10-28/review.json");
+const injurySources = read("data/content-refresh/2026-10-28/injury-source-extracts.json");
+assert.equal(evidence.baseCommit, "74a37f67a793e1d6e57b6609b08e69d5b8922609", "The preservation baseline is the independently inspected revision, not an editable convenience ref");
 const old = path => JSON.parse(execFileSync("git", ["show", `${evidence.baseCommit}:${path}`], { encoding: "utf8", maxBuffer: 12_000_000 }));
 const baseline = old(`data/content-refresh/${old("data/content-refresh/current.json").snapshot}`);
 
@@ -30,6 +32,14 @@ assert.equal(snapshot.schedule.filter(game => game.status === "final").length, 1
 assert.equal(snapshot.schedule.filter(game => game.week === 7 && game.status === "final").length, 14);
 const next = snapshot.schedule.filter(game => game.week === 8);
 assert.equal(next.length, 14);
+assert.equal(Object.keys(evidence.week8GameEvidence).length, 14);
+for (const game of next) {
+  const proof = evidence.week8GameEvidence[game.id];
+  assert.equal(proof.eventId, game.id); assert.equal(proof.officialWeek, game.week);
+  assert.equal(proof.away, game.awaySlug); assert.equal(proof.home, game.homeSlug);
+  assert.equal(proof.kickoffUtc, game.kickoffUtc); assert.equal(proof.primaryUSNetwork, game.broadcast);
+  assert.ok(new Set(proof.sources.map(source => publisher(source.url))).size >= 2);
+}
 assert.ok(next.every(game => game.status === "scheduled" && game.awayScore == null && game.homeScore == null));
 const playing = next.flatMap(game => [game.awaySlug, game.homeSlug]);
 assert.equal(new Set(playing).size, 28);
@@ -68,6 +78,14 @@ for (const row of injury.watch) {
   assert.equal(row.practice.thu, null); assert.equal(row.practice.fri, null); assert.equal(row.practice.sat, null);
   if (row.team_slug === "green-bay-packers") assert.equal(row.practice.wed, null);
   if (row.published_status) assert.equal(row.designation_week, 8);
+  // The club hostname is not the subject: each official report includes BOTH
+  // matchup teams. Compare the actual named-player cells, not URL counts.
+  for (const source of injurySources.sources) {
+    const table = source.tables.find(table => table.team_slug === row.team_slug && table.week === 8);
+    const observed = table?.rows.find(player => player.player === row.player);
+    assert.ok(observed, `${source.url}: must actually report ${row.player} for ${row.team_slug}`);
+    for (const day of ["mon", "tue", "wed"]) assert.equal(row.practice[day], ["DNP", "LP", "FP"].includes(observed[day]) ? observed[day] : null);
+  }
 }
 assert.equal(injury.watch.find(row => row.player === "Matthew Golden").published_status, "QUESTIONABLE");
 assert.equal(injury.watch.find(row => row.player === "Aaron Banks").published_status, null);

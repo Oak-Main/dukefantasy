@@ -15,6 +15,7 @@
  */
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/nfl";
@@ -23,12 +24,28 @@ const MONTHS = ["January", "February", "March", "April", "May", "June", "July", 
 
 const source = readFileSync(`${root}lib/nfl-generated.ts`, "utf8");
 const snapshot = JSON.parse(source.slice(source.indexOf("export default ") + "export default ".length).replace(/;\s*$/, ""));
+const evidenceFlag = process.argv.indexOf("--evidence");
+const evidence = evidenceFlag < 0 ? null : JSON.parse(readFileSync(process.argv[evidenceFlag + 1], "utf8"));
+const pinned = new Map();
+if (evidence) {
+  if (evidence.version !== 1 || evidence.cutoffUtc !== snapshot.fetchedAt || !Number.isFinite(Date.parse(evidence.cutoffUtc)) || Date.parse(evidence.cutoffUtc) > Date.now() || evidence.responses?.length !== 19) throw new Error("Pinned evidence requires the exact snapshot cutoff and 19 complete source responses");
+  for (const row of evidence.responses) {
+    const expectedDigest = createHash("sha256").update(JSON.stringify(row.document)).digest("hex");
+    if (pinned.has(row.url) || !/^https:\/\/site\.(api|web\.api)\.espn\.com\//.test(row.url) || expectedDigest !== row.documentSha256 || !/^[a-f0-9]{64}$/.test(row.rawSha256) || !Number.isFinite(Date.parse(row.checkedAt)) || Date.parse(row.checkedAt) > Date.parse(evidence.cutoffUtc)) throw new Error("Invalid, duplicate or mismatched pinned ESPN response");
+    pinned.set(row.url, row.document);
+  }
+  console.log(`PINNED ESPN extraction at ${evidence.cutoffUtc}; historical reproducibility only. A fresh live comparison remains mandatory before deployment.`);
+}
 
 const failures = [];
 const fail = (message) => failures.push(message);
 const teamSlug = (name) => name.toLowerCase().replace(/[^a-z0-9 ]/g, "").trim().replaceAll(" ", "-");
 
 async function getJson(url) {
+  if (evidence) {
+    if (!pinned.has(url)) throw new Error(`Pinned evidence lacks ${url}; no silent network fallback`);
+    return pinned.get(url);
+  }
   const res = await fetch(url, { headers: { accept: "application/json" }, signal: AbortSignal.timeout(20_000) });
   if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
   return res.json();

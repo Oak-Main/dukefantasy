@@ -38,7 +38,7 @@ test("partial or duplicate schedule inputs preserve the prior generated output",
   withCandidate(edit => edit(`data/content-refresh/${manifest.snapshot}`, doc => { doc.schedule[1] = doc.schedule[0]; }));
 });
 test("incomplete or misidentified inactive lists cannot publish", () => {
-  for (const patch of [{ complete: false }, { week: 8 }, { sources: [] }]) {
+  for (const patch of [{ complete: false }, { week: 8 }, { sources: [] }, { publishedAt: "2026-10-23T00:16:00Z", checkedAt: "2026-10-23T00:16:01Z" }]) {
     withCandidate(edit => edit("data/content-refresh/current-editorial.json", doc => Object.assign(doc.inactives[0], patch)));
   }
 });

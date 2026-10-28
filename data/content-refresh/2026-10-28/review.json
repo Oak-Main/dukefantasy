@@ -1,7 +1,7 @@
 {
   "baseCommit": "74a37f67a793e1d6e57b6609b08e69d5b8922609",
   "week": 8,
-  "cutoffUtc": "2026-10-28T20:34:19Z",
+  "cutoffUtc": "2026-10-28T21:02:11.058956Z",
   "completedWeek": 7,
   "expected": {
     "seasonGames": 272,
@@ -1750,9 +1750,123 @@
       "checkedAt": "2026-10-28T20:33:38.296735+00:00",
       "bytes": 470062,
       "sha256": "bfc04008f710b617ed67563cb85976cb661c2476e1720af552600db9c59588fa"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+      "checkedAt": "2026-10-28T21:02:00.526396Z",
+      "rawSha256": "3d340a8eca43f9d3014849fe9ad9d4e3930826a5f7e53a7ebcfa2cb041d35bde",
+      "documentSha256": "ceb80ef096decf40d8a6a38893c85cc2df6db0241a55688892cfbe623cb1c6e9"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+      "checkedAt": "2026-10-28T21:02:00.485500Z",
+      "rawSha256": "630f989c2d0a47cd0c1eb8253bd9ef7efdbb160c95be947a066670cf0f83f853",
+      "documentSha256": "c6086f09378d4d9a6a23565f7b37e70ad2e6d3db511c3afed7a7adc6dfb9b7e9"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+      "checkedAt": "2026-10-28T21:02:00.509513Z",
+      "rawSha256": "551f7a10e8a44166fae7dd3a7dce2cc5d24b4401772eeffeb309c2cb11bea02e",
+      "documentSha256": "d9049e8f2145f584786ff605b79d44410160cbc19bdc2970b7cc26195bed7c09"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+      "checkedAt": "2026-10-28T21:02:00.437530Z",
+      "rawSha256": "975f223a293c8690f1a917ba2197c05944efa02d499fb5619c4ad287d861f0bf",
+      "documentSha256": "a9003f5902f864193fab94155006dda7d00521faea6cb92a6644004afe4120f6"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "checkedAt": "2026-10-28T21:02:00.477329Z",
+      "rawSha256": "d3aa717822c7055a949302ca798bfdaf3220169b8885df076059bc3d140b7b89",
+      "documentSha256": "bc262a4a6824a4cbf7c05fc93b6995fd5281ab18a99e945b33e745746a5a9a0b"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+      "checkedAt": "2026-10-28T21:02:00.443759Z",
+      "rawSha256": "90430edd5f0fb73213334a5ebbd0fa790867c052321d8892cf3a999acb6ed4fa",
+      "documentSha256": "d14a2cb92ada3be44e39cbcb605493350ef7d2753cfad602c732271b66f3a8de"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+      "checkedAt": "2026-10-28T21:02:03.770746Z",
+      "rawSha256": "7bc47807263be72b7eaa75dcdfad60ca0dd631be6fff1b84fe5e31a4f0b54694",
+      "documentSha256": "aa32aea586082754137d86d057a140a5fb7a4f56899c0e313d4bb1f31a5c8380"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+      "checkedAt": "2026-10-28T21:02:03.778955Z",
+      "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+      "documentSha256": "d17ed872c6fc396caa01beeae7fb432b1c0576579959a4c91ce269993009d25a"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+      "checkedAt": "2026-10-28T21:02:03.874932Z",
+      "rawSha256": "7dfeac0a2459e9e84a87180259b445896761248ffae268582bbbe84f6b272c3f",
+      "documentSha256": "0651b75eede711c0650363c95838869c40cf413cd459ee0443f27326598af13c"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+      "checkedAt": "2026-10-28T21:02:03.832972Z",
+      "rawSha256": "e419217dc9a8c0e644574f344d8c0a4c088fb6ee07d68dc694d49dee6fffe693",
+      "documentSha256": "bc934423f42290bb2b62f5f81fdeea431e1ee72f15bbd65afcd434ab5acca59b"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+      "checkedAt": "2026-10-28T21:02:03.841019Z",
+      "rawSha256": "1a31d42ee3827fd3d265d725bff98475699ce7ef6253248ad5efd3dd3836d076",
+      "documentSha256": "17f0353aba4650c3eb54fdf3dc8ff3e8707be204fd31b7df7d61cf2cc4534a85"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
+      "checkedAt": "2026-10-28T21:02:03.821574Z",
+      "rawSha256": "2351e164ea1c251b841dc23992fc7d9a42204b6ccad8605cf348e38ac7fd940f",
+      "documentSha256": "50eb3b61337c75722ce4cf8415c0190b8481009cecca7ce5d1160fe1cacba9fc"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=13&limit=100",
+      "checkedAt": "2026-10-28T21:02:06.540127Z",
+      "rawSha256": "7fbdd94447554b405065866877589da5429a33f9ab8432553308ed72aad55fda",
+      "documentSha256": "a6200b455a0899755e851454e53a3a1923fd9f20b2a4f4b2cfce4338c4a37bd7"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=14&limit=100",
+      "checkedAt": "2026-10-28T21:02:06.548907Z",
+      "rawSha256": "f14ecaf774d76970ffabeb56fecef46599ed37159e31dcf8ace571a5fee95a3b",
+      "documentSha256": "3896c6e0b2277335c5a42cdd62bc01244f91c844ed60a0c4119d0c6ac50ff981"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=15&limit=100",
+      "checkedAt": "2026-10-28T21:02:06.542051Z",
+      "rawSha256": "ef569c2e9eb455467844cb2f4666f1f6bc8ce6ce8a5ee91790a72eb6f63c98d8",
+      "documentSha256": "a6d75192fd9219e089d101868792691a33c95978d3c365b2fc5d9a21dd4e0c04"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=16&limit=100",
+      "checkedAt": "2026-10-28T21:02:06.524445Z",
+      "rawSha256": "90c60bf3ee32de7e4172d20fddc5363a62647fabec355c86cff5c742c574c744",
+      "documentSha256": "aedbbc371958041ae1b7e33b1f6d1ec87d979f282f26ef1829bb2101f2f4aafa"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=17&limit=100",
+      "checkedAt": "2026-10-28T21:02:06.543595Z",
+      "rawSha256": "965b40d1c06bf1d2b47e4e626c837e16c18bf62ecb57351c4b5af046195fe18a",
+      "documentSha256": "9d7632703c3879cf4949ecb561d7015a7bb718bb2eeb3867dfd4406aea8fc0c6"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=18&limit=100",
+      "checkedAt": "2026-10-28T21:02:06.502279Z",
+      "rawSha256": "43ec42c06f1e9b77c2a459fcf6a11625f3ec6f7fb7a7ece4827f8e1cf0f77c0c",
+      "documentSha256": "2e6255d4f71c7020024c69e13db1b70118eef92ec82dbd279ee48dc57bbfc088"
+    },
+    {
+      "url": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+      "checkedAt": "2026-10-28T21:02:11.057522Z",
+      "rawSha256": "497674752f41850a4ee680b07a8dd7530d221a32407b8e6c4b87ba21c939ae3c",
+      "documentSha256": "f892811f2d7f17046f3923cf1ca59318aa009e0844f57fca23708094b04b0f5d"
     }
   ],
-  "compiledAt": "2026-10-28T20:46:07.029980Z",
+  "compiledAt": "2026-10-28T21:02:11.058956Z",
   "officialStandingsCompared": 32,
   "officialStandingsDiscrepancies": 0,
   "coreSourceRefs": {
@@ -1764,5 +1878,330 @@
   "attachments": {
     "report_sha256": "83584bc1eccd494fab8440411c7b9becb58e7fac7ccf902032b59231a7f3af8c",
     "zip_sha256": "51b504699ddfd60cd3dc757e9bd5227268d2f07b8782260e91b7b98d94e9656f"
+  },
+  "reproducibleEspnEvidence": "2026-10-28/espn-verification.json",
+  "week8GameEvidence": {
+    "401873023": {
+      "eventId": "401873023",
+      "officialWeek": 8,
+      "away": "carolina-panthers",
+      "home": "green-bay-packers",
+      "kickoffUtc": "2026-10-30T00:15Z",
+      "primaryUSNetwork": "Prime Video",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "CAR at GB"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873023"
+        }
+      ]
+    },
+    "401873024": {
+      "eventId": "401873024",
+      "officialWeek": 8,
+      "away": "arizona-cardinals",
+      "home": "dallas-cowboys",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "ARI at DAL"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873024"
+        }
+      ]
+    },
+    "401873025": {
+      "eventId": "401873025",
+      "officialWeek": 8,
+      "away": "atlanta-falcons",
+      "home": "tampa-bay-buccaneers",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "ATL at TB"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873025"
+        }
+      ]
+    },
+    "401873026": {
+      "eventId": "401873026",
+      "officialWeek": 8,
+      "away": "baltimore-ravens",
+      "home": "buffalo-bills",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "BAL at BUF"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873026"
+        }
+      ]
+    },
+    "401873027": {
+      "eventId": "401873027",
+      "officialWeek": 8,
+      "away": "cleveland-browns",
+      "home": "pittsburgh-steelers",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "CLE at PIT"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873027"
+        }
+      ]
+    },
+    "401873028": {
+      "eventId": "401873028",
+      "officialWeek": 8,
+      "away": "indianapolis-colts",
+      "home": "jacksonville-jaguars",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "IND at JAX"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873028"
+        }
+      ]
+    },
+    "401873029": {
+      "eventId": "401873029",
+      "officialWeek": 8,
+      "away": "las-vegas-raiders",
+      "home": "new-york-jets",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "LV at NYJ"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873029"
+        }
+      ]
+    },
+    "401873030": {
+      "eventId": "401873030",
+      "officialWeek": 8,
+      "away": "minnesota-vikings",
+      "home": "detroit-lions",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "MIN at DET"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873030"
+        }
+      ]
+    },
+    "401873031": {
+      "eventId": "401873031",
+      "officialWeek": 8,
+      "away": "tennessee-titans",
+      "home": "cincinnati-bengals",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "TEN at CIN"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873031"
+        }
+      ]
+    },
+    "401873032": {
+      "eventId": "401873032",
+      "officialWeek": 8,
+      "away": "los-angeles-chargers",
+      "home": "los-angeles-rams",
+      "kickoffUtc": "2026-11-01T21:05Z",
+      "primaryUSNetwork": "FOX",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "LAC at LAR"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873032"
+        }
+      ]
+    },
+    "401873033": {
+      "eventId": "401873033",
+      "officialWeek": 8,
+      "away": "kansas-city-chiefs",
+      "home": "denver-broncos",
+      "kickoffUtc": "2026-11-01T21:25Z",
+      "primaryUSNetwork": "CBS",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "KC at DEN"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873033"
+        }
+      ]
+    },
+    "401873034": {
+      "eventId": "401873034",
+      "officialWeek": 8,
+      "away": "new-england-patriots",
+      "home": "miami-dolphins",
+      "kickoffUtc": "2026-11-01T21:25Z",
+      "primaryUSNetwork": "CBS",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "NE at MIA"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873034"
+        }
+      ]
+    },
+    "401873035": {
+      "eventId": "401873035",
+      "officialWeek": 8,
+      "away": "philadelphia-eagles",
+      "home": "washington-commanders",
+      "kickoffUtc": "2026-11-02T01:20Z",
+      "primaryUSNetwork": "NBC",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "PHI at WSH"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873035"
+        }
+      ]
+    },
+    "401873036": {
+      "eventId": "401873036",
+      "officialWeek": 8,
+      "away": "chicago-bears",
+      "home": "seattle-seahawks",
+      "kickoffUtc": "2026-11-03T01:15Z",
+      "primaryUSNetwork": "ESPN",
+      "status": "scheduled",
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/reg8/",
+          "checkedAt": "2026-10-28T20:32:54.304678+00:00",
+          "rawSha256": "82acbe43c376828ecdcf453becfac496b16b41b6735bde470205d41ee3f99e32",
+          "record": "CHI at SEA"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-10-28T21:02:03.778955Z",
+          "rawSha256": "47a8a53ddbc01dfbee329e40a27b41432b17f4ad8dcd1f4d064f517f67df8f77",
+          "record": "401873036"
+        }
+      ]
+    }
   }
 }

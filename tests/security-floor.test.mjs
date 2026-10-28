@@ -26,6 +26,6 @@ for (const name of ["react", "react-dom"]) test(`security floor inspects nested 
   const result = run(); assert.equal(result.status, 1); assert.match(result.stderr, new RegExp(`${name}@19\\.2\\.8`));
 }));
 test("security traversal terminates on a linked dependency cycle", () => withTree(({ modules, put, run }) => {
-  const parent = put(modules, "parent", "1.0.0"); symlinkSync(modules, join(parent, "node_modules"), "dir");
+  const parent = put(modules, "parent", "1.0.0"); symlinkSync(modules, join(parent, "node_modules"), process.platform === "win32" ? "junction" : "dir");
   const result = run(); assert.equal(result.status, 0, result.stderr); assert.match(result.stdout, /Security floor: PASS/);
 }));
