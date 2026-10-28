@@ -18,10 +18,21 @@ export function materializeVerifiedSnapshot(root) {
   for (const row of [...injuryResearch.ledger, ...injuryResearch.watch, ...(editorial.reserveStatuses ?? []), ...(editorial.practiceReports ?? []), ...(editorial.transactions?.moves ?? []), ...(editorial.statLeaders ?? [])]) {
     if (!Array.isArray(row.sources) || new Set(row.sources.map(publisher)).size < 2) throw new Error("Published records require two HTTPS publisher families");
   }
+  const cutoff = manifest.cutoffUtc == null ? null : Date.parse(manifest.cutoffUtc);
+  if (cutoff != null && (typeof manifest.cutoffUtc !== "string" || !isCalendarDate(manifest.cutoffUtc.slice(0, 10)) || !Number.isFinite(cutoff) || cutoff > Date.now())) throw new Error("Release cutoff must be a real nonfuture timestamp");
+  const checkedTimestamp = (value, day) => {
+    if (typeof value !== "string" || !isCalendarDate(value.slice(0, 10)) || !Number.isFinite(Date.parse(value)) || Date.parse(value) > Date.now() || (cutoff != null && Date.parse(value) > cutoff)) throw new Error("Observation timestamp exceeds the release cutoff or is invalid");
+    if (day && new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(value)) < day) throw new Error("Observation timestamp precedes the reported date");
+  };
   const todayEastern = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
   const releaseDay = manifest.cutoffUtc
     ? new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(manifest.cutoffUtc))
     : manifest.sourceAsOf;
+  for (const row of editorial.transactions?.moves ?? []) {
+    if (!isCalendarDate(row.date) || row.date > todayEastern || row.date > manifest.sourceAsOf || row.date > releaseDay) throw new Error("Transaction dates must be real, nonfuture and within the release cutoff");
+  }
+  for (const row of editorial.reserveStatuses ?? []) if (row.checkedAt != null) checkedTimestamp(row.checkedAt, row.asOf);
+  for (const row of injuryResearch.watch) if (row.observed_at != null) checkedTimestamp(row.observed_at, row.designation_date);
   for (const row of editorial.practiceReports ?? []) {
     if (!isCalendarDate(row.date) || row.date > todayEastern || row.date > manifest.sourceAsOf || row.date > releaseDay || !Number.isInteger(row.week) || row.week < 1 || row.week > snapshot.season.currentWeek) throw new Error("Practice observations require real nonfuture dates within the release cutoff and official report week");
     const game = snapshot.schedule.find(game => game.week === row.week && [game.awaySlug, game.homeSlug].includes(row.team_slug));
@@ -30,7 +41,7 @@ export function materializeVerifiedSnapshot(root) {
     // Historical reports retain their own week. An official game report window
     // spans the six preceding calendar days through that team's Eastern game day.
     if (!game || daysBeforeGame < 0 || daysBeforeGame > 6) throw new Error("Practice observation references the wrong team, date or official game week");
-    if (row.checkedAt != null && (typeof row.checkedAt !== "string" || !isCalendarDate(row.checkedAt.slice(0, 10)) || !Number.isFinite(Date.parse(row.checkedAt)) || new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(row.checkedAt)) < row.date || Date.parse(row.checkedAt) > Date.now() || (manifest.cutoffUtc && Date.parse(row.checkedAt) > Date.parse(manifest.cutoffUtc)))) throw new Error("Practice retrieval timestamp exceeds the release cutoff");
+    if (row.checkedAt != null) checkedTimestamp(row.checkedAt, row.date);
   }
   for (const row of injuryResearch.watch) {
     validateDesignationPhase(row);

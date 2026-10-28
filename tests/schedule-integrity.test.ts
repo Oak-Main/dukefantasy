@@ -257,7 +257,9 @@ test("homepage slate is the whole NFL week (Thursday through Monday), not a Mon-
   assert.deepEqual(weekGames(games as unknown as BroadcastGame[], "not-a-date"), []);
 });
 
-test("score archives accept published week queries and reject malformed or absent weeks", () => {
+test("score queries accept stored archives and future planning weeks with unchanged provenance", () => {
   assert.equal(requestedScoreboardWeek(games, "2026-10-28", "7"), 7);
+  assert.equal(requestedScoreboardWeek(games, "2026-10-28", "9"), 9);
+  assert.equal(requestedScoreboardWeek(games, "2026-10-28", "18"), 18);
   for (const value of [undefined, "", "0", "19", "7.0", "7x", "-7", ["7", "8"]]) assert.equal(requestedScoreboardWeek(games, "2026-10-28", value), 8);
 });

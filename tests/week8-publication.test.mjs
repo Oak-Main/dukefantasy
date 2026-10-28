@@ -47,3 +47,11 @@ test("future, impossible, wrong-team or wrong-week practices fail atomically", (
   for (const patch of [{ date: "2099-01-01" }, { date: "2026-02-30" }, { week: 8 }, { week: 9 }, { team_slug: "not-an-nfl-team" }, { date: "2026-10-28" }, { checkedAt: "2099-01-01T00:00:00Z" }, { checkedAt: "2026-10-18T00:00:00Z" }, { checkedAt: "2026-02-30T00:00:00Z" }]) withCandidate(edit => edit("data/content-refresh/current-editorial.json", doc => Object.assign(doc.practiceReports[0], patch)));
   withCandidate(edit => edit("data/content-refresh/current.json", doc => { doc.cutoffUtc = "2026-10-18T23:00:00Z"; }));
 });
+
+test("transaction and observation timestamps cannot escape the recorded edition", () => {
+  for (const date of ["2099-01-01", "2026-02-30", "2026-10-29"]) withCandidate(edit => edit("data/content-refresh/current-editorial.json", doc => { doc.transactions.moves[0].date = date; }));
+  withCandidate(edit => edit("data/content-refresh/current.json", doc => { doc.cutoffUtc = "2099-01-01T00:00:00Z"; }));
+  withCandidate(edit => edit("data/content-refresh/current.json", doc => { doc.cutoffUtc = "2026-02-30T00:00:00Z"; }));
+  withCandidate(edit => edit("data/injury-research/current.json", doc => { doc.watch[0].observed_at = "2099-01-01T00:00:00Z"; }));
+  withCandidate(edit => edit("data/content-refresh/current-editorial.json", doc => { doc.reserveStatuses.at(-1).checkedAt = "2026-10-28T21:03:00Z"; }));
+});
