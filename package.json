@@ -16,6 +16,7 @@
     "build": "vinext build",
     "start": "vinext start",
     "typecheck": "tsc --noEmit",
+    "check:security-floor": "node scripts/check-security-floor.mjs",
     "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts tests/week7-evidence.test.mjs tests/week7-publication-dates.test.mjs tests/release-response.test.mjs",
     "test:integration": "node --test tests/rendered-html.test.mjs",
     "test:e2e": "node --test tests/rendered-html.test.mjs",
@@ -44,8 +45,8 @@
     "drizzle-orm": "0.45.2",
     "lucide-react": "^1.43.0",
     "next": "16.4.2",
-    "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react": "19.2.9",
+    "react-dom": "19.2.9"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
@@ -57,9 +58,9 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.2",
-    "@vitejs/plugin-rsc": "0.5.26",
+    "@vitejs/plugin-rsc": "0.5.38",
     "drizzle-kit": "0.31.10",
-    "react-server-dom-webpack": "19.2.8",
+    "react-server-dom-webpack": "19.2.9",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3",
     "vinext": "0.0.50",
