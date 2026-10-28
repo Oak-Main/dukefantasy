@@ -13,6 +13,7 @@ export function GET() {
     nflWeek: refreshWeek,
     build: buildIdentity,
     sourceCutoffUtc: manifest.cutoffUtc,
+    sourceCutoffs: manifest.sourceCutoffs,
     modules: contentSourceModules().map(({ id, sourceAsOf, fetchedAt, freshness }) => ({ id, sourceAsOf, fetchedAt, freshness })),
     timestamp: new Date().toISOString(),
   });

@@ -15,6 +15,7 @@ for (const path of routes) test(`Week 8 identity, content, accessibility and vis
   expect(identity.build.commit).toMatch(/^[a-f0-9]{40}$/);
   expect(identity.build.dirty).toBe(false);
   expect(identity.sourceCutoffUtc).toBe(manifest.cutoffUtc);
+  expect(identity.sourceCutoffs).toEqual(manifest.sourceCutoffs);
   const main = page.locator("main");
   await expect(main).toBeVisible();
   const text = await main.innerText();
@@ -24,17 +25,17 @@ for (const path of routes) test(`Week 8 identity, content, accessibility and vis
     expect(text).toMatch(/Current decision boards are not published/);
     expect(text).not.toMatch(/Researched null|Early half-PPR redraft edition|transactions in the October 14–20 window/);
   } else if (path === "/scores") {
-    await expect(page.getByLabel("Select scoreboard week", { exact: true })).toHaveValue("8");
+    await expect(page.getByRole("group", { name: "Select scoreboard week", exact: true }).getByRole("button", { name: "W8", exact: true })).toHaveAttribute("aria-pressed", "true");
     expect(text).toMatch(/Week 8\. 14 games shown/);
     await page.goto("/scores?week=7");
-    await expect(page.getByLabel("Select scoreboard week", { exact: true })).toHaveValue("7");
+    await expect(page.getByRole("group", { name: "Select scoreboard week", exact: true }).getByRole("button", { name: "W7", exact: true })).toHaveAttribute("aria-pressed", "true");
     expect(await main.innerText()).toMatch(/Week 7\. 14 games shown/);
     await page.goto(path);
   } else if (path === "/schedule") {
     const ids = await main.locator('a[href^="/games/"]').evaluateAll(links => [...new Set(links.map(link => link.getAttribute("href")))]);
     expect(ids).toHaveLength(272);
   } else if (path === "/watch") {
-    await expect(page.getByLabel("Select a broadcast week", { exact: true })).toHaveValue("8");
+    await expect(page.getByRole("group", { name: "Select a broadcast week", exact: true }).getByRole("button", { name: "Week 8", exact: true })).toHaveAttribute("aria-pressed", "true");
     expect(text).toMatch(/14/); expect(text).toMatch(/Carolina/); expect(text).toMatch(/Green Bay/);
   } else if (path === "/injuries") {
     expect(text).toMatch(/Week 8 Thursday watch/); expect(text).toMatch(/October 20/);

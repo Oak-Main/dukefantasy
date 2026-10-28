@@ -2203,5 +2203,11 @@
         }
       ]
     }
-  }
+  },
+  "sourceCutoffs": {
+    "coreDatasetUtc": "2026-10-28T21:02:11.058956Z",
+    "targetedInjuryUtc": "2026-10-28T20:34:19Z",
+    "completeInjuryReviewDate": "2026-10-20"
+  },
+  "digestScope": "documentSha256 verifies JSON.stringify(document), the retained extraction. Original raw-response fingerprints in capture metadata cannot be recomputed without raw bytes and are not integrity verification."
 }

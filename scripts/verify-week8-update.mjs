@@ -16,6 +16,11 @@ assert.equal(evidence.baseCommit, "74a37f67a793e1d6e57b6609b08e69d5b8922609", "T
 const old = path => JSON.parse(execFileSync("git", ["show", `${evidence.baseCommit}:${path}`], { encoding: "utf8", maxBuffer: 12_000_000 }));
 const baseline = old(`data/content-refresh/${old("data/content-refresh/current.json").snapshot}`);
 
+assert.equal(manifest.cutoffUtc, evidence.cutoffUtc);
+assert.equal(manifest.sourceCutoffs.coreDatasetUtc, manifest.cutoffUtc);
+assert.equal(manifest.sourceCutoffs.targetedInjuryUtc, injurySources.observedCutoffUtc);
+assert.equal(manifest.sourceCutoffs.completeInjuryReviewDate, injury.as_of);
+assert.deepEqual(manifest.sourceCutoffs, evidence.sourceCutoffs);
 validatePublicationDates({ injury, editorial }, manifest);
 assert.equal(snapshot.season.currentWeek, 8);
 assert.equal(editorial.week, 8);

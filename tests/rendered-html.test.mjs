@@ -1,25 +1,33 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
-import test from "node:test";
+import { readFileSync, readdirSync } from "node:fs";
+import test, { after } from "node:test";
+import { fileURLToPath } from "node:url";
+import { join } from "node:path";
+import { Miniflare, convertV4MiniflareOptions } from "miniflare";
 
-const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-const { default: worker } = await import(workerUrl.href);
+// Vinext 1.2 emits a native cloudflare:workers tracing import. Exercise the
+// built Worker in workerd rather than stubbing that production runtime API.
+const modulesRoot = fileURLToPath(new URL("../dist/server", import.meta.url));
+const files = readdirSync(modulesRoot, { recursive: true }).filter(path => path.endsWith(".js"));
+const runtime = new Miniflare(convertV4MiniflareOptions({
+  modulesRoot,
+  modules: ["index.js", ...files.filter(path => path !== "index.js")].map(path => ({ type: "ESModule", path: join(modulesRoot, path) })),
+  compatibilityDate: "2026-09-01",
+  compatibilityFlags: ["nodejs_compat"],
+  outboundService: async request => {
+    assert.equal(request.url, "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries");
+    return new Response("Deterministic upstream-unavailable fixture", { status: 503 });
+  },
+  serviceBindings: { ASSETS: async () => new Response("Not found", { status: 404 }) },
+}));
+after(() => runtime.dispose());
+const worker = { fetch: request => runtime.dispatchFetch(request.url, new Request(request, { redirect: "manual" })) };
 
 async function fetchRoute(path, init) {
-  return worker.fetch(
-    new Request(`http://localhost${path}`, {
-      headers: { accept: "text/html", ...(init?.headers ?? {}) },
-      ...init,
-    }),
-    {
-      ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
-  );
+  return worker.fetch(new Request(`http://localhost${path}`, {
+    ...init,
+    headers: { accept: "text/html", ...(init?.headers ?? {}) },
+  }));
 }
 
 test("server-renders the finished home utility", async () => {
@@ -105,7 +113,7 @@ test("critical product routes render dataset-backed content", async () => {
     ["/injuries", /LONG-TERM LEDGER/],
     ["/injuries", /GAME-TIME DECISIONS|week-to-week watch/i],
     ["/injuries", /Next scheduled check|Week 8 editorial review plan ended/],
-    ["/api/injuries", /"source": ?"ESPN NFL injuries feed"/],
+    ["/api/injuries", /"source": ?"ESPN NFL injuries feed \(build snapshot\)"/],
     ["/watch", /DUKE FANTASY BROADCAST DESK/],
     ["/watch", /televised games/],
     ["/watch", /TicketNetwork/],
@@ -207,7 +215,15 @@ test("spoofed admin-identity headers never reach the app (NF-1)", async () => {
 test("health and readiness endpoints disclose dataset state", async () => {
   const health = await fetchRoute("/api/health", { headers: { accept: "application/json" } });
   assert.equal(health.status, 200);
-  assert.equal((await health.json()).dataEnvironment, "dataset");
+  const healthData = await health.json();
+  assert.equal(healthData.dataEnvironment, "dataset");
+  const manifest = JSON.parse(readFileSync(new URL("../data/content-refresh/current.json", import.meta.url), "utf8"));
+  assert.deepEqual(healthData.sourceCutoffs, manifest.sourceCutoffs);
+  const injury = await (await fetchRoute("/api/injuries")).json();
+  assert.equal(injury.degraded, true);
+  assert.equal(injury.asOf, "2026-10-20");
+  assert.equal(injury.count, 0);
+  assert.deepEqual(injury.entries, []);
 
   const readiness = await fetchRoute("/api/readiness", { headers: { accept: "application/json" } });
   const data = await readiness.json();

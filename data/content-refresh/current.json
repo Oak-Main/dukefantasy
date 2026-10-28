@@ -5,5 +5,10 @@
   "snapshot": "2026-10-28/snapshot.json",
   "compiledAt": "2026-10-28T21:02:11.058956Z",
   "collectedOn": "2026-10-28",
-  "cutoffUtc": "2026-10-28T21:02:11.058956Z"
+  "cutoffUtc": "2026-10-28T21:02:11.058956Z",
+  "sourceCutoffs": {
+    "coreDatasetUtc": "2026-10-28T21:02:11.058956Z",
+    "targetedInjuryUtc": "2026-10-28T20:34:19Z",
+    "completeInjuryReviewDate": "2026-10-20"
+  }
 }
