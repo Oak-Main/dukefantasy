@@ -18,6 +18,20 @@ export function materializeVerifiedSnapshot(root) {
   for (const row of [...injuryResearch.ledger, ...injuryResearch.watch, ...(editorial.reserveStatuses ?? []), ...(editorial.practiceReports ?? []), ...(editorial.transactions?.moves ?? []), ...(editorial.statLeaders ?? [])]) {
     if (!Array.isArray(row.sources) || new Set(row.sources.map(publisher)).size < 2) throw new Error("Published records require two HTTPS publisher families");
   }
+  const todayEastern = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
+  const releaseDay = manifest.cutoffUtc
+    ? new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(manifest.cutoffUtc))
+    : manifest.sourceAsOf;
+  for (const row of editorial.practiceReports ?? []) {
+    if (!isCalendarDate(row.date) || row.date > todayEastern || row.date > manifest.sourceAsOf || row.date > releaseDay || !Number.isInteger(row.week) || row.week < 1 || row.week > snapshot.season.currentWeek) throw new Error("Practice observations require real nonfuture dates within the release cutoff and official report week");
+    const game = snapshot.schedule.find(game => game.week === row.week && [game.awaySlug, game.homeSlug].includes(row.team_slug));
+    const gameDay = game && new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(game.kickoffUtc));
+    const daysBeforeGame = gameDay && (Date.parse(gameDay) - Date.parse(row.date)) / 86_400_000;
+    // Historical reports retain their own week. An official game report window
+    // spans the six preceding calendar days through that team's Eastern game day.
+    if (!game || daysBeforeGame < 0 || daysBeforeGame > 6) throw new Error("Practice observation references the wrong team, date or official game week");
+    if (row.checkedAt != null && (typeof row.checkedAt !== "string" || !isCalendarDate(row.checkedAt.slice(0, 10)) || !Number.isFinite(Date.parse(row.checkedAt)) || new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(row.checkedAt)) < row.date || Date.parse(row.checkedAt) > Date.now() || (manifest.cutoffUtc && Date.parse(row.checkedAt) > Date.parse(manifest.cutoffUtc)))) throw new Error("Practice retrieval timestamp exceeds the release cutoff");
+  }
   for (const row of injuryResearch.watch) {
     validateDesignationPhase(row);
     if (row.designation_phase === "in_game") {

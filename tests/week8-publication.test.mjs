@@ -42,3 +42,8 @@ test("incomplete or misidentified inactive lists cannot publish", () => {
     withCandidate(edit => edit("data/content-refresh/current-editorial.json", doc => Object.assign(doc.inactives[0], patch)));
   }
 });
+
+test("future, impossible, wrong-team or wrong-week practices fail atomically", () => {
+  for (const patch of [{ date: "2099-01-01" }, { date: "2026-02-30" }, { week: 8 }, { week: 9 }, { team_slug: "not-an-nfl-team" }, { date: "2026-10-28" }, { checkedAt: "2099-01-01T00:00:00Z" }, { checkedAt: "2026-10-18T00:00:00Z" }, { checkedAt: "2026-02-30T00:00:00Z" }]) withCandidate(edit => edit("data/content-refresh/current-editorial.json", doc => Object.assign(doc.practiceReports[0], patch)));
+  withCandidate(edit => edit("data/content-refresh/current.json", doc => { doc.cutoffUtc = "2026-10-18T23:00:00Z"; }));
+});

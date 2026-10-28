@@ -35,3 +35,9 @@ export function gamesForWeek(source: readonly Game[], week: number) {
         a.id.localeCompare(b.id),
     );
 }
+
+/** Only a single published integer week can override the normal landing slate. */
+export function requestedScoreboardWeek(source: readonly Game[], asOf: string | null, value?: string | string[]) {
+  const week = typeof value === "string" && /^(?:[1-9]|1[0-8])$/.test(value) ? Number(value) : null;
+  return week != null && source.some(game => game.week === week) ? week : defaultScoreboardWeek(source, asOf);
+}

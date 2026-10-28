@@ -16,8 +16,9 @@ for (const path of routes) test(`Week 8 identity, content, accessibility and vis
   expect(identity.build.dirty).toBe(false);
   expect(identity.sourceCutoffUtc).toBe(manifest.cutoffUtc);
   expect(identity.sourceCutoffs).toEqual(manifest.sourceCutoffs);
-  const main = page.locator("main");
+  const main = page.locator("main#main-content");
   await expect(main).toBeVisible();
+  await expect(page.locator("main:visible")).toHaveCount(1);
   const text = await main.innerText();
   if (path === "/") {
     expect(text).toMatch(/Carolina/); expect(text).toMatch(/Green Bay/);
@@ -53,7 +54,7 @@ for (const path of routes) test(`Week 8 identity, content, accessibility and vis
     expect(text).toMatch(/not published/);
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(page.viewportSize()?.width ?? 0);
-  const axe = await new AxeBuilder({ page }).include("main").withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze();
+  const axe = await new AxeBuilder({ page }).include("#main-content").withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze();
   await info.attach("axe", { body: JSON.stringify({ violations: axe.violations, incomplete: axe.incomplete }), contentType: "application/json" });
   expect(axe.violations).toEqual([]);
   await page.screenshot({ path: info.outputPath("current-edition.png") });

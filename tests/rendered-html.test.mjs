@@ -315,3 +315,9 @@ test("a formal no-designation record retains practice history without inferring 
   assert.match(row, /inj-practice--(?:lp|dnp)/);
   assert.match(row, /inj-pill--none[^>]*>Not graded/);
 });
+
+test("Week 7 archive query renders Week 7 finals before hydration", async () => {
+  const html = (await (await fetchRoute("/scores?week=7")).text()).replaceAll("<!-- -->", "");
+  assert.match(html, /data-week="7" aria-pressed="true"/);
+  assert.match(html, /Week 7\. 14 games shown/);
+});
