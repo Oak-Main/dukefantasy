@@ -24,6 +24,19 @@ for (const path of routes) test(`Week 8 identity, content, accessibility and vis
     expect(text).toMatch(/Carolina/); expect(text).toMatch(/Green Bay/);
     expect(text).not.toMatch(/Week 7 complete/);
     expect(text).toMatch(/Current decision boards are not published/);
+    const fullNameFits = () => page.locator("#marquee-title").evaluate(heading => {
+      const range = document.createRange(); range.selectNodeContents(heading);
+      const box = heading.getBoundingClientRect();
+      return [...range.getClientRects()].every(rect => rect.left >= box.left - 1 && rect.right <= box.right + 1);
+    });
+    expect(await fullNameFits(), "Full marquee team names fit without clipped glyphs").toBe(true);
+    const viewport = page.viewportSize();
+    if (viewport && viewport.width === 390) {
+      await page.setViewportSize({ width: 320, height: viewport.height });
+      expect(await fullNameFits(), "Full marquee team names also fit at 320px").toBe(true);
+      await page.setViewportSize(viewport);
+    }
+
     expect(text).not.toMatch(/Researched null|Early half-PPR redraft edition|transactions in the October 14–20 window/);
   } else if (path === "/scores") {
     await expect(page.getByRole("group", { name: "Select scoreboard week", exact: true }).getByRole("button", { name: "W8", exact: true })).toHaveAttribute("aria-pressed", "true");
