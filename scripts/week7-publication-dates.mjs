@@ -6,6 +6,11 @@ export function isCalendarDate(value) {
   return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
 }
 
+/** Evidence timestamps require an explicit timezone and a real calendar day. */
+export function isEvidenceTimestamp(value) {
+  return typeof value === "string" && /^(\d{4}-\d{2}-\d{2})T(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d{1,9})?(?:Z|[+-](?:[01]\d|2[0-3]):[0-5]\d)$/.test(value) && isCalendarDate(value.slice(0, 10)) && Number.isFinite(Date.parse(value));
+}
+
 export function validateDesignationPhase(row) {
   if (row.designation_phase == null) return;
   if (!["injury_report", "in_game"].includes(row.designation_phase) || row.published_status == null || (row.designation_phase === "in_game" && row.published_status === "NO_DESIGNATION")) {
@@ -23,7 +28,7 @@ export function validatePublicationDates(after, manifest, now = new Date()) {
     throw new Error("Invalid or future release source date");
   }
   for (const row of after.editorial.reserveStatuses ?? []) {
-    if (row.asOf != null && (!isCalendarDate(row.asOf) || row.asOf > todayEastern || row.asOf > manifest.sourceAsOf || typeof row.checkedAt !== "string" || !Number.isFinite(Date.parse(row.checkedAt)) || Date.parse(row.checkedAt) > now.getTime())) {
+    if (row.asOf != null && (!isCalendarDate(row.asOf) || row.asOf > todayEastern || row.asOf > manifest.sourceAsOf || !isEvidenceTimestamp(row.checkedAt) || Date.parse(row.checkedAt) > now.getTime())) {
       throw new Error("Dated reserve status needs a real nonfuture verification date and retrieval timestamp");
     }
   }

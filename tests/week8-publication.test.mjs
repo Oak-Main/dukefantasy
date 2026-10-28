@@ -55,3 +55,16 @@ test("transaction and observation timestamps cannot escape the recorded edition"
   withCandidate(edit => edit("data/injury-research/current.json", doc => { doc.watch[0].observed_at = "2099-01-01T00:00:00Z"; }));
   withCandidate(edit => edit("data/content-refresh/current-editorial.json", doc => { doc.reserveStatuses.at(-1).checkedAt = "2026-10-28T21:03:00Z"; }));
 });
+
+test("timezone-less and impossible evidence timestamps fail consistently", () => {
+  for (const timestamp of ["2026-10-28T20:00:00", "2026-02-30T20:00:00Z", "2026-10-28", "2026-10-28T24:00:00Z"]) {
+    withCandidate(edit => edit("data/injury-research/current.json", doc => { doc.watch[0].observed_at = timestamp; }));
+    withCandidate(edit => edit("data/content-refresh/current-editorial.json", doc => { doc.inactives[0].checkedAt = timestamp; }));
+    withCandidate(edit => edit("data/content-refresh/current.json", doc => { doc.cutoffUtc = timestamp; }));
+  }
+});
+test("inactive retrieval and injury metadata cannot exceed their advertised cutoffs", () => {
+  withCandidate(edit => edit("data/content-refresh/current-editorial.json", doc => { doc.inactives[0].checkedAt = "2026-10-28T21:03:00Z"; }));
+  withCandidate(edit => edit("data/content-refresh/current.json", doc => { doc.sourceCutoffs.targetedInjuryUtc = "2099-01-01T00:00:00Z"; }));
+  withCandidate(edit => edit("data/content-refresh/current.json", doc => { doc.sourceCutoffs.targetedInjuryUtc = "2026-10-28T20:33:00Z"; }));
+});

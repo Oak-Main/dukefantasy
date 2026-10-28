@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { createHash } from "node:crypto";
-import { isCalendarDate, validateDesignationPhase, validatePublicationDates } from "./week7-publication-dates.mjs";
+import { isCalendarDate, isEvidenceTimestamp, validateDesignationPhase, validatePublicationDates } from "./week7-publication-dates.mjs";
 import { publisher } from "./week7-evidence.mjs";
 
 /** A release build must reproduce reviewed data, never silently replace it with
@@ -19,11 +19,16 @@ export function materializeVerifiedSnapshot(root) {
     if (!Array.isArray(row.sources) || new Set(row.sources.map(publisher)).size < 2) throw new Error("Published records require two HTTPS publisher families");
   }
   const cutoff = manifest.cutoffUtc == null ? null : Date.parse(manifest.cutoffUtc);
-  if (cutoff != null && (typeof manifest.cutoffUtc !== "string" || !isCalendarDate(manifest.cutoffUtc.slice(0, 10)) || !Number.isFinite(cutoff) || cutoff > Date.now())) throw new Error("Release cutoff must be a real nonfuture timestamp");
+  if (cutoff != null && (!isEvidenceTimestamp(manifest.cutoffUtc) || cutoff > Date.now())) throw new Error("Release cutoff must be a real nonfuture timestamp");
   const checkedTimestamp = (value, day) => {
-    if (typeof value !== "string" || !isCalendarDate(value.slice(0, 10)) || !Number.isFinite(Date.parse(value)) || Date.parse(value) > Date.now() || (cutoff != null && Date.parse(value) > cutoff)) throw new Error("Observation timestamp exceeds the release cutoff or is invalid");
+    if (!isEvidenceTimestamp(value) || Date.parse(value) > Date.now() || (cutoff != null && Date.parse(value) > cutoff)) throw new Error("Observation timestamp exceeds the release cutoff or is invalid");
     if (day && new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(value)) < day) throw new Error("Observation timestamp precedes the reported date");
   };
+  if (manifest.sourceCutoffs) {
+    if (manifest.sourceCutoffs.coreDatasetUtc !== manifest.cutoffUtc || manifest.sourceCutoffs.completeInjuryReviewDate !== injuryResearch.as_of) throw new Error("Module cutoff identities disagree with the publication inputs");
+    checkedTimestamp(manifest.sourceCutoffs.targetedInjuryUtc);
+    for (const row of injuryResearch.watch) if (row.observed_at != null && Date.parse(row.observed_at) > Date.parse(manifest.sourceCutoffs.targetedInjuryUtc)) throw new Error("Injury observation exceeds its targeted cutoff");
+  }
   const todayEastern = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
   const releaseDay = manifest.cutoffUtc
     ? new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(manifest.cutoffUtc))
@@ -58,6 +63,7 @@ export function materializeVerifiedSnapshot(root) {
     if (!game || game.week !== report.week || ![game.awaySlug, game.homeSlug].includes(report.teamSlug)) throw new Error("Inactive report references the wrong game, team or official week");
     if (!report.complete || !Array.isArray(report.players) || new Set(report.players.map(player => player.name)).size !== report.players.length || report.players.some(player => !player.name || !["inactive", "emergency_qb"].includes(player.designation))) throw new Error("Inactive lists must be complete, unique and distinguish emergency quarterbacks");
     if (!Array.isArray(report.sources) || new Set(report.sources.map(publisher)).size < 2) throw new Error("Inactive lists require two HTTPS publisher families");
+    checkedTimestamp(report.publishedAt); checkedTimestamp(report.checkedAt);
     const published = Date.parse(report.publishedAt), checked = Date.parse(report.checkedAt);
     if (!Number.isFinite(published) || !Number.isFinite(checked) || published > checked || checked > Date.now() || published > Date.parse(game.kickoffUtc) || published < Date.parse(game.kickoffUtc) - 2 * 3_600_000) throw new Error("Inactive lists require actual pre-kickoff publication and retrieval times");
   }
