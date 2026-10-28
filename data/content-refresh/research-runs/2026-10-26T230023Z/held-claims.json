@@ -1,0 +1,24 @@
+{
+  "resolved": [
+    "Dallas complete five-player list from club/Bleeding Green Nation/FFToday",
+    "Philadelphia complete six-player list and explicit Cole Payton emergency-third-quarterback designation from club/Bleeding Green Nation"
+  ],
+  "claims": [
+    {
+      "claim": "ESPN generic Cole Payton INACTIVE flag",
+      "decision": "Excluded as proof of emergency eligibility; only the two explicit named role statements are used."
+    },
+    {
+      "claim": "Monday final result",
+      "decision": "Game remains pregame; publish no provisional or future final result."
+    },
+    {
+      "claim": "Saquon Barkley, Jalyx Hunt and Jonathan Greenard active",
+      "decision": "Current source context does not replace dated formal medical designations. No game-day activity is inferred from omission."
+    },
+    {
+      "claim": "Other earlier condition terminology and Week 8 reports",
+      "decision": "Retain prior holds and all prior records. Do not publish Week 8 content."
+    }
+  ]
+}

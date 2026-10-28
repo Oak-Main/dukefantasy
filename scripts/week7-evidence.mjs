@@ -11,6 +11,8 @@ export function collectFacts({ snapshot, injury, editorial }) {
     player: row.player, team_slug: row.team_slug, status: row.published_status ?? row.status ?? null,
     injury: row.injury ?? null, practice: row.practice ?? null,
     designation_date: row.designation_date ?? null, designation_week: row.designation_week ?? null,
+    ...(row.designation_phase != null ? { designation_phase: row.designation_phase } : {}),
+    ...(row.designation_phase === "in_game" ? { game_id: row.game_id ?? null, status_scope: row.status_scope ?? null } : {}),
   });
   for (const row of editorial.reserveStatuses ?? []) put("reserve", `${row.team_slug}:${row.player}`, { player: row.player, team_slug: row.team_slug, status: row.status, asOf: row.asOf ?? null });
   for (const report of editorial.practiceReports ?? []) put("practice", `${report.date}:${report.team_slug}:${report.player}`, { date: report.date, week: report.week, player: report.player, team_slug: report.team_slug, participation: report.participation, report_type: report.report_type, injury: report.injury });
@@ -73,6 +75,28 @@ export function validateResultIdentities(evidence, snapshot) {
     }
     if (!observation.sources?.length || observation.sources.some(source => canonical(source.gameIdentity) !== canonical(expected))) {
       throw new Error(`${observation.key}: source game identity does not match the keyed result`);
+    }
+    checked++;
+  }
+  return checked;
+}
+
+export function validateInGameInjuryIdentities(evidence, snapshot) {
+  const games = new Map(snapshot.schedule.map(game => [String(game.id), game]));
+  let checked = 0;
+  for (const observation of evidence.observations ?? []) {
+    const value = observation.value;
+    if (observation.kind !== "injury" || value?.designation_phase !== "in_game") continue;
+    const game = games.get(String(value.game_id));
+    if (!game || game.week !== value.designation_week || ![game.awaySlug, game.homeSlug].includes(value.team_slug) || value.status_scope !== "remainder_of_game") {
+      throw new Error(`${observation.key}: invalid in-game injury game identity or scope`);
+    }
+    const expected = { id: String(game.id), week: game.week, awaySlug: game.awaySlug, homeSlug: game.homeSlug, kickoffUtc: new Date(game.kickoffUtc).toISOString() };
+    if (canonical(observation.gameIdentity) !== canonical(expected) || observation.reportPhase !== "in_game" || observation.scope !== value.status_scope) {
+      throw new Error(`${observation.key}: in-game injury identity, phase or scope does not match`);
+    }
+    if (!observation.sources?.length || observation.sources.some(source => canonical(source.gameIdentity) !== canonical(expected) || source.reportPhase !== "in_game" || source.scope !== value.status_scope || Date.parse(source.checkedAt) < Date.parse(game.kickoffUtc))) {
+      throw new Error(`${observation.key}: source in-game injury identity, phase or scope does not match`);
     }
     checked++;
   }

@@ -478,3 +478,8 @@ body { overscroll-behavior-y: none; }
 @media (max-width: 1000px) {
   .apex-gdc-finals { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 359px) {
+  .apex-header .apex-logo-word { font-size: 22px; }
+  .apex-header-inner { column-gap: 8px; }
+}

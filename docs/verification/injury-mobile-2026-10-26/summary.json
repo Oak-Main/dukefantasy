@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-10-26T21:22:59.875Z",
+  "baseCommit": "7e259cf5ef0115c91bc850be828b4fb4a625c968",
+  "originalPrHead": "be497de039a3d510920723d2f9168c3bdf58256b",
+  "acceptance": "PASS",
+  "mission": "Finish PR 44 review and prepare the reviewed branch for owner merge/deployment",
+  "tests": {
+    "unit": 152,
+    "rendered": 12,
+    "browser": {
+      "startTime": "2026-10-26T21:18:20.215Z",
+      "duration": 146657.749,
+      "expected": 30,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "viewportProjects": [
+      "chromium-320",
+      "chromium-390",
+      "chromium-679",
+      "chromium-680",
+      "chromium-1440",
+      "webkit-390"
+    ],
+    "fullPreflight": "PASS",
+    "productionVulnerabilities": 0,
+    "allExistingLockedPackagesPreserved": 465,
+    "libcRecordsPreserved": 42,
+    "sourceRecheckCount": 17,
+    "completeScheduleReview": 107,
+    "standingsCompared": 32,
+    "retainedGames": 272,
+    "unchangedInjuryFacts": 416,
+    "datedPractices": 389,
+    "completeInactiveLists": 26,
+    "inactiveEntries": 168,
+    "conditionalEmergencyQbs": 17
+  },
+  "scheduleCorrection": {
+    "id": "401873047",
+    "kickoffUtc": "2026-11-08T21:25Z",
+    "broadcast": "FOX",
+    "evidence": "data/content-refresh/research-runs/2026-10-26T210800Z/future-schedule-correction.json"
+  },
+  "moduleDates": {
+    "schedule": {
+      "sourceAsOf": "2026-10-26",
+      "fetchedAt": "2026-10-26T21:15:36.169Z",
+      "compiledAt": "2026-10-26T21:17:05.439Z"
+    },
+    "injuries": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "fantasy": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "transactions": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "leaders": {
+      "sourceAsOf": "2026-10-20",
+      "fetchedAt": null,
+      "compiledAt": "2026-10-20T19:20:03.528Z"
+    },
+    "inactives": {
+      "sourceAsOf": "2026-10-25",
+      "fetchedAt": "2026-10-25T12:33:16.120Z",
+      "compiledAt": "2026-10-25T12:38:43.316Z"
+    }
+  },
+  "publicationId": "ad8a9fc9fea19e524e4e13b2d61baf65e0c2a53abf8228c2ad5b2fb16c6d5957",
+  "currentWorkerVersion": "e8beb422-ffa8-4d05-98b0-305f25ca7ca9",
+  "productionChanged": false,
+  "limitations": [
+    "No manual NVDA or VoiceOver speech session was performed",
+    "Windows WebKit native Tab navigation omits links; both engines verify Enter activation, while Chromium also verifies Tab/Shift+Tab traversal",
+    "Full development dependency audit retains eight pre-existing toolchain findings; production audit is clean"
+  ],
+  "screenshots": [
+    {
+      "path": "ledger-390.png",
+      "sha256": "acf1a7a5d14e0c99456042b888b2881f84fe3afdccd7c108c294c8aeb644d17a"
+    },
+    {
+      "path": "watch-390.png",
+      "sha256": "0de24e71024dd7ffaf0b058c0aa089f4e43d2d8b07c2204b269f5d238666cca9"
+    }
+  ]
+}

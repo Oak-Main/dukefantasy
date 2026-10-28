@@ -18,6 +18,7 @@ export function BroadcastHomepage({
   onModeRequest: () => void;
 }) {
   const slate = weekGames(data.games, data.referenceDate);
+  const slateComplete = slate.length > 0 && slate.every((game) => game.status === "final");
   const featured = featuredGame(slate, data.teams);
   const away = data.teams.find((team) => team.slug === featured?.awayTeamId);
   const home = data.teams.find((team) => team.slug === featured?.homeTeamId);
@@ -49,10 +50,18 @@ export function BroadcastHomepage({
           venue={featured.venue}
         />
       ) : (
-        <section className="apex-marquee">
-          <p className="apex-empty">
-            This week&apos;s marquee matchup is not published.
-          </p>
+        <section className="apex-marquee" aria-label={slateComplete ? `Week ${refreshWeek} final results` : "Marquee matchup"}>
+          {slateComplete ? (
+            <div className="apex-empty">
+              <h2>Week {refreshWeek} complete</h2>
+              <p>All {slate.length} final results are published.</p>
+              <a href={`/scores?week=${refreshWeek}`}>Review Week {refreshWeek} results →</a>
+            </div>
+          ) : (
+            <p className="apex-empty">
+              This week&apos;s marquee matchup is not published.
+            </p>
+          )}
         </section>
       )}
       <WeekScoreboard

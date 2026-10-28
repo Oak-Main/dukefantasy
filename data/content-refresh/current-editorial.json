@@ -6692,7 +6692,7 @@
     }
   ],
   "limitations": [
-    "Final Week 7 designations/inactives have not all been issued.",
+    "Verified Week 7 inactive lists cover all 28 participating teams. Medical designations and reserve eligibility retain their separate dated records.",
     "Two-publisher corroboration may share an upstream feed.",
     "No complete 32-team roster/depth refresh, film review, scheme audit or all-rookie census.",
     "No three-source compatible numeric projection set.",
@@ -6871,49 +6871,52 @@
     {
       "player": "Jakorian Bennett",
       "team_slug": "philadelphia-eagles",
-      "status": "IR; Week 7 QUESTIONABLE",
-      "asOf": "2026-10-24",
-      "checkedAt": "2026-10-24T23:23:24.005Z",
-      "note": "Official October 24 Week 7 designation: QUESTIONABLE. The player remains on injured reserve and needs a separately confirmed activation before joining the roster. Saturday participation is recorded separately.",
+      "status": "IR; Week 7 OUT",
+      "asOf": "2026-10-26",
+      "checkedAt": "2026-10-26T22:35:30.880Z",
+      "note": "Official October 26 Week 7 update: OUT against Dallas and remains on injured reserve. This is a dated reserve designation, separate from a complete game-day inactive list; no activation is inferred.",
       "sources": [
-        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
-        "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html"
+        "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+        "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced"
       ]
     },
     {
       "player": "Grant Calcaterra",
       "team_slug": "philadelphia-eagles",
-      "status": "IR; Week 7 QUESTIONABLE",
-      "asOf": "2026-10-24",
-      "checkedAt": "2026-10-24T23:23:24.005Z",
-      "note": "Official October 24 Week 7 designation: QUESTIONABLE. The player remains on injured reserve and needs a separately confirmed activation before joining the roster. Saturday participation is recorded separately.",
+      "status": "Activated from IR",
+      "asOf": "2026-10-26",
+      "checkedAt": "2026-10-26T22:35:30.880Z",
+      "note": "Official October 26 Week 7 roster move: activated from injured reserve. The prior IR ledger and reserve records are retained in dated history. This confirms roster eligibility, not medical recovery or a complete game-day active/inactive list.",
       "sources": [
-        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
-        "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html"
+        "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+        "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+        "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced"
       ]
     },
     {
       "player": "Landon Dickerson",
       "team_slug": "philadelphia-eagles",
-      "status": "IR; Week 7 QUESTIONABLE",
-      "asOf": "2026-10-24",
-      "checkedAt": "2026-10-24T23:23:24.005Z",
-      "note": "Official October 24 Week 7 designation: QUESTIONABLE. The player remains on injured reserve and needs a separately confirmed activation before joining the roster. Saturday participation is recorded separately.",
+      "status": "Activated from IR",
+      "asOf": "2026-10-26",
+      "checkedAt": "2026-10-26T22:35:30.880Z",
+      "note": "Official October 26 Week 7 roster move: activated from injured reserve. The prior IR ledger and reserve records are retained in dated history. This confirms roster eligibility, not medical recovery or a complete game-day active/inactive list.",
       "sources": [
-        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
-        "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html"
+        "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+        "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+        "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced"
       ]
     },
     {
       "player": "Eli Stowers",
       "team_slug": "philadelphia-eagles",
-      "status": "IR; Week 7 QUESTIONABLE",
-      "asOf": "2026-10-24",
-      "checkedAt": "2026-10-24T23:23:24.005Z",
-      "note": "Official October 24 Week 7 designation: QUESTIONABLE. The player remains on injured reserve and needs a separately confirmed activation before joining the roster. Saturday participation is recorded separately.",
+      "status": "Activated from IR",
+      "asOf": "2026-10-26",
+      "checkedAt": "2026-10-26T22:35:30.880Z",
+      "note": "Official October 26 Week 7 roster move: activated from injured reserve. The prior IR ledger and reserve records are retained in dated history. This confirms roster eligibility, not medical recovery or a complete game-day active/inactive list.",
       "sources": [
-        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
-        "https://sports.yahoo.com/articles/eagles-list-saquon-barkley-questionable-200052081.html"
+        "https://www.philadelphiaeagles.com/news/eagles-activate-grant-calcaterra-landon-dickerson-and-eli-stowers-from-injured-reserve",
+        "https://sports.yahoo.com/articles/landon-dickerson-returns-eagles-announce-200715216.html",
+        "https://www.bleedinggreennation.com/news/188204/eagles-roster-news-6-moves-announced"
       ]
     },
     {
@@ -7148,9 +7151,9 @@
   ],
   "moduleSources": {
     "schedule": {
-      "sourceAsOf": "2026-10-25",
-      "fetchedAt": "2026-10-26T03:44:01.656Z",
-      "compiledAt": "2026-10-26T03:44:13.801Z"
+      "sourceAsOf": "2026-10-26",
+      "fetchedAt": "2026-10-27T03:31:33.678Z",
+      "compiledAt": "2026-10-27T03:36:22.229Z"
     },
     "injuries": {
       "sourceAsOf": "2026-10-20",
@@ -8219,6 +8222,79 @@
       "sources": [
         "https://www.chiefs.com/news/week-7-inactive-players-chiefs-vs-seahawks",
         "https://atozsports.com/nfl/kansas-city-chiefs-news/chiefs-inactive-players-list-week-7-vs-seahawks/"
+      ]
+    },
+    {
+      "gameId": "401873009",
+      "week": 7,
+      "teamSlug": "philadelphia-eagles",
+      "publishedAt": "2026-10-26T22:45:13.336Z",
+      "checkedAt": "2026-10-26T23:06:42.264Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Cole Payton",
+          "designation": "emergency_qb"
+        },
+        {
+          "name": "DeVonta Smith",
+          "designation": "inactive"
+        },
+        {
+          "name": "Dontayvion Wicks",
+          "designation": "inactive"
+        },
+        {
+          "name": "Jake Majors",
+          "designation": "inactive"
+        },
+        {
+          "name": "Michael Carter II",
+          "designation": "inactive"
+        },
+        {
+          "name": "Nolan Smith",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-inactives-saquon-barkley-jalyx-hunt-2026-week-7-monday-night-football",
+        "https://www.bleedinggreennation.com/news/188220/eagles-cowboys-inactives-saquon-barkley-will-play"
+      ]
+    },
+    {
+      "gameId": "401873009",
+      "week": 7,
+      "teamSlug": "dallas-cowboys",
+      "publishedAt": "2026-10-26T22:45:00.000Z",
+      "checkedAt": "2026-10-26T23:06:42.688Z",
+      "complete": true,
+      "players": [
+        {
+          "name": "Dee Winters",
+          "designation": "inactive"
+        },
+        {
+          "name": "Drew Shelton",
+          "designation": "inactive"
+        },
+        {
+          "name": "Emari Demercado",
+          "designation": "inactive"
+        },
+        {
+          "name": "KaVontae Turpin",
+          "designation": "inactive"
+        },
+        {
+          "name": "Tyrus Wheat",
+          "designation": "inactive"
+        }
+      ],
+      "sources": [
+        "https://www.dallascowboys.com/news/updates-october-2026",
+        "https://www.bleedinggreennation.com/news/188220/eagles-cowboys-inactives-saquon-barkley-will-play",
+        "https://www.fftoday.com/nfl/26-inactives-wk7.html"
       ]
     }
   ]

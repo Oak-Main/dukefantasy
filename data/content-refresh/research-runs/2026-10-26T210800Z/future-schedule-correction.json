@@ -1,0 +1,61 @@
+{
+  "reason": "Full required live-dataset preflight detected a kickoff disagreement; correct only the matched existing future fixture after two publisher families agree.",
+  "gameIdentity": {
+    "id": "401873047",
+    "week": 9,
+    "awaySlug": "las-vegas-raiders",
+    "homeSlug": "san-francisco-49ers",
+    "kickoffUtc": "2026-11-08T21:25:00.000Z"
+  },
+  "before": {
+    "kickoffUtc": "2026-11-08T21:05Z",
+    "kickoffLabel": "Sun · 2026-11-08 · 4:05 PM ET",
+    "statusDetail": "Sun, November 8th at 4:05 PM EST",
+    "broadcast": "CBS"
+  },
+  "value": {
+    "kickoffUtc": "2026-11-08T21:25Z",
+    "broadcast": "FOX"
+  },
+  "sources": [
+    {
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "checkedAt": "2026-10-26T21:15:35.946Z",
+      "reportedWeek": 9,
+      "reportDate": "2026-10-26",
+      "value": {
+        "kickoffUtc": "2026-11-08T21:25Z",
+        "broadcast": "FOX"
+      },
+      "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-9.html",
+      "rawSha256": "6eed0a43c93682f102360a4fb0a7d789de6d0ae375bf8a99743ec01362b25481",
+      "matchedGameCard": {
+        "contentLocation": "1",
+        "contentPosition": "12",
+        "gameId": "ab581766-4feb-11f1-abca-2c54536568a9",
+        "linkModule": "Game Card",
+        "linkName": "Raiders at 49ers, Sunday, November 8th, 4:25 PM, FOX",
+        "linkPosition": "1:1",
+        "linkType": "DGX Access Point"
+      }
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+      "checkedAt": "2026-10-26T21:15:36.169Z",
+      "reportedWeek": 9,
+      "reportDate": "2026-10-26",
+      "value": {
+        "kickoffUtc": "2026-11-08T21:25Z",
+        "broadcast": "FOX"
+      },
+      "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-9.html",
+      "rawSha256": "0a42e98245c857b4facc5d2a96c23d88e34dd53c218b28bcdfd71a58bc80b65e",
+      "gameId": "401873047",
+      "statusDetail": "Sun, November 8th at 4:25 PM EST",
+      "teamIds": [
+        "13",
+        "25"
+      ]
+    }
+  ]
+}

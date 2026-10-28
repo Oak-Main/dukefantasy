@@ -1,0 +1,39 @@
+{
+  "acceptance": "PASS",
+  "gameIdentity": {
+    "id": "401873009",
+    "week": 7,
+    "awaySlug": "dallas-cowboys",
+    "homeSlug": "philadelphia-eagles",
+    "kickoffUtc": "2026-10-27T00:15:00.000Z"
+  },
+  "phase": "in_game",
+  "statusScope": "remainder_of_game",
+  "sourceIdentityPhaseAndScopeBindingsValidated": 3,
+  "changedFacts": 1,
+  "oldRecordsAndFullModuleDatesUnchanged": true,
+  "recordedAt": "2026-10-27T01:41:42.107Z",
+  "rawCapturesVerified": [
+    {
+      "id": "eaglesLive",
+      "rawFile": "outputs/week7-automation/2026-10-27T010025Z/eaglesLive.html",
+      "rawSha256": "5d7dd5cbd36dfbddba788d026bbba85007a80c996f23e54ddb6e95f6fc27fc99",
+      "checkedAt": "2026-10-27T01:30:01.726Z",
+      "acceptance": "PASS"
+    },
+    {
+      "id": "espnCovey",
+      "rawFile": "outputs/week7-automation/2026-10-27T010025Z/espnCovey.html",
+      "rawSha256": "3cb68496a66f227b11d92b96ec37851ca77b0b2614c72f81e08e3f65bc694d13",
+      "checkedAt": "2026-10-27T01:30:02.510Z",
+      "acceptance": "PASS"
+    },
+    {
+      "id": "bgnCovey",
+      "rawFile": "outputs/week7-automation/2026-10-27T010025Z/bgnCovey.html",
+      "rawSha256": "b62f23b092feb63df9cc035755f1a01b2ccdaf5d048e4184d942c20f2c85448d",
+      "checkedAt": "2026-10-27T01:30:01.663Z",
+      "acceptance": "PASS"
+    }
+  ]
+}

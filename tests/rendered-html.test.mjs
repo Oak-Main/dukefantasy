@@ -32,11 +32,31 @@ test("server-renders the finished home utility", async () => {
 
   const html = await response.text();
   assert.match(html, /Every Sunday/);
-  assert.match(html, /GAME OF THE WEEK|MARQUEE MATCHUP/);
+  const manifest = JSON.parse(readFileSync(new URL("../data/content-refresh/current.json", import.meta.url), "utf8"));
+  const snapshot = JSON.parse(readFileSync(new URL(`../data/content-refresh/${manifest.snapshot}`, import.meta.url), "utf8"));
+  const slate = snapshot.schedule.filter((game) => game.week === snapshot.season.currentWeek);
+  if (slate.length > 0 && slate.every((game) => game.status === "final")) {
+    assert.match(html, new RegExp(`Week (?:<!-- -->)?${snapshot.season.currentWeek}(?:<!-- -->)? complete`));
+    assert.match(html, new RegExp(`All (?:<!-- -->)?${slate.length}(?:<!-- -->)? final results are published\\.`));
+    assert.ok(html.includes(`href="/scores?week=${snapshot.season.currentWeek}"`));
+    assert.doesNotMatch(html, /This week&#x27;s marquee matchup is not published/);
+  } else {
+    assert.match(html, /GAME OF THE WEEK|MARQUEE MATCHUP/);
+  }
   assert.match(html, /32/);
   assert.match(html, /NFL teams/);
   assert.match(html, /Clean Mode/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
+});
+
+test("Week 7 Monday final and updated team records render from the verified snapshot", async () => {
+  const response = await fetchRoute("/games/401873009");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const hero = html.match(/class="game-hero__matchup"[\s\S]*?class="game-action-row"/)?.[0] ?? "";
+  assert.match(html, /class="status status--final">Final<\/span>/);
+  assert.match(hero, /Dallas Cowboys<\/strong><em>3-4<\/em>[\s\S]*?<b>38<\/b>/);
+  assert.match(hero, /Philadelphia Eagles<\/strong><em>2-5<\/em>[\s\S]*?<b>21<\/b>/);
 });
 
 test("www canonicalizes to the apex domain without losing the request target", async () => {
@@ -100,6 +120,39 @@ test("critical product routes render dataset-backed content", async () => {
     const response = await fetchRoute(path);
     assert.equal(response.status, 200, path);
     assert.match(await response.text(), pattern, path);
+  }
+});
+
+test("injury tables server-render complete mobile labels and scoped column relationships", async () => {
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const structures = [
+    ["inj-ledger-title", ["Player", "Team", "Pos", "Status", "Weeks out", "Detail", "Sources"]],
+    ["inj-watch-title", ["Player", "Team", "Pos", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Likelihood", "Note"]],
+  ];
+  assert.match(html, /<section class="db-table-wrap" aria-label="Long-term injury table scroll area" tabindex="0"/);
+  assert.match(html, /<section class="db-table-wrap" aria-label="Weekly injury table scroll area" tabindex="0"/);
+  assert.doesNotMatch(html, /class="db-table-wrap" aria-labelledby="inj-(ledger|watch)-title"/);
+  for (const [heading, labels] of structures) {
+    const table = html.match(new RegExp(`<table[^>]*aria-labelledby="${heading}"[^>]*>([\\s\\S]*?)</table>`))?.[1];
+    assert.ok(table, `${heading}: named table available without JavaScript`);
+    const headers = [...table.matchAll(/<th\b([^>]*)>([^<]*)<\/th>/g)];
+    assert.deepEqual(headers.map(header => header[2]), labels);
+    const rows = [...table.matchAll(/<tr class="db-data-row">([\s\S]*?)<\/tr>/g)];
+    assert.ok(rows.length > 0, `${heading}: published rows remain visible`);
+    for (const [rowIndex, row] of rows.entries()) {
+      const cells = [...row[1].matchAll(/<td\b([^>]*)>([\s\S]*?)<\/td>/g)];
+      assert.equal(cells.length, labels.length, `${heading}/${rowIndex}: column count`);
+      cells.forEach((cell, index) => {
+        const id = headers[index][1].match(/\bid="([^"]+)"/)?.[1];
+        assert.match(headers[index][1], /\bscope="col"/);
+        assert.ok(id, "column has a stable ID");
+        assert.ok(cell[1].includes(`headers="${id}"`), `${heading}/${rowIndex}/${index}: header association`);
+        assert.ok(cell[1].includes(`data-label="${labels[index]}"`), `${heading}/${rowIndex}/${index}: visible mobile label`);
+        assert.match(cell[2], /^<div class="inj-cell-value">[\s\S]*<\/div>$/, "label stays beside the complete cell value");
+      });
+    }
   }
 });
 
@@ -201,6 +254,19 @@ test("official OUT designation replaces a prior questionable likelihood badge", 
   assert.match(text, /UNLIKELY/);
   assert.match(text, /high conf/);
   assert.doesNotMatch(text, /QUESTIONABLE/);
+});
+
+test("in-game OUT ruling renders separately from an injury-report designation", async () => {
+  const response = await fetchRoute("/injuries");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const row = [...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/g)].map(match => match[0]).find(row => row.includes("Britain Covey"));
+  assert.ok(row, "Covey's dated in-game watch record renders");
+  const text = row.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
+  assert.match(text, /Official Week 7 in-game status: OUT \(remainder of this game\)/);
+  assert.match(text, /2026-10-26/);
+  assert.match(text, /knee injury/);
+  assert.doesNotMatch(text, /Official Week 7 designation: OUT/);
 });
 
 test("dated reserve verification advances the latest observation while retaining the comprehensive review date", async () => {
