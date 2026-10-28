@@ -16,6 +16,7 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
+import { isEvidenceTimestamp } from "./week7-publication-dates.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/nfl";
@@ -28,11 +29,11 @@ const evidenceFlag = process.argv.indexOf("--evidence");
 const evidence = evidenceFlag < 0 ? null : JSON.parse(readFileSync(process.argv[evidenceFlag + 1], "utf8"));
 const pinned = new Map();
 if (evidence) {
-  if (evidence.version !== 1 || evidence.cutoffUtc !== snapshot.fetchedAt || !Number.isFinite(Date.parse(evidence.cutoffUtc)) || Date.parse(evidence.cutoffUtc) > Date.now() || evidence.responses?.length !== 19) throw new Error("Pinned evidence requires the exact snapshot cutoff and 19 complete source responses");
+  if (evidence.version !== 1 || evidence.cutoffUtc !== snapshot.fetchedAt || !isEvidenceTimestamp(evidence.cutoffUtc) || Date.parse(evidence.cutoffUtc) > Date.now() || evidence.responses?.length !== 19) throw new Error("Pinned evidence requires the exact snapshot cutoff and 19 complete source responses");
   for (const row of evidence.responses) {
     // Only the retained canonical extraction is verifiable; raw capture metadata is not evidence of byte integrity.
     const expectedDigest = createHash("sha256").update(JSON.stringify(row.document)).digest("hex");
-    if (pinned.has(row.url) || !/^https:\/\/site\.(api|web\.api)\.espn\.com\//.test(row.url) || expectedDigest !== row.documentSha256 || !Number.isFinite(Date.parse(row.checkedAt)) || Date.parse(row.checkedAt) > Date.parse(evidence.cutoffUtc)) throw new Error("Invalid, duplicate or mismatched pinned ESPN response");
+    if (pinned.has(row.url) || !/^https:\/\/site\.(api|web\.api)\.espn\.com\//.test(row.url) || expectedDigest !== row.documentSha256 || !isEvidenceTimestamp(row.checkedAt) || Date.parse(row.checkedAt) > Date.parse(evidence.cutoffUtc)) throw new Error("Invalid, duplicate or mismatched pinned ESPN response");
     pinned.set(row.url, row.document);
   }
   console.log(`PINNED ESPN extraction at ${evidence.cutoffUtc}; historical reproducibility only. A fresh live comparison remains mandatory before deployment.`);

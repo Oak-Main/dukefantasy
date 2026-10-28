@@ -157,3 +157,5 @@ Final publication audit: transaction dates must be real and no later than Easter
 Current screenshot inspection found Minnesota clipped inside the mobile marquee despite zero page-level overflow. Scale the headline within narrow viewports, allow long names to wrap, and assert actual text-range bounds at 320/390 pixels in addition to page overflow.
 
 Timestamp consistency follow-up: evidence timestamps require explicit ISO timezones, valid calendar dates and legal clock fields. Inactive publication/retrieval timestamps also cannot exceed the release cutoff. Module cutoff identities must match actual inputs, and targeted injury observations cannot exceed their advertised boundary. Atomic negatives cover missing timezone, impossible day, date-only/24-hour timestamps, post-cutoff inactive retrieval and contradictory injury cutoff metadata.
+
+Pinned source verification also uses the shared strict evidence-timestamp validator for cutoff and each source retrieval; impossible dates and timezone-less/date-only retrieval metadata fail without network fallback. This closes the remaining independent review finding on the historical CI evidence path.
