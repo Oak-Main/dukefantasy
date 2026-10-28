@@ -1,5 +1,9 @@
 # Decision log
 
+## October 28, 2026 — Week 8 evidence-preserving rollover
+
+Use the reviewed Week 8 candidate and archives described in `docs/releases/2026-10-28-week8.md`. Core schedule/results/standings advance only after complete reconciliation; targeted CAR/GB/WAS updates do not renew the October 20 full injury review. Unsupported fantasy editions are null; old boards remain archived. Planned injury slots end November 3 and use IANA timezone handling across DST; no external automation is created. Compile-time Git identity is distinct from data identity. Merge and deployment remain gated on independent review and actual browser acceptance; Cloudflare is currently a manual Wrangler target with no Git connection.
+
 ## D-001 — Preserve the Sites Vinext foundation
 
 The empty workspace was initialized with the bundled Cloudflare-compatible Vinext/Next.js starter. This satisfies the preview-hosting constraint without introducing a second framework.

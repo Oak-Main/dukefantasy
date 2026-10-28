@@ -1,7 +1,8 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { createHash } from "node:crypto";
-import { validateDesignationPhase } from "./week7-publication-dates.mjs";
+import { isCalendarDate, validateDesignationPhase, validatePublicationDates } from "./week7-publication-dates.mjs";
+import { publisher } from "./week7-evidence.mjs";
 
 /** A release build must reproduce reviewed data, never silently replace it with
  * a single-provider pull or give old editorial inputs a new source timestamp. */
@@ -13,15 +14,27 @@ export function materializeVerifiedSnapshot(root) {
   const injuryResearch = read("data/injury-research/current.json");
   const fantasyDesk = read("data/fantasy-desk/current.json");
   const editorial = read("data/content-refresh/current-editorial.json");
+  validatePublicationDates({ injury: injuryResearch, editorial }, manifest);
+  for (const row of [...injuryResearch.ledger, ...injuryResearch.watch, ...(editorial.reserveStatuses ?? []), ...(editorial.practiceReports ?? []), ...(editorial.transactions?.moves ?? []), ...(editorial.statLeaders ?? [])]) {
+    if (!Array.isArray(row.sources) || new Set(row.sources.map(publisher)).size < 2) throw new Error("Published records require two HTTPS publisher families");
+  }
   for (const row of injuryResearch.watch) {
     validateDesignationPhase(row);
     if (row.designation_phase === "in_game") {
       const game = snapshot.schedule.find(game => String(game.id) === row.game_id);
       if (!game || game.week !== injuryResearch.week || ![game.awaySlug, game.homeSlug].includes(row.team_slug)) throw new Error("In-game injury status references the wrong game, team or week");
     }
-    if (row.published_status != null && (!["OUT", "DOUBTFUL", "QUESTIONABLE", "NO_DESIGNATION"].includes(row.published_status) || row.designation_week !== injuryResearch.week || !/^\d{4}-\d{2}-\d{2}$/.test(row.designation_date ?? ""))) {
+    if (row.published_status != null && (!["OUT", "DOUBTFUL", "QUESTIONABLE", "NO_DESIGNATION"].includes(row.published_status) || row.designation_week !== injuryResearch.week || !isCalendarDate(row.designation_date))) {
       throw new Error("Official injury designations require a valid status, matching report week and dated source");
     }
+  }
+  for (const report of editorial.inactives ?? []) {
+    const game = snapshot.schedule.find(game => String(game.id) === report.gameId);
+    if (!game || game.week !== report.week || ![game.awaySlug, game.homeSlug].includes(report.teamSlug)) throw new Error("Inactive report references the wrong game, team or official week");
+    if (!report.complete || !Array.isArray(report.players) || new Set(report.players.map(player => player.name)).size !== report.players.length || report.players.some(player => !player.name || !["inactive", "emergency_qb"].includes(player.designation))) throw new Error("Inactive lists must be complete, unique and distinguish emergency quarterbacks");
+    if (!Array.isArray(report.sources) || new Set(report.sources.map(publisher)).size < 2) throw new Error("Inactive lists require two HTTPS publisher families");
+    const published = Date.parse(report.publishedAt), checked = Date.parse(report.checkedAt);
+    if (!Number.isFinite(published) || !Number.isFinite(checked) || published > checked || checked > Date.now() || published < Date.parse(game.kickoffUtc) - 2 * 3_600_000) throw new Error("Inactive lists require actual game-day publication and retrieval times");
   }
   if (snapshot.teams.length !== 32 || snapshot.schedule.length !== 272 || new Set(snapshot.schedule.map(g => g.id)).size !== 272) {
     throw new Error("Incomplete verified NFL snapshot; keeping the previous generated file");
@@ -33,7 +46,7 @@ export function materializeVerifiedSnapshot(root) {
   for (const [key, board] of Object.entries(fantasyDesk)) {
     const expectedWeek = key === "rookie" ? snapshot.season.currentWeek - 1 : snapshot.season.currentWeek;
     const boardWeek = key === "waiver" ? board?.week_adding_for : board?.week;
-    if (board && (boardWeek !== expectedWeek || !/^\d{4}-\d{2}-\d{2}$/.test(board.as_of) || board.as_of > manifest.sourceAsOf)) {
+    if (board && (boardWeek !== expectedWeek || !isCalendarDate(board.as_of) || board.as_of > manifest.sourceAsOf)) {
       throw new Error("Fantasy board belongs to another source date/week");
     }
   }

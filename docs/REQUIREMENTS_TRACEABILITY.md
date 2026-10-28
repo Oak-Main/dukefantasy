@@ -1,5 +1,7 @@
 # Requirements traceability
 
+Current NFL release: `docs/releases/2026-10-28-week8.md` supersedes historical fixture-beta completion claims for the weekly update. Week 8 core acceptance is implemented in `scripts/verify-week8-update.mjs`, atomic negative tests in `tests/week8-publication.test.mjs`, security traversal regressions in `tests/security-floor.test.mjs`, and supported-browser acceptance in `.github/workflows/week8-acceptance.yml`. Local data/unit/integration evidence is distinct from pending independent review, CI browser acceptance, merge, deployment, live acceptance and full editorial completeness.
+
 | Requirement group | Implementation | Evidence | Status |
 |---|---|---|---|
 | Agent operating system | `AGENTS.md`, `.codex/`, `docs/AGENT_ROSTER.md`, `docs/HANDOFF_PROTOCOL.md` | Repository inspection | Complete |

@@ -21,7 +21,7 @@ test("current-week games and byes partition all 32 teams; Washington has a divis
 });
 
 test("wire and leaders expose two distinct publishers per row and never include held claims", () => {
-  assert.equal(transactions.length, 30);
+  assert.equal(transactions.length, 35);
   assert.equal(statLeaders.length, 15);
   for (const row of [...transactions, ...statLeaders]) {
     assert.ok(new Set(row.sources.map(url => new URL(url).hostname)).size >= 2, row.player);
@@ -32,6 +32,9 @@ test("wire and leaders expose two distinct publishers per row and never include 
 test("source age becomes stale without a rebuild and an unavailable source never reads current", () => {
   assert.equal(sourceFreshness(null), "unavailable");
   assert.equal(sourceFreshness("invalid"), "unavailable");
+  assert.equal(sourceFreshness("2026-02-30"), "unavailable");
+  assert.equal(sourceFreshness("2026-11-02", new Date("2026-11-04T04:30:00Z")), "current");
+  assert.equal(sourceFreshness("2026-11-02", new Date("2026-11-04T05:00:01Z")), "stale");
   assert.equal(sourceFreshness("2026-10-20T19:20:03.528Z", new Date("2026-10-21T19:20:03.528Z")), "current");
   assert.equal(sourceFreshness("2026-10-20T19:20:03.528Z", new Date("2026-10-23T19:20:03.528Z")), "stale");
   for (const row of contentSourceModules(new Date("2026-11-01T00:00:00Z"))) assert.equal(row.freshness, row.sourceAsOf ? "stale" : "unavailable");
@@ -64,7 +67,7 @@ test("inactives retain week/game identity and at least two publishers", () => {
 });
 
 test("a new injury review cannot refresh an untouched fantasy edition", () => {
-  const sources={...moduleSources,injuries:{sourceAsOf:"2026-10-23",fetchedAt:"2026-10-23T14:00:00Z",compiledAt:"2026-10-23T14:10:00Z"}};
+  const sources={...moduleSources,fantasy:{sourceAsOf:"2026-10-20",fetchedAt:null,compiledAt:null},injuries:{sourceAsOf:"2026-10-23",fetchedAt:"2026-10-23T14:00:00Z",compiledAt:"2026-10-23T14:10:00Z"}};
   const rows=contentSourceModules(new Date("2026-10-23T15:00:00Z"),sources);
   assert.equal(rows.find(row=>row.id==="injuries")?.freshness,"current");
   assert.equal(rows.find(row=>row.id==="fantasy")?.sourceAsOf,"2026-10-20");

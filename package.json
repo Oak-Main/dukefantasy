@@ -17,7 +17,7 @@
     "start": "vinext start",
     "typecheck": "tsc --noEmit",
     "check:security-floor": "node scripts/check-security-floor.mjs",
-    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts tests/week7-evidence.test.mjs tests/week7-publication-dates.test.mjs tests/release-response.test.mjs",
+    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts tests/week7-evidence.test.mjs tests/week7-publication-dates.test.mjs tests/release-response.test.mjs tests/week8-publication.test.mjs tests/security-floor.test.mjs",
     "test:integration": "node --test tests/rendered-html.test.mjs",
     "test:e2e": "node --test tests/rendered-html.test.mjs",
     "test:a11y": "node --test tests/a11y.test.mjs",
@@ -37,7 +37,8 @@
     "week7:verify": "node scripts/verify-week7-update.mjs",
     "week7:preflight": "npm run week7:verify && npm run verify && npm run dataset:verify && npm audit --omit=dev --fetch-retries=0 --fetch-timeout=20000 && npm run cf:types && wrangler deploy --config wrangler.deploy.jsonc --dry-run",
     "week7:deploy": "npm run week7:preflight && wrangler deploy --config wrangler.deploy.jsonc && node scripts/smoke-release.mjs https://dukefantasy.com/",
-    "test:injuries": "playwright test --config playwright.injuries.config.ts"
+    "test:injuries": "playwright test --config playwright.injuries.config.ts",
+    "week8:verify": "node scripts/verify-week8-update.mjs"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.23",

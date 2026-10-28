@@ -1,5 +1,7 @@
 # Assumptions register
 
+October 28 Week 8 release assumptions: 12-team, one-QB half-PPR redraft is a declared planning format, not knowledge of a user's roster. No dated ownership snapshot is available, so waiver eligibility and all four current fantasy rails remain unpublished. The injury cadence is an editorial plan, not a job or a claim that a check occurred. Full statistics/roster/depth and five watched film reviews remain unavailable. See `docs/releases/2026-10-28-week8.md` for source cutoff, exceptions, production binding and release gates.
+
 | ID | Assumption | Rationale | Risk/mitigation |
 |---|---|---|---|
 | A-001 | The repository is a new project. | It contained no project files or Git history before initialization. | Preserve the generated Vinext foundation and document all migration choices. |

@@ -27,6 +27,7 @@ test("server-renders the finished home utility", async () => {
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   assert.match(response.headers.get("x-content-revision") ?? "", /^[a-f0-9]{64}$/);
+  assert.match(response.headers.get("x-source-revision") ?? "", /^[a-f0-9]{40}$/);
   assert.match(response.headers.get("x-robots-tag") ?? "", /noindex/i);
   assert.match(response.headers.get("content-security-policy") ?? "", /frame-ancestors 'none'/);
 
@@ -86,8 +87,8 @@ test("critical product routes render dataset-backed content", async () => {
     ["/games/401872657", /Netflix/],
     ["/games/401872657", /49ers|Rams/],
     ["/dfs", /picks you can audit/i],
-    ["/dfs", /Week <!-- -->7<!-- --> projections are not published/i],
-    ["/fantasy-desk", /Aaron Rodgers/],
+    ["/dfs", /Week <!-- -->8<!-- --> projections are not published/i],
+    ["/fantasy-desk", /Week 8 waiver/],
     ["/transactions", /Tanner Hudson/],
     ["/stats", /Matthew Stafford/],
     ["/data-sources", /Source as of/],
@@ -97,11 +98,11 @@ test("critical product routes render dataset-backed content", async () => {
     ["/x-and-ys", /The offense, decoded/],
     ["/x-and-ys", /Wide Zone Tree/],
     ["/x-and-ys", /Mesh/],
-    ["/x-and-ys", /film room opens after Week 1/i],
+    ["/x-and-ys", /Weekly film reviews are not published/i],
     ["/injuries", /The injury report, on the record/],
     ["/injuries", /LONG-TERM LEDGER/],
     ["/injuries", /GAME-TIME DECISIONS|week-to-week watch/i],
-    ["/injuries", /Next scheduled check|Week 7 scheduled checks ended/],
+    ["/injuries", /Next scheduled check|Week 8 editorial review plan ended/],
     ["/api/injuries", /"source": ?"ESPN NFL injuries feed"/],
     ["/watch", /DUKE FANTASY BROADCAST DESK/],
     ["/watch", /televised games/],
@@ -244,29 +245,29 @@ test("official OUT designation replaces a prior questionable likelihood badge", 
   const response = await fetchRoute("/injuries");
   assert.equal(response.status, 200);
   const html = await response.text();
-  const row = [...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/g)].map(match => match[0]).find(row => row.includes("Tremaine Edmunds"));
-  assert.ok(row, "Tremaine Edmunds watch row renders");
+  const row = [...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/g)].map(match => match[0]).find(row => row.includes("Jaelan Phillips"));
+  assert.ok(row, "Jaelan Phillips watch row renders");
   assert.match(html, /Full review as of/);
   assert.match(html, /Latest dated observation/);
-  assert.match(html, /2026-10-23/);
+  assert.match(html, /2026-10-28/);
   const text = row.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
-  assert.match(text, /Official Week 7 designation: OUT/);
+  assert.match(text, /Official Week 8 designation: OUT/);
   assert.match(text, /UNLIKELY/);
   assert.match(text, /high conf/);
   assert.doesNotMatch(text, /QUESTIONABLE/);
 });
 
-test("in-game OUT ruling renders separately from an injury-report designation", async () => {
+test("Week 8 watch never relabels historical in-game OUT as a current designation", async () => {
   const response = await fetchRoute("/injuries");
-  assert.equal(response.status, 200);
   const html = await response.text();
-  const row = [...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/g)].map(match => match[0]).find(row => row.includes("Britain Covey"));
-  assert.ok(row, "Covey's dated in-game watch record renders");
-  const text = row.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
-  assert.match(text, /Official Week 7 in-game status: OUT \(remainder of this game\)/);
-  assert.match(text, /2026-10-26/);
-  assert.match(text, /knee injury/);
-  assert.doesNotMatch(text, /Official Week 7 designation: OUT/);
+  const watch = html.match(/id="inj-watch-title"[\s\S]*/)?.[0] ?? "";
+  assert.doesNotMatch(watch, /Britain Covey|remainder of this game/);
+  assert.match(html, /Historical Week 7 lists remain available/);
+  const archive = JSON.parse(readFileSync(new URL("../data/injury-research/archive/week7-through-2026-10-26.json", import.meta.url), "utf8"));
+  const covey = archive.watch.find(row => row.player === "Britain Covey");
+  assert.equal(covey.designation_phase, "in_game");
+  assert.equal(covey.status_scope, "remainder_of_game");
+  assert.equal(covey.designation_week, 7);
 });
 
 test("dated reserve verification advances the latest observation while retaining the comprehensive review date", async () => {

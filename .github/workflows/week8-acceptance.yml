@@ -1,0 +1,34 @@
+name: Week 8 acceptance
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: week8-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  acceptance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      WRANGLER_SEND_METRICS: "false"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium webkit
+      - run: npm run check:security-floor
+      - run: npm run dataset:build && npm run week8:verify
+      - run: npm run verify
+      - run: npm run test:injuries
+      - run: npm run dataset:verify
+      - run: npm audit --omit=dev --fetch-retries=0 --fetch-timeout=20000
+      - run: npm run deploy:dry-run

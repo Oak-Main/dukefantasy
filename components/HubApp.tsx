@@ -415,7 +415,7 @@ function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
       <PageHeading
         eyebrow="PRIORITY 01 · SCOREBOARD"
         title="The slate, without the scavenger hunt."
-        description={`Scheduled, final, delayed, and postponed game states with assigned TV networks where locked (${broadcastAsOf ?? "—"} compilation; unlisted games sit on conference plus-networks or await the 6–12 day flex).`}
+        description={`Scheduled, final, delayed, and postponed game states with assigned TV networks where locked (${broadcastAsOf ?? "—"} source edition; later fixtures remain subject to NFL flex scheduling).`}
         actions={
           <span className="freshness-stack">
             <Freshness provenance={games[0].provenance} />
@@ -558,7 +558,7 @@ function SchedulePage(props: HomeProps) {
       <PageHeading
         eyebrow="SEASON-AWARE SCHEDULE"
         title="2026 schedule"
-        description="Conference membership and postseason rules are versioned by season; the preview never hardcodes a permanent team count."
+        description="All 272 regular-season fixtures remain available. Week 8 has 14 games and four byes; times are Eastern and later flex windows remain subject to change."
         actions={asOf != null && patches.size > 0 ? <LiveFreshness /> : undefined}
       />
       <section className="content-section schedule-board">

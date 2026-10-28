@@ -249,7 +249,7 @@ test("DFS ledger grades only published top-10 picks and reports honest accuracy"
   assert.equal(empty.bias, null);
 });
 
-test("injury desk: sourced base, long-term rule and bounded Week 7 cadence", async () => {
+test("injury desk: sourced base, long-term rule and bounded Week 8 cadence across DST", async () => {
   const injury = await import("../lib/injury-report.ts");
   /* The floor proves the feed LOADED — not its size. The NFL injury report
      fluctuates through the week (draft-week peak was 200+; midweek after
@@ -269,12 +269,12 @@ test("injury desk: sourced base, long-term rule and bounded Week 7 cadence", asy
   assert.equal(injury.likelihoodFromPractice({ wed: null, thu: "FP", fri: "FP", sat: null }).likelihood, "likely");
   assert.equal(injury.likelihoodFromPractice({ wed: null, thu: null, fri: "DNP", sat: null }).likelihood, "doubtful");
   assert.equal(injury.likelihoodFromPractice({ wed: null, thu: null, fri: null, sat: null }).likelihood, null);
-  // The actual bounded automation covers the early Sunday game and then expires.
-  const tuesday = injury.nextInjurySlot(new Date("2026-10-20T18:00:00Z"));
-  assert.equal(tuesday?.at.toISOString(), "2026-10-20T23:15:00.000Z");
-  const earlySunday = injury.nextInjurySlot(new Date("2026-10-25T10:59:00Z"));
-  assert.equal(earlySunday?.at.toISOString(), "2026-10-25T11:00:00.000Z");
-  assert.equal(injury.nextInjurySlot(new Date("2026-10-28T07:00:00Z")), null);
+  // This editorial plan is not an automation. PDT and PST use different UTC instants.
+  assert.equal(injury.nextInjurySlot(new Date("2026-10-28T18:00:00Z"))?.at.toISOString(), "2026-10-28T23:15:00.000Z");
+  assert.equal(injury.nextInjurySlot(new Date("2026-10-29T10:59:00Z"))?.at.toISOString(), "2026-10-29T11:00:00.000Z");
+  assert.equal(injury.nextInjurySlot(new Date("2026-11-01T11:59:00Z"))?.at.toISOString(), "2026-11-01T12:00:00.000Z");
+  assert.equal(injury.nextInjurySlot(new Date("2026-11-03T18:00:00Z"))?.at.toISOString(), "2026-11-04T00:15:00.000Z");
+  assert.equal(injury.nextInjurySlot(new Date("2026-11-04T08:00:00Z")), null);
   // Missing research stays empty; published research must have provenance.
   const research = injury.injuryResearch;
   if (research.asOf === null) {
