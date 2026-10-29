@@ -31,7 +31,7 @@ import { applyLivePatch, patchGames } from "@/lib/live-scoreboard";
 import { getRosterPlayerBySlug } from "@/lib/player-records";
 import {
   continuousWeeks,
-  defaultScoreboardWeek,
+  requestedScoreboardWeek,
   gamesForWeek,
 } from "@/lib/scoreboard";
 import { normalizeForcedOutcomes, runPlayoffSimulation, type ForcedOutcomes } from "@/lib/simulation";
@@ -332,13 +332,13 @@ interface HomeProps {
   onFavorite: (teamId: string) => void;
 }
 
-function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
+function ScoresPage({ mode, favorites, onFavorite, requestedWeek }: HomeProps & { requestedWeek?: string | string[] }) {
   const publishedWeeks = useMemo(
     () => [...new Set(games.map((game) => game.week))].sort((a, b) => a - b),
     [],
   );
   const weeks = useMemo(() => continuousWeeks(publishedWeeks), [publishedWeeks]);
-  const [week, setWeek] = useState(() => defaultScoreboardWeek(games, broadcastAsOf));
+  const [week, setWeek] = useState(() => requestedScoreboardWeek(games, broadcastAsOf, requestedWeek));
   const [filter, setFilter] = useState<ScoreFilter>("All");
   const [isPending, startTransition] = useTransition();
   const [pullDistance, setPullDistance] = useState(0);
@@ -415,7 +415,7 @@ function ScoresPage({ mode, favorites, onFavorite }: HomeProps) {
       <PageHeading
         eyebrow="PRIORITY 01 · SCOREBOARD"
         title="The slate, without the scavenger hunt."
-        description={`Scheduled, final, delayed, and postponed game states with assigned TV networks where locked (${broadcastAsOf ?? "—"} compilation; unlisted games sit on conference plus-networks or await the 6–12 day flex).`}
+        description={`Scheduled, final, delayed, and postponed game states with assigned TV networks where locked (${broadcastAsOf ?? "—"} source edition; later fixtures remain subject to NFL flex scheduling).`}
         actions={
           <span className="freshness-stack">
             <Freshness provenance={games[0].provenance} />
@@ -558,7 +558,7 @@ function SchedulePage(props: HomeProps) {
       <PageHeading
         eyebrow="SEASON-AWARE SCHEDULE"
         title="2026 schedule"
-        description="Conference membership and postseason rules are versioned by season; the preview never hardcodes a permanent team count."
+        description="All 272 regular-season fixtures remain available. Week 8 has 14 games and four byes; times are Eastern and later flex windows remain subject to change."
         actions={asOf != null && patches.size > 0 ? <LiveFreshness /> : undefined}
       />
       <section className="content-section schedule-board">
@@ -1255,7 +1255,7 @@ function NotFoundPage() {
   return <EmptyState title="That route is not in the field." copy="The URL may be old, incomplete, or intentionally unavailable." href="/scores" action="Return to scores" />;
 }
 
-export function HubApp({ path = "/" }: { path?: string }) {
+export function HubApp({ path = "/", requestedWeek }: { path?: string; requestedWeek?: string | string[] }) {
   const [mode, setMode] = useState<Mode>("clean");
   const [modeDialogOpen, setModeDialogOpen] = useState(false);
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
@@ -1305,7 +1305,7 @@ export function HubApp({ path = "/" }: { path?: string }) {
   const common = { mode, favorites, onFavorite: toggleFavorite };
 
   if (!root) content = <BroadcastHomepage data={homepageData} cleanMode={mode === "clean"} onModeRequest={() => setModeDialogOpen(true)} />;
-  else if (root === "scores") content = <ScoresPage {...common} />;
+  else if (root === "scores") content = <ScoresPage key={String(requestedWeek)} {...common} requestedWeek={requestedWeek} />;
   else if (root === "schedule") content = <SchedulePage {...common} />;
   else if (root === "games" && parts[1]) content = <GamePage gameId={parts[1]} {...common} />;
   else if (root === "transfer-portal" || root === "transactions") content = <TransactionsPage teamSlug={parts[1]} />;

@@ -35,3 +35,10 @@ export function gamesForWeek(source: readonly Game[], week: number) {
         a.id.localeCompare(b.id),
     );
 }
+
+/** A single stored season week can override the landing slate. Future fixtures
+ * remain planning data with their existing single-source provenance. */
+export function requestedScoreboardWeek(source: readonly Game[], asOf: string | null, value?: string | string[]) {
+  const week = typeof value === "string" && /^(?:[1-9]|1[0-8])$/.test(value) ? Number(value) : null;
+  return week != null && source.some(game => game.week === week) ? week : defaultScoreboardWeek(source, asOf);
+}

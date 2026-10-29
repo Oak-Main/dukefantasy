@@ -274,7 +274,7 @@ export function WatchPage({
 							Where the game <span>lives.</span>
 						</h1>
 						<p className="text-pretty">
-							TV windows, trusted radio flagships, and the school-owned path to
+							TV windows, trusted radio flagships, and the team-owned path to
 							the gate—compiled into one verified game-day handoff.
 						</p>
 					</div>
@@ -410,7 +410,7 @@ export function WatchPage({
 							</h2>
 							<p>
 								Choose a program once. We will surface its verified flagship and
-								official athletics destination.
+								official team destination.
 							</p>
 						</div>
 						<label className="watch-team-select" htmlFor="watch-team">
@@ -507,7 +507,7 @@ export function WatchPage({
 										target="_blank"
 										rel="nofollow noreferrer noopener"
 									>
-										Open official athletics site
+										Open official team site
 										<ExternalLink size={16} aria-hidden="true" />
 									</a>
 								) : (
@@ -548,7 +548,7 @@ export function WatchPage({
 							<div className="watch-ticket-heading">
 								<Ticket size={27} aria-hidden="true" />
 								<div>
-									<span>THE SCHOOL-OWNED PATH</span>
+									<span>THE TEAM-OWNED PATH</span>
 									<h3 id="tickets-card-title" className="font-display">
 										Ticket inventory
 									</h3>
@@ -566,7 +566,7 @@ export function WatchPage({
 							</div>
 
 							<p>
-								Schools and their athletics departments are the only primary
+								NFL teams are the primary
 								ticket source shown by default. Duke Fantasy does not invent resale
 								inventory, prices, or availability.
 							</p>
@@ -578,7 +578,7 @@ export function WatchPage({
 									target="_blank"
 									rel="nofollow noreferrer noopener"
 								>
-									Visit the official athletics site
+									Visit the official team site
 									<ExternalLink size={16} aria-hidden="true" />
 								</a>
 							) : (

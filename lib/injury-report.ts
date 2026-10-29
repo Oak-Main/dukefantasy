@@ -227,23 +227,27 @@ export interface InjurySlot {
 }
 
 export const INJURY_CADENCE: InjurySlot[] = [
-  { id: "daily-morning", label: "Injury and results review", weekdays: [0, 1, 2, 3, 4, 5, 6], daysLabel: "Daily through October 27", minuteOfDay: 9 * 60 + 15, scope: "Practice reports, official designations and completed results" },
-  { id: "daily-afternoon", label: "Afternoon reconciliation", weekdays: [0, 1, 2, 3, 4, 5, 6], daysLabel: "Daily through October 27", minuteOfDay: 16 * 60 + 15, scope: "New reports, score corrections and standings" },
+  { id: "daily-morning", label: "Injury and results review", weekdays: [0, 1, 2, 3, 4, 5, 6], daysLabel: "Daily, October 28–November 3", minuteOfDay: 9 * 60 + 15, scope: "Planned editorial review of practice reports, official designations and completed results" },
+  { id: "daily-afternoon", label: "Afternoon reconciliation", weekdays: [0, 1, 2, 3, 4, 5, 6], daysLabel: "Daily, October 28–November 3", minuteOfDay: 16 * 60 + 15, scope: "Planned reconciliation of new reports, score corrections and standings" },
   { id: "game-windows", label: "Checks every 30 minutes", weekdays: [0, 1, 4], daysLabel: "Thursday, Sunday and Monday", minuteOfDay: 4 * 60, endMinuteOfDay: 22 * 60 + 30, intervalMinutes: 30, scope: "Around actual game windows, including the early Sunday game. Inactive checks begin 90 minutes before kickoff; results publish after corroboration." },
 ];
 
 export function nextInjurySlot(now: Date = new Date()): { slot: InjurySlot; at: Date } | null {
-  // This bounded October 20–27, 2026 schedule is entirely in PDT (UTC−7).
+  // A bounded editorial plan, not an external job. Enumerate actual instants
+  // through the IANA zone: November 1 changes PDT to PST. UTC scanning also
+  // handles repeated/skipped local clock times without a fixed offset.
   let best: { slot: InjurySlot; at: Date } | null = null;
-  for (let date = 20; date <= 27; date += 1) {
-    const day = new Date(Date.UTC(2026, 9, date));
+  const clock = new Intl.DateTimeFormat("en-US", { timeZone: "America/Los_Angeles", year: "numeric", month: "2-digit", day: "2-digit", weekday: "short", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+  const start = Math.max(Date.parse("2026-10-28T07:00:00Z"), Math.floor(now.getTime() / 60_000) * 60_000 + 60_000);
+  for (let instant = start; instant < Date.parse("2026-11-04T08:00:00Z"); instant += 60_000) {
+    const p = Object.fromEntries(clock.formatToParts(new Date(instant)).map(part => [part.type, part.value]));
+    const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday);
+    const minute = Number(p.hour) * 60 + Number(p.minute);
     for (const slot of INJURY_CADENCE) {
-      if (!slot.weekdays.includes(day.getUTCDay())) continue;
-      for (let minute = slot.minuteOfDay; minute <= (slot.endMinuteOfDay ?? slot.minuteOfDay); minute += slot.intervalMinutes ?? 1) {
-        const at = new Date(day.getTime() + minute * 60_000 + 7 * 3_600_000);
-        if (at.getTime() <= now.getTime()) continue;
-        if (!best || at.getTime() < best.at.getTime()) best = { slot, at };
-      }
+      if (!slot.weekdays.includes(weekday) || minute < slot.minuteOfDay || minute > (slot.endMinuteOfDay ?? slot.minuteOfDay)) continue;
+      if ((minute - slot.minuteOfDay) % (slot.intervalMinutes ?? 1) !== 0) continue;
+      best = { slot, at: new Date(instant) };
+      return best;
     }
   }
   return best;

@@ -1,0 +1,351 @@
+{
+  "observedCutoffUtc": "2026-10-28T20:34:19Z",
+  "sources": [
+    {
+      "url": "https://www.packers.com/team/injury-report/",
+      "checkedAt": "2026-10-28T20:33:38.124060+00:00",
+      "rawSha256": "117f0225e777dc090ed2bb5c3d3ac4584cb8ba87d76f41f52e9319725bc30de9",
+      "scope": "Both clubs publish their own and their opponent table for the Carolina at Green Bay Week 8 matchup; club hostname is not the reported-team identity.",
+      "tables": [
+        {
+          "team_slug": "green-bay-packers",
+          "week": 8,
+          "rows": [
+            {
+              "player": "Aaron Banks",
+              "position": "G",
+              "injury": "Knee / Toe",
+              "mon": "LP",
+              "tue": "LP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Anthony Campbell",
+              "position": "DT",
+              "injury": "Ankle",
+              "mon": "DNP",
+              "tue": "LP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Brenton Cox Jr.",
+              "position": "EDGE",
+              "injury": "Quadricep",
+              "mon": "(-)",
+              "tue": "LP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Zaire Franklin",
+              "position": "LB",
+              "injury": "Shin",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Travis Glover",
+              "position": "G/T",
+              "injury": "Knee",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Matthew Golden",
+              "position": "WR",
+              "injury": "Shoulder / Foot",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Sean Rhyan",
+              "position": "C/G",
+              "injury": "Ankle",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Benjamin St-Juste",
+              "position": "CB",
+              "injury": "Hamstring",
+              "mon": "FP",
+              "tue": "FP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Devonte Wyatt",
+              "position": "DT",
+              "injury": "Ankle",
+              "mon": "DNP",
+              "tue": "LP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            }
+          ]
+        },
+        {
+          "team_slug": "carolina-panthers",
+          "week": 8,
+          "rows": [
+            {
+              "player": "Jaelan Phillips",
+              "position": "LB",
+              "injury": "Hamstring",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "DNP",
+              "game_status": "OUT"
+            },
+            {
+              "player": "Torricelli Simpkins III",
+              "position": "G",
+              "injury": "Ankle",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "DNP",
+              "game_status": "OUT"
+            },
+            {
+              "player": "Akayleb Evans",
+              "position": "CB",
+              "injury": "Triceps/knee",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "DNP",
+              "game_status": "OUT"
+            },
+            {
+              "player": "Damien Lewis",
+              "position": "G",
+              "injury": "Knee",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "DNP",
+              "game_status": "OUT"
+            },
+            {
+              "player": "Bobby Brown III",
+              "position": "DT",
+              "injury": "Hand",
+              "mon": "DNP",
+              "tue": "FP",
+              "wed": "FP",
+              "game_status": "QUESTIONABLE"
+            },
+            {
+              "player": "Jalen Coker",
+              "position": "WR",
+              "injury": "Shoulder",
+              "mon": "LP",
+              "tue": "FP",
+              "wed": "FP",
+              "game_status": "(-)"
+            },
+            {
+              "player": "Bryce Young",
+              "position": "QB",
+              "injury": "Knee",
+              "mon": "FP",
+              "tue": "FP",
+              "wed": "FP",
+              "game_status": "(-)"
+            },
+            {
+              "player": "Ryan Fitzgerald",
+              "position": "K",
+              "injury": "Illness",
+              "mon": "",
+              "tue": "",
+              "wed": "FP",
+              "game_status": "(-)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.panthers.com/team/injury-report/",
+      "checkedAt": "2026-10-28T20:33:38.296735+00:00",
+      "rawSha256": "bfc04008f710b617ed67563cb85976cb661c2476e1720af552600db9c59588fa",
+      "scope": "Both clubs publish their own and their opponent table for the Carolina at Green Bay Week 8 matchup; club hostname is not the reported-team identity.",
+      "tables": [
+        {
+          "team_slug": "carolina-panthers",
+          "week": 8,
+          "rows": [
+            {
+              "player": "Jaelan Phillips",
+              "position": "OLB",
+              "injury": "Hamstring",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "DNP",
+              "game_status": "OUT"
+            },
+            {
+              "player": "Torricelli Simpkins III",
+              "position": "G",
+              "injury": "Ankle",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "DNP",
+              "game_status": "OUT"
+            },
+            {
+              "player": "Akayleb Evans",
+              "position": "CB",
+              "injury": "Triceps/knee",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "DNP",
+              "game_status": "OUT"
+            },
+            {
+              "player": "Damien Lewis",
+              "position": "G",
+              "injury": "Knee",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "DNP",
+              "game_status": "OUT"
+            },
+            {
+              "player": "Bobby Brown III",
+              "position": "DT",
+              "injury": "Hand",
+              "mon": "DNP",
+              "tue": "FP",
+              "wed": "FP",
+              "game_status": "QUESTIONABLE"
+            },
+            {
+              "player": "Jalen Coker",
+              "position": "WR",
+              "injury": "Shoulder",
+              "mon": "LP",
+              "tue": "FP",
+              "wed": "FP",
+              "game_status": "(-)"
+            },
+            {
+              "player": "Bryce Young",
+              "position": "QB",
+              "injury": "Knee",
+              "mon": "FP",
+              "tue": "FP",
+              "wed": "FP",
+              "game_status": "(-)"
+            },
+            {
+              "player": "Ryan Fitzgerald",
+              "position": "K",
+              "injury": "Illness",
+              "mon": "",
+              "tue": "",
+              "wed": "FP",
+              "game_status": "(-)"
+            }
+          ]
+        },
+        {
+          "team_slug": "green-bay-packers",
+          "week": 8,
+          "rows": [
+            {
+              "player": "Aaron Banks",
+              "position": "G",
+              "injury": "Knee / Toe",
+              "mon": "LP",
+              "tue": "LP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Anthony Campbell",
+              "position": "DT",
+              "injury": "Ankle",
+              "mon": "DNP",
+              "tue": "LP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Brenton Cox Jr.",
+              "position": "DE",
+              "injury": "Quadricep",
+              "mon": "(-)",
+              "tue": "LP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Zaire Franklin",
+              "position": "OLB",
+              "injury": "Shin",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Travis Glover",
+              "position": "OT",
+              "injury": "Knee",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Matthew Golden",
+              "position": "WR",
+              "injury": "Shoulder / Foot",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Sean Rhyan",
+              "position": "C",
+              "injury": "Ankle",
+              "mon": "DNP",
+              "tue": "DNP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Benjamin St-Juste",
+              "position": "CB",
+              "injury": "Hamstring",
+              "mon": "FP",
+              "tue": "FP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            },
+            {
+              "player": "Devonte Wyatt",
+              "position": "DT",
+              "injury": "Ankle",
+              "mon": "DNP",
+              "tue": "LP",
+              "wed": "",
+              "game_status": "UNSPECIFIED"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

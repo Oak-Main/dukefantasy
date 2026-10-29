@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { ArrowRight, CircleOff, Play } from "lucide-react";
 import type { BroadcastTeam } from "@/lib/homepage";
+import { filmResearchBriefs } from "@/lib/film-research";
 import { DataBoardHero, DataBoardSummary } from "./data-board-primitives";
 import {
   CONCEPT_LIBRARY,
@@ -126,7 +127,7 @@ export function XAndYsPage({ teams }: { teams: readonly BroadcastTeam[] }) {
       <DataBoardHero
         eyebrow="Film room · Concept library"
         title="X & Ys. The offense, decoded."
-        description="Deep breakdowns of offensive concepts — pass and run, macro scheme to micro technique — and how current NFL teams execute them in the 2026 season. After each week, five cut-ups tie the library to the league's best playmakers."
+        description="An editorial concept library for offensive schemes and technique. Weekly footage reviews are not published. Five Week 7 source briefs remain clip-review assignments; they do not establish observed tactics or current team scheme coverage."
         action={
           <a className="db-hero-link" href="#weekly-spotlight">
             This week in film
@@ -265,15 +266,17 @@ export function XAndYsPage({ teams }: { teams: readonly BroadcastTeam[] }) {
             <span className="empty-state__icon" aria-hidden="true">
               <CircleOff />
             </span>
-            <h3>The film room opens after Week 1</h3>
+            <h3>Weekly film reviews are not published</h3>
             <p>
-              {pending.length} spotlight {pending.length === 1 ? "board" : "boards"} staged. The first{" "}
-              {SPOTLIGHT_FORMAT.countPerWeek} cut-ups publish the Tuesday after Week 1 completes — big
-              plays from the league&apos;s top playmakers, each tied to a concept above. No placeholder
-              film, ever.
+              {pending.length} unpublished placeholder remains. No footage has been watched or accepted for weekly tactical analysis. The concept library is background instruction, not an observed Week 7 breakdown.
             </p>
           </div>
         )}
+      </section>
+      <section className="apex-container db-section" aria-labelledby="film-research-title">
+        <h2 id="film-research-title">Week 7 film research queue — five briefs, zero accepted reviews</h2>
+        <p>October 28 research handoff. These source descriptions are clip-review assignments, not film observations. Each needs a licensed clip, timecode, concept verification and reviewer.</p>
+        <div className="research-card-grid">{filmResearchBriefs.map(brief => <article key={brief.player} className="research-card"><h3>{brief.player}</h3><p>{brief.question}</p><a href={brief.source} target="_blank" rel="noopener noreferrer">Official source for review</a></article>)}</div>
       </section>
     </div>
   );

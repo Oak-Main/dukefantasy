@@ -1,0 +1,819 @@
+{
+ "waiver": {
+  "as_of": "2026-10-20",
+  "week_adding_for": 7,
+  "adds": [
+   {
+    "player": "Aaron Rodgers",
+    "team_slug": "pittsburgh-steelers",
+    "position": "QB",
+    "ownership_pct": null,
+    "why": "Paris streamer if active; compare with your available quarterbacks.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Michael Penix Jr.",
+    "team_slug": "atlanta-falcons",
+    "position": "QB",
+    "ownership_pct": null,
+    "why": "Bye-week quarterback option against San Francisco; keep expectations modest.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "Tanner McKee",
+    "team_slug": "philadelphia-eagles",
+    "position": "QB",
+    "ownership_pct": null,
+    "why": "Superflex contingency while Hurts is unavailable; Dallas is the Week 7 opponent.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Mike Washington Jr.",
+    "team_slug": "las-vegas-raiders",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Speculative backfield upside behind Jeanty; a committee role does not guarantee a start.",
+    "hold": "rest_of_season",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Kendre Miller",
+    "team_slug": "new-orleans-saints",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Early-down candidate against Pittsburgh; the Saints still share backfield work.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "Tyrone Tracy Jr.",
+    "team_slug": "new-york-giants",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Stash after Week 6 involvement; wait for evidence that the backfield role persists.",
+    "hold": "rest_of_season",
+    "confidence": "low",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "Roschon Johnson",
+    "team_slug": "chicago-bears",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Thursday flex contingency if Monangai remains unavailable; Swift leads the backfield.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Jaleel McLaughlin",
+    "team_slug": "cleveland-browns",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Short-term option only if Cleveland's injured backs remain unavailable.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Bam Knight",
+    "team_slug": "arizona-cardinals",
+    "position": "RB",
+    "ownership_pct": null,
+    "why": "Conditional flex if Love remains out; Allgeier also has a role.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "Germie Bernard",
+    "team_slug": "pittsburgh-steelers",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Priority receiver add after 11 catches on 12 targets; Paris kickoff is early Sunday.",
+    "hold": "rest_of_season",
+    "confidence": "medium",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Omar Cooper Jr.",
+    "team_slug": "new-york-jets",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Priority receiver add after returning with 6 catches, 103 yards and a touchdown.",
+    "hold": "rest_of_season",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "Ja'Kobi Lane",
+    "team_slug": "baltimore-ravens",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Speculative add after returning; monitor Jackson and Bateman before starting him.",
+    "hold": "rest_of_season",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "Jaylin Noel",
+    "team_slug": "houston-texans",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Flex depth against the Giants; confirm the receiving rotation as Dell works toward returning.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "DeMario Douglas",
+    "team_slug": "new-england-patriots",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Thursday depth option after Doubs went to IR; recheck final roles and inactives.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Tre Tucker",
+    "team_slug": "las-vegas-raiders",
+    "position": "WR",
+    "ownership_pct": null,
+    "why": "Big-play flex option against the Rams; accept weekly production risk.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.usatoday.com/story/sports/fantasy/football/2026/10/19/fantasy-football-week-7-waiver-wire-pickups-faab/92332424007/"
+    ]
+   },
+   {
+    "player": "Tyler Higbee",
+    "team_slug": "los-angeles-rams",
+    "position": "TE",
+    "ownership_pct": null,
+    "why": "Immediate tight-end stream with Adams unavailable and Ferguson still on IR.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "T.J. Hockenson",
+    "team_slug": "minnesota-vikings",
+    "position": "TE",
+    "ownership_pct": null,
+    "why": "Consider against Indianapolis only after concussion clearance and active status.",
+    "hold": "stream",
+    "confidence": "low",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "Terrance Ferguson",
+    "team_slug": "los-angeles-rams",
+    "position": "TE",
+    "ownership_pct": null,
+    "why": "IR stash for Week 8 or later; he cannot solve a Week 7 lineup need.",
+    "hold": "rest_of_season",
+    "confidence": "low",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "Cleveland Browns D/ST",
+    "team_slug": "cleveland-browns",
+    "position": "DST",
+    "ownership_pct": null,
+    "why": "Streaming candidate at Tennessee; compare league-specific defensive scoring.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "New York Jets D/ST",
+    "team_slug": "new-york-jets",
+    "position": "DST",
+    "ownership_pct": null,
+    "why": "Streaming candidate at home against Miami; confirm opponent quarterback news.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.rotoballer.com/waiver-wire-express-week-7-fantasy-football-pickups-adds-2026/1969725"
+    ]
+   },
+   {
+    "player": "Chris Boswell",
+    "team_slug": "pittsburgh-steelers",
+    "position": "K",
+    "ownership_pct": null,
+    "why": "Kicker stream in Paris; the early start requires an early lineup check.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   },
+   {
+    "player": "Jake Bates",
+    "team_slug": "detroit-lions",
+    "position": "K",
+    "ownership_pct": null,
+    "why": "Kicker stream for Green Bay at Detroit; check availability before adding.",
+    "hold": "stream",
+    "confidence": "medium",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+    ]
+   }
+  ],
+  "drops": [],
+  "priority_note": "For an immediate receiver need, compare Germie Bernard and Omar Cooper Jr. first. Mike Washington Jr. is a speculative running-back add. All adds depend on actual league availability; ESPN ownership could not be confirmed. No universal top claim, mandatory drop, or FAAB bid is appropriate without roster and budget context. Buffalo, Jacksonville, the Chargers and Washington are on bye. Ferguson and Washington pass catchers are stashes, not Week 7 starters."
+ },
+ "start_sit": {
+  "as_of": "2026-10-20",
+  "week": 7,
+  "positions": [
+   {
+    "position": "RB",
+    "tiers": [
+     {
+      "tier": "start_confidence",
+      "players": [
+       {
+        "player": "Jahmyr Gibbs",
+        "team_slug": "detroit-lions",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Bijan Robinson",
+        "team_slug": "atlanta-falcons",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Christian McCaffrey",
+        "team_slug": "san-francisco-49ers",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Kyren Williams",
+        "team_slug": "los-angeles-rams",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Derrick Henry",
+        "team_slug": "baltimore-ravens",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Jonathan Taylor",
+        "team_slug": "indianapolis-colts",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Javonte Williams",
+        "team_slug": "dallas-cowboys",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Jaylen Warren",
+        "team_slug": "pittsburgh-steelers",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "position": "WR",
+    "tiers": [
+     {
+      "tier": "start_confidence",
+      "players": [
+       {
+        "player": "Puka Nacua",
+        "team_slug": "los-angeles-rams",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Jaxon Smith-Njigba",
+        "team_slug": "seattle-seahawks",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Ja'Marr Chase",
+        "team_slug": "cincinnati-bengals",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "CeeDee Lamb",
+        "team_slug": "dallas-cowboys",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Amon-Ra St. Brown",
+        "team_slug": "detroit-lions",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Christian Watson",
+        "team_slug": "green-bay-packers",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       },
+       {
+        "player": "Drake London",
+        "team_slug": "atlanta-falcons",
+        "note": "Early half-PPR starter based on two current ranking sources. Check final availability; order within this tier is not a rank.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "position": "QB",
+    "tiers": [
+     {
+      "tier": "start_confidence",
+      "players": [
+       {
+        "player": "Drake Maye",
+        "team_slug": "new-england-patriots",
+        "note": "Early starter judgment from current FFC and Draft Sharks rankings; the sources differ in order and scoring defaults. No blended forecast is claimed.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.draftsharks.com/weekly-rankings/7"
+        ]
+       },
+       {
+        "player": "Brock Purdy",
+        "team_slug": "san-francisco-49ers",
+        "note": "Early starter judgment from current FFC and Draft Sharks rankings; the sources differ in order and scoring defaults. No blended forecast is claimed.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.draftsharks.com/weekly-rankings/7"
+        ]
+       },
+       {
+        "player": "Jordan Love",
+        "team_slug": "green-bay-packers",
+        "note": "Early starter judgment from current FFC and Draft Sharks rankings; the sources differ in order and scoring defaults. No blended forecast is claimed.",
+        "sources": [
+         "https://fantasyfootballcalculator.com/rankings/half-ppr",
+         "https://www.draftsharks.com/weekly-rankings/7"
+        ]
+       }
+      ]
+     },
+     {
+      "tier": "start_if_needed",
+      "players": [
+       {
+        "player": "Aaron Rodgers",
+        "team_slug": "pittsburgh-steelers",
+        "note": "Paris streamer if active; both waiver analysts identify him as an option. Set the lineup before the early kickoff.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "position": "TE",
+    "tiers": [
+     {
+      "tier": "start_if_needed",
+      "players": [
+       {
+        "player": "Tyler Higbee",
+        "team_slug": "los-angeles-rams",
+        "note": "Conditional Week 7 streamer with Adams unavailable; recheck active status.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
+       }
+      ]
+     },
+     {
+      "tier": "fringe",
+      "players": [
+       {
+        "player": "T.J. Hockenson",
+        "team_slug": "minnesota-vikings",
+        "note": "Use only after concussion clearance and active confirmation; maintain another eligible TE.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
+       }
+      ]
+     },
+     {
+      "tier": "sit",
+      "players": [
+       {
+        "player": "Terrance Ferguson",
+        "team_slug": "los-angeles-rams",
+        "note": "Week 7 is too early: IR stash for Week 8 or later.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "position": "DST",
+    "tiers": [
+     {
+      "tier": "start_if_needed",
+      "players": [
+       {
+        "player": "Cleveland Browns D/ST",
+        "team_slug": "cleveland-browns",
+        "note": "Two waiver sources identify this defense as a Week 7 streamer; scoring and alternatives matter.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
+       },
+       {
+        "player": "New York Jets D/ST",
+        "team_slug": "new-york-jets",
+        "note": "Two waiver sources identify this defense as a Week 7 streamer; scoring and alternatives matter.",
+        "sources": [
+         "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+         "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/"
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "tough_calls": [
+   {
+    "player": "Lamar Jackson",
+    "team_slug": "baltimore-ravens",
+    "verdict": "Do not treat a return expectation as clearance; keep a replacement until his status is confirmed.",
+    "sources": [
+     "https://www.espn.com/nfl/injuries",
+     "https://www.cbssports.com/nfl/injuries/"
+    ]
+   },
+   {
+    "player": "Baker Mayfield",
+    "team_slug": "tampa-bay-buccaneers",
+    "verdict": "Wait for thumb and practice updates; Jalon Daniels remains a contingency, not an assumed starter.",
+    "sources": [
+     "https://www.espn.com/nfl/injuries",
+     "https://www.cbssports.com/nfl/injuries/"
+    ]
+   },
+   {
+    "player": "Saquon Barkley",
+    "team_slug": "philadelphia-eagles",
+    "verdict": "Monday kickoff adds replacement risk; keep an eligible Monday alternative if uncertainty persists.",
+    "sources": [
+     "https://www.espn.com/nfl/injuries",
+     "https://www.cbssports.com/nfl/injuries/"
+    ]
+   },
+   {
+    "player": "Josh Jacobs",
+    "team_slug": "green-bay-packers",
+    "verdict": "Removal from the exempt list does not by itself prove a full workload; check game-week reporting.",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-7-latest-news-updates-for-davante-adams-mike-evans-lamar-jackson-more-players-155807435.html",
+     "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+    ]
+   },
+   {
+    "player": "Kyle Monangai",
+    "team_slug": "chicago-bears",
+    "verdict": "Monday estimated DNP is not a final Thursday ruling; Roschon Johnson is a conditional fallback.",
+    "sources": [
+     "https://www.espn.com/nfl/injuries",
+     "https://www.cbssports.com/nfl/injuries/"
+    ]
+   }
+  ]
+ },
+ "rookie": {
+  "as_of": "2026-10-20",
+  "week": 6,
+  "rookies": [
+   {
+    "player": "Germie Bernard",
+    "team_slug": "pittsburgh-steelers",
+    "position": "WR",
+    "draft_round": null,
+    "snaps": null,
+    "team_snaps": null,
+    "snap_share_pct": null,
+    "targets_or_carries": 12,
+    "trend": "rising",
+    "why": "11 receptions, 87 yards and one receiving touchdown on 12 targets. Target opportunity supports a waiver add; snap share is unverified.",
+    "fantasy_meaning": "waiver_relevant",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.espn.com/nfl/boxscore/_/gameId/401873002"
+    ]
+   },
+   {
+    "player": "Omar Cooper Jr.",
+    "team_slug": "new-york-jets",
+    "position": "WR",
+    "draft_round": null,
+    "snaps": null,
+    "team_snaps": null,
+    "snap_share_pct": null,
+    "targets_or_carries": 7,
+    "trend": "rising",
+    "why": "6 receptions, 103 yards and one receiving touchdown on 7 targets after returning. Snap share is unverified.",
+    "fantasy_meaning": "waiver_relevant",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.espn.com/nfl/boxscore/_/gameId/401873001"
+    ]
+   },
+   {
+    "player": "Ja'Kobi Lane",
+    "team_slug": "baltimore-ravens",
+    "position": "WR",
+    "draft_round": null,
+    "snaps": null,
+    "team_snaps": null,
+    "snap_share_pct": null,
+    "targets_or_carries": 5,
+    "trend": "rising",
+    "why": "4 receptions for 40 yards on 5 targets after returning. Treat the larger role as conditional on later availability news.",
+    "fantasy_meaning": "waiver_relevant",
+    "sources": [
+     "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-7-2026/",
+     "https://www.espn.com/nfl/boxscore/_/gameId/401872997"
+    ]
+   },
+   {
+    "player": "Mike Washington Jr.",
+    "team_slug": "las-vegas-raiders",
+    "position": "RB",
+    "draft_round": null,
+    "snaps": null,
+    "team_snaps": null,
+    "snap_share_pct": null,
+    "targets_or_carries": 9,
+    "trend": "rising",
+    "why": "9 rushes for 43 yards plus one catch for 7 yards. Targets_or_carries stores carries for this RB; snap share is unverified.",
+    "fantasy_meaning": "waiver_relevant",
+    "sources": [
+     "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-waiver-wire-mike-washington-jr-omar-cooper-jr-among-top-pickups-174557647.html",
+     "https://www.espn.com/nfl/boxscore/_/gameId/401873005"
+    ]
+   }
+  ]
+ },
+ "trade": {
+  "as_of": "2026-10-20",
+  "week": 7,
+  "boards": [
+   {
+    "position": "QB",
+    "rows": [
+     {
+      "player": "Trevor Lawrence",
+      "team_slug": "jacksonville-jaguars",
+      "tier": 3,
+      "market": "buy_low",
+      "basis": "Editorial superflex watch: buying through a verified Week 7 bye requires another starter. Facts: NFL/ESPN schedule; judgment: FantasyPros trade analysis.",
+      "sources": [
+       "https://www.fantasypros.com/2026/10/fantasy-football-week-7-early-trade-targets-2026/",
+       "https://www.nfl.com/schedules/2026/by-week/week-7"
+      ]
+     }
+    ]
+   },
+   {
+    "position": "RB",
+    "rows": [
+     {
+      "player": "Bijan Robinson",
+      "team_slug": "atlanta-falcons",
+      "tier": 1,
+      "market": "fair",
+      "basis": "Elite retention judgment supported by two half-PPR ranking sources. Do not equate one week of rankings with a numeric trade valuation.",
+      "sources": [
+       "https://fantasyfootballcalculator.com/rankings/half-ppr",
+       "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+      ]
+     },
+     {
+      "player": "Quinshon Judkins",
+      "team_slug": "cleveland-browns",
+      "tier": 3,
+      "market": "buy_low",
+      "basis": "Injury-risk buy only at a discount; the ankle issue is corroborated by ESPN and CBS. No return or workload guarantee.",
+      "sources": [
+       "https://www.espn.com/nfl/injuries",
+       "https://www.cbssports.com/nfl/injuries/"
+      ]
+     },
+     {
+      "player": "Chase Brown",
+      "team_slug": "cincinnati-bengals",
+      "tier": 3,
+      "market": "buy_low",
+      "basis": "Post-bye trade watch, not a guaranteed rebound. Schedule facts are independently checked; the buy-low tag is editorial.",
+      "sources": [
+       "https://www.fantasypros.com/2026/10/fantasy-football-week-7-early-trade-targets-2026/",
+       "https://www.nfl.com/schedules/2026/by-week/week-7"
+      ]
+     }
+    ]
+   },
+   {
+    "position": "WR",
+    "rows": [
+     {
+      "player": "Puka Nacua",
+      "team_slug": "los-angeles-rams",
+      "tier": 1,
+      "market": "fair",
+      "basis": "Elite retention judgment from two current half-PPR ranking sources; Adams absence is corroborated separately.",
+      "sources": [
+       "https://fantasyfootballcalculator.com/rankings/half-ppr",
+       "https://www.fantasypros.com/nfl/rankings/half-point-ppr-flex.php?week=7"
+      ]
+     },
+     {
+      "player": "Tee Higgins",
+      "team_slug": "cincinnati-bengals",
+      "tier": 3,
+      "market": "buy_low",
+      "basis": "Post-bye buy watch from FantasyPros, with opponents checked against NFL/ESPN. Price depends on league format.",
+      "sources": [
+       "https://www.fantasypros.com/2026/10/fantasy-football-week-7-early-trade-targets-2026/",
+       "https://www.nfl.com/schedules/2026/by-week/week-7"
+      ]
+     },
+     {
+      "player": "DK Metcalf",
+      "team_slug": "pittsburgh-steelers",
+      "tier": 3,
+      "market": "fair",
+      "basis": "Volume-oriented hold judgment; Week 6 receiving usage checked against the ESPN box score and FantasyPros trade analysis.",
+      "sources": [
+       "https://www.fantasypros.com/2026/10/fantasy-football-week-7-early-trade-targets-2026/",
+       "https://www.espn.com/nfl/boxscore/_/gameId/401873002"
+      ]
+     }
+    ]
+   },
+   {
+    "position": "TE",
+    "rows": [
+     {
+      "player": "T.J. Hockenson",
+      "team_slug": "minnesota-vikings",
+      "tier": 4,
+      "market": "buy_low",
+      "basis": "Conditional injury discount only; ESPN and CBS show unresolved concussion status. Do not price him as cleared.",
+      "sources": [
+       "https://www.espn.com/nfl/injuries",
+       "https://www.cbssports.com/nfl/injuries/"
+      ]
+     }
+    ]
+   }
+  ],
+  "swing_trades": []
+ }
+}

@@ -1,17 +1,17 @@
 {
-  "asOf": "2026-10-20",
+  "asOf": "2026-10-28",
   "fetchedAt": null,
-  "week": 7,
+  "week": 8,
   "byes": [
-    "buffalo-bills",
-    "los-angeles-chargers",
-    "washington-commanders",
-    "jacksonville-jaguars"
+    "houston-texans",
+    "new-orleans-saints",
+    "new-york-giants",
+    "san-francisco-49ers"
   ],
   "transactions": {
     "window_start": "2026-10-14",
     "window_end": "2026-10-20",
-    "coverage_note": "Six official monthly wire categories inspected. Only moves corroborated by the second publisher are publishable; the remainder stay in quarantine. ESPN visible coverage is October 17 and 19.",
+    "coverage_note": "Targeted transaction coverage: 30 October 14\u201320 moves retained at their original dates plus five October 27\u201328 announcements. This is not an exhaustive current roster/depth feed; Nelson remains pending physical and Newton is not activated.",
     "moves": [
       {
         "player": "Tanner Hudson",
@@ -492,6 +492,76 @@
         ],
         "confidence": "high",
         "verification": "two_publishers"
+      },
+      {
+        "player": "Quenton Nelson",
+        "from_team_slug": "indianapolis-colts",
+        "to_team_slug": "seattle-seahawks",
+        "position": "G",
+        "transaction_type": "trade",
+        "date": "2026-10-27",
+        "status": "pending_physical",
+        "detail": "Seattle and Indianapolis announce a trade for a 2027 third-round and 2028 fifth-round pick. Seattle explicitly says pending physical; no verified depth-chart rank or workload is assigned.",
+        "sources": [
+          "https://www.seahawks.com/news/seahawks-acquire-all-pro-guard-quenton-nelson-in-trade-with-colts-pending-physical",
+          "https://www.colts.com/news/colts-trade-g-quenton-nelson-to-seattle-seahawks-for-2-future-nfl-draft-picks"
+        ]
+      },
+      {
+        "player": "DeForest Buckner",
+        "from_team_slug": "indianapolis-colts",
+        "to_team_slug": "san-francisco-49ers",
+        "position": "DT",
+        "transaction_type": "trade",
+        "date": "2026-10-27",
+        "status": "announced",
+        "detail": "Indianapolis announces Buckner traded to San Francisco for a 2027 fourth-round pick. No unverified starter rank or activation is assigned.",
+        "sources": [
+          "https://www.colts.com/news/colts-acquire-2027-fourth-round-pick-in-exchange-for-dt-deforest-buckner-in-trade-with-san-francisco-49ers",
+          "https://www.cbssports.com/nfl/news/deforest-buckner-trade-grades-49ers-colts/"
+        ]
+      },
+      {
+        "player": "Terry McLaurin",
+        "from_team_slug": "washington-commanders",
+        "to_team_slug": "washington-commanders",
+        "position": "WR",
+        "transaction_type": "reserve_injured",
+        "date": "2026-10-28",
+        "status": "placed",
+        "detail": "Washington placed McLaurin on Reserve/Injured; season-ending knee injury reported by the team and NFL.",
+        "sources": [
+          "https://www.commanders.com/news/commanders-terry-mclaurin-injured-reserve-jer-zhan-newton",
+          "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-oct-28"
+        ]
+      },
+      {
+        "player": "Van Jefferson",
+        "from_team_slug": "washington-commanders",
+        "to_team_slug": "washington-commanders",
+        "position": "WR",
+        "transaction_type": "practice_squad_to_active",
+        "date": "2026-10-28",
+        "status": "signed",
+        "detail": "Signed from the Washington practice squad to the active roster. No starting role inferred.",
+        "sources": [
+          "https://www.commanders.com/news/commanders-terry-mclaurin-injured-reserve-jer-zhan-newton",
+          "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-oct-28"
+        ]
+      },
+      {
+        "player": "Jer'Zhan Newton",
+        "from_team_slug": "washington-commanders",
+        "to_team_slug": "washington-commanders",
+        "position": "DT",
+        "transaction_type": "designated_return_to_practice",
+        "date": "2026-10-28",
+        "status": "practice_window",
+        "detail": "Designated return to practice; 21-day window, not activation from Reserve/Injured or clearance for Week 8.",
+        "sources": [
+          "https://www.commanders.com/news/commanders-terry-mclaurin-injured-reserve-jer-zhan-newton",
+          "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-oct-28"
+        ]
       }
     ]
   },
@@ -6689,6 +6759,552 @@
       ],
       "checkedAt": "2026-10-24T23:15:37.324Z",
       "note": "Friday practice participation. Reserve eligibility and game-day inactive lists are separate."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Jaelan Phillips",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Jaelan Phillips",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-28",
+      "week": 8,
+      "player": "Jaelan Phillips",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Torricelli Simpkins III",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Torricelli Simpkins III",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-28",
+      "week": 8,
+      "player": "Torricelli Simpkins III",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Akayleb Evans",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Triceps/knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Akayleb Evans",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Triceps/knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-28",
+      "week": 8,
+      "player": "Akayleb Evans",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Triceps/knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Damien Lewis",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Damien Lewis",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-28",
+      "week": 8,
+      "player": "Damien Lewis",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Bobby Brown III",
+      "team_slug": "carolina-panthers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Hand",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Bobby Brown III",
+      "team_slug": "carolina-panthers",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Hand",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-28",
+      "week": 8,
+      "player": "Bobby Brown III",
+      "team_slug": "carolina-panthers",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Hand",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Jalen Coker",
+      "team_slug": "carolina-panthers",
+      "participation": "LP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Jalen Coker",
+      "team_slug": "carolina-panthers",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-28",
+      "week": 8,
+      "player": "Jalen Coker",
+      "team_slug": "carolina-panthers",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Shoulder",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Bryce Young",
+      "team_slug": "carolina-panthers",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Bryce Young",
+      "team_slug": "carolina-panthers",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-28",
+      "week": 8,
+      "player": "Bryce Young",
+      "team_slug": "carolina-panthers",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-28",
+      "week": 8,
+      "player": "Ryan Fitzgerald",
+      "team_slug": "carolina-panthers",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Illness",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Aaron Banks",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Knee / Toe",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Aaron Banks",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Knee / Toe",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Anthony Campbell",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Anthony Campbell",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Brenton Cox Jr.",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Quadricep",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Zaire Franklin",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Shin",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Zaire Franklin",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Shin",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Travis Glover",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Travis Glover",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Knee",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Matthew Golden",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Shoulder / Foot",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Matthew Golden",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Shoulder / Foot",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Sean Rhyan",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Sean Rhyan",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Benjamin St-Juste",
+      "team_slug": "green-bay-packers",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Benjamin St-Juste",
+      "team_slug": "green-bay-packers",
+      "participation": "FP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Hamstring",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-26",
+      "week": 8,
+      "player": "Devonte Wyatt",
+      "team_slug": "green-bay-packers",
+      "participation": "DNP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
+    },
+    {
+      "date": "2026-10-27",
+      "week": 8,
+      "player": "Devonte Wyatt",
+      "team_slug": "green-bay-packers",
+      "participation": "LP",
+      "report_type": "estimated_walkthrough",
+      "injury": "Ankle",
+      "sources": [
+        "https://www.panthers.com/team/injury-report/",
+        "https://www.packers.com/team/injury-report/"
+      ],
+      "note": "Estimated participation, not clearance or activation. Both source pages include the named team in their two-team matchup tables. Wednesday Green Bay participation remains unpublished."
     }
   ],
   "limitations": [
@@ -6697,10 +7313,15 @@
     "No complete 32-team roster/depth refresh, film review, scheme audit or all-rookie census.",
     "No three-source compatible numeric projection set.",
     "No two-source game-time weather forecast.",
-    "No published past predictions to grade."
+    "No published past predictions to grade.",
+    "Week 8 watch: targeted Carolina/Green Bay reporting only, not all 32 teams recertified. Full injury-ledger review remains October 20; dated partial updates do not refresh it.",
+    "Week 7 practice reports and inactives remain historical. No Week 8 inactive lists published before official game-day announcements.",
+    "Week 8 waiver/start-sit/trade and Week 7 rookie boards are withheld. Prior half-PPR redraft edition is archived; league size, ownership eligibility and complete usage are not established for a new board. No private roster is available.",
+    "Season leaders remain the corroborated October 20 edition through Week 6. Fifteen proposed Week 7 totals are held as single-source research because successful second-publisher verification is absent; no comprehensive all-player/team or snap/route feed is claimed.",
+    "Five film briefs are research assignments; no footage watched or tactical observation published. DFS has zero immutable pregame projections and zero gradeable picks."
   ],
   "verification": "At least two distinct publishers must corroborate factual fields. Syndicated/linked reports do not establish independent reporting. Two-publisher corroboration is the standard used, not a claim of independent upstream data collection. Editorial judgments are labeled; field-level exceptions and unsupported claims are held.",
-  "compiledAt": "2026-10-20T19:20:03.528Z",
+  "compiledAt": "2026-10-28T21:02:11.058956Z",
   "collectedOn": "2026-10-20",
   "reserveStatuses": [
     {
@@ -7142,18 +7763,30 @@
       "status": "Roster exemption removed",
       "asOf": "2026-10-24",
       "checkedAt": "2026-10-24T23:42:18.080Z",
-      "note": "Green Bay removed Jacobs’ roster exemption October 24. This eligibility update does not establish the complete game-day active roster.",
+      "note": "Green Bay removed Jacobs\u2019 roster exemption October 24. This eligibility update does not establish the complete game-day active roster.",
       "sources": [
         "https://www.packers.com/team/transactions/",
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
       ]
+    },
+    {
+      "player": "Jer'Zhan Newton",
+      "team_slug": "washington-commanders",
+      "status": "RETURN_TO_PRACTICE_WINDOW",
+      "sources": [
+        "https://www.commanders.com/news/commanders-terry-mclaurin-injured-reserve-jer-zhan-newton",
+        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-oct-28"
+      ],
+      "asOf": "2026-10-28",
+      "checkedAt": "2026-10-28T20:34:19Z",
+      "note": "October 28 designated return to practice opens a 21-day window. Remains on Reserve/Injured until an actual activation; no Week 8 clearance."
     }
   ],
   "moduleSources": {
     "schedule": {
-      "sourceAsOf": "2026-10-26",
-      "fetchedAt": "2026-10-27T03:31:33.678Z",
-      "compiledAt": "2026-10-27T03:36:22.229Z"
+      "sourceAsOf": "2026-10-28",
+      "fetchedAt": "2026-10-28T21:02:11.058956Z",
+      "compiledAt": "2026-10-28T21:02:11.058956Z"
     },
     "injuries": {
       "sourceAsOf": "2026-10-20",
@@ -7161,9 +7794,9 @@
       "compiledAt": "2026-10-20T19:20:03.528Z"
     },
     "fantasy": {
-      "sourceAsOf": "2026-10-20",
+      "sourceAsOf": null,
       "fetchedAt": null,
-      "compiledAt": "2026-10-20T19:20:03.528Z"
+      "compiledAt": null
     },
     "transactions": {
       "sourceAsOf": "2026-10-20",

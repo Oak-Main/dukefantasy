@@ -1,25 +1,33 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
-import test from "node:test";
+import { readFileSync, readdirSync } from "node:fs";
+import test, { after } from "node:test";
+import { fileURLToPath } from "node:url";
+import { join } from "node:path";
+import { Miniflare, convertV4MiniflareOptions } from "miniflare";
 
-const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-const { default: worker } = await import(workerUrl.href);
+// Vinext 1.2 emits a native cloudflare:workers tracing import. Exercise the
+// built Worker in workerd rather than stubbing that production runtime API.
+const modulesRoot = fileURLToPath(new URL("../dist/server", import.meta.url));
+const files = readdirSync(modulesRoot, { recursive: true }).filter(path => path.endsWith(".js"));
+const runtime = new Miniflare(convertV4MiniflareOptions({
+  modulesRoot,
+  modules: ["index.js", ...files.filter(path => path !== "index.js")].map(path => ({ type: "ESModule", path: join(modulesRoot, path) })),
+  compatibilityDate: "2026-09-01",
+  compatibilityFlags: ["nodejs_compat"],
+  outboundService: async request => {
+    assert.equal(request.url, "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries");
+    return new Response("Deterministic upstream-unavailable fixture", { status: 503 });
+  },
+  serviceBindings: { ASSETS: async () => new Response("Not found", { status: 404 }) },
+}));
+after(() => runtime.dispose());
+const worker = { fetch: request => runtime.dispatchFetch(request.url, new Request(request, { redirect: "manual" })) };
 
 async function fetchRoute(path, init) {
-  return worker.fetch(
-    new Request(`http://localhost${path}`, {
-      headers: { accept: "text/html", ...(init?.headers ?? {}) },
-      ...init,
-    }),
-    {
-      ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
-  );
+  return worker.fetch(new Request(`http://localhost${path}`, {
+    ...init,
+    headers: { accept: "text/html", ...(init?.headers ?? {}) },
+  }));
 }
 
 test("server-renders the finished home utility", async () => {
@@ -27,6 +35,7 @@ test("server-renders the finished home utility", async () => {
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   assert.match(response.headers.get("x-content-revision") ?? "", /^[a-f0-9]{64}$/);
+  assert.match(response.headers.get("x-source-revision") ?? "", /^[a-f0-9]{40}$/);
   assert.match(response.headers.get("x-robots-tag") ?? "", /noindex/i);
   assert.match(response.headers.get("content-security-policy") ?? "", /frame-ancestors 'none'/);
 
@@ -45,6 +54,8 @@ test("server-renders the finished home utility", async () => {
   }
   assert.match(html, /32/);
   assert.match(html, /NFL teams/);
+  assert.match(html, /Current decision boards are not published/);
+  assert.doesNotMatch(html, /Researched null|transactions in the October 14–20 window/);
   assert.match(html, /Clean Mode/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });
@@ -86,8 +97,8 @@ test("critical product routes render dataset-backed content", async () => {
     ["/games/401872657", /Netflix/],
     ["/games/401872657", /49ers|Rams/],
     ["/dfs", /picks you can audit/i],
-    ["/dfs", /Week <!-- -->7<!-- --> projections are not published/i],
-    ["/fantasy-desk", /Aaron Rodgers/],
+    ["/dfs", /Week <!-- -->8<!-- --> projections are not published/i],
+    ["/fantasy-desk", /Week 8 waiver/],
     ["/transactions", /Tanner Hudson/],
     ["/stats", /Matthew Stafford/],
     ["/data-sources", /Source as of/],
@@ -97,12 +108,12 @@ test("critical product routes render dataset-backed content", async () => {
     ["/x-and-ys", /The offense, decoded/],
     ["/x-and-ys", /Wide Zone Tree/],
     ["/x-and-ys", /Mesh/],
-    ["/x-and-ys", /film room opens after Week 1/i],
+    ["/x-and-ys", /Weekly film reviews are not published/i],
     ["/injuries", /The injury report, on the record/],
     ["/injuries", /LONG-TERM LEDGER/],
     ["/injuries", /GAME-TIME DECISIONS|week-to-week watch/i],
-    ["/injuries", /Next scheduled check|Week 7 scheduled checks ended/],
-    ["/api/injuries", /"source": ?"ESPN NFL injuries feed"/],
+    ["/injuries", /Next scheduled check|Week 8 editorial review plan ended/],
+    ["/api/injuries", /"source": ?"ESPN NFL injuries feed \(build snapshot\)"/],
     ["/watch", /DUKE FANTASY BROADCAST DESK/],
     ["/watch", /televised games/],
     ["/watch", /TicketNetwork/],
@@ -204,7 +215,15 @@ test("spoofed admin-identity headers never reach the app (NF-1)", async () => {
 test("health and readiness endpoints disclose dataset state", async () => {
   const health = await fetchRoute("/api/health", { headers: { accept: "application/json" } });
   assert.equal(health.status, 200);
-  assert.equal((await health.json()).dataEnvironment, "dataset");
+  const healthData = await health.json();
+  assert.equal(healthData.dataEnvironment, "dataset");
+  const manifest = JSON.parse(readFileSync(new URL("../data/content-refresh/current.json", import.meta.url), "utf8"));
+  assert.deepEqual(healthData.sourceCutoffs, manifest.sourceCutoffs);
+  const injury = await (await fetchRoute("/api/injuries")).json();
+  assert.equal(injury.degraded, true);
+  assert.equal(injury.asOf, "2026-10-20");
+  assert.equal(injury.count, 0);
+  assert.deepEqual(injury.entries, []);
 
   const readiness = await fetchRoute("/api/readiness", { headers: { accept: "application/json" } });
   const data = await readiness.json();
@@ -244,29 +263,29 @@ test("official OUT designation replaces a prior questionable likelihood badge", 
   const response = await fetchRoute("/injuries");
   assert.equal(response.status, 200);
   const html = await response.text();
-  const row = [...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/g)].map(match => match[0]).find(row => row.includes("Tremaine Edmunds"));
-  assert.ok(row, "Tremaine Edmunds watch row renders");
+  const row = [...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/g)].map(match => match[0]).find(row => row.includes("Jaelan Phillips"));
+  assert.ok(row, "Jaelan Phillips watch row renders");
   assert.match(html, /Full review as of/);
   assert.match(html, /Latest dated observation/);
-  assert.match(html, /2026-10-23/);
+  assert.match(html, /2026-10-28/);
   const text = row.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
-  assert.match(text, /Official Week 7 designation: OUT/);
+  assert.match(text, /Official Week 8 designation: OUT/);
   assert.match(text, /UNLIKELY/);
   assert.match(text, /high conf/);
   assert.doesNotMatch(text, /QUESTIONABLE/);
 });
 
-test("in-game OUT ruling renders separately from an injury-report designation", async () => {
+test("Week 8 watch never relabels historical in-game OUT as a current designation", async () => {
   const response = await fetchRoute("/injuries");
-  assert.equal(response.status, 200);
   const html = await response.text();
-  const row = [...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/g)].map(match => match[0]).find(row => row.includes("Britain Covey"));
-  assert.ok(row, "Covey's dated in-game watch record renders");
-  const text = row.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
-  assert.match(text, /Official Week 7 in-game status: OUT \(remainder of this game\)/);
-  assert.match(text, /2026-10-26/);
-  assert.match(text, /knee injury/);
-  assert.doesNotMatch(text, /Official Week 7 designation: OUT/);
+  const watch = html.match(/id="inj-watch-title"[\s\S]*/)?.[0] ?? "";
+  assert.doesNotMatch(watch, /Britain Covey|remainder of this game/);
+  assert.match(html, /Historical Week 7 lists remain available/);
+  const archive = JSON.parse(readFileSync(new URL("../data/injury-research/archive/week7-through-2026-10-26.json", import.meta.url), "utf8"));
+  const covey = archive.watch.find(row => row.player === "Britain Covey");
+  assert.equal(covey.designation_phase, "in_game");
+  assert.equal(covey.status_scope, "remainder_of_game");
+  assert.equal(covey.designation_week, 7);
 });
 
 test("dated reserve verification advances the latest observation while retaining the comprehensive review date", async () => {
@@ -295,4 +314,10 @@ test("a formal no-designation record retains practice history without inferring 
   assert.match(row, /NO DESIGNATION/);
   assert.match(row, /inj-practice--(?:lp|dnp)/);
   assert.match(row, /inj-pill--none[^>]*>Not graded/);
+});
+
+test("Week 7 archive query renders Week 7 finals before hydration", async () => {
+  const html = (await (await fetchRoute("/scores?week=7")).text()).replaceAll("<!-- -->", "");
+  assert.match(html, /data-week="7" aria-pressed="true"/);
+  assert.match(html, /Week 7\. 14 games shown/);
 });

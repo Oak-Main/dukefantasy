@@ -23,7 +23,7 @@
  * Exit codes: 0 = floor met, 1 = a package is below the floor or missing.
  * No exploit payloads, network access or file writes.
  */
-import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, realpathSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -70,26 +70,30 @@ function compareVersions(a, b) {
   return 0;
 }
 
-/** Installed copies of `name` under <root>/node_modules; nested copies too unless topLevelOnly. */
-function installedCopies(name, { topLevelOnly = false } = {}) {
+/** Inspect the entire installed tree, including linked packages. Real paths
+ * break symlink cycles without imposing a depth limit that can hide a copy. */
+function installedCopies(name) {
   const found = [];
-  const visit = (nodeModules, depth) => {
-    if (depth > 6 || !existsSync(nodeModules)) return;
+  const visited = new Set();
+  const visit = (nodeModules) => {
+    if (!existsSync(nodeModules)) return;
+    const actual = realpathSync(nodeModules);
+    if (visited.has(actual)) return;
+    visited.add(actual);
     const own = join(nodeModules, name, "package.json");
     if (existsSync(own)) found.push({ path: join(nodeModules, name), version: JSON.parse(readFileSync(own, "utf8")).version });
-    if (topLevelOnly) return;
     for (const entry of readdirSync(nodeModules, { withFileTypes: true })) {
-      if (!entry.isDirectory() || entry.name.startsWith(".")) continue;
+      if (entry.name.startsWith(".") || !statSync(join(nodeModules, entry.name), { throwIfNoEntry: false })?.isDirectory()) continue;
       if (entry.name.startsWith("@")) {
         for (const scoped of readdirSync(join(nodeModules, entry.name), { withFileTypes: true })) {
-          if (scoped.isDirectory()) visit(join(nodeModules, entry.name, scoped.name, "node_modules"), depth + 1);
+          if (statSync(join(nodeModules, entry.name, scoped.name), { throwIfNoEntry: false })?.isDirectory()) visit(join(nodeModules, entry.name, scoped.name, "node_modules"));
         }
       } else {
-        visit(join(nodeModules, entry.name, "node_modules"), depth + 1);
+        visit(join(nodeModules, entry.name, "node_modules"));
       }
     }
   };
-  visit(join(root, "node_modules"), 0);
+  visit(join(root, "node_modules"));
   return found;
 }
 
@@ -97,9 +101,9 @@ const failures = [];
 const notes = [];
 const relative = (path) => path.slice(root.length + 1).replaceAll("\\", "/");
 
-function requireAtLeast(name, floor, { required = true, topLevelOnly = false } = {}) {
+function requireAtLeast(name, floor, { required = true } = {}) {
   const label = floor;
-  const copies = installedCopies(name, { topLevelOnly });
+  const copies = installedCopies(name);
   if (!copies.length) {
     if (required) failures.push(`${name}: not installed (run npm ci); floor is ${label}`);
     return [];
@@ -116,14 +120,12 @@ function requireAtLeast(name, floor, { required = true, topLevelOnly = false } =
   return copies;
 }
 
-const rsdw = requireAtLeast("react-server-dom-webpack", REACT_FLOOR);
+requireAtLeast("react-server-dom-webpack", REACT_FLOOR);
 for (const name of RSDW_PACKAGES.slice(1)) requireAtLeast(name, REACT_FLOOR, { required: false });
 
 // react and react-dom must move with react-server-dom-webpack: RSDW 19.2.9 peer-requires ^19.2.9.
-const onReact192 = rsdw.some((copy) => /^19\.2\./.test(copy.version));
 for (const name of ["react", "react-dom"]) {
-  if (onReact192) requireAtLeast(name, REACT_FLOOR, { topLevelOnly: true });
-  else if (!installedCopies(name, { topLevelOnly: true }).length) failures.push(`${name}: not installed (run npm ci)`);
+  requireAtLeast(name, REACT_FLOOR);
 }
 
 requireAtLeast("@vitejs/plugin-rsc", PLUGIN_RSC_FLOOR);
