@@ -321,3 +321,60 @@ test("Week 7 archive query renders Week 7 finals before hydration", async () => 
   assert.match(html, /data-week="7" aria-pressed="true"/);
   assert.match(html, /Week 7\. 14 games shown/);
 });
+
+// Miniflare's loopback sets Host to 127.0.0.1:<port>; send the host and scheme
+// dukefantasy.com requests carry so the layout resolves the production origin.
+const productionHost = { "x-forwarded-host": "dukefantasy.com", "x-forwarded-proto": "https" };
+
+test("metadata stays in the document head for browsers and crawlers", async () => {
+  const userAgents = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36",
+    "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+  ];
+  for (const userAgent of userAgents) {
+    for (const path of ["/", "/scores", "/teams/kansas-city-chiefs", "/injuries"]) {
+      const html = await (await fetchRoute(path, { headers: { ...productionHost, "user-agent": userAgent } })).text();
+      const head = html.slice(0, html.indexOf("</head>"));
+      assert.match(head, /<title>[^<]+<\/title>/, path);
+      assert.match(head, /<meta name="description"/, path);
+      assert.match(head, /<link rel="canonical" href="https:\/\/dukefantasy\.com/, path);
+    }
+  }
+});
+
+test("pages render their content inline, not behind a streamed loading fallback", async () => {
+  for (const path of ["/", "/scores", "/teams/kansas-city-chiefs", "/injuries"]) {
+    const html = await (await fetchRoute(path)).text();
+    assert.doesNotMatch(html, /<div hidden id="S:/, path);
+    assert.doesNotMatch(html, /class="route-skeleton"/, path);
+  }
+});
+
+test("unknown paths return 404 with the not-found page", async () => {
+  const unknown = [
+    "/no-such-page-xyz", "/teams/not-a-team", "/games/999", "/coaches/not-a-coach", "/stadiums/not-a-stadium",
+    "/conferences/not-a-conference", "/players/not-a-player", "/api/nope", "/feeds/nope", "/_next/nope",
+    "/_vinext/nope", "/signin-with-chatgpt",
+  ];
+  // Match the rendered heading: every page's RSC payload also carries the
+  // not-found boundary's text.
+  const notFoundHeading = /<h1>That route is not in the field\.<\/h1>/;
+  for (const path of unknown) {
+    const response = await fetchRoute(path);
+    assert.equal(response.status, 404, path);
+    assert.match(await response.text(), notFoundHeading, path);
+  }
+  assert.doesNotMatch(await (await fetchRoute("/teams/kansas-city-chiefs")).text(), notFoundHeading);
+});
+
+test("image endpoints never redirect to another origin", async () => {
+  const sources = ["/a/..//evil.example", "%2Fa%2F..%2F%2Fevil.example", "/a/..%5C%5Cevil.example", "/a/%2e%2e//evil.example", "//evil.example"];
+  for (const endpoint of ["/_next/image", "/_vinext/image"]) {
+    for (const source of sources) {
+      const response = await fetchRoute(`${endpoint}?url=${source}&w=640&q=75`, { headers: { ...productionHost, accept: "image/webp,*/*" } });
+      const location = response.headers.get("location");
+      assert.ok(!location || new URL(location, "https://dukefantasy.com").origin === "https://dukefantasy.com", `${endpoint} ${source} -> ${location}`);
+      assert.ok(response.status >= 400 && response.status < 500, `${endpoint} ${source} -> ${response.status}`);
+    }
+  }
+});
