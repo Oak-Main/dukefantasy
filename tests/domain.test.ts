@@ -10,7 +10,6 @@ import {
   games,
   portalEvents,
   preseasonRatings,
-  providerHealth,
   scenarioGames,
   stadiums,
   teams,
@@ -292,14 +291,31 @@ test("injury desk: sourced base, long-term rule and bounded Week 8 cadence acros
   }
 });
 
-test("dataset records are provenance-tagged and never claim live status", () => {
+test("dataset records are provenance-tagged and never claim live status", async (t) => {
   assert.ok(games.every((game) => game.provenance.dataEnvironment === "production"));
   assert.ok(games.every((game) => game.provenance.licenseClass === "R2_LINK_ONLY"));
   assert.ok(games.every((game) => !game.statusDetail.toLowerCase().includes("live")));
-  assert.equal(
-    providerHealth.find((provider) => provider.id === "espn-nfl")?.status,
-    "operational",
-  );
+
+  // The reviewed snapshot keeps its original collection time. Exercise the
+  // adapter at controlled ages instead of assuming it is current on every CI day.
+  const snapshotTime = Date.parse(nfl.generatedAt);
+  assert.ok(Number.isFinite(snapshotTime), "snapshot needs a valid collection time");
+  t.mock.timers.enable({ apis: ["Date"], now: snapshotTime });
+  for (const [ageMs, status, freshness] of [
+    [0, "operational", "current"],
+    [48 * 3_600_000, "operational", "current"],
+    [48 * 3_600_000 + 1, "degraded", "stale"],
+  ] as const) {
+    t.mock.timers.setTime(snapshotTime + ageMs);
+    // A separate module instance recomputes the adapter's import-time metadata.
+    const { providerHealth, games: ageCheckedGames } = await import(
+      new URL(`../lib/cfb-dataset.ts?provenance-age=${ageMs}`, import.meta.url).href
+    );
+    const provider = providerHealth.find((row: { id: string }) => row.id === "espn-nfl");
+    assert.equal(provider?.status, status, `provider status at source age ${ageMs}ms`);
+    assert.equal(provider?.lastSuccess, nfl.generatedAt, "reading must not refresh the source timestamp");
+    assert.ok(ageCheckedGames.every((game: typeof games[number]) => game.provenance.freshness === freshness));
+  }
 });
 
 test("fantasy desk is fail-closed and decision-only", async () => {
