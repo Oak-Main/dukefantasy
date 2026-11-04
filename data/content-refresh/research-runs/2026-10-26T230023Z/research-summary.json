@@ -1,0 +1,18 @@
+{
+  "run": "2026-10-26T230023Z",
+  "baseCommit": "c698cf6307b7b85e298a8be96a74e2e0edf4baf3",
+  "changedFacts": 2,
+  "moduleReviews": 0,
+  "newLists": 2,
+  "newEntries": 11,
+  "newEmergencyQbs": [
+    "Cole Payton"
+  ],
+  "totalLists": 28,
+  "totalEntries": 179,
+  "totalEmergencyQbs": 18,
+  "datedPractices": 389,
+  "all272GamesAndInternationalMetadataPreserved": true,
+  "fullInjuryReviewDatePreserved": true,
+  "allModuleDatesPreserved": true
+}

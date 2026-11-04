@@ -3,6 +3,7 @@ import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } fr
 import handler from "vinext/server/app-router-entry";
 import { isProductionLaunchReady } from "../lib/release-readiness";
 import { refreshAsOf, refreshRevision } from "../lib/content-refresh";
+import { buildIdentity } from "../lib/build-identity";
 
 interface Env {
   ASSETS: Fetcher;
@@ -26,6 +27,7 @@ function secureResponse(response: Response, url: URL, launchReady: boolean) {
   const secured = new Response(response.body, response);
   secured.headers.set("X-Content-Version", refreshAsOf);
   secured.headers.set("X-Content-Revision", refreshRevision);
+  secured.headers.set("X-Source-Revision", buildIdentity.commit ?? "unknown");
   secured.headers.set(
     "Content-Security-Policy",
     "default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://googletagmanager.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://*.google-analytics.com; font-src 'self' data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; media-src 'none'; worker-src 'self';",
@@ -113,7 +115,10 @@ const worker = {
       );
     }
 
-    if (url.pathname === "/_vinext/image") {
+    // vinext 1.2.0 answers /_next/image itself with a redirect that dot
+    // segments can point at another origin (fixed upstream in 1.2.1, which
+    // needs React 19.3). Serve it through the same asset-only optimizer.
+    if (url.pathname === "/_vinext/image" || url.pathname === "/_next/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
       const imageResponse = await handleImageOptimization(request, {
         fetchAsset: (path) => env.ASSETS.fetch(new Request(new URL(path, request.url))),

@@ -132,6 +132,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       practice: null as InjuryWatchEntry["practice"] | null,
       publishedStatus: null as InjuryWatchEntry["publishedStatus"],
       designationDate: null as string | null,
+      designationPhase: null as InjuryWatchEntry["designationPhase"],
       likelihood: entry.status === "OUT" ? ("unlikely" as const) : entry.status === "DOUBTFUL" ? ("doubtful" as const) : null,
       confidence: null as string | null,
       note: entry.detail,
@@ -150,6 +151,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         practice: entry.practice,
         publishedStatus: entry.publishedStatus,
         designationDate: entry.designationDate,
+        designationPhase: entry.designationPhase,
         likelihood: ungraded ? null : entry.likelihood ?? model.likelihood,
         confidence: ungraded ? null : entry.confidence ?? model.confidence,
         note: entry.note ?? model.basis,
@@ -175,7 +177,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
       <DataBoardHero
         eyebrow="Injury desk · Verified weekly"
         title="The injury report, on the record."
-        description="Corroborated injury listings, game-day inactives and a week-to-week watch, with source dates and conditional availability notes. Blank practice cells mean no verified report."
+        description="Week 8 Thursday watch: Carolina and Green Bay only. The carried long-term ledger retains its October 20 full-review date; other teams are not recertified. Blank practice cells mean no verified report."
         action={
           <a className="db-hero-link" href="#inj-cadence">
             Publishing schedule
@@ -206,7 +208,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         <div className="inj-cadence-next">
           <CalendarClock size={18} aria-hidden="true" />
           <div>
-            <strong>{next ? `Next scheduled check: ${next.slot.label}` : "Week 7 scheduled checks ended October 27, 2026"}</strong>
+            <strong>{next ? `Next scheduled check: ${next.slot.label}` : "Week 8 editorial review plan ended November 3, 2026"}</strong>
             {next && <span>
               {next.at.toLocaleDateString("en-US", { weekday: "long", timeZone: "America/Los_Angeles" })} ·{" "}
               {next.at.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Los_Angeles" })} PT — {next.slot.scope}
@@ -224,13 +226,13 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
           ))}
         </div>
         <p className="apex-data-note">
-          <RefreshCw size={12} aria-hidden="true" /> Week 7 checks run through October 27, 2026. Publication requires two agreeing sources and passing checks; the displayed source date shows the last published review.
+          <RefreshCw size={12} aria-hidden="true" /> Planned editorial checks: October 28–November 3 in America/Los_Angeles, including the November 1 daylight-saving transition. This plan does not run automatically or establish that a check occurred. Publication requires two agreeing sources and passing checks.
         </p>
       </section>
 
       <section className="apex-container db-section" id="inactives" aria-labelledby="inactives-title">
         <h2 id="inactives-title">Verified Week 7 game-day inactives</h2>
-        <p>Only published team lists confirmed through two sources appear. A player missing from a list is not automatically confirmed active.</p>
+        <p>Historical Week 7 lists remain available. Week 8 inactives are not published yet. Only team lists confirmed through two sources appear; a player missing from a list is not automatically confirmed active.</p>
         {inactiveReports.length ? <div className="research-card-grid">{inactiveReports.filter(report => !teamFilter || report.teamSlug === teamFilter).map(report => <article className="research-card" key={report.gameId + report.teamSlug}>
           <h3>{teamBySlug.get(report.teamSlug)?.name ?? report.teamSlug}</h3>
           <p>Week {report.week} · Published <time dateTime={report.publishedAt}>{report.publishedAt}</time> · {report.complete ? "Complete team list" : "Partial list"}</p>
@@ -239,7 +241,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
         </article>)}</div> : <p className="db-empty">Verified Week 7 inactive lists are not published yet. They will appear after official game-day reports are corroborated.</p>}
       </section>
       <section className="apex-container db-section" aria-labelledby="dated-practice-title">
-        <h2 id="dated-practice-title">Dated Week 7 practice reports</h2>
+        <h2 id="dated-practice-title">Dated practice reports — historical weeks retained</h2>
         {practiceReports.filter(report => !teamFilter || report.team_slug === teamFilter).map(report => <article className="research-card" key={report.team_slug + report.player + report.date}>
           <h3>{report.player} · {report.participation}</h3>
           <p><time dateTime={report.date}>{report.date}</time> · Week {report.week} · {teamBySlug.get(report.team_slug)?.name ?? report.team_slug} · {report.report_type === "estimated_walkthrough" ? "Estimated walkthrough" : "Practice report"} · {report.injury}</p>
@@ -386,7 +388,7 @@ export function InjuryReportPage({ teams }: { teams: readonly BroadcastTeam[] })
                         <LikelihoodPill likelihood={row.likelihood} confidence={row.confidence} />
                       </InjuryTableCell>
                       <InjuryTableCell label="Note" headers="inj-watch-note" className="inj-detail">
-                        {row.publishedStatus ? <p><strong>Official Week {injuryResearch.week} designation: {row.publishedStatus.replaceAll("_", " ")}</strong> · <time dateTime={row.designationDate ?? undefined}>{row.designationDate}</time></p> : null}
+                        {row.publishedStatus ? <p><strong>{`Official Week ${injuryResearch.week} ${row.designationPhase === "in_game" ? "in-game status" : "designation"}: ${row.publishedStatus.replaceAll("_", " ")}${row.designationPhase === "in_game" ? " (remainder of this game)" : ""}`}</strong> · <time dateTime={row.designationDate ?? undefined}>{row.designationDate}</time></p> : null}
                         {row.note ?? "Not published"}
                         {row.sources.length || row.social.length ? (
                           <EvidenceLinks urls={[...row.sources, ...row.social]} />

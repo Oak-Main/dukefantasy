@@ -44,7 +44,7 @@ function StartSitSection({ board }: { board: StartSitBoard }) {
       <div className="db-section-heading">
         <h2 className="font-display">Start/Sit Tier Board — Week {board.week}</h2>
         <p>
-          Targeted early Week 7 tiers for half-PPR redraft. Check final availability before lock. Numeric projections stay on the{" "}
+          Targeted Week {board.week} tiers for half-PPR redraft. Check final availability before lock. Numeric projections stay on the{" "}
           <a className="db-hero-link" href="/dfs">DFS ledger</a>. As of {formatDataDate(board.as_of)}.
         </p>
       </div>
@@ -177,7 +177,7 @@ export function FantasyDeskPage({ teams }: { teams: BroadcastTeam[] }) {
       <DataBoardHero
         eyebrow="FANTASY DESK"
         title="Weekly decision rails — waiver, start/sit, rookies, trades"
-        description="Four sourced boards on the fantasy calendar: waiver adds after MNF, start/sit tiers by Thursday, rookie usage Tuesdays, and rest-of-season trade values. Every claim of fact carries its source; tiers are decisions, never projections."
+        description="Week 8 waiver/start-sit/trade and Week 7 rookie editions are not published. Planning assumptions: 12-team, one-QB half-PPR redraft; waiver eligibility requires a dated ESPN rostered percentage below 55%. No current ownership snapshot or private roster is available."
       />
       <DataBoardSummary
         label="Fantasy desk status"
@@ -202,10 +202,10 @@ export function FantasyDeskPage({ teams }: { teams: BroadcastTeam[] }) {
         <DataBoardEmpty title="Trade values not published yet" description={DESK_CADENCE.find((c) => c.key === "trade")?.slot ?? ""} />
       )}
       {desk.waiver ? <WaiverSection board={desk.waiver} /> : (
-        <DataBoardEmpty title="Waiver Wire Watch opens Tuesday" description="The waiver edition covers the FOLLOWING week's adds — it compiles after Monday night football so every usage claim is grounded in completed games." />
+        <DataBoardEmpty title="Week 8 waiver board not published" description="Ownership eligibility and corroborated player usage are not established. No recommended adds or blanket drops are implied. The prior edition is linked under Data sources." />
       )}
       {desk.rookie ? <RookieSection board={desk.rookie} /> : (
-        <DataBoardEmpty title="Rookie Usage Report opens Tuesday" description="Snap shares and usage trends compile after the week completes — usage only, no projections." />
+        <DataBoardEmpty title="Week 7 rookie usage not published" description="Complete snap/route denominators are unavailable. Partial player rows do not establish comprehensive coverage." />
       )}
     </div>
   );

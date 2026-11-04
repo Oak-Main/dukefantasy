@@ -1,0 +1,151 @@
+{
+  "week": 7,
+  "run": "2026-10-27T010025Z",
+  "baseCommit": "d0825ff08530a8624921c620e49fa56af63badca",
+  "createdAt": "2026-10-27T01:32:58.333Z",
+  "observations": [
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Britain Covey",
+      "value": {
+        "player": "Britain Covey",
+        "team_slug": "philadelphia-eagles",
+        "status": "OUT",
+        "injury": "Knee",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-26",
+        "designation_week": 7,
+        "designation_phase": "in_game",
+        "game_id": "401873009",
+        "status_scope": "remainder_of_game"
+      },
+      "gameIdentity": {
+        "id": "401873009",
+        "week": 7,
+        "awaySlug": "dallas-cowboys",
+        "homeSlug": "philadelphia-eagles",
+        "kickoffUtc": "2026-10-27T00:15:00.000Z"
+      },
+      "reportPhase": "in_game",
+      "scope": "remainder_of_game",
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-game-recap-2026-nfl-week-7-monday-night-football-saquon-barkley-dak-prescott",
+          "checkedAt": "2026-10-27T01:30:01.726Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-26",
+            "designation_week": 7,
+            "designation_phase": "in_game",
+            "game_id": "401873009",
+            "status_scope": "remainder_of_game"
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "reportPhase": "in_game",
+          "rawFile": "outputs/week7-automation/2026-10-27T010025Z/eaglesLive.html",
+          "rawSha256": "5d7dd5cbd36dfbddba788d026bbba85007a80c996f23e54ddb6e95f6fc27fc99",
+          "sourceDetail": "This publisher explicitly reports Britain Covey ruled out with a knee injury for the remainder of the October 26 Dallas–Philadelphia Week 7 game. This is an in-game ruling; no pregame inactive list, historical shoulder-practice record, prognosis or Week 8 status is changed.",
+          "scope": "remainder_of_game"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-27T01:30:02.510Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-26",
+            "designation_week": 7,
+            "designation_phase": "in_game",
+            "game_id": "401873009",
+            "status_scope": "remainder_of_game"
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "reportPhase": "in_game",
+          "rawFile": "outputs/week7-automation/2026-10-27T010025Z/espnCovey.html",
+          "rawSha256": "3cb68496a66f227b11d92b96ec37851ca77b0b2614c72f81e08e3f65bc694d13",
+          "sourceDetail": "This publisher explicitly reports Britain Covey ruled out with a knee injury for the remainder of the October 26 Dallas–Philadelphia Week 7 game. This is an in-game ruling; no pregame inactive list, historical shoulder-practice record, prognosis or Week 8 status is changed.",
+          "scope": "remainder_of_game"
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/188272/britain-covey-ruled-out-of-eagles-cowboys-mnf-game",
+          "checkedAt": "2026-10-27T01:30:01.663Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-26",
+            "designation_week": 7,
+            "designation_phase": "in_game",
+            "game_id": "401873009",
+            "status_scope": "remainder_of_game"
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "reportPhase": "in_game",
+          "rawFile": "outputs/week7-automation/2026-10-27T010025Z/bgnCovey.html",
+          "rawSha256": "b62f23b092feb63df9cc035755f1a01b2ccdaf5d048e4184d942c20f2c85448d",
+          "sourceDetail": "This publisher explicitly reports Britain Covey ruled out with a knee injury for the remainder of the October 26 Dallas–Philadelphia Week 7 game. This is an in-game ruling; no pregame inactive list, historical shoulder-practice record, prognosis or Week 8 status is changed.",
+          "scope": "remainder_of_game"
+        }
+      ]
+    }
+  ],
+  "moduleReviews": []
+}

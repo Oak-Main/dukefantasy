@@ -1,0 +1,17 @@
+[
+  {
+    "date": "2026-10-24",
+    "week": 7,
+    "player": "Britain Covey",
+    "team_slug": "philadelphia-eagles",
+    "participation": "FP",
+    "report_type": "practice",
+    "injury": "Shoulder",
+    "sources": [
+      "https://www.philadelphiaeagles.com/team/injury-report/",
+      "https://sports.yahoo.com/articles/week-7-injury-report-eagles-221552888.html"
+    ],
+    "checkedAt": "2026-10-24T23:23:23.995Z",
+    "note": "Saturday practice participation. Reserve eligibility and game-day inactive lists are separate."
+  }
+]

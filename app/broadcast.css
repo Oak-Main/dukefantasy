@@ -483,3 +483,11 @@ body { overscroll-behavior-y: none; }
   .apex-header .apex-logo-word { font-size: 22px; }
   .apex-header-inner { column-gap: 8px; }
 }
+
+/* Keep full team names inside the marquee card at narrow viewport widths. */
+@media (max-width: 800px) {
+  .apex-marquee-copy h2 {
+    font-size: clamp(36px, 10vw, 52px);
+    overflow-wrap: anywhere;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "acceptance": "PASS",
+  "recordedAt": "2026-10-27T01:32:58.335Z",
+  "reason": "The live blog publication clock advanced from 00:58 to 01:26 UTC; all Covey claim fields remained unchanged. All three current states were collected. The live-blog projection validates the actual Eastern report day and protects the named knee/OUT ruling, game identity and remainder scope; unrelated live scores/quarters/publication-clock changes are excluded. Exact publication timestamps remain in capture metadata.",
+  "updates": [
+    {
+      "id": "eaglesLive",
+      "beforeSha": "fe0913a1a9c95a29d7252d5874dadf245c6d0bb7de8c42ff0f3b6a219bf2843f",
+      "afterSha": "5d7dd5cbd36dfbddba788d026bbba85007a80c996f23e54ddb6e95f6fc27fc99",
+      "checkedAt": "2026-10-27T01:30:01.726Z",
+      "relevantClaimsUnchanged": true
+    },
+    {
+      "id": "espnCovey",
+      "beforeSha": "48f20a2519c144795fd8a0942afa82eb73896f0d888ec7a75312ee6d3e356719",
+      "afterSha": "3cb68496a66f227b11d92b96ec37851ca77b0b2614c72f81e08e3f65bc694d13",
+      "checkedAt": "2026-10-27T01:30:02.510Z",
+      "relevantClaimsUnchanged": true
+    },
+    {
+      "id": "bgnCovey",
+      "beforeSha": "d0e9e34e06f069e4c1d3fb652578d82985ab27d03ced84ccbcc1c31d5fdd948f",
+      "afterSha": "b62f23b092feb63df9cc035755f1a01b2ccdaf5d048e4184d942c20f2c85448d",
+      "checkedAt": "2026-10-27T01:30:01.663Z",
+      "relevantClaimsUnchanged": true
+    }
+  ],
+  "restartFullPreflight": true
+}

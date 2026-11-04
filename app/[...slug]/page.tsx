@@ -64,6 +64,7 @@ function isKnownPath(parts: string[]) {
 
 interface RoutePageProps {
   params: Promise<{ slug: string[] }>;
+  searchParams?: Promise<{ week?: string | string[] }>;
 }
 
 async function existingRouteMetadata({
@@ -183,8 +184,8 @@ export async function generateMetadata(props: RoutePageProps): Promise<Metadata>
   };
 }
 
-export default async function RoutePage({ params }: RoutePageProps) {
+export default async function RoutePage({ params, searchParams }: RoutePageProps) {
   const { slug } = await params;
   if (!isKnownPath(slug)) notFound();
-  return <HubApp path={`/${slug.join("/")}`} />;
+  return <HubApp path={`/${slug.join("/")}`} requestedWeek={slug[0] === "scores" ? (await searchParams)?.week : undefined} />;
 }

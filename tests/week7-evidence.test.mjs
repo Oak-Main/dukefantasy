@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { collectFacts, validateEvidence, validateResultIdentities } from "../scripts/week7-evidence.mjs";
+import { collectFacts, validateEvidence, validateResultIdentities, validateInGameInjuryIdentities } from "../scripts/week7-evidence.mjs";
 const now = new Date("2026-10-22T18:00:00Z");
 const value = { week: 7, status: "final", awayScore: 20, homeScore: 17 };
 const after = new Map([["result:game", { kind: "result", key: "game", value }]]);
@@ -36,6 +36,16 @@ test("inactive list disagreement, including emergency quarterback designation, b
   assert.throws(() => validateEvidence(p, new Map(), candidate, now), /disagree/);
 });
 
+test("in-game status phase needs matching evidence and cannot become an injury-report designation", () => {
+  const bundle = phase => ({ snapshot: { schedule: [] }, injury: { ledger: [], watch: [{ player: "Test player", team_slug: "test-team", published_status: "OUT", designation_week: 7, designation_date: "2026-10-22", ...(phase ? { designation_phase: phase } : {}), ...(phase === "in_game" ? { game_id: "game", status_scope: "remainder_of_game" } : {}) }] }, editorial: {} });
+  const before = collectFacts(bundle()), candidate = collectFacts(bundle("in_game"));
+  assert.equal("designation_phase" in [...before.values()][0].value, false);
+  const fact = [...candidate.values()][0], p = proof();
+  p.observations = [{ ...fact, sources: p.observations[0].sources.map(source => ({ ...source, value: fact.value })) }];
+  assert.equal(validateEvidence(p, before, candidate, now).changedFacts, 1);
+  assert.throws(() => validateEvidence(p, before, collectFacts(bundle("injury_report")), now), /does not match|disagree/);
+});
+
 test("an omitted injury record cannot be treated as a sourced activation", () => {
   const p = proof(); p.observations[0].value = null;
   p.observations[0].sources = p.observations[0].sources.map(source => ({ ...source, value: null }));
@@ -62,6 +72,23 @@ const identityProof = () => {
 
 test("result source identities bind the keyed game, teams, week and kickoff", () => {
   assert.equal(validateResultIdentities(identityProof(), identitySnapshot), 1);
+});
+
+test("in-game injury evidence binds its team, exact game, phase and remainder scope", () => {
+  const value = { player: "Test player", team_slug: "home-team", status: "OUT", designation_week: 7, designation_phase: "in_game", game_id: "game", status_scope: "remainder_of_game" };
+  const fact = { kind: "injury", key: "home-team:Test player", value, gameIdentity: { ...identity }, reportPhase: "in_game", scope: "remainder_of_game" };
+  const p = proof(); p.observations = [{ ...fact, sources: p.observations[0].sources.map(source => ({ ...source, value, gameIdentity: { ...identity }, reportPhase: "in_game", scope: "remainder_of_game" })) }];
+  assert.equal(validateInGameInjuryIdentities(p, identitySnapshot), 1);
+  for (const patch of [{ game_id: "other-game" }, { team_slug: "other-team" }, { status_scope: "next_week" }]) {
+    const invalid = structuredClone(p); Object.assign(invalid.observations[0].value, patch);
+    assert.throws(() => validateInGameInjuryIdentities(invalid, identitySnapshot), /in-game injury/);
+  }
+  const wrongSource = structuredClone(p); wrongSource.observations[0].sources[1].gameIdentity.id = "other-game";
+  assert.throws(() => validateInGameInjuryIdentities(wrongSource, identitySnapshot), /source in-game injury/);
+  const wrongPhase = structuredClone(p); wrongPhase.observations[0].sources[1].reportPhase = "injury_report";
+  assert.throws(() => validateInGameInjuryIdentities(wrongPhase, identitySnapshot), /source in-game injury/);
+  const early = structuredClone(p); early.observations[0].sources[1].checkedAt = "2026-10-22T16:00:00Z";
+  assert.throws(() => validateInGameInjuryIdentities(early, identitySnapshot), /source in-game injury/);
 });
 
 test("a result or source with no game identity cannot pass", () => {

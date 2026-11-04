@@ -1,0 +1,146 @@
+{
+  "pathRoot": "Chat workspace, the parent of work/; not the Git repository root",
+  "baseCommit": "80cbdddbfad339c8885cac347b26b36ac69027a5",
+  "captures": [
+    {
+      "id": "eaglesActivations",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesActivations.html",
+      "rawSha256": "8aa41dc429c5b38fc240327999d4680be440f2d8249dcdfa3a066e0b54333952",
+      "bytes": 344512,
+      "verified": true
+    },
+    {
+      "id": "eaglesWire",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/eaglesWire.html",
+      "rawSha256": "e3a41ef31f17542d96fe214dcaefcc0cf918a6871970ade842ead131ac1c176f",
+      "bytes": 542176,
+      "verified": true
+    },
+    {
+      "id": "bgnRoster",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/bgnRoster.html",
+      "rawSha256": "e720245492a73bf80189a884bdfb8e1e60569ec5e01ad7f2688f8c3ad7692c7b",
+      "bytes": 374494,
+      "verified": true
+    },
+    {
+      "id": "espnStandings",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/espnStandings.html",
+      "rawSha256": "c30bbfc3ad8ca72a66f55c4b18ec19d030052ae785721f9e92dbe484269335de",
+      "bytes": 160340,
+      "verified": true
+    },
+    {
+      "id": "nfl-1",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/nfl-1.html",
+      "rawSha256": "ad68d4916ea5a654c33989a4f94509b93d8e7745b8b0e7e1ff89cac744420298",
+      "bytes": 2419245,
+      "verified": true
+    },
+    {
+      "id": "espn-1",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/espn-1.html",
+      "rawSha256": "e38ec0d3a0d9371641eaa4a0174b28a581f4e42b05197edb9d4eebfe63fdf618",
+      "bytes": 141247,
+      "verified": true
+    },
+    {
+      "id": "nfl-2",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/nfl-2.html",
+      "rawSha256": "58a52e9487e83762457ba73057c4b58f389daef368d18efa2e33b095661948ce",
+      "bytes": 2410218,
+      "verified": true
+    },
+    {
+      "id": "espn-2",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/espn-2.html",
+      "rawSha256": "95ca2ced9df89f0f448788f16ca28f412ed330524fbf7df9d7ea8656c75c6e4f",
+      "bytes": 141116,
+      "verified": true
+    },
+    {
+      "id": "nfl-3",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/nfl-3.html",
+      "rawSha256": "a9ca6c278daad6ab31e93fbe6d593f04f89d89494298eed58d6398c2abb7b369",
+      "bytes": 2417490,
+      "verified": true
+    },
+    {
+      "id": "espn-3",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/espn-3.html",
+      "rawSha256": "f6d12f5fd9131904c1e1277e59c73fb6bd6ae7ad5031ba96350a3af17daf6861",
+      "bytes": 140445,
+      "verified": true
+    },
+    {
+      "id": "nfl-4",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/nfl-4.html",
+      "rawSha256": "9f3d24ca05940fb5891ae251f2d25d983ce062faa7c70b410894cd5f222e7b27",
+      "bytes": 2418006,
+      "verified": true
+    },
+    {
+      "id": "espn-4",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/espn-4.html",
+      "rawSha256": "e2cf193dea2b0a298865d6da8fd4d7850c31c497e031458613ce69681b6852e7",
+      "bytes": 143702,
+      "verified": true
+    },
+    {
+      "id": "nfl-5",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/nfl-5.html",
+      "rawSha256": "267923560b6a704cb3208db7e34ecbd5d80fdfc69cdccd7fbb8f4c234720d372",
+      "bytes": 2403383,
+      "verified": true
+    },
+    {
+      "id": "espn-5",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/espn-5.html",
+      "rawSha256": "2e9e547b6ade6c616cf544bb2b8fd03360776dd1297fb8788cdf71d5bda959a6",
+      "bytes": 135393,
+      "verified": true
+    },
+    {
+      "id": "nfl-6",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/nfl-6.html",
+      "rawSha256": "c0556f6cae3e294315026d0d640fbbabc08b4f06b12fffc32c4adb38e786adc8",
+      "bytes": 2387957,
+      "verified": true
+    },
+    {
+      "id": "espn-6",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/espn-6.html",
+      "rawSha256": "f250931f0e1f7177da553378ca488692e0b371b1d45cb1db4af05cec7fcb0708",
+      "bytes": 126583,
+      "verified": true
+    },
+    {
+      "id": "nfl-7",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/nfl-7.html",
+      "rawSha256": "dcac48585e0394e5c9139c0552a391e16b485f4e8364ff574344d7ad84f4014a",
+      "bytes": 2393846,
+      "verified": true
+    },
+    {
+      "id": "espn-7",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/espn-7.html",
+      "rawSha256": "759c54c0cb1f1b2a900de6228a547fe5d134130068483e0d02e10f988e28b31c",
+      "bytes": 244655,
+      "verified": true
+    },
+    {
+      "id": "nfl-9",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/nfl-9.html",
+      "rawSha256": "1c6d41d6c771711becf4f8a1170b4e07b7c5ef5a625dd3eeb1ed18e7c9c0cfde",
+      "bytes": 2452345,
+      "verified": true
+    },
+    {
+      "id": "espn-9",
+      "rawFile": "outputs/week7-automation/2026-10-26T223027Z/espn-9.html",
+      "rawSha256": "adf628aa4d012885eca1d4ce3a33a09912f898f58587ca46f579c1bcc65ce783",
+      "bytes": 172908,
+      "verified": true
+    }
+  ]
+}

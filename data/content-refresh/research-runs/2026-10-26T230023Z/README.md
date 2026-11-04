@@ -1,0 +1,3 @@
+# October 26 Monday inactive evidence
+
+Raw `outputs/week7-automation/` references resolve against this chat workspace (the parent of `work/`), as specified by `docs/WEEK7_AUTOMATIC_UPDATES.md`. All four saved source files were read, their complete lists parsed independently and their SHA-256 values verified. The Eagles club and Bleeding Green Nation explicitly agree on Cole Payton’s emergency third-quarterback role; generic inactive flags are excluded for that role. The prior 26 complete lists and their verification times remain unchanged. Module source dates describe the prior full review; these new records carry their own October 26 publication/retrieval times.

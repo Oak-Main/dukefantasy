@@ -27,8 +27,8 @@ interface CacheShape {
   }>;
 }
 
-// Per-isolate memory cache; the scheduled posting slots rely on the 10-minute
-// TTL so the board never serves an injury list older than one refresh window.
+// Per-isolate live-feed cache. Editorial slots are a plan, not an automated
+// refresh guarantee; a failed upstream request can return explicitly dated data.
 let cache: CacheShape | null = null;
 const TTL_MS = 10 * 60 * 1000;
 
@@ -87,8 +87,8 @@ export async function GET() {
       { headers: { "Cache-Control": "public, max-age=300, stale-while-revalidate=600" } },
     );
   } catch (error) {
-    // ESPN 403s some datacenter egress. The deployed build-time snapshot is
-    // always recent (rebuilt on the posting schedule) — serve it, labeled.
+    // ESPN can reject datacenter egress. The build snapshot keeps its actual
+    // evidence date and may be old or empty; compilation does not renew it.
     return Response.json(
       {
         requestId: crypto.randomUUID(),

@@ -1,0 +1,8 @@
+{
+  "acceptance": "PASS",
+  "reviewFinding": "In-game ruling was initially rendered as an injury-report designation",
+  "decision": "Explicit designation_phase is stored, normalized into three-source evidence, validated in native ingestion/build/date gates, and rendered as in-game status. Existing injury-report rows retain their original labels and evidence shape.",
+  "changedClinicalFacts": 1,
+  "nativeModuleDatesUnchanged": true,
+  "recordedAt": "2026-10-27T01:41:42.107Z"
+}

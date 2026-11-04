@@ -4,7 +4,7 @@ import nfl from "../lib/nfl-generated.ts";
 import { games, getTeamBySlug } from "../lib/cfb-dataset.ts";
 import { easternDay } from "../lib/eastern.ts";
 import { weekGames, type BroadcastGame } from "../lib/homepage.ts";
-import { defaultScoreboardWeek, gamesForWeek } from "../lib/scoreboard.ts";
+import { defaultScoreboardWeek, gamesForWeek, requestedScoreboardWeek } from "../lib/scoreboard.ts";
 import { getTeamHubData } from "../lib/team-hub.ts";
 
 interface ScheduleRow {
@@ -255,4 +255,11 @@ test("homepage slate is the whole NFL week (Thursday through Monday), not a Mon-
   assert.equal(dates[0], "2026-10-08", "Thursday night opens the week");
   assert.equal(dates.at(-1), "2026-10-12", "Monday night closes the week");
   assert.deepEqual(weekGames(games as unknown as BroadcastGame[], "not-a-date"), []);
+});
+
+test("score queries accept stored archives and future planning weeks with unchanged provenance", () => {
+  assert.equal(requestedScoreboardWeek(games, "2026-10-28", "7"), 7);
+  assert.equal(requestedScoreboardWeek(games, "2026-10-28", "9"), 9);
+  assert.equal(requestedScoreboardWeek(games, "2026-10-28", "18"), 18);
+  for (const value of [undefined, "", "0", "19", "7.0", "7x", "-7", ["7", "8"]]) assert.equal(requestedScoreboardWeek(games, "2026-10-28", value), 8);
 });

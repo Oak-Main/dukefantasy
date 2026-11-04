@@ -1,0 +1,44 @@
+[
+  {
+    "player": "Landon Dickerson",
+    "team_slug": "philadelphia-eagles",
+    "position": "G",
+    "injury": "Knee",
+    "status": "IR",
+    "weeks_out": null,
+    "detail": "Listed on injured reserve by ESPN and CBS as of October 20. An estimated return is not an activation.",
+    "sources": [
+      "https://www.espn.com/nfl/injuries",
+      "https://www.cbssports.com/nfl/injuries/"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "player": "Eli Stowers",
+    "team_slug": "philadelphia-eagles",
+    "position": "TE",
+    "injury": "Quadriceps",
+    "status": "IR",
+    "weeks_out": null,
+    "detail": "Listed on injured reserve by ESPN and CBS as of October 20. An estimated return is not an activation.",
+    "sources": [
+      "https://www.espn.com/nfl/injuries",
+      "https://www.cbssports.com/nfl/injuries/"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "player": "Grant Calcaterra",
+    "team_slug": "philadelphia-eagles",
+    "position": "TE",
+    "injury": "Back",
+    "status": "IR",
+    "weeks_out": null,
+    "detail": "Listed on injured reserve by ESPN and CBS as of October 20. An estimated return is not an activation.",
+    "sources": [
+      "https://www.espn.com/nfl/injuries",
+      "https://www.cbssports.com/nfl/injuries/"
+    ],
+    "confidence": "medium"
+  }
+]

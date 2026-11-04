@@ -27,9 +27,9 @@ function strengthFor(wins: number) {
 const provenance = {
   provider: "NFL + ESPN reviewed snapshot",
   providerRecordId: "espn-nfl",
-  sourceAsOf: nfl.generatedAt.slice(0, 10),
-  fetchedAt: nfl.sourceAsOf,
-  verifiedAt: nfl.generatedAt,
+  sourceAsOf: nfl.sourceAsOf,
+  fetchedAt: nfl.fetchedAt,
+  verifiedAt: nfl.fetchedAt,
   dataEnvironment: "production" as const,
   licenseClass: "R2_LINK_ONLY" as const,
   verificationStatus: "corroborated" as const,
@@ -124,7 +124,7 @@ export const games: Game[] = (nfl.schedule as Array<Record<string, unknown>>).ma
   neutralSite: g.neutral_site === true,
   modelHomeWinProbability: 0.5,
   modelUncertainty: 0,
-  provenance: { ...provenance, verificationStatus: (g.week as number) <= 7 ? "corroborated" : "single_source" },
+  provenance: { ...provenance, providerRecordId: String(g.id), verificationStatus: (g.week as number) <= 8 ? "corroborated" : "single_source", ...((g.week as number) === 8 ? { sourceUrl: "https://www.nfl.com/schedules/2026/reg8/", sourceDocumentId: `data/content-refresh/2026-10-28/review.json#week8GameEvidence/${g.id}` } : {}) },
 }));
 
 export function getGame(id: string): Game | undefined {
@@ -389,7 +389,7 @@ const compiledOnEt = easternDay(nfl.generatedAt);
 export const datasetAsOf: string = compiledOnEt;
 export const broadcastAsOf: string = compiledOnEt;
 export const broadcastNote: string =
-  "TV designations from ESPN's live NFL schedule. Times Eastern; flex scheduling windows apply from Week 5 onward.";
+  "Week 8 primary U.S. TV networks corroborated with NFL and ESPN; later weeks remain single-source planning data. Times Eastern with daylight-saving changes; flex scheduling may change future assignments.";
 
 /* ---------------------------------------------------- conference hub (NFL) */
 

@@ -1,0 +1,38 @@
+{
+  "resolved": [
+    {
+      "player": "Grant Calcaterra",
+      "decision": "Explicit IR activation corroborated; prior IR record retained in history"
+    },
+    {
+      "player": "Landon Dickerson",
+      "decision": "Explicit IR activation corroborated; prior IR record retained in history"
+    },
+    {
+      "player": "Eli Stowers",
+      "decision": "Explicit IR activation corroborated; prior IR record retained in history"
+    },
+    {
+      "player": "Jakorian Bennett",
+      "decision": "Continuing IR and Week 7 OUT corroborated; do not classify as a complete inactive list"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Practice-squad elevations for Elijah Mitchell and Keyshawn James-Newby",
+      "decision": "Captured as roster context; do not refresh the untouched transaction module or infer game-day active status."
+    },
+    {
+      "claim": "Complete Monday game-day inactive lists",
+      "decision": "At 22:51 UTC the official Eagles Week 7 list and FFToday agree on Philadelphia membership, but only the official source explicitly identifies Cole Payton as the conditional emergency third quarterback. Dallas has a full FFToday list but no second complete official list captured yet. Hold both complete-list publications pending full two-publisher corroboration, including emergency-QB roles; retain current published lists. Source captures are retained under this run in mnf-2254/ and mnf-official/."
+    },
+    {
+      "claim": "ESPN Landon Dickerson Active label with blank news text",
+      "decision": "Do not use as explicit IR-activation evidence; use named club/Eagles Wire/Bleeding Green Nation activation statements."
+    },
+    {
+      "claim": "CBS broad Week 8 injury statuses",
+      "decision": "Exclude Week 8 changes from this bounded Week 7 publication."
+    }
+  ]
+}

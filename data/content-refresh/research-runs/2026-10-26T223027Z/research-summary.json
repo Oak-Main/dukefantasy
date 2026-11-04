@@ -1,0 +1,24 @@
+{
+  "run": "2026-10-26T223027Z",
+  "baseCommit": "80cbdddbfad339c8885cac347b26b36ac69027a5",
+  "changedFacts": 7,
+  "irActivations": [
+    "Grant Calcaterra",
+    "Landon Dickerson",
+    "Eli Stowers"
+  ],
+  "obsoleteIrLedgerRemovals": 3,
+  "reserveChanges": 4,
+  "totalCurrentLedger": 272,
+  "totalWatch": 141,
+  "preservedPractices": 389,
+  "preservedInactiveLists": 26,
+  "preservedInactiveEntries": 168,
+  "preservedEmergencyQbs": 17,
+  "resultsReviewed": 107,
+  "seasonFinals": 106,
+  "week7Finals": 13,
+  "standingsCompared": 32,
+  "sourceDatesUnchanged": true,
+  "all272GamesAndInternationalMetadataPreserved": true
+}

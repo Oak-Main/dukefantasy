@@ -14,6 +14,7 @@
 import { readdirSync, readFileSync, writeFileSync, statSync, copyFileSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateDesignationPhase } from "./week7-publication-dates.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const INBOX = join(root, "data", "injury-research", "inbox");
@@ -56,6 +57,7 @@ function validate(doc, slugs) {
     if (new Set(entry.sources.map(url => new URL(url).hostname.replace(/^www\./, ""))).size < 2) fail("two distinct publishers required", entry, index);
   });
   watch.forEach((entry, index) => {
+    validateDesignationPhase(entry);
     if (!entry.player) fail("player missing", entry, index);
     if (!slugs.has(entry.team_slug)) fail(`unknown team_slug ${entry.team_slug}`, entry, index);
     if (entry.published_status != null && (!["OUT", "DOUBTFUL", "QUESTIONABLE", "NO_DESIGNATION"].includes(entry.published_status) || entry.designation_week !== doc.week || !/^\d{4}-\d{2}-\d{2}$/.test(entry.designation_date ?? ""))) fail("official designation needs valid status, report week and source date", entry, index);

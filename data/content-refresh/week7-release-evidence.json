@@ -1,186 +1,411 @@
 {
   "week": 7,
-  "baseCommit": "7e259cf5ef0115c91bc850be828b4fb4a625c968",
-  "observations": [],
+  "baseCommit": "6ac7223771c06e0e922beb378f74d5db5b5c88a3",
+  "createdAt": "2026-10-27T03:52:03.129Z",
+  "observations": [
+    {
+      "kind": "result",
+      "key": "401873009",
+      "value": {
+        "week": 7,
+        "status": "final",
+        "awayScore": 38,
+        "homeScore": 21
+      },
+      "gameIdentity": {
+        "id": "401873009",
+        "week": 7,
+        "awaySlug": "dallas-cowboys",
+        "homeSlug": "philadelphia-eagles",
+        "kickoffUtc": "2026-10-27T00:15:00.000Z"
+      },
+      "sources": [
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "checkedAt": "2026-10-27T03:31:33.660Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 38,
+            "homeScore": 21
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-7.html",
+          "rawSha256": "adc92da991346bb00284d213a6b660a496cebccb07d5b4d8ee031f0c25e23431"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+          "checkedAt": "2026-10-27T03:31:33.601Z",
+          "reportedWeek": 7,
+          "value": {
+            "week": 7,
+            "status": "final",
+            "awayScore": 38,
+            "homeScore": 21
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-7.html",
+          "rawSha256": "ec033c5c705c65b3c4e9e6e2f8aa8bccb86dd53da6d6b74688aa0574c63134fd"
+        }
+      ]
+    },
+    {
+      "kind": "injury",
+      "key": "philadelphia-eagles:Britain Covey",
+      "value": {
+        "player": "Britain Covey",
+        "team_slug": "philadelphia-eagles",
+        "status": "OUT",
+        "injury": "Knee",
+        "practice": {
+          "mon": null,
+          "tue": null,
+          "wed": null,
+          "thu": null,
+          "fri": null,
+          "sat": null
+        },
+        "designation_date": "2026-10-26",
+        "designation_week": 7,
+        "designation_phase": "in_game",
+        "game_id": "401873009",
+        "status_scope": "remainder_of_game"
+      },
+      "gameIdentity": {
+        "id": "401873009",
+        "week": 7,
+        "awaySlug": "dallas-cowboys",
+        "homeSlug": "philadelphia-eagles",
+        "kickoffUtc": "2026-10-27T00:15:00.000Z"
+      },
+      "reportPhase": "in_game",
+      "scope": "remainder_of_game",
+      "sources": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-game-recap-2026-nfl-week-7-monday-night-football-saquon-barkley-dak-prescott",
+          "checkedAt": "2026-10-27T03:34:18.723Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-26",
+            "designation_week": 7,
+            "designation_phase": "in_game",
+            "game_id": "401873009",
+            "status_scope": "remainder_of_game"
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "reportPhase": "in_game",
+          "rawFile": "outputs/week7-automation/2026-10-27T033027Z/eaglesLive.html",
+          "rawSha256": "c6dd548b0a6d278ba27a1b2e6e9a5f7bd0070f8f2ab52bb29deb73fad779937d",
+          "sourceDetail": "This publisher explicitly reports Britain Covey ruled out with a knee injury for the remainder of the October 26 Dallas–Philadelphia Week 7 game. This is an in-game ruling; no pregame inactive list, historical shoulder-practice record, prognosis or Week 8 status is changed.",
+          "scope": "remainder_of_game"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "checkedAt": "2026-10-27T03:34:18.758Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-26",
+            "designation_week": 7,
+            "designation_phase": "in_game",
+            "game_id": "401873009",
+            "status_scope": "remainder_of_game"
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "reportPhase": "in_game",
+          "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espnCovey.html",
+          "rawSha256": "e83048a0ab35a1b3624aea239aad3ffc82039c346763a8f35b9b021c139970a4",
+          "sourceDetail": "This publisher explicitly reports Britain Covey ruled out with a knee injury for the remainder of the October 26 Dallas–Philadelphia Week 7 game. This is an in-game ruling; no pregame inactive list, historical shoulder-practice record, prognosis or Week 8 status is changed.",
+          "scope": "remainder_of_game"
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/188272/britain-covey-ruled-out-of-eagles-cowboys-mnf-game",
+          "checkedAt": "2026-10-27T03:34:18.574Z",
+          "reportedWeek": 7,
+          "value": {
+            "player": "Britain Covey",
+            "team_slug": "philadelphia-eagles",
+            "status": "OUT",
+            "injury": "Knee",
+            "practice": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null
+            },
+            "designation_date": "2026-10-26",
+            "designation_week": 7,
+            "designation_phase": "in_game",
+            "game_id": "401873009",
+            "status_scope": "remainder_of_game"
+          },
+          "gameIdentity": {
+            "id": "401873009",
+            "week": 7,
+            "awaySlug": "dallas-cowboys",
+            "homeSlug": "philadelphia-eagles",
+            "kickoffUtc": "2026-10-27T00:15:00.000Z"
+          },
+          "reportPhase": "in_game",
+          "rawFile": "outputs/week7-automation/2026-10-27T033027Z/bgnCovey.html",
+          "rawSha256": "91efeff216339516f33bc4df36d33307f3d863ee266be214044bdb6eb6b4bfb7",
+          "sourceDetail": "This publisher explicitly reports Britain Covey ruled out with a knee injury for the remainder of the October 26 Dallas–Philadelphia Week 7 game. This is an in-game ruling; no pregame inactive list, historical shoulder-practice record, prognosis or Week 8 status is changed.",
+          "scope": "remainder_of_game"
+        }
+      ]
+    }
+  ],
   "moduleReviews": [
     {
       "module": "schedule",
       "sourceAsOf": "2026-10-26",
-      "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+      "dataSha256": "5e900da6f22a00db3af90feef3484d97e2f81fe04501e28dfd97a25b9ef2acdb",
+      "scope": "All 107 result facts for weeks 1–7; all are final. Retain future fixtures and all international metadata unchanged.",
       "sources": [
         {
           "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
-          "checkedAt": "2026-10-26T21:08:42.243Z",
+          "checkedAt": "2026-10-27T03:31:33.678Z",
           "reportedWeek": 7,
           "value": {
-            "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+            "dataSha256": "5e900da6f22a00db3af90feef3484d97e2f81fe04501e28dfd97a25b9ef2acdb",
             "complete": true
           },
-          "sourceDetail": "Complete comparison of all 107 result facts through Week 7, including identity, completion, both final scores and remaining kickoff, across all seven captured weekly sources. NFL observations come from exact matched Game Cards embedded in the weekly schedule HTML. Fresh ESPN standings independently match all 32 derived records.",
-          "reviewedUrls": [
-            "https://www.nfl.com/schedules/2026/by-week/week-1",
-            "https://www.nfl.com/schedules/2026/by-week/week-2",
-            "https://www.nfl.com/schedules/2026/by-week/week-3",
-            "https://www.nfl.com/schedules/2026/by-week/week-4",
-            "https://www.nfl.com/schedules/2026/by-week/week-5",
-            "https://www.nfl.com/schedules/2026/by-week/week-6",
-            "https://www.nfl.com/schedules/2026/by-week/week-7"
+          "reviewedWeeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
           ],
-          "rawEvidence": [
+          "reviewedRecords": 107,
+          "rawSources": [
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-1.html",
-              "sha256": "54cecedb64699b24243f8cd17c0532f56916617f2298b51372b75028d7e05d98",
-              "checkedAt": "2026-10-26T21:08:42.303Z"
+              "id": "nfl-1",
+              "publisher": "nfl",
+              "week": 1,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-1",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-1",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.474Z",
+              "rawSha256": "5de34e19e590109670e0f10f4afcda2d66ebe4d7a69df1afdc4a855408681c4c",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-1.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-2.html",
-              "sha256": "0bbb95818adf96091d7180b3ab544ac85df6ccc108985fccf2f0b89ae90e3906",
-              "checkedAt": "2026-10-26T21:08:42.522Z"
+              "id": "nfl-2",
+              "publisher": "nfl",
+              "week": 2,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-2",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-2",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.523Z",
+              "rawSha256": "42668f55c3804a3a1f1b4cffee8c0221ae4aa17190fe7886e66d09be605d807f",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-2.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-3.html",
-              "sha256": "c352e41129a04b5ef65493a064e31d009d4f4c84580f1c8b86d025a709648f88",
-              "checkedAt": "2026-10-26T21:08:42.361Z"
+              "id": "nfl-3",
+              "publisher": "nfl",
+              "week": 3,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-3",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-3",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.612Z",
+              "rawSha256": "1146988df1480a30369972b5533093df0b9b482c3911e9962cb696c6076b1e59",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-3.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-4.html",
-              "sha256": "0d567b1c40ea897d527111af608526ec0ed40f7fdcae74130d8e6df3d5294e09",
-              "checkedAt": "2026-10-26T21:08:42.243Z"
+              "id": "nfl-4",
+              "publisher": "nfl",
+              "week": 4,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-4",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-4",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.631Z",
+              "rawSha256": "fea1ef615f5d2ba1771f40f17a0e9f35b477f56c2fce6a1aa39fff3eb314717b",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-4.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-5.html",
-              "sha256": "38ee03f6a842b2f7f0d588ddb493d332c6f6bf4b3ccf836b5389ffe176603d7d",
-              "checkedAt": "2026-10-26T21:08:42.337Z"
+              "id": "nfl-5",
+              "publisher": "nfl",
+              "week": 5,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-5",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-5",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.580Z",
+              "rawSha256": "5d8bcb4e088a618081e88745f92419b77d088a8a91421e8fe31426e4ce2b8581",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-5.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-6.html",
-              "sha256": "c507c2b7a15f5825e20cdcc5aa50ae77c6272d651b2314fabf7e86e3ee0239d2",
-              "checkedAt": "2026-10-26T21:08:42.450Z"
+              "id": "nfl-6",
+              "publisher": "nfl",
+              "week": 6,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-6",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-6",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.678Z",
+              "rawSha256": "c124b88d3e8b1a43b29fc371f9bfcd66304736e0ea52ee6d76bc857372dfc0cf",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-6.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-7.html",
-              "sha256": "46763a2ff577e46bbd6e32f948a8de3315205191fa253e7286a52d1223013679",
-              "checkedAt": "2026-10-26T21:08:42.483Z"
+              "id": "nfl-7",
+              "publisher": "nfl",
+              "week": 7,
+              "requestedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+              "resolvedUrl": "https://www.nfl.com/schedules/2026/by-week/week-7",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.660Z",
+              "rawSha256": "adc92da991346bb00284d213a6b660a496cebccb07d5b4d8ee031f0c25e23431",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/nfl-7.html"
             }
           ]
         },
         {
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
-          "checkedAt": "2026-10-26T21:08:42.198Z",
+          "checkedAt": "2026-10-27T03:31:33.647Z",
           "reportedWeek": 7,
           "value": {
-            "dataSha256": "bc40da515df09cc1fedf1965f0306810a2ded651e163dd4d93b062a0d3b5b372",
+            "dataSha256": "5e900da6f22a00db3af90feef3484d97e2f81fe04501e28dfd97a25b9ef2acdb",
             "complete": true
           },
-          "sourceDetail": "Complete comparison of all 107 result facts through Week 7, including identity, completion, both final scores and remaining kickoff, across all seven captured weekly sources. NFL observations come from exact matched Game Cards embedded in the weekly schedule HTML. Fresh ESPN standings independently match all 32 derived records.",
-          "reviewedUrls": [
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
-            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+          "reviewedWeeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
           ],
-          "rawEvidence": [
+          "reviewedRecords": 107,
+          "rawSources": [
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-1.html",
-              "sha256": "e6975896181529cb16d4213e68be66f9e65bdb7a6749bd95b921776739e90ef8",
-              "checkedAt": "2026-10-26T21:08:42.198Z"
+              "id": "espn-1",
+              "publisher": "espn",
+              "week": 1,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.647Z",
+              "rawSha256": "992dce612a771152500e9e84a9266b5643fe7545ed0ccf00eb235f0329ebeafc",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-1.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-2.html",
-              "sha256": "499fce30098d302919efc78636b72407341f58e1f94b4df2745069c70364fc81",
-              "checkedAt": "2026-10-26T21:08:42.293Z"
+              "id": "espn-2",
+              "publisher": "espn",
+              "week": 2,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.498Z",
+              "rawSha256": "da49672ac97c20bcd71d1462cd78022ff145304077ccc9583491e7d0c009ee20",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-2.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-3.html",
-              "sha256": "e84e059039d60115f61c992f7d9cdb2d128236be20434d3f2903abcce16718a0",
-              "checkedAt": "2026-10-26T21:08:42.325Z"
+              "id": "espn-3",
+              "publisher": "espn",
+              "week": 3,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.542Z",
+              "rawSha256": "2c0426be873910d9afcebe62b31b4ce40d313bd7767a2406f33e3933293fc353",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-3.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-4.html",
-              "sha256": "75eec422ee189de7770380d552ebdeba8ff6b07cea7415e82c178ba446ce2a31",
-              "checkedAt": "2026-10-26T21:08:42.404Z"
+              "id": "espn-4",
+              "publisher": "espn",
+              "week": 4,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.547Z",
+              "rawSha256": "33f042912f0489539bf00ad3b8b747b512242d2c362ff50db65415c0770698ce",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-4.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-5.html",
-              "sha256": "a16b3a5636c3a20798544de6d0a16b2f12aae9bd54baffee55f3c8195f86fae3",
-              "checkedAt": "2026-10-26T21:08:42.328Z"
+              "id": "espn-5",
+              "publisher": "espn",
+              "week": 5,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.565Z",
+              "rawSha256": "cf9743cdc9cca2577287bceff76d2d3b93f04a44a429237deb45b94c5bd44088",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-5.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-6.html",
-              "sha256": "90430edd5f0fb73213334a5ebbd0fa790867c052321d8892cf3a999acb6ed4fa",
-              "checkedAt": "2026-10-26T21:08:42.400Z"
+              "id": "espn-6",
+              "publisher": "espn",
+              "week": 6,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.560Z",
+              "rawSha256": "90430edd5f0fb73213334a5ebbd0fa790867c052321d8892cf3a999acb6ed4fa",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-6.html"
             },
             {
-              "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-7.html",
-              "sha256": "5fd16b2f4dc06e8923d16f58417616a89e5062df44a45921a6a703b1b377a509",
-              "checkedAt": "2026-10-26T21:08:42.410Z"
+              "id": "espn-7",
+              "publisher": "espn",
+              "week": 7,
+              "requestedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+              "resolvedUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+              "status": 200,
+              "checkedAt": "2026-10-27T03:31:33.601Z",
+              "rawSha256": "ec033c5c705c65b3c4e9e6e2f8aa8bccb86dd53da6d6b74688aa0574c63134fd",
+              "rawFile": "outputs/week7-automation/2026-10-27T033027Z/espn-7.html"
             }
-          ]
-        }
-      ]
-    }
-  ],
-  "futureScheduleCorrections": [
-    {
-      "reason": "Full required live-dataset preflight detected a kickoff disagreement; correct only the matched existing future fixture after two publisher families agree.",
-      "gameIdentity": {
-        "id": "401873047",
-        "week": 9,
-        "awaySlug": "las-vegas-raiders",
-        "homeSlug": "san-francisco-49ers",
-        "kickoffUtc": "2026-11-08T21:25:00.000Z"
-      },
-      "before": {
-        "kickoffUtc": "2026-11-08T21:05Z",
-        "kickoffLabel": "Sun · 2026-11-08 · 4:05 PM ET",
-        "statusDetail": "Sun, November 8th at 4:05 PM EST",
-        "broadcast": "CBS"
-      },
-      "value": {
-        "kickoffUtc": "2026-11-08T21:25Z",
-        "broadcast": "FOX"
-      },
-      "sources": [
-        {
-          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
-          "checkedAt": "2026-10-26T21:15:35.946Z",
-          "reportedWeek": 9,
-          "reportDate": "2026-10-26",
-          "value": {
-            "kickoffUtc": "2026-11-08T21:25Z",
-            "broadcast": "FOX"
-          },
-          "rawFile": "outputs/week7-automation/2026-10-26T210800Z/nfl-9.html",
-          "rawSha256": "6eed0a43c93682f102360a4fb0a7d789de6d0ae375bf8a99743ec01362b25481",
-          "matchedGameCard": {
-            "contentLocation": "1",
-            "contentPosition": "12",
-            "gameId": "ab581766-4feb-11f1-abca-2c54536568a9",
-            "linkModule": "Game Card",
-            "linkName": "Raiders at 49ers, Sunday, November 8th, 4:25 PM, FOX",
-            "linkPosition": "1:1",
-            "linkType": "DGX Access Point"
-          }
-        },
-        {
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
-          "checkedAt": "2026-10-26T21:15:36.169Z",
-          "reportedWeek": 9,
-          "reportDate": "2026-10-26",
-          "value": {
-            "kickoffUtc": "2026-11-08T21:25Z",
-            "broadcast": "FOX"
-          },
-          "rawFile": "outputs/week7-automation/2026-10-26T210800Z/espn-9.html",
-          "rawSha256": "0a42e98245c857b4facc5d2a96c23d88e34dd53c218b28bcdfd71a58bc80b65e",
-          "gameId": "401873047",
-          "statusDetail": "Sun, November 8th at 4:25 PM EST",
-          "teamIds": [
-            "13",
-            "25"
           ]
         }
       ]

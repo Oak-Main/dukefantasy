@@ -16,8 +16,8 @@ test.beforeEach(async ({ page }) => {
   await page.goto("/injuries");
   // Exercise hydration before testing the filter; a server-rendered select alone is insufficient.
   await expect(async () => {
-    await page.getByLabel("Filter by team", { exact: true }).selectOption("new-england-patriots");
-    await expect(page.locator(".inj-table tbody tr").first().locator("td").nth(1)).toHaveText("New England");
+    await page.getByLabel("Filter by team", { exact: true }).selectOption("green-bay-packers");
+    await expect(page.locator(".inj-table tbody tr").first().locator("td").nth(1)).toHaveText("Green Bay");
   }).toPass({ timeout: 15_000 });
 });
 
@@ -94,10 +94,10 @@ test("keyboard team filtering preserves every matching player and source link", 
   await filter.press("Enter");
   await expect(filter).toHaveValue("");
   await expect(page.locator(".inj-table tbody tr")).toHaveCount(research.ledger.length + research.watch.length);
-  const index = await filter.locator("option").evaluateAll(options => options.findIndex(option => (option as HTMLOptionElement).value === "new-england-patriots"));
+  const index = await filter.locator("option").evaluateAll(options => options.findIndex(option => (option as HTMLOptionElement).value === "green-bay-packers"));
   for (let step = 0; step < index; step += 1) await filter.press("ArrowDown");
   await filter.press("Enter");
-  await expect(filter).toHaveValue("new-england-patriots");
+  await expect(filter).toHaveValue("green-bay-packers");
   for (const table of tables) {
     const board = page.getByRole("table", { name: table.heading, exact: true });
     const scroller = page.getByRole("region", { name: table.scrollName, exact: true });
@@ -108,12 +108,12 @@ test("keyboard team filtering preserves every matching player and source link", 
       await scroller.press("ArrowRight");
       await expect.poll(() => scroller.evaluate(element => element.scrollLeft)).toBeGreaterThan(0);
     }
-    const expected = table.rows.filter(row => row.team_slug === "new-england-patriots").sort((a, b) => a.player.localeCompare(b.player));
+    const expected = table.rows.filter(row => row.team_slug === "green-bay-packers").sort((a, b) => a.player.localeCompare(b.player));
     await expect(board.locator("tbody tr")).toHaveCount(expected.length);
     await expect(board.locator("tbody tr td:first-child strong")).toHaveText(expected.map(row => row.player));
     for (let rowIndex = 0; rowIndex < expected.length; rowIndex += 1) {
       const row = board.locator("tbody tr").nth(rowIndex);
-      await expect(row.locator("td").nth(1)).toHaveText("New England");
+      await expect(row.locator("td").nth(1)).toHaveText("Green Bay");
       const links = row.getByRole("link");
       const urls = [...expected[rowIndex].sources, ...(table.id === "inj-watch-title" ? expected[rowIndex].social ?? [] : [])];
       expect(await links.evaluateAll(anchors => anchors.map(anchor => anchor.getAttribute("href")))).toEqual(urls);
@@ -187,7 +187,7 @@ test("accessibility tree retains named tables, headers, ordered cells and no axe
           pending.push(...item.childIds ?? []);
         }
       }
-      const expectedRows = table.rows.filter(row => row.team_slug === "new-england-patriots").length;
+      const expectedRows = table.rows.filter(row => row.team_slug === "green-bay-packers").length;
       expect(descendants.filter(item => !item.ignored && item.role?.value === "row")).toHaveLength(expectedRows + 1);
       expect(descendants.filter(item => !item.ignored && item.role?.value === "columnheader")).toHaveLength(table.labels.length);
       expect(descendants.filter(item => !item.ignored && item.role?.value === "cell")).toHaveLength(expectedRows * table.labels.length);
