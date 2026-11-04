@@ -115,7 +115,10 @@ const worker = {
       );
     }
 
-    if (url.pathname === "/_vinext/image") {
+    // vinext 1.2.0 answers /_next/image itself with a redirect that dot
+    // segments can point at another origin (fixed upstream in 1.2.1, which
+    // needs React 19.3). Serve it through the same asset-only optimizer.
+    if (url.pathname === "/_vinext/image" || url.pathname === "/_next/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
       const imageResponse = await handleImageOptimization(request, {
         fetchAsset: (path) => env.ASSETS.fetch(new Request(new URL(path, request.url))),

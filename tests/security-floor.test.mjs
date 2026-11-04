@@ -4,15 +4,17 @@ import { mkdirSync, mkdtempSync, rmSync, writeFileSync, symlinkSync } from "node
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 
-const checker = new URL("../scripts/check-security-floor.mjs", import.meta.url);
+// A file path, not URL.pathname: "/C:/..." is not a loadable path on Windows.
+const checker = fileURLToPath(new URL("../scripts/check-security-floor.mjs", import.meta.url));
 function withTree(check) {
   const root = mkdtempSync(join(tmpdir(), "duke-security-"));
   const put = (folder, name, version) => { const path = join(folder, name); mkdirSync(path, { recursive: true }); writeFileSync(join(path, "package.json"), JSON.stringify({ name, version })); return path; };
   try {
     const modules = join(root, "node_modules");
     for (const [name, version] of Object.entries({ react: "19.2.9", "react-dom": "19.2.9", "react-server-dom-webpack": "19.2.9", "@vitejs/plugin-rsc": "0.5.38", next: "16.4.2" })) put(modules, name, version);
-    check({ root, modules, put, run: () => spawnSync(process.execPath, [checker.pathname, "--root", root], { encoding: "utf8", timeout: 10_000 }) });
+    check({ root, modules, put, run: () => spawnSync(process.execPath, [checker, "--root", root], { encoding: "utf8", timeout: 10_000 }) });
   } finally { rmSync(root, { recursive: true, force: true }); }
 }
 test("security floor rejects vulnerable RSC beyond six nested dependency levels", () => withTree(({ modules, put, run }) => {
