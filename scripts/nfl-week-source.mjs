@@ -158,12 +158,13 @@ export async function fetchNflWeek({ year, week, timeoutMs = 25_000 }) {
 
   // The streamed schedule can omit status. The accessible score link in the
   // same page identifies its game by slug and explicitly labels final scores.
-  const finalSlugs = new Set();
+  const finalScores = new Map();
   for (const match of html.matchAll(/<a\b([^>]+)>([\s\S]*?)<\/a>/gi)) {
     const href = match[1].match(/\bhref=["'](?:https:\/\/www\.nfl\.com)?\/games\/([\w-]+)\/?(?:[?#][^"']*)?["']/i);
     if (!href) continue;
     const label = match[1].match(/\baria-label=["']([^"']*)["']/i)?.[1] ?? match[2].replace(/<[^>]+>/g, " ");
-    if (/\bFINAL\b/i.test(label)) finalSlugs.add(href[1]);
+    const scores = label.match(/\b(\d{1,3})\s*,\s*[^,]+?\s+(\d{1,3})\s*,\s*FINAL\b/i);
+    if (scores) finalScores.set(href[1], { away: Number(scores[1]), home: Number(scores[2]) });
   }
 
   const games = raw
@@ -204,7 +205,8 @@ export async function fetchNflWeek({ year, week, timeoutMs = 25_000 }) {
         international: game.international === true,
         neutralSite: game.neutralSite === true,
         status: status === "FINAL" ? "final" : status === "IN_PROGRESS" ? "in_progress" :
-          status === "SCHEDULED" ? "scheduled" : !status && finalSlugs.has(external.slug) ? "final" : null,
+          status === "SCHEDULED" ? "scheduled" : !status && finalScores.has(external.slug) ? "final" : null,
+        finalScoreLink: finalScores.get(external.slug) ?? null,
         awayScore: score("away"),
         homeScore: score("home"),
       };
