@@ -89,8 +89,8 @@ for (const path of routes) test(`Week ${editionWeek} identity, content, accessib
     expect(text).toMatch(/Official Week 8 designation: QUESTIONABLE/);
     expect(text).toMatch(/Week 8 inactives are not published/);
   } else if (path === "/fantasy-desk") {
-    expect(text).toContain(`Week ${editionWeek} waiver board not published`);
-    expect(text).toContain(`Week ${editionWeek - 1} rookie usage not published`);
+    expect(text).toMatch(new RegExp(`Week ${editionWeek} waiver board not published`, "i"));
+    expect(text).toMatch(new RegExp(`Week ${editionWeek - 1} rookie usage not published`, "i"));
     expect(text).toMatch(/12-team, one-QB half-PPR/); expect(text).toMatch(/0 \/ 4/);
   } else if (path === "/stats") {
     expect(text).toMatch(/through Week 6/i); expect(text).toMatch(/Historical October 20/);
@@ -98,7 +98,7 @@ for (const path of routes) test(`Week ${editionWeek} identity, content, accessib
   } else if (path === "/data-sources") {
     await expect(main.getByRole("link", { name: "Week 7 final scores", exact: true })).toHaveAttribute("href", "/scores?week=7");
     expect(text).toMatch(/not all 32 teams recertified|No all-team recertification/);
-    expect(text).toMatch(/not published/);
+    expect(text).toMatch(/Source as of Not published/i);
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(page.viewportSize()?.width ?? 0);
   const axe = await new AxeBuilder({ page }).include("#main-content").withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze();

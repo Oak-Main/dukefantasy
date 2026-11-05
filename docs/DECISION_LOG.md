@@ -253,3 +253,5 @@ October 29 vinext 1.2.0 compatibility follow-up: the pinned 1.2.0 bundle changed
 ### November 5, 2026 · Weekly NFL edition
 
 The Week 10 desk note carries its own November 5 review date. The next dated edition switches to schedule-based lineup guidance until new player reporting is reviewed. For Detroit at Miami, publish CBS based on the NFL, team game center and broadcaster. Keep the original ESPN discrepancy in the schedule evidence.
+
+Production uses a separate manual dispatch bound to the reviewed main SHA and the existing Worker credentials. The weekly job can populate a maintainer-opened draft. The repository’s locked default-token policy is honored if a dated draft has not been reserved.

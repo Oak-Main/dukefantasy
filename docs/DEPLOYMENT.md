@@ -24,3 +24,10 @@ Before this release the active version was `f21bbb99-b2ce-4cc1-b7d7-a9d6b33c8f31
 Builds materialize reviewed data without network mutations. Invalid snapshot/report inputs abort before writing `lib/nfl-generated.ts`. Explicit `--live` pulls write only after retrieval and schedule validation; failed injury retrieval aborts instead of shipping an empty feed. Never treat the build clock as a source timestamp.
 
 Final Week 7 designations, inactives and weather require subsequent verified updates. Planned review slots are not automatic jobs or evidence an update occurred. No future job was created by this release.
+
+
+## Current manual release and Tuesday drafts
+
+From Actions, select **Release DukeFantasy Worker** on `main` and enter the full reviewed SHA. The manual job rejects a different ref or SHA, runs the production gates, checks main again, records the prior Worker deployment, publishes to the configured Worker, and checks the public content revision and build SHA. Only the Wrangler step receives the two existing Cloudflare secrets.
+
+The separate Tuesday job verifies the data and pushes only the dated `automation/weekly-edition-YYYY-MM-DD` branch. The repository's locked Actions policy prevents the default token from opening a new pull request. A maintainer can pre-open a draft on that branch with an empty commit or a single `docs/releases/YYYY-MM-DD-draft.md` review note. The job then fills that draft. Otherwise it provides the verified branch and a compare link in the run summary. The job has no deployment step.

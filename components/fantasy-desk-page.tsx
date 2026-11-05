@@ -167,7 +167,7 @@ export function FantasyDeskPage({ teams }: { teams: BroadcastTeam[] }) {
   const statuses = DESK_CADENCE.map((cadence) => ({ cadence, status: deskBoardStatus(cadence.key) }));
   const behind = statuses.filter(({ status }) => status?.current === false);
   const currentCount = statuses.filter(({ status }) => status?.current === true).length;
-  const sourcingCaption = `Early edition: half-PPR redraft, one QB, typical 10–12 teams; superflex exceptions are labeled. Two publishers per factual entry; they may share upstream feeds. Null means unverified. Coverage is targeted across ${teams.length} teams, not a complete ranking.`;
+  const sourcingCaption = `A board publishes after its factual entries have two sources. Publishers may share a feed. Coverage is targeted across the league’s ${teams.length} teams.`;
   const behindCaption = behind.length
     ? `Behind the NFL calendar: ${behind
         .map(({ cadence, status }) => `${cadence.label} is the Week ${status?.covers} edition`)
@@ -188,7 +188,7 @@ export function FantasyDeskPage({ teams }: { teams: BroadcastTeam[] }) {
           <ul>{section.sources.map(source => <li key={source.url}><a href={source.url}>{source.label}</a></li>)}</ul>
         </article>)}
       </section>}
-      <p>Planning format: 12-team, one-QB half-PPR redraft. Waiver candidates require a dated ESPN rostered percentage below 55%. Individual boards below show their publication status.</p>
+      <p>The desk uses a 12-team, one-QB half-PPR redraft format. Waiver candidates require a dated ESPN rostered percentage below 55%. Individual boards below show their publication status.</p>
       <DataBoardSummary
         label="Fantasy desk status"
         items={[
