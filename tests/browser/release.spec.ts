@@ -11,7 +11,9 @@ const editorial = JSON.parse(readFileSync(new URL("../../data/content-refresh/cu
 // the week in play is the first week whose games are not all final.
 const editionWeek = editorial.week as number;
 const weekInPlay = snapshot.season.currentWeek as number;
-const teams = new Map(snapshot.teams.map((team: { slug: string; name: string }) => [team.slug, team.name]));
+const teams = new Map<string, string>(
+  snapshot.teams.map((team: { slug: string; name: string }) => [team.slug, team.name]),
+);
 const slateTeams = snapshot.schedule
   .filter((game: { week: number }) => game.week === weekInPlay)
   .flatMap((game: { awaySlug: string; homeSlug: string }) => [game.awaySlug, game.homeSlug]);
