@@ -99,7 +99,7 @@ test("critical product routes render dataset-backed content", async () => {
     ["/games/401872657", /49ers|Rams/],
     ["/dfs", /picks you can audit/i],
     ["/dfs", new RegExp(`Week <!-- -->${editorial.week}<!-- --> projections are not published`, "i")],
-    ["/fantasy-desk", new RegExp(`Week ${editorial.week} waiver`)],
+    ["/fantasy-desk", new RegExp(`Week (?:<!-- -->)?${editorial.week}(?:<!-- -->)? waiver`)],
     ["/transactions", /Tanner Hudson/],
     ["/stats", /Matthew Stafford/],
     ["/data-sources", /Source as of/],

@@ -2724,7 +2724,7 @@
       "city": "Green Bay",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Thu, October 29, 8:15 PM ET",
       "kickoff_pt": "Thu, Oct 29, 5:15 PM PT",
       "sources": [
@@ -2743,7 +2743,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873023"
     },
     {
       "id": "401873024",
@@ -2768,7 +2769,7 @@
       "city": "Arlington",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 1, 10:00 AM PT",
       "sources": [
@@ -2787,7 +2788,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873024"
     },
     {
       "id": "401873025",
@@ -2812,7 +2814,7 @@
       "city": "Tampa",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 1, 10:00 AM PT",
       "sources": [
@@ -2831,7 +2833,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873025"
     },
     {
       "id": "401873026",
@@ -2856,7 +2859,7 @@
       "city": "Orchard Park",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 1, 10:00 AM PT",
       "sources": [
@@ -2875,7 +2878,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873026"
     },
     {
       "id": "401873027",
@@ -2900,7 +2904,7 @@
       "city": "Pittsburgh",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 1, 10:00 AM PT",
       "sources": [
@@ -2919,7 +2923,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873027"
     },
     {
       "id": "401873028",
@@ -2944,7 +2949,7 @@
       "city": "Jacksonville",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 1, 10:00 AM PT",
       "sources": [
@@ -2963,7 +2968,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873028"
     },
     {
       "id": "401873029",
@@ -2988,7 +2994,7 @@
       "city": "East Rutherford",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 1, 10:00 AM PT",
       "sources": [
@@ -3007,7 +3013,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873029"
     },
     {
       "id": "401873030",
@@ -3032,7 +3039,7 @@
       "city": "Detroit",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 1, 10:00 AM PT",
       "sources": [
@@ -3051,7 +3058,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873030"
     },
     {
       "id": "401873031",
@@ -3076,7 +3084,7 @@
       "city": "Cincinnati",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 1, 10:00 AM PT",
       "sources": [
@@ -3095,7 +3103,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873031"
     },
     {
       "id": "401873032",
@@ -3120,7 +3129,7 @@
       "city": "Inglewood",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 4:05 PM ET",
       "kickoff_pt": "Sun, Nov 1, 1:05 PM PT",
       "sources": [
@@ -3139,7 +3148,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873032"
     },
     {
       "id": "401873033",
@@ -3164,7 +3174,7 @@
       "city": "Denver",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 4:25 PM ET",
       "kickoff_pt": "Sun, Nov 1, 1:25 PM PT",
       "sources": [
@@ -3183,7 +3193,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873033"
     },
     {
       "id": "401873034",
@@ -3208,7 +3219,7 @@
       "city": "Miami Gardens",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 4:25 PM ET",
       "kickoff_pt": "Sun, Nov 1, 1:25 PM PT",
       "sources": [
@@ -3227,7 +3238,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873034"
     },
     {
       "id": "401873035",
@@ -3252,7 +3264,7 @@
       "city": "Landover",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 1, 8:20 PM ET",
       "kickoff_pt": "Sun, Nov 1, 5:20 PM PT",
       "sources": [
@@ -3271,7 +3283,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873035"
     },
     {
       "id": "401873036",
@@ -3296,7 +3309,7 @@
       "city": "Seattle",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Mon, November 2, 8:15 PM ET",
       "kickoff_pt": "Mon, Nov 2, 5:15 PM PT",
       "sources": [
@@ -3315,7 +3328,8 @@
         "away_score",
         "home_score"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873036"
     },
     {
       "id": "401873037",
@@ -3340,7 +3354,7 @@
       "city": "Baltimore",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Thu, November 5, 8:15 PM ET",
       "kickoff_pt": "Thu, Nov 5, 5:15 PM PT",
       "sources": [
@@ -3355,7 +3369,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873037"
     },
     {
       "id": "401873038",
@@ -3380,7 +3395,7 @@
       "city": "Madrid",
       "country": "Spain",
       "neutral_site": true,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 9:30 AM ET",
       "kickoff_pt": "Sun, Nov 8, 6:30 AM PT",
       "sources": [
@@ -3395,7 +3410,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873038"
     },
     {
       "id": "401873039",
@@ -3420,7 +3436,7 @@
       "city": "New Orleans",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 8, 10:00 AM PT",
       "sources": [
@@ -3435,7 +3451,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873039"
     },
     {
       "id": "401873040",
@@ -3460,7 +3477,7 @@
       "city": "Indianapolis",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 8, 10:00 AM PT",
       "sources": [
@@ -3475,7 +3492,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873040"
     },
     {
       "id": "401873041",
@@ -3500,7 +3518,7 @@
       "city": "Charlotte",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 8, 10:00 AM PT",
       "sources": [
@@ -3515,7 +3533,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873041"
     },
     {
       "id": "401873042",
@@ -3540,7 +3559,7 @@
       "city": "Miami Gardens",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 8, 10:00 AM PT",
       "sources": [
@@ -3566,14 +3585,15 @@
             "away": "detroit-lions",
             "home": "miami-dolphins",
             "network": "CBS",
-            "checkedAt": "2026-11-05T12:22:10Z",
+            "checkedAt": "2026-11-05T13:01:13.464Z",
             "leagueUrl": "https://www.nfl.com/news/nfl-how-to-watch-week-9-nfl-games-schedule-madrid-game-details-and-more",
             "teamUrl": "https://www.detroitlions.com/game-day/2026/reg-week9/lions-at-dolphins/",
             "broadcasterUrl": "https://www.paramountplus.com/sneak-peak/nfl-lions-vs-dolphins-week-9-2026-how-to-watch/"
           }
         }
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873042"
     },
     {
       "id": "401873043",
@@ -3598,7 +3618,7 @@
       "city": "Landover",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 8, 10:00 AM PT",
       "sources": [
@@ -3613,7 +3633,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873043"
     },
     {
       "id": "401873044",
@@ -3638,7 +3659,7 @@
       "city": "Philadelphia",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 8, 10:00 AM PT",
       "sources": [
@@ -3653,7 +3674,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873044"
     },
     {
       "id": "401873045",
@@ -3678,7 +3700,7 @@
       "city": "Kansas City",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 8, 10:00 AM PT",
       "sources": [
@@ -3693,7 +3715,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873045"
     },
     {
       "id": "401873046",
@@ -3718,7 +3741,7 @@
       "city": "Inglewood",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 4:05 PM ET",
       "kickoff_pt": "Sun, Nov 8, 1:05 PM PT",
       "sources": [
@@ -3733,7 +3756,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873046"
     },
     {
       "id": "401873047",
@@ -3758,7 +3782,7 @@
       "city": "Santa Clara",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 4:25 PM ET",
       "kickoff_pt": "Sun, Nov 8, 1:25 PM PT",
       "sources": [
@@ -3773,7 +3797,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873047"
     },
     {
       "id": "401873048",
@@ -3798,7 +3823,7 @@
       "city": "Seattle",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 4:25 PM ET",
       "kickoff_pt": "Sun, Nov 8, 1:25 PM PT",
       "sources": [
@@ -3813,7 +3838,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873048"
     },
     {
       "id": "401873049",
@@ -3838,7 +3864,7 @@
       "city": "Foxborough",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 4:25 PM ET",
       "kickoff_pt": "Sun, Nov 8, 1:25 PM PT",
       "sources": [
@@ -3853,7 +3879,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873049"
     },
     {
       "id": "401873050",
@@ -3878,7 +3905,7 @@
       "city": "Chicago",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 8, 8:20 PM ET",
       "kickoff_pt": "Sun, Nov 8, 5:20 PM PT",
       "sources": [
@@ -3893,7 +3920,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873050"
     },
     {
       "id": "401873051",
@@ -3913,13 +3941,12 @@
       "broadcast": "ESPN",
       "venue": "U.S. Bank Stadium",
       "networks": [
-        "ESPN",
-        "ABC"
+        "ESPN"
       ],
       "city": "Minneapolis",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Mon, November 9, 8:15 PM ET",
       "kickoff_pt": "Mon, Nov 9, 5:15 PM PT",
       "sources": [
@@ -3934,7 +3961,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873051"
     },
     {
       "id": "401873052",
@@ -3959,7 +3987,7 @@
       "city": "East Rutherford",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Thu, November 12, 8:15 PM ET",
       "kickoff_pt": "Thu, Nov 12, 5:15 PM PT",
       "sources": [
@@ -3974,7 +4002,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873052"
     },
     {
       "id": "401873053",
@@ -3999,7 +4028,7 @@
       "city": "Munich",
       "country": "Germany",
       "neutral_site": true,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 9:30 AM ET",
       "kickoff_pt": "Sun, Nov 15, 6:30 AM PT",
       "sources": [
@@ -4014,7 +4043,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873053"
     },
     {
       "id": "401873054",
@@ -4039,7 +4069,7 @@
       "city": "East Rutherford",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 15, 10:00 AM PT",
       "sources": [
@@ -4054,7 +4084,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873054"
     },
     {
       "id": "401873055",
@@ -4079,7 +4110,7 @@
       "city": "New Orleans",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 15, 10:00 AM PT",
       "sources": [
@@ -4094,7 +4125,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873055"
     },
     {
       "id": "401873056",
@@ -4119,7 +4151,7 @@
       "city": "Cleveland",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 15, 10:00 AM PT",
       "sources": [
@@ -4134,7 +4166,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873056"
     },
     {
       "id": "401873057",
@@ -4159,7 +4192,7 @@
       "city": "Nashville",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 15, 10:00 AM PT",
       "sources": [
@@ -4174,7 +4207,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873057"
     },
     {
       "id": "401873058",
@@ -4199,7 +4233,7 @@
       "city": "Atlanta",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 15, 10:00 AM PT",
       "sources": [
@@ -4214,7 +4248,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873058"
     },
     {
       "id": "401873059",
@@ -4239,7 +4274,7 @@
       "city": "Indianapolis",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 15, 10:00 AM PT",
       "sources": [
@@ -4254,7 +4289,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873059"
     },
     {
       "id": "401873060",
@@ -4279,7 +4315,7 @@
       "city": "Green Bay",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 1:00 PM ET",
       "kickoff_pt": "Sun, Nov 15, 10:00 AM PT",
       "sources": [
@@ -4294,7 +4330,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873060"
     },
     {
       "id": "401873061",
@@ -4319,7 +4356,7 @@
       "city": "Glendale",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 4:05 PM ET",
       "kickoff_pt": "Sun, Nov 15, 1:05 PM PT",
       "sources": [
@@ -4334,7 +4371,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873061"
     },
     {
       "id": "401873062",
@@ -4359,7 +4397,7 @@
       "city": "Las Vegas",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 4:05 PM ET",
       "kickoff_pt": "Sun, Nov 15, 1:05 PM PT",
       "sources": [
@@ -4374,7 +4412,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873062"
     },
     {
       "id": "401873063",
@@ -4399,7 +4438,7 @@
       "city": "Arlington",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 4:25 PM ET",
       "kickoff_pt": "Sun, Nov 15, 1:25 PM PT",
       "sources": [
@@ -4414,7 +4453,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873063"
     },
     {
       "id": "401873064",
@@ -4439,7 +4479,7 @@
       "city": "Cincinnati",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Sun, November 15, 8:20 PM ET",
       "kickoff_pt": "Sun, Nov 15, 5:20 PM PT",
       "sources": [
@@ -4454,7 +4494,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873064"
     },
     {
       "id": "401873065",
@@ -4479,7 +4520,7 @@
       "city": "Baltimore",
       "country": "USA",
       "neutral_site": false,
-      "indoor_provider_value": false,
+      "indoor_provider_value": null,
       "kickoff_et": "Mon, November 16, 8:15 PM ET",
       "kickoff_pt": "Mon, Nov 16, 5:15 PM PT",
       "sources": [
@@ -4494,7 +4535,8 @@
         "kickoff",
         "primary_network"
       ],
-      "weather": null
+      "weather": null,
+      "evidenceDocument": "data/content-refresh/2026-11-05/review.json#gameEvidence/401873065"
     },
     {
       "id": "401873066",
@@ -8049,6 +8091,6 @@
   "sourceAsOf": "2026-11-05",
   "fetchedAt": "2026-11-05T09:53:12.051Z",
   "verification": "Schedule, results and standings refreshed from ESPN and NFL.com at 2026-11-05T09:53:12.051Z. 121 season finals, 14 Week 8 finals and Week 10 fixtures carried two publisher families.",
-  "compiledAt": "2026-11-05T09:53:12.051Z",
+  "compiledAt": "2026-11-05T13:01:13.464Z",
   "collectedOn": "2026-11-05"
 }

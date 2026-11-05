@@ -10,7 +10,7 @@
 import { DataBoardHero, DataBoardSummary, DataBoardEmpty, formatDataDate } from "./data-board-primitives";
 import { EvidenceLinks } from "./evidence-links";
 import type { BroadcastTeam } from "@/lib/homepage";
-import { deskLead, refreshWeek, weeklyDesk } from "@/lib/content-refresh";
+import { deskLead, lastCompletedWeek, refreshWeek, weeklyDesk } from "@/lib/content-refresh";
 import {
   fantasyDesk,
   currentNflWeek,
@@ -215,7 +215,7 @@ export function FantasyDeskPage({ teams }: { teams: BroadcastTeam[] }) {
         <DataBoardEmpty title={`Week ${refreshWeek} waiver board not published`} description="Ownership eligibility and corroborated player usage are not established. No recommended adds or blanket drops are implied. The prior edition is linked under Data sources." />
       )}
       {desk.rookie ? <RookieSection board={desk.rookie} /> : (
-        <DataBoardEmpty title={`Week ${refreshWeek - 1} rookie usage not published`} description="Complete snap/route denominators are unavailable. Partial player rows do not establish comprehensive coverage." />
+        <DataBoardEmpty title={lastCompletedWeek ? `Week ${lastCompletedWeek} rookie usage not published` : "Rookie usage not published"} description="Complete snap/route denominators are unavailable. Partial player rows do not establish comprehensive coverage." />
       )}
     </div>
   );

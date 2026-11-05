@@ -161,4 +161,4 @@ October 29 vinext 1.2.0 compatibility follow-up: the pinned 1.2.0 bundle changed
 
 ### November 5, 2026 · Weekly NFL edition
 
-November 10 is a Week 10 refresh if all Week 9 games are final. A late or incomplete slate keeps its own week in play. The job covers the regular-season dataset only. Its last permitted date is February 15, 2027. GitHub must permit Actions to open draft pull requests.
+November 10 is a Week 10 refresh if all Week 9 games are final. A late or incomplete slate keeps its own week in play. The job covers the regular-season dataset only. Its last permitted date is February 15, 2027. A maintainer can reserve the draft in advance. The job provides a compare link when repository policy restricts automated PR creation.

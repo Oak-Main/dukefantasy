@@ -15,7 +15,7 @@
  */
 
 import nfl from "./nfl-generated.ts";
-import { sourceFreshness } from "./content-refresh.ts";
+import { lastCompletedWeek, sourceFreshness } from "./content-refresh.ts";
 
 /* ------------------------------------------------------------------- types */
 
@@ -186,7 +186,8 @@ export function deskBoardStatus(
   if (!board) return null;
   const covers = key === "waiver" ? (board as WaiverBoard).week_adding_for : (board as StartSitBoard | RookieBoard | TradeBoard).week;
   if (weekInPlay === null) return { covers, current: null };
-  const required = key === "rookie" ? weekInPlay - 1 : weekInPlay;
+  const rookieWeek = weekInPlay === currentNflWeek ? lastCompletedWeek : weekInPlay - 1;
+  const required = key === "rookie" ? rookieWeek : weekInPlay;
   return { covers, current: covers === required && sourceFreshness(board.as_of) === "current" };
 }
 

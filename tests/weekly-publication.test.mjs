@@ -66,7 +66,10 @@ test("an injury module that lags the week in play keeps its own dated record", (
     materializeVerifiedSnapshot(root);
     const written = readFileSync(join(root, "lib/nfl-generated.ts"), "utf8");
     assert.ok(written.includes(`"currentWeek":${snapshotDoc.season.currentWeek}`), "the week in play must not move");
-    assert.ok(written.includes(`"week":${editorialDoc.week}`), "the published edition week must not move");
+    const payload = JSON.parse(written.split("export default ")[1].replace(/;\s*$/, ""));
+    assert.equal(payload.injuryResearch.week, injuryWeek);
+    assert.equal(payload.injuryResearch.as_of, injuryDoc.as_of);
+    assert.equal(JSON.parse(readFileSync(join(root, "data/content-refresh/current-editorial.json"))).week, editorialDoc.week);
   } finally { rmSync(root, { recursive: true, force: true }); }
 });
 
@@ -139,6 +142,10 @@ test("Tuesday selects Week 10 only after all Week 9 games finish; a preview may 
   assert.deepEqual(selectSlate(games, 18, 10, null), { weekInPlay: 9, completedWeek: 8, editionWeek: 10 });
   for (const game of games.filter(g => g.week === 9)) game.status = "final";
   assert.deepEqual(selectSlate(games, 18, 10, null), { weekInPlay: 10, completedWeek: 9, editionWeek: 10 });
+  const postponed = games.find(g => g.week === 9);
+  Object.assign(postponed, { status: "scheduled", statusDetail: "Postponed" });
+  games.find(g => g.week === 10).status = "in_progress";
+  assert.deepEqual(selectSlate(games, 18, 10, null), { weekInPlay: 10, completedWeek: 8, editionWeek: 10 });
   assert.throws(() => selectSlate(games, 18, 10, 12));
   assert.throws(() => selectSlate(games, 18, 10, 9));
   assert.deepEqual(publicationWindow(null, new Date("2026-11-10T07:59:00Z")), { day: "2026-11-09", ended: false });
@@ -167,7 +174,7 @@ test("November 10 replay writes a verifiable draft, rejects conflicting finals, 
     cpSync(join(source, "scripts"), join(root, "scripts"), { recursive: true });
     mkdirSync(join(root, "lib"));
     mkdirSync(join(root, "data/content-refresh/2026-11-05"), { recursive: true });
-    for (const file of ["2026-11-05/snapshot.json", "broadcast-reviews.json"]) copyFileSync(join(source, "data/content-refresh", file), join(root, "data/content-refresh", file));
+    for (const file of ["2026-11-05/snapshot.json", "2026-11-05/review.json", "broadcast-reviews.json", "broadcast-evidence.json"]) copyFileSync(join(source, "data/content-refresh", file), join(root, "data/content-refresh", file));
     write("data/content-refresh/current.json", { sourceAsOf: "2026-11-05", snapshot: "2026-11-05/snapshot.json", sourceCutoffs: { targetedInjuryUtc: "2026-10-28T20:34:19Z" } });
     write("data/content-refresh/current-editorial.json", { week: 10, moduleSources: { injuries: { sourceAsOf: "2026-10-20" } } });
     write("data/injury-research/current.json", { week: 8, as_of: "2026-10-20", watch: [], ledger: [] });
@@ -175,6 +182,18 @@ test("November 10 replay writes a verifiable draft, rejects conflicting finals, 
     const invalid = run("refresh-weekly-edition.mjs", ["--week="], { FIXTURE_MISMATCH: "true" });
     assert.equal(invalid.status, 1); assert.match(invalid.stderr, /final score disagrees/);
     assert.equal(existsSync(join(root, "data/content-refresh/2026-11-10")), false);
+    for (const [toggle, message] of [["FIXTURE_PARTIAL", /272 regular-season games/], ["FIXTURE_PHASE", /final status disagrees/]]) {
+      const broken = run("refresh-weekly-edition.mjs", ["--week="], { [toggle]: "true" });
+      assert.equal(broken.status, 1); assert.match(broken.stderr, message);
+      assert.equal(existsSync(join(root, "data/content-refresh/2026-11-10")), false);
+    }
+    const entry = read("data/content-refresh/current.json");
+    const injuryInput = read("data/injury-research/current.json");
+    write("data/injury-research/current.json", { ...injuryInput, week: 16 });
+    const badModule = run("refresh-weekly-edition.mjs", ["--week="]);
+    assert.equal(badModule.status, 1); assert.deepEqual(read("data/content-refresh/current.json"), entry);
+    assert.equal(existsSync(join(root, "data/content-refresh/2026-11-10")), false);
+    write("data/injury-research/current.json", injuryInput);
     const ok = run("refresh-weekly-edition.mjs", ["--week="]);
     assert.equal(ok.status, 0, ok.stdout + ok.stderr);
     const dir = "data/content-refresh/2026-11-10";

@@ -30,7 +30,7 @@ for (const [path, match] of [
   ["/data-sources", new RegExp(manifest.sourceAsOf)],
   ["/dfs", /projections are not published/],
   ["/games/401873011", /Saint-Denis/],
-  ["/games/401873042", new RegExp(candidate.schedule.find(game => game.id === "401873042").broadcast ?? "Not published", "i")],
+  ["/games/401873042", new RegExp(candidate.schedule.find(game => game.id === "401873042").broadcast ?? "Broadcast provider not configured", "i")],
 ]) {
   const response = await get(path);
   const html = await response.text();

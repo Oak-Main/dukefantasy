@@ -40,8 +40,9 @@ export const reserveStatuses: readonly ReserveStatus[] = editorial.reserveStatus
 export const refreshWeek = editorial.week;
 export const weekInPlay = nfl.season.currentWeek;
 export const editionGames = nfl.schedule.filter(game => game.week === refreshWeek);
-const lastWeek = nfl.schedule.filter(game => game.week === weekInPlay);
-export const lastCompletedWeek = lastWeek.length && lastWeek.every(game => game.status === "final") ? weekInPlay : weekInPlay - 1;
+const firstIncomplete = Array.from({ length: nfl.season.weeks }, (_, index) => index + 1)
+  .find(week => nfl.schedule.some(game => game.week === week && game.status !== "final"));
+export const lastCompletedWeek = firstIncomplete === undefined ? nfl.season.weeks : firstIncomplete - 1;
 export const seasonFinals = nfl.schedule.filter(game => game.status === "final").length;
 const deskNote = editorial.deskNote;
 export const weeklyDesk = deskNote.week === refreshWeek && deskNote.asOf === refreshAsOf ? deskNote : null;
@@ -90,7 +91,7 @@ export function sourceFreshness(sourceAsOf: string | null, now = new Date(), max
 
 export function contentSourceModules(now = new Date(), sources = moduleSources) {
   return [
-    { id: "schedule", label: "Schedule, results & standings", note: `${seasonFinals} season finals and 32 team records. Results are complete through Week ${lastCompletedWeek}. The Week ${refreshWeek} edition has ${editionGames.length} games and ${byeTeams.length} byes. Later fixtures can change.`, hours: 48 },
+    { id: "schedule", label: "Schedule, results & standings", note: `${seasonFinals} season finals and 32 team records. ${lastCompletedWeek ? `Results are complete through Week ${lastCompletedWeek}.` : "The opening slate is in progress."} The Week ${refreshWeek} edition has ${editionGames.length} games and ${byeTeams.length} byes. Later fixtures can change.`, hours: 48 },
     { id: "injuries", label: "Injury research", note: "Full ledger review remains October 20. Week 8 Thursday watch covers CAR/GB only, with October 28 designations and dated practice estimates. McLaurin IR and Newton practice window are partial updates. No all-team recertification. Two publishers can share an upstream feed.", hours: 24 },
     { id: "inactives", label: "Week 7 game-day inactives", note: "Only published, two-source team lists appear. Missing lists do not imply active status. Emergency third quarterbacks remain separately labeled.", hours: 24 },
     { id: "fantasy", label: "Fantasy decision boards", note: "Each decision board carries its own week and source date. The October 20 half-PPR redraft edition is archived. Ownership, usage and numeric projections require separate verification.", hours: 48 },

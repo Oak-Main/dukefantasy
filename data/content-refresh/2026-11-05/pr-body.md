@@ -10,7 +10,7 @@ Refreshed schedule, results and standings for the 2026 NFL season. This is a dra
 
 ### Sources read (URL and UTC retrieval time)
 
-| Source | URL | Retrieved (UTC) | SHA-256 |
+| Source | URL | Retrieved (UTC) | SHA-256 (first 16 hex characters) |
 | --- | --- | --- | --- |
 | espn-week-1 | https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100 | 2026-11-05T09:53:10.255Z | `84c63272a0ba37e1` |
 | espn-week-2 | https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100 | 2026-11-05T09:53:10.255Z | `951447d91a5cc007` |
@@ -49,10 +49,14 @@ Refreshed schedule, results and standings for the 2026 NFL season. This is a dra
 | game-401873035 | https://www.nfl.com/games/eagles-at-commanders-2026-reg-8 | 2026-11-05T09:53:11.940Z | `fcfcdd4000a2d076` |
 | game-401873036 | https://www.nfl.com/games/bears-at-seahawks-2026-reg-8 | 2026-11-05T09:53:12.043Z | `cdd24ee0caa7dfff` |
 
+| broadcast-leagueUrl | https://www.nfl.com/news/nfl-how-to-watch-week-9-nfl-games-schedule-madrid-game-details-and-more | 2026-11-05T13:01:13.224Z | `0c80665a7c91c13a` |
+| broadcast-teamUrl | https://www.detroitlions.com/game-day/2026/reg-week9/lions-at-dolphins/ | 2026-11-05T13:01:13.314Z | `89f4e6ca62499e17` |
+| broadcast-broadcasterUrl | https://www.paramountplus.com/sneak-peak/nfl-lions-vs-dolphins-week-9-2026-how-to-watch/ | 2026-11-05T13:01:13.464Z | `e73d1c5c71a2145e` |
+
 ### Source disagreements recorded
 
 | Event | Field | ESPN | NFL.com | Published |
 | --- | --- | --- | --- | --- |
 | 401873042 | primary_network | FOX | CBS | CBS |
 
-The NFL's current listing, the Detroit game center and Paramount's November 3 viewing guide confirm CBS in participating markets on November 8 at 1 p.m. ET. The original ESPN extraction is preserved. The dated broadcast review records the sources separately from the schedule capture. The weekly desk covers Week 8 results, the Week 9 Thursday designations and the Week 10 lineup deadlines.
+The NFL's current listing, the Detroit game center and Paramount’s viewing guide confirm CBS in participating markets on November 8 at 1 p.m. ET. The original ESPN extraction is preserved. The dated broadcast review records the sources separately from the schedule capture. The weekly desk covers Week 8 results, the Week 9 Thursday designations and the Week 10 lineup deadlines.

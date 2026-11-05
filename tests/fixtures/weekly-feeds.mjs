@@ -25,6 +25,7 @@ const event = game => ({
 function leagueGame(game) {
   return {
     id: game.id, week: game.week, date: game.kickoffUtc,
+    ...(process.env.FIXTURE_PHASE === "true" && game.week === 9 ? { status: "IN_PROGRESS" } : {}),
     awayTeam: { fullName: teams.get(game.awaySlug).name }, homeTeam: { fullName: teams.get(game.homeSlug).name },
     broadcastInfo: { homeNetworkChannels: game.broadcast ? [game.broadcast] : [] },
     externalIds: [{ source: "slug", id: game.id }],
@@ -33,7 +34,7 @@ function leagueGame(game) {
 globalThis.fetch = async input => {
   const url = new URL(input);
   if (url.pathname.endsWith("/scoreboard")) {
-    if (url.searchParams.has("week")) return Response.json({ events: games.filter(g => g.week === Number(url.searchParams.get("week"))).map(event) });
+    if (url.searchParams.has("week")) return Response.json({ events: games.filter(g => g.week === Number(url.searchParams.get("week")) && !(process.env.FIXTURE_PARTIAL === "true" && g.id === "401873042")).map(event) });
     return Response.json({ week: { number: 10 }, leagues: [{ calendar: [{ value: 2, entries: Array.from({ length: 18 }, (_, i) => ({ value: i + 1 })) }] }] });
   }
   if (url.pathname.endsWith("/standings")) {

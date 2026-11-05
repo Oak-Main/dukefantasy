@@ -84,7 +84,10 @@ jobs:
               # A maintainer may reserve the draft in advance. Only an empty seed
               # or its dated review note can be folded into the generated branch.
               base=$(git merge-base "$GITHUB_SHA" "$tip")
-              git diff --quiet "$base" "$tip" -- . ":(exclude)docs/releases/$day-draft.md"
+              if ! git diff --quiet "$base" "$tip" -- . ":(exclude)docs/releases/$day-draft.md"; then
+                echo "::error::Reserved branch contains maintainer changes. Review these before retrying."
+                exit 1
+              fi
             fi
             git switch -c "$branch"
             git add -- data/content-refresh lib/nfl-generated.ts
@@ -92,6 +95,13 @@ jobs:
             if [[ -n "$tip" ]]; then git merge --no-edit "$tip"; fi
             git push origin "HEAD:refs/heads/$branch"
           else
+            snapshot="data/content-refresh/$day/snapshot.json"
+            git show "$tip:$snapshot" | node scripts/weekly-facts.mjs > "$RUNNER_TEMP/prior-facts"
+            node scripts/weekly-facts.mjs < "$snapshot" > "$RUNNER_TEMP/new-facts"
+            if ! cmp -s "$RUNNER_TEMP/prior-facts" "$RUNNER_TEMP/new-facts"; then
+              echo "::error::Fresh verified facts differ from the existing draft. Its branch was preserved for review."
+              exit 1
+            fi
             git show "$tip:$body" > "$RUNNER_TEMP/edition-receipt.md"
             body="$RUNNER_TEMP/edition-receipt.md"
           fi

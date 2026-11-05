@@ -3,7 +3,7 @@
  * This is the screenshot-equivalent proof that the title carries the edition week.
  */
 import assert from "node:assert/strict";
-import { readdirSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { join } from "node:path";
 import { Miniflare, convertV4MiniflareOptions } from "miniflare";
@@ -24,12 +24,15 @@ const runtime = new Miniflare(
   }),
 );
 
+const edition = JSON.parse(readFileSync(new URL("../data/content-refresh/current-editorial.json", import.meta.url)));
 for (const path of ["/", "/scores", "/schedule", "/fantasy-desk", "/data-sources"]) {
   const response = await runtime.dispatchFetch(`http://localhost${path}`, new Request(`http://localhost${path}`, { headers: { accept: "text/html" } }));
   const html = await response.text();
   const title = html.match(/<title>([^<]*)<\/title>/)?.[1] ?? "(no title)";
   const marker = html.match(/\[\[COPY: [^\]]+\]\]/)?.[0] ?? "(no marker)";
   assert.equal(response.status, 200, path);
+  assert.notEqual(title, "(no title)", path);
+  if (["/", "/schedule", "/fantasy-desk"].includes(path)) assert.match(title, new RegExp(`Week ${edition.week}\\b`), path);
   assert.equal(marker, "(no marker)", path);
   const compiled = html.match(/Dataset compiled through[^<]*/)?.[0] ?? "";
   console.log(`${path.padEnd(14)} ${response.status} | title: ${title}`);

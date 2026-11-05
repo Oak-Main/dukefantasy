@@ -11,9 +11,8 @@ const editorial = JSON.parse(readFileSync(new URL("../../data/content-refresh/cu
 // the week in play is the first week whose games are not all final.
 const editionWeek = editorial.week as number;
 const weekInPlay = snapshot.season.currentWeek as number;
-const teams = new Map<string, string>(
-  snapshot.teams.map((team: { slug: string; name: string }) => [team.slug, team.name]),
-);
+const firstIncomplete = snapshot.schedule.filter((game: { status: string }) => game.status !== "final").map((game: { week: number }) => game.week);
+const completedWeek = firstIncomplete.length ? Math.min(...firstIncomplete) - 1 : snapshot.season.weeks;
 const slateTeams = snapshot.schedule
   .filter((game: { week: number }) => game.week === weekInPlay)
   .flatMap((game: { awaySlug: string; homeSlug: string }) => [game.awaySlug, game.homeSlug]);
@@ -37,8 +36,14 @@ for (const path of routes) test(`Week ${editionWeek} identity, content, accessib
   const text = await main.innerText();
   if (path === "/" || path === "/fantasy-desk") {
     expect(text).not.toContain("[[COPY:");
+    if (manifest.sourceAsOf === "2026-11-05") {
+      expect(editorial.deskNote?.week).toBe(editionWeek);
+      expect(editorial.deskNote?.asOf).toBe(manifest.sourceAsOf);
+    }
     if (editorial.deskNote?.week === editionWeek && editorial.deskNote.asOf === manifest.sourceAsOf) {
       expect(text).toContain(editorial.deskNote.lead);
+    } else {
+      expect(text).toContain("Player decisions await the next desk review.");
     }
     expect(await page.title()).toContain(`Week ${editionWeek}`);
     for (const field of ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]']) {
@@ -52,7 +57,9 @@ for (const path of routes) test(`Week ${editionWeek} identity, content, accessib
   }
   if (path === "/") {
     // The marquee must feature a team from the week in play.
-    expect([...slateTeams].some((slug) => text.includes(teams.get(slug) ?? "__none__"))).toBe(true);
+    const links = await main.locator('#tv-board a.watch-team-line').evaluateAll(rows => rows.map(row => row.getAttribute("href")));
+    expect(links.length).toBeGreaterThan(0);
+    expect(links.every(href => slateTeams.includes(href?.split("/").pop()))).toBe(true);
     expect(text).not.toMatch(/Week 7 complete/);
     await expect(main.getByRole("heading", { name: `Week ${editionWeek} Fantasy Desk` })).toBeVisible();
     expect(text).toMatch(/Current decision boards are not published/);
@@ -83,14 +90,16 @@ for (const path of routes) test(`Week ${editionWeek} identity, content, accessib
   } else if (path === "/watch") {
     await expect(page.getByRole("group", { name: "Select a broadcast week", exact: true }).getByRole("button", { name: `Week ${weekInPlay}`, exact: true })).toHaveAttribute("aria-pressed", "true");
     expect(text).toMatch(/\d/);
-    expect([...slateTeams].some((slug) => text.includes(teams.get(slug) ?? "__none__"))).toBe(true);
+    const links = await main.locator('#tv-board a.watch-team-line').evaluateAll(rows => rows.map(row => row.getAttribute("href")));
+    expect(links.length).toBeGreaterThan(0);
+    expect(links.every(href => slateTeams.includes(href?.split("/").pop()))).toBe(true);
   } else if (path === "/injuries") {
     expect(text).toMatch(/Week 8 Thursday watch/); expect(text).toMatch(/October 20/);
     expect(text).toMatch(/Official Week 8 designation: QUESTIONABLE/);
     expect(text).toMatch(/Week 8 inactives are not published/);
   } else if (path === "/fantasy-desk") {
     expect(text).toMatch(new RegExp(`Week ${editionWeek} waiver board not published`, "i"));
-    expect(text).toMatch(new RegExp(`Week ${editionWeek - 1} rookie usage not published`, "i"));
+    expect(text).toMatch(new RegExp(`Week ${completedWeek} rookie usage not published`, "i"));
     expect(text).toMatch(/12-team, one-QB half-PPR/); expect(text).toMatch(/0 \/ 4/);
   } else if (path === "/stats") {
     expect(text).toMatch(/through Week 6/i); expect(text).toMatch(/Historical October 20/);

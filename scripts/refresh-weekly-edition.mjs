@@ -19,7 +19,7 @@
  * It never merges, never deploys and never touches editorial prose: dated desk notes are selected separately from the schedule.
  */
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, mkdtempSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { fetchNflGame, fetchNflWeek } from "./nfl-week-source.mjs";
@@ -30,8 +30,9 @@ const root = fileURLToPath(new URL("..", import.meta.url));
 const read = (file) => JSON.parse(readFileSync(join(root, file), "utf8"));
 /** The repository stores JSON with non-ASCII escaped, so a rewrite leaves
  *  untouched strings byte-identical instead of re-encoding them. */
+let outputRoot = root;
 const write = (file, value) => {
-  const path = join(root, file);
+  const path = join(outputRoot, file);
   mkdirSync(dirname(path), { recursive: true });
   const json = JSON.stringify(value, null, 2).replace(
     new RegExp("[\\u0080-\\uffff]", "g"),
@@ -41,7 +42,7 @@ const write = (file, value) => {
 };
 
 const writeText = (file, text) => {
-  const path = join(root, file);
+  const path = join(outputRoot, file);
   mkdirSync(dirname(path), { recursive: true });
   writeFileSync(path, text);
 };
@@ -157,7 +158,7 @@ async function fetchJson(url, attempts = 4) {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const text = await res.text();
-      return { document: JSON.parse(text), raw: text };
+      return { document: JSON.parse(text), raw: text, checkedAt: new Date().toISOString() };
     } catch (error) {
       lastError = error;
       if (attempt < attempts) await new Promise((resolve) => setTimeout(resolve, 500 * 2 ** (attempt - 1)));
@@ -174,6 +175,7 @@ const editorial = read("data/content-refresh/current-editorial.json");
 const injury = read("data/injury-research/current.json");
 
 const broadcastReviews = read("data/content-refresh/broadcast-reviews.json");
+const broadcastEvidence = read("data/content-refresh/broadcast-evidence.json");
 const requestedWeekArg = arg("week", null);
 const requestedWeek =
   requestedWeekArg == null || requestedWeekArg === "" ? null : Number(requestedWeekArg);
@@ -210,12 +212,10 @@ if (weekNumbers.length !== totalWeeks) {
 const espnWeeks = [];
 for (const week of weekNumbers) {
   const url = `${ESPN}/scoreboard?dates=${seasonYear}&seasontype=2&week=${week}&limit=100`;
-  const { document, raw } = await fetchJson(url);
-  espnWeeks.push({ week, url, document, raw });
+  espnWeeks.push({ week, url, ...await fetchJson(url) });
 }
 const standingsDoc = await fetchJson(STANDINGS_URL);
 console.log(`  ${espnWeeks.length} weeks from ESPN (current week ${espnCurrentWeek}).`);
-const retrievedAtSeed = new Date().toISOString();
 const espnGames = [];
 for (const { week, document } of espnWeeks) {
   for (const ev of document.events ?? []) {
@@ -250,6 +250,7 @@ for (const { week, document } of espnWeeks) {
       city: comp.venue?.address?.city ?? "",
       country: comp.venue?.address?.country ?? "",
       neutral_site: comp.neutralSite === true,
+      indoor_provider_value: typeof comp.venue?.indoor === "boolean" ? comp.venue.indoor : null,
     });
   }
 }
@@ -263,7 +264,11 @@ const { weekInPlay: dataWeek, completedWeek, editionWeek } =
   selectSlate(espnGames, totalWeeks, editorial.week, requestedWeek);
 // The weeks this edition publishes: the week that just finished and the two
 // weeks the edition covers. Anything earlier was published before and stays.
-const publishedWeeks = [editionWeek - 2, editionWeek - 1, editionWeek].filter((week) => week >= 1);
+const published = new Set([editionWeek - 2, editionWeek - 1, editionWeek].filter(week => week >= 1));
+for (const prior of previousSnapshot.schedule) {
+  if (prior.week < editionWeek - 2 && prior.status !== "final" && espnGames.find(game => game.id === prior.id)?.status === "final") published.add(prior.week);
+}
+const publishedWeeks = [...published].sort((a,b) => a - b);
 console.log(
   `Edition week ${editionWeek}; week in play ${dataWeek}; publishing weeks ${publishedWeeks.join(", ")} as of ${releaseDate}.`,
 );
@@ -307,11 +312,11 @@ const recordSource = (name, url, checkedAt, sha256, bytes, status = 200) => {
   sourceLedger.push({ name, url, checkedAt, status, bytes, sha256 });
 };
 
-for (const { week, url, document, raw } of espnWeeks) {
+for (const { week, url, checkedAt, raw } of espnWeeks) {
   recordSource(
     `espn-week-${week}`,
     url,
-    retrievedAtSeed,
+    checkedAt,
     createHash("sha256").update(raw).digest("hex"),
     raw.length,
   );
@@ -319,7 +324,7 @@ for (const { week, url, document, raw } of espnWeeks) {
 recordSource(
   "espn-standings",
   STANDINGS_URL,
-  retrievedAtSeed,
+  standingsDoc.checkedAt,
   createHash("sha256").update(standingsDoc.raw).digest("hex"),
   standingsDoc.raw.length,
 );
@@ -353,14 +358,18 @@ for (const game of espnGames) {
   }
 
   // Two publishers must agree on the material facts of a published game.
-  if (nfl.week !== game.week) problems.push(`${game.id}: week disagrees (ESPN ${game.week}, NFL.com ${nfl.week})`);
-  if (nfl.date !== game.date) problems.push(`${game.id}: Eastern date disagrees (ESPN ${game.date}, NFL.com ${game.date})`);
+  if (nfl.date !== game.date) problems.push(`${game.id}: Eastern date disagrees (ESPN ${game.date}, NFL.com ${nfl.date})`);
   if (new Date(nfl.kickoffUtc).getTime() !== new Date(game.kickoffUtc).getTime()) {
     problems.push(`${game.id}: kickoff disagrees (ESPN ${game.kickoffUtc}, NFL.com ${nfl.kickoffUtc})`);
   }
   const nflNetworks = [...new Set(nfl.networks.map(normalizeNetwork).filter(Boolean))];
   const tv = resolveBroadcast(game, nflNetworks, broadcastReviews[game.id]);
   const sourceConflicts = tv.conflict ? [tv.conflict] : [];
+  if (tv.conflict?.review) {
+    for (const receipt of broadcastEvidence.filter(row => row.id === game.id)) {
+      recordSource(`broadcast-${game.id}-${receipt.field}`, receipt.url, receipt.checkedAt, receipt.sha256, receipt.bytes);
+    }
+  }
   if (tv.conflict) discrepancies.push({ eventId: game.id, week: game.week, ...tv.conflict, published: tv.broadcast });
   const sources = [nfl.weekUrl, espnUrl];
   const verifiedFields = ["opponents", "date", "kickoff"];
@@ -383,6 +392,7 @@ for (const game of espnGames) {
   }
 
   const clocks = clockLabels(game.kickoffUtc);
+  const espnReceipt = sourceLedger.find(row => row.url === espnUrl);
   const recorded = {
     ...game,
     broadcast: tv.broadcast,
@@ -390,7 +400,7 @@ for (const game of espnGames) {
     neutral_site: game.neutral_site,
     city: game.city,
     country: game.country,
-    indoor_provider_value: false,
+    evidenceDocument: `data/content-refresh/${releaseDate}/review.json#gameEvidence/${game.id}`,
     kickoff_et: clocks.et,
     kickoff_pt: clocks.pt,
     sources,
@@ -415,7 +425,7 @@ for (const game of espnGames) {
     verifiedFields,
     ...(sourceConflicts.length ? { sourceConflicts } : {}),
     sources: [
-      { url: espnUrl, checkedAt: nfl.checkedAt, rawSha256: null, record: game.id },
+      { url: espnUrl, checkedAt: espnReceipt.checkedAt, rawSha256: espnReceipt.sha256, record: game.id },
       { url: nfl.weekUrl, checkedAt: nfl.checkedAt, rawSha256: nfl.rawSha256, record: nfl.slug ?? `${game.awaySlug} at ${game.homeSlug}` },
     ],
   };
@@ -502,6 +512,7 @@ const review = {
   completedWeek,
   baseline: {
     snapshot: manifest.snapshot,
+    week: editorial.week,
     sourceAsOf: manifest.sourceAsOf,
     finalsDigest: createHash("sha256")
       .update(
@@ -532,16 +543,16 @@ const espnVerification = {
   cutoffUtc: retrievedAt,
   compiledAt: retrievedAt,
   responses: [
-    ...espnWeeks.map(({ url, document, raw }) => ({
+    ...espnWeeks.map(({ url, document, raw, checkedAt }) => ({
       url,
-      checkedAt: retrievedAt,
+      checkedAt,
       documentSha256: createHash("sha256").update(JSON.stringify(document)).digest("hex"),
       rawSha256: createHash("sha256").update(raw).digest("hex"),
       document,
     })),
     {
       url: STANDINGS_URL,
-      checkedAt: retrievedAt,
+      checkedAt: standingsDoc.checkedAt,
       documentSha256: createHash("sha256").update(JSON.stringify(standingsDoc.document)).digest("hex"),
       rawSha256: createHash("sha256").update(standingsDoc.raw).digest("hex"),
       document: standingsDoc.document,
@@ -580,7 +591,7 @@ const nextManifest = {
 // before opening another draft for an unchanged regular-season slate.
 const facts = rows => rows.map(g => [g.id, g.week, g.kickoffUtc, g.timeTbd, g.awaySlug, g.homeSlug,
   g.status, g.statusDetail, g.awayScore, g.homeScore, g.broadcast, g.venue, g.neutral_site, g.city, g.country,
-  g.networks, g.verified_fields, g.source_conflicts, g.sources]);
+  g.indoor_provider_value, g.networks, g.verified_fields, g.source_conflicts, g.sources]);
 if (!dryRun && editorial.week === editionWeek && previousSnapshot.season.currentWeek === dataWeek &&
     JSON.stringify(facts(previousSnapshot.schedule)) === JSON.stringify(facts(schedule))) {
   console.log("Schedule, scores and coverage are unchanged; nothing to propose.");
@@ -593,47 +604,74 @@ if (dryRun) {
   process.exit(0);
 }
 
-write(`data/content-refresh/${releaseDate}/snapshot.json`, snapshot);
-write(`data/content-refresh/${releaseDate}/review.json`, review);
-write(`data/content-refresh/${releaseDate}/espn-verification.json`, espnVerification);
-write("data/content-refresh/current-editorial.json", nextEditorial);
-write("data/content-refresh/current.json", nextManifest);
+outputRoot = mkdtempSync(join(root, ".nfl-edition-"));
+try {
+  for (const file of ["data/injury-research/current.json", "data/fantasy-desk/current.json"]) {
+    mkdirSync(dirname(join(outputRoot, file)), { recursive: true });
+    copyFileSync(join(root, file), join(outputRoot, file));
+  }
+  mkdirSync(join(outputRoot, "lib"));
+  write(`data/content-refresh/${releaseDate}/snapshot.json`, snapshot);
+  write(`data/content-refresh/${releaseDate}/review.json`, review);
+  write(`data/content-refresh/${releaseDate}/espn-verification.json`, espnVerification);
+  write("data/content-refresh/current-editorial.json", nextEditorial);
+  write("data/content-refresh/current.json", nextManifest);
 
-// The pull-request body carries the source URL and the UTC retrieval time for
-// every source the edition read, so a reviewer can re-check each number.
-const sourceRows = sourceLedger
-  .map((source) => `| ${source.name} | ${source.url} | ${source.checkedAt} | \`${source.sha256.slice(0, 16)}\` |`)
-  .join("\n");
-const discrepancyRows = discrepancies.length
-  ? discrepancies
-      .map((row) => `| ${row.eventId} | ${row.field} | ${row.espn ?? "—"} | ${row.nflCom ?? "—"} | ${row.published ?? "—"} |`)
-      .join("\n")
-  : "| — | — | — | — | — |";
-const prBody = `## NFL Week ${editionWeek} edition (${releaseDate})
+  // The pull-request body carries the source URL and the UTC retrieval time for
+  // every source the edition read, so a reviewer can re-check each number.
+  const sourceRows = sourceLedger
+    .map((source) => `| ${source.name} | ${source.url} | ${source.checkedAt} | \`${source.sha256.slice(0, 16)}\` |`)
+    .join("\n");
+  const discrepancyRows = discrepancies.length
+    ? discrepancies
+        .map((row) => `| ${row.eventId} | ${row.field} | ${row.espn ?? "—"} | ${row.nflCom ?? "—"} | ${row.published ?? "—"} |`)
+        .join("\n")
+    : "| — | — | — | — | — |";
+  const prBody = `## NFL Week ${editionWeek} edition (${releaseDate})
 
-Refreshed schedule, results and standings for the ${seasonYear} NFL season. This is a draft: it does not merge and does not deploy.
+  Refreshed schedule, results and standings for the ${seasonYear} NFL season. This is a draft: it does not merge and does not deploy.
 
-- Week published: **${editionWeek}** (official ESPN week numbering; Week ${editionWeek} begins ${schedule.filter((game) => game.week === editionWeek).map((game) => game.date).sort()[0] ?? "n/a"})
-- Weeks published by this edition: ${publishedWeeks.join(", ")}
-- Season finals now published: ${finals.length}
-- Week ${completedWeek} finals backfilled: ${finalsByWeek[completedWeek] ?? 0}
-- Byes in Week ${editionWeek}: ${byes.join(", ")}
+  - Week published: **${editionWeek}** (official ESPN week numbering; Week ${editionWeek} begins ${schedule.filter((game) => game.week === editionWeek).map((game) => game.date).sort()[0] ?? "n/a"})
+  - Weeks published by this edition: ${publishedWeeks.join(", ")}
+  - Season finals now published: ${finals.length}
+  - Week ${completedWeek} finals backfilled: ${finalsByWeek[completedWeek] ?? 0}
+  - Byes in Week ${editionWeek}: ${byes.join(", ")}
 
-### Sources read (URL and UTC retrieval time)
+  ### Sources read (URL and UTC retrieval time)
 
-| Source | URL | Retrieved (UTC) | SHA-256 |
+| Source | URL | Retrieved (UTC) | SHA-256 (first 16 hex characters) |
 | --- | --- | --- | --- |
 ${sourceRows}
 
-### Source disagreements recorded
+  ### Source disagreements recorded
 
 | Event | Field | ESPN | NFL.com | Published |
 | --- | --- | --- | --- | --- |
 ${discrepancyRows}
 
-Review the dated desk notes and scoped injury coverage before publication.
-`;
-writeText(`data/content-refresh/${releaseDate}/pr-body.md`, prBody);
+  Review the dated desk notes and scoped injury coverage before publication.
+  `;
+  writeText(`data/content-refresh/${releaseDate}/pr-body.md`, prBody);
 
-materializeVerifiedSnapshot(root);
+  materializeVerifiedSnapshot(outputRoot);
+  const paths = [`data/content-refresh/${releaseDate}`, "data/content-refresh/current-editorial.json", "lib/nfl-generated.ts", "data/content-refresh/current.json"];
+  const backups = new Map();
+  try {
+    for (const file of paths) {
+      const destination = join(root, file);
+      // The new immutable date has no previous value. Back up existing pointers
+      // so a failed filesystem operation can restore the complete prior edition.
+      const backup = join(outputRoot, "backup-" + backups.size);
+      if (existsSync(destination)) copyFileSync(destination, backup);
+      renameSync(join(outputRoot, file), destination);
+      backups.set(destination, existsSync(backup) ? backup : null);
+    }
+  } catch (error) {
+    for (const [destination, backup] of [...backups].reverse()) {
+      if (backup) renameSync(backup, destination);
+      else rmSync(destination, { recursive: true, force: true });
+    }
+    throw error;
+  }
+} finally { rmSync(outputRoot, { recursive: true, force: true }); }
 console.log(`Edition ${releaseDate} published: Week ${editionWeek}, ${finals.length} finals, ${schedule.length} games.`);

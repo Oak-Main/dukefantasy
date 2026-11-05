@@ -2,7 +2,7 @@ import { lastCompletedWeek, moduleSources, refreshAsOf, refreshWeek, weekInPlay 
 
 export const routeSearchCopy: Record<string, { title: string; description: string }> = {
   "/": { title: `NFL Week ${refreshWeek} Schedule, Results & Fantasy Watch`, description: `Plan NFL Week ${refreshWeek} with kickoff times, TV networks, results, standings and sourced fantasy guidance. Latest verified update ${refreshAsOf}; module source dates vary.` },
-  "/scores": { title: `NFL Scores: Week ${lastCompletedWeek} Finals & Week ${weekInPlay} Games`, description: `NFL results through Week ${lastCompletedWeek} and the Week ${weekInPlay} scoreboard, with Eastern kickoff times.` },
+  "/scores": { title: lastCompletedWeek ? `NFL Scores: Week ${lastCompletedWeek} Finals & Week ${weekInPlay} Games` : `NFL Scores: Week ${weekInPlay} Games`, description: `The Week ${weekInPlay} scoreboard includes Eastern kickoff times and verified results as games finish.` },
   "/schedule": { title: `2026 NFL Schedule & Week ${refreshWeek} TV Networks`, description: `The Week ${refreshWeek} slate includes dates, byes, TV networks and Eastern kickoff times. Later fixtures are subject to flex scheduling.` },
   "/fantasy-desk": { title: `Week ${refreshWeek} Fantasy Desk: Byes & Lineup Planning`, description: `Plan NFL Week ${refreshWeek} around byes and kickoff windows. Check dated injury reporting and the publication status of waiver, start/sit, rookie and trade boards.` },
   "/injuries": { title: "NFL Week 8 Thursday Injury Watch", description: `Targeted October 28 CAR/GB reporting; complete ledger review ${moduleSources.injuries.sourceAsOf}. Estimated walkthroughs, final designations, reserve status and historical inactives remain distinct.` },

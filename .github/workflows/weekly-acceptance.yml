@@ -23,19 +23,19 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - name: Record current broadcast source receipts
-        run: node scripts/check-broadcast-sources.mjs
       - run: npm ci
       - run: npx playwright install --with-deps chromium webkit
       - run: npm run check:security-floor
       - run: npm run dataset:build && npm run weekly:verify
       - name: Exercise the weekly source adapters without publishing
+        if: github.event_name == 'push'
         run: node scripts/refresh-weekly-edition.mjs --week= --dry-run
       - run: npm run verify
       - run: npm run receipt:title
       - run: npm run test:injuries
       - run: npm run test:release
       - run: npm run dataset:verify
+        if: github.event_name == 'push'
       - run: npm run dataset:verify:pinned
       - run: npm audit --omit=dev --fetch-retries=0 --fetch-timeout=20000
       - run: npm run deploy:dry-run

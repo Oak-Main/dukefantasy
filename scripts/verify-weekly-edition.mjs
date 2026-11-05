@@ -11,7 +11,7 @@
  * Run: npm run weekly:verify
  */
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { selectSlate, resolveBroadcast } from "./weekly-slate.mjs";
 import { publisher } from "./week7-evidence.mjs";
@@ -30,12 +30,21 @@ assert.ok(/^\d{4}-\d{2}-\d{2}\/snapshot\.json$/.test(manifest.snapshot), "The ma
 assert.ok(existsSync(new URL(`../data/content-refresh/${editionDir}/review.json`, import.meta.url)), "The edition needs a review.json");
 assert.ok(existsSync(new URL(`../data/content-refresh/${editionDir}/espn-verification.json`, import.meta.url)), "The edition needs a pinned ESPN extraction");
 const review = read(`data/content-refresh/${editionDir}/review.json`);
+const espnCaptures = read(`data/content-refresh/${editionDir}/espn-verification.json`).responses;
 
 /* ---- the edition itself ------------------------------------------------- */
 
 const broadcastReviews = read("data/content-refresh/broadcast-reviews.json");
+const previousDate = readdirSync(new URL("../data/content-refresh/", import.meta.url))
+  .filter(day => /^\d{4}-\d{2}-\d{2}$/.test(day) && day < editionDate && existsSync(new URL(`../data/content-refresh/${day}/snapshot.json`, import.meta.url))).sort().at(-1);
+assert.ok(previousDate && review.baseline?.snapshot === `${previousDate}/snapshot.json`, "Baseline must be the preceding dated snapshot");
+const previous = read(`data/content-refresh/${review.baseline.snapshot}`);
+const priorReviewPath = `data/content-refresh/${previousDate}/review.json`;
+const priorReview = existsSync(new URL("../" + priorReviewPath, import.meta.url)) ? read(priorReviewPath) : {};
+const priorWeek = priorReview.week ?? previous.season.currentWeek;
+assert.equal(review.baseline.week, priorWeek, "Baseline edition week");
 const weekInPlay = snapshot.season.currentWeek;
-const selected = selectSlate(snapshot.schedule, snapshot.season.weeks, editorial.week, editorial.week);
+const selected = selectSlate(snapshot.schedule, snapshot.season.weeks, priorWeek, editorial.week);
 assert.equal(weekInPlay, selected.weekInPlay, "Week in play must be the first incomplete slate");
 assert.equal(review.completedWeek, selected.completedWeek, "Evidence must identify the last fully completed week");
 const editionWeek = editorial.week;
@@ -55,13 +64,14 @@ assert.equal(Object.keys(snapshot.standings).length, 32, "Every team needs a sta
 assert.equal(snapshot.season.weeks, 18, "The regular season is 18 weeks");
 
 validatePublicationDates({ injury, editorial }, manifest);
-assert.equal(manifest.sourceCutoffs.coreDatasetUtc, manifest.cutoffUtc);
+assert.ok(isEvidenceTimestamp(manifest.sourceCutoffs.coreDatasetUtc) && Date.parse(manifest.sourceCutoffs.coreDatasetUtc) <= Date.parse(manifest.cutoffUtc));
+assert.equal(review.cutoffUtc, manifest.cutoffUtc);
 assert.equal(manifest.sourceCutoffs.completeInjuryReviewDate, injury.as_of);
 assert.equal(editorial.moduleSources.schedule.sourceAsOf, snapshot.sourceAsOf);
 assert.equal(editorial.moduleSources.injuries.sourceAsOf, injury.as_of);
 // A module may lag the edition as long as it keeps its own dated record; a
 // module dated to a week the edition has not reached is a defect.
-assert.ok(injury.week == null || (Number.isInteger(injury.week) && injury.week >= 1 && injury.week <= weekInPlay), "The injury module cannot be dated to a future week");
+assert.ok(injury.week == null || (Number.isInteger(injury.week) && injury.week >= 1 && injury.week <= editionWeek), "The injury module cannot be dated to a future week");
 
 /* ---- standings are recomputed, never asserted --------------------------- */
 
@@ -131,9 +141,18 @@ for (const game of newlyPublished) {
     assert.deepEqual(evidence?.sourceConflicts, game.source_conflicts);
     assert.ok(review.sourceDiscrepancies.some(row => row.eventId === game.id && row.published === tv.broadcast && row.resolution === conflict.resolution));
     if (conflict.review) {
-      assert.ok(isEvidenceTimestamp(conflict.review.checkedAt) && Date.parse(conflict.review.checkedAt) <= Date.now());
-      assert.equal(publisher(conflict.review.leagueUrl), "nfl.com");
-      assert.notEqual(publisher(conflict.review.broadcasterUrl), "nfl.com");
+      assert.ok(isEvidenceTimestamp(conflict.review.checkedAt) && Date.parse(conflict.review.checkedAt) <= Date.parse(manifest.cutoffUtc));
+      const hosts = { leagueUrl: "www.nfl.com", teamUrl: "www.detroitlions.com", broadcasterUrl: "www.paramountplus.com" };
+      const pins = read("data/content-refresh/broadcast-evidence.json");
+      for (const [field, hostname] of Object.entries(hosts)) {
+        const url = conflict.review[field];
+        assert.equal(new URL(url).hostname, hostname);
+        const pin = pins.find(row => row.url === url && row.id === game.id);
+        assert.ok(pin && pin.status === 200 && pin.bytes > 0 && /^[a-f0-9]{64}$/.test(pin.sha256), url);
+        assert.ok(Date.parse(pin.checkedAt) <= Date.parse(conflict.review.checkedAt));
+        const receipt = review.sources.find(row => row.url === url);
+        assert.ok(receipt && receipt.sha256 === pin.sha256 && receipt.checkedAt === pin.checkedAt, url);
+      }
     }
   }
   assert.ok(evidence, `${game.id}: missing evidence`);
@@ -151,7 +170,12 @@ for (const game of newlyPublished) {
   for (const source of evidence.sources) {
     const receipt = review.sources.find(row => row.url === source.url);
     assert.ok(receipt, `${game.id}: evidence URL is absent from the retrieval ledger`);
-    if (source.rawSha256) assert.equal(source.rawSha256, receipt.sha256);
+    assert.equal(source.rawSha256, receipt.sha256, `${game.id}: missing or mismatched receipt hash`);
+    if (publisher(source.url) === "espn.com") {
+      const capture = espnCaptures.find(row => row.url === source.url);
+      assert.equal(capture?.rawSha256, receipt.sha256, `${game.id}: pinned ESPN source digest`);
+    }
+    assert.equal(source.checkedAt, receipt.checkedAt, `${game.id}: receipt time mismatch`);
     assert.ok(isEvidenceTimestamp(source.checkedAt), `${game.id}: evidence needs a retrieval timestamp`);
     assert.ok(Date.parse(source.checkedAt) <= Date.parse(manifest.cutoffUtc), `${game.id}: evidence retrieval is after the cutoff`);
   }
@@ -172,7 +196,6 @@ for (const source of ledger) {
 
 const baseline = review.baseline;
 assert.ok(baseline?.snapshot, "The evidence must name the baseline snapshot");
-const previous = read(`data/content-refresh/${baseline.snapshot}`);
 const previousFinals = previous.schedule
   .filter((game) => game.status === "final")
   .map((game) => [game.id, game.week, game.awayScore, game.homeScore, game.status]);
@@ -193,7 +216,7 @@ for (const [id, gameWeek, awayScore, homeScore, status] of previousFinals) {
 for (const key of ["waiver", "start_sit", "rookie", "trade"]) {
   assert.ok(Object.hasOwn(fantasy, key), `Missing decision board status: ${key}`);
   const board = fantasy[key];
-  if (board) assert.equal(key === "waiver" ? board.week_adding_for : board.week, key === "rookie" ? editionWeek - 1 : editionWeek);
+  if (board) assert.equal(key === "waiver" ? board.week_adding_for : board.week, key === "rookie" ? selected.completedWeek : editionWeek);
 }
 
 console.log(

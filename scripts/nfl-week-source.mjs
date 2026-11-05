@@ -121,18 +121,28 @@ const slugify = (name) =>
     .trim()
     .replaceAll(" ", "-");
 
+async function getHtml(url, timeoutMs) {
+  for (let attempt = 0; ; attempt++) {
+    let response;
+    try {
+      response = await fetch(url, { headers: { "user-agent": UA, "accept-language": "en-US,en;q=0.9" }, signal: AbortSignal.timeout(timeoutMs) });
+      if (response.ok) return await response.text();
+      await response.body?.cancel();
+      throw new Error(`${url}: HTTP ${response.status}`);
+    } catch (error) {
+      if (attempt >= 2 || (response && response.status < 500 && response.status !== 429)) throw error;
+      await new Promise(resolve => setTimeout(resolve, 400 * 2 ** attempt));
+    }
+  }
+}
+
 /**
  * Fetch one NFL week from NFL.com.
  * Returns the raw-body digest so the evidence file can pin what was read.
  */
 export async function fetchNflWeek({ year, week, timeoutMs = 25_000 }) {
   const url = NFL_SCHEDULE_URL(year, week);
-  const res = await fetch(url, {
-    headers: { "user-agent": UA, "accept-language": "en-US,en;q=0.9" },
-    signal: AbortSignal.timeout(timeoutMs),
-  });
-  if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
-  const html = await res.text();
+  const html = await getHtml(url, timeoutMs);
   const text = payloadOf(html);
   // The page streams several JSON arrays. Pick the one that actually holds the
   // requested week rather than assuming the schedule array is the first.
@@ -193,8 +203,8 @@ export async function fetchNflWeek({ year, week, timeoutMs = 25_000 }) {
         city: game.venue?.city ?? null,
         international: game.international === true,
         neutralSite: game.neutralSite === true,
-        status: status === "FINAL" || finalSlugs.has(external.slug) ? "final" :
-          status === "IN_PROGRESS" ? "in_progress" : status === "SCHEDULED" ? "scheduled" : null,
+        status: status === "FINAL" ? "final" : status === "IN_PROGRESS" ? "in_progress" :
+          status === "SCHEDULED" ? "scheduled" : !status && finalSlugs.has(external.slug) ? "final" : null,
         awayScore: score("away"),
         homeScore: score("home"),
       };
@@ -216,12 +226,7 @@ export async function fetchNflWeek({ year, week, timeoutMs = 25_000 }) {
  */
 export async function fetchNflGame({ slug, away, home, timeoutMs = 25_000 }) {
   const url = `https://www.nfl.com/games/${slug}`;
-  const res = await fetch(url, {
-    headers: { "user-agent": UA, "accept-language": "en-US,en;q=0.9" },
-    signal: AbortSignal.timeout(timeoutMs),
-  });
-  if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
-  const html = await res.text();
+  const html = await getHtml(url, timeoutMs);
   const plain = html.replace(/\\"/g, '"');
 
   let chosen = null;

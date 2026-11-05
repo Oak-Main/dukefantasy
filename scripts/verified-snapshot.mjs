@@ -25,7 +25,7 @@ export function materializeVerifiedSnapshot(root) {
     if (day && new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(value)) < day) throw new Error("Observation timestamp precedes the reported date");
   };
   if (manifest.sourceCutoffs) {
-    if (manifest.sourceCutoffs.coreDatasetUtc !== manifest.cutoffUtc || manifest.sourceCutoffs.completeInjuryReviewDate !== injuryResearch.as_of) throw new Error("Module cutoff identities disagree with the publication inputs");
+    if ((!isEvidenceTimestamp(manifest.sourceCutoffs.coreDatasetUtc) || Date.parse(manifest.sourceCutoffs.coreDatasetUtc) > cutoff) || manifest.sourceCutoffs.completeInjuryReviewDate !== injuryResearch.as_of) throw new Error("Module cutoff identities disagree with the publication inputs");
     checkedTimestamp(manifest.sourceCutoffs.targetedInjuryUtc);
     for (const row of injuryResearch.watch) if (row.observed_at != null && Date.parse(row.observed_at) > Date.parse(manifest.sourceCutoffs.targetedInjuryUtc)) throw new Error("Injury observation exceeds its targeted cutoff");
   }
@@ -39,7 +39,7 @@ export function materializeVerifiedSnapshot(root) {
   for (const row of editorial.reserveStatuses ?? []) if (row.checkedAt != null) checkedTimestamp(row.checkedAt, row.asOf);
   for (const row of injuryResearch.watch) if (row.observed_at != null) checkedTimestamp(row.observed_at, row.designation_date);
   for (const row of editorial.practiceReports ?? []) {
-    if (!isCalendarDate(row.date) || row.date > todayEastern || row.date > manifest.sourceAsOf || row.date > releaseDay || !Number.isInteger(row.week) || row.week < 1 || row.week > snapshot.season.currentWeek) throw new Error("Practice observations require real nonfuture dates within the release cutoff and official report week");
+    if (!isCalendarDate(row.date) || row.date > todayEastern || row.date > manifest.sourceAsOf || row.date > releaseDay || !Number.isInteger(row.week) || row.week < 1 || row.week > editorial.week) throw new Error("Practice observations require real nonfuture dates within the release cutoff and official report week");
     const game = snapshot.schedule.find(game => game.week === row.week && [game.awaySlug, game.homeSlug].includes(row.team_slug));
     const gameDay = game && new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(game.kickoffUtc));
     const daysBeforeGame = gameDay && (Date.parse(gameDay) - Date.parse(row.date)) / 86_400_000;
@@ -72,19 +72,19 @@ export function materializeVerifiedSnapshot(root) {
   }
   const sources = editorial.moduleSources;
   // The edition week and the week in play are different things. A Tuesday job
-  // publishes the week that starts the next day, so the edition may lead the
+  // publishes the upcoming slate, so the edition may lead the
   // week in play by one; anything else is a defect. A module may lag the
   // edition as long as it keeps its own dated record (the site publishes
   // module source dates separately), but a module dated to a future week is a
   // defect. Requiring every module to carry the edition week is what stopped
   // the weekly job: each edition needed a same-week module to exist first.
-  const editionWeek = snapshot.season.currentWeek;
-  const coversWeek = editorial.week === editionWeek || editorial.week === editionWeek + 1;
+  const editionWeek = editorial.week;
+  const coversWeek = editionWeek === snapshot.season.currentWeek || editionWeek === snapshot.season.currentWeek + 1;
   if (sources.schedule.sourceAsOf !== snapshot.sourceAsOf || sources.injuries.sourceAsOf !== injuryResearch.as_of || (injuryResearch.week != null && (!Number.isInteger(injuryResearch.week) || injuryResearch.week < 1 || injuryResearch.week > editionWeek)) || !coversWeek) {
     throw new Error("Verified snapshot and injury report date/week do not match");
   }
   for (const [key, board] of Object.entries(fantasyDesk)) {
-    const expectedWeek = key === "rookie" ? editorial.week - 1 : editorial.week;
+    const expectedWeek = key === "rookie" ? (snapshot.schedule.filter(game => game.status !== "final").reduce((earliest, game) => Math.min(earliest, game.week), snapshot.season.weeks + 1) - 1) : editorial.week;
     const boardWeek = key === "waiver" ? board?.week_adding_for : board?.week;
     if (board && (boardWeek !== expectedWeek || !isCalendarDate(board.as_of) || board.as_of > manifest.sourceAsOf)) {
       throw new Error("Fantasy board belongs to another source date/week");

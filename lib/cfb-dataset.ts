@@ -124,7 +124,7 @@ export const games: Game[] = (nfl.schedule as Array<Record<string, unknown>>).ma
   neutralSite: g.neutral_site === true,
   modelHomeWinProbability: 0.5,
   modelUncertainty: 0,
-  provenance: { ...provenance, providerRecordId: String(g.id), verificationStatus: g.verification === "two_publishers" || (g.week as number) < 7 ? "corroborated" : "single_source", ...(Array.isArray(g.sources) && typeof g.sources[0] === "string" ? { sourceUrl: g.sources[0] } : {}) },
+  provenance: { ...provenance, providerRecordId: String(g.id), verificationStatus: g.verification === "two_publishers" ? "corroborated" : "single_source", ...(typeof g.evidenceDocument === "string" ? { sourceDocumentId: g.evidenceDocument } : {}), ...(Array.isArray(g.sources) && typeof g.sources[0] === "string" ? { sourceUrl: g.sources[0] } : {}) },
 }));
 
 export function getGame(id: string): Game | undefined {
@@ -389,7 +389,7 @@ const compiledOnEt = easternDay(nfl.generatedAt);
 export const datasetAsOf: string = compiledOnEt;
 export const broadcastAsOf: string = compiledOnEt;
 export const broadcastNote: string =
-  "Times are Eastern. The reviewed slate compares NFL and ESPN listings. Detroit at Miami on November 8 moved to CBS in participating markets, per the NFL and the broadcaster. Later games are subject to flex scheduling.";
+  "Times are Eastern. The reviewed slate compares NFL and ESPN listings. Disputed primary network assignments are shown only when supported by the league and the broadcaster. Later games are subject to flex scheduling.";
 
 /* ---------------------------------------------------- conference hub (NFL) */
 
