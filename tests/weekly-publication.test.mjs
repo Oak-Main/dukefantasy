@@ -188,7 +188,7 @@ test("November 10 replay writes a verifiable draft, rejects conflicting finals, 
     const invalid = run("refresh-weekly-edition.mjs", ["--week="], { FIXTURE_MISMATCH: "true" });
     assert.equal(invalid.status, 1); assert.match(invalid.stderr, /final score disagrees/);
     assert.equal(existsSync(join(root, "data/content-refresh/2026-11-10")), false);
-    for (const [toggle, message] of [["FIXTURE_PARTIAL", /272 regular-season games/], ["FIXTURE_PHASE", /final status disagrees/], ["FIXTURE_SCORE_LINK", /final-score link disagrees/]]) {
+    for (const [toggle, message] of [["FIXTURE_PARTIAL", /272 regular-season games/], ["FIXTURE_PHASE", /an active game/], ["FIXTURE_LIVE_NONFINAL", /an active game/], ["FIXTURE_SCORE_LINK", /final-score link disagrees/], ["FIXTURE_MISSING_LINK", /lacks a matching NFL final-score link/]]) {
       const broken = run("refresh-weekly-edition.mjs", ["--week="], { [toggle]: "true" });
       assert.equal(broken.status, 1); assert.match(broken.stderr, message);
       assert.equal(existsSync(join(root, "data/content-refresh/2026-11-10")), false);

@@ -380,8 +380,11 @@ for (const game of espnGames) {
   const sources = [nfl.weekUrl, espnUrl];
   const verifiedFields = ["opponents", "date", "kickoff"];
   if (tv.broadcast) verifiedFields.push("primary_network");
-  if ((game.status !== "final" && (nfl.status === "final" || nfl.finalScoreLink)) ||
-      (game.status === "final" && nfl.status === "in_progress")) problems.push(`${game.id}: final status disagrees`);
+  if (nfl.status === "in_progress" || game.status === "in_progress") {
+    problems.push(`${game.id}: an active game must finish before a static edition can publish`);
+  } else if (game.status !== "final" && (nfl.status === "final" || nfl.finalScoreLink)) {
+    problems.push(`${game.id}: final status disagrees`);
+  }
   if (game.status === "final" && (!nfl.slug || !Number.isInteger(game.awayScore) || !Number.isInteger(game.homeScore))) {
     problems.push(`${game.id}: final lacks scores or official game identity`);
   }
