@@ -1,12 +1,12 @@
 {
-  "asOf": "2026-10-28",
+  "asOf": "2026-11-05",
   "fetchedAt": null,
-  "week": 8,
+  "week": 10,
   "byes": [
-    "houston-texans",
-    "new-orleans-saints",
-    "new-york-giants",
-    "san-francisco-49ers"
+    "chicago-bears",
+    "denver-broncos",
+    "philadelphia-eagles",
+    "tampa-bay-buccaneers"
   ],
   "transactions": {
     "window_start": "2026-10-14",
@@ -7321,7 +7321,7 @@
     "Five film briefs are research assignments; no footage watched or tactical observation published. DFS has zero immutable pregame projections and zero gradeable picks."
   ],
   "verification": "At least two distinct publishers must corroborate factual fields. Syndicated/linked reports do not establish independent reporting. Two-publisher corroboration is the standard used, not a claim of independent upstream data collection. Editorial judgments are labeled; field-level exceptions and unsupported claims are held.",
-  "compiledAt": "2026-10-28T21:02:11.058956Z",
+  "compiledAt": "2026-11-05T09:53:12.051Z",
   "collectedOn": "2026-10-20",
   "reserveStatuses": [
     {
@@ -7784,9 +7784,9 @@
   ],
   "moduleSources": {
     "schedule": {
-      "sourceAsOf": "2026-10-28",
-      "fetchedAt": "2026-10-28T21:02:11.058956Z",
-      "compiledAt": "2026-10-28T21:02:11.058956Z"
+      "sourceAsOf": "2026-11-05",
+      "fetchedAt": "2026-11-05T09:53:12.051Z",
+      "compiledAt": "2026-11-05T09:53:12.051Z"
     },
     "injuries": {
       "sourceAsOf": "2026-10-20",

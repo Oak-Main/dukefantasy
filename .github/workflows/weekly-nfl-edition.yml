@@ -1,0 +1,75 @@
+# Weekly NFL edition — the recurring publication job.
+#
+# Schedule: Tuesday 06:00 America/Los_Angeles, weekly, from the Week 10
+# edition through Week 18 and the playoffs. GitHub cron is always UTC, and the
+# whole regular season plus the playoffs fall in Pacific standard time (the
+# 2026 DST change is on November 1, before Week 9), so 06:00 Pacific is
+# 14:00 UTC for every run of this job. A run in a Pacific daylight-time week
+# would need "0 13 * * 2" instead.
+#
+# End condition: the job stops itself. The refresh script refuses to publish
+# after 2027-02-15 (the 2026 season and its playoffs are over by then), and it
+# publishes nothing when the schedule has not changed.
+#
+# It opens a DRAFT pull request. It never merges, never pushes to main and
+# never deploys; the Cloudflare release stays a deliberate human step.
+name: Weekly NFL edition
+on:
+  schedule:
+    - cron: "0 14 * * 2"
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Official NFL week to publish (blank = the week in play)"
+        required: false
+        type: string
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: weekly-nfl-edition
+  cancel-in-progress: false
+jobs:
+  edition:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      WRANGLER_SEND_METRICS: "false"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Refresh the edition from ESPN and NFL.com
+        run: node scripts/refresh-weekly-edition.mjs --week=${{ inputs.week }}
+      - name: Verify the published edition
+        run: npm run weekly:verify
+      - name: Cross-check the snapshot against ESPN
+        run: npm run dataset:verify
+      - run: npm run verify
+      - name: Open a draft pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/content-refresh lib/nfl-generated.ts; then
+            echo "No schedule change; nothing to propose."
+            exit 0
+          fi
+          branch="automation/weekly-edition-$(date -u +%Y%m%dT%H%M%SZ)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add -A data/content-refresh lib/nfl-generated.ts
+          git commit -m "data: publish the weekly NFL edition"
+          git push --force origin "$branch"
+          edition_dir=$(node -e "console.log(require('./data/content-refresh/current.json').snapshot.replace(/\/snapshot\.json$/, ''))")
+          gh pr create --draft \
+            --title "Weekly NFL edition $(date -u +%Y-%m-%d)" \
+            --body-file "data/content-refresh/${edition_dir}/pr-body.md" \
+            --base main \
+            --head "$branch"

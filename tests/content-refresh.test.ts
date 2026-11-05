@@ -37,7 +37,7 @@ test("source age becomes stale without a rebuild and an unavailable source never
   assert.equal(sourceFreshness("2026-11-02", new Date("2026-11-04T05:00:01Z")), "stale");
   assert.equal(sourceFreshness("2026-10-20T19:20:03.528Z", new Date("2026-10-21T19:20:03.528Z")), "current");
   assert.equal(sourceFreshness("2026-10-20T19:20:03.528Z", new Date("2026-10-23T19:20:03.528Z")), "stale");
-  for (const row of contentSourceModules(new Date("2026-11-01T00:00:00Z"))) assert.equal(row.freshness, row.sourceAsOf ? "stale" : "unavailable");
+  for (const row of contentSourceModules(new Date("2026-11-30T00:00:00Z"))) assert.equal(row.freshness, row.sourceAsOf ? "stale" : "unavailable");
 });
 
 test("Thursday-game walkthrough retains Monday date and week instead of filling Wednesday", () => {

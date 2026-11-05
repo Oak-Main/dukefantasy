@@ -558,7 +558,7 @@ function SchedulePage(props: HomeProps) {
       <PageHeading
         eyebrow="SEASON-AWARE SCHEDULE"
         title="2026 schedule"
-        description="All 272 regular-season fixtures remain available. Week 8 has 14 games and four byes; times are Eastern and later flex windows remain subject to change."
+        description="All 272 regular-season fixtures remain available. Week 10 has 14 games and four byes; times are Eastern and later flex windows remain subject to change."
         actions={asOf != null && patches.size > 0 ? <LiveFreshness /> : undefined}
       />
       <section className="content-section schedule-board">

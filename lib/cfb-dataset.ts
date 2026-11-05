@@ -389,7 +389,7 @@ const compiledOnEt = easternDay(nfl.generatedAt);
 export const datasetAsOf: string = compiledOnEt;
 export const broadcastAsOf: string = compiledOnEt;
 export const broadcastNote: string =
-  "Week 8 primary U.S. TV networks corroborated with NFL and ESPN; later weeks remain single-source planning data. Times Eastern with daylight-saving changes; flex scheduling may change future assignments.";
+  "Weeks 9 and 10 primary U.S. TV networks corroborated with NFL and ESPN; later weeks remain single-source planning data. Times Eastern with daylight-saving changes; flex scheduling may change future assignments.";
 
 /* ---------------------------------------------------- conference hub (NFL) */
 

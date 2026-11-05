@@ -1,5 +1,17 @@
 # Decision log
 
+## November 5, 2026 — Weekly NFL edition job and the Week 10 rollover
+
+The schedule module now refreshes on a recurring job instead of a hand-run research pass. `scripts/refresh-weekly-edition.mjs` pulls ESPN's week-keyed scoreboard as the primary source and NFL.com's per-week schedule page plus per-game box score as the second publisher, writes a dated edition under `data/content-refresh/<date>/`, and repoints the manifest. `scripts/verify-weekly-edition.mjs` replaces the single-week gate so the same checks run for any edition, and `.github/workflows/weekly-nfl-edition.yml` runs the job on Tuesday 06:00 America/Los_Angeles (14:00 UTC, standard time for the rest of the season) and opens a draft pull request. The job ends itself: the refresh refuses to publish after 2027-02-15, which covers Week 18 and the playoffs. It never merges, never pushes to main and never deploys.
+
+Why the earlier job stopped: the Week 7 publication automation was bounded to the Week 7 window and its schedules expired after the October 27 reconciliation, with no Week 8 replacement. Two structural facts kept it that way — there was no repository-resident scheduled job, and the publication gate required the injury module to carry the same week as the edition, so a new edition could not publish until a same-week injury review existed. The gate now accepts a lagging module that keeps its own dated record and rejects a module dated to a week the edition has not reached.
+
+The week in play and the published edition week are now separate values. `season.currentWeek` is the first week whose games are not all final, which keeps the snapshot from going stale; the edition week is the week the desk, byes and television slate are about, and it may lead the week in play by one because a Tuesday job publishes the week that starts the next day.
+
+Week numbering is ESPN's official NFL week, cross-checked against NFL.com and nflverse: the 2026 season opened on Wednesday September 9, so Week 8 was October 29–November 2, Week 9 is November 5–9, and Week 10 is November 12–16. This edition publishes Week 10 (121 season finals through Week 8) and Week 9's fifteen fixtures with kickoff times and national television. Week 9's finals do not exist yet; the November 10 run backfills them.
+
+One publisher disagreement is recorded rather than hidden: for the November 8 Lions–Dolphins game ESPN names Fox and NFL.com names CBS. ESPN's value publishes, the conflict is recorded in the edition evidence, and the game's verified-field list omits the primary network.
+
 ## October 28, 2026 — Week 8 evidence-preserving rollover
 
 Use the reviewed Week 8 candidate and archives described in `docs/releases/2026-10-28-week8.md`. Core schedule/results/standings advance only after complete reconciliation; targeted CAR/GB/WAS updates do not renew the October 20 full injury review. Unsupported fantasy editions are null; old boards remain archived. Planned injury slots end November 3 and use IANA timezone handling across DST; no external automation is created. Compile-time Git identity is distinct from data identity. Merge and deployment remain gated on independent review and actual browser acceptance; Cloudflare is currently a manual Wrangler target with no Git connection.

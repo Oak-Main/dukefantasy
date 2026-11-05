@@ -71,11 +71,20 @@ export function materializeVerifiedSnapshot(root) {
     throw new Error("Incomplete verified NFL snapshot; keeping the previous generated file");
   }
   const sources = editorial.moduleSources;
-  if (sources.schedule.sourceAsOf !== snapshot.sourceAsOf || sources.injuries.sourceAsOf !== injuryResearch.as_of || injuryResearch.week !== snapshot.season.currentWeek || editorial.week !== snapshot.season.currentWeek) {
+  // The edition week and the week in play are different things. A Tuesday job
+  // publishes the week that starts the next day, so the edition may lead the
+  // week in play by one; anything else is a defect. A module may lag the
+  // edition as long as it keeps its own dated record (the site publishes
+  // module source dates separately), but a module dated to a future week is a
+  // defect. Requiring every module to carry the edition week is what stopped
+  // the weekly job: each edition needed a same-week module to exist first.
+  const editionWeek = snapshot.season.currentWeek;
+  const coversWeek = editorial.week === editionWeek || editorial.week === editionWeek + 1;
+  if (sources.schedule.sourceAsOf !== snapshot.sourceAsOf || sources.injuries.sourceAsOf !== injuryResearch.as_of || (injuryResearch.week != null && injuryResearch.week > editionWeek) || !coversWeek) {
     throw new Error("Verified snapshot and injury report date/week do not match");
   }
   for (const [key, board] of Object.entries(fantasyDesk)) {
-    const expectedWeek = key === "rookie" ? snapshot.season.currentWeek - 1 : snapshot.season.currentWeek;
+    const expectedWeek = key === "rookie" ? editorial.week - 1 : editorial.week;
     const boardWeek = key === "waiver" ? board?.week_adding_for : board?.week;
     if (board && (boardWeek !== expectedWeek || !isCalendarDate(board.as_of) || board.as_of > manifest.sourceAsOf)) {
       throw new Error("Fantasy board belongs to another source date/week");

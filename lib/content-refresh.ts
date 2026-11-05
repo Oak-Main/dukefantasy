@@ -38,6 +38,9 @@ export const refreshCompiledAt = editorial.compiledAt;
 export interface ReserveStatus { player: string; team_slug: string; status: string; sources: string[]; asOf?: string; checkedAt?: string; note?: string }
 export const reserveStatuses: readonly ReserveStatus[] = editorial.reserveStatuses;
 export const refreshWeek = editorial.week;
+/** The weekly fantasy-desk write-up is the owner's to word. The slot carries a
+ *  marker so the template renders the placeholder instead of agent prose. */
+export const deskCopySlot = `[[COPY: week${refreshWeek}-desk]]`;
 export interface ModuleSource { sourceAsOf: string | null; fetchedAt: string | null; compiledAt: string | null }
 export const moduleSources: Record<string, ModuleSource> = editorial.moduleSources;
 export const fantasyResearchAsOf = moduleSources.fantasy.sourceAsOf;
@@ -82,10 +85,10 @@ export function sourceFreshness(sourceAsOf: string | null, now = new Date(), max
 
 export function contentSourceModules(now = new Date(), sources = moduleSources) {
   return [
-    { id: "schedule", label: "Schedule, results & standings", note: "107 season finals, Week 7's 14 finals, 32 standings and Week 8's 14 fixtures/four byes checked with NFL + ESPN. Weeks 9–18 remain single-source planning data; subject to flex.", hours: 48 },
+    { id: "schedule", label: "Schedule, results & standings", note: "121 season finals, Week 8's 14 finals, 32 standings and Weeks 9 and 10 fixtures/four byes checked with NFL + ESPN. Weeks 11–18 remain single-source planning data; subject to flex.", hours: 48 },
     { id: "injuries", label: "Injury research", note: "Full ledger review remains October 20. Week 8 Thursday watch covers CAR/GB only, with October 28 designations and dated practice estimates. McLaurin IR and Newton practice window are partial updates. No all-team recertification. Two publishers can share an upstream feed.", hours: 24 },
     { id: "inactives", label: "Week 7 game-day inactives", note: "Only published, two-source team lists appear. Missing lists do not imply active status. Emergency third quarterbacks remain separately labeled.", hours: 24 },
-    { id: "fantasy", label: "Fantasy decision boards", note: "Week 8 waiver/start-sit/trade and Week 7 rookie editions are not published. The October 20 half-PPR redraft edition remains archived; it is not relabeled current. Ownership, usage and numeric projections remain unverified.", hours: 48 },
+    { id: "fantasy", label: "Fantasy decision boards", note: "Week 10 waiver/start-sit/trade and Week 9 rookie editions are not published. The October 20 half-PPR redraft edition remains archived; it is not relabeled current. Ownership, usage and numeric projections remain unverified.", hours: 48 },
     { id: "transactions", label: "Transaction wire", note: transactionCoverage, hours: 48 },
     { id: "leaders", label: "Season yardage leaders", note: "Historical October 20 edition through Week 6: NFL + ESPN agreement. Proposed Week 7 leaders remain single-source research and are withheld pending successful corroboration. This is not a comprehensive statistics feed.", hours: 168 },
   ].map(row => { const source = sources[row.id]; return { ...row, ...source, freshness: sourceFreshness(source.sourceAsOf, now, row.hours) }; });

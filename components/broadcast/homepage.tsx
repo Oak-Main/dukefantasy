@@ -1,6 +1,6 @@
 "use client";
 
-import { byeTeams, fantasyResearchAsOf, refreshWeek, transactions, transactionCoverage } from "@/lib/content-refresh";
+import { byeTeams, deskCopySlot, fantasyResearchAsOf, refreshWeek, transactions, transactionCoverage } from "@/lib/content-refresh";
 import { featuredGame, weekGames, type HomepageData } from "@/lib/homepage";
 import { FinalsStrip } from "./finals-strip";
 import { MarqueeGame } from "./marquee-game";
@@ -78,7 +78,7 @@ export function BroadcastHomepage({
         />
         <section className="apex-lane research-card" aria-labelledby="weekly-desk-title">
           <h2 id="weekly-desk-title">Week {refreshWeek} Fantasy Desk</h2>
-          {fantasyResearchAsOf ? <p>Half-PPR redraft research · Source date {fantasyResearchAsOf}. Check each board's week and availability.</p> : <p>Current decision boards are not published. Prior fantasy research remains archived; no current ownership or complete usage feed is available.</p>}
+          {fantasyResearchAsOf ? <p>{deskCopySlot} Half-PPR redraft research · Source date {fantasyResearchAsOf}. Check each board's week and availability.</p> : <p>{deskCopySlot} Current decision boards are not published. Prior fantasy research remains archived; no current ownership or complete usage feed is available.</p>}
           <a href="/fantasy-desk">Review fantasy coverage & status →</a>
           <p>Byes: {byeTeams.map(slug => data.teams.find(team => team.slug === slug)?.name ?? slug).join(", ")}</p>
         </section>

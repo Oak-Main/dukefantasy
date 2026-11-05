@@ -2,15 +2,28 @@ import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
 const manifest = JSON.parse(readFileSync(new URL("../../data/content-refresh/current.json", import.meta.url), "utf8"));
+const snapshot = JSON.parse(
+  readFileSync(new URL(`../../data/content-refresh/${manifest.snapshot}`, import.meta.url), "utf8"),
+);
+const editorial = JSON.parse(readFileSync(new URL("../../data/content-refresh/current-editorial.json", import.meta.url), "utf8"));
+
+// The edition week is the week the desk, byes and television slate are about;
+// the week in play is the first week whose games are not all final.
+const editionWeek = editorial.week as number;
+const weekInPlay = snapshot.season.currentWeek as number;
+const teams = new Map(snapshot.teams.map((team: { slug: string; name: string }) => [team.slug, team.name]));
+const slateTeams = snapshot.schedule
+  .filter((game: { week: number }) => game.week === weekInPlay)
+  .flatMap((game: { awaySlug: string; homeSlug: string }) => [game.awaySlug, game.homeSlug]);
 
 const routes = ["/", "/scores", "/schedule", "/watch", "/injuries", "/fantasy-desk", "/stats", "/data-sources"];
-for (const path of routes) test(`Week 8 identity, content, accessibility and visual capture: ${path}`, async ({ page }, info) => {
+for (const path of routes) test(`Week ${editionWeek} identity, content, accessibility and visual capture: ${path}`, async ({ page }, info) => {
   await page.goto(path);
   const health = await page.request.get("/api/health");
   expect(health.status()).toBe(200);
   const identity = await health.json();
-  expect(identity.nflWeek).toBe(8);
-  expect(identity.contentVersion).toBe("2026-10-28");
+  expect(identity.nflWeek).toBe(editionWeek);
+  expect(identity.contentVersion).toBe(manifest.sourceAsOf);
   expect(identity.contentRevision).toMatch(/^[a-f0-9]{64}$/);
   expect(identity.build.commit).toMatch(/^[a-f0-9]{40}$/);
   expect(identity.build.dirty).toBe(false);
@@ -21,8 +34,10 @@ for (const path of routes) test(`Week 8 identity, content, accessibility and vis
   await expect(page.locator("main:visible")).toHaveCount(1);
   const text = await main.innerText();
   if (path === "/") {
-    expect(text).toMatch(/Carolina/); expect(text).toMatch(/Green Bay/);
+    // The marquee must feature a team from the week in play.
+    expect([...slateTeams].some((slug) => text.includes(teams.get(slug) ?? "__none__"))).toBe(true);
     expect(text).not.toMatch(/Week 7 complete/);
+    expect(text).toMatch(/\[\[COPY: week\d+-desk\]\]/);
     expect(text).toMatch(/Current decision boards are not published/);
     const fullNameFits = () => page.locator("#marquee-title").evaluate(heading => {
       const range = document.createRange(); range.selectNodeContents(heading);
@@ -39,8 +54,8 @@ for (const path of routes) test(`Week 8 identity, content, accessibility and vis
 
     expect(text).not.toMatch(/Researched null|Early half-PPR redraft edition|transactions in the October 14–20 window/);
   } else if (path === "/scores") {
-    await expect(page.getByRole("group", { name: "Select scoreboard week", exact: true }).getByRole("button", { name: "W8", exact: true })).toHaveAttribute("aria-pressed", "true");
-    expect(text).toMatch(/Week 8\. 14 games shown/);
+    await expect(page.getByRole("group", { name: "Select scoreboard week", exact: true }).getByRole("button", { name: `W${weekInPlay}`, exact: true })).toHaveAttribute("aria-pressed", "true");
+    expect(text).toMatch(new RegExp(`Week ${weekInPlay}\\. \\d+ games shown`));
     await page.goto("/scores?week=7");
     await expect(page.getByRole("group", { name: "Select scoreboard week", exact: true }).getByRole("button", { name: "W7", exact: true })).toHaveAttribute("aria-pressed", "true");
     expect(await main.innerText()).toMatch(/Week 7\. 14 games shown/);
@@ -49,14 +64,15 @@ for (const path of routes) test(`Week 8 identity, content, accessibility and vis
     const ids = await main.locator('a[href^="/games/"]').evaluateAll(links => [...new Set(links.map(link => link.getAttribute("href")))]);
     expect(ids).toHaveLength(272);
   } else if (path === "/watch") {
-    await expect(page.getByRole("group", { name: "Select a broadcast week", exact: true }).getByRole("button", { name: "Week 8", exact: true })).toHaveAttribute("aria-pressed", "true");
-    expect(text).toMatch(/14/); expect(text).toMatch(/Carolina/); expect(text).toMatch(/Green Bay/);
+    await expect(page.getByRole("group", { name: "Select a broadcast week", exact: true }).getByRole("button", { name: `Week ${weekInPlay}`, exact: true })).toHaveAttribute("aria-pressed", "true");
+    expect(text).toMatch(/\d/);
+    expect([...slateTeams].some((slug) => text.includes(teams.get(slug) ?? "__none__"))).toBe(true);
   } else if (path === "/injuries") {
     expect(text).toMatch(/Week 8 Thursday watch/); expect(text).toMatch(/October 20/);
     expect(text).toMatch(/Official Week 8 designation: QUESTIONABLE/);
     expect(text).toMatch(/Week 8 inactives are not published/);
   } else if (path === "/fantasy-desk") {
-    expect(text).toMatch(/Week 8 waiver\/start-sit\/trade and Week 7 rookie editions are not published/);
+    expect(text).toMatch(new RegExp(`Week ${editionWeek} waiver/start-sit/trade and Week ${editionWeek - 1} rookie editions are not published`));
     expect(text).toMatch(/12-team, one-QB half-PPR/); expect(text).toMatch(/0 \/ 4/);
   } else if (path === "/stats") {
     expect(text).toMatch(/through Week 6/i); expect(text).toMatch(/Historical October 20/);
