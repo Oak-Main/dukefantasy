@@ -60,14 +60,14 @@ test("server-renders the finished home utility", async () => {
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });
 
-test("Week 7 Monday final and updated team records render from the verified snapshot", async () => {
+test("a Monday final and updated team records render from the verified snapshot", async () => {
   const response = await fetchRoute("/games/401873009");
   assert.equal(response.status, 200);
   const html = await response.text();
   const hero = html.match(/class="game-hero__matchup"[\s\S]*?class="game-action-row"/)?.[0] ?? "";
   assert.match(html, /class="status status--final">Final<\/span>/);
-  assert.match(hero, /Dallas Cowboys<\/strong><em>3-4<\/em>[\s\S]*?<b>38<\/b>/);
-  assert.match(hero, /Philadelphia Eagles<\/strong><em>2-5<\/em>[\s\S]*?<b>21<\/b>/);
+  assert.match(hero, /Dallas Cowboys<\/strong><em>3-5<\/em>[\s\S]*?<b>38<\/b>/);
+  assert.match(hero, /Philadelphia Eagles<\/strong><em>2-6<\/em>[\s\S]*?<b>21<\/b>/);
 });
 
 test("www canonicalizes to the apex domain without losing the request target", async () => {
@@ -83,6 +83,7 @@ test("www canonicalizes to the apex domain without losing the request target", a
 });
 
 test("critical product routes render dataset-backed content", async () => {
+  const editorial = JSON.parse(readFileSync(new URL("../data/content-refresh/current-editorial.json", import.meta.url), "utf8"));
   const routes = [
     ["/scores", /The slate, without the scavenger hunt/],
     ["/scores", /Select scoreboard week/],
@@ -97,8 +98,8 @@ test("critical product routes render dataset-backed content", async () => {
     ["/games/401872657", /Netflix/],
     ["/games/401872657", /49ers|Rams/],
     ["/dfs", /picks you can audit/i],
-    ["/dfs", /Week <!-- -->8<!-- --> projections are not published/i],
-    ["/fantasy-desk", /Week 8 waiver/],
+    ["/dfs", new RegExp(`Week <!-- -->${editorial.week}<!-- --> projections are not published`, "i")],
+    ["/fantasy-desk", new RegExp(`Week (?:<!-- -->)?${editorial.week}(?:<!-- -->)? waiver`)],
     ["/transactions", /Tanner Hudson/],
     ["/stats", /Matthew Stafford/],
     ["/data-sources", /Source as of/],

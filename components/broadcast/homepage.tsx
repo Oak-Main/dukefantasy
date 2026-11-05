@@ -1,6 +1,6 @@
 "use client";
 
-import { byeTeams, fantasyResearchAsOf, refreshWeek, transactions, transactionCoverage } from "@/lib/content-refresh";
+import { byeTeams, deskLead, fantasyResearchAsOf, refreshWeek, transactions, transactionCoverage } from "@/lib/content-refresh";
 import { featuredGame, weekGames, type HomepageData } from "@/lib/homepage";
 import { FinalsStrip } from "./finals-strip";
 import { MarqueeGame } from "./marquee-game";
@@ -18,6 +18,7 @@ export function BroadcastHomepage({
   onModeRequest: () => void;
 }) {
   const slate = weekGames(data.games, data.referenceDate);
+  const slateWeek = slate[0]?.week;
   const slateComplete = slate.length > 0 && slate.every((game) => game.status === "final");
   const featured = featuredGame(slate, data.teams);
   const away = data.teams.find((team) => team.slug === featured?.awayTeamId);
@@ -50,12 +51,12 @@ export function BroadcastHomepage({
           venue={featured.venue}
         />
       ) : (
-        <section className="apex-marquee" aria-label={slateComplete ? `Week ${refreshWeek} final results` : "Marquee matchup"}>
+        <section className="apex-marquee" aria-label={slateComplete ? `Week ${slateWeek} final results` : "Marquee matchup"}>
           {slateComplete ? (
             <div className="apex-empty">
-              <h2>Week {refreshWeek} complete</h2>
+              <h2>Week {slateWeek} complete</h2>
               <p>All {slate.length} final results are published.</p>
-              <a href={`/scores?week=${refreshWeek}`}>Review Week {refreshWeek} results →</a>
+              <a href={`/scores?week=${slateWeek}`}>Review Week {slateWeek} results →</a>
             </div>
           ) : (
             <p className="apex-empty">
@@ -78,6 +79,7 @@ export function BroadcastHomepage({
         />
         <section className="apex-lane research-card" aria-labelledby="weekly-desk-title">
           <h2 id="weekly-desk-title">Week {refreshWeek} Fantasy Desk</h2>
+          <p>{deskLead}</p>
           {fantasyResearchAsOf ? <p>Half-PPR redraft research · Source date {fantasyResearchAsOf}. Check each board's week and availability.</p> : <p>Current decision boards are not published. Prior fantasy research remains archived; no current ownership or complete usage feed is available.</p>}
           <a href="/fantasy-desk">Review fantasy coverage & status →</a>
           <p>Byes: {byeTeams.map(slug => data.teams.find(team => team.slug === slug)?.name ?? slug).join(", ")}</p>

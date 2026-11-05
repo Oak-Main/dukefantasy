@@ -8,6 +8,10 @@
   "scripts": {
     "dataset:build": "node scripts/build-nfl-dataset.mjs",
     "dataset:verify": "node scripts/verify-nfl-dataset.mjs",
+    "dataset:verify:pinned": "node scripts/verify-pinned-dataset.mjs",
+    "edition:refresh": "node scripts/refresh-weekly-edition.mjs",
+    "weekly:verify": "node scripts/verify-weekly-edition.mjs",
+    "receipt:title": "node scripts/render-title-receipt.mjs",
     "predataset:check": "node scripts/build-nfl-dataset.mjs",
     "predev": "node scripts/build-nfl-dataset.mjs",
     "prebuild": "node scripts/build-nfl-dataset.mjs",
@@ -17,7 +21,7 @@
     "start": "vinext start",
     "typecheck": "tsc --noEmit",
     "check:security-floor": "node scripts/check-security-floor.mjs",
-    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts tests/week7-evidence.test.mjs tests/week7-publication-dates.test.mjs tests/release-response.test.mjs tests/week8-publication.test.mjs tests/security-floor.test.mjs tests/pinned-evidence.test.mjs",
+    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts tests/week7-evidence.test.mjs tests/week7-publication-dates.test.mjs tests/release-response.test.mjs tests/weekly-publication.test.mjs tests/security-floor.test.mjs tests/pinned-evidence.test.mjs",
     "test:integration": "node --test tests/rendered-html.test.mjs",
     "test:e2e": "node --test tests/rendered-html.test.mjs",
     "test:a11y": "node --test tests/a11y.test.mjs",
@@ -38,9 +42,8 @@
     "week7:preflight": "npm run week7:verify && npm run verify && npm run dataset:verify && npm audit --omit=dev --fetch-retries=0 --fetch-timeout=20000 && npm run cf:types && wrangler deploy --config wrangler.deploy.jsonc --dry-run",
     "week7:deploy": "npm run week7:preflight && wrangler deploy --config wrangler.deploy.jsonc && node scripts/smoke-release.mjs https://dukefantasy.com/",
     "test:injuries": "playwright test --config playwright.injuries.config.ts",
-    "week8:verify": "node scripts/verify-week8-update.mjs",
     "test:release": "playwright test --config playwright.release.config.ts",
-    "release:preflight": "npm run check:security-floor -- --require-vinext && npm run week8:verify && npm run verify && npm run test:injuries && npm run test:release && npm run dataset:verify && npm audit --omit=dev --fetch-retries=0 --fetch-timeout=20000 && npm run deploy:dry-run"
+    "release:preflight": "npm run check:security-floor -- --require-vinext && npm run weekly:verify && npm run verify && npm run test:injuries && npm run test:release && npm run dataset:verify && npm audit --omit=dev --fetch-retries=0 --fetch-timeout=20000 && npm run deploy:dry-run"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.23",

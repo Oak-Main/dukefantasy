@@ -1,0 +1,118 @@
+name: Weekly NFL edition
+on:
+  schedule:
+    # Nov 10 through the Feb 15 cutoff fall in Pacific standard time.
+    - cron: "0 14 * * 2"
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Official edition week (blank uses the first unfinished slate and preserves an existing preview)"
+        required: false
+        type: string
+permissions: {}
+concurrency:
+  group: weekly-nfl-edition
+  cancel-in-progress: false
+jobs:
+  edition:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      WRANGLER_SEND_METRICS: "false"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Refresh from ESPN and the NFL
+        id: refresh
+        env:
+          REQUESTED_WEEK: ${{ inputs.week }}
+        run: |
+          set -euo pipefail
+          node scripts/refresh-weekly-edition.mjs --week="$REQUESTED_WEEK"
+          if git diff --quiet -- data/content-refresh/current.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.refresh.outputs.changed == 'true'
+        run: npm ci
+      - name: Verify the dated candidate
+        if: steps.refresh.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          npm run weekly:verify
+          npm run dataset:verify
+          npm run dataset:verify:pinned
+          npm run verify
+      - name: Open a draft for owner review
+        if: steps.refresh.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          day=$(node -p 'require("./data/content-refresh/current.json").sourceAsOf')
+          branch="automation/weekly-edition-$day"
+          body="data/content-refresh/$day/pr-body.md"
+          compare="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/main...$branch?expand=1"
+          pr=$(gh pr list --base main --head "$branch" --state all --json state,isDraft,url --jq '.[0] | select(.) | [.state,.isDraft,.url] | @tsv')
+          if [[ -n "$pr" && "$pr" != $'OPEN\ttrue\t'* ]]; then
+            echo "::error::The existing PR is closed or already in review. Its branch was left intact."
+            exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          tip=""
+          if git ls-remote --exit-code --heads origin "refs/heads/$branch" > /dev/null; then
+            git fetch origin "refs/heads/$branch"
+            tip=$(git rev-parse FETCH_HEAD)
+          fi
+          current=""
+          if [[ -n "$tip" ]]; then
+            current=$(git show "$tip:data/content-refresh/current.json" | jq -r .sourceAsOf)
+          fi
+          if [[ "$current" != "$day" ]]; then
+            if [[ -n "$tip" ]]; then
+              # A maintainer may reserve the draft in advance. Only an empty seed
+              # or its dated review note can be folded into the generated branch.
+              base=$(git merge-base "$GITHUB_SHA" "$tip")
+              if ! git diff --quiet "$base" "$tip" -- . ":(exclude)docs/releases/$day-draft.md"; then
+                echo "::error::Reserved branch contains maintainer changes. Review these before retrying."
+                exit 1
+              fi
+            fi
+            git switch -c "$branch"
+            git add -- data/content-refresh lib/nfl-generated.ts
+            git commit -m "data: NFL edition $day"
+            if [[ -n "$tip" ]]; then git merge --no-edit "$tip"; fi
+            git push origin "HEAD:refs/heads/$branch"
+          else
+            snapshot="data/content-refresh/$day/snapshot.json"
+            git show "$tip:$snapshot" | node scripts/weekly-facts.mjs > "$RUNNER_TEMP/prior-facts"
+            node scripts/weekly-facts.mjs < "$snapshot" > "$RUNNER_TEMP/new-facts"
+            if ! cmp -s "$RUNNER_TEMP/prior-facts" "$RUNNER_TEMP/new-facts"; then
+              echo "::error::Fresh verified facts differ from the existing draft. Its branch was preserved for review."
+              exit 1
+            fi
+            git show "$tip:$body" > "$RUNNER_TEMP/edition-receipt.md"
+            body="$RUNNER_TEMP/edition-receipt.md"
+          fi
+          if [[ -n "$pr" ]]; then
+            echo "Verified edition is in the existing draft: ${pr##*$'\t'}" >> "$GITHUB_STEP_SUMMARY"
+          elif url=$(gh pr create --draft --title "Weekly NFL edition $day" --body-file "$body" --base main --head "$branch" 2>"$RUNNER_TEMP/pr-error"); then
+            echo "Draft: $url" >> "$GITHUB_STEP_SUMMARY"
+          elif grep -Fqi "not permitted to create or approve pull requests" "$RUNNER_TEMP/pr-error"; then
+            echo "::warning::Repository policy requires a maintainer to open the draft."
+            echo "Verified branch is ready. [Open the draft for review]($compare)." >> "$GITHUB_STEP_SUMMARY"
+          else
+            cat "$RUNNER_TEMP/pr-error" >&2
+            exit 1
+          fi
