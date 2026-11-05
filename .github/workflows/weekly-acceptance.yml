@@ -23,6 +23,8 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Record current broadcast source receipts
+        run: node scripts/check-broadcast-sources.mjs
       - run: npm ci
       - run: npx playwright install --with-deps chromium webkit
       - run: npm run check:security-floor
