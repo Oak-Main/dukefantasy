@@ -1,0 +1,28 @@
+name: worker-bundle-layout
+on:
+  push:
+    branches: ['verify/worker-bundle-layout-81b34ba8']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Verification only
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --no-audit --no-fund
+          npm run build | tail -8
+          find dist/server -name '*cacheability*' -o -name '*concrete_paths*' -o -name 'wrangler.json' | head -35
+          node --input-type=module <<'JS'
+          import { readdirSync, readFileSync } from 'node:fs';
+          for (const p of readdirSync('dist/server',{recursive:true}).filter(v=>v.endsWith('.js'))) { const t=readFileSync('dist/server/'+p,'utf8'); const imports=[...t.matchAll(/(?:from\s*|import\s*\(\s*)["']([^"']*__vinext_[^"']+)["']/g)].map(x=>x[1]); if (imports.length) console.log('IMPORT',p,[...new Set(imports)].join(',')); }
+          JS
