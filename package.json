@@ -34,6 +34,7 @@
     "db:seed": "node --experimental-strip-types scripts/seed-fixtures.ts",
     "sync:data": "node --experimental-strip-types scripts/sync-data.ts",
     "generate:social": "node scripts/generate-social-content.mjs",
+    "precf:types": "node -e \"require('node:fs').mkdirSync('.wrangler', { recursive: true })\"",
     "cf:types": "wrangler types --config wrangler.deploy.jsonc .wrangler/deploy-types.d.ts",
     "deploy:dry-run": "npm run build && wrangler deploy --config wrangler.deploy.jsonc --dry-run",
     "deploy:production": "npm run release:preflight && wrangler deploy --config wrangler.deploy.jsonc",

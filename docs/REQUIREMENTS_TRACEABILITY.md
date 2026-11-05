@@ -167,3 +167,7 @@ October 29 vinext 1.2.0 compatibility follow-up: the pinned 1.2.0 bundle changed
 The November 5 candidate covers 14 Week 8 finals, 15 Week 9 fixtures, 14 Week 10 fixtures (November 12–16), and 32 standings. Detroit at Miami publishes CBS after review of the NFL, club and broadcaster. Rankings, ownership and projections require a separate dated source. The Tuesday job stops after February 15, 2027. Local replay verified November 10 rollover with synthetic inputs. CI checks each revision. The merged commit, production run and live verification must be read from GitHub Actions and the public health endpoint.
 
 Weekly edition acceptance covers a partial week, a Tuesday rollover, dated injuries, source conflicts, the draft-only job and edition metadata on the homepage and fantasy desk. Production acceptance separately checks the public HTML and the Worker source commit and content revision.
+
+## November 5, 2026 · Clean-checkout acceptance
+
+Required evidence for Worker types is a successful `npm run cf:types` step in weekly acceptance. The manual production job repeats it before release preflight and the Cloudflare upload.
