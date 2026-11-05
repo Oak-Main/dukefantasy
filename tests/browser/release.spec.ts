@@ -56,24 +56,29 @@ for (const path of routes) test(`Week ${editionWeek} identity, content, accessib
     expect(entry?.dateModified).toBe(manifest.sourceAsOf);
   }
   if (path === "/") {
-    // The marquee must feature a team from the week in play.
-    const links = await main.locator('#tv-board a.watch-team-line').evaluateAll(rows => rows.map(row => row.getAttribute("href")));
-    expect(links.length).toBeGreaterThan(0);
-    expect(links.every(href => slateTeams.includes(href?.split("/").pop()))).toBe(true);
+    const marqueeTeams = await main.locator('.apex-marquee a[href^="/teams/"]').evaluateAll(rows => rows.map(row => row.getAttribute("href")?.split("/").pop()));
+    const complete = snapshot.schedule.filter((game: { week: number }) => game.week === weekInPlay).every((game: { status: string }) => game.status === "final");
+    if (complete) await expect(main.getByRole("heading", { name: `Week ${weekInPlay} complete` })).toBeVisible();
+    else {
+      expect(marqueeTeams).toHaveLength(2);
+      expect(marqueeTeams.every(slug => slateTeams.includes(slug))).toBe(true);
+    }
     expect(text).not.toMatch(/Week 7 complete/);
     await expect(main.getByRole("heading", { name: `Week ${editionWeek} Fantasy Desk` })).toBeVisible();
     expect(text).toMatch(/Current decision boards are not published/);
-    const fullNameFits = () => page.locator("#marquee-title").evaluate(heading => {
-      const range = document.createRange(); range.selectNodeContents(heading);
-      const box = heading.getBoundingClientRect();
-      return [...range.getClientRects()].every(rect => rect.left >= box.left - 1 && rect.right <= box.right + 1);
-    });
-    expect(await fullNameFits(), "Full marquee team names fit without clipped glyphs").toBe(true);
-    const viewport = page.viewportSize();
-    if (viewport && viewport.width === 390) {
-      await page.setViewportSize({ width: 320, height: viewport.height });
-      expect(await fullNameFits(), "Full marquee team names also fit at 320px").toBe(true);
-      await page.setViewportSize(viewport);
+    if (!complete) {
+      const fullNameFits = () => page.locator("#marquee-title").evaluate(heading => {
+        const range = document.createRange(); range.selectNodeContents(heading);
+        const box = heading.getBoundingClientRect();
+        return [...range.getClientRects()].every(rect => rect.left >= box.left - 1 && rect.right <= box.right + 1);
+      });
+      expect(await fullNameFits(), "Full marquee team names fit without clipped glyphs").toBe(true);
+      const viewport = page.viewportSize();
+      if (viewport && viewport.width === 390) {
+        await page.setViewportSize({ width: 320, height: viewport.height });
+        expect(await fullNameFits(), "Full marquee team names also fit at 320px").toBe(true);
+        await page.setViewportSize(viewport);
+      }
     }
 
     expect(text).not.toMatch(/Researched null|Early half-PPR redraft edition|transactions in the October 14–20 window/);
