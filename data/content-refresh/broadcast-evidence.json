@@ -6,7 +6,11 @@
     "checkedAt": "2026-11-05T13:01:13.224Z",
     "status": 200,
     "bytes": 691938,
-    "sha256": "0c80665a7c91c13aa6f69d92fe55944d33a74058664a9e94c9089428effa405e"
+    "sha256": "0c80665a7c91c13aa6f69d92fe55944d33a74058664a9e94c9089428effa405e",
+    "matchups": {
+      "401873042": "Detroit Lions vs. Miami Dolphins (CBS)",
+      "401873051": "Buffalo Bills vs. Minnesota Vikings (ESPN, ESPN Deportes, ABC, also stream on mobile with NFL+)"
+    }
   },
   {
     "id": "401873042",

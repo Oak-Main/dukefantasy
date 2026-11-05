@@ -161,7 +161,7 @@ for (const game of newlyPublished) {
   const simulcast = broadcastReviews[game.id];
   if (simulcast?.simulcasts?.some(network => game.networks?.includes(network))) {
     const capture = review.sources.find(row => row.url === simulcast.leagueUrl);
-    const stored = read("data/content-refresh/broadcast-evidence.json").find(row => row.url === simulcast.leagueUrl);
+    const stored = read("data/content-refresh/broadcast-evidence.json").find(row => row.url === simulcast.leagueUrl && row.matchups?.[game.id]);
     assert.ok(capture && stored && capture.sha256 === stored.sha256 && capture.checkedAt === stored.checkedAt, "Missing simulcast source receipt");
   }
   assert.equal(evidence.status, game.status);

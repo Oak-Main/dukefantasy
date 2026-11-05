@@ -372,7 +372,7 @@ for (const game of espnGames) {
   }
   const simulcast = broadcastReviews[game.id];
   if (simulcast?.simulcasts?.some(network => tv.networks.includes(network)) && !sourceLedger.some(row => row.url === simulcast.leagueUrl)) {
-    const pin = broadcastEvidence.find(row => row.url === simulcast.leagueUrl);
+    const pin = broadcastEvidence.find(row => row.url === simulcast.leagueUrl && row.matchups?.[game.id]);
     if (!pin) throw new Error(`${game.id}: missing league simulcast receipt`);
     recordSource(`simulcast-${game.id}`, pin.url, pin.checkedAt, pin.sha256, pin.bytes);
   }

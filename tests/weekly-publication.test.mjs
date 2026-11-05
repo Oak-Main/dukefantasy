@@ -160,6 +160,10 @@ test("the network ruling must match the game and the current league primary", ()
   assert.equal(resolveBroadcast(game, ["CBS", "ESPN2"], rule).broadcast, "CBS");
   const simulcastGame = { ...game, broadcast: "ESPN", networks: ["ESPN", "ABC", "Disney+"] };
   assert.deepEqual(resolveBroadcast(simulcastGame, ["ESPN", "ABC"], null).networks, ["ESPN", "ABC"]);
+  const bills = JSON.parse(readFileSync(new URL("../data/content-refresh/broadcast-reviews.json", import.meta.url)))["401873051"];
+  const buffalo = { ...simulcastGame, awaySlug: bills.away, homeSlug: bills.home, date: bills.date };
+  assert.deepEqual(resolveBroadcast(buffalo, ["ESPN"], bills).networks, ["ESPN", "ABC"]);
+  assert.deepEqual(resolveBroadcast({ ...buffalo, date: "2026-11-12" }, ["ESPN"], bills).networks, ["ESPN"]);
   assert.equal(resolveBroadcast(game, ["NBC", "ESPN2"], rule).broadcast, null);
   assert.equal(resolveBroadcast({ ...game, date: "2026-11-15" }, ["CBS"], rule).broadcast, null);
 });
