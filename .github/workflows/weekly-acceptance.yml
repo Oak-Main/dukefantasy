@@ -28,8 +28,12 @@ jobs:
       - run: npm run check:security-floor
       - run: npm run dataset:build && npm run weekly:verify
       - name: Exercise the weekly source adapters without publishing
-        if: github.event_name == 'push'
-        run: node scripts/refresh-weekly-edition.mjs --week= --dry-run
+        env:
+          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [[ "$GITHUB_EVENT_NAME" == push ]] || ! git diff --quiet "$BASE_REVISION" HEAD -- scripts/nfl-week-source.mjs scripts/refresh-weekly-edition.mjs scripts/weekly-slate.mjs; then
+            node scripts/refresh-weekly-edition.mjs --week= --dry-run
+          fi
       - run: npm run verify
       - run: npm run receipt:title
       - run: npm run test:injuries

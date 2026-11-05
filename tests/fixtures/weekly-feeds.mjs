@@ -25,7 +25,7 @@ const event = game => ({
 function leagueGame(game) {
   return {
     id: game.id, week: game.week, date: game.kickoffUtc,
-    ...(process.env.FIXTURE_PHASE === "true" && game.week === 9 ? { status: "IN_PROGRESS" } : {}),
+    status: process.env.FIXTURE_PHASE === "true" && game.week === 9 ? "IN_PROGRESS" : "SCHEDULED",
     awayTeam: { fullName: teams.get(game.awaySlug).name }, homeTeam: { fullName: teams.get(game.homeSlug).name },
     broadcastInfo: { homeNetworkChannels: game.broadcast ? [game.broadcast] : [] },
     externalIds: [{ source: "slug", id: game.id }],
@@ -53,7 +53,7 @@ globalThis.fetch = async input => {
     const week = Number(url.pathname.split("-").pop());
     const data = games.filter(g => g.week === week).map(leagueGame);
     const finalLinks = games.filter(g => g.week === week && g.status === "final").map(g =>
-      `<a href="/games/${g.id}" aria-label="${g.awayAbbr} ${g.awayScore}, ${g.homeAbbr} ${g.homeScore}, FINAL">Game</a>`).join("");
+      `<a href="/games/${g.id}" aria-label="${g.awayAbbr} ${g.awayScore + (process.env.FIXTURE_SCORE_LINK === "true" && g.week === 9 ? 1 : 0)}, ${g.homeAbbr} ${g.homeScore}, FINAL">Game</a>`).join("");
     return new Response(finalLinks + "self.__next_f.push([1," + JSON.stringify(JSON.stringify(data)) + "])");
   }
   if (url.pathname.startsWith("/games/")) {
