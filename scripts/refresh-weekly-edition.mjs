@@ -629,28 +629,28 @@ try {
     : "| — | — | — | — | — |";
   const prBody = `## NFL Week ${editionWeek} edition (${releaseDate})
 
-  Refreshed schedule, results and standings for the ${seasonYear} NFL season. This is a draft: it does not merge and does not deploy.
+Refreshed schedule, results and standings for the ${seasonYear} NFL season. This is a draft: it does not merge and does not deploy.
 
-  - Week published: **${editionWeek}** (official ESPN week numbering; Week ${editionWeek} begins ${schedule.filter((game) => game.week === editionWeek).map((game) => game.date).sort()[0] ?? "n/a"})
-  - Weeks published by this edition: ${publishedWeeks.join(", ")}
-  - Season finals now published: ${finals.length}
-  - Week ${completedWeek} finals backfilled: ${finalsByWeek[completedWeek] ?? 0}
-  - Byes in Week ${editionWeek}: ${byes.join(", ")}
+- Week published: **${editionWeek}** (official ESPN week numbering; Week ${editionWeek} begins ${schedule.filter((game) => game.week === editionWeek).map((game) => game.date).sort()[0] ?? "n/a"})
+- Weeks published by this edition: ${publishedWeeks.join(", ")}
+- Season finals now published: ${finals.length}
+- Week ${completedWeek} finals backfilled: ${finalsByWeek[completedWeek] ?? 0}
+- Byes in Week ${editionWeek}: ${byes.join(", ")}
 
-  ### Sources read (URL and UTC retrieval time)
+### Sources read (URL and UTC retrieval time)
 
 | Source | URL | Retrieved (UTC) | SHA-256 (first 16 hex characters) |
 | --- | --- | --- | --- |
 ${sourceRows}
 
-  ### Source disagreements recorded
+### Source disagreements recorded
 
 | Event | Field | ESPN | NFL.com | Published |
 | --- | --- | --- | --- | --- |
 ${discrepancyRows}
 
-  Review the dated desk notes and scoped injury coverage before publication.
-  `;
+Review the dated desk notes and scoped injury coverage before publication.
+`;
   writeText(`data/content-refresh/${releaseDate}/pr-body.md`, prBody);
 
   materializeVerifiedSnapshot(outputRoot);
