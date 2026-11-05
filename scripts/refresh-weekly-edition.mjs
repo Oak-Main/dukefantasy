@@ -173,11 +173,13 @@ const previousSnapshot = read(`data/content-refresh/${manifest.snapshot}`);
 const editorial = read("data/content-refresh/current-editorial.json");
 const injury = read("data/injury-research/current.json");
 
-const requestedWeek = arg("week", null);
+const requestedWeekArg = arg("week", null);
+const requestedWeek =
+  requestedWeekArg == null || requestedWeekArg === "" ? null : Number(requestedWeekArg);
 const seasonYear = previousSnapshot.season.year ?? 2026;
 const totalWeeks = previousSnapshot.season.weeks ?? 18;
 const releaseDate = arg("date", new Intl.DateTimeFormat("en-CA", { timeZone: PT_ZONE }).format(new Date()));
-if (requestedWeek != null && (!Number.isInteger(Number(requestedWeek)) || Number(requestedWeek) < 1 || Number(requestedWeek) > totalWeeks)) {
+if (requestedWeek != null && (!Number.isInteger(requestedWeek) || requestedWeek < 1 || requestedWeek > totalWeeks)) {
   throw new Error(`--week must be an official week between 1 and ${totalWeeks}`);
 }
 
