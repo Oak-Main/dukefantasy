@@ -25,6 +25,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx playwright install --with-deps chromium webkit
+      - run: npm run cf:types
       - run: npm run check:security-floor
       - run: npm run dataset:build && npm run weekly:verify
       - name: Exercise the weekly source adapters without publishing
