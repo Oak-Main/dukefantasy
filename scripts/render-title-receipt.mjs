@@ -2,6 +2,7 @@
  * Receipt: render the built Worker and print the published page titles.
  * This is the screenshot-equivalent proof that the title carries the edition week.
  */
+import assert from "node:assert/strict";
 import { readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { join } from "node:path";
@@ -28,6 +29,8 @@ for (const path of ["/", "/scores", "/schedule", "/fantasy-desk", "/data-sources
   const html = await response.text();
   const title = html.match(/<title>([^<]*)<\/title>/)?.[1] ?? "(no title)";
   const marker = html.match(/\[\[COPY: [^\]]+\]\]/)?.[0] ?? "(no marker)";
+  assert.equal(response.status, 200, path);
+  assert.equal(marker, "(no marker)", path);
   const compiled = html.match(/Dataset compiled through[^<]*/)?.[0] ?? "";
   console.log(`${path.padEnd(14)} ${response.status} | title: ${title}`);
   console.log(`${" ".repeat(15)}marker: ${marker}${compiled ? ` | ${compiled}` : ""}`);

@@ -7316,7 +7316,7 @@
     "No published past predictions to grade.",
     "Week 8 watch: targeted Carolina/Green Bay reporting only, not all 32 teams recertified. Full injury-ledger review remains October 20; dated partial updates do not refresh it.",
     "Week 7 practice reports and inactives remain historical. No Week 8 inactive lists published before official game-day announcements.",
-    "Week 8 waiver/start-sit/trade and Week 7 rookie boards are withheld. Prior half-PPR redraft edition is archived; league size, ownership eligibility and complete usage are not established for a new board. No private roster is available.",
+    "The decision boards publish only after the required ownership and usage checks. Prior half-PPR redraft edition is archived; league size, ownership eligibility and complete usage are not established for a new board. No private roster is available.",
     "Season leaders remain the corroborated October 20 edition through Week 6. Fifteen proposed Week 7 totals are held as single-source research because successful second-publisher verification is absent; no comprehensive all-player/team or snap/route feed is claimed.",
     "Five film briefs are research assignments; no footage watched or tactical observation published. DFS has zero immutable pregame projections and zero gradeable picks."
   ],
@@ -8930,5 +8930,50 @@
         "https://www.fftoday.com/nfl/26-inactives-wk7.html"
       ]
     }
-  ]
+  ],
+  "deskNote": {
+    "week": 10,
+    "asOf": "2026-11-05",
+    "lead": "Chicago, Denver, Philadelphia and Tampa Bay are on bye in Week 10. Set a Thursday replacement for any Commander or Giant you plan to start, and move a Sunday or Monday player into your flex spot to keep a late swap available.",
+    "sections": [
+      {
+        "title": "What Week 8 settled",
+        "text": "All 14 games are final. Buffalo beat Baltimore 36\u201310 and Detroit beat Minnesota 19\u201315. The Bills and Vikings both enter their Monday, November 9 meeting at 6\u20131. Those scores count in the standings. Their Week 9 matchup is still ahead as of this review.",
+        "sources": [
+          {
+            "label": "NFL Week 8 results",
+            "url": "https://www.nfl.com/schedules/2026/by-week/week-8"
+          },
+          {
+            "label": "NFL Week 9 schedule",
+            "url": "https://www.nfl.com/schedules/2026/by-week/week-9"
+          }
+        ]
+      },
+      {
+        "title": "Thursday injury decisions belong to Week 9",
+        "text": "For Jacksonville at Baltimore on November 5, Baltimore ruled out quarterbacks Lamar Jackson and Tyler Huntley. Jacksonville listed running back Bhayshul Tuten as questionable. If Tuten is in your lineup, check the official inactives before the 8:15 p.m. ET kickoff and have a replacement ready. Week 10 availability still awaits next week\u2019s reports.",
+        "sources": [
+          {
+            "label": "NFL Week 9 designations",
+            "url": "https://www.nfl.com/news/nfl-week-9-injury-report-2026-season"
+          },
+          {
+            "label": "Baltimore\u2019s injury report",
+            "url": "https://www.baltimoreravens.com/team/injury-report/index-app"
+          }
+        ]
+      },
+      {
+        "title": "Three Week 10 lineup deadlines",
+        "text": "Washington at the Giants opens Thursday, November 12 at 8:15 p.m. ET. New England and Detroit play in Munich on Sunday, November 15 at 9:30 a.m. ET (6:30 a.m. Pacific), so review those starters Saturday night. The Chargers visit Baltimore on Monday, November 16 at 8:15 p.m. ET. If you wait on a Monday injury decision, reserve an eligible backup from that game.",
+        "sources": [
+          {
+            "label": "NFL Week 10 schedule",
+            "url": "https://www.nfl.com/schedules/2026/by-week/week-10"
+          }
+        ]
+      }
+    ]
+  }
 }

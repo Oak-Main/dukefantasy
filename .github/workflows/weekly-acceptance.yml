@@ -27,6 +27,8 @@ jobs:
       - run: npx playwright install --with-deps chromium webkit
       - run: npm run check:security-floor
       - run: npm run dataset:build && npm run weekly:verify
+      - name: Exercise the weekly source adapters without publishing
+        run: node scripts/refresh-weekly-edition.mjs --week= --dry-run
       - run: npm run verify
       - run: npm run receipt:title
       - run: npm run test:injuries

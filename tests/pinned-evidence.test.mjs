@@ -5,7 +5,9 @@ import { spawnSync } from "node:child_process";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 
-const evidence = JSON.parse(readFileSync(new URL("../data/content-refresh/2026-10-28/espn-verification.json", import.meta.url), "utf8"));
+const manifest = JSON.parse(readFileSync(new URL("../data/content-refresh/current.json", import.meta.url), "utf8"));
+const evidencePath = manifest.snapshot.replace(/snapshot\.json$/, "espn-verification.json");
+const evidence = JSON.parse(readFileSync(new URL(`../data/content-refresh/${evidencePath}`, import.meta.url), "utf8"));
 for (const [name, change] of [
   ["changed observed score", data => { data.responses[0].document.events[0].competitions[0].competitors[0].score = "999"; }],
   ["missing week", data => { data.responses.pop(); }],

@@ -1,3 +1,4 @@
+import { EditionStructuredData } from "@/components/edition-structured-data";
 import { HubApp } from "@/components/HubApp";
 import { routeSearchCopy } from "@/lib/route-metadata";
 import { brand } from "@/lib/config";
@@ -10,5 +11,5 @@ export const metadata = {
 };
 
 export default function Home() {
-  return <HubApp path="/" />;
+  return <><EditionStructuredData path="/" /><HubApp path="/" /></>;
 }

@@ -10,7 +10,7 @@
 import { DataBoardHero, DataBoardSummary, DataBoardEmpty, formatDataDate } from "./data-board-primitives";
 import { EvidenceLinks } from "./evidence-links";
 import type { BroadcastTeam } from "@/lib/homepage";
-import { deskCopySlot } from "@/lib/content-refresh";
+import { deskLead, refreshWeek, weeklyDesk } from "@/lib/content-refresh";
 import {
   fantasyDesk,
   currentNflWeek,
@@ -177,9 +177,18 @@ export function FantasyDeskPage({ teams }: { teams: BroadcastTeam[] }) {
     <div className="db-page">
       <DataBoardHero
         eyebrow="FANTASY DESK"
-        title="Weekly decision rails — waiver, start/sit, rookies, trades"
-        description={`${deskCopySlot} Week 10 waiver/start-sit/trade and Week 9 rookie editions are not published. Planning assumptions: 12-team, one-QB half-PPR redraft; waiver eligibility requires a dated ESPN rostered percentage below 55%. No current ownership snapshot or private roster is available.`}
+        title={`Week ${refreshWeek} Fantasy Desk`}
+        description={`${deskLead}`}
       />
+      {weeklyDesk && <section className="db-section" aria-label="Weekly lineup notes">
+        <p>Desk review · {weeklyDesk.asOf}</p>
+        {weeklyDesk.sections.map(section => <article key={section.title}>
+          <h2 className="font-display">{section.title}</h2>
+          <p>{section.text}</p>
+          <ul>{section.sources.map(source => <li key={source.url}><a href={source.url}>{source.label}</a></li>)}</ul>
+        </article>)}
+      </section>}
+      <p>Planning format: 12-team, one-QB half-PPR redraft. Waiver candidates require a dated ESPN rostered percentage below 55%. Individual boards below show their publication status.</p>
       <DataBoardSummary
         label="Fantasy desk status"
         items={[
@@ -203,10 +212,10 @@ export function FantasyDeskPage({ teams }: { teams: BroadcastTeam[] }) {
         <DataBoardEmpty title="Trade values not published yet" description={DESK_CADENCE.find((c) => c.key === "trade")?.slot ?? ""} />
       )}
       {desk.waiver ? <WaiverSection board={desk.waiver} /> : (
-        <DataBoardEmpty title="Week 10 waiver board not published" description="Ownership eligibility and corroborated player usage are not established. No recommended adds or blanket drops are implied. The prior edition is linked under Data sources." />
+        <DataBoardEmpty title={`Week ${refreshWeek} waiver board not published`} description="Ownership eligibility and corroborated player usage are not established. No recommended adds or blanket drops are implied. The prior edition is linked under Data sources." />
       )}
       {desk.rookie ? <RookieSection board={desk.rookie} /> : (
-        <DataBoardEmpty title="Week 9 rookie usage not published" description="Complete snap/route denominators are unavailable. Partial player rows do not establish comprehensive coverage." />
+        <DataBoardEmpty title={`Week ${refreshWeek - 1} rookie usage not published`} description="Complete snap/route denominators are unavailable. Partial player rows do not establish comprehensive coverage." />
       )}
     </div>
   );

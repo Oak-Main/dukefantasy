@@ -53,6 +53,6 @@ Refreshed schedule, results and standings for the 2026 NFL season. This is a dra
 
 | Event | Field | ESPN | NFL.com | Published |
 | --- | --- | --- | --- | --- |
-| 401873042 | primary_network | FOX | CBS | FOX |
+| 401873042 | primary_network | FOX | CBS | CBS |
 
-The desk write-up stays an owner slot: `[[COPY: week10-desk]]`.
+The NFL's current listing, the Detroit game center and Paramount's November 3 viewing guide confirm CBS in participating markets on November 8 at 1 p.m. ET. The original ESPN extraction is preserved. The dated broadcast review records the sources separately from the schedule capture. The weekly desk covers Week 8 results, the Week 9 Thursday designations and the Week 10 lineup deadlines.

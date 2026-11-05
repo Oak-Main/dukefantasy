@@ -338,8 +338,18 @@
       "field": "primary_network",
       "espn": "FOX",
       "nflCom": "CBS",
-      "published": "FOX",
-      "resolution": "espn_primary"
+      "resolution": "nfl_and_broadcaster",
+      "review": {
+        "date": "2026-11-08",
+        "away": "detroit-lions",
+        "home": "miami-dolphins",
+        "network": "CBS",
+        "checkedAt": "2026-11-05T12:22:10Z",
+        "leagueUrl": "https://www.nfl.com/news/nfl-how-to-watch-week-9-nfl-games-schedule-madrid-game-details-and-more",
+        "teamUrl": "https://www.detroitlions.com/game-day/2026/reg-week9/lions-at-dolphins/",
+        "broadcasterUrl": "https://www.paramountplus.com/sneak-peak/nfl-lions-vs-dolphins-week-9-2026-how-to-watch/"
+      },
+      "published": "CBS"
     }
   ],
   "gameEvidence": {
@@ -1037,9 +1047,9 @@
       "away": "detroit-lions",
       "home": "miami-dolphins",
       "kickoffUtc": "2026-11-08T18:00Z",
-      "primaryUSNetwork": "FOX",
+      "primaryUSNetwork": "CBS",
       "networks": [
-        "FOX"
+        "CBS"
       ],
       "status": "scheduled",
       "awayScore": null,
@@ -1047,15 +1057,25 @@
       "verifiedFields": [
         "opponents",
         "date",
-        "kickoff"
+        "kickoff",
+        "primary_network"
       ],
       "sourceConflicts": [
         {
           "field": "primary_network",
           "espn": "FOX",
           "nflCom": "CBS",
-          "resolution": "espn_primary",
-          "note": "The two publishers name different national networks for this game."
+          "resolution": "nfl_and_broadcaster",
+          "review": {
+            "date": "2026-11-08",
+            "away": "detroit-lions",
+            "home": "miami-dolphins",
+            "network": "CBS",
+            "checkedAt": "2026-11-05T12:22:10Z",
+            "leagueUrl": "https://www.nfl.com/news/nfl-how-to-watch-week-9-nfl-games-schedule-madrid-game-details-and-more",
+            "teamUrl": "https://www.detroitlions.com/game-day/2026/reg-week9/lions-at-dolphins/",
+            "broadcasterUrl": "https://www.paramountplus.com/sneak-peak/nfl-lions-vs-dolphins-week-9-2026-how-to-watch/"
+          }
         }
       ],
       "sources": [

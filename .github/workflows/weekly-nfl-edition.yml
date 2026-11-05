@@ -1,38 +1,26 @@
-# Weekly NFL edition — the recurring publication job.
-#
-# Schedule: Tuesday 06:00 America/Los_Angeles, weekly, from the Week 10
-# edition through Week 18 and the playoffs. GitHub cron is always UTC, and the
-# whole regular season plus the playoffs fall in Pacific standard time (the
-# 2026 DST change is on November 1, before Week 9), so 06:00 Pacific is
-# 14:00 UTC for every run of this job. A run in a Pacific daylight-time week
-# would need "0 13 * * 2" instead.
-#
-# End condition: the job stops itself. The refresh script refuses to publish
-# after 2027-02-15 (the 2026 season and its playoffs are over by then), and it
-# publishes nothing when the schedule has not changed.
-#
-# It opens a DRAFT pull request. It never merges, never pushes to main and
-# never deploys; the Cloudflare release stays a deliberate human step.
 name: Weekly NFL edition
 on:
   schedule:
+    # Nov 10 through the Feb 15 cutoff fall in Pacific standard time.
     - cron: "0 14 * * 2"
   workflow_dispatch:
     inputs:
       week:
-        description: "Official NFL week to publish (blank = the week in play)"
+        description: "Official edition week (blank uses the first unfinished slate and preserves an existing preview)"
         required: false
         type: string
-permissions:
-  contents: write
-  pull-requests: write
+permissions: {}
 concurrency:
   group: weekly-nfl-edition
   cancel-in-progress: false
 jobs:
   edition:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 40
+    permissions:
+      contents: write
+      pull-requests: write
     env:
       WRANGLER_SEND_METRICS: "false"
     steps:
@@ -43,33 +31,48 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
-      - name: Refresh the edition from ESPN and NFL.com
-        run: node scripts/refresh-weekly-edition.mjs --week=${{ inputs.week }}
-      - name: Verify the published edition
-        run: npm run weekly:verify
-      - name: Cross-check the snapshot against ESPN
-        run: npm run dataset:verify
-      - run: npm run verify
-      - name: Open a draft pull request
+      - name: Refresh from ESPN and the NFL
+        id: refresh
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REQUESTED_WEEK: ${{ inputs.week }}
         run: |
           set -euo pipefail
-          if git diff --quiet -- data/content-refresh lib/nfl-generated.ts; then
-            echo "No schedule change; nothing to propose."
-            exit 0
+          node scripts/refresh-weekly-edition.mjs --week="$REQUESTED_WEEK"
+          if git diff --quiet -- data/content-refresh/current.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-          branch="automation/weekly-edition-$(date -u +%Y%m%dT%H%M%SZ)"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$branch"
-          git add -A data/content-refresh lib/nfl-generated.ts
-          git commit -m "data: publish the weekly NFL edition"
-          git push --force origin "$branch"
-          edition_dir=$(node -e "console.log(require('./data/content-refresh/current.json').snapshot.replace(/\/snapshot\.json$/, ''))")
-          gh pr create --draft \
-            --title "Weekly NFL edition $(date -u +%Y-%m-%d)" \
-            --body-file "data/content-refresh/${edition_dir}/pr-body.md" \
-            --base main \
-            --head "$branch"
+      - if: steps.refresh.outputs.changed == 'true'
+        run: npm ci
+      - name: Verify the dated candidate
+        if: steps.refresh.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          npm run weekly:verify
+          npm run dataset:verify
+          npm run dataset:verify:pinned
+          npm run verify
+      - name: Open a draft for owner review
+        if: steps.refresh.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          day=$(node -p 'require("./data/content-refresh/current.json").sourceAsOf')
+          branch="automation/weekly-edition-$day"
+          body="data/content-refresh/$day/pr-body.md"
+          if git ls-remote --exit-code --heads origin "refs/heads/$branch" > /dev/null; then
+            # A retry after a successful push must use the already-verified commit and its receipt.
+            git fetch --depth=1 origin "refs/heads/$branch"
+            git show "FETCH_HEAD:$body" > "$RUNNER_TEMP/edition-receipt.md"
+            body="$RUNNER_TEMP/edition-receipt.md"
+          else
+            git switch -c "$branch"
+            git add -- data/content-refresh lib/nfl-generated.ts
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "data: NFL edition $day"
+            git push origin "HEAD:refs/heads/$branch"
+          fi
+          if [[ -z "$(gh pr list --base main --head "$branch" --state all --json number --jq '.[0].number // empty')" ]]; then
+            gh pr create --draft --title "Weekly NFL edition $day" --body-file "$body" --base main --head "$branch"
+          fi

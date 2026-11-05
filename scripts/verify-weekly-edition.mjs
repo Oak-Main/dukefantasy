@@ -13,6 +13,7 @@
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { selectSlate, resolveBroadcast } from "./weekly-slate.mjs";
 import { publisher } from "./week7-evidence.mjs";
 import { isEvidenceTimestamp, validatePublicationDates } from "./week7-publication-dates.mjs";
 
@@ -32,7 +33,11 @@ const review = read(`data/content-refresh/${editionDir}/review.json`);
 
 /* ---- the edition itself ------------------------------------------------- */
 
+const broadcastReviews = read("data/content-refresh/broadcast-reviews.json");
 const weekInPlay = snapshot.season.currentWeek;
+const selected = selectSlate(snapshot.schedule, snapshot.season.weeks, editorial.week, editorial.week);
+assert.equal(weekInPlay, selected.weekInPlay, "Week in play must be the first incomplete slate");
+assert.equal(review.completedWeek, selected.completedWeek, "Evidence must identify the last fully completed week");
 const editionWeek = editorial.week;
 assert.ok(Number.isInteger(weekInPlay) && weekInPlay >= 1 && weekInPlay <= snapshot.season.weeks);
 assert.ok(Number.isInteger(editionWeek) && editionWeek >= 1 && editionWeek <= snapshot.season.weeks);
@@ -56,7 +61,7 @@ assert.equal(editorial.moduleSources.schedule.sourceAsOf, snapshot.sourceAsOf);
 assert.equal(editorial.moduleSources.injuries.sourceAsOf, injury.as_of);
 // A module may lag the edition as long as it keeps its own dated record; a
 // module dated to a week the edition has not reached is a defect.
-assert.ok(injury.week == null || injury.week <= weekInPlay, "The injury module cannot be dated to a future week");
+assert.ok(injury.week == null || (Number.isInteger(injury.week) && injury.week >= 1 && injury.week <= weekInPlay), "The injury module cannot be dated to a future week");
 
 /* ---- standings are recomputed, never asserted --------------------------- */
 
@@ -111,7 +116,29 @@ for (const game of newlyPublished) {
   assert.equal(game.verification, "two_publishers", `${game.id}: must record two-publisher verification`);
   for (const url of game.sources) assert.ok(url.startsWith("https://"), `${game.id}: sources must be HTTPS`);
   const evidence = review.gameEvidence?.[game.id];
+  const families = new Set(game.sources.map(publisher));
+  assert.ok(families.has("nfl.com") && families.has("espn.com"), `${game.id}: NFL and ESPN are required`);
+  if (game.status === "final") {
+    assert.ok([game.awayScore, game.homeScore].every(n => Number.isInteger(n) && n >= 0), `${game.id}: missing final score`);
+    assert.ok(game.verified_fields.includes("final_status") && review.sources.some(source => source.name === `game-${game.id}`), `${game.id}: missing NFL box score`);
+  } else {
+    assert.ok(game.awayScore == null && game.homeScore == null, `${game.id}: scores before final`);
+  }
+  for (const conflict of game.source_conflicts ?? []) {
+    const tv = resolveBroadcast({ ...game, broadcast: conflict.espn }, [conflict.nflCom], broadcastReviews[game.id]);
+    assert.equal(game.broadcast, tv.broadcast, `${game.id}: unresolved or unsupported TV assignment`);
+    assert.deepEqual(conflict, tv.conflict);
+    assert.deepEqual(evidence?.sourceConflicts, game.source_conflicts);
+    assert.ok(review.sourceDiscrepancies.some(row => row.eventId === game.id && row.published === tv.broadcast && row.resolution === conflict.resolution));
+    if (conflict.review) {
+      assert.ok(isEvidenceTimestamp(conflict.review.checkedAt) && Date.parse(conflict.review.checkedAt) <= Date.now());
+      assert.equal(publisher(conflict.review.leagueUrl), "nfl.com");
+      assert.notEqual(publisher(conflict.review.broadcasterUrl), "nfl.com");
+    }
+  }
   assert.ok(evidence, `${game.id}: missing evidence`);
+  assert.deepEqual(evidence.verifiedFields, game.verified_fields);
+  assert.equal(evidence.status, game.status);
   assert.equal(evidence.officialWeek, game.week, `${game.id}: evidence week`);
   assert.equal(evidence.away, game.awaySlug, `${game.id}: evidence away team`);
   assert.equal(evidence.home, game.homeSlug, `${game.id}: evidence home team`);
@@ -122,6 +149,9 @@ for (const game of newlyPublished) {
   assert.ok(Array.isArray(evidence.sources) && evidence.sources.length >= 2, `${game.id}: evidence needs two sources`);
   assert.ok(new Set(evidence.sources.map((source) => publisher(source.url))).size >= 2, `${game.id}: evidence needs two publisher families`);
   for (const source of evidence.sources) {
+    const receipt = review.sources.find(row => row.url === source.url);
+    assert.ok(receipt, `${game.id}: evidence URL is absent from the retrieval ledger`);
+    if (source.rawSha256) assert.equal(source.rawSha256, receipt.sha256);
     assert.ok(isEvidenceTimestamp(source.checkedAt), `${game.id}: evidence needs a retrieval timestamp`);
     assert.ok(Date.parse(source.checkedAt) <= Date.parse(manifest.cutoffUtc), `${game.id}: evidence retrieval is after the cutoff`);
   }
@@ -160,7 +190,11 @@ for (const [id, gameWeek, awayScore, homeScore, status] of previousFinals) {
 
 /* ---- the desk write-up stays the owner's slot ---------------------------- */
 
-assert.deepEqual(fantasy, { waiver: null, start_sit: null, rookie: null, trade: null });
+for (const key of ["waiver", "start_sit", "rookie", "trade"]) {
+  assert.ok(Object.hasOwn(fantasy, key), `Missing decision board status: ${key}`);
+  const board = fantasy[key];
+  if (board) assert.equal(key === "waiver" ? board.week_adding_for : board.week, key === "rookie" ? editionWeek - 1 : editionWeek);
+}
 
 console.log(
   `Edition ${editionDate}: Week ${editionWeek}, ${snapshot.schedule.filter((g) => g.status === "final").length} finals, ` +

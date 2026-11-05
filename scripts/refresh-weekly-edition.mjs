@@ -16,14 +16,14 @@
  *   node scripts/refresh-weekly-edition.mjs --week=10 --dry-run
  *
  * The script writes data/content-refresh/<date>/ and repoints the manifest.
- * It never merges, never deploys and never touches editorial prose: the
- * fantasy desk write-up stays an explicit [[COPY: week<N>-desk]] slot.
+ * It never merges, never deploys and never touches editorial prose: dated desk notes are selected separately from the schedule.
  */
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { fetchNflGame, fetchNflWeek } from "./nfl-week-source.mjs";
+import { publicationWindow, resolveBroadcast, selectSlate } from "./weekly-slate.mjs";
 import { materializeVerifiedSnapshot } from "./verified-snapshot.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
@@ -141,8 +141,8 @@ function normalizeNetwork(name) {
 }
 const parseScore = (value) => {
   if (value == null || value === "") return null;
-  const n = Number.parseInt(String(value), 10);
-  return Number.isFinite(n) ? n : null;
+  const n = Number(value);
+  return Number.isInteger(n) && n >= 0 ? n : null;
 };
 const teamSlug = (name) =>
   String(name).toLowerCase().replace(/[^a-z0-9 ]/g, "").trim().replaceAll(" ", "-");
@@ -173,22 +173,26 @@ const previousSnapshot = read(`data/content-refresh/${manifest.snapshot}`);
 const editorial = read("data/content-refresh/current-editorial.json");
 const injury = read("data/injury-research/current.json");
 
+const broadcastReviews = read("data/content-refresh/broadcast-reviews.json");
 const requestedWeekArg = arg("week", null);
 const requestedWeek =
   requestedWeekArg == null || requestedWeekArg === "" ? null : Number(requestedWeekArg);
 const seasonYear = previousSnapshot.season.year ?? 2026;
 const totalWeeks = previousSnapshot.season.weeks ?? 18;
-const releaseDate = arg("date", new Intl.DateTimeFormat("en-CA", { timeZone: PT_ZONE }).format(new Date()));
-if (requestedWeek != null && (!Number.isInteger(requestedWeek) || requestedWeek < 1 || requestedWeek > totalWeeks)) {
+const { day: releaseDate, ended } = publicationWindow(arg("date"));
+if (ended) {
+  console.log("Regular-season refresh window closed; nothing to propose.");
+  process.exit(0);
+}
+if (requestedWeek != null && (!/^\d+$/.test(requestedWeekArg) || requestedWeek < 1 || requestedWeek > totalWeeks)) {
   throw new Error(`--week must be an official week between 1 and ${totalWeeks}`);
 }
-
-// The 2026 season and its playoffs finish in February; a scheduled run after
-// that publishes nothing, so the job cannot keep republishing a finished
-// season.
-const SEASON_END = "2027-02-15";
-if (releaseDate > SEASON_END && !argv.includes("--allow-after-season")) {
-  console.log(`Season ${seasonYear} ended before ${releaseDate}; nothing published.`);
+if (releaseDate < manifest.sourceAsOf) throw new Error("Cannot replace a newer edition");
+if (!dryRun && existsSync(join(root, "data/content-refresh", releaseDate))) {
+  if (releaseDate !== manifest.sourceAsOf || (requestedWeek != null && requestedWeek !== editorial.week)) {
+    throw new Error("The dated edition already exists; review it before making corrections");
+  }
+  console.log("This date already has an edition; nothing to propose.");
   process.exit(0);
 }
 
@@ -255,26 +259,8 @@ if (espnGames.length !== (previousSnapshot.teams.length * 17) / 2) {
 }
 if (new Set(espnGames.map((g) => g.id)).size !== espnGames.length) throw new Error("Duplicate ESPN event ids");
 
-// Two different weeks, and the difference is the point.
-//   dataWeek    — the NFL week in play: the first week whose games are not all
-//                 final. Every earlier week must be complete, which is what
-//                 keeps the snapshot from going stale.
-//   editionWeek — the week this edition is about: the desk, the byes and the
-//                 published television slate. A Tuesday job publishes the week
-//                 that starts the next day, so the edition may lead the week
-//                 in play by one.
-const completedWeeks = new Set(
-  espnGames.filter((game) => game.status === "final").map((game) => game.week),
-);
-let dataWeek = 1;
-while (dataWeek <= totalWeeks && completedWeeks.has(dataWeek)) dataWeek += 1;
-dataWeek = Math.min(dataWeek, totalWeeks);
-const editionWeek = requestedWeek == null ? dataWeek : Number(requestedWeek);
-if (editionWeek !== dataWeek && editionWeek !== dataWeek + 1) {
-  throw new Error(
-    `An edition may cover the week in play (${dataWeek}) or the week that starts next (${dataWeek + 1}); ${editionWeek} was requested`,
-  );
-}
+const { weekInPlay: dataWeek, completedWeek, editionWeek } =
+  selectSlate(espnGames, totalWeeks, editorial.week, requestedWeek);
 // The weeks this edition publishes: the week that just finished and the two
 // weeks the edition covers. Anything earlier was published before and stays.
 const publishedWeeks = [editionWeek - 2, editionWeek - 1, editionWeek].filter((week) => week >= 1);
@@ -292,16 +278,6 @@ for (const week of publishedWeeks) {
   console.log(`  week ${week}: ${doc.games.length} games, ${doc.url}`);
 }
 
-const nflBySlug = new Map();
-for (const doc of nflWeeks) {
-  for (const game of doc.games) {
-    if (game.slug) nflBySlug.set(game.slug, { ...game, weekUrl: doc.url, checkedAt: doc.checkedAt, rawSha256: doc.rawSha256 });
-  }
-}
-
-/* ------------------------------------------ corroborate and build the games */
-
-const espnById = new Map(espnGames.map((game) => [game.id, game]));
 const nflByGameId = new Map();
 for (const doc of nflWeeks) {
   for (const game of doc.games) {
@@ -382,43 +358,24 @@ for (const game of espnGames) {
   if (new Date(nfl.kickoffUtc).getTime() !== new Date(game.kickoffUtc).getTime()) {
     problems.push(`${game.id}: kickoff disagrees (ESPN ${game.kickoffUtc}, NFL.com ${nfl.kickoffUtc})`);
   }
-  const espnNetworks = new Set(game.networks.map(normalizeNetwork).filter(Boolean));
-  const nflNetworks = new Set(nfl.networks.map(normalizeNetwork).filter(Boolean));
-  const shared = [...espnNetworks].filter((network) => nflNetworks.has(network));
-  const sourceConflicts = [];
-  if (shared.length === 0) {
-    // A single national-network disagreement is recorded, not hidden: the
-    // primary source's value publishes and the conflict is disclosed.
-    sourceConflicts.push({
-      field: "primary_network",
-      espn: [...espnNetworks].join("/") || null,
-      nflCom: [...nflNetworks].join("/") || null,
-      resolution: "espn_primary",
-      note: "The two publishers name different national networks for this game.",
-    });
-    discrepancies.push({
-      eventId: game.id,
-      week: game.week,
-      field: "primary_network",
-      espn: [...espnNetworks].join("/") || null,
-      nflCom: [...nflNetworks].join("/") || null,
-      published: game.broadcast,
-      resolution: "espn_primary",
-    });
-  }
-
+  const nflNetworks = [...new Set(nfl.networks.map(normalizeNetwork).filter(Boolean))];
+  const tv = resolveBroadcast(game, nflNetworks, broadcastReviews[game.id]);
+  const sourceConflicts = tv.conflict ? [tv.conflict] : [];
+  if (tv.conflict) discrepancies.push({ eventId: game.id, week: game.week, ...tv.conflict, published: tv.broadcast });
   const sources = [nfl.weekUrl, espnUrl];
   const verifiedFields = ["opponents", "date", "kickoff"];
-  if (shared.length > 0) verifiedFields.push("primary_network");
-  let awayScore = game.awayScore;
-  let homeScore = game.homeScore;
+  if (tv.broadcast) verifiedFields.push("primary_network");
+  if ((game.status === "final") !== (nfl.status === "final")) problems.push(`${game.id}: final status disagrees`);
+  if (game.status === "final" && (!nfl.slug || !Number.isInteger(game.awayScore) || !Number.isInteger(game.homeScore))) {
+    problems.push(`${game.id}: final lacks scores or official game identity`);
+  }
 
   if (game.status === "final" && nfl.slug) {
     // A completed game is corroborated on its own NFL.com box score.
     const box = await fetchNflGame({ slug: nfl.slug, away: nfl.away, home: nfl.home });
     sources.unshift(box.url);
     recordSource(`game-${game.id}`, box.url, box.checkedAt, box.rawSha256, box.bytes);
-    if (box.awayScore !== game.awayScore || box.homeScore !== game.homeScore) {
+    if ((!box.totalRow && box.quarters < 4) || box.awayScore !== game.awayScore || box.homeScore !== game.homeScore) {
       problems.push(`${game.id}: final score disagrees (ESPN ${game.awayScore}-${game.homeScore}, NFL.com ${box.awayScore}-${box.homeScore})`);
     }
     verifiedFields.push("final_status", "away_score", "home_score");
@@ -427,7 +384,8 @@ for (const game of espnGames) {
   const clocks = clockLabels(game.kickoffUtc);
   const recorded = {
     ...game,
-    networks: [...espnNetworks],
+    broadcast: tv.broadcast,
+    networks: tv.networks,
     neutral_site: game.neutral_site,
     city: game.city,
     country: game.country,
@@ -448,8 +406,8 @@ for (const game of espnGames) {
     away: game.awaySlug,
     home: game.homeSlug,
     kickoffUtc: game.kickoffUtc,
-    primaryUSNetwork: game.broadcast,
-    networks: [...espnNetworks],
+    primaryUSNetwork: tv.broadcast,
+    networks: tv.networks,
     status: game.status,
     awayScore: game.awayScore,
     homeScore: game.homeScore,
@@ -528,7 +486,7 @@ const snapshot = {
   generatedAt: retrievedAt,
   sourceAsOf: releaseDate,
   fetchedAt: retrievedAt,
-  verification: `Schedule, results and standings refreshed from ESPN and NFL.com at ${retrievedAt}. ${finals.length} season finals, ${finalsByWeek[editionWeek - 2] ?? 0} Week ${editionWeek - 2} finals and Week ${editionWeek} fixtures carried two publisher families.`,
+  verification: `Schedule, results and standings refreshed from ESPN and NFL.com at ${retrievedAt}. ${finals.length} season finals, ${finalsByWeek[completedWeek] ?? 0} Week ${completedWeek} finals and Week ${editionWeek} fixtures carried two publisher families.`,
   compiledAt: retrievedAt,
   collectedOn: releaseDate,
 };
@@ -540,7 +498,7 @@ const review = {
   compiledAt: retrievedAt,
   retrievedAt,
   sourceAsOf: releaseDate,
-  completedWeek: editionWeek - 2,
+  completedWeek,
   baseline: {
     snapshot: manifest.snapshot,
     sourceAsOf: manifest.sourceAsOf,
@@ -558,7 +516,7 @@ const review = {
   totals: {
     finals: finals.length,
     finalsByWeek,
-    weekFinals: finalsByWeek[editionWeek - 2] ?? 0,
+    weekFinals: finalsByWeek[completedWeek] ?? 0,
     publishedWeeks,
     byes,
   },
@@ -617,6 +575,17 @@ const nextManifest = {
   },
 };
 
+// Source retrieval times change every run. Compare the facts delivered to readers
+// before opening another draft for an unchanged regular-season slate.
+const facts = rows => rows.map(g => [g.id, g.week, g.kickoffUtc, g.timeTbd, g.awaySlug, g.homeSlug,
+  g.status, g.statusDetail, g.awayScore, g.homeScore, g.broadcast, g.venue, g.neutral_site, g.city, g.country,
+  g.networks, g.verified_fields, g.source_conflicts, g.sources]);
+if (!dryRun && editorial.week === editionWeek && previousSnapshot.season.currentWeek === dataWeek &&
+    JSON.stringify(facts(previousSnapshot.schedule)) === JSON.stringify(facts(schedule))) {
+  console.log("Schedule, scores and coverage are unchanged; nothing to propose.");
+  process.exit(0);
+}
+
 if (dryRun) {
   console.log("Dry run. Nothing written.");
   console.log(JSON.stringify({ finals: finals.length, byes, publishedWeeks, editionWeek }, null, 2));
@@ -646,7 +615,7 @@ Refreshed schedule, results and standings for the ${seasonYear} NFL season. This
 - Week published: **${editionWeek}** (official ESPN week numbering; Week ${editionWeek} begins ${schedule.filter((game) => game.week === editionWeek).map((game) => game.date).sort()[0] ?? "n/a"})
 - Weeks published by this edition: ${publishedWeeks.join(", ")}
 - Season finals now published: ${finals.length}
-- Week ${editionWeek - 2} finals backfilled: ${finalsByWeek[editionWeek - 2] ?? 0}
+- Week ${completedWeek} finals backfilled: ${finalsByWeek[completedWeek] ?? 0}
 - Byes in Week ${editionWeek}: ${byes.join(", ")}
 
 ### Sources read (URL and UTC retrieval time)
@@ -661,7 +630,7 @@ ${sourceRows}
 | --- | --- | --- | --- | --- |
 ${discrepancyRows}
 
-The desk write-up stays an owner slot: \`[[COPY: week${editionWeek}-desk]]\`.
+Review the dated desk notes and scoped injury coverage before publication.
 `;
 writeText(`data/content-refresh/${releaseDate}/pr-body.md`, prBody);
 

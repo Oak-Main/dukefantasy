@@ -83,6 +83,7 @@ test("www canonicalizes to the apex domain without losing the request target", a
 });
 
 test("critical product routes render dataset-backed content", async () => {
+  const editorial = JSON.parse(readFileSync(new URL("../data/content-refresh/current-editorial.json", import.meta.url), "utf8"));
   const routes = [
     ["/scores", /The slate, without the scavenger hunt/],
     ["/scores", /Select scoreboard week/],
@@ -97,8 +98,8 @@ test("critical product routes render dataset-backed content", async () => {
     ["/games/401872657", /Netflix/],
     ["/games/401872657", /49ers|Rams/],
     ["/dfs", /picks you can audit/i],
-    ["/dfs", /Week <!-- -->10<!-- --> projections are not published/i],
-    ["/fantasy-desk", /Week 10 waiver/],
+    ["/dfs", new RegExp(`Week <!-- -->${editorial.week}<!-- --> projections are not published`, "i")],
+    ["/fantasy-desk", new RegExp(`Week ${editorial.week} waiver`)],
     ["/transactions", /Tanner Hudson/],
     ["/stats", /Matthew Stafford/],
     ["/data-sources", /Source as of/],

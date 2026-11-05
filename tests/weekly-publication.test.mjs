@@ -1,8 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
+import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
+import { publicationWindow, resolveBroadcast, selectSlate } from "../scripts/weekly-slate.mjs";
+
 import { materializeVerifiedSnapshot } from "../scripts/verified-snapshot.mjs";
 
 const manifest = JSON.parse(readFileSync(new URL("../data/content-refresh/current.json", import.meta.url), "utf8"));
@@ -54,7 +58,11 @@ test("an injury module that lags the week in play keeps its own dated record", (
     mkdirSync(join(root, "lib"));
     const snapshotDoc = JSON.parse(readFileSync(join(root, `data/content-refresh/${manifest.snapshot}`), "utf8"));
     const editorialDoc = JSON.parse(readFileSync(join(root, "data/content-refresh/current-editorial.json"), "utf8"));
-    assert.ok(injuryWeek < snapshotDoc.season.currentWeek, "the published injury module lags the week in play");
+    // Exercise a lagging report even if the real desk has since caught up.
+    snapshotDoc.season.currentWeek = Math.max(snapshotDoc.season.currentWeek, injuryWeek + 1);
+    editorialDoc.week = Math.max(editorialDoc.week, snapshotDoc.season.currentWeek);
+    writeFileSync(join(root, `data/content-refresh/${manifest.snapshot}`), JSON.stringify(snapshotDoc));
+    writeFileSync(join(root, "data/content-refresh/current-editorial.json"), JSON.stringify(editorialDoc));
     materializeVerifiedSnapshot(root);
     const written = readFileSync(join(root, "lib/nfl-generated.ts"), "utf8");
     assert.ok(written.includes(`"currentWeek":${snapshotDoc.season.currentWeek}`), "the week in play must not move");
@@ -121,4 +129,67 @@ test("the published edition keeps 272 games and separates the week in play from 
     if (game.week >= weekInPlay || game.status === "final") continue;
     assert.match(game.statusDetail, /postpone|cancel|delay|suspend/i, `${game.id}: week ${game.week} is not final`);
   }
+});
+
+
+test("Tuesday selects Week 10 only after all Week 9 games finish; a preview may stay one week ahead", () => {
+  const source = JSON.parse(readFileSync(new URL("../data/content-refresh/2026-11-05/snapshot.json", import.meta.url)));
+  const games = source.schedule;
+  games.find(g => g.week === 9).status = "final";
+  assert.deepEqual(selectSlate(games, 18, 10, null), { weekInPlay: 9, completedWeek: 8, editionWeek: 10 });
+  for (const game of games.filter(g => g.week === 9)) game.status = "final";
+  assert.deepEqual(selectSlate(games, 18, 10, null), { weekInPlay: 10, completedWeek: 9, editionWeek: 10 });
+  assert.throws(() => selectSlate(games, 18, 10, 12));
+  assert.throws(() => selectSlate(games, 18, 10, 9));
+  assert.deepEqual(publicationWindow(null, new Date("2026-11-10T07:59:00Z")), { day: "2026-11-09", ended: false });
+  assert.equal(publicationWindow(null, new Date("2027-02-16T07:59:59Z")).ended, false);
+  assert.equal(publicationWindow(null, new Date("2027-02-16T08:00:00Z")).ended, true);
+  assert.throws(() => publicationWindow("2026-02-30"));
+});
+
+test("the network ruling must match the game and the current league primary", () => {
+  const rule = JSON.parse(readFileSync(new URL("../data/content-refresh/broadcast-reviews.json", import.meta.url)))["401873042"];
+  const game = { broadcast: "FOX", networks: ["FOX", "ESPN2"], awaySlug: rule.away, homeSlug: rule.home, date: rule.date };
+  assert.equal(resolveBroadcast(game, ["CBS", "ESPN2"], rule).broadcast, "CBS");
+  assert.equal(resolveBroadcast(game, ["NBC", "ESPN2"], rule).broadcast, null);
+  assert.equal(resolveBroadcast({ ...game, date: "2026-11-15" }, ["CBS"], rule).broadcast, null);
+});
+
+test("November 10 replay writes a verifiable draft, rejects conflicting finals, and preserves a dated injury module", () => {
+  const root = mkdtempSync(join(tmpdir(), "duke-weekly-replay-"));
+  const source = fileURLToPath(new URL("..", import.meta.url));
+  const write = (path, value) => { mkdirSync(join(root, path, ".."), { recursive: true }); writeFileSync(join(root, path), JSON.stringify(value)); };
+  const read = path => JSON.parse(readFileSync(join(root, path), "utf8"));
+  const run = (script, args = [], env = {}) => spawnSync(process.execPath,
+    ["--import", join(source, "tests/fixtures/weekly-feeds.mjs"), "scripts/" + script, ...args],
+    { cwd: root, env: { ...process.env, ...env }, encoding: "utf8", timeout: 20_000 });
+  try {
+    cpSync(join(source, "scripts"), join(root, "scripts"), { recursive: true });
+    mkdirSync(join(root, "lib"));
+    mkdirSync(join(root, "data/content-refresh/2026-11-05"), { recursive: true });
+    for (const file of ["2026-11-05/snapshot.json", "broadcast-reviews.json"]) copyFileSync(join(source, "data/content-refresh", file), join(root, "data/content-refresh", file));
+    write("data/content-refresh/current.json", { sourceAsOf: "2026-11-05", snapshot: "2026-11-05/snapshot.json", sourceCutoffs: { targetedInjuryUtc: "2026-10-28T20:34:19Z" } });
+    write("data/content-refresh/current-editorial.json", { week: 10, moduleSources: { injuries: { sourceAsOf: "2026-10-20" } } });
+    write("data/injury-research/current.json", { week: 8, as_of: "2026-10-20", watch: [], ledger: [] });
+    write("data/fantasy-desk/current.json", { waiver:null, start_sit:null, rookie:null, trade:null });
+    const invalid = run("refresh-weekly-edition.mjs", ["--week="], { FIXTURE_MISMATCH: "true" });
+    assert.equal(invalid.status, 1); assert.match(invalid.stderr, /final score disagrees/);
+    assert.equal(existsSync(join(root, "data/content-refresh/2026-11-10")), false);
+    const ok = run("refresh-weekly-edition.mjs", ["--week="]);
+    assert.equal(ok.status, 0, ok.stdout + ok.stderr);
+    const dir = "data/content-refresh/2026-11-10";
+    const review = read(dir + "/review.json");
+    assert.equal(review.week, 10); assert.equal(review.completedWeek, 9);
+    assert.equal(review.totals.finals, 136); assert.equal(review.totals.weekFinals, 15);
+    assert.equal(review.gameEvidence["401873042"].primaryUSNetwork, "CBS");
+    assert.equal(read("data/content-refresh/current.json").sourceCutoffs.completeInjuryReviewDate, "2026-10-20");
+    assert.match(readFileSync(join(root, dir, "pr-body.md"), "utf8"), /Week 9 finals backfilled: 15/);
+    for (const script of ["verify-weekly-edition.mjs", "verify-nfl-dataset.mjs"]) {
+      const args = script === "verify-nfl-dataset.mjs" ? ["--evidence", dir + "/espn-verification.json"] : [];
+      const gate = run(script, args); assert.equal(gate.status, 0, gate.stdout + gate.stderr);
+    }
+    const retry = run("refresh-weekly-edition.mjs"); assert.equal(retry.status, 0); assert.match(retry.stdout, /already has an edition/);
+    const stop = run("refresh-weekly-edition.mjs", [], { FIXTURE_CLOCK: "2027-02-16T14:00:00Z" });
+    assert.equal(stop.status, 0); assert.match(stop.stdout, /window closed/);
+  } finally { rmSync(root, { recursive: true, force: true }); }
 });

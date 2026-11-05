@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { EditionStructuredData } from "@/components/edition-structured-data";
 import { HubApp } from "@/components/HubApp";
 import { coaches, fantasyNotes, games, getConferenceHub, portalEvents, stadiums, teams } from "@/lib/cfb-dataset";
 import { getRosterPlayerBySlug, playerSlugForName } from "@/lib/player-records";
@@ -187,5 +188,6 @@ export async function generateMetadata(props: RoutePageProps): Promise<Metadata>
 export default async function RoutePage({ params, searchParams }: RoutePageProps) {
   const { slug } = await params;
   if (!isKnownPath(slug)) notFound();
-  return <HubApp path={`/${slug.join("/")}`} requestedWeek={slug[0] === "scores" ? (await searchParams)?.week : undefined} />;
+  const path = `/${slug.join("/")}`;
+  return <>{path === "/fantasy-desk" && <EditionStructuredData path="/fantasy-desk" />}<HubApp path={path} requestedWeek={slug[0] === "scores" ? (await searchParams)?.week : undefined} /></>;
 }

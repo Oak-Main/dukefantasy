@@ -80,7 +80,7 @@ export function materializeVerifiedSnapshot(root) {
   // the weekly job: each edition needed a same-week module to exist first.
   const editionWeek = snapshot.season.currentWeek;
   const coversWeek = editorial.week === editionWeek || editorial.week === editionWeek + 1;
-  if (sources.schedule.sourceAsOf !== snapshot.sourceAsOf || sources.injuries.sourceAsOf !== injuryResearch.as_of || (injuryResearch.week != null && injuryResearch.week > editionWeek) || !coversWeek) {
+  if (sources.schedule.sourceAsOf !== snapshot.sourceAsOf || sources.injuries.sourceAsOf !== injuryResearch.as_of || (injuryResearch.week != null && (!Number.isInteger(injuryResearch.week) || injuryResearch.week < 1 || injuryResearch.week > editionWeek)) || !coversWeek) {
     throw new Error("Verified snapshot and injury report date/week do not match");
   }
   for (const [key, board] of Object.entries(fantasyDesk)) {

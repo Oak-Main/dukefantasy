@@ -35,11 +35,26 @@ for (const path of routes) test(`Week ${editionWeek} identity, content, accessib
   await expect(main).toBeVisible();
   await expect(page.locator("main:visible")).toHaveCount(1);
   const text = await main.innerText();
+  if (path === "/" || path === "/fantasy-desk") {
+    expect(text).not.toContain("[[COPY:");
+    if (editorial.deskNote?.week === editionWeek && editorial.deskNote.asOf === manifest.sourceAsOf) {
+      expect(text).toContain(editorial.deskNote.lead);
+    }
+    expect(await page.title()).toContain(`Week ${editionWeek}`);
+    for (const field of ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]']) {
+      await expect(page.locator(field)).toHaveAttribute("content", new RegExp(`Week ${editionWeek}\\b`));
+    }
+    const structured = await page.locator('script[type="application/ld+json"]').evaluateAll(nodes => nodes.map(n => JSON.parse(n.textContent ?? "{}")));
+    const entry = structured.find(node => node["@type"] === "WebPage");
+    expect(entry?.name).toContain(`Week ${editionWeek}`);
+    expect(entry?.about.name).toBe(`2026 NFL Week ${editionWeek}`);
+    expect(entry?.dateModified).toBe(manifest.sourceAsOf);
+  }
   if (path === "/") {
     // The marquee must feature a team from the week in play.
     expect([...slateTeams].some((slug) => text.includes(teams.get(slug) ?? "__none__"))).toBe(true);
     expect(text).not.toMatch(/Week 7 complete/);
-    expect(text).toMatch(/\[\[COPY: week\d+-desk\]\]/);
+    await expect(main.getByRole("heading", { name: `Week ${editionWeek} Fantasy Desk` })).toBeVisible();
     expect(text).toMatch(/Current decision boards are not published/);
     const fullNameFits = () => page.locator("#marquee-title").evaluate(heading => {
       const range = document.createRange(); range.selectNodeContents(heading);
@@ -74,7 +89,8 @@ for (const path of routes) test(`Week ${editionWeek} identity, content, accessib
     expect(text).toMatch(/Official Week 8 designation: QUESTIONABLE/);
     expect(text).toMatch(/Week 8 inactives are not published/);
   } else if (path === "/fantasy-desk") {
-    expect(text).toMatch(new RegExp(`Week ${editionWeek} waiver/start-sit/trade and Week ${editionWeek - 1} rookie editions are not published`));
+    expect(text).toContain(`Week ${editionWeek} waiver board not published`);
+    expect(text).toContain(`Week ${editionWeek - 1} rookie usage not published`);
     expect(text).toMatch(/12-team, one-QB half-PPR/); expect(text).toMatch(/0 \/ 4/);
   } else if (path === "/stats") {
     expect(text).toMatch(/through Week 6/i); expect(text).toMatch(/Historical October 20/);

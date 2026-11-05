@@ -3532,10 +3532,10 @@
       "statusDetail": "Sun, November 8th at 1:00 PM EST",
       "awayScore": null,
       "homeScore": null,
-      "broadcast": "FOX",
+      "broadcast": "CBS",
       "venue": "Hard Rock Stadium",
       "networks": [
-        "FOX"
+        "CBS"
       ],
       "city": "Miami Gardens",
       "country": "USA",
@@ -3552,15 +3552,25 @@
       "verified_fields": [
         "opponents",
         "date",
-        "kickoff"
+        "kickoff",
+        "primary_network"
       ],
       "source_conflicts": [
         {
           "field": "primary_network",
           "espn": "FOX",
           "nflCom": "CBS",
-          "resolution": "espn_primary",
-          "note": "The two publishers name different national networks for this game."
+          "resolution": "nfl_and_broadcaster",
+          "review": {
+            "date": "2026-11-08",
+            "away": "detroit-lions",
+            "home": "miami-dolphins",
+            "network": "CBS",
+            "checkedAt": "2026-11-05T12:22:10Z",
+            "leagueUrl": "https://www.nfl.com/news/nfl-how-to-watch-week-9-nfl-games-schedule-madrid-game-details-and-more",
+            "teamUrl": "https://www.detroitlions.com/game-day/2026/reg-week9/lions-at-dolphins/",
+            "broadcasterUrl": "https://www.paramountplus.com/sneak-peak/nfl-lions-vs-dolphins-week-9-2026-how-to-watch/"
+          }
         }
       ],
       "weather": null
