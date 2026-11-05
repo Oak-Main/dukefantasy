@@ -365,7 +365,7 @@ for (const game of espnGames) {
   const sources = [nfl.weekUrl, espnUrl];
   const verifiedFields = ["opponents", "date", "kickoff"];
   if (tv.broadcast) verifiedFields.push("primary_network");
-  if ((game.status === "final") !== (nfl.status === "final")) problems.push(`${game.id}: final status disagrees`);
+  if (nfl.status && (game.status === "final") !== (nfl.status === "final")) problems.push(`${game.id}: final status disagrees`);
   if (game.status === "final" && (!nfl.slug || !Number.isInteger(game.awayScore) || !Number.isInteger(game.homeScore))) {
     problems.push(`${game.id}: final lacks scores or official game identity`);
   }
@@ -375,6 +375,7 @@ for (const game of espnGames) {
     const box = await fetchNflGame({ slug: nfl.slug, away: nfl.away, home: nfl.home });
     sources.unshift(box.url);
     recordSource(`game-${game.id}`, box.url, box.checkedAt, box.rawSha256, box.bytes);
+    if (nfl.status !== "final" && !box.postGame) problems.push(`${game.id}: NFL has no final designation`);
     if ((!box.totalRow && box.quarters < 4) || box.awayScore !== game.awayScore || box.homeScore !== game.homeScore) {
       problems.push(`${game.id}: final score disagrees (ESPN ${game.awayScore}-${game.homeScore}, NFL.com ${box.awayScore}-${box.homeScore})`);
     }

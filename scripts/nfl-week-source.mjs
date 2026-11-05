@@ -146,6 +146,16 @@ export async function fetchNflWeek({ year, week, timeoutMs = 25_000 }) {
   }
   if (raw.length === 0) throw new Error(`${url}: no weekly schedule payload found`);
 
+  // The streamed schedule can omit status. The accessible score link in the
+  // same page identifies its game by slug and explicitly labels final scores.
+  const finalSlugs = new Set();
+  for (const match of html.matchAll(/<a\b([^>]+)>([\s\S]*?)<\/a>/gi)) {
+    const href = match[1].match(/\bhref=["'](?:https:\/\/www\.nfl\.com)?\/games\/([\w-]+)\/?(?:[?#][^"']*)?["']/i);
+    if (!href) continue;
+    const label = match[1].match(/\baria-label=["']([^"']*)["']/i)?.[1] ?? match[2].replace(/<[^>]+>/g, " ");
+    if (/\bFINAL\b/i.test(label)) finalSlugs.add(href[1]);
+  }
+
   const games = raw
     .filter((game) => game.week === week)
     .map((game) => {
@@ -183,7 +193,8 @@ export async function fetchNflWeek({ year, week, timeoutMs = 25_000 }) {
         city: game.venue?.city ?? null,
         international: game.international === true,
         neutralSite: game.neutralSite === true,
-        status: status === "FINAL" ? "final" : status === "IN_PROGRESS" ? "in_progress" : "scheduled",
+        status: status === "FINAL" || finalSlugs.has(external.slug) ? "final" :
+          status === "IN_PROGRESS" ? "in_progress" : status === "SCHEDULED" ? "scheduled" : null,
         awayScore: score("away"),
         homeScore: score("home"),
       };
