@@ -157,6 +157,13 @@ for (const game of newlyPublished) {
   }
   assert.ok(evidence, `${game.id}: missing evidence`);
   assert.deepEqual(evidence.verifiedFields, game.verified_fields);
+  assert.deepEqual(evidence.networks, game.networks);
+  const simulcast = broadcastReviews[game.id];
+  if (simulcast?.simulcasts?.some(network => game.networks?.includes(network))) {
+    const capture = review.sources.find(row => row.url === simulcast.leagueUrl);
+    const stored = read("data/content-refresh/broadcast-evidence.json").find(row => row.url === simulcast.leagueUrl);
+    assert.ok(capture && stored && capture.sha256 === stored.sha256 && capture.checkedAt === stored.checkedAt, "Missing simulcast source receipt");
+  }
   assert.equal(evidence.status, game.status);
   assert.equal(evidence.officialWeek, game.week, `${game.id}: evidence week`);
   assert.equal(evidence.away, game.awaySlug, `${game.id}: evidence away team`);

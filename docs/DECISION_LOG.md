@@ -10,7 +10,7 @@ The week in play and the published edition week are now separate values. `season
 
 Week numbering is ESPN's official NFL week, cross-checked against NFL.com and nflverse: the 2026 season opened on Wednesday September 9, so Week 8 was October 29–November 2, Week 9 is November 5–9, and Week 10 is November 12–16. This edition publishes Week 10 (121 season finals through Week 8) and Week 9's fifteen fixtures with kickoff times and national television. Week 9's finals do not exist yet; the November 10 run backfills them.
 
-One publisher disagreement is recorded rather than hidden: for the November 8 Lions–Dolphins game ESPN names Fox and NFL.com names CBS. The league, the home-market broadcaster and Detroit confirm CBS. The game publishes CBS in participating markets and retains ESPN’s FOX listing in its source record.
+One publisher disagreement is recorded rather than hidden: for the November 8 Lions–Dolphins game ESPN names Fox and NFL.com names CBS. The NFL viewing guide, Detroit game center and Paramount+ listing confirm CBS in participating markets. The game publishes CBS in participating markets and retains ESPN’s FOX listing in its source record.
 
 ## October 28, 2026 — Week 8 evidence-preserving rollover
 

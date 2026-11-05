@@ -3941,7 +3941,8 @@
       "broadcast": "ESPN",
       "venue": "U.S. Bank Stadium",
       "networks": [
-        "ESPN"
+        "ESPN",
+        "ABC"
       ],
       "city": "Minneapolis",
       "country": "USA",

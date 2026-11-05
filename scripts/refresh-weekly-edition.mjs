@@ -370,6 +370,12 @@ for (const game of espnGames) {
       recordSource(`broadcast-${game.id}-${receipt.field}`, receipt.url, receipt.checkedAt, receipt.sha256, receipt.bytes);
     }
   }
+  const simulcast = broadcastReviews[game.id];
+  if (simulcast?.simulcasts?.some(network => tv.networks.includes(network)) && !sourceLedger.some(row => row.url === simulcast.leagueUrl)) {
+    const pin = broadcastEvidence.find(row => row.url === simulcast.leagueUrl);
+    if (!pin) throw new Error(`${game.id}: missing league simulcast receipt`);
+    recordSource(`simulcast-${game.id}`, pin.url, pin.checkedAt, pin.sha256, pin.bytes);
+  }
   if (tv.conflict) discrepancies.push({ eventId: game.id, week: game.week, ...tv.conflict, published: tv.broadcast });
   const sources = [nfl.weekUrl, espnUrl];
   const verifiedFields = ["opponents", "date", "kickoff"];

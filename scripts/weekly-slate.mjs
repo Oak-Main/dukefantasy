@@ -34,14 +34,17 @@ export function selectSlate(games, totalWeeks, previousEdition, requestedWeek) {
   return { weekInPlay, completedWeek, editionWeek };
 }
 
-/** Publish the primary assignment only. A shared secondary channel is insufficient. */
+/** A shared secondary does not establish the primary. Simulcasts require independent support. */
 export function resolveBroadcast(game, nflNetworks, ruling) {
   const espn = game.broadcast;
   const nfl = nflNetworks[0] ?? null;
-  if (espn && espn === nfl) return { broadcast: espn, networks: [espn], conflict: null };
+  const sameGame = ruling && ruling.date === game.date && ruling.away === game.awaySlug && ruling.home === game.homeSlug && ruling.network === nfl;
+  if (espn && espn === nfl) {
+    const verified = new Set([...nflNetworks, ...(sameGame ? ruling.simulcasts ?? [] : [])]);
+    return { broadcast: espn, networks: [...new Set([espn, ...(game.networks ?? []).filter(name => verified.has(name))])], conflict: null };
+  }
   if (!espn && !nfl) return { broadcast: null, networks: [], conflict: null };
-  const corroborated = ruling && ruling.date === game.date && ruling.away === game.awaySlug &&
-    ruling.home === game.homeSlug && ruling.network === nfl;
+  const corroborated = sameGame && Boolean(ruling.broadcasterUrl);
   const broadcast = corroborated ? nfl : null;
   return {
     broadcast,

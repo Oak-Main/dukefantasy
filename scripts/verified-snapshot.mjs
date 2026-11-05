@@ -26,6 +26,7 @@ export function materializeVerifiedSnapshot(root) {
   };
   if (manifest.sourceCutoffs) {
     if ((!isEvidenceTimestamp(manifest.sourceCutoffs.coreDatasetUtc) || Date.parse(manifest.sourceCutoffs.coreDatasetUtc) > cutoff) || manifest.sourceCutoffs.completeInjuryReviewDate !== injuryResearch.as_of) throw new Error("Module cutoff identities disagree with the publication inputs");
+    checkedTimestamp(manifest.sourceCutoffs.coreDatasetUtc, manifest.sourceAsOf);
     checkedTimestamp(manifest.sourceCutoffs.targetedInjuryUtc);
     for (const row of injuryResearch.watch) if (row.observed_at != null && Date.parse(row.observed_at) > Date.parse(manifest.sourceCutoffs.targetedInjuryUtc)) throw new Error("Injury observation exceeds its targeted cutoff");
   }
