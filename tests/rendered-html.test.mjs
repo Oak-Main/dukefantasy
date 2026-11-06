@@ -379,3 +379,22 @@ test("image endpoints never redirect to another origin", async () => {
     }
   }
 });
+
+
+test("policy routes render their own content while optional GA4 is paused", async () => {
+  for (const [path, heading] of [
+    ["/cookies", /Cookies and browser storage/],
+    ["/contact", /Contact Duke Fantasy/],
+    ["/privacy", /Application Google Analytics is paused/],
+  ]) {
+    const response = await fetchRoute(path);
+    assert.equal(response.status, 200, path);
+    const body = await response.text();
+    assert.match(body, heading, path);
+    assert.doesNotMatch(body, /googletagmanager\.com\/gtag|gtag\('config'/, path);
+  }
+  const disclosure = await (await fetchRoute("/affiliate-disclosure")).text();
+  assert.match(disclosure, /EconomyBookings/);
+  assert.match(disclosure, /Qeeq/);
+  assert.doesNotMatch(disclosure, /TRACKED AND EARNING|12.5-14.5%/);
+});
