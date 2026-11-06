@@ -36,6 +36,8 @@ const staticRoots = new Set([
   "partnerships",
   "media-kit",
   "privacy",
+  "cookies",
+  "contact",
   "terms",
   "affiliate-disclosure",
   "responsible-gaming",

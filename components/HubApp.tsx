@@ -1070,8 +1070,20 @@ function PolicyPage({ kind }: { kind: string }) {
     privacy: {
       eyebrow: "DRAFT FOR COUNSEL",
       title: "Privacy notice — preview draft",
-      intro: "This site stores only device-local mode and favorite preferences. No production analytics, email, advertising, or precise location provider is active.",
+      intro: "The application saves mode and favourite-team choices in this browser. Application Google Analytics is paused while visitor controls are reviewed. Hosting and CDN services require a separate data inventory.",
       sections: [["Data minimization", "Future services may process account identity, newsletter email, coarse consent attestation, and short-lived abuse logs only for stated purposes."], ["Your choices", "Production activation requires access, correction, deletion, consent withdrawal, and processor workflows reviewed by counsel."], ["Privacy contact", "Privacy questions, access requests, and deletion requests: privacy@dukefantasy.com."]],
+    },
+    cookies: {
+      eyebrow: "BROWSER STORAGE",
+      title: "Cookies and browser storage",
+      intro: "The application stores choices in this browser. Hosting and CDN cookies require a separate inventory.",
+      sections: [["Application preferences", "cfb-hub:favorites stores your selected teams. cfb-hub:mode and cfb-hub:disclosure-version store the optional analysis-mode choice and disclosure version."], ["Analytics", "Application Google Analytics is paused. The owner must confirm platform-managed telemetry, purposes and retention before completing this notice."], ["Your controls", "You can remove saved preferences in your browser settings. Privacy questions can be sent to the published address privacy@dukefantasy.com."]],
+    },
+    contact: {
+      eyebrow: "PUBLISHED CONTACTS",
+      title: "Contact Duke Fantasy",
+      intro: "Use the published addresses below for the relevant request.",
+      sections: [["Privacy requests", <a key="privacy" href="mailto:privacy@dukefantasy.com">privacy@dukefantasy.com</a>], ["General questions", <a key="general" href="mailto:hello@dukefantasy.com">hello@dukefantasy.com</a>], ["Outstanding owner verification", "The published privacy and hello addresses have enabled gateway routes to the owner. Response timing, the publisher service address and the rights-response process require owner verification."]],
     },
     terms: {
       eyebrow: "DRAFT FOR COUNSEL",
@@ -1082,8 +1094,8 @@ function PolicyPage({ kind }: { kind: string }) {
     "affiliate-disclosure": {
       eyebrow: "COMMERCIAL TRANSPARENCY",
       title: "Affiliate disclosure",
-      intro: "TicketNetwork links are TRACKED AND EARNING - every click carries our Impact campaign attribution (12.5-14.5% per sale). TicketSmarter’s approval is still pending: its links go directly to its public ticket searches until activated, then convert to tracked referrals automatically.",
-      sections: [["How links are labeled", "Partner links carry sponsored/nofollow attributes and are labeled near the action. Tracked and pending states are labeled honestly — a pending link is marked as such."], ["Editorial firewall", "Commercial compensation will never determine model probabilities, editorial ranking, source verification, or correction outcomes."], ["Partner swaps", "If a partner is denied or retired, its links are removed or swapped without touching editorial content — the affiliate layer is a single configuration module."]],
+      intro: "The Watch page includes ticket and travel referrals. Duke Fantasy may earn a commission on qualifying purchases through tracked links. A tracked destination establishes a referral path; it does not establish earnings or a commission rate.",
+      sections: [["Travel referrals", "Configured travel destinations include EconomyBookings and Qeeq car searches through Travelpayouts. Check the destination and nearby relationship notice before following a commercial link."], ["How links are labeled", "Partner links carry sponsored/nofollow attributes and are labeled near the action. Tracked and pending states are labeled honestly — a pending link is marked as such."], ["Editorial firewall", "Commercial compensation will never determine model probabilities, editorial ranking, source verification, or correction outcomes."], ["Partner swaps", "If a partner is denied or retired, its links are removed or swapped without touching editorial content — the affiliate layer is a single configuration module."]],
     },
     "responsible-gaming": {
       eyebrow: "INFORMATIONAL MODELS ONLY",
@@ -1112,7 +1124,7 @@ function CommercialPage({ kind }: { kind: "advertise" | "partnerships" | "media-
       <PageHeading
         eyebrow="PARTNERSHIP STUDIO"
         title={isAdvertise ? "Reach fans after the utility, never before it." : isKit ? "A trust-first media system." : "Build useful Sunday partnerships."}
-        description="No ads, partner IDs, official-status claims, applications, agreements, or paid campaigns are active in this preview."
+        description="Display-ad and partnership inquiry features are staged. Existing ticket and travel referrals are described in the affiliate disclosure."
       />
       <section className="commercial-grid content-section">
         {[
@@ -1372,7 +1384,7 @@ export function HubApp({ path = "/", requestedWeek }: { path?: string; requested
   else if (root === "methodology") content = <MethodologyPage />;
   else if (root === "data-sources") content = <DataSourcesPage />;
   else if (root === "corrections") content = <CorrectionsPage />;
-  else if (["about", "privacy", "terms", "affiliate-disclosure", "responsible-gaming"].includes(root)) content = <PolicyPage kind={root} />;
+  else if (["about", "privacy", "cookies", "contact", "terms", "affiliate-disclosure", "responsible-gaming"].includes(root)) content = <PolicyPage kind={root} />;
   else if (["advertise", "partnerships", "media-kit"].includes(root)) content = <CommercialPage kind={root as "advertise" | "partnerships" | "media-kit"} />;
   else if (root === "design-system") content = <DesignSystemPage />;
   else content = <NotFoundPage />;
