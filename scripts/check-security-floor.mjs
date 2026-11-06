@@ -6,9 +6,10 @@
  *   GHSA-xqc2-xf4c-x3h3  React Server Components RCE (critical)
  *   GHSA-h3gv-c5rc-p453  Denial of service in server functions
  *     react-server-dom-webpack / -turbopack / -parcel <= 19.2.8 and 19.3.0 are
- *     vulnerable; fixed in 19.0.9 / 19.1.10 / 19.2.9 / 19.3.1. This repo stays
- *     on the 19.2 line, so react, react-dom and react-server-dom-webpack must
- *     all be >= 19.2.9.
+ *     vulnerable; fixed in 19.0.9 / 19.1.10 / 19.2.9 / 19.3.1. This repo moved
+ *     to 19.3.1 (Nov 2026) with vinext 1.4.3, which peer-requires it; 19.3.0
+ *     stays denied. react, react-dom and react-server-dom-webpack must all be
+ *     >= 19.2.9 and must not be 19.3.0.
  *   GHSA-8969-277p-8rrm / GHSA-2956-r8mj-w5c4  vinext < 1.2.0, fixed in vinext
  *     1.2.0 together with @vitejs/plugin-rsc >= 0.5.37. This script asks for
  *     @vitejs/plugin-rsc >= 0.5.38, the first release whose notes record the
@@ -40,6 +41,8 @@ const VINEXT_FLOOR = "1.2.0";
 const RSDW_PACKAGES = ["react-server-dom-webpack", "react-server-dom-turbopack", "react-server-dom-parcel"];
 // 19.3.0 is vulnerable even though it sorts above the 19.2.9 floor.
 const KNOWN_VULNERABLE = new Map([["19.3.0", "19.3.0 is vulnerable (fixed in 19.3.1)"]]);
+// react and react-dom ship in lockstep with RSDW, so 19.3.0 is refused for all of them.
+const DENY_KNOWN_VULNERABLE = [...RSDW_PACKAGES, "react", "react-dom"];
 
 function parse(version) {
   const match = /^(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z.-]+))?(?:\+.*)?$/.exec(String(version));
@@ -111,7 +114,7 @@ function requireAtLeast(name, floor, { required = true } = {}) {
   for (const copy of copies) {
     if (compareVersions(copy.version, floor) < 0) {
       failures.push(`${name}@${copy.version} at ${relative(copy.path)} is below the security floor ${label}`);
-    } else if (KNOWN_VULNERABLE.has(copy.version) && RSDW_PACKAGES.includes(name)) {
+    } else if (KNOWN_VULNERABLE.has(copy.version) && DENY_KNOWN_VULNERABLE.includes(name)) {
       failures.push(`${name}@${copy.version} at ${relative(copy.path)}: ${KNOWN_VULNERABLE.get(copy.version)}`);
     } else {
       notes.push(`${name}@${copy.version} at ${relative(copy.path)} >= ${label}`);
