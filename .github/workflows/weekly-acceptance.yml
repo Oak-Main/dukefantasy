@@ -24,7 +24,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npx playwright install --with-deps chromium webkit
+      - run: bash scripts/install-ci-browsers.sh
       - run: npm run cf:types
       - run: npm run check:security-floor
       - run: npm run dataset:build && npm run weekly:verify

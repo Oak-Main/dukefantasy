@@ -33,7 +33,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npx playwright install --with-deps chromium webkit
+      - run: bash scripts/install-ci-browsers.sh
       - name: Check current NFL and ESPN source agreement
         run: node scripts/refresh-weekly-edition.mjs --week= --dry-run
       - run: npm run cf:types && npm run dataset:verify:pinned && npm run release:preflight
