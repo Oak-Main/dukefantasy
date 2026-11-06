@@ -149,6 +149,8 @@ test("Tuesday selects Week 10 only after all Week 9 games finish; a preview may 
   assert.throws(() => selectSlate(games, 18, 10, 12));
   assert.throws(() => selectSlate(games, 18, 10, 9));
   assert.deepEqual(publicationWindow(null, new Date("2026-11-10T07:59:00Z")), { day: "2026-11-09", ended: false });
+  assert.deepEqual(publicationWindow(null, new Date("2026-11-10T14:00:00Z")), { day: "2026-11-10", ended: false });
+  assert.throws(() => publicationWindow("2026-11-10", new Date("2026-11-10T07:59:00Z")), /future edition/);
   assert.equal(publicationWindow(null, new Date("2027-02-16T07:59:59Z")).ended, false);
   assert.equal(publicationWindow(null, new Date("2027-02-16T08:00:00Z")).ended, true);
   assert.throws(() => publicationWindow("2026-02-30"));
@@ -200,6 +202,19 @@ test("November 10 replay writes a verifiable draft, rejects conflicting finals, 
     assert.equal(badModule.status, 1); assert.deepEqual(read("data/content-refresh/current.json"), entry);
     assert.equal(existsSync(join(root, "data/content-refresh/2026-11-10")), false);
     write("data/injury-research/current.json", injuryInput);
+    // Thursday's one final must not mark the whole week complete. Run the
+    // actual generator in this isolated tree, then restore its input pointers.
+    const editorialInput = read("data/content-refresh/current-editorial.json");
+    const partial = run("refresh-weekly-edition.mjs", ["--week="], { FIXTURE_PARTIAL_FINALS: "true" });
+    assert.equal(partial.status, 0, partial.stdout + partial.stderr);
+    const partialSnapshot = read("data/content-refresh/2026-11-10/snapshot.json");
+    assert.equal(partialSnapshot.season.currentWeek, 9);
+    assert.equal(partialSnapshot.schedule.filter(g => g.week === 9 && g.status === "final").length, 1);
+    assert.equal(read("data/content-refresh/2026-11-10/review.json").completedWeek, 8);
+    assert.equal(read("data/injury-research/current.json").as_of, injuryInput.as_of);
+    rmSync(join(root, "data/content-refresh/2026-11-10"), { recursive: true });
+    write("data/content-refresh/current.json", entry);
+    write("data/content-refresh/current-editorial.json", editorialInput);
     const ok = run("refresh-weekly-edition.mjs", ["--week="]);
     assert.equal(ok.status, 0, ok.stdout + ok.stderr);
     const dir = "data/content-refresh/2026-11-10";
@@ -213,7 +228,9 @@ test("November 10 replay writes a verifiable draft, rejects conflicting finals, 
       const args = script === "verify-nfl-dataset.mjs" ? ["--evidence", dir + "/espn-verification.json"] : [];
       const gate = run(script, args); assert.equal(gate.status, 0, gate.stdout + gate.stderr);
     }
+    const beforeRetry = readFileSync(join(root, dir, "snapshot.json"), "utf8");
     const retry = run("refresh-weekly-edition.mjs"); assert.equal(retry.status, 0); assert.match(retry.stdout, /already has an edition/);
+    assert.equal(readFileSync(join(root, dir, "snapshot.json"), "utf8"), beforeRetry);
     const stop = run("refresh-weekly-edition.mjs", [], { FIXTURE_CLOCK: "2027-02-16T14:00:00Z" });
     assert.equal(stop.status, 0); assert.match(stop.stdout, /window closed/);
   } finally { rmSync(root, { recursive: true, force: true }); }

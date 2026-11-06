@@ -1,5 +1,9 @@
 # Assumptions register
 
+## November 6, 2026 release scope
+
+The Week 10 edition is a November 12–16 preview, while Week 9 is only partly complete. The November 6 schedule review does not renew the October 20 full injury review, dated Week 8 designations, or other historical module dates. Jacksonville–Baltimore's November 5 pregame designations establish no Week 10 availability. Tuesday November 10 readiness is a tested capability until a real scheduled run writes verified data to draft #77; a fixture replay or manual dispatch is not that observation.
+
 October 28 Week 8 release assumptions: 12-team, one-QB half-PPR redraft is a declared planning format, not knowledge of a user's roster. No dated ownership snapshot is available, so waiver eligibility and all four current fantasy rails remain unpublished. The injury cadence is an editorial plan, not a job or a claim that a check occurred. Full statistics/roster/depth and five watched film reviews remain unavailable. See `docs/releases/2026-10-28-week8.md` for source cutoff, exceptions, production binding and release gates.
 
 | ID | Assumption | Rationale | Risk/mitigation |

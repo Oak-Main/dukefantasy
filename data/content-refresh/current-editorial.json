@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-05",
+  "asOf": "2026-11-06",
   "fetchedAt": null,
   "week": 10,
   "byes": [
@@ -7321,7 +7321,7 @@
     "Five film briefs are research assignments; no footage watched or tactical observation published. DFS has zero immutable pregame projections and zero gradeable picks."
   ],
   "verification": "At least two distinct publishers must corroborate factual fields. Syndicated/linked reports do not establish independent reporting. Two-publisher corroboration is the standard used, not a claim of independent upstream data collection. Editorial judgments are labeled; field-level exceptions and unsupported claims are held.",
-  "compiledAt": "2026-11-05T13:01:13.464Z",
+  "compiledAt": "2026-11-06T08:02:17.767Z",
   "collectedOn": "2026-10-20",
   "reserveStatuses": [
     {
@@ -7784,9 +7784,9 @@
   ],
   "moduleSources": {
     "schedule": {
-      "sourceAsOf": "2026-11-05",
-      "fetchedAt": "2026-11-05T09:53:12.051Z",
-      "compiledAt": "2026-11-05T09:53:12.051Z"
+      "sourceAsOf": "2026-11-06",
+      "fetchedAt": "2026-11-06T08:02:17.767Z",
+      "compiledAt": "2026-11-06T08:02:17.767Z"
     },
     "injuries": {
       "sourceAsOf": "2026-10-20",
@@ -8933,7 +8933,7 @@
   ],
   "deskNote": {
     "week": 10,
-    "asOf": "2026-11-05",
+    "asOf": "2026-11-06",
     "lead": "Chicago, Denver, Philadelphia and Tampa Bay are on bye in Week 10. Set a Thursday replacement for any Commander or Giant you plan to start, and move a Sunday or Monday player into your flex spot to keep a late swap available.",
     "sections": [
       {
@@ -8951,9 +8951,17 @@
         ]
       },
       {
-        "title": "Thursday injury decisions belong to Week 9",
-        "text": "For Jacksonville at Baltimore on November 5, Baltimore ruled out quarterbacks Lamar Jackson and Tyler Huntley. Jacksonville listed running back Bhayshul Tuten as questionable. If Tuten is in your lineup, check the official inactives before the 8:15 p.m. ET kickoff and have a replacement ready. Week 10 availability still awaits next week\u2019s reports.",
+        "title": "Jacksonville\u2013Baltimore is a completed Week 9 game",
+        "text": "Jacksonville beat Baltimore 33\u201310 on Thursday, November 5, moving the Jaguars to 6\u20132 and the Ravens to 4\u20135. Before that Week 9 game, Baltimore ruled out quarterbacks Lamar Jackson and Tyler Huntley, and Jacksonville listed running back Bhayshul Tuten as questionable. Those were pregame designations for the completed game, not Week 10 availability reports. Week 10 availability remains unverified pending next week\u2019s official reports.",
         "sources": [
+          {
+            "label": "NFL Jacksonville\u2013Baltimore final and box score",
+            "url": "https://www.nfl.com/games/jaguars-at-ravens-2026-reg-9"
+          },
+          {
+            "label": "ESPN Jacksonville\u2013Baltimore final",
+            "url": "https://www.espn.com/nfl/game/_/gameId/401873037/jaguars-ravens"
+          },
           {
             "label": "NFL Week 9 designations",
             "url": "https://www.nfl.com/news/nfl-week-9-injury-report-2026-season"

@@ -8,7 +8,9 @@ globalThis.Date = class extends RealDate {
   static now() { return now; }
 };
 const teams = new Map(baseline.teams.map(team => [team.slug, team]));
-const games = baseline.schedule.map(game => game.week === 9 ? { ...game, status: "final", awayScore: 17, homeScore: 13 } : game);
+const games = baseline.schedule.map(game => game.week === 9 &&
+  (process.env.FIXTURE_PARTIAL_FINALS !== "true" || game.id === "401873037") ?
+  { ...game, status: "final", awayScore: 17, homeScore: 13 } : game);
 const event = game => ({
   id: game.id, week: { number: game.week }, date: game.kickoffUtc,
   status: { type: { state: game.status === "final" ? "post" : "pre", completed: game.status === "final", detail: game.status === "final" ? "Final" : game.statusDetail } },
@@ -39,7 +41,7 @@ globalThis.fetch = async input => {
   }
   if (url.pathname.endsWith("/standings")) {
     const rows = structuredClone(baseline.standings);
-    for (const g of games.filter(g => g.week === 9)) {
+    for (const g of games.filter(g => g.week === 9 && g.status === "final")) {
       rows[g.awaySlug].wins++; rows[g.homeSlug].losses++;
       rows[g.awaySlug].pf += 17; rows[g.homeSlug].pa += 17;
       rows[g.awaySlug].pa += 13; rows[g.homeSlug].pf += 13;
