@@ -176,7 +176,7 @@ test("November 10 replay writes a verifiable draft, rejects conflicting finals, 
   const write = (path, value) => { mkdirSync(join(root, path, ".."), { recursive: true }); writeFileSync(join(root, path), JSON.stringify(value)); };
   const read = path => JSON.parse(readFileSync(join(root, path), "utf8"));
   const run = (script, args = [], env = {}) => spawnSync(process.execPath,
-    ["--import", join(source, "tests/fixtures/weekly-feeds.mjs"), "scripts/" + script, ...args],
+    ["--import", new URL("./fixtures/weekly-feeds.mjs", import.meta.url).href, "scripts/" + script, ...args],
     { cwd: root, env: { ...process.env, ...env }, encoding: "utf8", timeout: 20_000 });
   try {
     cpSync(join(source, "scripts"), join(root, "scripts"), { recursive: true });
