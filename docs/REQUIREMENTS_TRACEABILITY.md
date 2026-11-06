@@ -180,3 +180,7 @@ Dependabot's Vite 8.3.5 bump (#30) could not land alone: under vinext 1.2.0 the 
 
 
 Policy reconciliation adds cookies/contact routes, pauses application GA4 and reflects ticket/travel referrals. Rendered-HTML regression checks cover the actual route responses.
+
+## November 6, 2026 · Deployment credential gate
+
+The release requirement is a verified credential before any production upload: two read-only issuer requests, active status, provable expiry at least 90 minutes ahead, exact account match, readable existing deployment, fail-closed on an absent ownership kind and on TLS, clock, size or malformed-response failures. Evidence is the 38 isolated checker tests running inside the acceptance gates plus a sanitized live result recorded at provisioning time; the live pass never substitutes for the authorized deployment that follows it.

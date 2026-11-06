@@ -21,7 +21,7 @@
     "start": "vinext start",
     "typecheck": "tsc --noEmit",
     "check:security-floor": "node scripts/check-security-floor.mjs",
-    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts tests/week7-evidence.test.mjs tests/week7-publication-dates.test.mjs tests/release-response.test.mjs tests/weekly-publication.test.mjs tests/security-floor.test.mjs tests/pinned-evidence.test.mjs",
+    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/homepage.test.ts tests/live-data.test.ts tests/nfl-scoreboard.test.ts tests/schedule-integrity.test.ts tests/live-scoreboard.test.ts tests/live-scoreboard-store.test.ts tests/content-refresh.test.ts tests/week7-evidence.test.mjs tests/week7-publication-dates.test.mjs tests/release-response.test.mjs tests/weekly-publication.test.mjs tests/security-floor.test.mjs tests/pinned-evidence.test.mjs tests/verify-cloudflare-deploy-access.test.mjs",
     "test:integration": "node --test tests/rendered-html.test.mjs",
     "test:e2e": "node --test tests/rendered-html.test.mjs",
     "test:a11y": "node --test tests/a11y.test.mjs",

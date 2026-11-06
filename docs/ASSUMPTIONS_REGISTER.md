@@ -177,3 +177,7 @@ Dependabot's Vite 8.3.5 bump (#30) could not land alone: under vinext 1.2.0 the 
 
 
 Mailbox monitoring, legal entity/service address, platform telemetry and qualified policy review remain unresolved. Existing published mailbox strings are reused without a delivery claim.
+
+## November 6, 2026 · Deployment credential ownership kind
+
+The kind selector (`user` or `account`) is set from the credential's issuer metadata — how it was minted — never by sending the same credential to several verification endpoints. The read-only checker proves current validity, expiry and target read access; it does not prove write permission, and a 401/403 can mean revocation, scope, SSO or policy rather than expiry. Ninety minutes of remaining lifetime covers the 40-minute release job with recovery margin; extend the policy if the process needs more. A token whose issuer omits an expiry fails closed as `EXPIRY_UNPROVEN`.
