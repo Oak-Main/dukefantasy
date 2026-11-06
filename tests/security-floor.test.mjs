@@ -31,3 +31,11 @@ test("security traversal terminates on a linked dependency cycle", () => withTre
   const parent = put(modules, "parent", "1.0.0"); symlinkSync(modules, join(parent, "node_modules"), process.platform === "win32" ? "junction" : "dir");
   const result = run(); assert.equal(result.status, 0, result.stderr); assert.match(result.stdout, /Security floor: PASS/);
 }));
+for (const name of ["react", "react-dom", "react-server-dom-webpack"]) test(`security floor refuses ${name}@19.3.0 although it sorts above the floor`, () => withTree(({ modules, put, run }) => {
+  put(modules, name, "19.3.0");
+  const result = run(); assert.equal(result.status, 1); assert.match(result.stderr, new RegExp(`${name}@19\\.3\\.0`));
+}));
+test("security floor accepts the patched 19.3.1 line", () => withTree(({ modules, put, run }) => {
+  for (const name of ["react", "react-dom", "react-server-dom-webpack"]) put(modules, name, "19.3.1");
+  const result = run(); assert.equal(result.status, 0, result.stderr);
+}));

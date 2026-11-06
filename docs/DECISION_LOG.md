@@ -259,3 +259,7 @@ Production uses a separate manual dispatch bound to the reviewed main SHA and th
 ## November 5, 2026 · Clean Worker builds
 
 A production preflight reached Wrangler’s type writer before its output directory existed. The npm lifecycle now creates `.wrangler` before type generation. Pull-request acceptance runs the same Wrangler command on a clean checkout.
+
+## November 5, 2026 · vinext 1.4.3, Vite 8.3.5, React 19.3.1
+
+Dependabot's Vite 8.3.5 bump (#30) could not land alone: under vinext 1.2.0 the Worker failed to start with `No such module "_next/static/__vinext_cacheability_manifest.js"`, failing all 19 rendered-HTML tests. vinext 1.4.3 fixes that and, like every release from 1.2.1, peer-requires React ^19.3.1, so react, react-dom and react-server-dom-webpack move to 19.3.1, the patched 19.3 release. The security floor now refuses 19.3.0 for react and react-dom as well as the RSC packages. The postcss override moves from 8.5.25 to 8.5.32 because Vite 8.3.5 requires ^8.5.30. The October 29 compatibility measures (asset-only `/_next/image`, `htmlLimitedBots`, no root loading boundary) stay in place and their rendered tests pass unchanged.

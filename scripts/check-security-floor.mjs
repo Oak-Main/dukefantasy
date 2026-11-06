@@ -41,6 +41,8 @@ const VINEXT_FLOOR = "1.2.0";
 const RSDW_PACKAGES = ["react-server-dom-webpack", "react-server-dom-turbopack", "react-server-dom-parcel"];
 // 19.3.0 is vulnerable even though it sorts above the 19.2.9 floor.
 const KNOWN_VULNERABLE = new Map([["19.3.0", "19.3.0 is vulnerable (fixed in 19.3.1)"]]);
+// react and react-dom ship in lockstep with RSDW, so 19.3.0 is refused for all of them.
+const DENY_KNOWN_VULNERABLE = [...RSDW_PACKAGES, "react", "react-dom"];
 
 function parse(version) {
   const match = /^(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z.-]+))?(?:\+.*)?$/.exec(String(version));
@@ -112,7 +114,7 @@ function requireAtLeast(name, floor, { required = true } = {}) {
   for (const copy of copies) {
     if (compareVersions(copy.version, floor) < 0) {
       failures.push(`${name}@${copy.version} at ${relative(copy.path)} is below the security floor ${label}`);
-    } else if (KNOWN_VULNERABLE.has(copy.version) && RSDW_PACKAGES.includes(name)) {
+    } else if (KNOWN_VULNERABLE.has(copy.version) && DENY_KNOWN_VULNERABLE.includes(name)) {
       failures.push(`${name}@${copy.version} at ${relative(copy.path)}: ${KNOWN_VULNERABLE.get(copy.version)}`);
     } else {
       notes.push(`${name}@${copy.version} at ${relative(copy.path)} >= ${label}`);
