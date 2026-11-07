@@ -177,3 +177,11 @@ Dependabot's Vite 8.3.5 bump (#30) could not land alone: under vinext 1.2.0 the 
 
 
 Mailbox monitoring, legal entity/service address, platform telemetry and qualified policy review remain unresolved. Existing published mailbox strings are reused without a delivery claim.
+
+## November 6, 2026 · Deployment credential ownership kind
+
+The kind selector (`user` or `account`) is set from the credential's issuer metadata — how it was minted — never by sending the same credential to several verification endpoints. The read-only checker proves current validity, expiry and target read access; it does not prove write permission, and a 401/403 can mean revocation, scope, SSO or policy rather than expiry. Ninety minutes of remaining lifetime covers the 40-minute release job with recovery margin; extend the policy if the process needs more. A token whose issuer omits an expiry fails closed as `EXPIRY_UNPROVEN`.
+
+## November 6, 2026 · dukefantasy credential classification
+
+The minted credential `dukefantasy-deploy-2026-11` is user-owned because it was created under My Profile — the minting context is the kind evidence, confirmed live by the user-token verifier. The Codex destination receives the identical value rather than a second token; rotating it affects both destinations at once, which is accepted because they serve the same release function. The GitHub deploy token handed to the Codex environment is the vault's existing fine-grained `GITHUB_DEPLOY_TOKEN` (org-wide, no Secrets/Variables write) per owner instruction; it must only be used for dukefantasy repository work and should be narrowed or rotated once this integration stabilizes.

@@ -45,10 +45,12 @@ jobs:
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          DUKEFANTASY_CLOUDFLARE_TOKEN_KIND: ${{ vars.DUKEFANTASY_CLOUDFLARE_TOKEN_KIND }}
         run: |
           set -euo pipefail
           test "$CLOUDFLARE_ACCOUNT_ID" = "820e7cee61fccc60d14c8e20bc686942"
           test -n "$CLOUDFLARE_API_TOKEN"
+          node --use-env-proxy scripts/verify-cloudflare-deploy-access.mjs
           npx --no-install wrangler deployments list --config wrangler.deploy.jsonc
           npx --no-install wrangler deploy --config wrangler.deploy.jsonc
       - name: Verify the live Worker and both custom domains
