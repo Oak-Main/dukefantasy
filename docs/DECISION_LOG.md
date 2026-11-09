@@ -1,5 +1,9 @@
 # Decision log
 
+## November 9, 2026 — Replace the merged November 10 draft reservation
+
+PR #77 merged its reservation note before the scheduled run. The weekly workflow now prefers an open review and ignores merged PR history when selecting a destination. An open non-draft PR or a closed unmerged PR without an open replacement still stops the workflow. The branch-content and same-date verified-facts checks continue to protect existing edits. Use an open draft on `automation/weekly-edition-2026-11-10` under the existing Actions policy.
+
 ## November 6, 2026 — Week 9 Thursday final within the Week 10 preview
 
 PR #81's first acceptance run (42185413038) timed out in browser dependency installation before application checks. The completed log shows 114 MB of Ubuntu dependencies arriving from the Azure HTTP mirror at approximately 40 KB/s. Acceptance and production now share `scripts/install-ci-browsers.sh`, which selects Ubuntu's official HTTPS archive for those Azure mirror entries while retaining suite/component selections, signing keys, TLS verification, and the complete Chromium/WebKit installation and release gates. The weekly draft workflow does not install browsers and is unchanged.
