@@ -65,8 +65,8 @@ jobs:
           compare="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/main...$branch?expand=1"
           # Prefer an active review. A merged reservation is history, while a
           # deliberately closed PR still requires maintainer intervention.
-          pr=$(gh pr list --base main --head "$branch" --state all --limit 100 --json state,isDraft,url \
-            --jq '(first(.[] | select(.state == "OPEN")) // first(.[] | select(.state == "CLOSED"))) | select(.) | [.state,.isDraft,.url] | @tsv')
+          pr=$(gh pr list --base main --head "$branch" --state all --limit 100 --json state,isDraft,url,mergedAt \
+            --jq '(first(.[] | select(.state == "OPEN")) // first(.[] | select(.state == "CLOSED" and .mergedAt == null))) | select(.) | [.state,.isDraft,.url] | @tsv')
           if [[ -n "$pr" && "$pr" != $'OPEN\ttrue\t'* ]]; then
             echo "::error::The existing PR is closed or already in review. Its branch was left intact."
             exit 1
