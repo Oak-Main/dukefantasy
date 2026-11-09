@@ -1,5 +1,7 @@
 # Requirements traceability
 
+Weekly draft delivery: `.github/workflows/weekly-nfl-edition.yml` selects the open draft on the dated automation branch even if its earlier reservation was merged. It still holds a ready-for-review or closed unmerged candidate. Only an actual schedule run with dated evidence establishes delivery.
+
 November 6 Week 10 correction: `data/content-refresh/2026-11-06/{snapshot.json,review.json,espn-verification.json,pr-body.md}` preserve the generated NFL/ESPN evidence for Jacksonville 33–10 Baltimore, recalculated standings and the retained Detroit–Miami CBS ruling. `data/content-refresh/current-editorial.json` dates the completed-game desk note without redating medical modules. `tests/weekly-publication.test.mjs` and `tests/fixtures/weekly-feeds.mjs` exercise partial finals, Pacific date selection, source disagreement, dated injuries, duplicate runs and the February 15 cutoff. Existing browser release gates cover Week 10 page/metadata/JSON-LD identity. Production and the November 10 scheduled draft run require separate live receipts.
 
 Current NFL release verification uses `scripts/verify-weekly-edition.mjs`, `tests/weekly-publication.test.mjs` and `.github/workflows/weekly-acceptance.yml`. The October 28 document records the historical Week 8 procedure.
