@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-10",
   "fetchedAt": null,
   "week": 10,
   "byes": [
@@ -7321,7 +7321,7 @@
     "Five film briefs are research assignments; no footage watched or tactical observation published. DFS has zero immutable pregame projections and zero gradeable picks."
   ],
   "verification": "At least two distinct publishers must corroborate factual fields. Syndicated/linked reports do not establish independent reporting. Two-publisher corroboration is the standard used, not a claim of independent upstream data collection. Editorial judgments are labeled; field-level exceptions and unsupported claims are held.",
-  "compiledAt": "2026-11-06T08:02:17.767Z",
+  "compiledAt": "2026-11-11T03:20:24.319Z",
   "collectedOn": "2026-10-20",
   "reserveStatuses": [
     {
@@ -7784,9 +7784,9 @@
   ],
   "moduleSources": {
     "schedule": {
-      "sourceAsOf": "2026-11-06",
-      "fetchedAt": "2026-11-06T08:02:17.767Z",
-      "compiledAt": "2026-11-06T08:02:17.767Z"
+      "sourceAsOf": "2026-11-10",
+      "fetchedAt": "2026-11-11T03:20:24.319Z",
+      "compiledAt": "2026-11-11T03:20:24.319Z"
     },
     "injuries": {
       "sourceAsOf": "2026-10-20",
