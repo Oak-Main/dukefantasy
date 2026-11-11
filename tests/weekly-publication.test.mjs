@@ -5,7 +5,7 @@ import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { publicationWindow, resolveBroadcast, selectSlate } from "../scripts/weekly-slate.mjs";
+import { publicationWindow, resolveBroadcast, retimeUnpublished, selectSlate } from "../scripts/weekly-slate.mjs";
 
 import { materializeVerifiedSnapshot } from "../scripts/verified-snapshot.mjs";
 
@@ -234,4 +234,33 @@ test("November 10 replay writes a verifiable draft, rejects conflicting finals, 
     const stop = run("refresh-weekly-edition.mjs", [], { FIXTURE_CLOCK: "2027-02-16T14:00:00Z" });
     assert.equal(stop.status, 0); assert.match(stop.stdout, /window closed/);
   } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test("a later week's flexed kickoff takes ESPN's new timing; published records never change", () => {
+  const compiled = {
+    id: "401873069", date: "2026-11-22", week: 11, kickoffUtc: "2026-11-22T18:00Z", timeTbd: false,
+    kickoffLabel: "Sun · 2026-11-22 · 1:00 PM ET", awaySlug: "jacksonville-jaguars", homeSlug: "new-york-giants",
+    status: "scheduled", statusDetail: "Sun, November 22nd at 1:00 PM EST", awayScore: null, homeScore: null,
+    broadcast: "CBS", venue: "MetLife Stadium",
+  };
+  const fresh = {
+    ...compiled, kickoffUtc: "2026-11-22T21:25Z", kickoffLabel: "Sun · 2026-11-22 · 4:25 PM ET",
+    statusDetail: "Sun, November 22nd at 4:25 PM EST", broadcast: "FOX", networks: ["FOX"], city: "East Rutherford",
+  };
+  const { record, retimed } = retimeUnpublished(compiled, fresh, 10);
+  assert.equal(retimed, true);
+  assert.equal(record.kickoffUtc, "2026-11-22T21:25Z");
+  assert.equal(record.kickoffLabel, "Sun · 2026-11-22 · 4:25 PM ET");
+  assert.equal(record.statusDetail, "Sun, November 22nd at 4:25 PM EST");
+  assert.equal(record.broadcast, "FOX");
+  assert.deepEqual(Object.keys(record), Object.keys(compiled), "the compiled record keeps its shape");
+  assert.equal(record.venue, "MetLife Stadium");
+
+  // Unchanged kickoff, the edition's own weeks, published records and non-scheduled games stay as they are.
+  assert.equal(retimeUnpublished(compiled, { ...compiled, broadcast: "FOX" }, 10).retimed, false);
+  assert.equal(retimeUnpublished(compiled, fresh, 11).retimed, false);
+  const published = { ...compiled, verification: "two_publishers", sources: ["https://www.nfl.com/", "https://www.espn.com/"] };
+  assert.equal(retimeUnpublished(published, fresh, 10).record, published);
+  assert.equal(retimeUnpublished(compiled, { ...fresh, status: "in_progress" }, 10).retimed, false);
+  assert.throws(() => retimeUnpublished(compiled, { ...fresh, id: "1" }, 10));
 });

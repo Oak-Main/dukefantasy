@@ -34,6 +34,29 @@ export function selectSlate(games, totalWeeks, previousEdition, requestedWeek) {
   return { weekInPlay, completedWeek, editionWeek };
 }
 
+/**
+ * The ESPN timing fields that the season compile recorded for a game.
+ */
+export const RETIMED_FIELDS = ["date", "kickoffUtc", "timeTbd", "kickoffLabel", "statusDetail", "broadcast"];
+
+/**
+ * A game in a week after the edition week has not been published by any
+ * edition: it still carries the season compile's single-source ESPN record.
+ * When ESPN later moves its kickoff (a flex), the edition takes ESPN's new
+ * timing for that game, so the dataset agrees with the source it was compiled
+ * from and `dataset:verify` can pass. Published (two-publisher) records, earlier
+ * weeks, and games that are not scheduled on both sides are never changed here.
+ */
+export function retimeUnpublished(prior, fresh, editionWeek) {
+  if (!prior || !fresh || prior.id !== fresh.id) throw new Error("retimeUnpublished compares one game");
+  const eligible = prior.week > editionWeek && !prior.verification &&
+    prior.status === "scheduled" && fresh.status === "scheduled" && prior.kickoffUtc !== fresh.kickoffUtc;
+  if (!eligible) return { record: prior, retimed: false };
+  const record = { ...prior };
+  for (const key of RETIMED_FIELDS) if (key in prior) record[key] = fresh[key] ?? null;
+  return { record, retimed: true };
+}
+
 /** A shared secondary does not establish the primary. Simulcasts require independent support. */
 export function resolveBroadcast(game, nflNetworks, ruling) {
   const espn = game.broadcast;

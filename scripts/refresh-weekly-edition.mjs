@@ -23,7 +23,7 @@ import { copyFileSync, existsSync, mkdirSync, mkdtempSync, readFileSync, renameS
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { fetchNflGame, fetchNflWeek } from "./nfl-week-source.mjs";
-import { publicationWindow, resolveBroadcast, selectSlate } from "./weekly-slate.mjs";
+import { publicationWindow, resolveBroadcast, retimeUnpublished, selectSlate } from "./weekly-slate.mjs";
 import { materializeVerifiedSnapshot } from "./verified-snapshot.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
@@ -306,6 +306,7 @@ const schedule = [];
 const evidenceGames = {};
 const problems = [];
 const discrepancies = [];
+const retimedGames = [];
 const sourceLedger = [];
 
 const recordSource = (name, url, checkedAt, sha256, bytes, status = 200) => {
@@ -345,9 +346,12 @@ for (const game of espnGames) {
 
   if (!published) {
     // Already published in an earlier edition: keep the published record.
+    // A later week's compiled record takes ESPN's new timing after a flex.
     const prior = previousSnapshot.schedule.find((row) => row.id === game.id);
     if (!prior) throw new Error(`Published week ${game.week} has no previous record for ${game.id}`);
-    schedule.push(prior);
+    const { record, retimed } = retimeUnpublished(prior, game, editionWeek);
+    if (retimed) retimedGames.push({ eventId: game.id, week: game.week, from: prior.kickoffUtc, to: game.kickoffUtc, source: espnUrl });
+    schedule.push(record);
     continue;
   }
 
@@ -447,6 +451,7 @@ for (const game of espnGames) {
     ],
   };
 }
+for (const row of retimedGames) console.log(`  re-timed ${row.eventId} (Week ${row.week}): ${row.from} -> ${row.to} (ESPN)`);
 if (problems.length) {
   console.error("Two-publisher disagreement, nothing published:");
   for (const problem of problems) console.error(`  - ${problem}`);
@@ -551,6 +556,7 @@ const review = {
   },
   sources: sourceLedger,
   sourceDiscrepancies: discrepancies,
+  retimedUnpublished: retimedGames,
   gameEvidence: evidenceGames,
   digestScope: "schedule/results/standings",
 };
@@ -650,6 +656,7 @@ Refreshed schedule, results and standings for the ${seasonYear} NFL season. This
 
 - Week published: **${editionWeek}** (official ESPN week numbering; Week ${editionWeek} begins ${schedule.filter((game) => game.week === editionWeek).map((game) => game.date).sort()[0] ?? "n/a"})
 - Weeks published by this edition: ${publishedWeeks.join(", ")}
+- Later-week kickoffs re-timed from ESPN (flexed since the compile): ${retimedGames.length ? retimedGames.map((row) => `${row.eventId} (Week ${row.week}) ${row.from} -> ${row.to}`).join("; ") : "none"}
 - Season finals now published: ${finals.length}
 - Week ${completedWeek} finals backfilled: ${finalsByWeek[completedWeek] ?? 0}
 - Byes in Week ${editionWeek}: ${byes.join(", ")}
