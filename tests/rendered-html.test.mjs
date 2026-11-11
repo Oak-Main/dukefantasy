@@ -66,8 +66,9 @@ test("a Monday final and updated team records render from the verified snapshot"
   const html = await response.text();
   const hero = html.match(/class="game-hero__matchup"[\s\S]*?class="game-action-row"/)?.[0] ?? "";
   assert.match(html, /class="status status--final">Final<\/span>/);
-  assert.match(hero, /Dallas Cowboys<\/strong><em>3-5<\/em>[\s\S]*?<b>38<\/b>/);
-  assert.match(hero, /Philadelphia Eagles<\/strong><em>2-6<\/em>[\s\S]*?<b>21<\/b>/);
+  // Records are the current standings in the 2026-11-10 edition (ESPN official standings, after Week 9).
+  assert.match(hero, /Dallas Cowboys<\/strong><em>4-5<\/em>[\s\S]*?<b>38<\/b>/);
+  assert.match(hero, /Philadelphia Eagles<\/strong><em>2-7<\/em>[\s\S]*?<b>21<\/b>/);
 });
 
 test("www canonicalizes to the apex domain without losing the request target", async () => {

@@ -1,0 +1,2034 @@
+{
+  "version": 1,
+  "week": 10,
+  "cutoffUtc": "2026-11-11T03:37:10.570Z",
+  "compiledAt": "2026-11-11T03:37:10.570Z",
+  "retrievedAt": "2026-11-11T03:37:10.570Z",
+  "sourceAsOf": "2026-11-10",
+  "completedWeek": 9,
+  "baseline": {
+    "snapshot": "2026-11-06/snapshot.json",
+    "week": 10,
+    "sourceAsOf": "2026-11-06",
+    "finalsDigest": "3d8b68f34bec5ddc0c1812a47f8d403d09c162eef95f822b02591c77e6c0d8b2"
+  },
+  "expected": {
+    "games": 272,
+    "teams": 32,
+    "weeks": 18
+  },
+  "totals": {
+    "finals": 136,
+    "finalsByWeek": {
+      "1": 16,
+      "2": 16,
+      "3": 16,
+      "4": 16,
+      "5": 15,
+      "6": 14,
+      "7": 14,
+      "8": 14,
+      "9": 15
+    },
+    "weekFinals": 15,
+    "publishedWeeks": [
+      8,
+      9,
+      10
+    ],
+    "byes": [
+      "chicago-bears",
+      "denver-broncos",
+      "philadelphia-eagles",
+      "tampa-bay-buccaneers"
+    ]
+  },
+  "sources": [
+    {
+      "name": "espn-week-1",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
+      "checkedAt": "2026-11-11T03:37:07.393Z",
+      "status": 200,
+      "bytes": 141212,
+      "sha256": "4a34e666fadddaec0b73925c03e02bde961321e240b379a28b454e73805582a4"
+    },
+    {
+      "name": "espn-week-2",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
+      "checkedAt": "2026-11-11T03:37:07.475Z",
+      "status": 200,
+      "bytes": 141076,
+      "sha256": "1b6b023a9311217170a2d440eb8a79eff2d22c45a2580279fa9ba937f55b9342"
+    },
+    {
+      "name": "espn-week-3",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=3&limit=100",
+      "checkedAt": "2026-11-11T03:37:07.534Z",
+      "status": 200,
+      "bytes": 140412,
+      "sha256": "4f8ca27783db508f188fe04754c0cf92d4b67cc0315caa3b2e8a1dddaf6d4f65"
+    },
+    {
+      "name": "espn-week-4",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=4&limit=100",
+      "checkedAt": "2026-11-11T03:37:07.705Z",
+      "status": 200,
+      "bytes": 142641,
+      "sha256": "3983d9ea7968c63e70a43f18141a8fc1464cd9b35e4f9c378f249189ff6f148f"
+    },
+    {
+      "name": "espn-week-5",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "checkedAt": "2026-11-11T03:37:07.822Z",
+      "status": 200,
+      "bytes": 135360,
+      "sha256": "739ca9c9bd84a66643e15753f4f36dcccaac13022fe972bd128092401855eefc"
+    },
+    {
+      "name": "espn-week-6",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
+      "checkedAt": "2026-11-11T03:37:07.899Z",
+      "status": 200,
+      "bytes": 126531,
+      "sha256": "56f0e4211e33b41cba5ab3d88739c4f1d9e09c339f3d6145b161c6bdf1c0d2d0"
+    },
+    {
+      "name": "espn-week-7",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.013Z",
+      "status": 200,
+      "bytes": 126900,
+      "sha256": "4f8f1e8e471a023791d97387f887e121fbceeb3dd9bd55346fe9a9759e63ecc3"
+    },
+    {
+      "name": "espn-week-8",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.094Z",
+      "status": 200,
+      "bytes": 126056,
+      "sha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52"
+    },
+    {
+      "name": "espn-week-9",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.158Z",
+      "status": 200,
+      "bytes": 161630,
+      "sha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3"
+    },
+    {
+      "name": "espn-week-10",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.223Z",
+      "status": 200,
+      "bytes": 254232,
+      "sha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076"
+    },
+    {
+      "name": "espn-week-11",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.291Z",
+      "status": 200,
+      "bytes": 233364,
+      "sha256": "284718b6a74c268da834cd1615a153f4829c66dcd2f9c3091a8eb64971aab4cf"
+    },
+    {
+      "name": "espn-week-12",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.366Z",
+      "status": 200,
+      "bytes": 182821,
+      "sha256": "f048dc46e905404232f8181ffc42fd2b42a70542caae1836c3ae0f0a6bdbd0d7"
+    },
+    {
+      "name": "espn-week-13",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=13&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.428Z",
+      "status": 200,
+      "bytes": 163008,
+      "sha256": "71124a0ef95ab3696c31ea80b18bce15045f9bc8f9ace391d542506a86b596ec"
+    },
+    {
+      "name": "espn-week-14",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=14&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.556Z",
+      "status": 200,
+      "bytes": 172353,
+      "sha256": "009fc14957f4ed34d0e0332417ab3ae6ea199ce5591a7f9bd6ffa38ba3e031ec"
+    },
+    {
+      "name": "espn-week-15",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=15&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.624Z",
+      "status": 200,
+      "bytes": 183157,
+      "sha256": "8763211c41df8bc11f5a5913246acb108f6b4e886aa84229b82f39b5582e2427"
+    },
+    {
+      "name": "espn-week-16",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=16&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.688Z",
+      "status": 200,
+      "bytes": 182154,
+      "sha256": "ad32afaa548a91deee60dca89bb8aec888e0834cd778f64b692ae5496d960b1e"
+    },
+    {
+      "name": "espn-week-17",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=17&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.771Z",
+      "status": 200,
+      "bytes": 182504,
+      "sha256": "30804973c05a7e483c9569fdaad7f0f4decdc4e6da7f78621edb37dd5ce98f31"
+    },
+    {
+      "name": "espn-week-18",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=18&limit=100",
+      "checkedAt": "2026-11-11T03:37:08.861Z",
+      "status": 200,
+      "bytes": 179634,
+      "sha256": "85d054de72a8d5e3a2cc1406b0a361e99bf92ff9580c4e043dba36b1f75807e9"
+    },
+    {
+      "name": "espn-standings",
+      "url": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&level=3",
+      "checkedAt": "2026-11-11T03:37:09.072Z",
+      "status": 200,
+      "bytes": 160320,
+      "sha256": "2c7bd05ca26a48465c08aaf44f9151a577150e2d0a07e5cfba7e88f0b179c26e"
+    },
+    {
+      "name": "nfl-week-8",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "checkedAt": "2026-11-11T03:37:09.308Z",
+      "status": 200,
+      "bytes": null,
+      "sha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb"
+    },
+    {
+      "name": "nfl-week-9",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "checkedAt": "2026-11-11T03:37:09.361Z",
+      "status": 200,
+      "bytes": null,
+      "sha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a"
+    },
+    {
+      "name": "nfl-week-10",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+      "checkedAt": "2026-11-11T03:37:09.409Z",
+      "status": 200,
+      "bytes": null,
+      "sha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3"
+    },
+    {
+      "name": "game-401873023",
+      "url": "https://www.nfl.com/games/panthers-at-packers-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.459Z",
+      "status": 200,
+      "bytes": 1221414,
+      "sha256": "88a4edfe96126e6c5229db23a2f52010b0c86ae8dff42a2bcfb4f0ab14123096"
+    },
+    {
+      "name": "game-401873024",
+      "url": "https://www.nfl.com/games/cardinals-at-cowboys-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.532Z",
+      "status": 200,
+      "bytes": 1306879,
+      "sha256": "80e47e392a5285c9c7ce86e25156a9abbaef1a30ca13e588565efb88e781cea3"
+    },
+    {
+      "name": "game-401873025",
+      "url": "https://www.nfl.com/games/falcons-at-buccaneers-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.568Z",
+      "status": 200,
+      "bytes": 1101776,
+      "sha256": "2265bfcb2091de7723310d12d2641d2a9033f39484f2f3635dc05f6adcebd94a"
+    },
+    {
+      "name": "game-401873026",
+      "url": "https://www.nfl.com/games/ravens-at-bills-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.607Z",
+      "status": 200,
+      "bytes": 1229199,
+      "sha256": "e6b66fc17bd73e00f7f76d1e6bccb5f4aaef757170f54ebaece92f827d14b768"
+    },
+    {
+      "name": "game-401873027",
+      "url": "https://www.nfl.com/games/browns-at-steelers-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.640Z",
+      "status": 200,
+      "bytes": 1198183,
+      "sha256": "a1735f92930aacae27b89406060cdaff43e94ca44ba5bc7f94e41d9ab3039938"
+    },
+    {
+      "name": "game-401873028",
+      "url": "https://www.nfl.com/games/colts-at-jaguars-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.696Z",
+      "status": 200,
+      "bytes": 1169631,
+      "sha256": "feba6183c75d11e0f9af7b8780c14b1cdf365ed995847f2035a180ff3ad290f4"
+    },
+    {
+      "name": "game-401873029",
+      "url": "https://www.nfl.com/games/raiders-at-jets-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.733Z",
+      "status": 200,
+      "bytes": 1268345,
+      "sha256": "d1dd298f786245203aa6f50fda207a55b949672af19610133d58688072976ff7"
+    },
+    {
+      "name": "game-401873030",
+      "url": "https://www.nfl.com/games/vikings-at-lions-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.769Z",
+      "status": 200,
+      "bytes": 1175417,
+      "sha256": "8924b9424eb3b44f2dc25e4daeec7c437d5c8d739ab72e0d8143a63fb2d552e7"
+    },
+    {
+      "name": "game-401873031",
+      "url": "https://www.nfl.com/games/titans-at-bengals-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.803Z",
+      "status": 200,
+      "bytes": 1300197,
+      "sha256": "f7ef916428ec80531140288f768ceff0a5f1be498c27cca3f6141e4567f26d57"
+    },
+    {
+      "name": "game-401873032",
+      "url": "https://www.nfl.com/games/chargers-at-rams-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.840Z",
+      "status": 200,
+      "bytes": 1133031,
+      "sha256": "0e1fc42515a5696445e023b1a57b053a93d3614caa63f8529ef6b84ff9355a37"
+    },
+    {
+      "name": "game-401873033",
+      "url": "https://www.nfl.com/games/chiefs-at-broncos-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.872Z",
+      "status": 200,
+      "bytes": 1220515,
+      "sha256": "419bb89b4329e178b56b61c0bc1a556b42786ea53dc9f15000e9fa447bc70363"
+    },
+    {
+      "name": "game-401873034",
+      "url": "https://www.nfl.com/games/patriots-at-dolphins-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.908Z",
+      "status": 200,
+      "bytes": 1175260,
+      "sha256": "a77a1aec44d981da5027553fe6d8895078ee2db6a92a93515988bb6d0fd4bfad"
+    },
+    {
+      "name": "game-401873035",
+      "url": "https://www.nfl.com/games/eagles-at-commanders-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.951Z",
+      "status": 200,
+      "bytes": 1157597,
+      "sha256": "2d8d5428de229cb42e85d6039f047e1fa592742271c9f431c667b47e7b4fd107"
+    },
+    {
+      "name": "game-401873036",
+      "url": "https://www.nfl.com/games/bears-at-seahawks-2026-reg-8",
+      "checkedAt": "2026-11-11T03:37:09.984Z",
+      "status": 200,
+      "bytes": 1240511,
+      "sha256": "9b70ef8e476f94a477518a2f45af6e7ce392525e9de28d3acdc9cdca9c930056"
+    },
+    {
+      "name": "game-401873037",
+      "url": "https://www.nfl.com/games/jaguars-at-ravens-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.022Z",
+      "status": 200,
+      "bytes": 1154840,
+      "sha256": "dfb60de9ddceb0129433fe6da1cdf073777f0f24914faa66ae4bfe8996912f92"
+    },
+    {
+      "name": "game-401873038",
+      "url": "https://www.nfl.com/games/bengals-at-falcons-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.054Z",
+      "status": 200,
+      "bytes": 1226670,
+      "sha256": "90220e63178ac8848aa2df78e8cd1efbb205b52e80909dc84ef2efc39b8c078a"
+    },
+    {
+      "name": "game-401873039",
+      "url": "https://www.nfl.com/games/browns-at-saints-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.088Z",
+      "status": 200,
+      "bytes": 1272963,
+      "sha256": "4d4cbcd25bf08896baef77373b21aa91278a246d3aab56a4d216a21b737e7205"
+    },
+    {
+      "name": "game-401873040",
+      "url": "https://www.nfl.com/games/cowboys-at-colts-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.121Z",
+      "status": 200,
+      "bytes": 1263033,
+      "sha256": "f5746dd4efea47eba719a83050eeb580221bdb225d3f6ff554c7e16a95e8a418"
+    },
+    {
+      "name": "game-401873041",
+      "url": "https://www.nfl.com/games/broncos-at-panthers-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.155Z",
+      "status": 200,
+      "bytes": 1252117,
+      "sha256": "566e7da2ff2fcd392246a20b8c68106910d21999b8d41372fe3541f376396101"
+    },
+    {
+      "name": "game-401873042",
+      "url": "https://www.nfl.com/games/lions-at-dolphins-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.192Z",
+      "status": 200,
+      "bytes": 1155405,
+      "sha256": "54de644f067f43ea2e8cf929ad0395b22adbfa016f779ce032d8577bb3a25761"
+    },
+    {
+      "name": "game-401873043",
+      "url": "https://www.nfl.com/games/rams-at-commanders-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.227Z",
+      "status": 200,
+      "bytes": 1235513,
+      "sha256": "683515247c1791b3a95e3191a9cf5177512c648b1041e3c55ad2bcd5a010a9b1"
+    },
+    {
+      "name": "game-401873044",
+      "url": "https://www.nfl.com/games/giants-at-eagles-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.264Z",
+      "status": 200,
+      "bytes": 1214784,
+      "sha256": "4f1f8d19deafc82e5d4e60d57b6c4c5ca82e071bcadb3f3120bafd9d0b104a8a"
+    },
+    {
+      "name": "game-401873045",
+      "url": "https://www.nfl.com/games/jets-at-chiefs-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.300Z",
+      "status": 200,
+      "bytes": 1245892,
+      "sha256": "3589ccc9f2a6863a34facca434e3efd3c25dce5b440842a181fcd1112963127e"
+    },
+    {
+      "name": "game-401873046",
+      "url": "https://www.nfl.com/games/texans-at-chargers-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.341Z",
+      "status": 200,
+      "bytes": 1263586,
+      "sha256": "a22058740728ae287c4ff8d616983487449fd3a5e38bd85ff175b39658ebc42c"
+    },
+    {
+      "name": "game-401873047",
+      "url": "https://www.nfl.com/games/raiders-at-49ers-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.382Z",
+      "status": 200,
+      "bytes": 1230188,
+      "sha256": "4268d313f805351d68592e9a57cd73b24b1d92afc7186eac99389f7f7add64b1"
+    },
+    {
+      "name": "game-401873048",
+      "url": "https://www.nfl.com/games/cardinals-at-seahawks-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.413Z",
+      "status": 200,
+      "bytes": 1104221,
+      "sha256": "f0b18fb1bcf8f51a5210abf904c665821ed60141808c6338fc51addce71eb91b"
+    },
+    {
+      "name": "game-401873049",
+      "url": "https://www.nfl.com/games/packers-at-patriots-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.453Z",
+      "status": 200,
+      "bytes": 1267128,
+      "sha256": "60471a83a2ec0b0d9972cb0085aa594e4152307e03e739f3aa09ca894b84a3aa"
+    },
+    {
+      "name": "game-401873050",
+      "url": "https://www.nfl.com/games/buccaneers-at-bears-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.524Z",
+      "status": 200,
+      "bytes": 1254086,
+      "sha256": "9cf3c22ff1a8a2157e59107280afc5fbd03dae64d06f74505abb6597e90e4bee"
+    },
+    {
+      "name": "simulcast-401873051",
+      "url": "https://www.nfl.com/news/nfl-how-to-watch-week-9-nfl-games-schedule-madrid-game-details-and-more",
+      "checkedAt": "2026-11-05T13:01:13.224Z",
+      "status": 200,
+      "bytes": 691938,
+      "sha256": "0c80665a7c91c13aa6f69d92fe55944d33a74058664a9e94c9089428effa405e"
+    },
+    {
+      "name": "game-401873051",
+      "url": "https://www.nfl.com/games/bills-at-vikings-2026-reg-9",
+      "checkedAt": "2026-11-11T03:37:10.566Z",
+      "status": 200,
+      "bytes": 1236142,
+      "sha256": "53710138eeffc02f6d0cbf66ddfdbba6b2dc97d5c72524976a93306a910eb012"
+    }
+  ],
+  "sourceDiscrepancies": [],
+  "retimedUnpublished": [
+    {
+      "eventId": "401873076",
+      "week": 11,
+      "from": "2026-11-22T21:25Z",
+      "to": "2026-11-22T18:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100"
+    },
+    {
+      "eventId": "401873069",
+      "week": 11,
+      "from": "2026-11-22T18:00Z",
+      "to": "2026-11-22T21:25Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100"
+    }
+  ],
+  "gameEvidence": {
+    "401873023": {
+      "eventId": "401873023",
+      "officialWeek": 8,
+      "away": "carolina-panthers",
+      "home": "green-bay-packers",
+      "kickoffUtc": "2026-10-30T00:15Z",
+      "primaryUSNetwork": "Prime Video",
+      "networks": [
+        "Prime Video"
+      ],
+      "status": "final",
+      "awayScore": 19,
+      "homeScore": 27,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873023"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "panthers-at-packers-2026-reg-8"
+        }
+      ]
+    },
+    "401873024": {
+      "eventId": "401873024",
+      "officialWeek": 8,
+      "away": "arizona-cardinals",
+      "home": "dallas-cowboys",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 33,
+      "homeScore": 30,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873024"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "cardinals-at-cowboys-2026-reg-8"
+        }
+      ]
+    },
+    "401873025": {
+      "eventId": "401873025",
+      "officialWeek": 8,
+      "away": "atlanta-falcons",
+      "home": "tampa-bay-buccaneers",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 0,
+      "homeScore": 16,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873025"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "falcons-at-buccaneers-2026-reg-8"
+        }
+      ]
+    },
+    "401873026": {
+      "eventId": "401873026",
+      "officialWeek": 8,
+      "away": "baltimore-ravens",
+      "home": "buffalo-bills",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 10,
+      "homeScore": 36,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873026"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "ravens-at-bills-2026-reg-8"
+        }
+      ]
+    },
+    "401873027": {
+      "eventId": "401873027",
+      "officialWeek": 8,
+      "away": "cleveland-browns",
+      "home": "pittsburgh-steelers",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 6,
+      "homeScore": 27,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873027"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "browns-at-steelers-2026-reg-8"
+        }
+      ]
+    },
+    "401873028": {
+      "eventId": "401873028",
+      "officialWeek": 8,
+      "away": "indianapolis-colts",
+      "home": "jacksonville-jaguars",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 7,
+      "homeScore": 42,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873028"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "colts-at-jaguars-2026-reg-8"
+        }
+      ]
+    },
+    "401873029": {
+      "eventId": "401873029",
+      "officialWeek": 8,
+      "away": "las-vegas-raiders",
+      "home": "new-york-jets",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 38,
+      "homeScore": 33,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873029"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "raiders-at-jets-2026-reg-8"
+        }
+      ]
+    },
+    "401873030": {
+      "eventId": "401873030",
+      "officialWeek": 8,
+      "away": "minnesota-vikings",
+      "home": "detroit-lions",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 15,
+      "homeScore": 19,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873030"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "vikings-at-lions-2026-reg-8"
+        }
+      ]
+    },
+    "401873031": {
+      "eventId": "401873031",
+      "officialWeek": 8,
+      "away": "tennessee-titans",
+      "home": "cincinnati-bengals",
+      "kickoffUtc": "2026-11-01T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 36,
+      "homeScore": 43,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873031"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "titans-at-bengals-2026-reg-8"
+        }
+      ]
+    },
+    "401873032": {
+      "eventId": "401873032",
+      "officialWeek": 8,
+      "away": "los-angeles-chargers",
+      "home": "los-angeles-rams",
+      "kickoffUtc": "2026-11-01T21:05Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 9,
+      "homeScore": 24,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873032"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "chargers-at-rams-2026-reg-8"
+        }
+      ]
+    },
+    "401873033": {
+      "eventId": "401873033",
+      "officialWeek": 8,
+      "away": "kansas-city-chiefs",
+      "home": "denver-broncos",
+      "kickoffUtc": "2026-11-01T21:25Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 24,
+      "homeScore": 28,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873033"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "chiefs-at-broncos-2026-reg-8"
+        }
+      ]
+    },
+    "401873034": {
+      "eventId": "401873034",
+      "officialWeek": 8,
+      "away": "new-england-patriots",
+      "home": "miami-dolphins",
+      "kickoffUtc": "2026-11-01T21:25Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 24,
+      "homeScore": 19,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873034"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "patriots-at-dolphins-2026-reg-8"
+        }
+      ]
+    },
+    "401873035": {
+      "eventId": "401873035",
+      "officialWeek": 8,
+      "away": "philadelphia-eagles",
+      "home": "washington-commanders",
+      "kickoffUtc": "2026-11-02T01:20Z",
+      "primaryUSNetwork": "NBC",
+      "networks": [
+        "NBC"
+      ],
+      "status": "final",
+      "awayScore": 10,
+      "homeScore": 27,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873035"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "eagles-at-commanders-2026-reg-8"
+        }
+      ]
+    },
+    "401873036": {
+      "eventId": "401873036",
+      "officialWeek": 8,
+      "away": "chicago-bears",
+      "home": "seattle-seahawks",
+      "kickoffUtc": "2026-11-03T01:15Z",
+      "primaryUSNetwork": "ESPN",
+      "networks": [
+        "ESPN"
+      ],
+      "status": "final",
+      "awayScore": 34,
+      "homeScore": 17,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.094Z",
+          "rawSha256": "804e4730440e527d22abdccb0f2acbf4fc12a3c0ebfbe2b4beb86d009fc86c52",
+          "record": "401873036"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "checkedAt": "2026-11-11T03:37:09.308Z",
+          "rawSha256": "0616fb89e4fd588fc8507e1e7f695e2b0e62ca1db3caaf796bef11f5778671bb",
+          "record": "bears-at-seahawks-2026-reg-8"
+        }
+      ]
+    },
+    "401873037": {
+      "eventId": "401873037",
+      "officialWeek": 9,
+      "away": "jacksonville-jaguars",
+      "home": "baltimore-ravens",
+      "kickoffUtc": "2026-11-06T01:15Z",
+      "primaryUSNetwork": "Prime Video",
+      "networks": [
+        "Prime Video"
+      ],
+      "status": "final",
+      "awayScore": 33,
+      "homeScore": 10,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873037"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "jaguars-at-ravens-2026-reg-9"
+        }
+      ]
+    },
+    "401873038": {
+      "eventId": "401873038",
+      "officialWeek": 9,
+      "away": "cincinnati-bengals",
+      "home": "atlanta-falcons",
+      "kickoffUtc": "2026-11-08T14:30Z",
+      "primaryUSNetwork": "NFL Network",
+      "networks": [
+        "NFL Network"
+      ],
+      "status": "final",
+      "awayScore": 34,
+      "homeScore": 17,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873038"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "bengals-at-falcons-2026-reg-9"
+        }
+      ]
+    },
+    "401873039": {
+      "eventId": "401873039",
+      "officialWeek": 9,
+      "away": "cleveland-browns",
+      "home": "new-orleans-saints",
+      "kickoffUtc": "2026-11-08T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 22,
+      "homeScore": 23,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873039"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "browns-at-saints-2026-reg-9"
+        }
+      ]
+    },
+    "401873040": {
+      "eventId": "401873040",
+      "officialWeek": 9,
+      "away": "dallas-cowboys",
+      "home": "indianapolis-colts",
+      "kickoffUtc": "2026-11-08T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 27,
+      "homeScore": 23,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873040"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "cowboys-at-colts-2026-reg-9"
+        }
+      ]
+    },
+    "401873041": {
+      "eventId": "401873041",
+      "officialWeek": 9,
+      "away": "denver-broncos",
+      "home": "carolina-panthers",
+      "kickoffUtc": "2026-11-08T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 26,
+      "homeScore": 21,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873041"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "broncos-at-panthers-2026-reg-9"
+        }
+      ]
+    },
+    "401873042": {
+      "eventId": "401873042",
+      "officialWeek": 9,
+      "away": "detroit-lions",
+      "home": "miami-dolphins",
+      "kickoffUtc": "2026-11-08T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 19,
+      "homeScore": 9,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873042"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "lions-at-dolphins-2026-reg-9"
+        }
+      ]
+    },
+    "401873043": {
+      "eventId": "401873043",
+      "officialWeek": 9,
+      "away": "los-angeles-rams",
+      "home": "washington-commanders",
+      "kickoffUtc": "2026-11-08T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 20,
+      "homeScore": 13,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873043"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "rams-at-commanders-2026-reg-9"
+        }
+      ]
+    },
+    "401873044": {
+      "eventId": "401873044",
+      "officialWeek": 9,
+      "away": "new-york-giants",
+      "home": "philadelphia-eagles",
+      "kickoffUtc": "2026-11-08T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 19,
+      "homeScore": 11,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873044"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "giants-at-eagles-2026-reg-9"
+        }
+      ]
+    },
+    "401873045": {
+      "eventId": "401873045",
+      "officialWeek": 9,
+      "away": "new-york-jets",
+      "home": "kansas-city-chiefs",
+      "kickoffUtc": "2026-11-08T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 12,
+      "homeScore": 35,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873045"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "jets-at-chiefs-2026-reg-9"
+        }
+      ]
+    },
+    "401873046": {
+      "eventId": "401873046",
+      "officialWeek": 9,
+      "away": "houston-texans",
+      "home": "los-angeles-chargers",
+      "kickoffUtc": "2026-11-08T21:05Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "final",
+      "awayScore": 44,
+      "homeScore": 22,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873046"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "texans-at-chargers-2026-reg-9"
+        }
+      ]
+    },
+    "401873047": {
+      "eventId": "401873047",
+      "officialWeek": 9,
+      "away": "las-vegas-raiders",
+      "home": "san-francisco-49ers",
+      "kickoffUtc": "2026-11-08T21:25Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 17,
+      "homeScore": 38,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873047"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "raiders-at-49ers-2026-reg-9"
+        }
+      ]
+    },
+    "401873048": {
+      "eventId": "401873048",
+      "officialWeek": 9,
+      "away": "arizona-cardinals",
+      "home": "seattle-seahawks",
+      "kickoffUtc": "2026-11-08T21:25Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 3,
+      "homeScore": 17,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873048"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "cardinals-at-seahawks-2026-reg-9"
+        }
+      ]
+    },
+    "401873049": {
+      "eventId": "401873049",
+      "officialWeek": 9,
+      "away": "green-bay-packers",
+      "home": "new-england-patriots",
+      "kickoffUtc": "2026-11-08T21:25Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "final",
+      "awayScore": 45,
+      "homeScore": 27,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873049"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "packers-at-patriots-2026-reg-9"
+        }
+      ]
+    },
+    "401873050": {
+      "eventId": "401873050",
+      "officialWeek": 9,
+      "away": "tampa-bay-buccaneers",
+      "home": "chicago-bears",
+      "kickoffUtc": "2026-11-09T01:20Z",
+      "primaryUSNetwork": "NBC",
+      "networks": [
+        "NBC"
+      ],
+      "status": "final",
+      "awayScore": 24,
+      "homeScore": 27,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873050"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "buccaneers-at-bears-2026-reg-9"
+        }
+      ]
+    },
+    "401873051": {
+      "eventId": "401873051",
+      "officialWeek": 9,
+      "away": "buffalo-bills",
+      "home": "minnesota-vikings",
+      "kickoffUtc": "2026-11-10T01:15Z",
+      "primaryUSNetwork": "ESPN",
+      "networks": [
+        "ESPN",
+        "ABC"
+      ],
+      "status": "final",
+      "awayScore": 23,
+      "homeScore": 6,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network",
+        "final_status",
+        "away_score",
+        "home_score"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.158Z",
+          "rawSha256": "729a802725695287e41d7a925adb62af2e9648d8d24e8280e44c5f32128912f3",
+          "record": "401873051"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "checkedAt": "2026-11-11T03:37:09.361Z",
+          "rawSha256": "1d65ca2d65d51c00084b5ecc7c82b4947f24380121e3d644ff2b2d9a635ac00a",
+          "record": "bills-at-vikings-2026-reg-9"
+        }
+      ]
+    },
+    "401873052": {
+      "eventId": "401873052",
+      "officialWeek": 10,
+      "away": "washington-commanders",
+      "home": "new-york-giants",
+      "kickoffUtc": "2026-11-13T01:15Z",
+      "primaryUSNetwork": "Prime Video",
+      "networks": [
+        "Prime Video"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873052"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "commanders-at-giants-2026-reg-10"
+        }
+      ]
+    },
+    "401873053": {
+      "eventId": "401873053",
+      "officialWeek": 10,
+      "away": "new-england-patriots",
+      "home": "detroit-lions",
+      "kickoffUtc": "2026-11-15T14:30Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873053"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "patriots-at-lions-2026-reg-10"
+        }
+      ]
+    },
+    "401873054": {
+      "eventId": "401873054",
+      "officialWeek": 10,
+      "away": "buffalo-bills",
+      "home": "new-york-jets",
+      "kickoffUtc": "2026-11-15T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873054"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "bills-at-jets-2026-reg-10"
+        }
+      ]
+    },
+    "401873055": {
+      "eventId": "401873055",
+      "officialWeek": 10,
+      "away": "carolina-panthers",
+      "home": "new-orleans-saints",
+      "kickoffUtc": "2026-11-15T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873055"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "panthers-at-saints-2026-reg-10"
+        }
+      ]
+    },
+    "401873056": {
+      "eventId": "401873056",
+      "officialWeek": 10,
+      "away": "houston-texans",
+      "home": "cleveland-browns",
+      "kickoffUtc": "2026-11-15T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873056"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "texans-at-browns-2026-reg-10"
+        }
+      ]
+    },
+    "401873057": {
+      "eventId": "401873057",
+      "officialWeek": 10,
+      "away": "jacksonville-jaguars",
+      "home": "tennessee-titans",
+      "kickoffUtc": "2026-11-15T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873057"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "jaguars-at-titans-2026-reg-10"
+        }
+      ]
+    },
+    "401873058": {
+      "eventId": "401873058",
+      "officialWeek": 10,
+      "away": "kansas-city-chiefs",
+      "home": "atlanta-falcons",
+      "kickoffUtc": "2026-11-15T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873058"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "chiefs-at-falcons-2026-reg-10"
+        }
+      ]
+    },
+    "401873059": {
+      "eventId": "401873059",
+      "officialWeek": 10,
+      "away": "miami-dolphins",
+      "home": "indianapolis-colts",
+      "kickoffUtc": "2026-11-15T18:00Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873059"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "dolphins-at-colts-2026-reg-10"
+        }
+      ]
+    },
+    "401873060": {
+      "eventId": "401873060",
+      "officialWeek": 10,
+      "away": "minnesota-vikings",
+      "home": "green-bay-packers",
+      "kickoffUtc": "2026-11-15T18:00Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873060"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "vikings-at-packers-2026-reg-10"
+        }
+      ]
+    },
+    "401873061": {
+      "eventId": "401873061",
+      "officialWeek": 10,
+      "away": "los-angeles-rams",
+      "home": "arizona-cardinals",
+      "kickoffUtc": "2026-11-15T21:05Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873061"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "rams-at-cardinals-2026-reg-10"
+        }
+      ]
+    },
+    "401873062": {
+      "eventId": "401873062",
+      "officialWeek": 10,
+      "away": "seattle-seahawks",
+      "home": "las-vegas-raiders",
+      "kickoffUtc": "2026-11-15T21:05Z",
+      "primaryUSNetwork": "CBS",
+      "networks": [
+        "CBS"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873062"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "seahawks-at-raiders-2026-reg-10"
+        }
+      ]
+    },
+    "401873063": {
+      "eventId": "401873063",
+      "officialWeek": 10,
+      "away": "san-francisco-49ers",
+      "home": "dallas-cowboys",
+      "kickoffUtc": "2026-11-15T21:25Z",
+      "primaryUSNetwork": "FOX",
+      "networks": [
+        "FOX"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873063"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "49ers-at-cowboys-2026-reg-10"
+        }
+      ]
+    },
+    "401873064": {
+      "eventId": "401873064",
+      "officialWeek": 10,
+      "away": "pittsburgh-steelers",
+      "home": "cincinnati-bengals",
+      "kickoffUtc": "2026-11-16T01:20Z",
+      "primaryUSNetwork": "NBC",
+      "networks": [
+        "NBC"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873064"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "steelers-at-bengals-2026-reg-10"
+        }
+      ]
+    },
+    "401873065": {
+      "eventId": "401873065",
+      "officialWeek": 10,
+      "away": "los-angeles-chargers",
+      "home": "baltimore-ravens",
+      "kickoffUtc": "2026-11-17T01:15Z",
+      "primaryUSNetwork": "ESPN",
+      "networks": [
+        "ESPN"
+      ],
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "verifiedFields": [
+        "opponents",
+        "date",
+        "kickoff",
+        "primary_network"
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "checkedAt": "2026-11-11T03:37:08.223Z",
+          "rawSha256": "fcb6abb96f18e1dfc70f11ca6390b5f4bf04be28de5122cea403c916b7313076",
+          "record": "401873065"
+        },
+        {
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "checkedAt": "2026-11-11T03:37:09.409Z",
+          "rawSha256": "d9b58164e9cf339c42be2eef2e024348aea4a56d4a7dc20d3280d8a00bfc6cd3",
+          "record": "chargers-at-ravens-2026-reg-10"
+        }
+      ]
+    }
+  },
+  "digestScope": "schedule/results/standings"
+}
