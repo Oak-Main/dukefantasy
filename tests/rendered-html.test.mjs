@@ -40,6 +40,8 @@ function easternDay(instant) {
 // (the Eastern day of the snapshot's generatedAt, lib/cfb-dataset.ts): the week
 // of the first game on or after that day, else the last week published.
 function homeSlate(snapshot) {
+  // lib/nfl-generated.ts carries the same generatedAt; every dated snapshot has it.
+  assert.ok(Number.isFinite(Date.parse(snapshot.generatedAt)), "the current snapshot has a valid generatedAt");
   const reference = easternDay(snapshot.generatedAt);
   const ordered = [...snapshot.schedule].sort((a, b) =>
     a.date.localeCompare(b.date) || (a.kickoffUtc ?? "").localeCompare(b.kickoffUtc ?? "") || a.id.localeCompare(b.id));
