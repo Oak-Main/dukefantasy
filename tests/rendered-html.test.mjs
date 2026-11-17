@@ -23,6 +23,34 @@ const runtime = new Miniflare(convertV4MiniflareOptions({
 after(() => runtime.dispose());
 const worker = { fetch: request => runtime.dispatchFetch(request.url, new Request(request, { redirect: "manual" })) };
 
+function currentSnapshot() {
+  const manifest = JSON.parse(readFileSync(new URL("../data/content-refresh/current.json", import.meta.url), "utf8"));
+  return JSON.parse(readFileSync(new URL(`../data/content-refresh/${manifest.snapshot}`, import.meta.url), "utf8"));
+}
+
+// Mirrors lib/eastern.ts: game dates are Eastern calendar days.
+function easternDay(instant) {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit",
+  }).formatToParts(new Date(instant)).map(part => [part.type, part.value]));
+  return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+// Mirrors weekGames() in lib/homepage.ts with the home page's reference date
+// (the Eastern day of the snapshot's generatedAt, lib/cfb-dataset.ts): the week
+// of the first game on or after that day, else the last week published.
+function homeSlate(snapshot) {
+  // lib/nfl-generated.ts carries the same generatedAt; every dated snapshot has it.
+  assert.ok(Number.isFinite(Date.parse(snapshot.generatedAt)), "the current snapshot has a valid generatedAt");
+  const reference = easternDay(snapshot.generatedAt);
+  const ordered = [...snapshot.schedule].sort((a, b) =>
+    a.date.localeCompare(b.date) || (a.kickoffUtc ?? "").localeCompare(b.kickoffUtc ?? "") || a.id.localeCompare(b.id));
+  const week = (ordered.find(game => game.date.slice(0, 10) >= reference) ?? ordered.at(-1))?.week;
+  return ordered.filter(game => game.week === week);
+}
+
+const escapeRegExp = text => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
 async function fetchRoute(path, init) {
   return worker.fetch(new Request(`http://localhost${path}`, {
     ...init,
@@ -41,13 +69,15 @@ test("server-renders the finished home utility", async () => {
 
   const html = await response.text();
   assert.match(html, /Every Sunday/);
-  const manifest = JSON.parse(readFileSync(new URL("../data/content-refresh/current.json", import.meta.url), "utf8"));
-  const snapshot = JSON.parse(readFileSync(new URL(`../data/content-refresh/${manifest.snapshot}`, import.meta.url), "utf8"));
-  const slate = snapshot.schedule.filter((game) => game.week === snapshot.season.currentWeek);
+  // The home page picks its slate by the snapshot's Eastern day, not by
+  // season.currentWeek: on a Monday-night build the edition week is already
+  // the next one while the slate on the page is the week that just finished.
+  const slate = homeSlate(currentSnapshot());
+  const slateWeek = slate[0]?.week;
   if (slate.length > 0 && slate.every((game) => game.status === "final")) {
-    assert.match(html, new RegExp(`Week (?:<!-- -->)?${snapshot.season.currentWeek}(?:<!-- -->)? complete`));
+    assert.match(html, new RegExp(`Week (?:<!-- -->)?${slateWeek}(?:<!-- -->)? complete`));
     assert.match(html, new RegExp(`All (?:<!-- -->)?${slate.length}(?:<!-- -->)? final results are published\\.`));
-    assert.ok(html.includes(`href="/scores?week=${snapshot.season.currentWeek}"`));
+    assert.ok(html.includes(`href="/scores?week=${slateWeek}"`));
     assert.doesNotMatch(html, /This week&#x27;s marquee matchup is not published/);
   } else {
     assert.match(html, /GAME OF THE WEEK|MARQUEE MATCHUP/);
@@ -66,9 +96,17 @@ test("a Monday final and updated team records render from the verified snapshot"
   const html = await response.text();
   const hero = html.match(/class="game-hero__matchup"[\s\S]*?class="game-action-row"/)?.[0] ?? "";
   assert.match(html, /class="status status--final">Final<\/span>/);
-  // Records are the current standings in the 2026-11-10 edition (ESPN official standings, after Week 9).
-  assert.match(hero, /Dallas Cowboys<\/strong><em>4-5<\/em>[\s\S]*?<b>38<\/b>/);
-  assert.match(hero, /Philadelphia Eagles<\/strong><em>2-7<\/em>[\s\S]*?<b>21<\/b>/);
+  // The hero shows each team's current record from the edition's snapshot,
+  // beside the final score of this Week 7 game, so both come from that file.
+  const snapshot = currentSnapshot();
+  const game = snapshot.schedule.find((entry) => entry.id === "401873009");
+  assert.ok(game, "game 401873009 is in the current snapshot");
+  assert.equal(game.status, "final");
+  for (const [slug, score] of [[game.awaySlug, game.awayScore], [game.homeSlug, game.homeScore]]) {
+    const team = snapshot.teams.find((entry) => entry.slug === slug);
+    assert.ok(team?.record, `${slug} has a record in the current snapshot`);
+    assert.match(hero, new RegExp(`${escapeRegExp(team.name)}</strong><em>${escapeRegExp(team.record)}</em>[\\s\\S]*?<b>${score}</b>`));
+  }
 });
 
 test("www canonicalizes to the apex domain without losing the request target", async () => {
