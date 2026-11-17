@@ -87,10 +87,13 @@ for (const game of snapshot.schedule) {
     fail(`${game.id}: kickoff changed from ${game.kickoffUtc} to ${ev.date}; refresh before release`);
   }
   if (ev && ev.status?.type?.state === "post" && ev.status?.type?.completed !== false) {
+    // A game the snapshot still holds as unplayed went final after compile: that is the
+    // snapshot being behind (counted below, exit 2), not a score disagreement.
+    if (game.status !== "final") continue;
     const competitors = ev.competitions?.[0]?.competitors ?? [];
     const away = competitors.find(c => c.homeAway === "away");
     const home = competitors.find(c => c.homeAway === "home");
-    if (game.status !== "final" || Number(away?.score) !== game.awayScore || Number(home?.score) !== game.homeScore) {
+    if (Number(away?.score) !== game.awayScore || Number(home?.score) !== game.homeScore) {
       fail(`${game.id}: final score differs from fresh ESPN response`);
     }
   }
