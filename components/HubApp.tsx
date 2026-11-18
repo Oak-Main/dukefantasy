@@ -1068,16 +1068,27 @@ function PolicyPage({ kind }: { kind: string }) {
       sections: [["What we value", "Speed, source visibility, corrections, calm monetization, and understandable uncertainty."], ["What we do not do", "No paywall bypasses, fabricated live states, unlicensed marks, guaranteed picks, autoplay, or commercial ranking disguised as editorial judgment."], ["Contact", <>General: <a href="mailto:hello@dukefantasy.com">hello@dukefantasy.com</a> · Social and community: <a href="mailto:socials@dukefantasy.com">socials@dukefantasy.com</a>.</>]],
     },
     privacy: {
-      eyebrow: "DRAFT FOR COUNSEL",
-      title: "Privacy notice — preview draft",
-      intro: "The application saves mode and favourite-team choices in this browser. Application Google Analytics is paused while visitor controls are reviewed. Hosting and CDN services require a separate data inventory.",
-      sections: [["Data minimization", "Future services may process account identity, newsletter email, coarse consent attestation, and short-lived abuse logs only for stated purposes."], ["Your choices", "Production activation requires access, correction, deletion, consent withdrawal, and processor workflows reviewed by counsel."], ["Privacy contact", "Privacy questions, access requests, and deletion requests: privacy@dukefantasy.com."]],
+      eyebrow: "PRIVACY POLICY",
+      title: "Privacy policy",
+      intro: "Effective November 18, 2026. What Duke Fantasy collects, why, and the choices you have.",
+      sections: [
+        ["Who runs Duke Fantasy", <>Duke Fantasy (dukefantasy.com) is operated by Oak and Main Developers LLC, 1223 Cleveland Ave, Suite 200, San Diego, CA 92103, USA. For anything on this page, or to exercise a privacy right, email <a href="mailto:privacy@dukefantasy.com">privacy@dukefantasy.com</a> or <a href="mailto:admin@oakandmain.dev">admin@oakandmain.dev</a>.</>],
+        ["What stays in your browser", "There are no accounts. Your favourite teams (cfb-hub:favorites), your display mode (cfb-hub:mode) and the version of the analysis-mode notice you accepted (cfb-hub:disclosure-version) are saved in your browser's local storage on this device. The analysis-mode prompt asks you to confirm you are at least 21 and offers a broad region choice; that answer is not saved or sent to us, and we never ask for a birth date or precise location. Clearing this site's data removes these choices."],
+        ["Analytics", "We use Google Analytics 4, loaded through Cloudflare Zaraz, to count page views. It records approximate location, device and browser type, the referring page and the pages you view, and sets first-party cookies holding a random identifier. Cloudflare Web Analytics also counts page views, without cookies. We do not use either to identify you and we do not sell this data. You can block cookies in your browser."],
+        ["Newsletter", "The newsletter page is in development. It does not send or store your email address; anything you enter stays in this browser session."],
+        ["Affiliate and partner links", <>Some links on the Watch page are ticket and travel referrals. If you follow one, the destination may learn you came from this site and may set its own cookies under its own policy. See our <a href="/affiliate-disclosure">affiliate disclosure</a>.</>],
+        ["Hosting", "The site runs on Cloudflare, which processes your IP address and request details to deliver and protect the site, under its own privacy policy."],
+        ["Email you send", "If you email us, for example to report a correction, we receive your address and what you write, and use it only to reply and fix the issue."],
+        ["Your choices and rights", <>We hold no account or profile for you, so there is usually nothing of yours to show, correct or delete. Write to <a href="mailto:privacy@dukefantasy.com">privacy@dukefantasy.com</a> and we will tell you plainly what exists. Depending on where you live, including California, you may have rights to access, correct or delete personal data and to opt out of its sale or sharing. We do not sell or share personal information.</>],
+        ["Children", "Duke Fantasy is not directed at children under 13, and analysis mode is for adults 21 and over. We do not knowingly collect personal information from children."],
+        ["Changes", "When this policy changes, the effective date at the top changes with it."],
+      ],
     },
     cookies: {
       eyebrow: "BROWSER STORAGE",
       title: "Cookies and browser storage",
-      intro: "The application stores choices in this browser. Hosting and CDN cookies require a separate inventory.",
-      sections: [["Application preferences", "cfb-hub:favorites stores your selected teams. cfb-hub:mode and cfb-hub:disclosure-version store the optional analysis-mode choice and disclosure version."], ["Analytics", "Application Google Analytics is paused. The owner must confirm platform-managed telemetry, purposes and retention before completing this notice."], ["Your controls", "You can remove saved preferences in your browser settings. Privacy questions can be sent to the published address privacy@dukefantasy.com."]],
+      intro: "Effective November 18, 2026. The application stores a few choices in this browser, and analytics sets first-party cookies.",
+      sections: [["Application preferences", "cfb-hub:favorites stores your selected teams. cfb-hub:mode and cfb-hub:disclosure-version store the optional analysis-mode choice and disclosure version."], ["Analytics", "Google Analytics 4 runs through Cloudflare Zaraz and sets first-party cookies holding a random identifier. Cloudflare Web Analytics counts page views without cookies. The privacy policy has the details."], ["Your controls", "You can remove saved preferences in your browser settings. Privacy questions can be sent to the published address privacy@dukefantasy.com."]],
     },
     contact: {
       eyebrow: "PUBLISHED CONTACTS",
@@ -1086,10 +1097,19 @@ function PolicyPage({ kind }: { kind: string }) {
       sections: [["Privacy requests", <a key="privacy" href="mailto:privacy@dukefantasy.com">privacy@dukefantasy.com</a>], ["General questions", <a key="general" href="mailto:hello@dukefantasy.com">hello@dukefantasy.com</a>], ["Outstanding owner verification", "The published privacy and hello addresses have enabled gateway routes to the owner. Response timing, the publisher service address and the rights-response process require owner verification."]],
     },
     terms: {
-      eyebrow: "DRAFT FOR COUNSEL",
-      title: "Terms of use — preview draft",
-      intro: "Dataset information and model outputs are informational, not live facts, financial advice, legal advice, or a guarantee of any event.",
-      sections: [["Permitted use", "Use the preview to evaluate product behavior. Verify critical facts against the cited sources."], ["External services", "Future destinations remain subject to their own terms and may be unavailable by jurisdiction."]],
+      eyebrow: "TERMS OF USE",
+      title: "Terms of use",
+      intro: "Effective November 18, 2026. These terms govern your use of Duke Fantasy (dukefantasy.com), operated by Oak and Main Developers LLC. By using the site you agree to them.",
+      sections: [
+        ["Information, not advice", "Scores, schedules, injury reports, projections and model outputs are for general information and entertainment. They can be wrong or out of date. They are not betting, financial or legal advice and do not guarantee any outcome. Check critical facts against the cited sources."],
+        ["Analysis mode", <>The optional analysis mode, which shows market and DFS context, is for adults 21 and over. It does not offer wagering or confirm that betting or DFS is legal where you are. You are responsible for following the law where you live. If gambling is causing you harm, see our <a href="/responsible-gaming">responsible gaming</a> page.</>],
+        ["Independence", "Duke Fantasy is independent. It is not affiliated with or endorsed by the NFL, its teams or any sportsbook. Team names and marks belong to their owners."],
+        ["Affiliate links", "Some links are ticket and travel referrals, and we may earn a commission. Other sites are responsible for their own terms and offers, which may be unavailable in your area."],
+        ["Use of the site", "You may read and share links to our pages for personal, non-commercial use. Do not copy substantial parts of the site or scrape it in a way that disrupts it."],
+        ["No warranty and limits", "The site is provided \"as is\", without warranties of any kind. To the extent the law allows, Oak and Main Developers LLC is not liable for losses arising from your use of the site, including any decisions you make based on its content."],
+        ["Governing law and contact", <>These terms are governed by the laws of the State of California, USA. Questions: Oak and Main Developers LLC, 1223 Cleveland Ave, Suite 200, San Diego, CA 92103, USA, <a href="mailto:admin@oakandmain.dev">admin@oakandmain.dev</a>.</>],
+        ["Changes", "When these terms change, the effective date at the top changes with it."],
+      ],
     },
     "affiliate-disclosure": {
       eyebrow: "COMMERCIAL TRANSPARENCY",
@@ -1110,7 +1130,7 @@ function PolicyPage({ kind }: { kind: string }) {
       <PageHeading eyebrow={page.eyebrow} title={page.title} description={page.intro} />
       <section className="policy-content content-section">
         {page.sections.map(([title, copy]) => <article key={title}><h2>{title}</h2><p>{copy}</p></article>)}
-        <p className="legal-note">Generated draft language is not legal advice or final legal approval.</p>
+        {["privacy", "terms", "cookies"].includes(kind) ? null : <p className="legal-note">Generated draft language is not legal advice or final legal approval.</p>}
       </section>
     </>
   );

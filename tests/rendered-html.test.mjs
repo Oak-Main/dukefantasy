@@ -420,11 +420,12 @@ test("image endpoints never redirect to another origin", async () => {
 });
 
 
-test("policy routes render their own content while optional GA4 is paused", async () => {
+test("policy routes render their own content and the app ships no gtag snippet", async () => {
   for (const [path, heading] of [
     ["/cookies", /Cookies and browser storage/],
     ["/contact", /Contact Duke Fantasy/],
-    ["/privacy", /Application Google Analytics is paused/],
+    ["/privacy", /Oak and Main Developers LLC/],
+    ["/terms", /governed by the laws of the State of California/],
   ]) {
     const response = await fetchRoute(path);
     assert.equal(response.status, 200, path);
