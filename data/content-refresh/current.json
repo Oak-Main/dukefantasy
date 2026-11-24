@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "sourceAsOf": "2026-11-18",
-  "fetchedAt": "2026-11-18T18:42:01.296Z",
-  "snapshot": "2026-11-18/snapshot.json",
-  "compiledAt": "2026-11-18T18:42:01.296Z",
-  "collectedOn": "2026-11-18",
-  "cutoffUtc": "2026-11-18T18:42:01.296Z",
+  "sourceAsOf": "2026-11-24",
+  "fetchedAt": "2026-11-24T18:05:19.309Z",
+  "snapshot": "2026-11-24/snapshot.json",
+  "compiledAt": "2026-11-24T18:05:19.309Z",
+  "collectedOn": "2026-11-24",
+  "cutoffUtc": "2026-11-24T18:05:19.309Z",
   "sourceCutoffs": {
-    "coreDatasetUtc": "2026-11-18T18:42:01.296Z",
+    "coreDatasetUtc": "2026-11-24T18:05:19.309Z",
     "targetedInjuryUtc": "2026-10-28T20:34:19Z",
     "completeInjuryReviewDate": "2026-10-20",
     "broadcastRulingUtc": "2026-11-05T13:01:13.464Z"
