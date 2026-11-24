@@ -1094,7 +1094,7 @@ function PolicyPage({ kind }: { kind: string }) {
       eyebrow: "PUBLISHED CONTACTS",
       title: "Contact Duke Fantasy",
       intro: "Use the published addresses below for the relevant request.",
-      sections: [["Privacy requests", <a key="privacy" href="mailto:privacy@dukefantasy.com">privacy@dukefantasy.com</a>], ["General questions", <a key="general" href="mailto:hello@dukefantasy.com">hello@dukefantasy.com</a>], ["Outstanding owner verification", "The published privacy and hello addresses have enabled gateway routes to the owner. Response timing, the publisher service address and the rights-response process require owner verification."]],
+      sections: [["Privacy requests", <a key="privacy" href="mailto:privacy@dukefantasy.com">privacy@dukefantasy.com</a>], ["General questions", <a key="general" href="mailto:hello@dukefantasy.com">hello@dukefantasy.com</a>], ["Response time", "We answer privacy requests within 45 days, the time California law allows. We reply to other questions as soon as we can and do not promise a time."], ["Privacy rights requests", <>To use a privacy right, email <a href="mailto:privacy@dukefantasy.com">privacy@dukefantasy.com</a>. Say which right you mean: to see, correct or delete personal data, or to opt out of its sale or sharing. We hold no account or profile for you, so we will tell you plainly what exists. The <a href="/privacy">privacy policy</a> has the details.</>]],
     },
     terms: {
       eyebrow: "TERMS OF USE",
@@ -1121,7 +1121,7 @@ function PolicyPage({ kind }: { kind: string }) {
       eyebrow: "INFORMATIONAL MODELS ONLY",
       title: "Responsible gaming",
       intro: "The preview does not accept wagers, direct users to an operator, or guarantee a result.",
-      sections: [["Optional mode", "Odds & DFS Mode requires a deliberate adult/coarse-jurisdiction attestation and can be turned off in one action."], ["Know the risk", "Probability and projection models are uncertain. Never chase losses or treat a projection as a promise. Jurisdiction-specific helplines must be supplied through an approved current source before launch."]],
+      sections: [["Optional mode", "Odds & DFS Mode requires a deliberate adult/coarse-jurisdiction attestation and can be turned off in one action."], ["Know the risk", "Probability and projection models are uncertain. Never chase losses or treat a projection as a promise."], ["Get help", "If gambling is causing harm to you or to someone close to you, call or text 1-800-GAMBLER (1-800-426-2537). The helpline is free and confidential, and it answers 24 hours a day, 7 days a week. It is run by the Council on Compulsive Gambling of New Jersey."]],
     },
   };
   const page = content[kind] ?? content.about;
@@ -1130,7 +1130,7 @@ function PolicyPage({ kind }: { kind: string }) {
       <PageHeading eyebrow={page.eyebrow} title={page.title} description={page.intro} />
       <section className="policy-content content-section">
         {page.sections.map(([title, copy]) => <article key={title}><h2>{title}</h2><p>{copy}</p></article>)}
-        {["privacy", "terms", "cookies"].includes(kind) ? null : <p className="legal-note">Generated draft language is not legal advice or final legal approval.</p>}
+        {["privacy", "terms", "cookies", "about", "affiliate-disclosure"].includes(kind) ? null : <p className="legal-note">Generated draft language is not legal advice or final legal approval.</p>}
       </section>
     </>
   );
