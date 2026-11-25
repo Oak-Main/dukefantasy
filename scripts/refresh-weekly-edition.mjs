@@ -134,6 +134,7 @@ const NETWORK_CANON = new Map([
   ["nfl network", "NFL Network"],
   ["nfl network spanish", "NFL Network"],
   ["prime video", "Prime Video"],
+  ["netflix", "Netflix"],
 ]);
 function normalizeNetwork(name) {
   const trimmed = typeof name === "string" ? name.trim() : "";

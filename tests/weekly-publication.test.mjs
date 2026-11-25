@@ -5,7 +5,7 @@ import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { publicationWindow, resolveBroadcast, retimeUnpublished, selectSlate } from "../scripts/weekly-slate.mjs";
+import { networkKey, publicationWindow, resolveBroadcast, retimeUnpublished, selectSlate } from "../scripts/weekly-slate.mjs";
 
 import { materializeVerifiedSnapshot } from "../scripts/verified-snapshot.mjs";
 
@@ -263,4 +263,52 @@ test("a later week's flexed kickoff takes ESPN's new timing; published records n
   assert.equal(retimeUnpublished(published, fresh, 10).record, published);
   assert.equal(retimeUnpublished(compiled, { ...fresh, status: "in_progress" }, 10).retimed, false);
   assert.throws(() => retimeUnpublished(compiled, { ...fresh, id: "1" }, 10));
+});
+
+test("a casing-only network difference is one network and publishes the league's spelling", () => {
+  // 401873079 on 2026-11-24: ESPN "Netflix", NFL.com "NETFLIX" was withheld as a conflict.
+  const game = { id: "401873079", date: "2026-11-25", awaySlug: "green-bay-packers", homeSlug: "los-angeles-rams", broadcast: "netflix", networks: ["netflix"] };
+  for (const espn of ["netflix", "NETFLIX", "  Netflix ", "Ｎｅｔｆｌｉｘ"]) {
+    const tv = resolveBroadcast({ ...game, broadcast: espn, networks: [espn] }, ["Netflix"], undefined);
+    assert.deepEqual(tv, { broadcast: "Netflix", networks: ["Netflix"], conflict: null }, JSON.stringify(espn));
+  }
+  // The raw 2026-11-24 receipt values no longer conflict; the league's value is the one kept.
+  assert.equal(resolveBroadcast({ ...game, broadcast: "Netflix" }, ["NETFLIX"], undefined).conflict, null);
+  assert.equal(networkKey(" NFL \t Network "), networkKey("nfl network"));
+  assert.deepEqual(resolveBroadcast({ ...game, broadcast: "nfl  network", networks: [] }, ["NFL Network"], undefined).networks, ["NFL Network"]);
+});
+
+test("different networks still block after normalization", () => {
+  const game = { id: "401873079", date: "2026-11-25", awaySlug: "green-bay-packers", homeSlug: "los-angeles-rams", broadcast: "Netflix", networks: ["Netflix"] };
+  for (const nfl of ["NBC", "Prime Video", "Netflix 2", "NFL Network"]) {
+    assert.deepEqual(resolveBroadcast(game, [nfl], undefined), {
+      broadcast: null, networks: [],
+      conflict: { field: "primary_network", espn: "Netflix", nflCom: nfl, resolution: "withheld" },
+    });
+  }
+  // One publisher silent is still a conflict, not agreement.
+  assert.equal(resolveBroadcast(game, [], undefined).broadcast, null);
+  assert.equal(resolveBroadcast({ ...game, broadcast: null }, ["Netflix"], undefined).conflict.resolution, "withheld");
+  // A matching secondary does not establish the primary.
+  assert.equal(resolveBroadcast({ ...game, broadcast: "NBC", networks: ["NBC", "Netflix"] }, ["Netflix", "NBC"], undefined).broadcast, null);
+});
+
+test("the current edition shows Netflix for Packers at Rams and NBC for Chiefs at Bills, kickoffs unchanged", () => {
+  const json = path => JSON.parse(readFileSync(new URL(`../data/content-refresh/${path}`, import.meta.url)));
+  const games = new Map(json(json("current.json").snapshot).schedule.map(game => [game.id, game]));
+  const rams = games.get("401873079");
+  assert.equal(rams.broadcast, "Netflix");
+  assert.deepEqual(rams.networks, ["Netflix"]);
+  assert.equal(rams.kickoffUtc, "2026-11-26T01:00Z");
+  assert.equal(rams.kickoff_pt, "Wed, Nov 25, 5:00 PM PT");
+  assert.equal(rams.source_conflicts, undefined);
+  const bills = games.get("401873082");
+  assert.deepEqual([bills.awaySlug, bills.homeSlug], ["kansas-city-chiefs", "buffalo-bills"]);
+  assert.equal(bills.broadcast, "NBC");
+  assert.deepEqual(bills.networks, ["NBC"]);
+  assert.equal(bills.kickoffUtc, "2026-11-27T01:20Z");
+  assert.equal(bills.kickoff_pt, "Thu, Nov 26, 5:20 PM PT");
+  const monday = games.get("401873078");
+  assert.deepEqual([monday.status, monday.awaySlug, monday.awayScore, monday.homeSlug, monday.homeScore],
+    ["final", "cincinnati-bengals", 20, "washington-commanders", 22]);
 });
