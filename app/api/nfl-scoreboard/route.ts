@@ -1,9 +1,12 @@
 import {
   mapEspnScoreboard,
+  reconcileTsdbFinals,
   scoreboardWindowDays,
   type EspnRawEvent,
   type NflScoreboardPayload,
+  type TsdbRawEvent,
 } from "@/lib/nfl-scoreboard";
+import nfl from "@/lib/nfl-generated";
 
 /**
  * Live NFL scoreboard for the landing-page ticker and the finals strip.
@@ -16,6 +19,11 @@ import {
  * per minute. Browsers additionally keep the response for 30s via
  * Cache-Control.
  *
+ * Fallback (Nov 2026): when ESPN answers no events at all, finished games come
+ * from TheSportsDB's NFL feed via the portfolio's TrueAPI ingest cache, finals
+ * only and reconciled to the dataset's ESPN ids (see reconcileTsdbFinals). The
+ * payload says `source: "thesportsdb"` and `asOf` is that cache copy's fetch time.
+ *
  * Degradation is by design: missing upstream or malformed payloads return 200
  * with an empty event list so the live surfaces hide their sections instead of
  * surfacing an error (mirrors the injuries + CFB Apex scoreboard routes).
@@ -26,6 +34,9 @@ export const revalidate = 0;
 const CACHE_TTL_MS = 60_000;
 const UPSTREAM_TIMEOUT_MS = 6_000;
 const ESPN_SCOREBOARD = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard";
+// TheSportsDB NFL league id; the ingest worker warms this past-results feed (no key here).
+const TSDB_NFL_PAST = "/data/thesportsdb/eventspastleague.php?id=4391";
+const INGEST_BASE = process.env.TRUEAPI_INGEST_BASE || "https://ingest.oakandmain.dev";
 
 let cached: { at: number; payload: NflScoreboardPayload } | null = null;
 
@@ -54,11 +65,37 @@ async function fetchDay(ymd: string): Promise<EspnRawEvent[]> {
   return Array.isArray(events) ? (events as EspnRawEvent[]) : [];
 }
 
+/** TheSportsDB finals via the ingest cache; null on any failure or an empty result. */
+async function fetchTsdbFinals(): Promise<NflScoreboardPayload | null> {
+  try {
+    const response = await fetch(`${INGEST_BASE}${TSDB_NFL_PAST}`, {
+      signal: AbortSignal.timeout(UPSTREAM_TIMEOUT_MS),
+      headers: { accept: "application/json" },
+    });
+    if (!response.ok) return null;
+    const envelope = (await response.json()) as { data?: { events?: unknown }; fetchedAt?: unknown } | null;
+    const raw = envelope?.data?.events;
+    if (!Array.isArray(raw)) return null;
+    const events = reconcileTsdbFinals(raw as TsdbRawEvent[], nfl.teams, nfl.schedule);
+    const fetchedAt = typeof envelope?.fetchedAt === "string" && Number.isFinite(Date.parse(envelope.fetchedAt))
+      ? envelope.fetchedAt
+      : null;
+    if (events.length === 0 || !fetchedAt) return null;
+    return { events, asOf: fetchedAt, source: "thesportsdb", degraded: false };
+  } catch {
+    return null;
+  }
+}
+
 async function fetchScoreboard(nowMs: number): Promise<NflScoreboardPayload> {
   const days = scoreboardWindowDays(new Date(nowMs));
   const dayResults = await Promise.all(days.map((day) => fetchDay(day).catch(() => [] as EspnRawEvent[])));
   const events = mapEspnScoreboard(dayResults.flat());
-  if (events.length === 0) return degradedPayload(nowMs);
+  if (events.length === 0) {
+    // Kill switch: DISABLE_TSDB_FALLBACK=true restores the ESPN-only behaviour.
+    if (process.env.DISABLE_TSDB_FALLBACK === "true") return degradedPayload(nowMs);
+    return (await fetchTsdbFinals()) ?? degradedPayload(nowMs);
+  }
   return {
     events,
     asOf: new Date(nowMs).toISOString(),
