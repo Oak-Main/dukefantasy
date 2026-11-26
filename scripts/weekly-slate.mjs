@@ -57,14 +57,29 @@ export function retimeUnpublished(prior, fresh, editionWeek) {
   return { record, retimed: true };
 }
 
+/**
+ * Comparison key for a network name: Unicode-normalized, trimmed, inner
+ * whitespace collapsed, case-folded. "NETFLIX", "Netflix" and " netflix "
+ * are one network. It is never published; it only decides equality.
+ */
+export function networkKey(name) {
+  if (typeof name !== "string") return "";
+  return name.normalize("NFKC").trim().replace(/\s+/gu, " ").toUpperCase().toLowerCase();
+}
+
 /** A shared secondary does not establish the primary. Simulcasts require independent support. */
 export function resolveBroadcast(game, nflNetworks, ruling) {
   const espn = game.broadcast;
   const nfl = nflNetworks[0] ?? null;
   const sameGame = ruling && ruling.date === game.date && ruling.away === game.awaySlug && ruling.home === game.homeSlug && ruling.network === nfl;
-  if (espn && espn === nfl) {
-    const verified = new Set([...nflNetworks, ...(sameGame ? ruling.simulcasts ?? [] : [])]);
-    return { broadcast: espn, networks: [...new Set([espn, ...(game.networks ?? []).filter(name => verified.has(name))])], conflict: null };
+  if (espn && nfl && networkKey(espn) === networkKey(nfl)) {
+    // Same network on both publishers: publish the league's spelling.
+    const official = new Map();
+    for (const name of [...nflNetworks, ...(sameGame ? ruling.simulcasts ?? [] : [])]) {
+      if (!official.has(networkKey(name))) official.set(networkKey(name), name);
+    }
+    const networks = [nfl, ...(game.networks ?? []).map(name => official.get(networkKey(name))).filter(Boolean)];
+    return { broadcast: nfl, networks: [...new Set(networks)], conflict: null };
   }
   if (!espn && !nfl) return { broadcast: null, networks: [], conflict: null };
   const corroborated = sameGame && Boolean(ruling.broadcasterUrl);
