@@ -119,3 +119,68 @@ test("window days are Eastern game dates, two back through one ahead", () => {
   const monthEdge = scoreboardWindowDays(new Date("2026-11-01T18:00:00Z"));
   assert.deepEqual(monthEdge, ["20261030", "20261031", "20261101", "20261102"]);
 });
+
+/* ------------------------------------------------ TheSportsDB finals fallback */
+
+import { reconcileTsdbFinals, type TsdbRawEvent } from "../lib/nfl-scoreboard.ts";
+
+const teams = [
+  { name: "Green Bay Packers", shortName: "Green Bay", slug: "green-bay-packers" },
+  { name: "Los Angeles Rams", shortName: "LA Rams", slug: "los-angeles-rams" },
+  { name: "Cincinnati Bengals", shortName: "Cincinnati", slug: "cincinnati-bengals" },
+  { name: "Washington Commanders", shortName: "Washington", slug: "washington-commanders" },
+  { name: "Minnesota Vikings", shortName: "Minnesota", slug: "minnesota-vikings" },
+  { name: "San Francisco 49ers", shortName: "San Francisco", slug: "san-francisco-49ers" },
+];
+const schedule = [
+  { id: "401873001", awaySlug: "green-bay-packers", homeSlug: "los-angeles-rams", kickoffUtc: "2026-11-26T01:00Z", venue: "SoFi Stadium" },
+  { id: "401873002", awaySlug: "cincinnati-bengals", homeSlug: "washington-commanders", kickoffUtc: "2026-11-24T01:15Z", venue: "Northwest Stadium" },
+  { id: "401873003", awaySlug: "minnesota-vikings", homeSlug: "san-francisco-49ers", kickoffUtc: "2026-11-23T01:20Z", venue: "Estadio Banorte" },
+];
+// Shapes copied from the live ingest feed (eventspastleague id=4391, fetched 2026-11-26T02:43Z).
+const tsdb = (o: Partial<TsdbRawEvent>): TsdbRawEvent => ({ idEvent: "2475536", strTimestamp: "2026-11-24T01:15:00", strAwayTeam: "Cincinnati Bengals", strHomeTeam: "Washington Commanders", intAwayScore: "20", intHomeScore: "22", strStatus: "FT", strVenue: "Northwest Stadium", ...o });
+
+test("fallback: a TheSportsDB final reconciles to the dataset's ESPN id", () => {
+  const [event, ...rest] = reconcileTsdbFinals([tsdb({})], teams, schedule);
+  assert.equal(rest.length, 0);
+  assert.equal(event.id, "401873002", "carries the ESPN id, so the client overlay's id-only rule holds");
+  assert.equal(event.state, "final");
+  assert.equal(event.away, "Cincinnati");
+  assert.equal(event.home, "Washington");
+  assert.equal(event.awayScore, 20);
+  assert.equal(event.homeScore, 22);
+  assert.equal(event.statusLabel, "Final");
+  assert.equal(event.utc, "2026-11-24T01:15Z", "kickoff comes from the dataset");
+});
+
+test("fallback: an in-progress row from the hourly copy is never emitted (no stale-as-live)", () => {
+  const q2 = tsdb({ idEvent: "2475537", strTimestamp: "2026-11-26T01:00:00", strAwayTeam: "Green Bay Packers", strHomeTeam: "Los Angeles Rams", intAwayScore: "10", intHomeScore: "13", strStatus: "Q2" });
+  const ns = tsdb({ strStatus: "NS", intAwayScore: null, intHomeScore: null });
+  assert.deepEqual(reconcileTsdbFinals([q2, ns], teams, schedule), []);
+});
+
+test("fallback: unknown team names, missing or non-integer scores, and far-off kickoffs are dropped", () => {
+  const cases = [
+    tsdb({ strAwayTeam: "Cincinnati" }),
+    tsdb({ intHomeScore: "" }),
+    tsdb({ intAwayScore: "20.5" }),
+    tsdb({ strTimestamp: "2026-12-06T01:15:00" }),
+    tsdb({ strTimestamp: "not a date" }),
+  ];
+  for (const c of cases) assert.deepEqual(reconcileTsdbFinals([c], teams, schedule), [], JSON.stringify(c));
+});
+
+test("fallback: an ambiguous pair (two dataset games in the window) is dropped, not guessed", () => {
+  const twice = [...schedule, { id: "401873099", awaySlug: "cincinnati-bengals", homeSlug: "washington-commanders", kickoffUtc: "2026-11-24T20:00Z", venue: null }];
+  assert.deepEqual(reconcileTsdbFinals([tsdb({})], teams, twice), []);
+});
+
+test("fallback: overtime finals are labelled, duplicates collapse, output is ordered", () => {
+  const out = reconcileTsdbFinals([
+    tsdb({}),
+    tsdb({ idEvent: "2475535", strTimestamp: "2026-11-23T01:20:00", strAwayTeam: "Minnesota Vikings", strHomeTeam: "San Francisco 49ers", intAwayScore: "10", intHomeScore: "35", strStatus: "AOT" }),
+    tsdb({}),
+  ], teams, schedule);
+  assert.deepEqual(out.map((e) => e.id), ["401873003", "401873002"]);
+  assert.equal(out[0].statusLabel, "Final/OT");
+});

@@ -19,6 +19,25 @@ Rights classes: `R0_FIXTURE`, `R1_PUBLIC_DOMAIN`, `R2_LINK_ONLY`, `R3_CITED_FACT
 | NIL estimates | Licensed methodology and rights | Enterprise, R5 | Provider specific | Omit | Blocked |
 | Marks/photos/headshots | School/conference/CLC/photographer license | Enterprise, R4 | Per license | Text monogram/no image | Blocked |
 
+## NFL live scoreboard: TheSportsDB finals fallback (added 2026-11-26)
+
+`/api/nfl-scoreboard` reads ESPN's public scoreboard first. Only when ESPN returns no events at all does it read TheSportsDB's NFL past-results feed (league 4391) through the portfolio's TrueAPI ingest cache, reconciled to the dataset's ESPN ids and limited to finals. See the November 26, 2026 decision log entry.
+
+| Field | Record |
+|---|---|
+| Provider / dataset | TheSportsDB v1 `eventspastleague.php?id=4391` (last 15 NFL results), via `https://ingest.oakandmain.dev/data/thesportsdb/…` |
+| Use | Fallback finals (scores, final status) for the ticker overlay and finals strip; never in-progress state, never odds, images or marks |
+| Quota | No calls from this site to TheSportsDB. The ingest worker polls the feed about hourly under the shared Premium key (100 requests/minute; ingest budget breaker at 30/minute) |
+| Rights / contract | TheSportsDB paid Premium tier (shared portfolio subscription, billed to sports-always.com; owner confirmed continuation 2026-11-26). The free key is non-commercial and must not be used. Terms not yet reviewed by counsel: queue for review |
+| Permitted uses | Public display of final scores on site pages. No export, SEO feed, social or model-training use recorded |
+| Caching / history | Ingest copy TTL 3600s; route isolate cache 60s; browser 30s. No history stored by this site |
+| Stale threshold / hard expiry | Finals only, so no live threshold applies. Payload `asOf` is the ingest copy's own `fetchedAt` |
+| Attribution | Not displayed today. Add "Scores: TheSportsDB" wherever a fallback source line is surfaced |
+| Secret location | None in this repo; the key lives only in the `trueapi-ingest` Worker's secrets |
+| Owner / reviewer | Owner: Oak and Main Developers LLC; reviewer: pending |
+| Kill switch | `DISABLE_TSDB_FALLBACK=true` (Worker var) restores ESPN-only behaviour |
+| Next legal review | With the next provider-rights pass |
+
 Each future provider row must record quota, permitted public/SEO/social/export/model uses, caching/history, territory, attribution, contract version, stale threshold, hard expiry, secret location, owner, reviewer, kill switch, and next legal review.
 
 ## 2026 procurement shortlist

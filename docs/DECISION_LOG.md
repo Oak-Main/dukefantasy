@@ -290,3 +290,16 @@ With owner approval the deployment credential is a dedicated user-owned Cloudfla
 ## November 18, 2026 · Final privacy policy and terms of use
 
 With owner approval the `/privacy` and `/terms` "DRAFT FOR COUNSEL" pages are replaced with final text naming the operator, Oak and Main Developers LLC, 1223 Cleveland Ave, Suite 200, San Diego, CA 92103, USA, with `privacy@dukefantasy.com` and `admin@oakandmain.dev` as contacts and California law. The privacy policy states what the live site does: the three `cfb-hub:*` local-storage keys, no stored age or region answer, a newsletter page that stores nothing, Watch-page ticket and travel referrals, and analytics. The November 6 pause covered the application's own GA4 tag only; the `dukefantasy.com` zone still runs Google Analytics 4 through Cloudflare Zaraz (pageview trigger, enabled) and the cookieless Cloudflare Web Analytics beacon, so both are disclosed in `/privacy` and `/cookies`. The draft-language note no longer shows on these three pages. Effective November 18, 2026.
+
+## November 26, 2026 · NFL scoreboard: TheSportsDB finals fallback
+
+With owner approval ("start the dukefantasy NFL fallback"), `/api/nfl-scoreboard` gains a fallback for the case where ESPN's unofficial scoreboard returns no events at all. That happened across the portfolio in September 2026, when ESPN's site API was blocked for match-day.live. The fallback reads TheSportsDB's NFL past-results feed through the portfolio's TrueAPI ingest cache, so this site holds no key.
+
+Three rules keep it inside AGENTS.md:
+
+- **Finals only.** The ingest copy refreshes about hourly. An in-progress row in it (the live feed showed Green Bay at the Rams as "Q2" with an old score) would be stale data presented as live, so only finished games pass.
+- **Exact identity, server-side.** A game passes only when both TheSportsDB team names equal a dataset team's full name and exactly one dataset game has that away/home pair within 36 hours. The emitted event carries that game's ESPN id, so the client overlay keeps its id-only matching rule. Ambiguous, unmapped or malformed rows are dropped.
+- **Honest provenance.** The payload says `source: "thesportsdb"`, and `asOf` is the cache copy's own fetch time.
+
+Evidence: against the live feed (fetched 2026-11-26T02:43Z) and the shipping dataset, all 35 games in TheSportsDB's past and next feeds mapped uniquely, with kickoffs equal to the minute. The 14 finals emitted agree exactly with the ESPN-built scores. Five unit tests cover reconciliation, the in-progress drop, malformed rows, ambiguity and overtime labelling. Kill switch: `DISABLE_TSDB_FALLBACK=true`. The provider row is recorded in `docs/DATA_PROVIDER_MATRIX.md`.
+
