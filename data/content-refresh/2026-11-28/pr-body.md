@@ -1,5 +1,7 @@
 ## NFL Week 12 results on November 28, 2026
 
+This draft receipt is for candidate review. Merge and release require green checks on the exact head, independent approval and a verified rollback that preserves the correction.
+
 Pittsburgh beat Denver 27–5. The same verification added the three Thanksgiving finals needed for exact standings. The slate retains 272 games, 168 finals and its existing kickoffs, teams and networks.
 
 The NFL game books and ESPN responses confirm each new final. The edition carries prior verified evidence for the other weeks and preserves the dates of the editorial modules.
