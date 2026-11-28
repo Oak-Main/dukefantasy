@@ -109,6 +109,48 @@ test("a Monday final and updated team records render from the verified snapshot"
   }
 });
 
+test("Black Friday final and upcoming controls use the right score and status labels", async () => {
+  const snapshot = currentSnapshot();
+  const final = snapshot.schedule.find(game => game.id === "401873083");
+  assert.ok(final);
+  assert.deepEqual(
+    [final.status, final.awaySlug, final.awayScore, final.homeSlug, final.homeScore, final.broadcast],
+    ["final", "denver-broncos", 5, "pittsburgh-steelers", 27, "Prime Video"],
+  );
+  const upcoming = snapshot.schedule.find(game => game.week >= final.week && game.status === "scheduled");
+
+  for (const game of upcoming ? [final, upcoming] : [final]) {
+    const detail = await fetchRoute(`/games/${game.id}`);
+    assert.equal(detail.status, 200);
+    const detailHtml = await detail.text();
+    const hero = detailHtml.match(/class="game-hero__matchup"[\s\S]*?class="game-action-row"/)?.[0] ?? "";
+    const scores = await fetchRoute(`/scores?week=${game.week}`);
+    assert.equal(scores.status, 200);
+    const scoresHtml = await scores.text();
+    const card = (scoresHtml.match(/<article class="game-card"[\s\S]*?<\/article>/g) ?? [])
+      .find(article => article.includes(`href="/games/${game.id}"`));
+    assert.ok(card, `Missing scoreboard card for ${game.id}`);
+    if (game.broadcast) {
+      assert.match(hero, new RegExp(escapeRegExp(game.broadcast)));
+      assert.match(card, new RegExp(escapeRegExp(game.broadcast)));
+    }
+
+    if (game.status === "final") {
+      assert.match(detailHtml, /class="status status--final">Final<\/span>/);
+      assert.match(hero, /final score<\/h1>/);
+      assert.doesNotMatch(hero, /game preview<\/h1>/);
+      assert.match(card, /Final score<\/a>/);
+      assert.doesNotMatch(card, /Preview<\/a>/);
+      for (const html of [hero, card]) assert.match(html, /<b>5<\/b>[\s\S]*?<b>27<\/b>/);
+    } else {
+      assert.match(detailHtml, /class="status status--scheduled"/);
+      assert.match(hero, /game preview<\/h1>/);
+      assert.match(card, /Preview<\/a>/);
+      assert.doesNotMatch(card, /<b>\d+<\/b>/);
+    }
+  }
+});
+
 test("www canonicalizes to the apex domain without losing the request target", async () => {
   const response = await worker.fetch(
     new Request("https://www.dukefantasy.com/scores?week=1"),
