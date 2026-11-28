@@ -248,7 +248,7 @@ function GameCard({
           </span>
         </div>
         <div className="game-card__actions">
-          <a href={`/games/${game.id}`}>Preview</a>
+          <a href={`/games/${game.id}`}>{game.status === "final" ? "Final score" : "Preview"}</a>
           <a href="/watch">Watch status</a>
           <a href={game.venueSlug ? `/stadiums/${game.venueSlug}` : "/stadiums"}>Gameday guide</a>
           <GameActionsButton
@@ -614,7 +614,7 @@ function GamePage({ gameId, mode, favorites, onFavorite }: HomeProps & { gameId:
         <div className="game-hero__matchup">
           <TeamHero team={away} score={game.awayScore} />
           <div className="game-hero__center">
-            <h1 className="sr-only">{away.name} at {home.name} game preview</h1>
+            <h1 className="sr-only">{away.name} at {home.name} {game.status === "final" ? "final score" : "game preview"}</h1>
             <span>{game.kickoffLabel}</span>
             <strong>{game.broadcast ?? "Broadcast provider not configured"}</strong>
             <small>{game.venue} · {game.city}{game.country ? `, ${game.country}` : ""}{game.neutralSite ? ` · Neutral site; ${home.name} designated home` : ""}</small>
